@@ -1,0 +1,12 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Mon Sep 15 12:36:05 2025 *
+NOTE DESIGN NAME: top_level *
+NOTE DEVICE NAME: LFE5UM5G-85F-8CABGA381 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS clk : F1 : in *
+NOTE PINS serial_iq : E4 : out *
+NOTE PINS LED : C17 : out *
+NOTE PINS serial_clk : A4 : out *
+NOTE CONFIGURATION MODE: JTAG *
+NOTE COMPRESSION: off *

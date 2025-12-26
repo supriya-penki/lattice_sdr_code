@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "mySDR_fpga_impl1.log"
+-o "mySDR_fpga_impl1.csv"
+-pr "mySDR_fpga_impl1.prf"

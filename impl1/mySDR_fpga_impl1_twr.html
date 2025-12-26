@@ -1,0 +1,1205 @@
+<HTML>
+<HEAD><TITLE>Lattice TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Par_Twr"></A><B><U><big>Place & Route TRACE Report</big></U></B>
+
+Loading design for application trce from file mysdr_fpga_impl1.ncd.
+Design name: top_level
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5UM5G-85F
+Package:     CABGA381
+Performance: 8
+Loading device for application trce from file 'sa5p85m.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.43.
+Performance Hardware Data Status:   Final          Version 55.1.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Par_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2</big></U></B>
+Mon Sep 15 12:35:50 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="ptwr_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 8 -sphld m -o mySDR_fpga_impl1.twr -gui -msgset C:/lscc/lattice_projects/promote.xml mySDR_fpga_impl1.ncd mySDR_fpga_impl1.prf 
+Design file:     mysdr_fpga_impl1.ncd
+Preference file: mysdr_fpga_impl1.prf
+Device,speed:    LFE5UM5G-85F,8
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+<A name="ptwr_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#par_twr_pref_0_0' Target='right'>FREQUENCY NET "my_pll_instance/CLKIt" 32.000000 MHz (0 errors)</A></LI>            0 items scored, 0 timing errors detected.
+
+<LI><A href='#par_twr_pref_0_1' Target='right'>FREQUENCY NET "serial_clk_c" 64.000000 MHz (0 errors)</A></LI>            36 items scored, 0 timing errors detected.
+Report:  560.538MHz is the maximum frequency for this preference.
+
+3 potential circuit loops found in timing analysis.
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="par_twr_pref_0_0"></A>Preference: FREQUENCY NET "my_pll_instance/CLKIt" 32.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+<A name="par_twr_pref_0_1"></A>Preference: FREQUENCY NET "serial_clk_c" 64.000000 MHz ;
+            36 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 13.841ns
+         The internal maximum frequency of the following component is 560.538 MHz
+
+ Logical Details:  Cell type  Pin name       Component name
+
+   Destination:    SLICE      CLK            clockDivider_0/SLICE_0
+
+   Delay:               1.784ns -- based on Minimum Pulse Width
+
+
+Passed: The following path meets requirements by 14.350ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i1  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i7  (to serial_clk_c +)
+
+   Delay:               1.440ns  (64.9% logic, 35.1% route), 5 logic levels.
+
+ Constraint Details:
+
+      1.440ns physical path delay clockDivider_0/SLICE_4 to clockDivider_0/SLICE_0 meets
+     15.625ns delay constraint less
+      0.000ns skew and
+     -0.165ns DIN_SET requirement (totaling 15.790ns) by 14.350ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_4 to clockDivider_0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.310    R11C69B.CLK to     R11C69B.Q0 clockDivider_0/SLICE_4 (from serial_clk_c)
+ROUTE         2     0.505     R11C69B.Q0 to     R11C69B.B0 clockDivider_0/lockCounter_1
+C0TOFCO_DE  ---     0.279     R11C69B.B0 to    R11C69B.FCO clockDivider_0/SLICE_4
+ROUTE         1     0.000    R11C69B.FCO to    R11C69C.FCI clockDivider_0/n269
+FCITOFCO_D  ---     0.044    R11C69C.FCI to    R11C69C.FCO clockDivider_0/SLICE_2
+ROUTE         1     0.000    R11C69C.FCO to    R11C69D.FCI clockDivider_0/n270
+FCITOFCO_D  ---     0.044    R11C69D.FCI to    R11C69D.FCO clockDivider_0/SLICE_1
+ROUTE         1     0.000    R11C69D.FCO to    R11C70A.FCI clockDivider_0/n271
+FCITOF0_DE  ---     0.258    R11C70A.FCI to     R11C70A.F0 clockDivider_0/SLICE_0
+ROUTE         1     0.000     R11C70A.F0 to    R11C70A.DI0 clockDivider_0/n38 (to serial_clk_c)
+                  --------
+                    1.440   (64.9% logic, 35.1% route), 5 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69B.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C70A.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 14.378ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i1  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i6  (to serial_clk_c +)
+
+   Delay:               1.412ns  (64.2% logic, 35.8% route), 4 logic levels.
+
+ Constraint Details:
+
+      1.412ns physical path delay clockDivider_0/SLICE_4 to clockDivider_0/SLICE_1 meets
+     15.625ns delay constraint less
+      0.000ns skew and
+     -0.165ns DIN_SET requirement (totaling 15.790ns) by 14.378ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_4 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.310    R11C69B.CLK to     R11C69B.Q0 clockDivider_0/SLICE_4 (from serial_clk_c)
+ROUTE         2     0.505     R11C69B.Q0 to     R11C69B.B0 clockDivider_0/lockCounter_1
+C0TOFCO_DE  ---     0.279     R11C69B.B0 to    R11C69B.FCO clockDivider_0/SLICE_4
+ROUTE         1     0.000    R11C69B.FCO to    R11C69C.FCI clockDivider_0/n269
+FCITOFCO_D  ---     0.044    R11C69C.FCI to    R11C69C.FCO clockDivider_0/SLICE_2
+ROUTE         1     0.000    R11C69C.FCO to    R11C69D.FCI clockDivider_0/n270
+FCITOF1_DE  ---     0.274    R11C69D.FCI to     R11C69D.F1 clockDivider_0/SLICE_1
+ROUTE         1     0.000     R11C69D.F1 to    R11C69D.DI1 clockDivider_0/n39 (to serial_clk_c)
+                  --------
+                    1.412   (64.2% logic, 35.8% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69B.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69D.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 14.394ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i3  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i7  (to serial_clk_c +)
+
+   Delay:               1.396ns  (63.8% logic, 36.2% route), 4 logic levels.
+
+ Constraint Details:
+
+      1.396ns physical path delay clockDivider_0/SLICE_2 to clockDivider_0/SLICE_0 meets
+     15.625ns delay constraint less
+      0.000ns skew and
+     -0.165ns DIN_SET requirement (totaling 15.790ns) by 14.394ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_2 to clockDivider_0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.310    R11C69C.CLK to     R11C69C.Q0 clockDivider_0/SLICE_2 (from serial_clk_c)
+ROUTE         2     0.505     R11C69C.Q0 to     R11C69C.B0 clockDivider_0/lockCounter_3
+C0TOFCO_DE  ---     0.279     R11C69C.B0 to    R11C69C.FCO clockDivider_0/SLICE_2
+ROUTE         1     0.000    R11C69C.FCO to    R11C69D.FCI clockDivider_0/n270
+FCITOFCO_D  ---     0.044    R11C69D.FCI to    R11C69D.FCO clockDivider_0/SLICE_1
+ROUTE         1     0.000    R11C69D.FCO to    R11C70A.FCI clockDivider_0/n271
+FCITOF0_DE  ---     0.258    R11C70A.FCI to     R11C70A.F0 clockDivider_0/SLICE_0
+ROUTE         1     0.000     R11C70A.F0 to    R11C70A.DI0 clockDivider_0/n38 (to serial_clk_c)
+                  --------
+                    1.396   (63.8% logic, 36.2% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69C.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C70A.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 14.394ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i1  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i5  (to serial_clk_c +)
+
+   Delay:               1.396ns  (63.8% logic, 36.2% route), 4 logic levels.
+
+ Constraint Details:
+
+      1.396ns physical path delay clockDivider_0/SLICE_4 to clockDivider_0/SLICE_1 meets
+     15.625ns delay constraint less
+      0.000ns skew and
+     -0.165ns DIN_SET requirement (totaling 15.790ns) by 14.394ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_4 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.310    R11C69B.CLK to     R11C69B.Q0 clockDivider_0/SLICE_4 (from serial_clk_c)
+ROUTE         2     0.505     R11C69B.Q0 to     R11C69B.B0 clockDivider_0/lockCounter_1
+C0TOFCO_DE  ---     0.279     R11C69B.B0 to    R11C69B.FCO clockDivider_0/SLICE_4
+ROUTE         1     0.000    R11C69B.FCO to    R11C69C.FCI clockDivider_0/n269
+FCITOFCO_D  ---     0.044    R11C69C.FCI to    R11C69C.FCO clockDivider_0/SLICE_2
+ROUTE         1     0.000    R11C69C.FCO to    R11C69D.FCI clockDivider_0/n270
+FCITOF0_DE  ---     0.258    R11C69D.FCI to     R11C69D.F0 clockDivider_0/SLICE_1
+ROUTE         1     0.000     R11C69D.F0 to    R11C69D.DI0 clockDivider_0/n40 (to serial_clk_c)
+                  --------
+                    1.396   (63.8% logic, 36.2% route), 4 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69B.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69D.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 14.422ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i3  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i6  (to serial_clk_c +)
+
+   Delay:               1.368ns  (63.1% logic, 36.9% route), 3 logic levels.
+
+ Constraint Details:
+
+      1.368ns physical path delay clockDivider_0/SLICE_2 to clockDivider_0/SLICE_1 meets
+     15.625ns delay constraint less
+      0.000ns skew and
+     -0.165ns DIN_SET requirement (totaling 15.790ns) by 14.422ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_2 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.310    R11C69C.CLK to     R11C69C.Q0 clockDivider_0/SLICE_2 (from serial_clk_c)
+ROUTE         2     0.505     R11C69C.Q0 to     R11C69C.B0 clockDivider_0/lockCounter_3
+C0TOFCO_DE  ---     0.279     R11C69C.B0 to    R11C69C.FCO clockDivider_0/SLICE_2
+ROUTE         1     0.000    R11C69C.FCO to    R11C69D.FCI clockDivider_0/n270
+FCITOF1_DE  ---     0.274    R11C69D.FCI to     R11C69D.F1 clockDivider_0/SLICE_1
+ROUTE         1     0.000     R11C69D.F1 to    R11C69D.DI1 clockDivider_0/n39 (to serial_clk_c)
+                  --------
+                    1.368   (63.1% logic, 36.9% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69C.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69D.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 14.422ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i1  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i4  (to serial_clk_c +)
+
+   Delay:               1.368ns  (63.1% logic, 36.9% route), 3 logic levels.
+
+ Constraint Details:
+
+      1.368ns physical path delay clockDivider_0/SLICE_4 to clockDivider_0/SLICE_2 meets
+     15.625ns delay constraint less
+      0.000ns skew and
+     -0.165ns DIN_SET requirement (totaling 15.790ns) by 14.422ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_4 to clockDivider_0/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.310    R11C69B.CLK to     R11C69B.Q0 clockDivider_0/SLICE_4 (from serial_clk_c)
+ROUTE         2     0.505     R11C69B.Q0 to     R11C69B.B0 clockDivider_0/lockCounter_1
+C0TOFCO_DE  ---     0.279     R11C69B.B0 to    R11C69B.FCO clockDivider_0/SLICE_4
+ROUTE         1     0.000    R11C69B.FCO to    R11C69C.FCI clockDivider_0/n269
+FCITOF1_DE  ---     0.274    R11C69C.FCI to     R11C69C.F1 clockDivider_0/SLICE_2
+ROUTE         1     0.000     R11C69C.F1 to    R11C69C.DI1 clockDivider_0/n41 (to serial_clk_c)
+                  --------
+                    1.368   (63.1% logic, 36.9% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69B.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69C.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 14.432ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i0  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i7  (to serial_clk_c +)
+
+   Delay:               1.358ns  (72.0% logic, 28.0% route), 6 logic levels.
+
+ Constraint Details:
+
+      1.358ns physical path delay clockDivider_0/SLICE_3 to clockDivider_0/SLICE_0 meets
+     15.625ns delay constraint less
+      0.000ns skew and
+     -0.165ns DIN_SET requirement (totaling 15.790ns) by 14.432ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_3 to clockDivider_0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.309    R11C69A.CLK to     R11C69A.Q1 clockDivider_0/SLICE_3 (from serial_clk_c)
+ROUTE         2     0.380     R11C69A.Q1 to     R11C69A.B1 clockDivider_0/lockCounter_0
+C1TOFCO_DE  ---     0.279     R11C69A.B1 to    R11C69A.FCO clockDivider_0/SLICE_3
+ROUTE         1     0.000    R11C69A.FCO to    R11C69B.FCI clockDivider_0/n268
+FCITOFCO_D  ---     0.044    R11C69B.FCI to    R11C69B.FCO clockDivider_0/SLICE_4
+ROUTE         1     0.000    R11C69B.FCO to    R11C69C.FCI clockDivider_0/n269
+FCITOFCO_D  ---     0.044    R11C69C.FCI to    R11C69C.FCO clockDivider_0/SLICE_2
+ROUTE         1     0.000    R11C69C.FCO to    R11C69D.FCI clockDivider_0/n270
+FCITOFCO_D  ---     0.044    R11C69D.FCI to    R11C69D.FCO clockDivider_0/SLICE_1
+ROUTE         1     0.000    R11C69D.FCO to    R11C70A.FCI clockDivider_0/n271
+FCITOF0_DE  ---     0.258    R11C70A.FCI to     R11C70A.F0 clockDivider_0/SLICE_0
+ROUTE         1     0.000     R11C70A.F0 to    R11C70A.DI0 clockDivider_0/n38 (to serial_clk_c)
+                  --------
+                    1.358   (72.0% logic, 28.0% route), 6 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69A.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C70A.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 14.438ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i1  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i3  (to serial_clk_c +)
+
+   Delay:               1.352ns  (62.6% logic, 37.4% route), 3 logic levels.
+
+ Constraint Details:
+
+      1.352ns physical path delay clockDivider_0/SLICE_4 to clockDivider_0/SLICE_2 meets
+     15.625ns delay constraint less
+      0.000ns skew and
+     -0.165ns DIN_SET requirement (totaling 15.790ns) by 14.438ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_4 to clockDivider_0/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.310    R11C69B.CLK to     R11C69B.Q0 clockDivider_0/SLICE_4 (from serial_clk_c)
+ROUTE         2     0.505     R11C69B.Q0 to     R11C69B.B0 clockDivider_0/lockCounter_1
+C0TOFCO_DE  ---     0.279     R11C69B.B0 to    R11C69B.FCO clockDivider_0/SLICE_4
+ROUTE         1     0.000    R11C69B.FCO to    R11C69C.FCI clockDivider_0/n269
+FCITOF0_DE  ---     0.258    R11C69C.FCI to     R11C69C.F0 clockDivider_0/SLICE_2
+ROUTE         1     0.000     R11C69C.F0 to    R11C69C.DI0 clockDivider_0/n42 (to serial_clk_c)
+                  --------
+                    1.352   (62.6% logic, 37.4% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69B.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69C.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 14.438ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i3  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i5  (to serial_clk_c +)
+
+   Delay:               1.352ns  (62.6% logic, 37.4% route), 3 logic levels.
+
+ Constraint Details:
+
+      1.352ns physical path delay clockDivider_0/SLICE_2 to clockDivider_0/SLICE_1 meets
+     15.625ns delay constraint less
+      0.000ns skew and
+     -0.165ns DIN_SET requirement (totaling 15.790ns) by 14.438ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_2 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.310    R11C69C.CLK to     R11C69C.Q0 clockDivider_0/SLICE_2 (from serial_clk_c)
+ROUTE         2     0.505     R11C69C.Q0 to     R11C69C.B0 clockDivider_0/lockCounter_3
+C0TOFCO_DE  ---     0.279     R11C69C.B0 to    R11C69C.FCO clockDivider_0/SLICE_2
+ROUTE         1     0.000    R11C69C.FCO to    R11C69D.FCI clockDivider_0/n270
+FCITOF0_DE  ---     0.258    R11C69D.FCI to     R11C69D.F0 clockDivider_0/SLICE_1
+ROUTE         1     0.000     R11C69D.F0 to    R11C69D.DI0 clockDivider_0/n40 (to serial_clk_c)
+                  --------
+                    1.352   (62.6% logic, 37.4% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69C.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69D.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 14.438ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i5  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i7  (to serial_clk_c +)
+
+   Delay:               1.352ns  (62.6% logic, 37.4% route), 3 logic levels.
+
+ Constraint Details:
+
+      1.352ns physical path delay clockDivider_0/SLICE_1 to clockDivider_0/SLICE_0 meets
+     15.625ns delay constraint less
+      0.000ns skew and
+     -0.165ns DIN_SET requirement (totaling 15.790ns) by 14.438ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_1 to clockDivider_0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.310    R11C69D.CLK to     R11C69D.Q0 clockDivider_0/SLICE_1 (from serial_clk_c)
+ROUTE         2     0.505     R11C69D.Q0 to     R11C69D.B0 clockDivider_0/lockCounter_5
+C0TOFCO_DE  ---     0.279     R11C69D.B0 to    R11C69D.FCO clockDivider_0/SLICE_1
+ROUTE         1     0.000    R11C69D.FCO to    R11C70A.FCI clockDivider_0/n271
+FCITOF0_DE  ---     0.258    R11C70A.FCI to     R11C70A.F0 clockDivider_0/SLICE_0
+ROUTE         1     0.000     R11C70A.F0 to    R11C70A.DI0 clockDivider_0/n38 (to serial_clk_c)
+                  --------
+                    1.352   (62.6% logic, 37.4% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C69D.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     1.855  PLL_TL0.CLKOP to    R11C70A.CLK serial_clk_c
+                  --------
+                    1.855   (0.0% logic, 100.0% route), 0 logic levels.
+
+Report:  560.538MHz is the maximum frequency for this preference.
+
+<A name="ptwr_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "my_pll_instance/CLKIt"   |             |             |
+32.000000 MHz ;                         |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "serial_clk_c" 64.000000  |             |             |
+MHz ;                                   |   64.000 MHz|  560.538 MHz|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="ptwr_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: serial_clk_c   Source: my_pll_instance/PLLInst_0.CLKOP   Loads: 7
+   Covered under: FREQUENCY NET "serial_clk_c" 64.000000 MHz ;
+
+Clock Domain: my_pll_instance/CLKIt   Source: my_pll_instance/PLLRefcs_0.PLLCSOUT   Loads: 1
+   No transfer within this clock domain is found
+
+
+<A name="ptwr_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 36 paths, 2 nets, and 36 connections (61.02% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Par_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2</big></U></B>
+Mon Sep 15 12:35:50 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="ptwr_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 8 -sphld m -o mySDR_fpga_impl1.twr -gui -msgset C:/lscc/lattice_projects/promote.xml mySDR_fpga_impl1.ncd mySDR_fpga_impl1.prf 
+Design file:     mysdr_fpga_impl1.ncd
+Preference file: mysdr_fpga_impl1.prf
+Device,speed:    LFE5UM5G-85F,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+<A name="ptwr_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#par_twr_pref_1_0' Target='right'>FREQUENCY NET "my_pll_instance/CLKIt" 32.000000 MHz (0 errors)</A></LI>            0 items scored, 0 timing errors detected.
+
+<LI><A href='#par_twr_pref_1_1' Target='right'>FREQUENCY NET "serial_clk_c" 64.000000 MHz (0 errors)</A></LI>            36 items scored, 0 timing errors detected.
+
+3 potential circuit loops found in timing analysis.
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="par_twr_pref_1_0"></A>Preference: FREQUENCY NET "my_pll_instance/CLKIt" 32.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+<A name="par_twr_pref_1_1"></A>Preference: FREQUENCY NET "serial_clk_c" 64.000000 MHz ;
+            36 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.241ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i6  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i6  (to serial_clk_c +)
+
+   Delay:               0.342ns  (59.1% logic, 40.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.342ns physical path delay clockDivider_0/SLICE_1 to clockDivider_0/SLICE_1 meets
+      0.101ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.101ns) by 0.241ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_1 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.138    R11C69D.CLK to     R11C69D.Q1 clockDivider_0/SLICE_1 (from serial_clk_c)
+ROUTE         2     0.140     R11C69D.Q1 to     R11C69D.A1 clockDivider_0/lockCounter_6
+CTOF_DEL    ---     0.064     R11C69D.A1 to     R11C69D.F1 clockDivider_0/SLICE_1
+ROUTE         1     0.000     R11C69D.F1 to    R11C69D.DI1 clockDivider_0/n39 (to serial_clk_c)
+                  --------
+                    0.342   (59.1% logic, 40.9% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69D.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69D.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.241ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i4  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i4  (to serial_clk_c +)
+
+   Delay:               0.342ns  (59.1% logic, 40.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.342ns physical path delay clockDivider_0/SLICE_2 to clockDivider_0/SLICE_2 meets
+      0.101ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.101ns) by 0.241ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_2 to clockDivider_0/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.138    R11C69C.CLK to     R11C69C.Q1 clockDivider_0/SLICE_2 (from serial_clk_c)
+ROUTE         2     0.140     R11C69C.Q1 to     R11C69C.A1 clockDivider_0/lockCounter_4
+CTOF_DEL    ---     0.064     R11C69C.A1 to     R11C69C.F1 clockDivider_0/SLICE_2
+ROUTE         1     0.000     R11C69C.F1 to    R11C69C.DI1 clockDivider_0/n41 (to serial_clk_c)
+                  --------
+                    0.342   (59.1% logic, 40.9% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69C.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69C.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.246ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i2  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i2  (to serial_clk_c +)
+
+   Delay:               0.347ns  (58.2% logic, 41.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.347ns physical path delay clockDivider_0/SLICE_4 to clockDivider_0/SLICE_4 meets
+      0.101ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.101ns) by 0.246ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_4 to clockDivider_0/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.138    R11C69B.CLK to     R11C69B.Q1 clockDivider_0/SLICE_4 (from serial_clk_c)
+ROUTE         2     0.145     R11C69B.Q1 to     R11C69B.B1 clockDivider_0/lockCounter_2
+CTOF_DEL    ---     0.064     R11C69B.B1 to     R11C69B.F1 clockDivider_0/SLICE_4
+ROUTE         1     0.000     R11C69B.F1 to    R11C69B.DI1 clockDivider_0/n43 (to serial_clk_c)
+                  --------
+                    0.347   (58.2% logic, 41.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69B.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69B.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.246ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i0  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i0  (to serial_clk_c +)
+
+   Delay:               0.347ns  (58.2% logic, 41.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.347ns physical path delay clockDivider_0/SLICE_3 to clockDivider_0/SLICE_3 meets
+      0.101ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.101ns) by 0.246ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_3 to clockDivider_0/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.138    R11C69A.CLK to     R11C69A.Q1 clockDivider_0/SLICE_3 (from serial_clk_c)
+ROUTE         2     0.145     R11C69A.Q1 to     R11C69A.B1 clockDivider_0/lockCounter_0
+CTOF_DEL    ---     0.064     R11C69A.B1 to     R11C69A.F1 clockDivider_0/SLICE_3
+ROUTE         1     0.000     R11C69A.F1 to    R11C69A.DI1 clockDivider_0/n45 (to serial_clk_c)
+                  --------
+                    0.347   (58.2% logic, 41.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69A.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69A.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.306ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i5  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i5  (to serial_clk_c +)
+
+   Delay:               0.407ns  (49.9% logic, 50.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.407ns physical path delay clockDivider_0/SLICE_1 to clockDivider_0/SLICE_1 meets
+      0.101ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.101ns) by 0.306ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_1 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.139    R11C69D.CLK to     R11C69D.Q0 clockDivider_0/SLICE_1 (from serial_clk_c)
+ROUTE         2     0.204     R11C69D.Q0 to     R11C69D.B0 clockDivider_0/lockCounter_5
+CTOF_DEL    ---     0.064     R11C69D.B0 to     R11C69D.F0 clockDivider_0/SLICE_1
+ROUTE         1     0.000     R11C69D.F0 to    R11C69D.DI0 clockDivider_0/n40 (to serial_clk_c)
+                  --------
+                    0.407   (49.9% logic, 50.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69D.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69D.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.306ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i1  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i1  (to serial_clk_c +)
+
+   Delay:               0.407ns  (49.9% logic, 50.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.407ns physical path delay clockDivider_0/SLICE_4 to clockDivider_0/SLICE_4 meets
+      0.101ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.101ns) by 0.306ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_4 to clockDivider_0/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.139    R11C69B.CLK to     R11C69B.Q0 clockDivider_0/SLICE_4 (from serial_clk_c)
+ROUTE         2     0.204     R11C69B.Q0 to     R11C69B.B0 clockDivider_0/lockCounter_1
+CTOF_DEL    ---     0.064     R11C69B.B0 to     R11C69B.F0 clockDivider_0/SLICE_4
+ROUTE         1     0.000     R11C69B.F0 to    R11C69B.DI0 clockDivider_0/n44 (to serial_clk_c)
+                  --------
+                    0.407   (49.9% logic, 50.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69B.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69B.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.306ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i3  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i3  (to serial_clk_c +)
+
+   Delay:               0.407ns  (49.9% logic, 50.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.407ns physical path delay clockDivider_0/SLICE_2 to clockDivider_0/SLICE_2 meets
+      0.101ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.101ns) by 0.306ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_2 to clockDivider_0/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.139    R11C69C.CLK to     R11C69C.Q0 clockDivider_0/SLICE_2 (from serial_clk_c)
+ROUTE         2     0.204     R11C69C.Q0 to     R11C69C.B0 clockDivider_0/lockCounter_3
+CTOF_DEL    ---     0.064     R11C69C.B0 to     R11C69C.F0 clockDivider_0/SLICE_2
+ROUTE         1     0.000     R11C69C.F0 to    R11C69C.DI0 clockDivider_0/n42 (to serial_clk_c)
+                  --------
+                    0.407   (49.9% logic, 50.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69C.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69C.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.308ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i7  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i7  (to serial_clk_c +)
+
+   Delay:               0.409ns  (49.6% logic, 50.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.409ns physical path delay clockDivider_0/SLICE_0 to clockDivider_0/SLICE_0 meets
+      0.101ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.101ns) by 0.308ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_0 to clockDivider_0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.139    R11C70A.CLK to     R11C70A.Q0 clockDivider_0/SLICE_0 (from serial_clk_c)
+ROUTE         2     0.206     R11C70A.Q0 to     R11C70A.B0 clockDivider_0/lockCounter_7
+CTOF_DEL    ---     0.064     R11C70A.B0 to     R11C70A.F0 clockDivider_0/SLICE_0
+ROUTE         1     0.000     R11C70A.F0 to    R11C70A.DI0 clockDivider_0/n38 (to serial_clk_c)
+                  --------
+                    0.409   (49.6% logic, 50.4% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C70A.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C70A.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.311ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i6  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i7  (to serial_clk_c +)
+
+   Delay:               0.412ns  (66.0% logic, 34.0% route), 3 logic levels.
+
+ Constraint Details:
+
+      0.412ns physical path delay clockDivider_0/SLICE_1 to clockDivider_0/SLICE_0 meets
+      0.101ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.101ns) by 0.311ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_1 to clockDivider_0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.138    R11C69D.CLK to     R11C69D.Q1 clockDivider_0/SLICE_1 (from serial_clk_c)
+ROUTE         2     0.140     R11C69D.Q1 to     R11C69D.A1 clockDivider_0/lockCounter_6
+C1TOFCO_DE  ---     0.061     R11C69D.A1 to    R11C69D.FCO clockDivider_0/SLICE_1
+ROUTE         1     0.000    R11C69D.FCO to    R11C70A.FCI clockDivider_0/n271
+FCITOF0_DE  ---     0.073    R11C70A.FCI to     R11C70A.F0 clockDivider_0/SLICE_0
+ROUTE         1     0.000     R11C70A.F0 to    R11C70A.DI0 clockDivider_0/n38 (to serial_clk_c)
+                  --------
+                    0.412   (66.0% logic, 34.0% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69D.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C70A.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.311ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              clockDivider_0/lockCounter_38__i4  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/lockCounter_38__i5  (to serial_clk_c +)
+
+   Delay:               0.412ns  (66.0% logic, 34.0% route), 3 logic levels.
+
+ Constraint Details:
+
+      0.412ns physical path delay clockDivider_0/SLICE_2 to clockDivider_0/SLICE_1 meets
+      0.101ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.101ns) by 0.311ns
+
+ Physical Path Details:
+
+      Data path clockDivider_0/SLICE_2 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.138    R11C69C.CLK to     R11C69C.Q1 clockDivider_0/SLICE_2 (from serial_clk_c)
+ROUTE         2     0.140     R11C69C.Q1 to     R11C69C.A1 clockDivider_0/lockCounter_4
+C1TOFCO_DE  ---     0.061     R11C69C.A1 to    R11C69C.FCO clockDivider_0/SLICE_2
+ROUTE         1     0.000    R11C69C.FCO to    R11C69D.FCI clockDivider_0/n270
+FCITOF0_DE  ---     0.073    R11C69D.FCI to     R11C69D.F0 clockDivider_0/SLICE_1
+ROUTE         1     0.000     R11C69D.F0 to    R11C69D.DI0 clockDivider_0/n40 (to serial_clk_c)
+                  --------
+                    0.412   (66.0% logic, 34.0% route), 3 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69C.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_pll_instance/PLLInst_0 to clockDivider_0/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         7     0.680  PLL_TL0.CLKOP to    R11C69D.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+<A name="ptwr_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "my_pll_instance/CLKIt"   |             |             |
+32.000000 MHz ;                         |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "serial_clk_c" 64.000000  |             |             |
+MHz ;                                   |     0.000 ns|     0.241 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="ptwr_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: serial_clk_c   Source: my_pll_instance/PLLInst_0.CLKOP   Loads: 7
+   Covered under: FREQUENCY NET "serial_clk_c" 64.000000 MHz ;
+
+Clock Domain: my_pll_instance/CLKIt   Source: my_pll_instance/PLLRefcs_0.PLLCSOUT   Loads: 1
+   No transfer within this clock domain is found
+
+
+<A name="ptwr_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 36 paths, 2 nets, and 36 connections (61.02% coverage)
+
+
+
+<A name="ptwr_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>
