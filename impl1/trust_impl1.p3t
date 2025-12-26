@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "trust_impl1.log"
+-o "trust_impl1.csv"
+-pr "trust_impl1.prf"

@@ -1,0 +1,8 @@
+#Start recording tcl command: 8/20/2025 23:59:21
+#Project Location: C:/lscc/lattice_projects; Project name: mySDR_fpga
+prj_project open "C:/lscc/lattice_projects/mySDR_fpga.ldf"
+prj_run Synthesis -impl impl1
+prj_run Map -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+#Stop recording: 8/21/2025 00:47:45

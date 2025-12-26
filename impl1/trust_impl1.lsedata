@@ -1,0 +1,97 @@
+<top name = "top"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 0
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "top">
+
+    <!--
+        Top Level Pins: 9
+    -->
+
+    <pins>
+        <pitem  name = "leds[7]"  direction = "out"  />
+        <pitem  name = "leds[6]"  direction = "out"  />
+        <pitem  name = "leds[5]"  direction = "out"  />
+        <pitem  name = "leds[4]"  direction = "out"  />
+        <pitem  name = "leds[3]"  direction = "out"  />
+        <pitem  name = "leds[2]"  direction = "out"  />
+        <pitem  name = "leds[1]"  direction = "out"  />
+        <pitem  name = "leds[0]"  direction = "out"  />
+        <pitem  name = "pushbutton"  direction = "in"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 2
+    -->
+
+    <instance  name = "counter/enable_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d0[7]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[7]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "counter/gnd"  />
+        <nitem  name = "counter/pwr"  />
+        <nitem  name = "pushbutton"  />
+        <nitem  name = "leds[7]"  />
+        <nitem  name = "leds[6]"  />
+        <nitem  name = "leds[5]"  />
+        <nitem  name = "leds[4]"  />
+        <nitem  name = "leds[3]"  />
+        <nitem  name = "leds[2]"  />
+        <nitem  name = "leds[1]"  />
+        <nitem  name = "leds[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "counter"  />
+    <!--
+        Views in design "top": 1
+    -->
+
+    <views>
+        <view  name = "slow_counter"  />
+    </views>
+
+</unit>
+
+</library>
+
+</top>

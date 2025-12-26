@@ -1,0 +1,151 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Mon Sep 15 12:34:29 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     top_level
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets serial_clk_c]
+            39 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 2.034ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \clockDivider_0/lockCounter_38__i0  (from serial_clk_c +)
+   Destination:    FD1S3IX    D              \clockDivider_0/lockCounter_38__i7  (to serial_clk_c +)
+
+   Delay:                   3.086ns  (23.6% logic, 76.4% route), 6 logic levels.
+
+ Constraint Details:
+
+      3.086ns data_path \clockDivider_0/lockCounter_38__i0 to \clockDivider_0/lockCounter_38__i7 meets
+      5.000ns delay constraint less
+     -0.120ns L_S requirement (totaling 5.120ns) by 2.034ns
+
+ Path Details: \clockDivider_0/lockCounter_38__i0 to \clockDivider_0/lockCounter_38__i7
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.230             CK to Q              \clockDivider_0/lockCounter_38__i0 (from serial_clk_c)
+Route         2   e 1.258                                  \clockDivider_0/lockCounter[0]
+A1_TO_FCO   ---     0.212           A[2] to COUT           \clockDivider_0/lockCounter_38_add_4_1
+Route         1   e 0.020                                  \clockDivider_0/n268
+FCI_TO_FCO  ---     0.033            CIN to COUT           \clockDivider_0/lockCounter_38_add_4_3
+Route         1   e 0.020                                  \clockDivider_0/n269
+FCI_TO_FCO  ---     0.033            CIN to COUT           \clockDivider_0/lockCounter_38_add_4_5
+Route         1   e 0.020                                  \clockDivider_0/n270
+FCI_TO_FCO  ---     0.033            CIN to COUT           \clockDivider_0/lockCounter_38_add_4_7
+Route         1   e 0.020                                  \clockDivider_0/n271
+FCI_TO_F    ---     0.187            CIN to S[2]           \clockDivider_0/lockCounter_38_add_4_9
+Route         1   e 1.020                                  \clockDivider_0/n38
+                  --------
+                    3.086  (23.6% logic, 76.4% route), 6 logic levels.
+
+
+Passed:  The following path meets requirements by 2.087ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \clockDivider_0/lockCounter_38__i0  (from serial_clk_c +)
+   Destination:    FD1S3IX    D              \clockDivider_0/lockCounter_38__i6  (to serial_clk_c +)
+
+   Delay:                   3.033ns  (22.9% logic, 77.1% route), 5 logic levels.
+
+ Constraint Details:
+
+      3.033ns data_path \clockDivider_0/lockCounter_38__i0 to \clockDivider_0/lockCounter_38__i6 meets
+      5.000ns delay constraint less
+     -0.120ns L_S requirement (totaling 5.120ns) by 2.087ns
+
+ Path Details: \clockDivider_0/lockCounter_38__i0 to \clockDivider_0/lockCounter_38__i6
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.230             CK to Q              \clockDivider_0/lockCounter_38__i0 (from serial_clk_c)
+Route         2   e 1.258                                  \clockDivider_0/lockCounter[0]
+A1_TO_FCO   ---     0.212           A[2] to COUT           \clockDivider_0/lockCounter_38_add_4_1
+Route         1   e 0.020                                  \clockDivider_0/n268
+FCI_TO_FCO  ---     0.033            CIN to COUT           \clockDivider_0/lockCounter_38_add_4_3
+Route         1   e 0.020                                  \clockDivider_0/n269
+FCI_TO_FCO  ---     0.033            CIN to COUT           \clockDivider_0/lockCounter_38_add_4_5
+Route         1   e 0.020                                  \clockDivider_0/n270
+FCI_TO_F    ---     0.187            CIN to S[2]           \clockDivider_0/lockCounter_38_add_4_7
+Route         1   e 1.020                                  \clockDivider_0/n39
+                  --------
+                    3.033  (22.9% logic, 77.1% route), 5 logic levels.
+
+
+Passed:  The following path meets requirements by 2.087ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \clockDivider_0/lockCounter_38__i0  (from serial_clk_c +)
+   Destination:    FD1S3IX    D              \clockDivider_0/lockCounter_38__i5  (to serial_clk_c +)
+
+   Delay:                   3.033ns  (22.9% logic, 77.1% route), 5 logic levels.
+
+ Constraint Details:
+
+      3.033ns data_path \clockDivider_0/lockCounter_38__i0 to \clockDivider_0/lockCounter_38__i5 meets
+      5.000ns delay constraint less
+     -0.120ns L_S requirement (totaling 5.120ns) by 2.087ns
+
+ Path Details: \clockDivider_0/lockCounter_38__i0 to \clockDivider_0/lockCounter_38__i5
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.230             CK to Q              \clockDivider_0/lockCounter_38__i0 (from serial_clk_c)
+Route         2   e 1.258                                  \clockDivider_0/lockCounter[0]
+A1_TO_FCO   ---     0.212           A[2] to COUT           \clockDivider_0/lockCounter_38_add_4_1
+Route         1   e 0.020                                  \clockDivider_0/n268
+FCI_TO_FCO  ---     0.033            CIN to COUT           \clockDivider_0/lockCounter_38_add_4_3
+Route         1   e 0.020                                  \clockDivider_0/n269
+FCI_TO_FCO  ---     0.033            CIN to COUT           \clockDivider_0/lockCounter_38_add_4_5
+Route         1   e 0.020                                  \clockDivider_0/n270
+FCI_TO_F    ---     0.187            CIN to S[2]           \clockDivider_0/lockCounter_38_add_4_7
+Route         1   e 1.020                                  \clockDivider_0/n40
+                  --------
+                    3.033  (22.9% logic, 77.1% route), 5 logic levels.
+
+Report: 2.966 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets serial_clk_c]            |     5.000 ns|     2.966 ns|     6  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  39 paths, 21 nets, and 20 connections (31.3% coverage)
+
+
+Peak memory: 129241088 bytes, TRCE: 53248 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

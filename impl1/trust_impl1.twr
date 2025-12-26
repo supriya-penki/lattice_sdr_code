@@ -1,0 +1,169 @@
+
+Loading design for application trce from file trust_impl1.ncd.
+Design name: top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LFE5UM5G-85F
+Package:     CABGA381
+Performance: 8
+Loading device for application trce from file 'sa5p85m.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.43.
+Performance Hardware Data Status:   Final          Version 55.1.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
+Wed Aug 06 23:32:55 2025
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 8 -sphld m -o trust_impl1.twr -gui -msgset C:/lscc/lattice_projects/promote.xml trust_impl1.ncd trust_impl1.prf 
+Design file:     trust_impl1.ncd
+Preference file: trust_impl1.prf
+Device,speed:    LFE5UM5G-85F,8
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: Default path enumeration
+            8 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:   10.681ns delay pushbutton to leds[7]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893         P4.PAD to       P4.PADDI pushbutton
+ROUTE         8     8.026       P4.PADDI to      B17.PADDO leds_c_c
+DOPAD_DEL   ---     1.762      B17.PADDO to        B17.PAD leds[7]
+                  --------
+                   10.681   (24.9% logic, 75.1% route), 2 logic levels.
+
+Report:   10.526ns delay pushbutton to leds[5]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893         P4.PAD to       P4.PADDI pushbutton
+ROUTE         8     7.871       P4.PADDI to      C17.PADDO leds_c_c
+DOPAD_DEL   ---     1.762      C17.PADDO to        C17.PAD leds[5]
+                  --------
+                   10.526   (25.2% logic, 74.8% route), 2 logic levels.
+
+Report:   10.526ns delay pushbutton to leds[6]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893         P4.PAD to       P4.PADDI pushbutton
+ROUTE         8     7.871       P4.PADDI to      A17.PADDO leds_c_c
+DOPAD_DEL   ---     1.762      A17.PADDO to        A17.PAD leds[6]
+                  --------
+                   10.526   (25.2% logic, 74.8% route), 2 logic levels.
+
+Report:   10.350ns delay pushbutton to leds[4]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893         P4.PAD to       P4.PADDI pushbutton
+ROUTE         8     7.695       P4.PADDI to      B18.PADDO leds_c_c
+DOPAD_DEL   ---     1.762      B18.PADDO to        B18.PAD leds[4]
+                  --------
+                   10.350   (25.7% logic, 74.3% route), 2 logic levels.
+
+Report:   10.339ns delay pushbutton to leds[2]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893         P4.PAD to       P4.PADDI pushbutton
+ROUTE         8     7.684       P4.PADDI to      B19.PADDO leds_c_c
+DOPAD_DEL   ---     1.762      B19.PADDO to        B19.PAD leds[2]
+                  --------
+                   10.339   (25.7% logic, 74.3% route), 2 logic levels.
+
+Report:   10.339ns delay pushbutton to leds[3]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893         P4.PAD to       P4.PADDI pushbutton
+ROUTE         8     7.684       P4.PADDI to      A18.PADDO leds_c_c
+DOPAD_DEL   ---     1.762      A18.PADDO to        A18.PAD leds[3]
+                  --------
+                   10.339   (25.7% logic, 74.3% route), 2 logic levels.
+
+Report:    9.225ns delay pushbutton to leds[1]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893         P4.PAD to       P4.PADDI pushbutton
+ROUTE         8     6.570       P4.PADDI to      A12.PADDO leds_c_c
+DOPAD_DEL   ---     1.762      A12.PADDO to        A12.PAD leds[1]
+                  --------
+                    9.225   (28.8% logic, 71.2% route), 2 logic levels.
+
+Report:    9.070ns delay pushbutton to leds[0]
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893         P4.PAD to       P4.PADDI pushbutton
+ROUTE         8     6.415       P4.PADDI to      A13.PADDO leds_c_c
+DOPAD_DEL   ---     1.762      A13.PADDO to        A13.PAD leds[0]
+                  --------
+                    9.070   (29.3% logic, 70.7% route), 2 logic levels.
+
+Report:   10.681ns is the maximum delay for this preference.
+
+
+================================================================================
+Preference: Default net enumeration
+            1 item scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Report:    8.026ns maximum delay on leds_c_c
+
+           Delays             Connection(s)
+           8.026ns         P4.PADDI to B17.PADDO       
+           7.871ns         P4.PADDI to A17.PADDO       
+           7.871ns         P4.PADDI to C17.PADDO       
+           7.695ns         P4.PADDI to B18.PADDO       
+           7.684ns         P4.PADDI to A18.PADDO       
+           7.684ns         P4.PADDI to B19.PADDO       
+           6.570ns         P4.PADDI to A12.PADDO       
+           6.415ns         P4.PADDI to A13.PADDO       
+
+Report:    8.026ns is the maximum delay for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+Default path enumeration                |     0.000 ns|    10.681 ns|   0  
+                                        |             |             |
+Default net enumeration                 |     0.000 ns|     8.026 ns|   0  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 0 clocks:
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 8 paths, 1 nets, and 8 connections (100.00% coverage)
+
+--------------------------------------------------------------------------------
+

@@ -1,0 +1,28 @@
+---------------------------------------------------
+Report for cell top_level
+   Instance path: top_level
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      10.00        100.0
+                                  LUT4	       9.00        100.0
+                                 IOBUF	          4        100.0
+                                PFUREG	          8        100.0
+                                RIPPLE	          5        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               pll_64M	          1         0.0
+                          clockDivider	          1        90.0
+---------------------------------------------------
+Report for cell pll_64M
+   Instance path: top_level/my_pll_instance
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+---------------------------------------------------
+Report for cell clockDivider
+   Instance path: top_level/clockDivider_0
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.00        90.0
+                                  LUT4	       8.00        88.9
+                                PFUREG	          8        100.0
+                                RIPPLE	          5        100.0

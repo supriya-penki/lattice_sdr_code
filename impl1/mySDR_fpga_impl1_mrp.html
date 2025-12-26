@@ -1,0 +1,372 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+          Lattice Mapping Report File for Design Module 'top_level'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a ECP5UM5G -p LFE5UM5G-85F -t CABGA381 -s 8 -oc Industrial
+     mySDR_fpga_impl1.ngd -o mySDR_fpga_impl1_map.ncd -pr mySDR_fpga_impl1.prf
+     -mp mySDR_fpga_impl1.mrp -lpf
+     C:/lscc/lattice_projects/impl1/mySDR_fpga_impl1.lpf -lpf
+     C:/lscc/lattice_projects/mySDR_fpga.lpf -gui -msgset
+     C:/lscc/lattice_projects/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LFE5UM5G-85FCABGA381
+Target Performance:   8
+Mapper:  sa5p00g,  version:  Diamond (64-bit) 3.14.0.75.2
+Mapped on:  09/15/25  12:35:34
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:      8 out of 84255 (0%)
+      PFU registers:            8 out of 83640 (0%)
+      PIO registers:            0 out of   615 (0%)
+   Number of SLICEs:        10 out of 41820 (0%)
+      SLICEs as Logic/ROM:     10 out of 41820 (0%)
+      SLICEs as RAM:            0 out of 31365 (0%)
+      SLICEs as Carry:          5 out of 41820 (0%)
+   Number of LUT4s:         19 out of 83640 (0%)
+      Number used as logic LUTs:          9
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       10
+      Number used as shift registers:     0
+   Number of PIO sites used: 6 out of 205 (3%)
+      Number of PIO sites used for single ended IOs: 2
+      Number of PIO sites used for differential IOs: 4 (represented by 2 PIO
+     comps in NCD)
+   Number of block RAMs:  0 out of 208 (0%)
+   Number of GSRs:  0 out of 1 (0%)
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   DTR used :   No
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 4 (0%)
+   Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 4 (0%)
+   Number of DCC:  0 out of 60 (0%)
+   Number of DCS:  0 out of 2 (0%)
+   Number of PLLs:  1 out of 4 (25%)
+   Number of DDRDLLs:  0 out of 4 (0%)
+   Number of CLKDIV:  0 out of 4 (0%)
+   Number of ECLKSYNC:  0 out of 10 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Number of DCUs:  0 out of 2 (0%)
+   Number of DCU Channels:  0 out of 4 (0%)
+   Number of EXTREFs:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+
+
+        Number Of Mapped DSP Components:
+   --------------------------------
+   MULT18X18D          0
+   MULT9X9D            0
+   ALU54B              0
+   ALU24B              0
+   PRADD18A            0
+   PRADD9A             0
+   --------------------------------
+   Number of Used DSP MULT Sites:  0 out of 312 (0 %)
+   Number of Used DSP ALU Sites:  0 out of 156 (0 %)
+   Number of Used DSP PRADD Sites:  0 out of 312 (0 %)
+   Number of clocks:  3
+     Net clk_c: 1 loads, 1 rising, 0 falling (Driver: PIO clk )
+     Net my_pll_instance/CLKIt: 1 loads, 1 rising, 0 falling (Driver:
+     my_pll_instance/PLLRefcs_0 )
+     Net serial_clk_c: 6 loads, 6 rising, 0 falling (Driver:
+     my_pll_instance/PLLInst_0 )
+   Number of Clock Enables:  0
+   Number of LSRs:  1
+     Net pll_lock: 5 loads, 5 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net pll_lock: 8 loads
+     Net clockDivider_0/lockCounter_1: 2 loads
+     Net clockDivider_0/lockCounter_3: 2 loads
+     Net clockDivider_0/lockCounter_4: 2 loads
+     Net clockDivider_0/lockCounter_5: 2 loads
+     Net clockDivider_0/lockCounter_6: 2 loads
+     Net clockDivider_0/lockCounter_7: 2 loads
+     Net clockDivider_0/n345: 2 loads
+     Net clockDivider_0/n370: 2 loads
+     Net clockDivider_0/n376: 2 loads
+
+
+
+
+   Number of warnings:  15
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(4): Semantic error in
+     "IOBUF PORT "mixed_output[0]" IO_TYPE=LVDS ;": Port "mixed_output[0]" does
+     not exist in the design. This preference has been disabled.
+WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(5): Semantic error in
+     "IOBUF PORT "mixed_output[1]" IO_TYPE=LVDS ;": Port "mixed_output[1]" does
+     not exist in the design. This preference has been disabled.
+WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(6): Semantic error in
+     "IOBUF PORT "mixed_output[2]" IO_TYPE=LVDS ;": Port "mixed_output[2]" does
+     not exist in the design. This preference has been disabled.
+WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(7): Semantic error in
+     "IOBUF PORT "mixed_output[3]" IO_TYPE=LVDS ;": Port "mixed_output[3]" does
+
+     not exist in the design. This preference has been disabled.
+WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(8): Semantic error in
+     "IOBUF PORT "mixed_output[4]" IO_TYPE=LVDS ;": Port "mixed_output[4]" does
+     not exist in the design. This preference has been disabled.
+WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(9): Semantic error in
+     "IOBUF PORT "mixed_output[5]" IO_TYPE=LVDS ;": Port "mixed_output[5]" does
+     not exist in the design. This preference has been disabled.
+WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(10): Semantic error in
+     "IOBUF PORT "mixed_output[6]" IO_TYPE=LVDS ;": Port "mixed_output[6]" does
+     not exist in the design. This preference has been disabled.
+WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(11): Semantic error in
+     "IOBUF PORT "mixed_output[7]" IO_TYPE=LVDS ;": Port "mixed_output[7]" does
+     not exist in the design. This preference has been disabled.
+WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(12): Semantic error in
+     "IOBUF PORT "mixed_output[8]" IO_TYPE=LVDS ;": Port "mixed_output[8]" does
+     not exist in the design. This preference has been disabled.
+WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(13): Semantic error in
+     "IOBUF PORT "mixed_output[9]" IO_TYPE=LVDS ;": Port "mixed_output[9]" does
+     not exist in the design. This preference has been disabled.
+WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(14): Semantic error in
+     "IOBUF PORT "mixed_output[10]" IO_TYPE=LVDS ;": Port "mixed_output[10]"
+     does not exist in the design. This preference has been disabled.
+WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(15): Semantic error in
+     "IOBUF PORT "mixed_output[11]" IO_TYPE=LVDS ;": Port "mixed_output[11]"
+     does not exist in the design. This preference has been disabled.
+WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(16): Semantic error in
+     "IOBUF PORT "mixed_output[12]" IO_TYPE=LVDS ;": Port "mixed_output[12]"
+     does not exist in the design. This preference has been disabled.
+WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(21): Semantic error in
+     "LOCATE COMP "rst" SITE "G1" ;": COMP "rst" cannot be found in design. This
+     preference has been disabled.
+WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(22): Semantic error in
+     "IOBUF PORT "rst" IO_TYPE=LVCMOS25 ;": Port "rst" does not exist in the
+     design. This preference has been disabled.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| serial_iq           | OUTPUT    | LVDS      |            |
++---------------------+-----------+-----------+------------+
+| LED                 | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| serial_clk          | OUTPUT    | LVDS      |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Block GSR_INST undriven or does not drive anything - clipped.
+Signal clockDivider_0/n346 was merged into signal pll_lock
+
+Signal VCC_net undriven or does not drive anything - clipped.
+Signal clockDivider_0/lockCounter_38_add_4_1/S0 undriven or does not drive
+     anything - clipped.
+Signal clockDivider_0/lockCounter_38_add_4_1/CI undriven or does not drive
+     anything - clipped.
+Signal clockDivider_0/lockCounter_38_add_4_9/S1 undriven or does not drive
+     anything - clipped.
+Signal clockDivider_0/lockCounter_38_add_4_9/CO undriven or does not drive
+     anything - clipped.
+Block clockDivider_0/pll_lock_I_0_1_lut_rep_2 was optimized away.
+Block i2 was optimized away.
+
+     
+
+
+
+<A name="mrp_pll"></A><B><U><big>PLL/DLL Summary</big></U></B>
+---------------
+
+PLL 1:                                     Pin/Node Value
+  PLL Instance Name:                                my_pll_instance/PLLInst_0
+  PLL Type:                                         EHXPLLL
+  Input Clock:                             NODE     GND_net
+  Input Clock2:                            PIN      clk_c
+  Input Clock select:                               NONE
+  Output Clock(P):                         PIN,NODE serial_clk_c
+  Feedback Signal:                         NODE     serial_clk_c
+  Reset Signal:                                     NONE
+  Standby Signal:                          NODE     GND_net
+  PLL LOCK signal:                         NODE     pll_lock
+  Input Clock Frequency (MHz):                      32.0000
+  Output Clock(P) Frequency (MHz):                  64.0000
+  CLKOP Post Divider A Input:                       DIVA
+  CLKOS Post Divider B Input:                       DIVB
+  CLKOS2 Post Divider C Input:                      DIVC
+  CLKOS3 Post Divider D Input:                      DIVD
+  Pre Divider A Input:                              NONE
+  Pre Divider B Input:                              NONE
+  Pre Divider C Input:                              NONE
+  Pre Divider D Input:                              NONE
+  FB_MODE:                                          CLKOP
+  CLKI Divider:                                     1
+  CLKFB Divider:                                    2
+  CLKOP Divider:                                    9
+  CLKOS Divider:                                    1
+  CLKOS2 Divider:                                   1
+  CLKOS3 Divider:                                   1
+  Fractional N Divider:                             NONE
+  CLKOP Desired Phase Shift(degree):                0
+  CLKOP Trim Option Rising/Falling:                 FALLING
+  CLKOP Trim Option Delay:                          0
+  CLKOS Desired Phase Shift(degree):                0
+  CLKOS Trim Option Rising/Falling:                 FALLING
+  CLKOS Trim Option Delay:                          0
+  CLKOS2 Desired Phase Shift(degree):               0
+  CLKOS2 Trim Option Rising/Falling:                NONE
+  CLKOS2 Trim Option Delay:                         NONE
+  CLKOS3 Desired Phase Shift(degree):               0
+
+  CLKOS3 Trim Option Rising/Falling:                NONE
+  CLKOS3 Trim Option Delay:                         NONE
+
+
+
+<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
+---------------
+
+Instance Name: my_pll_instance/PLLRefcs_0
+         Type: PLLREFCS
+Instance Name: my_pll_instance/PLLInst_0
+         Type: EHXPLLL
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 245 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

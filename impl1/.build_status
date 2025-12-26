@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="2" update_time="1757932549"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1757932565"/>
+            <Task name="Promgen" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Milestone name="Map" build_result="2" build_time="1757932536">
+            <Task name="Map" build_result="2" update_result="0" update_time="1757932536"/>
+            <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1757932536"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="2" build_time="1757932549">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1757932549"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1757932550"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1757932553"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1757932469">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1757932469"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1757932469"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1757932466"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1757932466"/>
+            <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
+            <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
+            <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/mySDR_fpga_impl1_map.vdb" last_build_time="1757932536" last_build_size="39962"/>
+        <Report name=".vdbs/top_impl1_map.vdb" last_build_time="1754497601" last_build_size="35954"/>
+        <Report name=".vdbs/trust_impl1_map.vdb" last_build_time="1754503366" last_build_size="35954"/>
+        <Report name="IBIS/mySDR_fpga_impl1.ibs" last_build_time="1755190647" last_build_size="116896"/>
+        <Report name="mySDR_fpga_impl1.bgn" last_build_time="1757932565" last_build_size="4574"/>
+        <Report name="mySDR_fpga_impl1.bit" last_build_time="1757932565" last_build_size="1928039"/>
+        <Report name="mySDR_fpga_impl1.ior" last_build_time="1757932553" last_build_size="1567"/>
+        <Report name="mySDR_fpga_impl1.lsedata" last_build_time="1757932468" last_build_size="849608"/>
+        <Report name="mySDR_fpga_impl1.ncd" last_build_time="1757932549" last_build_size="22810"/>
+        <Report name="mySDR_fpga_impl1.ngd" last_build_time="1757932469" last_build_size="21476"/>
+        <Report name="mySDR_fpga_impl1.twr" last_build_time="1757932550" last_build_size="50621"/>
+        <Report name="mySDR_fpga_impl1_map.ncd" last_build_time="1757932535" last_build_size="17299"/>
+        <Report name="mySDR_fpga_impl1_mapvho.sdf" last_build_time="1757517266" last_build_size="19797"/>
+        <Report name="mySDR_fpga_impl1_mapvho.vho" last_build_time="1757517266" last_build_size="23151"/>
+        <Report name="top_impl1.bgn" last_build_time="1754497620" last_build_size="4469"/>
+        <Report name="top_impl1.bit" last_build_time="1754497620" last_build_size="1928029"/>
+        <Report name="top_impl1.ior" last_build_time="1754497614" last_build_size="1386"/>
+        <Report name="top_impl1.lsedata" last_build_time="1754497592" last_build_size="3255"/>
+        <Report name="top_impl1.ncd" last_build_time="1754497610" last_build_size="6328"/>
+        <Report name="top_impl1.ngd" last_build_time="1754497593" last_build_size="5761"/>
+        <Report name="top_impl1.twr" last_build_time="1754497611" last_build_size="7190"/>
+        <Report name="top_impl1_map.ncd" last_build_time="1754497600" last_build_size="5582"/>
+        <Report name="trust_impl1.bgn" last_build_time="1754503382" last_build_size="4533"/>
+        <Report name="trust_impl1.bit" last_build_time="1754503382" last_build_size="1928035"/>
+        <Report name="trust_impl1.ior" last_build_time="1754503377" last_build_size="1447"/>
+        <Report name="trust_impl1.lsedata" last_build_time="1754501842" last_build_size="3255"/>
+        <Report name="trust_impl1.ncd" last_build_time="1754503373" last_build_size="7062"/>
+        <Report name="trust_impl1.ngd" last_build_time="1754501842" last_build_size="5766"/>
+        <Report name="trust_impl1.twr" last_build_time="1754503375" last_build_size="7254"/>
+        <Report name="trust_impl1_map.ncd" last_build_time="1754503365" last_build_size="5637"/>
+    </Strategy>
+</BuildStatus>
