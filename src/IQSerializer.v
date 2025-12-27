@@ -29,7 +29,8 @@ reg     DEDFF_D1;
 wire    DEDFF_Q;
 wire    DEDFF_rst;
 //assign serial       = DEDFF_Q;
-assign serial_N     = ~DEDFF_Q;
+//assign serial_N     = ~DEDFF_Q;
+assign seial_N = clk;
 assign DEDFF_rst    = start;
 
 /*

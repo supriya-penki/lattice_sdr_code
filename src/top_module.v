@@ -3,9 +3,9 @@
 `include "defines.v"
 
 
-module top_level(
+module top_module(
   input clk,
-  //input rst, // i can map this pin to a certain i/o pin in the spreadsheet view and connect the pin on the board
+  input rxclk, // i can map this pin to a certain i/o pin in the spreadsheet view and connect the pin on the board
   //input start,
   
   //spi
@@ -18,6 +18,14 @@ module top_level(
   //output		osc_en,
   output		serial_clk, /* synthesis IO_TYPES="LVDS*/
   output  reg   LED,
+  output  reg   LED1,
+  output  reg   LED2,
+  output  reg   LED3,
+  output  reg   LED4,
+  output  reg   LED5,
+  output  reg   LED6,
+  output  reg   LED7,
+  
   output  serial_iq /* synthesis IO_TYPES="LVDS*/
   );
   
@@ -48,16 +56,38 @@ module top_level(
 //--------------------------------------------------------------------
 
  /* using this clock to drive the output */
- pll_64M my_pll_instance(
+ /*pll_64M my_pll_instance(
 	.SEL	(1'b1),
 	.CLKI	(1'b0), 
 	.CLKI2	(pll_clki),
 	.RST	(~top_rst_n),
 	.CLKOP	(pll_clko),
 	.LOCK	(pll_lock)
-);
+);*/
+
+assign pll_clko = clk;
 
 
+reg [25:0] cnt;
+always@(posedge rxclk)begin
+	cnt <= cnt +1'b1;
+	LED7 <= cnt[25];
+end
+
+
+
+
+
+always@(*) begin
+	LED <= 1'b1;
+ LED1 <= 1'b1;
+ LED2 <= 1'b1;
+ LED3 <=1'b1;
+ LED4 <=1'b1;
+ LED5 <=1'b1;
+ LED6 <=1'b1; 
+ //LED7 <=1'b1;
+end
 
 
   /*	SPI	and SPI CTRL	*/
@@ -89,13 +119,13 @@ module top_level(
 
 
    //LED
-	always @(*) begin
+/*	always @(*) begin
 		if (clkDivider_lock == 1'b0) begin
 			LED = 1'b0;
 		end else begin
 			LED = 1'b1;
 		end
-	end
+	end*/
 
 
 	
@@ -139,16 +169,17 @@ module top_level(
       );
 	  
 	  
-	 clockDivider clockDivider_0(
-	.clk      (pll_clko),
-	.pll_lock (pll_lock),
+	clockDivider clockDivider_0(
+	.clk      (rxclk),
+	.pll_lock (1'b1),
 	.clkOut   (clkDivider_clko),
 	.clkLock  (clkDivider_lock) 
    );
-	  
+   
+
 	  //// tiny sdr ////
-	  IQSerializer IQSerializer_0(
-	.clk(pll_clko),
+	 IQSerializer IQSerializer_0(
+	.clk(rxclk),
 	.start(IQSerializer_start),
 	.I(IQSerializer_I),
 	.Q(IQSerializer_Q),
