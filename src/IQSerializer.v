@@ -1,11 +1,12 @@
-`include "defines.v"
+`include "radioDefines.v"
 
 module IQSerializer(
 input                   clk,
 input                   start,
-input   [`IQ_length-1:0]  I,
-input   [`IQ_length-1:0]  Q,
+input   [`ILength-1:0]  I,
+input   [`QLength-1:0]  Q,
 output                  serial_N,
+output                  serial,
 output                  serial_clk
 );
 
@@ -28,9 +29,8 @@ reg     DEDFF_D0;
 reg     DEDFF_D1;
 wire    DEDFF_Q;
 wire    DEDFF_rst;
-//assign serial       = DEDFF_Q;
-//assign serial_N     = ~DEDFF_Q;
-assign seial_N = clk;
+assign serial       = DEDFF_Q;
+assign serial_N     = ~DEDFF_Q;
 assign DEDFF_rst    = start;
 
 /*
@@ -51,16 +51,16 @@ always @(*) begin
             DEDFF_D1 = VSS;
         end
         IDATA: begin
-            DEDFF_D0 = I[`IQ_length-ICounter-1];
-            DEDFF_D1 = I[`IQ_length-ICounter-2];
+            DEDFF_D0 = I[`ILength-ICounter-1];
+            DEDFF_D1 = I[`ILength-ICounter-2];
         end
         QSYNC: begin
             DEDFF_D0 = VSS;
             DEDFF_D1 = VCC;
         end
         QDATA: begin
-            DEDFF_D0 = Q[`IQ_length-QCounter-1];
-            DEDFF_D1 = Q[`IQ_length-QCounter-2];
+            DEDFF_D0 = Q[`QLength-QCounter-1];
+            DEDFF_D1 = Q[`QLength-QCounter-2];
         end
         default: begin
             DEDFF_D0 = VSS;
@@ -155,4 +155,3 @@ DEDFF DEDFF_0(
 );
 
 endmodule
-

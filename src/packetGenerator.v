@@ -91,7 +91,7 @@ always @(*) begin
 			end
 			state_done: begin
 				start		= VSS;
-				next_state	= state_done;
+				next_state	= state_init;
 				next_symVal	= next_symVal;
 			end
 			default: begin
