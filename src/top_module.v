@@ -7,7 +7,7 @@
 module top_module (
 input		top_clk,
 input       rxd09,
-//input		top_rst_n,
+input		top_rst_n,
 
 output			serial_iq, /* synthesis IO_TYPES="LVDS*/
 output			serial_clk, /* synthesis IO_TYPES="LVDS*/
@@ -25,45 +25,48 @@ output			serial_clk, /* synthesis IO_TYPES="LVDS*/
 //input			sim_lock
 );
 
-/*reg [25:0] cnt1;
-always@(posedge top_clk)begin
-	cnt1 <= cnt1 +1'b1;
-	LED4 <= cnt1[25];
+/*reg [19:0] cnt2;
+always@(posedge serial_iq)begin
+	cnt2 <= cnt2 +1'b1;
+	LED7 <= cnt2[19];
 end*/
 
-/*reg [25:0] cnt;
+/*reg [19:0] cnt1;
 always@(posedge serial_iq)begin
-	cnt <= cnt +1'b1;
-	LED <= cnt[25];
+	cnt1 <= cnt1 +1'b1;
+	LED <= cnt1[21];
 end */
 
+/*reg serial_iq_d;
+reg [25:0] cnt;
+
+always @(posedge top_clk) begin
+  serial_iq_d <= serial_iq;
+  if (serial_iq_d ^ serial_iq)   // edge detect
+    cnt <= cnt + 1'b1;
+
+  LED <= cnt[25];
+end*/
 
 
-reg [21:0] cnt2;
-always@(posedge clkDivider_clko)begin
-	cnt2 <= cnt2 +1'b1;
-	LED <= cnt2[21];
-end
 
 
-/*always@(*)begin
-	LED1 <= IQSerializer_start;
-	end*/
+
+always@(*)begin
+	LED <= clkDivider_lock;
+	end 
 
 
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
 parameter [0:0] VSS = 1'b0;
-//parameter [0:0] VCC = 1'b1;
+parameter [0:0] VCC = 1'b1;
 
-//wire			top_clk_buff;
-wire			pll_clki;
-wire			pll_clko;
-wire			pll_lock;
 
 wire			clkDivider_lock;
 wire			clkDivider_clko;
+wire 			counter_0_countDone;
 
 wire				fskModule_symVal;
 wire [`SinSize-1:0]	fskModule_I;
@@ -83,8 +86,11 @@ wire 				IQSerializer_start;
 assign	osc_en = 1'b1;
 assign 	pll_clki = top_clk;
 
-//assign IQSerializer_I = {fskModule_I, 1'b0};
-//assign IQSerializer_Q = {fskModule_Q, 1'b0};
+assign IQSerializer_I = {fskModule_I, 1'b0};
+assign IQSerializer_Q = {fskModule_Q, 1'b0};
+
+
+
 
 
 //--------------------------------------------------------------------
@@ -100,49 +106,42 @@ assign 	pll_clki = top_clk;
 end*/
 
 always@(*) begin
+	 //LED <= 1'b1;
 	 LED1<= 1'b1;
 	 LED2 <= 1'b1;
 	 LED3 <=1'b1;
 	 LED4 <=1'b1;
 	 LED5 <=1'b1;
 	 LED6 <=1'b1; 
-     LED7 <=1'b1;
+     //LED7 <=1'b1;
 end
 
 
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
-/*pll_64M my_pll_instance(
-	.SEL	(1'b1),
-	.CLKI	(1'b0), 
-	.CLKI2	(pll_clki),
-	.RST	(~top_rst_n),
-	.CLKOP	(pll_clko),
-	.LOCK	(pll_lock)
-);*/
 
 clockDivider clockDivider_0(
 	.clk      (top_clk),
-	.pll_lock (1'b1),
+	.pll_lock (top_rst_n),
 	.clkOut   (clkDivider_clko),
-	.clkLock  (clkDivider_lock) 
+	.clkLock  (clkDivider_lock) //works
 );
 
 /* ######################################################
 Use these two for fix pre-loaded packet.
 ###################################################### */
-packetCounter counter_0(
+packetCounter counter_0( // issues with packet counter... because it keeps asserting every 51 cycles??!!! TODO:// supriya
 	.clk       (clkDivider_clko),
 	.clkLock   (clkDivider_lock),
-	.countDone (counter_0_countDone) 
+	.countDone (counter_0_countDone)  //not working
 );
 
 packetGenerator packetGen_0(
 	.rst_n(counter_0_countDone),
 	.clk(clkDivider_clko),
 	.symDone(fskModule_symDone),
-	.start(fskModule_start),
+	.start(fskModule_start), //works
 	.symVal(fskModule_symVal)
 );
 
@@ -159,17 +158,16 @@ FSKModulator fskModule_0(
 	.start(IQSerializer_start)
 );
 
-assign IQSerializer_I = 14'b00000000000000;
-assign IQSerializer_Q = 14'b11111111111111;
-
+//wire [15:0] const_I = 16'hFFFF; 
+//wire [15:0] const_Q = 16'h0000;
 
 IQSerializer IQSerializer_0(
 	.clk(top_clk),
-	.start(IQSerializer_start),
-	.I(IQSerializer_I),
-	.Q(IQSerializer_Q),
-	.serial_N(serial_iq),
-	.serial(),
+	.start(IQSerializer_start), //works
+	.I(const_I),
+	.Q(const_Q),
+	.serial_N(),
+	.serial(serial_iq),
 	.serial_clk(serial_clk)
 );
 

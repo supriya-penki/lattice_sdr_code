@@ -19,9 +19,10 @@ always @(posedge clk) begin
         waitcount       <= (waitcount < `maxWait) ? waitcount + `WAIT_SIZE'd1 : `WAIT_SIZE'd0;
         if (waitcount > `WAIT_SIZE'd50) begin
             countDone   <= 1'b1;
-        end else begin
+        end 
+		/*else begin
             countDone   <= 1'b0;
-        end
+        end*/
     end
 end
 endmodule
