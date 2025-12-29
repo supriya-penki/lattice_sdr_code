@@ -17,7 +17,7 @@ wire Q2;
 assign Q1   = neg_edge ^ D0;
 assign Q2   = pose_edge ^ D1;
 assign Q    = neg_edge ^ pose_edge;
-
+//
 //Pose Edge
 always @(posedge clk) begin
     if (rst == VSS) pose_edge   <= VSS;

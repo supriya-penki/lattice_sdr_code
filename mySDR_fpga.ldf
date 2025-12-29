@@ -2,26 +2,11 @@
 <BaliProject version="3.2" title="mySDR_fpga" device="LFE5UM5G-85F-8BG381I" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="top_level"/>
+        <Options top="top_module"/>
         <Source name="src/top_module.v" type="Verilog" type_short="Verilog">
-            <Options top_module="top_level"/>
-        </Source>
-        <Source name="src/data_generator.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="src/local_oscillator.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="src/modulator.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="src/serial_2_parallel.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="pll_64M/pll_64M.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="defines.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="src/IQSerializer.v" type="Verilog" type_short="Verilog">
@@ -31,6 +16,24 @@
             <Options/>
         </Source>
         <Source name="src/clockDivider.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/packetGenerator.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/packetCounter.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/FSKModulator.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/ble_packet.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/cosModule.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/sinModule.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">

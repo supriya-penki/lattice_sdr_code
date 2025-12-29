@@ -1,0 +1,68 @@
+#Start recording tcl command: 12/27/2025 00:10:28
+#Project Location: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code; Project name: mySDR_fpga
+prj_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.ldf"
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1 -forceAll
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v" "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v"
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Synthesis -impl impl1 -forceAll
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+pgr_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/impl1/impl1.xcf"
+prj_run Synthesis -impl impl1
+prj_run Map -impl impl1
+pgr_project close
+pgr_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/impl1/impl1.xcf"
+pgr_project save "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/impl1/impl1.xcf"
+pgr_project close
+prj_src remove "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/defines.v"
+prj_src remove "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/data_generator.v"
+prj_src remove "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/modulator.v"
+prj_src remove "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/serial_2_parallel.v"
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Synthesis -impl impl1
+prj_project save
+prj_project close
+#Stop recording: 12/27/2025 05:39:10

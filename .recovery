@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="mySDR_fpga" device="LFE5UM5G-85F-8BG381I" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options top="top_module"/>
+        <Source name="src/top_module.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/local_oscillator.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/IQSerializer.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/DEDFF.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/clockDivider.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/packetGenerator.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/packetCounter.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/FSKModulator.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/ble_packet.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/cosModule.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/sinModule.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="mySDR_fpga.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sdr/sdr.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+        <Source name="src/sample.txt" type="Unknown Type" type_short="Unknown">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="mySDR_fpga1.sty"/>
+</BaliProject>

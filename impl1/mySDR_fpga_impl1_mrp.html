@@ -7,7 +7,7 @@
 </STYLE>
 </HEAD>
 <PRE><A name="Mrp"></A>
-          Lattice Mapping Report File for Design Module 'top_level'
+          Lattice Mapping Report File for Design Module 'top_module'
 
 
 
@@ -15,36 +15,36 @@
 
 Command line:   map -a ECP5UM5G -p LFE5UM5G-85F -t CABGA381 -s 8 -oc Industrial
      mySDR_fpga_impl1.ngd -o mySDR_fpga_impl1_map.ncd -pr mySDR_fpga_impl1.prf
-     -mp mySDR_fpga_impl1.mrp -lpf
-     C:/lscc/lattice_projects/impl1/mySDR_fpga_impl1.lpf -lpf
-     C:/lscc/lattice_projects/mySDR_fpga.lpf -gui -msgset
-     C:/lscc/lattice_projects/promote.xml 
+     -mp mySDR_fpga_impl1.mrp -lpf C:/Users/SNA/Documents/FPGA_code/lattice_sdr_
+     code/impl1/mySDR_fpga_impl1.lpf -lpf
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf -gui
+     -msgset C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LFE5UM5G-85FCABGA381
 Target Performance:   8
 Mapper:  sa5p00g,  version:  Diamond (64-bit) 3.14.0.75.2
-Mapped on:  09/15/25  12:35:34
+Mapped on:  12/30/25  04:03:30
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:      8 out of 84255 (0%)
-      PFU registers:            8 out of 83640 (0%)
+   Number of registers:    146 out of 84255 (0%)
+      PFU registers:          146 out of 83640 (0%)
       PIO registers:            0 out of   615 (0%)
-   Number of SLICEs:        10 out of 41820 (0%)
-      SLICEs as Logic/ROM:     10 out of 41820 (0%)
+   Number of SLICEs:       165 out of 41820 (0%)
+      SLICEs as Logic/ROM:    165 out of 41820 (0%)
       SLICEs as RAM:            0 out of 31365 (0%)
-      SLICEs as Carry:          5 out of 41820 (0%)
-   Number of LUT4s:         19 out of 83640 (0%)
-      Number used as logic LUTs:          9
+      SLICEs as Carry:         76 out of 41820 (0%)
+   Number of LUT4s:        301 out of 83640 (0%)
+      Number used as logic LUTs:        149
       Number used as distributed RAM:     0
-      Number used as ripple logic:       10
+      Number used as ripple logic:      152
       Number used as shift registers:     0
-   Number of PIO sites used: 6 out of 205 (3%)
-      Number of PIO sites used for single ended IOs: 2
-      Number of PIO sites used for differential IOs: 4 (represented by 2 PIO
+   Number of PIO sites used: 15 out of 205 (7%)
+      Number of PIO sites used for single ended IOs: 9
+      Number of PIO sites used for differential IOs: 6 (represented by 3 PIO
      comps in NCD)
    Number of block RAMs:  0 out of 208 (0%)
-   Number of GSRs:  0 out of 1 (0%)
+   Number of GSRs:  1 out of 1 (100%)
    JTAG used :      No
    Readback used :  No
    Oscillator used :  No
@@ -54,7 +54,7 @@ Mapped on:  09/15/25  12:35:34
    Number of Dynamic Bank Controller (BCLVDSOB):  0 out of 4 (0%)
    Number of DCC:  0 out of 60 (0%)
    Number of DCS:  0 out of 2 (0%)
-   Number of PLLs:  1 out of 4 (25%)
+   Number of PLLs:  0 out of 4 (0%)
    Number of DDRDLLs:  0 out of 4 (0%)
    Number of CLKDIV:  0 out of 4 (0%)
    Number of ECLKSYNC:  0 out of 10 (0%)
@@ -81,86 +81,140 @@ Mapped on:  09/15/25  12:35:34
    Number of Used DSP MULT Sites:  0 out of 312 (0 %)
    Number of Used DSP ALU Sites:  0 out of 156 (0 %)
    Number of Used DSP PRADD Sites:  0 out of 312 (0 %)
-   Number of clocks:  3
-     Net clk_c: 1 loads, 1 rising, 0 falling (Driver: PIO clk )
-     Net my_pll_instance/CLKIt: 1 loads, 1 rising, 0 falling (Driver:
-     my_pll_instance/PLLRefcs_0 )
-     Net serial_clk_c: 6 loads, 6 rising, 0 falling (Driver:
-     my_pll_instance/PLLInst_0 )
-   Number of Clock Enables:  0
-   Number of LSRs:  1
-     Net pll_lock: 5 loads, 5 LSLICEs
+   Number of clocks:  2
+     Net top_clk_c: 41 loads, 27 rising, 14 falling (Driver: PIO top_clk )
+     Net clkDivider_clko: 45 loads, 30 rising, 15 falling (Driver:
+     clockDivider_0/clkOut_28 )
+   Number of Clock Enables:  3
+     Net cout_adj_417: 1 loads, 1 LSLICEs
+     Net fskModule_0/clkDivider_clko_enable_3: 1 loads, 1 LSLICEs
+     Net packetGen_0/clkDivider_clko_enable_10: 4 loads, 4 LSLICEs
+   Number of LSRs:  14
+     Net fskModule_0/n2828: 1 loads, 1 LSLICEs
+     Net n3210: 2 loads, 2 LSLICEs
+     Net IQSerializer_start: 5 loads, 5 LSLICEs
+     Net n3209: 12 loads, 12 LSLICEs
+     Net n492: 4 loads, 4 LSLICEs
+     Net n578: 1 loads, 1 LSLICEs
+     Net n2836: 1 loads, 1 LSLICEs
+     Net counter_0_countDone: 7 loads, 7 LSLICEs
+     Net n1926: 14 loads, 14 LSLICEs
+     Net top_rst_n_c: 6 loads, 6 LSLICEs
+     Net clockDivider_0/n483: 5 loads, 5 LSLICEs
+     Net IQSerializer_0/n1925: 6 loads, 6 LSLICEs
+     Net IQSerializer_0/n1928: 2 loads, 2 LSLICEs
+     Net IQSerializer_0/n1927: 2 loads, 2 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net pll_lock: 8 loads
-     Net clockDivider_0/lockCounter_1: 2 loads
-     Net clockDivider_0/lockCounter_3: 2 loads
-     Net clockDivider_0/lockCounter_4: 2 loads
-     Net clockDivider_0/lockCounter_5: 2 loads
-     Net clockDivider_0/lockCounter_6: 2 loads
-     Net clockDivider_0/lockCounter_7: 2 loads
-     Net clockDivider_0/n345: 2 loads
-     Net clockDivider_0/n370: 2 loads
-     Net clockDivider_0/n376: 2 loads
+     Net symCounter_3: 22 loads
+     Net symCounter_1: 21 loads
+     Net symCounter_2: 21 loads
+     Net symCounter_6: 19 loads
+     Net sampleCount_0: 16 loads
+     Net sampleCount_1: 16 loads
+     Net n1926: 14 loads
+     Net fskModule_0/n2767: 13 loads
+     Net counter_0_countDone: 12 loads
+     Net n3209: 12 loads
 
 
 
 
-   Number of warnings:  15
+   Number of warnings:  19
    Number of errors:    0
      
 
 
 
 
+
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(4): Semantic error in
-     "IOBUF PORT "mixed_output[0]" IO_TYPE=LVDS ;": Port "mixed_output[0]" does
-     not exist in the design. This preference has been disabled.
-WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(5): Semantic error in
-     "IOBUF PORT "mixed_output[1]" IO_TYPE=LVDS ;": Port "mixed_output[1]" does
-     not exist in the design. This preference has been disabled.
-WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(6): Semantic error in
-     "IOBUF PORT "mixed_output[2]" IO_TYPE=LVDS ;": Port "mixed_output[2]" does
-     not exist in the design. This preference has been disabled.
-WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(7): Semantic error in
-     "IOBUF PORT "mixed_output[3]" IO_TYPE=LVDS ;": Port "mixed_output[3]" does
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(4):
+     Semantic error in "IOBUF PORT "mixed_output[0]" IO_TYPE=LVDS ;": Port
+     "mixed_output[0]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(5):
+     Semantic error in "IOBUF PORT "mixed_output[1]" IO_TYPE=LVDS ;": Port
+     "mixed_output[1]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(6):
+     Semantic error in "IOBUF PORT "mixed_output[2]" IO_TYPE=LVDS ;": Port
+     "mixed_output[2]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(7):
+     Semantic error in "IOBUF PORT "mixed_output[3]" IO_TYPE=LVDS ;": Port
+     "mixed_output[3]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(8):
+     Semantic error in "IOBUF PORT "mixed_output[4]" IO_TYPE=LVDS ;": Port
+     "mixed_output[4]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(9):
+     Semantic error in "IOBUF PORT "mixed_output[5]" IO_TYPE=LVDS ;": Port
+     "mixed_output[5]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(10):
+     Semantic error in "IOBUF PORT "mixed_output[6]" IO_TYPE=LVDS ;": Port
+     "mixed_output[6]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(11):
+     Semantic error in "IOBUF PORT "mixed_output[7]" IO_TYPE=LVDS ;": Port
+     "mixed_output[7]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(12):
+     Semantic error in "IOBUF PORT "mixed_output[8]" IO_TYPE=LVDS ;": Port
+     "mixed_output[8]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(13):
+     Semantic error in "IOBUF PORT "mixed_output[9]" IO_TYPE=LVDS ;": Port
+     "mixed_output[9]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(14):
+     Semantic error in "IOBUF PORT "mixed_output[10]" IO_TYPE=LVDS ;": Port
+     "mixed_output[10]" does not exist in the design. This preference has been
+     disabled.
 
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(15):
+     Semantic error in "IOBUF PORT "mixed_output[11]" IO_TYPE=LVDS ;": Port
+     "mixed_output[11]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(16):
+     Semantic error in "IOBUF PORT "mixed_output[12]" IO_TYPE=LVDS ;": Port
+     "mixed_output[12]" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(19):
+     Semantic error in "LOCATE COMP "clk" SITE "F1" ;": COMP "clk" cannot be
+     found in design. This preference has been disabled.
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(20):
+     Semantic error in "IOBUF PORT "clk" IO_TYPE=LVCMOS25 ;": Port "clk" does
      not exist in the design. This preference has been disabled.
-WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(8): Semantic error in
-     "IOBUF PORT "mixed_output[4]" IO_TYPE=LVDS ;": Port "mixed_output[4]" does
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(21):
+     Semantic error in "LOCATE COMP "rst" SITE "G1" ;": COMP "rst" cannot be
+     found in design. This preference has been disabled.
+WARNING - map:
+     C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf(22):
+     Semantic error in "IOBUF PORT "rst" IO_TYPE=LVCMOS25 ;": Port "rst" does
      not exist in the design. This preference has been disabled.
-WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(9): Semantic error in
-     "IOBUF PORT "mixed_output[5]" IO_TYPE=LVDS ;": Port "mixed_output[5]" does
-     not exist in the design. This preference has been disabled.
-WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(10): Semantic error in
-     "IOBUF PORT "mixed_output[6]" IO_TYPE=LVDS ;": Port "mixed_output[6]" does
-     not exist in the design. This preference has been disabled.
-WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(11): Semantic error in
-     "IOBUF PORT "mixed_output[7]" IO_TYPE=LVDS ;": Port "mixed_output[7]" does
-     not exist in the design. This preference has been disabled.
-WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(12): Semantic error in
-     "IOBUF PORT "mixed_output[8]" IO_TYPE=LVDS ;": Port "mixed_output[8]" does
-     not exist in the design. This preference has been disabled.
-WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(13): Semantic error in
-     "IOBUF PORT "mixed_output[9]" IO_TYPE=LVDS ;": Port "mixed_output[9]" does
-     not exist in the design. This preference has been disabled.
-WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(14): Semantic error in
-     "IOBUF PORT "mixed_output[10]" IO_TYPE=LVDS ;": Port "mixed_output[10]"
-     does not exist in the design. This preference has been disabled.
-WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(15): Semantic error in
-     "IOBUF PORT "mixed_output[11]" IO_TYPE=LVDS ;": Port "mixed_output[11]"
-     does not exist in the design. This preference has been disabled.
-WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(16): Semantic error in
-     "IOBUF PORT "mixed_output[12]" IO_TYPE=LVDS ;": Port "mixed_output[12]"
-     does not exist in the design. This preference has been disabled.
-WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(21): Semantic error in
-     "LOCATE COMP "rst" SITE "G1" ;": COMP "rst" cannot be found in design. This
-     preference has been disabled.
-WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(22): Semantic error in
-     "IOBUF PORT "rst" IO_TYPE=LVCMOS25 ;": Port "rst" does not exist in the
-     design. This preference has been disabled.
+WARNING - map: input pad net 'rxd09' has no legal load.
+WARNING - map: IO buffer missing for top level port rxd09...logic will be
+     discarded.
 
 
 
@@ -170,93 +224,335 @@ WARNING - map: C:/lscc/lattice_projects/mySDR_fpga.lpf(22): Semantic error in
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| clk                 | INPUT     | LVCMOS25  |            |
+| LED7                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED6                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED5                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| top_clk             | INPUT     | LVDS      |            |
++---------------------+-----------+-----------+------------+
+| LED4                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED3                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED2                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| LED1                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| serial_clk          | OUTPUT    | LVDS      |            |
 +---------------------+-----------+-----------+------------+
 | serial_iq           | OUTPUT    | LVDS      |            |
+
 +---------------------+-----------+-----------+------------+
 | LED                 | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| serial_clk          | OUTPUT    | LVDS      |            |
+| top_rst_n           | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 
 
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
-Block GSR_INST undriven or does not drive anything - clipped.
-Signal clockDivider_0/n346 was merged into signal pll_lock
-
+Signal clk_N_317 was merged into signal top_clk_c
+Signal clk_N_172 was merged into signal clkDivider_clko
+Signal clockDivider_0/n3212 was merged into signal top_rst_n_c
+Signal packetGen_0/n3216 was merged into signal counter_0_countDone
+Signal n934 was merged into signal IQSerializer_start
+Signal clkDivider_clko_enable_1 was merged into signal cout_adj_417
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal clockDivider_0/lockCounter_38_add_4_1/S0 undriven or does not drive
+Signal IQSerializer_0/ZCounter_409_add_4_11/S1 undriven or does not drive
      anything - clipped.
-Signal clockDivider_0/lockCounter_38_add_4_1/CI undriven or does not drive
+Signal IQSerializer_0/ZCounter_409_add_4_11/CO undriven or does not drive
      anything - clipped.
-Signal clockDivider_0/lockCounter_38_add_4_9/S1 undriven or does not drive
+Signal IQSerializer_0/ZCounter_409_add_4_1/S0 undriven or does not drive
      anything - clipped.
-Signal clockDivider_0/lockCounter_38_add_4_9/CO undriven or does not drive
+Signal IQSerializer_0/ZCounter_409_add_4_1/CI undriven or does not drive
      anything - clipped.
-Block clockDivider_0/pll_lock_I_0_1_lut_rep_2 was optimized away.
+Signal clockDivider_0/lockCounter_403_add_4_1/S0 undriven or does not drive
+     anything - clipped.
+Signal clockDivider_0/lockCounter_403_add_4_1/CI undriven or does not drive
+     anything - clipped.
+Signal clockDivider_0/counter_402_add_4_1/S0 undriven or does not drive anything
+     - clipped.
+Signal clockDivider_0/counter_402_add_4_1/CI undriven or does not drive anything
+     - clipped.
+Signal clockDivider_0/counter_402_add_4_9/S1 undriven or does not drive anything
+     - clipped.
+Signal clockDivider_0/counter_402_add_4_9/CO undriven or does not drive anything
+     - clipped.
+Signal clockDivider_0/lockCounter_403_add_4_9/S1 undriven or does not drive
+     anything - clipped.
+Signal clockDivider_0/lockCounter_403_add_4_9/CO undriven or does not drive
+     anything - clipped.
+Signal _add_1_671_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal _add_1_671_add_4_1/CI undriven or does not drive anything - clipped.
+Signal _add_1_671_add_4_13/S1 undriven or does not drive anything - clipped.
+Signal _add_1_671_add_4_13/CO undriven or does not drive anything - clipped.
+Signal counter_0/waitcount_405_add_4_27/S1 undriven or does not drive anything -
+     clipped.
+Signal counter_0/waitcount_405_add_4_27/CO undriven or does not drive anything -
+     clipped.
+Signal counter_0/waitcount_405_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal counter_0/waitcount_405_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal cnt2_401_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal cnt2_401_add_4_1/CI undriven or does not drive anything - clipped.
+Signal add_1351_5/S1 undriven or does not drive anything - clipped.
+Signal add_1351_5/S0 undriven or does not drive anything - clipped.
+
+Signal cnt2_401_add_4_27/S1 undriven or does not drive anything - clipped.
+Signal cnt2_401_add_4_27/CO undriven or does not drive anything - clipped.
+Signal add_1352_2/S1 undriven or does not drive anything - clipped.
+Signal add_1352_2/S0 undriven or does not drive anything - clipped.
+Signal add_1352_2/CI undriven or does not drive anything - clipped.
+Signal add_1352_4/S1 undriven or does not drive anything - clipped.
+Signal add_1352_4/S0 undriven or does not drive anything - clipped.
+Signal add_1352_6/S1 undriven or does not drive anything - clipped.
+Signal add_1352_6/S0 undriven or does not drive anything - clipped.
+Signal add_1352_8/S1 undriven or does not drive anything - clipped.
+Signal add_1352_8/S0 undriven or does not drive anything - clipped.
+Signal add_1352_10/S1 undriven or does not drive anything - clipped.
+Signal add_1352_10/S0 undriven or does not drive anything - clipped.
+Signal add_1352_12/S1 undriven or does not drive anything - clipped.
+Signal add_1352_12/S0 undriven or does not drive anything - clipped.
+Signal add_1352_14/S1 undriven or does not drive anything - clipped.
+Signal add_1352_14/S0 undriven or does not drive anything - clipped.
+Signal add_1352_16/S1 undriven or does not drive anything - clipped.
+Signal add_1352_16/S0 undriven or does not drive anything - clipped.
+Signal add_1352_18/S1 undriven or does not drive anything - clipped.
+Signal add_1352_18/S0 undriven or does not drive anything - clipped.
+Signal add_1352_20/S1 undriven or does not drive anything - clipped.
+Signal add_1352_20/S0 undriven or does not drive anything - clipped.
+Signal add_1352_cout/S1 undriven or does not drive anything - clipped.
+Signal add_1352_cout/CO undriven or does not drive anything - clipped.
+Signal add_1351_7/S1 undriven or does not drive anything - clipped.
+Signal add_1351_7/S0 undriven or does not drive anything - clipped.
+Signal add_1351_9/S1 undriven or does not drive anything - clipped.
+Signal add_1351_9/S0 undriven or does not drive anything - clipped.
+Signal add_1351_11/S1 undriven or does not drive anything - clipped.
+Signal add_1351_11/S0 undriven or does not drive anything - clipped.
+Signal add_1351_13/S1 undriven or does not drive anything - clipped.
+Signal add_1351_13/S0 undriven or does not drive anything - clipped.
+Signal add_1351_15/S1 undriven or does not drive anything - clipped.
+Signal add_1351_15/S0 undriven or does not drive anything - clipped.
+Signal add_1351_27/S0 undriven or does not drive anything - clipped.
+Signal add_1351_27/CO undriven or does not drive anything - clipped.
+Signal add_1351_17/S1 undriven or does not drive anything - clipped.
+Signal add_1351_17/S0 undriven or does not drive anything - clipped.
+Signal add_1351_19/S1 undriven or does not drive anything - clipped.
+Signal add_1351_19/S0 undriven or does not drive anything - clipped.
+Signal add_1351_21/S1 undriven or does not drive anything - clipped.
+Signal add_1351_21/S0 undriven or does not drive anything - clipped.
+Signal add_1351_23/S1 undriven or does not drive anything - clipped.
+Signal add_1351_23/S0 undriven or does not drive anything - clipped.
+Signal add_1351_1/S1 undriven or does not drive anything - clipped.
+Signal add_1351_1/S0 undriven or does not drive anything - clipped.
+Signal add_1351_1/CI undriven or does not drive anything - clipped.
+Signal add_1351_25/S1 undriven or does not drive anything - clipped.
+Signal add_1351_25/S0 undriven or does not drive anything - clipped.
+Signal add_1351_3/S1 undriven or does not drive anything - clipped.
+Signal add_1351_3/S0 undriven or does not drive anything - clipped.
+Block i2077 was optimized away.
+Block clockDivider_0/i2076 was optimized away.
+Block clockDivider_0/pll_lock_I_0_1_lut_rep_17 was optimized away.
+Block packetGen_0/rst_n_I_0_1_lut_rep_21 was optimized away.
+
+Block fskModule_0/i438_1_lut was optimized away.
+Block i913_1_lut was optimized away.
 Block i2 was optimized away.
 
      
 
 
 
-<A name="mrp_pll"></A><B><U><big>PLL/DLL Summary</big></U></B>
----------------
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
 
-PLL 1:                                     Pin/Node Value
-  PLL Instance Name:                                my_pll_instance/PLLInst_0
-  PLL Type:                                         EHXPLLL
-  Input Clock:                             NODE     GND_net
-  Input Clock2:                            PIN      clk_c
-  Input Clock select:                               NONE
-  Output Clock(P):                         PIN,NODE serial_clk_c
-  Feedback Signal:                         NODE     serial_clk_c
-  Reset Signal:                                     NONE
-  Standby Signal:                          NODE     GND_net
-  PLL LOCK signal:                         NODE     pll_lock
-  Input Clock Frequency (MHz):                      32.0000
-  Output Clock(P) Frequency (MHz):                  64.0000
-  CLKOP Post Divider A Input:                       DIVA
-  CLKOS Post Divider B Input:                       DIVB
-  CLKOS2 Post Divider C Input:                      DIVC
-  CLKOS3 Post Divider D Input:                      DIVD
-  Pre Divider A Input:                              NONE
-  Pre Divider B Input:                              NONE
-  Pre Divider C Input:                              NONE
-  Pre Divider D Input:                              NONE
-  FB_MODE:                                          CLKOP
-  CLKI Divider:                                     1
-  CLKFB Divider:                                    2
-  CLKOP Divider:                                    9
-  CLKOS Divider:                                    1
-  CLKOS2 Divider:                                   1
-  CLKOS3 Divider:                                   1
-  Fractional N Divider:                             NONE
-  CLKOP Desired Phase Shift(degree):                0
-  CLKOP Trim Option Rising/Falling:                 FALLING
-  CLKOP Trim Option Delay:                          0
-  CLKOS Desired Phase Shift(degree):                0
-  CLKOS Trim Option Rising/Falling:                 FALLING
-  CLKOS Trim Option Delay:                          0
-  CLKOS2 Desired Phase Shift(degree):               0
-  CLKOS2 Trim Option Rising/Falling:                NONE
-  CLKOS2 Trim Option Delay:                         NONE
-  CLKOS3 Desired Phase Shift(degree):               0
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'n3211'.
+        
 
-  CLKOS3 Trim Option Rising/Falling:                NONE
-  CLKOS3 Trim Option Delay:                         NONE
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
 
+     Components with disabled GSR Property
+-------------------------------------
 
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'n3211' via the GSR component.
 
-<A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
----------------
+     Type and number of components of the type: 
+   Register = 133 
 
-Instance Name: my_pll_instance/PLLRefcs_0
-         Type: PLLREFCS
-Instance Name: my_pll_instance/PLLInst_0
-         Type: EHXPLLL
+     Type and instance name of component: 
+   Register : LED7_8
+   Register : cnt2_401__i25
+   Register : cnt2_401__i24
+   Register : cnt2_401__i23
+   Register : cnt2_401__i22
+   Register : cnt2_401__i21
+   Register : cnt2_401__i20
+   Register : cnt2_401__i19
+   Register : cnt2_401__i18
+   Register : cnt2_401__i17
+   Register : cnt2_401__i16
+   Register : cnt2_401__i15
+   Register : cnt2_401__i14
+   Register : cnt2_401__i13
+   Register : cnt2_401__i12
+   Register : cnt2_401__i11
+   Register : cnt2_401__i10
+   Register : cnt2_401__i9
+   Register : cnt2_401__i8
+   Register : cnt2_401__i7
+   Register : cnt2_401__i6
+   Register : cnt2_401__i5
+   Register : cnt2_401__i4
+   Register : cnt2_401__i3
+   Register : cnt2_401__i2
+   Register : cnt2_401__i1
+
+   Register : cnt2_401__i0
+   Register : fskModule_0/firstFlag_56
+   Register : fskModule_0/start_57
+   Register : fskModule_0/FSK_I__i0
+   Register : fskModule_0/FSK_Q__i0
+   Register : fskModule_0/cos_phase_FSM_i1
+   Register : fskModule_0/lastSym_55
+   Register : fskModule_0/sin_phase_410__i0
+   Register : fskModule_0/sin_phase_410__i2
+   Register : fskModule_0/sin_phase_410__i1
+   Register : fskModule_0/cos_phase_FSM_i8
+   Register : fskModule_0/cos_phase_FSM_i7
+   Register : fskModule_0/cos_phase_FSM_i6
+   Register : fskModule_0/cos_phase_FSM_i5
+   Register : fskModule_0/cos_phase_FSM_i4
+   Register : fskModule_0/cos_phase_FSM_i3
+   Register : fskModule_0/cos_phase_FSM_i2
+   Register : fskModule_0/FSK_Q__i12
+   Register : fskModule_0/FSK_Q__i11
+   Register : fskModule_0/FSK_Q__i7
+   Register : fskModule_0/FSK_Q__i4
+   Register : fskModule_0/FSK_Q__i2
+   Register : fskModule_0/FSK_I__i12
+   Register : fskModule_0/FSK_I__i11
+   Register : fskModule_0/FSK_I__i7
+   Register : fskModule_0/FSK_I__i4
+   Register : fskModule_0/FSK_I__i2
+   Register : counter_0/countDone_14
+   Register : counter_0/waitcount_405__i0
+   Register : counter_0/waitcount_405__i25
+   Register : counter_0/waitcount_405__i24
+   Register : counter_0/waitcount_405__i23
+   Register : counter_0/waitcount_405__i22
+   Register : counter_0/waitcount_405__i21
+   Register : counter_0/waitcount_405__i20
+   Register : counter_0/waitcount_405__i19
+   Register : counter_0/waitcount_405__i18
+   Register : counter_0/waitcount_405__i17
+   Register : counter_0/waitcount_405__i16
+   Register : counter_0/waitcount_405__i15
+   Register : counter_0/waitcount_405__i14
+   Register : counter_0/waitcount_405__i13
+   Register : counter_0/waitcount_405__i12
+   Register : counter_0/waitcount_405__i11
+   Register : counter_0/waitcount_405__i10
+   Register : counter_0/waitcount_405__i9
+   Register : counter_0/waitcount_405__i8
+   Register : counter_0/waitcount_405__i7
+   Register : counter_0/waitcount_405__i6
+   Register : counter_0/waitcount_405__i5
+   Register : counter_0/waitcount_405__i4
+   Register : counter_0/waitcount_405__i3
+   Register : counter_0/waitcount_405__i2
+   Register : counter_0/waitcount_405__i1
+   Register : packetGen_0/symVal_43
+   Register : packetGen_0/symCounter__i0
+
+   Register : packetGen_0/current_state_FSM_i1
+   Register : packetGen_0/current_state_FSM_i4
+   Register : packetGen_0/current_state_FSM_i3
+   Register : packetGen_0/current_state_FSM_i2
+   Register : packetGen_0/symCounter__i7
+   Register : packetGen_0/symCounter__i6
+   Register : packetGen_0/symCounter__i5
+   Register : packetGen_0/symCounter__i4
+   Register : packetGen_0/symCounter__i3
+   Register : packetGen_0/symCounter__i2
+   Register : packetGen_0/symCounter__i1
+   Register : clockDivider_0/counter_402__i0
+   Register : clockDivider_0/lockCounter_403__i0
+   Register : clockDivider_0/clkOut_28
+   Register : clockDivider_0/lockCounter_403__i7
+   Register : clockDivider_0/lockCounter_403__i6
+   Register : clockDivider_0/lockCounter_403__i5
+   Register : clockDivider_0/lockCounter_403__i4
+   Register : clockDivider_0/lockCounter_403__i3
+   Register : clockDivider_0/lockCounter_403__i2
+   Register : clockDivider_0/lockCounter_403__i1
+   Register : clockDivider_0/counter_402__i7
+   Register : clockDivider_0/counter_402__i6
+   Register : clockDivider_0/counter_402__i5
+   Register : clockDivider_0/counter_402__i4
+   Register : clockDivider_0/counter_402__i3
+   Register : clockDivider_0/counter_402__i2
+   Register : clockDivider_0/counter_402__i1
+   Register : IQSerializer_0/current_state_FSM_i0
+   Register : IQSerializer_0/ZCounter_409__i0
+   Register : IQSerializer_0/QCounter_412__i3
+   Register : IQSerializer_0/ICounter_407__i3
+   Register : IQSerializer_0/ICounter_407__i2
+   Register : IQSerializer_0/ICounter_407__i1
+   Register : IQSerializer_0/QCounter_412__i2
+   Register : IQSerializer_0/QCounter_412__i1
+   Register : IQSerializer_0/ZCounter_409__i9
+   Register : IQSerializer_0/ZCounter_409__i8
+   Register : IQSerializer_0/ZCounter_409__i7
+   Register : IQSerializer_0/ZCounter_409__i6
+   Register : IQSerializer_0/ZCounter_409__i5
+   Register : IQSerializer_0/ZCounter_409__i4
+   Register : IQSerializer_0/ZCounter_409__i3
+   Register : IQSerializer_0/ZCounter_409__i2
+   Register : IQSerializer_0/ZCounter_409__i1
+   Register : IQSerializer_0/current_state_FSM_i4
+   Register : IQSerializer_0/current_state_FSM_i3
+   Register : IQSerializer_0/current_state_FSM_i2
+   Register : IQSerializer_0/current_state_FSM_i1
+   Register : IQSerializer_0/DEDFF_0/pose_edge_14
+   Register : IQSerializer_0/DEDFF_0/neg_edge_15
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'n3211' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 13 
+
+     Type and instance name of component: 
+   Register : fskModule_0/symDone_60
+   Register : fskModule_0/sampleCount_i0
+   Register : fskModule_0/sampleCount_i11
+   Register : fskModule_0/sampleCount_i10
+   Register : fskModule_0/sampleCount_i9
+   Register : fskModule_0/sampleCount_i8
+   Register : fskModule_0/sampleCount_i7
+   Register : fskModule_0/sampleCount_i6
+   Register : fskModule_0/sampleCount_i5
+   Register : fskModule_0/sampleCount_i4
+   Register : fskModule_0/sampleCount_i3
+   Register : fskModule_0/sampleCount_i2
+   Register : fskModule_0/sampleCount_i1
 
 
 
@@ -265,19 +561,8 @@ Instance Name: my_pll_instance/PLLInst_0
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 245 MB
+   Peak Memory Usage: 247 MB
         
-
-
-
-
-
-
-
-
-
-
-
 
 
 

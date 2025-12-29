@@ -1,23 +1,106 @@
 [ START MERGED ]
-clockDivider_0/n346 pll_lock
+clkDivider_clko_enable_1 cout_adj_417
+clk_N_172 clkDivider_clko
+n934 IQSerializer_start
+packetGen_0/n3216 counter_0_countDone
+clockDivider_0/n3212 top_rst_n_c
+clk_N_317 top_clk_c
 [ END MERGED ]
 [ START CLIPPED ]
 VCC_net
-clockDivider_0/lockCounter_38_add_4_1/S0
-clockDivider_0/lockCounter_38_add_4_1/CI
-clockDivider_0/lockCounter_38_add_4_9/S1
-clockDivider_0/lockCounter_38_add_4_9/CO
+IQSerializer_0/ZCounter_409_add_4_11/S1
+IQSerializer_0/ZCounter_409_add_4_11/CO
+IQSerializer_0/ZCounter_409_add_4_1/S0
+IQSerializer_0/ZCounter_409_add_4_1/CI
+clockDivider_0/lockCounter_403_add_4_1/S0
+clockDivider_0/lockCounter_403_add_4_1/CI
+clockDivider_0/counter_402_add_4_1/S0
+clockDivider_0/counter_402_add_4_1/CI
+clockDivider_0/counter_402_add_4_9/S1
+clockDivider_0/counter_402_add_4_9/CO
+clockDivider_0/lockCounter_403_add_4_9/S1
+clockDivider_0/lockCounter_403_add_4_9/CO
+_add_1_671_add_4_1/S0
+_add_1_671_add_4_1/CI
+_add_1_671_add_4_13/S1
+_add_1_671_add_4_13/CO
+counter_0/waitcount_405_add_4_27/S1
+counter_0/waitcount_405_add_4_27/CO
+counter_0/waitcount_405_add_4_1/S0
+counter_0/waitcount_405_add_4_1/CI
+cnt2_401_add_4_1/S0
+cnt2_401_add_4_1/CI
+add_1351_5/S1
+add_1351_5/S0
+cnt2_401_add_4_27/S1
+cnt2_401_add_4_27/CO
+add_1352_2/S1
+add_1352_2/S0
+add_1352_2/CI
+add_1352_4/S1
+add_1352_4/S0
+add_1352_6/S1
+add_1352_6/S0
+add_1352_8/S1
+add_1352_8/S0
+add_1352_10/S1
+add_1352_10/S0
+add_1352_12/S1
+add_1352_12/S0
+add_1352_14/S1
+add_1352_14/S0
+add_1352_16/S1
+add_1352_16/S0
+add_1352_18/S1
+add_1352_18/S0
+add_1352_20/S1
+add_1352_20/S0
+add_1352_cout/S1
+add_1352_cout/CO
+add_1351_7/S1
+add_1351_7/S0
+add_1351_9/S1
+add_1351_9/S0
+add_1351_11/S1
+add_1351_11/S0
+add_1351_13/S1
+add_1351_13/S0
+add_1351_15/S1
+add_1351_15/S0
+add_1351_27/S0
+add_1351_27/CO
+add_1351_17/S1
+add_1351_17/S0
+add_1351_19/S1
+add_1351_19/S0
+add_1351_21/S1
+add_1351_21/S0
+add_1351_23/S1
+add_1351_23/S0
+add_1351_1/S1
+add_1351_1/S0
+add_1351_1/CI
+add_1351_25/S1
+add_1351_25/S0
+add_1351_3/S1
+add_1351_3/S0
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Mon Sep 15 12:35:35 2025
+# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Tue Dec 30 04:03:31 2025
 
 SYSCONFIG SLAVE_SPI_PORT=DISABLE MASTER_SPI_PORT=DISABLE SLAVE_PARALLEL_PORT=DISABLE BACKGROUND_RECONFIG=OFF DONE_EX=OFF DONE_OD=ON DONE_PULL=ON MCCLK_FREQ=2.4 TRANSFR=OFF CONFIG_IOVOLTAGE=2.5 CONFIG_SECURE=OFF WAKE_UP=21 COMPRESS_CONFIG=OFF CONFIG_MODE=JTAG INBUF=OFF ;
-LOCATE COMP "clk" SITE "F1" ;
-LOCATE COMP "serial_iq" SITE "E4" ;
-LOCATE COMP "LED" SITE "C17" ;
-LOCATE COMP "serial_clk" SITE "A4" ;
-FREQUENCY NET "my_pll_instance/CLKIt" 32.000000 MHz ;
-FREQUENCY NET "serial_clk_c" 64.000000 MHz ;
+LOCATE COMP "LED7" SITE "B17" ;
+LOCATE COMP "LED6" SITE "A17" ;
+LOCATE COMP "LED5" SITE "C17" ;
+LOCATE COMP "top_clk" SITE "G3" ;
+LOCATE COMP "LED4" SITE "B18" ;
+LOCATE COMP "LED3" SITE "A18" ;
+LOCATE COMP "LED2" SITE "B19" ;
+LOCATE COMP "LED1" SITE "A12" ;
+LOCATE COMP "serial_clk" SITE "C4" ;
+LOCATE COMP "serial_iq" SITE "F4" ;
+LOCATE COMP "LED" SITE "A13" ;
+LOCATE COMP "top_rst_n" SITE "H2" ;
 SCHEMATIC END ;
 [ END DESIGN PREFS ]

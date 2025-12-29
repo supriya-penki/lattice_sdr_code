@@ -1,0 +1,35 @@
+if {![file exists "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/sdr/sdr.mpf"]} { 
+	project new "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/sdr" sdr
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v"
+} else {
+	project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/sdr/sdr"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  top_module
+view wave
+add wave /*
+run 1000ns

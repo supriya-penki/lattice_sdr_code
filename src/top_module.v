@@ -25,11 +25,11 @@ output			serial_clk, /* synthesis IO_TYPES="LVDS*/
 //input			sim_lock
 );
 
-/*reg [19:0] cnt2;
-always@(posedge serial_iq)begin
+reg [25:0] cnt2;
+always@(posedge serial_clk)begin
 	cnt2 <= cnt2 +1'b1;
-	LED7 <= cnt2[19];
-end*/
+	LED7 <= cnt2[25];
+end
 
 /*reg [19:0] cnt1;
 always@(posedge serial_iq)begin
@@ -52,9 +52,9 @@ end*/
 
 
 
-always@(*)begin
-	LED <= clkDivider_lock;
-	end 
+/*always@(*)begin
+	LED7 <= clkDivider_lock;
+	end */
 
 
 //--------------------------------------------------------------------
@@ -82,9 +82,6 @@ wire 				IQSerializer_start;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
-//assign	top_rst_n = clockDivider_clkLock;
-assign	osc_en = 1'b1;
-assign 	pll_clki = top_clk;
 
 assign IQSerializer_I = {fskModule_I, 1'b0};
 assign IQSerializer_Q = {fskModule_Q, 1'b0};
@@ -106,7 +103,7 @@ assign IQSerializer_Q = {fskModule_Q, 1'b0};
 end*/
 
 always@(*) begin
-	 //LED <= 1'b1;
+	 LED <= 1'b1;
 	 LED1<= 1'b1;
 	 LED2 <= 1'b1;
 	 LED3 <=1'b1;
@@ -161,11 +158,12 @@ FSKModulator fskModule_0(
 //wire [15:0] const_I = 16'hFFFF; 
 //wire [15:0] const_Q = 16'h0000;
 
+
 IQSerializer IQSerializer_0(
 	.clk(top_clk),
 	.start(IQSerializer_start), //works
-	.I(const_I),
-	.Q(const_Q),
+	.I(IQSerializer_I),
+	.Q(IQSerializer_Q),
 	.serial_N(),
 	.serial(serial_iq),
 	.serial_clk(serial_clk)

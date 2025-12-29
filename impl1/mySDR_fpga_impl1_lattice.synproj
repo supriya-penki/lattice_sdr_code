@@ -31,21 +31,22 @@
 
 
 -lpf 1
--p "C:/lscc/lattice_projects"
--ver "C:/lscc/lattice_projects/src/top_module.v"
-"C:/lscc/lattice_projects/src/data_generator.v"
-"C:/lscc/lattice_projects/src/local_oscillator.v"
-"C:/lscc/lattice_projects/src/modulator.v"
-"C:/lscc/lattice_projects/src/serial_2_parallel.v"
-"C:/lscc/lattice_projects/pll_64M/pll_64M.v"
-"C:/lscc/lattice_projects/defines.v"
-"C:/lscc/lattice_projects/src/IQSerializer.v"
-"C:/lscc/lattice_projects/src/DEDFF.v"
-"C:/lscc/lattice_projects/src/clockDivider.v"
--top top_level
+-p "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code"
+-ver "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v"
+"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v"
+"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v"
+"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v"
+"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v"
+"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v"
+"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v"
+"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v"
+"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v"
+"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v"
+"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v"
+-top top_module
 
 
--p "C:/lscc/diamond/3.14/ispfpga/sa5p00g/data" "C:/lscc/lattice_projects/impl1" "C:/lscc/lattice_projects"
+-p "C:/lscc/diamond/3.14/ispfpga/sa5p00g/data" "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/impl1" "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code"
 
 -ngd "mySDR_fpga_impl1.ngd"
 

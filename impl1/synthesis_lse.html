@@ -14,10 +14,10 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Sep 15 12:34:28 2025
+Tue Dec 30 04:03:29 2025
 
 
-Command Line:  synthesis -f mySDR_fpga_impl1_lattice.synproj -gui -msgset C:/lscc/lattice_projects/promote.xml 
+Command Line:  synthesis -f mySDR_fpga_impl1_lattice.synproj -gui -msgset C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/promote.xml 
 
 Synthesis options:
 The -a option is ECP5UM5G.
@@ -44,7 +44,7 @@ Using performance grade 8.
 
 INFO - synthesis: User-Selected Strategy Settings
 Optimization goal = Timing
-Top-level module name = top_level.
+Top-level module name = top_module.
 Target frequency = 200.000000 MHz.
 Maximum fanout = 1000.
 Timing path count = 3
@@ -70,20 +70,21 @@ ROM style = auto
 RAM style = auto
 The -comp option is FALSE.
 The -syn option is FALSE.
--p C:/lscc/lattice_projects (searchpath added)
+-p C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code (searchpath added)
 -p C:/lscc/diamond/3.14/ispfpga/sa5p00g/data (searchpath added)
--p C:/lscc/lattice_projects/impl1 (searchpath added)
--p C:/lscc/lattice_projects (searchpath added)
-Verilog design file = C:/lscc/lattice_projects/src/top_module.v
-Verilog design file = C:/lscc/lattice_projects/src/data_generator.v
-Verilog design file = C:/lscc/lattice_projects/src/local_oscillator.v
-Verilog design file = C:/lscc/lattice_projects/src/modulator.v
-Verilog design file = C:/lscc/lattice_projects/src/serial_2_parallel.v
-Verilog design file = C:/lscc/lattice_projects/pll_64M/pll_64M.v
-Verilog design file = C:/lscc/lattice_projects/defines.v
-Verilog design file = C:/lscc/lattice_projects/src/IQSerializer.v
-Verilog design file = C:/lscc/lattice_projects/src/DEDFF.v
-Verilog design file = C:/lscc/lattice_projects/src/clockDivider.v
+-p C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/impl1 (searchpath added)
+-p C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code (searchpath added)
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v
 NGD file = mySDR_fpga_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -94,227 +95,39 @@ Technology check ok...
 Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v. VERI-1482
 Compile design.
 Compile Design Begin
-Analyzing Verilog file c:/lscc/lattice_projects/src/top_module.v. VERI-1482
-INFO - synthesis: c:/lscc/lattice_projects/src/top_module.v(3): analyzing included file c:/lscc/lattice_projects/src/defines.v. VERI-1328
-Analyzing Verilog file c:/lscc/lattice_projects/src/data_generator.v. VERI-1482
-Analyzing Verilog file c:/lscc/lattice_projects/src/local_oscillator.v. VERI-1482
-INFO - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(2): analyzing included file c:/lscc/lattice_projects/src/defines.v. VERI-1328
-Analyzing Verilog file c:/lscc/lattice_projects/src/modulator.v. VERI-1482
-INFO - synthesis: c:/lscc/lattice_projects/src/modulator.v(3): analyzing included file c:/lscc/lattice_projects/src/defines.v. VERI-1328
-Analyzing Verilog file c:/lscc/lattice_projects/src/serial_2_parallel.v. VERI-1482
-Analyzing Verilog file c:/lscc/lattice_projects/pll_64m/pll_64m.v. VERI-1482
-Analyzing Verilog file c:/lscc/lattice_projects/defines.v. VERI-1482
-Analyzing Verilog file c:/lscc/lattice_projects/src/iqserializer.v. VERI-1482
-INFO - synthesis: c:/lscc/lattice_projects/src/iqserializer.v(1): analyzing included file c:/lscc/lattice_projects/src/defines.v. VERI-1328
-Analyzing Verilog file c:/lscc/lattice_projects/src/dedff.v. VERI-1482
-Analyzing Verilog file c:/lscc/lattice_projects/src/clockdivider.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/top_module.v. VERI-1482
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/top_module.v(1): analyzing included file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/bleDefines.v. VERI-1328
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/top_module.v(2): analyzing included file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/radioDefines.v. VERI-1328
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/local_oscillator.v. VERI-1482
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/local_oscillator.v(2): analyzing included file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/defines.v. VERI-1328
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v. VERI-1482
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(1): analyzing included file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/radioDefines.v. VERI-1328
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/dedff.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/clockdivider.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/packetgenerator.v. VERI-1482
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/packetgenerator.v(1): analyzing included file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/bleDefines.v. VERI-1328
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/packetcounter.v. VERI-1482
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/packetcounter.v(1): analyzing included file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/bleDefines.v. VERI-1328
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/fskmodulator.v. VERI-1482
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/fskmodulator.v(2): analyzing included file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/radioDefines.v. VERI-1328
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/fskmodulator.v(3): analyzing included file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/bleDefines.v. VERI-1328
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/ble_packet.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/cosmodule.v. VERI-1482
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/cosmodule.v(1): analyzing included file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/bleDefines.v. VERI-1328
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/sinmodule.v. VERI-1482
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/sinmodule.v(1): analyzing included file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/bleDefines.v. VERI-1328
 Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v. VERI-1482
-Top module name (Verilog): top_level
-INFO - synthesis: c:/lscc/lattice_projects/src/top_module.v(6): compiling module top_level. VERI-1018
-INFO - synthesis: c:/lscc/lattice_projects/pll_64m/pll_64m.v(8): compiling module pll_64M. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(757): compiling module VHI. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(761): compiling module VLO. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(1696): compiling module EHXPLLL(CLKFB_DIV=2,CLKOP_DIV=9,CLKOS_DIV=1,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOP_CPHASE=8,CLKOP_TRIM_POL="FALLING",CLKOS_TRIM_POL="FALLING",PLLRST_ENA="ENABLED"). VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(1568): compiling module PLLREFCS. VERI-1018
-INFO - synthesis: c:/lscc/lattice_projects/src/data_generator.v(3): compiling module data_generator. VERI-1018
-WARNING - synthesis: c:/lscc/lattice_projects/src/data_generator.v(28): expression size 32 truncated to fit in target size 10. VERI-1209
-INFO - synthesis: c:/lscc/lattice_projects/src/serial_2_parallel.v(3): compiling module serial_2_parallel. VERI-1018
-WARNING - synthesis: c:/lscc/lattice_projects/src/serial_2_parallel.v(69): expression size 32 truncated to fit in target size 2. VERI-1209
-INFO - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(4): compiling module local_oscillator. VERI-1018
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: literal value truncated to fit in 14 bits. VERI-1208
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(32): using initial value of sample since it is never assigned. VERI-1220
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(44): start should be on the sensitivity list. VERI-1221
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(87): expression size 32 truncated to fit in target size 2. VERI-1209
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(88): expression size 32 truncated to fit in target size 1. VERI-1209
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(91): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(92): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(95): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(96): expression size 32 truncated to fit in target size 8. VERI-1209
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(100): expression size 14 truncated to fit in target size 13. VERI-1209
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(100): expression size 14 truncated to fit in target size 13. VERI-1209
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(101): expression size 14 truncated to fit in target size 13. VERI-1209
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(101): expression size 14 truncated to fit in target size 13. VERI-1209
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(102): expression size 14 truncated to fit in target size 13. VERI-1209
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(102): expression size 14 truncated to fit in target size 13. VERI-1209
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(103): expression size 14 truncated to fit in target size 13. VERI-1209
-WARNING - synthesis: c:/lscc/lattice_projects/src/local_oscillator.v(103): expression size 14 truncated to fit in target size 13. VERI-1209
-INFO - synthesis: c:/lscc/lattice_projects/src/modulator.v(5): compiling module modulator. VERI-1018
-WARNING - synthesis: c:/lscc/lattice_projects/src/modulator.v(99): expression size 21 truncated to fit in target size 1. VERI-1209
-INFO - synthesis: c:/lscc/lattice_projects/src/clockdivider.v(1): compiling module clockDivider. VERI-1018
-INFO - synthesis: c:/lscc/lattice_projects/src/iqserializer.v(3): compiling module IQSerializer. VERI-1018
-INFO - synthesis: c:/lscc/lattice_projects/src/dedff.v(1): compiling module DEDFF. VERI-1018
-WARNING - synthesis: c:/lscc/lattice_projects/src/top_module.v(43): Register start_8 is stuck at One. VDB-5014
-WARNING - synthesis: c:/lscc/lattice_projects/src/top_module.v(55): net top_rst_n does not have a driver. VDB-1002
-WARNING - synthesis: c:/lscc/lattice_projects/src/top_module.v(152): net IQSerializer_start does not have a driver. VDB-1002
+Top module name (Verilog): top_module
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/top_module.v(7): compiling module top_module. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/clockdivider.v(1): compiling module clockDivider. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/packetcounter.v(6): compiling module packetCounter. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/packetgenerator.v(3): compiling module packetGenerator. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/ble_packet.v(1): compiling module ble_packet. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/fskmodulator.v(5): compiling module FSKModulator. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/sinmodule.v(3): compiling module sinModule. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/cosmodule.v(3): compiling module cosModule. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(3): compiling module IQSerializer. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/dedff.v(1): compiling module DEDFF. VERI-1018
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00m/data/sa5mlib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
@@ -322,63 +135,131 @@ Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'sa5p85m.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.43.
-Top-level module name = top_level.
-######## Missing driver on net top_rst_n. Patching with GND.
-######## Missing driver on net IQSerializer_start. Patching with GND.
-WARNING - synthesis: c:/lscc/lattice_projects/src/dedff.v(25): Register \IQSerializer_0/DEDFF_0/pose_edge_14 is stuck at Zero. VDB-5013
-WARNING - synthesis: c:/lscc/lattice_projects/src/dedff.v(31): Register \IQSerializer_0/DEDFF_0/neg_edge_15 is stuck at Zero. VDB-5013
+Top-level module name = top_module.
+WARNING - synthesis: I/O Port rxd09 's net has no driver and is unused.
+INFO - synthesis: Extracted state machine for register '\fskModule_0/cos_phase' with one-hot encoding
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 00000001
+
+ 001 -> 00000010
+
+ 010 -> 00000100
+
+ 011 -> 00001000
+
+ 100 -> 00010000
+
+ 101 -> 00100000
+
+ 110 -> 01000000
+
+ 111 -> 10000000
+
+INFO - synthesis: Extracted state machine for register '\packetGen_0/current_state' with one-hot encoding
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 0001
+
+ 0001 -> 0010
+
+ 0010 -> 0100
+
+ 0011 -> 1000
+
+INFO - synthesis: Extracted state machine for register '\IQSerializer_0/current_state' with one-hot encoding
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 00001
+
+ 0010 -> 00010
+
+ 0011 -> 00100
+
+ 0100 -> 01000
+
+ 0101 -> 10000
 
 
 
-GSR will not be inferred because no asynchronous signal was found in the netlist.
+
+WARNING - synthesis: Bit 1 of Register \IQSerializer_0/current_state_FSM is stuck at Zero
+WARNING - synthesis: I/O Port rxd09 's net has no driver and is unused.
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(88): Register \IQSerializer_0/QCounter_412__i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(85): Register \IQSerializer_0/ICounter_407__i0 is stuck at Zero. VDB-5013
+Duplicate register/latch removal. \fskModule_0/FSK_Q__i3 is a one-to-one match with \fskModule_0/FSK_Q__i1.
+Duplicate register/latch removal. \fskModule_0/FSK_Q__i2 is a one-to-one match with \fskModule_0/FSK_Q__i3.
+Duplicate register/latch removal. \fskModule_0/FSK_I__i11 is a one-to-one match with \fskModule_0/FSK_I__i6.
+Duplicate register/latch removal. \fskModule_0/FSK_I__i10 is a one-to-one match with \fskModule_0/FSK_I__i5.
+Duplicate register/latch removal. \fskModule_0/FSK_I__i9 is a one-to-one match with \fskModule_0/FSK_I__i8.
+Duplicate register/latch removal. \fskModule_0/FSK_I__i7 is a one-to-one match with \fskModule_0/FSK_I__i10.
+Duplicate register/latch removal. \fskModule_0/FSK_I__i3 is a one-to-one match with \fskModule_0/FSK_I__i1.
+Duplicate register/latch removal. \fskModule_0/FSK_I__i2 is a one-to-one match with \fskModule_0/FSK_I__i3.
+Duplicate register/latch removal. \fskModule_0/FSK_I__i11 is a one-to-one match with \fskModule_0/FSK_I__i9.
+Duplicate register/latch removal. \fskModule_0/FSK_Q__i11 is a one-to-one match with \fskModule_0/FSK_Q__i6.
+Duplicate register/latch removal. \fskModule_0/FSK_Q__i9 is a one-to-one match with \fskModule_0/FSK_Q__i8.
+Duplicate register/latch removal. \fskModule_0/FSK_Q__i11 is a one-to-one match with \fskModule_0/FSK_Q__i9.
+Duplicate register/latch removal. \fskModule_0/FSK_Q__i10 is a one-to-one match with \fskModule_0/FSK_Q__i5.
+Duplicate register/latch removal. \fskModule_0/FSK_Q__i7 is a one-to-one match with \fskModule_0/FSK_Q__i10.
+GSR instance connected to net clkDivider_lock.
 Applying 200.000000 MHz constraint to all clocks
 
+WARNING - synthesis: Mapping latch \packetGen_0/data_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 WARNING - synthesis: Mapping latch \clockDivider_0/clkLock_I_0_reset to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 WARNING - synthesis: Mapping latch \clockDivider_0/clkLock_I_0_set to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
-WARNING - synthesis: Mapping latch i83 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+WARNING - synthesis: Mapping latch i909 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
 WARNING - synthesis: No user .sdc file.
-Results of NGD DRC are available in top_level_drc.log.
+Results of NGD DRC are available in top_module_drc.log.
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00m/data/sa5mlib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+WARNING - synthesis: logical net 'rxd09' has no load.
+WARNING - synthesis: input pad net 'rxd09' has no legal load.
+WARNING - synthesis: DRC complete with 2 warnings.
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file mySDR_fpga_impl1.ngd.
 
-################### Begin Area Report (top_level)######################
-Number of register bits => 8 of 84255 (0 % )
-CCU2C => 5
-EHXPLLL => 1
-FD1S3IX => 8
+################### Begin Area Report (top_module)######################
+Number of register bits => 146 of 84255 (0 % )
+CCU2C => 76
+FD1P3IX => 10
+FD1S3AX => 30
+FD1S3IX => 91
+FD1S3JX => 15
 GSR => 1
-IB => 1
-LUT4 => 9
-OB => 3
-PLLREFCS => 1
+IB => 2
+INV => 2
+LUT4 => 136
+OB => 10
+PFUMX => 5
+ROM256X1A => 1
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 3
-  Net : my_pll_instance/serial_clk_c, loads : 10
-  Net : clk_c, loads : 1
-  Net : my_pll_instance/CLKIt, loads : 1
+Number of Clocks: 2
+  Net : clockDivider_0/clkDivider_clko, loads : 55
+  Net : top_clk_c, loads : 47
 Clock Enable Nets
-Number of Clock Enables: 0
-Top 0 highest fanout Clock Enables:
+Number of Clock Enables: 3
+Top 3 highest fanout Clock Enables:
+  Net : packetGen_0/clkDivider_clko_enable_10, loads : 8
+  Net : clkDivider_clko_enable_1, loads : 1
+  Net : fskModule_0/clkDivider_clko_enable_3, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : clockDivider_0/n346, loads : 8
-  Net : my_pll_instance/pll_lock, loads : 3
-  Net : clockDivider_0/lockCounter_7, loads : 2
-  Net : clockDivider_0/n376, loads : 2
-  Net : clockDivider_0/n345, loads : 2
-  Net : clockDivider_0/n370, loads : 2
-  Net : clockDivider_0/lockCounter_4, loads : 2
-  Net : clockDivider_0/lockCounter_6, loads : 2
-  Net : clockDivider_0/lockCounter_1, loads : 2
-  Net : clockDivider_0/lockCounter_3, loads : 2
+  Net : clockDivider_0/clk_N_172, loads : 25
+  Net : clockDivider_0/n1926, loads : 25
+  Net : packetGen_0/n3209, loads : 22
+  Net : clk_N_317, loads : 22
+  Net : fskModule_0/sampleCount_1, loads : 15
+  Net : fskModule_0/sampleCount_0, loads : 15
+  Net : fskModule_0/n2767, loads : 13
+  Net : packetGen_0/n3216, loads : 13
+  Net : packetGen_0/next_state_3__N_151, loads : 11
+  Net : IQSerializer_0/n1925, loads : 10
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -388,18 +269,21 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets serial_clk_c]            |  200.000 MHz|  337.154 MHz|     6  
+clk1 [get_nets top_clk_c]               |  200.000 MHz|   82.129 MHz|     5 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clkDivider_clko]         |  200.000 MHz|   95.166 MHz|     5 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-All constraints were met.
+2 constraints not met.
 
 
-Peak Memory Usage: 123.355  MB
+Peak Memory Usage: 124.305  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.594  secs
+Elapsed CPU time for LSE flow : 0.844  secs
 --------------------------------------------------------------
 
 
