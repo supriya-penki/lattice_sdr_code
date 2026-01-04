@@ -1,97 +1,97 @@
 [ START MERGED ]
 clk_N_174 clockDivider_clk_4M
-n2158 clockDivider_clkLock
-clk_N_319 serial_clk_c
 clockDivider_0/pll_lock_N_54 LED7_c
+n2189 clockDivider_clkLock
+clk_N_319 serial_clk_c
 [ END MERGED ]
 [ START CLIPPED ]
 VCC_net
-cnt1_379_add_4_1/S0
-cnt1_379_add_4_1/CI
-add_1273_14/S1
-add_1273_14/S0
-cnt1_379_add_4_27/S1
-cnt1_379_add_4_27/CO
-add_1272_1/S1
-add_1272_1/S0
-add_1272_1/CI
-add_1272_3/S1
-add_1272_3/S0
-add_1272_5/S1
-add_1272_5/S0
-add_1272_7/S1
-add_1272_7/S0
-add_1272_9/S1
-add_1272_9/S0
-add_1272_11/S1
-add_1272_11/S0
-add_1272_13/S1
-add_1272_13/S0
-clockDivider_0/lockCounter_381_add_4_9/S1
-clockDivider_0/lockCounter_381_add_4_9/CO
-clockDivider_0/lockCounter_381_add_4_1/S0
-clockDivider_0/lockCounter_381_add_4_1/CI
-clockDivider_0/counter_380_add_4_1/S0
-clockDivider_0/counter_380_add_4_1/CI
-clockDivider_0/counter_380_add_4_9/S1
-clockDivider_0/counter_380_add_4_9/CO
-add_1273_16/S1
-add_1273_16/S0
-add_1273_18/S1
-add_1273_18/S0
-add_1272_15/S1
-add_1272_15/S0
-add_1272_17/S1
-add_1272_17/S0
-add_1272_19/S1
-add_1272_19/S0
-add_1272_21/S1
-add_1272_21/S0
-add_1272_23/S1
-add_1272_23/S0
-add_1272_25/S1
-add_1272_25/S0
-add_1272_27/S0
-add_1272_27/CO
-counter_0/waitcount_383_add_4_1/S0
-counter_0/waitcount_383_add_4_1/CI
-counter_0/waitcount_383_add_4_27/S1
-counter_0/waitcount_383_add_4_27/CO
-add_1273_2/S1
-add_1273_2/S0
-add_1273_2/CI
-add_1273_4/S1
-add_1273_4/S0
-add_1273_6/S1
-add_1273_6/S0
-add_1273_8/S1
-add_1273_8/S0
-add_1273_20/S1
-add_1273_20/S0
-_add_1_655_add_4_13/S1
-_add_1_655_add_4_13/CO
-add_1273_cout/S1
-add_1273_cout/CO
-add_1273_10/S1
-add_1273_10/S0
-add_1273_12/S1
-add_1273_12/S0
-_add_1_655_add_4_1/S0
-_add_1_655_add_4_1/CI
+clockDivider_0/lockCounter_407_add_4_1/S0
+clockDivider_0/lockCounter_407_add_4_1/CI
+clockDivider_0/lockCounter_407_add_4_9/S1
+clockDivider_0/lockCounter_407_add_4_9/CO
+clockDivider_0/counter_406_add_4_1/S0
+clockDivider_0/counter_406_add_4_1/CI
+clockDivider_0/counter_406_add_4_9/S1
+clockDivider_0/counter_406_add_4_9/CO
+_add_1_679_add_4_13/S1
+_add_1_679_add_4_13/CO
+cnt1_405_add_4_1/S0
+cnt1_405_add_4_1/CI
+counter_0/waitcount_409_add_4_27/S1
+counter_0/waitcount_409_add_4_27/CO
+counter_0/waitcount_409_add_4_1/S0
+counter_0/waitcount_409_add_4_1/CI
+cnt1_405_add_4_27/S1
+cnt1_405_add_4_27/CO
+add_1403_1/S1
+add_1403_1/S0
+add_1403_1/CI
+add_1403_3/S1
+add_1403_3/S0
+add_1403_5/S1
+add_1403_5/S0
+add_1403_7/S1
+add_1403_7/S0
+add_1403_9/S1
+add_1403_9/S0
+add_1403_11/S1
+add_1403_11/S0
+add_1403_13/S1
+add_1403_13/S0
+add_1403_15/S1
+add_1403_15/S0
+add_1403_17/S1
+add_1403_17/S0
+add_1403_19/S1
+add_1403_19/S0
+add_1403_21/S1
+add_1403_21/S0
+add_1403_23/S1
+add_1403_23/S0
+add_1403_25/S1
+add_1403_25/S0
+add_1403_27/S0
+add_1403_27/CO
+add_1402_2/S1
+add_1402_2/S0
+add_1402_2/CI
+add_1402_4/S1
+add_1402_4/S0
+add_1402_6/S1
+add_1402_6/S0
+add_1402_8/S1
+add_1402_8/S0
+add_1402_10/S1
+add_1402_10/S0
+add_1402_12/S1
+add_1402_12/S0
+add_1402_14/S1
+add_1402_14/S0
+add_1402_16/S1
+add_1402_16/S0
+add_1402_18/S1
+add_1402_18/S0
+add_1402_20/S1
+add_1402_20/S0
+add_1402_cout/S1
+add_1402_cout/CO
+_add_1_679_add_4_1/S0
+_add_1_679_add_4_1/CI
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Sun Jan 04 13:02:30 2026
+# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Sun Jan 04 20:46:06 2026
 
 SYSCONFIG SLAVE_SPI_PORT=DISABLE MASTER_SPI_PORT=DISABLE SLAVE_PARALLEL_PORT=DISABLE BACKGROUND_RECONFIG=OFF DONE_EX=OFF DONE_OD=ON DONE_PULL=ON MCCLK_FREQ=2.4 TRANSFR=OFF CONFIG_IOVOLTAGE=2.5 CONFIG_SECURE=OFF WAKE_UP=21 COMPRESS_CONFIG=OFF CONFIG_MODE=JTAG INBUF=OFF ;
 LOCATE COMP "top_rst" SITE "H2" ;
 LOCATE COMP "top_clk" SITE "A10" ;
 LOCATE COMP "LED7" SITE "B17" ;
+LOCATE COMP "serial_clk" SITE "C4" ;
+LOCATE COMP "serial_iq" SITE "F4" ;
 LOCATE COMP "LED6" SITE "A17" ;
 LOCATE COMP "LED5" SITE "C17" ;
 LOCATE COMP "LED4" SITE "B18" ;
-LOCATE COMP "serial_clk" SITE "C4" ;
-LOCATE COMP "serial_iq" SITE "F4" ;
 LOCATE COMP "LED3" SITE "A18" ;
 LOCATE COMP "LED2" SITE "B19" ;
 LOCATE COMP "LED1" SITE "A12" ;

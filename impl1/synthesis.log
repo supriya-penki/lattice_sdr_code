@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Jan 04 13:02:28 2026
+Sun Jan 04 20:46:04 2026
 
 
 Command Line:  synthesis -f mySDR_fpga_impl1_lattice.synproj -gui -msgset C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/promote.xml 
@@ -200,8 +200,8 @@ original encoding -> new encoding (one-hot encoding)
 
 
 WARNING - synthesis: Bit 1 of Register \IQSerializer_1/current_state_FSM is stuck at Zero
-WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(87): Register \IQSerializer_1/QCounter_387__i0 is stuck at Zero. VDB-5013
-WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(84): Register \IQSerializer_1/ICounter_385__i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(87): Register \IQSerializer_1/QCounter_413__i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(84): Register \IQSerializer_1/ICounter_411__i0 is stuck at Zero. VDB-5013
 Duplicate register/latch removal. \fskModule_1/FSK_Q__i3 is a one-to-one match with \fskModule_1/FSK_Q__i1.
 Duplicate register/latch removal. \fskModule_1/FSK_Q__i2 is a one-to-one match with \fskModule_1/FSK_Q__i3.
 Duplicate register/latch removal. \fskModule_1/FSK_I__i11 is a one-to-one match with \fskModule_1/FSK_I__i6.
@@ -216,7 +216,7 @@ Duplicate register/latch removal. \fskModule_1/FSK_Q__i9 is a one-to-one match w
 Duplicate register/latch removal. \fskModule_1/FSK_Q__i11 is a one-to-one match with \fskModule_1/FSK_Q__i9.
 Duplicate register/latch removal. \fskModule_1/FSK_Q__i10 is a one-to-one match with \fskModule_1/FSK_Q__i5.
 Duplicate register/latch removal. \fskModule_1/FSK_Q__i7 is a one-to-one match with \fskModule_1/FSK_Q__i10.
-GSR will not be inferred because no asynchronous signal was found in the netlist.
+GSR instance connected to net counter_0_countDone.
 Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: Mapping latch \packetGen_1/data_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
@@ -234,14 +234,14 @@ Writing NGD file mySDR_fpga_impl1.ngd.
 Number of register bits => 137 of 84255 (0 % )
 CCU2C => 70
 EHXPLLL => 2
-FD1P3IX => 10
-FD1S3AX => 31
-FD1S3IX => 82
-FD1S3JX => 14
+FD1P3IX => 11
+FD1S3AX => 32
+FD1S3IX => 81
+FD1S3JX => 13
 GSR => 1
 IB => 2
 INV => 2
-LUT4 => 120
+LUT4 => 121
 OB => 10
 PFUMX => 5
 ROM256X1A => 1
@@ -255,22 +255,23 @@ Number of Clocks: 4
   Net : my_instance_1/pll_clko_1, loads : 2
   Net : top_clk_c, loads : 1
 Clock Enable Nets
-Number of Clock Enables: 3
-Top 3 highest fanout Clock Enables:
+Number of Clock Enables: 4
+Top 4 highest fanout Clock Enables:
   Net : clockDivider_0/lockCounter_7, loads : 2
   Net : fskModule_1/clockDivider_clk_4M_enable_2, loads : 1
+  Net : packetGen_1/next_state_3__N_154, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : fskModule_1/n3364, loads : 27
-  Net : counter_0/n2159, loads : 26
+  Net : counter_0/n2190, loads : 26
   Net : clockDivider_0/clk_N_174, loads : 25
-  Net : fskModule_1/n23, loads : 12
+  Net : packetGen_1/n3490, loads : 22
+  Net : fskModule_1/sampleCount_1, loads : 15
+  Net : fskModule_1/sampleCount_0, loads : 15
+  Net : fskModule_1/n3487, loads : 14
+  Net : fskModule_1/n3046, loads : 13
+  Net : counter_0/counter_0_countDone, loads : 11
   Net : my_instance_2/clk_N_319, loads : 11
-  Net : fskModule_1/fskModule_start, loads : 11
-  Net : counter_0/counter_0_countDone, loads : 10
-  Net : packetGen_1/next_state_3__N_153, loads : 10
-  Net : clockDivider_0/pll_lock_N_54, loads : 10
-  Net : packetGen_1/symCounter_0, loads : 9
+  Net : fskModule_1/n527, loads : 11
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -280,7 +281,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets clockDivider_clk_4M]     |  200.000 MHz|   79.479 MHz|     5 *
+clk1 [get_nets clockDivider_clk_4M]     |  200.000 MHz|   95.166 MHz|     5 *
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
 clk0 [get_nets serial_clk_c]            |  200.000 MHz|   82.129 MHz|     5 *
@@ -291,8 +292,8 @@ clk0 [get_nets serial_clk_c]            |  200.000 MHz|   82.129 MHz|     5 *
 2 constraints not met.
 
 
-Peak Memory Usage: 124.094  MB
+Peak Memory Usage: 123.336  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.797  secs
+Elapsed CPU time for LSE flow : 0.813  secs
 --------------------------------------------------------------

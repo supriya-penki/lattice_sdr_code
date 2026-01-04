@@ -1,0 +1,547 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+!s11f vlog 2024.2 2024.05, May 20 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z2 dC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/yutu
+T_opt
+!s110 1767547763
+V3=QdX2<_9z8H>oKi8EQGm2
+04 5 4 work fsktb fast 0
+=1-b025aa4ec8c9-695aa373-a9-4b0c
+R1
+!s12f OEM25U4 
+!s12b OEM100
+!s124 OEM100
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work work
+Z3 tCvgOpt 0
+n@_opt
+OL;O;2024.2;79
+vble_packet
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v
+Z4 !s110 1767547747
+!i10b 1
+!s100 XF]cmVgk1LjF5A?cK]]`i3
+IW`VRZ^SWiag^=V>J0QEbQ0
+R2
+w1767133125
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v
+!i122 247
+L0 1 271
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+Z6 OL;L;2024.2;79
+r1
+!s85 0
+31
+Z7 !s108 1767547746.000000
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v|
+!i113 0
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R3
+vclockDivider
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v
+R4
+!i10b 1
+!s100 kV@^:NmOAJIPh82_PJgWg0
+I;55cQS3iz9gEcG:dM9zzh1
+R2
+w1767133155
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v
+!i122 250
+L0 14 40
+R5
+R6
+r1
+!s85 0
+31
+Z9 !s108 1767547747.000000
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v|
+!i113 0
+R8
+R3
+nclock@divider
+vcosModule
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v
+Z10 !s110 1767547746
+!i10b 1
+!s100 ozH>YR5h_L?1_DR`oD@lW3
+I6G?d:K:Kk7Fl;>4^bQlAV3
+R2
+w1767133182
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v
+!i122 241
+Z11 L0 3 30
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v|
+!i113 0
+R8
+R3
+ncos@module
+vDEDFF
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v
+R10
+!i10b 1
+!s100 `7X^BD<anC:iCjQaUna@i1
+IF<W0Yk[]BUbFc@J]X^FlF2
+R2
+w1767132908
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v
+!i122 245
+L0 21 33
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v|
+!i113 0
+R8
+R3
+n@d@e@d@f@f
+vdivided_pll
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v
+R4
+!i10b 1
+!s100 A7n;da0Ch_N0<8ENn=o]I2
+I;<[2]mQBO3;aQkekgI0Af3
+R2
+w1767465533
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v
+!i122 259
+L0 11 8
+R5
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v|
+!i113 0
+R8
+R3
+vdivided_pll_2
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v
+R4
+!i10b 1
+!s100 FP_beP3Xli>kCiVjPTO3z2
+IW4ST5h7]6Bg`d[J=Pk9zk3
+R2
+w1767465761
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v
+!i122 260
+L0 11 12
+R5
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v|
+!i113 0
+R8
+R3
+vFSKModulator
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v
+R10
+!i10b 1
+!s100 ze4]zzLDGQXa8;SeM:ZjP3
+IF8]lBm=J6o]iKlm@nlQPA2
+R2
+w1767539764
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v
+!i122 243
+L0 5 166
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v|
+!i113 0
+R8
+R3
+n@f@s@k@modulator
+vFSKModulator_tb
+Z12 2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v
+!s110 1767546199
+!i10b 1
+!s100 P<MOSWKIolnJCzM>iIRXc0
+I=A1c8`B:MJ5`]DLSkFIFR0
+R2
+w1767545664
+Z13 8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v
+Z14 FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v
+!i122 84
+L0 22 68
+R5
+R6
+r1
+!s85 0
+31
+!s108 1767546199.000000
+Z15 !s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v|
+Z16 !s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v|
+!i113 0
+R8
+R3
+n@f@s@k@modulator_tb
+vfsktb
+R12
+R10
+!i10b 1
+!s100 f@D>=mm?oe52K7znTnaVG2
+I>4P4V>UlD`FRog2CEl2OU0
+R2
+w1767547740
+R13
+R14
+!i122 244
+L0 22 77
+R5
+R6
+r1
+!s85 0
+31
+R7
+R15
+R16
+!i113 0
+R8
+R3
+vIQSerializer
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v
+R10
+!i10b 1
+!s100 NShD6lO9a]TN]2gIl3SzZ1
+IN[0mJ;8U7<lEPHZFlSP7U1
+R2
+w1767511831
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v
+!i122 246
+L0 3 167
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v|
+!i113 0
+R8
+R3
+n@i@q@serializer
+vlocal_oscillator
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v
+R4
+!i10b 1
+!s100 jiZQDd9niEOm:0LBHS92@2
+IQU:R6zGJFPjhIK1VPcTVW3
+R2
+w1766762381
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v
+!i122 254
+L0 4 110
+R5
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/defines.v|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v|
+!i113 0
+R8
+R3
+vpacketCounter
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v
+R4
+!i10b 1
+!s100 8WdfFRdH66iQh?7`F<72h2
+I]SWP04cDcVoj@cGk5b_WF3
+R2
+w1767511948
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v
+!i122 249
+L0 6 22
+R5
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v|
+!i113 0
+R8
+R3
+npacket@counter
+vpacketGenerator
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v
+R4
+!i10b 1
+!s100 jEf[KUJ=BY9U1[PnLiG[=0
+I4[>SPU57>R<WFV=>oo7gU1
+R2
+w1767539727
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v
+!i122 248
+L0 4 389
+R5
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v|
+!i113 0
+R8
+R3
+npacket@generator
+vpll_24_64m
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v
+R4
+!i10b 1
+!s100 z><Yo92jC_QZ27UL15_YE1
+ICoaC^o8B4Nb`7ZPPg]`cS2
+R2
+w1767465757
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v
+!i122 251
+Z17 L0 8 69
+R5
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v|
+!i113 0
+R8
+R3
+vpll_24m
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v
+R4
+!i10b 1
+!s100 V`2:9cAXIYB5Yl;RE5M;J1
+I7=<8^`_R:<a>>bFh:]fQV1
+R2
+w1767465530
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v
+!i122 252
+L0 8 68
+R5
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v|
+!i113 0
+R8
+R3
+vpll_64
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64/pll_64.v
+R4
+!i10b 1
+!s100 C0fSZ7VbEWJo1XAfEFSkz0
+Imazaoe:ITzD9WOIC<C4i`2
+R2
+w1767448653
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64/pll_64.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64/pll_64.v
+!i122 257
+R17
+R5
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64/pll_64.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64/pll_64.v|
+!i113 0
+R8
+R3
+vpll_64_new
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new/pll_64_new.v
+R4
+!i10b 1
+!s100 h4UIlY?:bhg2hkbdnd`eN3
+IXR9iagb<;l@<JmzOk?6o92
+R2
+w1767455192
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new/pll_64_new.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new/pll_64_new.v
+!i122 256
+L0 8 74
+R5
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new/pll_64_new.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new/pll_64_new.v|
+!i113 0
+R8
+R3
+vpll_64m
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v
+R4
+!i10b 1
+!s100 ;cPLj4[8V9H5:1k^JBAF^3
+I8j_2[cIN?D37nV>>L`<o23
+R2
+w1767465451
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v
+!i122 258
+L0 11 22
+R5
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v|
+!i113 0
+R8
+R3
+vpll_try
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try/pll_try.v
+R4
+!i10b 1
+!s100 1FP_fEhD=4Tg@dB?:chec1
+IBo;EAQoWV0;1hzX]cFm6W0
+R2
+w1767465409
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try/pll_try.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try/pll_try.v
+!i122 255
+L0 8 73
+R5
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try/pll_try.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try/pll_try.v|
+!i113 0
+R8
+R3
+vsinModule
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v
+R10
+!i10b 1
+!s100 C]^VnldNSWdJUA92nIcC?3
+INeKS[;723^_4`^9mX?80k1
+R2
+w1767133291
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v
+!i122 242
+R11
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v|
+!i113 0
+R8
+R3
+nsin@module
+vtop_module
+2C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v
+R4
+!i10b 1
+!s100 `eK4FQY^aFbFNoabCH5VN3
+Ilj]CfJPZ96G<SWoBPomcL3
+R2
+w1767547499
+8C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v
+FC:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v
+!i122 253
+L0 4 164
+R5
+R6
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v|
+!s90 -reportprogress|300|-work|work|-vopt|-stats=none|C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v|
+!i113 0
+R8
+R3
+vtopModule_tb
+R12
+!s110 1767547312
+!i10b 1
+!s100 [?YR5FjU6oaUYUzT=_h8G3
+ILDGK9[C2Pao=e>CTHeJ_a2
+R2
+w1767547306
+R13
+R14
+!i122 144
+L0 22 61
+R5
+R6
+r1
+!s85 0
+31
+!s108 1767547312.000000
+R15
+R16
+!i113 0
+R8
+R3
+ntop@module_tb

@@ -77,8 +77,8 @@ assign IQSerializer_Q = {fskModule_Q, 1'b0};
 //assign IQSerializer_Q = {13'd4095, 1'b0};
 
 
-//assign IQSerializer_I = {13'b1010101010101, 1'b0};
-//assign IQSerializer_Q = {13'b1010101010101, 1'b0};
+//assign IQSerializer_I = {13'b1111111111111, 1'b0};
+//assign IQSerializer_Q = {13'b1111111111111, 1'b0};
 
 //-------------------------------------------------------------------
 // State
@@ -144,7 +144,7 @@ packetGenerator packetGen_1(
 
 FSKModulator fskModule_1(
 	.clk(clockDivider_clk_4M),
-	.rst(counter_0_countDone),
+	.rst_n(counter_0_countDone),
 	.enable(fskModule_start),
 	.symVal(fskModule_symVal),
 	.FSK_I(fskModule_I),

@@ -1,0 +1,57 @@
+if {![file exists "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/yutu/yutu.mpf"]} { 
+	project new "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/yutu" yutu
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try/pll_try.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new/pll_64_new.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64/pll_64.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try/pll_try.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new/pll_64_new.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64/pll_64.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v"
+} else {
+	project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/yutu/yutu"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_ecp5u  FSKModulator_tb
+view wave
+add wave /*
+run 1000ns

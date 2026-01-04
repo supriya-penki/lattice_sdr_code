@@ -270,7 +270,7 @@
             <ID>35935013</ID>
             <Severity>Warning</Severity>
             <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(87): </Dynamic>
-            <Dynamic>\IQSerializer_1/QCounter_387__i0</Dynamic>
+            <Dynamic>\IQSerializer_1/QCounter_413__i0</Dynamic>
             <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v</Navigation>
             <Navigation>87</Navigation>
         </Message>
@@ -278,7 +278,7 @@
             <ID>35935013</ID>
             <Severity>Warning</Severity>
             <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(84): </Dynamic>
-            <Dynamic>\IQSerializer_1/ICounter_385__i0</Dynamic>
+            <Dynamic>\IQSerializer_1/ICounter_411__i0</Dynamic>
             <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v</Navigation>
             <Navigation>84</Navigation>
         </Message>

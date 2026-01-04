@@ -1,0 +1,147 @@
+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module divided_pll
+
+Top level modules:
+	divided_pll
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module packetCounter
+
+Top level modules:
+	packetCounter
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module divided_pll_2
+
+Top level modules:
+	divided_pll_2
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module cosModule
+
+Top level modules:
+	cosModule
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module IQSerializer
+
+Top level modules:
+	IQSerializer
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module local_oscillator
+
+Top level modules:
+	local_oscillator
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module pll_24_64m
+
+Top level modules:
+	pll_24_64m
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module packetGenerator
+
+Top level modules:
+	packetGenerator
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module top_module
+
+Top level modules:
+	top_module
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module sinModule
+
+Top level modules:
+	sinModule
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new/pll_64_new.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new/pll_64_new.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module pll_64_new
+
+Top level modules:
+	pll_64_new
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try/pll_try.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try/pll_try.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module pll_try
+
+Top level modules:
+	pll_try
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module DEDFF
+
+Top level modules:
+	DEDFF
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module ble_packet
+
+Top level modules:
+	ble_packet
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module fsktb
+
+Top level modules:
+	fsktb
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module FSKModulator
+
+Top level modules:
+	FSKModulator
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module clockDivider
+
+Top level modules:
+	clockDivider
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module pll_24m
+
+Top level modules:
+	pll_24m
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module pll_64m
+
+Top level modules:
+	pll_64m
+
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64/pll_64.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64/pll_64.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module pll_64
+
+Top level modules:
+	pll_64
+
+} {} {}}

@@ -1,0 +1,1 @@
+C:/lscc/diamond/3.14/questasim/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 344352 work.fsktb -quiet -auto_acc_if_foreign -work work -allow_unnamed -o _opt -id 1-b025aa4ec8c9-695aa373-a9-4b0c +__design_bin_path+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/yutu

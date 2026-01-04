@@ -1,0 +1,2540 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/yutu/yutu.mdo}
+# Loading project yutu
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:20:39 on Jan 04,2026
+# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v 
+# -- Compiling module cosModule
+# 
+# Top level modules:
+# 	cosModule
+# End time: 22:20:39 on Jan 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:20:39 on Jan 04,2026
+# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v 
+# -- Compiling module sinModule
+# 
+# Top level modules:
+# 	sinModule
+# End time: 22:20:39 on Jan 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:20:39 on Jan 04,2026
+# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v 
+# -- Compiling module FSKModulator
+# 
+# Top level modules:
+# 	FSKModulator
+# End time: 22:20:39 on Jan 04,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 22:20:39 on Jan 04,2026
+# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v 
+# -- Compiling module FSKModulator_tb
+# ** Error: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(39): (vlog-2163) Macro `SinSize is undefined.
+# ** Error: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(40): (vlog-2163) Macro `SinSize is undefined.
+# End time: 22:20:39 on Jan 04,2026, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: C:/lscc/diamond/3.14/questasim/win64/vlog failed.
+# Error in macro C:\Users\SNA\Documents\FPGA_code\lattice_sdr_code\yutu\yutu.mdo line 53
+# C:/lscc/diamond/3.14/questasim/win64/vlog failed.
+#     while executing
+# "vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v""
+#     invoked from within
+# "if {![file exists "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/yutu/yutu.mpf"]} { 
+# 	project new "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_co..."
+# Compile of cosModule.v was successful.
+# Compile of sinModule.v was successful.
+# Compile of FSKModulator.v was successful.
+# Compile of fsktb.v failed with 2 errors.
+# Compile of DEDFF.v was successful.
+# Compile of IQSerializer.v was successful.
+# Compile of ble_packet.v was successful.
+# Compile of packetGenerator.v was successful.
+# Compile of packetCounter.v was successful.
+# Compile of clockDivider.v was successful.
+# Compile of pll_24_64m.v was successful.
+# Compile of pll_24m.v was successful.
+# Compile of top_module.v was successful.
+# Compile of local_oscillator.v was successful.
+# Compile of pll_try.v was successful.
+# Compile of pll_64_new.v was successful.
+# Compile of pll_64.v was successful.
+# Compile of pll_64m.v was successful.
+# Compile of divided_pll.v was successful.
+# Compile of divided_pll_2.v was successful.
+# Compile of bleDefines.v was successful.
+# Compile of radioDefines.v was successful.
+# 22 compiles, 1 failed with 2 errors.
+# Compile of cosModule.v was successful.
+# Compile of sinModule.v was successful.
+# Compile of FSKModulator.v was successful.
+# Compile of fsktb.v failed with 3 errors.
+# Compile of DEDFF.v was successful.
+# Compile of IQSerializer.v was successful.
+# Compile of ble_packet.v was successful.
+# Compile of packetGenerator.v was successful.
+# Compile of packetCounter.v was successful.
+# Compile of clockDivider.v was successful.
+# Compile of pll_24_64m.v was successful.
+# Compile of pll_24m.v was successful.
+# Compile of top_module.v was successful.
+# Compile of local_oscillator.v was successful.
+# Compile of pll_try.v was successful.
+# Compile of pll_64_new.v was successful.
+# Compile of pll_64.v was successful.
+# Compile of pll_64m.v was successful.
+# Compile of divided_pll.v was successful.
+# Compile of divided_pll_2.v was successful.
+# Compile of bleDefines.v was successful.
+# Compile of radioDefines.v was successful.
+# 22 compiles, 1 failed with 3 errors.
+# Compile of cosModule.v was successful.
+# Compile of sinModule.v was successful.
+# Compile of FSKModulator.v was successful.
+# Compile of fsktb.v was successful.
+# Compile of DEDFF.v was successful.
+# Compile of IQSerializer.v was successful.
+# Compile of ble_packet.v was successful.
+# Compile of packetGenerator.v was successful.
+# Compile of packetCounter.v was successful.
+# Compile of clockDivider.v was successful.
+# Compile of pll_24_64m.v was successful.
+# Compile of pll_24m.v was successful.
+# Compile of top_module.v was successful.
+# Compile of local_oscillator.v was successful.
+# Compile of pll_try.v was successful.
+# Compile of pll_64_new.v was successful.
+# Compile of pll_64.v was successful.
+# Compile of pll_64m.v was successful.
+# Compile of divided_pll.v was successful.
+# Compile of divided_pll_2.v was successful.
+# Compile of bleDefines.v was successful.
+# Compile of radioDefines.v was successful.
+# 22 compiles, 0 failed with no errors.
+vsim -gui work.FSKModulator_tb
+# vsim -gui work.FSKModulator_tb 
+# Start time: 22:26:20 on Jan 04,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(24): Module 'GSR' is not defined.
+#  For instance 'GSR_INST' at path 'FSKModulator_tb'
+# ** Error: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(25): Module 'PUR' is not defined.
+#  For instance 'PUR_INST' at path 'FSKModulator_tb'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
+# Error loading design
+# End time: 22:26:21 on Jan 04,2026, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 28
+# Load canceled
+# Compile of cosModule.v was successful.
+# Compile of sinModule.v was successful.
+# Compile of FSKModulator.v was successful.
+# Compile of fsktb.v was successful.
+# Compile of DEDFF.v was successful.
+# Compile of IQSerializer.v was successful.
+# Compile of ble_packet.v was successful.
+# Compile of packetGenerator.v was successful.
+# Compile of packetCounter.v was successful.
+# Compile of clockDivider.v was successful.
+# Compile of pll_24_64m.v was successful.
+# Compile of pll_24m.v was successful.
+# Compile of top_module.v was successful.
+# Compile of local_oscillator.v was successful.
+# Compile of pll_try.v was successful.
+# Compile of pll_64_new.v was successful.
+# Compile of pll_64.v was successful.
+# Compile of pll_64m.v was successful.
+# Compile of divided_pll.v was successful.
+# Compile of divided_pll_2.v was successful.
+# Compile of bleDefines.v was successful.
+# Compile of radioDefines.v was successful.
+# 22 compiles, 0 failed with no errors.
+# Load canceled
+# Compile of cosModule.v was successful.
+# Compile of sinModule.v was successful.
+# Compile of FSKModulator.v was successful.
+# Compile of fsktb.v was successful.
+# Compile of DEDFF.v was successful.
+# Compile of IQSerializer.v was successful.
+# Compile of ble_packet.v was successful.
+# Compile of packetGenerator.v was successful.
+# Compile of packetCounter.v was successful.
+# Compile of clockDivider.v was successful.
+# Compile of pll_24_64m.v was successful.
+# Compile of pll_24m.v was successful.
+# Compile of top_module.v was successful.
+# Compile of local_oscillator.v was successful.
+# Compile of pll_try.v was successful.
+# Compile of pll_64_new.v was successful.
+# Compile of pll_64.v was successful.
+# Compile of pll_64m.v was successful.
+# Compile of divided_pll.v was successful.
+# Compile of divided_pll_2.v was successful.
+# Compile of bleDefines.v was successful.
+# Compile of radioDefines.v was successful.
+# 22 compiles, 0 failed with no errors.
+# Load canceled
+vsim -gui work.FSKModulator_tb
+# vsim -gui work.FSKModulator_tb 
+# Start time: 22:37:10 on Jan 04,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(24): Module 'GSR' is not defined.
+#  For instance 'GSR_INST' at path 'FSKModulator_tb'
+# ** Error: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(25): Module 'PUR' is not defined.
+#  For instance 'PUR_INST' at path 'FSKModulator_tb'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
+# Error loading design
+# End time: 22:37:11 on Jan 04,2026, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 4
+# Compile of cosModule.v was successful.
+# Compile of sinModule.v was successful.
+# Compile of FSKModulator.v was successful.
+# Compile of fsktb.v was successful.
+# Compile of DEDFF.v was successful.
+# Compile of IQSerializer.v was successful.
+# Compile of ble_packet.v was successful.
+# Compile of packetGenerator.v was successful.
+# Compile of packetCounter.v was successful.
+# Compile of clockDivider.v was successful.
+# Compile of pll_24_64m.v was successful.
+# Compile of pll_24m.v was successful.
+# Compile of top_module.v was successful.
+# Compile of local_oscillator.v was successful.
+# Compile of pll_try.v was successful.
+# Compile of pll_64_new.v was successful.
+# Compile of pll_64.v was successful.
+# Compile of pll_64m.v was successful.
+# Compile of divided_pll.v was successful.
+# Compile of divided_pll_2.v was successful.
+# Compile of bleDefines.v was successful.
+# Compile of radioDefines.v was successful.
+# 22 compiles, 0 failed with no errors.
+vsim -gui work.FSKModulator_tb
+# vsim -gui work.FSKModulator_tb 
+# Start time: 22:38:16 on Jan 04,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(24): Module 'GSR' is not defined.
+#  For instance 'GSR_INST' at path 'FSKModulator_tb'
+# ** Error: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(25): Module 'PUR' is not defined.
+#  For instance 'PUR_INST' at path 'FSKModulator_tb'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=2, Warnings=0.
+# Error loading design
+# End time: 22:38:16 on Jan 04,2026, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 2
+# Compile of cosModule.v was successful.
+# Compile of sinModule.v was successful.
+# Compile of FSKModulator.v was successful.
+# Compile of fsktb.v was successful.
+# Compile of DEDFF.v was successful.
+# Compile of IQSerializer.v was successful.
+# Compile of ble_packet.v was successful.
+# Compile of packetGenerator.v was successful.
+# Compile of packetCounter.v was successful.
+# Compile of clockDivider.v was successful.
+# Compile of pll_24_64m.v was successful.
+# Compile of pll_24m.v was successful.
+# Compile of top_module.v was successful.
+# Compile of local_oscillator.v was successful.
+# Compile of pll_try.v was successful.
+# Compile of pll_64_new.v was successful.
+# Compile of pll_64.v was successful.
+# Compile of pll_64m.v was successful.
+# Compile of divided_pll.v was successful.
+# Compile of divided_pll_2.v was successful.
+# Compile of bleDefines.v was successful.
+# Compile of radioDefines.v was successful.
+# 22 compiles, 0 failed with no errors.
+vsim -gui work.fsktb
+# vsim -gui work.fsktb 
+# Start time: 22:40:10 on Jan 04,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(51): (vopt-2685) [TFMPC] - Too few port connections for 'UUT'.  Expected 8, found 5.
+# ** Warning: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(51): (vopt-2718) [TFMPC] - Missing connection for port 'start'.
+# ** Warning: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(51): (vopt-2718) [TFMPC] - Missing connection for port 'symDone'.
+# ** Warning: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(51): (vopt-2718) [TFMPC] - Missing connection for port 'enable'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=4.
+# Loading work.fsktb(fast)
+# Compile of cosModule.v was successful.
+# Compile of sinModule.v was successful.
+# Compile of FSKModulator.v was successful.
+# Compile of fsktb.v was successful.
+# Compile of DEDFF.v was successful.
+# Compile of IQSerializer.v was successful.
+# Compile of ble_packet.v was successful.
+# Compile of packetGenerator.v was successful.
+# Compile of packetCounter.v was successful.
+# Compile of clockDivider.v was successful.
+# Compile of pll_24_64m.v was successful.
+# Compile of pll_24m.v was successful.
+# Compile of top_module.v was successful.
+# Compile of local_oscillator.v was successful.
+# Compile of pll_try.v was successful.
+# Compile of pll_64_new.v was successful.
+# Compile of pll_64.v was successful.
+# Compile of pll_64m.v was successful.
+# Compile of divided_pll.v was successful.
+# Compile of divided_pll_2.v was successful.
+# Compile of bleDefines.v was successful.
+# Compile of radioDefines.v was successful.
+# 22 compiles, 0 failed with no errors.
+# Compile of cosModule.v was successful.
+# Compile of sinModule.v was successful.
+# Compile of FSKModulator.v was successful.
+# Compile of fsktb.v was successful.
+# Compile of DEDFF.v was successful.
+# Compile of IQSerializer.v was successful.
+# Compile of ble_packet.v was successful.
+# Compile of packetGenerator.v was successful.
+# Compile of packetCounter.v was successful.
+# Compile of clockDivider.v was successful.
+# Compile of pll_24_64m.v was successful.
+# Compile of pll_24m.v was successful.
+# Compile of top_module.v was successful.
+# Compile of local_oscillator.v was successful.
+# Compile of pll_try.v was successful.
+# Compile of pll_64_new.v was successful.
+# Compile of pll_64.v was successful.
+# Compile of pll_64m.v was successful.
+# Compile of divided_pll.v was successful.
+# Compile of divided_pll_2.v was successful.
+# Compile of bleDefines.v was successful.
+# Compile of radioDefines.v was successful.
+# 22 compiles, 0 failed with no errors.
+vsim -gui work.fsktb
+# End time: 22:52:43 on Jan 04,2026, Elapsed time: 0:12:33
+# Errors: 0, Warnings: 8
+# vsim -gui work.fsktb 
+# Start time: 22:52:43 on Jan 04,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Error: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(45): Module 'topModule' is not defined.
+#  For instance 'UUT' at path 'fsktb'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=0.
+# Error loading design
+# End time: 22:52:44 on Jan 04,2026, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 1
+dataset reload -f
+# Dataset not found: 
+# Compile of cosModule.v was successful.
+# Compile of sinModule.v was successful.
+# Compile of FSKModulator.v was successful.
+# Compile of fsktb.v was successful.
+# Compile of DEDFF.v was successful.
+# Compile of IQSerializer.v was successful.
+# Compile of ble_packet.v was successful.
+# Compile of packetGenerator.v was successful.
+# Compile of packetCounter.v was successful.
+# Compile of clockDivider.v was successful.
+# Compile of pll_24_64m.v was successful.
+# Compile of pll_24m.v was successful.
+# Compile of top_module.v was successful.
+# Compile of local_oscillator.v was successful.
+# Compile of pll_try.v was successful.
+# Compile of pll_64_new.v was successful.
+# Compile of pll_64.v was successful.
+# Compile of pll_64m.v was successful.
+# Compile of divided_pll.v was successful.
+# Compile of divided_pll_2.v was successful.
+# Compile of bleDefines.v was successful.
+# Compile of radioDefines.v was successful.
+# 22 compiles, 0 failed with no errors.
+# Compile of cosModule.v was successful.
+# Compile of sinModule.v was successful.
+# Compile of FSKModulator.v was successful.
+# Compile of fsktb.v was successful.
+# Compile of DEDFF.v was successful.
+# Compile of IQSerializer.v was successful.
+# Compile of ble_packet.v was successful.
+# Compile of packetGenerator.v was successful.
+# Compile of packetCounter.v was successful.
+# Compile of clockDivider.v was successful.
+# Compile of pll_24_64m.v was successful.
+# Compile of pll_24m.v was successful.
+# Compile of top_module.v was successful.
+# Compile of local_oscillator.v was successful.
+# Compile of pll_try.v was successful.
+# Compile of pll_64_new.v was successful.
+# Compile of pll_64.v was successful.
+# Compile of pll_64m.v was successful.
+# Compile of divided_pll.v was successful.
+# Compile of divided_pll_2.v was successful.
+# Compile of bleDefines.v was successful.
+# Compile of radioDefines.v was successful.
+# 22 compiles, 0 failed with no errors.
+vsim -gui work.fsktb
+# vsim -gui work.fsktb 
+# Start time: 22:53:54 on Jan 04,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Error: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v(18): Module 'VHI' is not defined.
+#  For instance 'scuba_vhi_inst' at path 'fsktb.UUT.my_instance_1'
+# ** Error: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v(20): Module 'VLO' is not defined.
+#  For instance 'scuba_vlo_inst' at path 'fsktb.UUT.my_instance_1'
+# ** Error: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v(54): Module 'EHXPLLL' is not defined.
+#  For instance 'PLLInst_0' at path 'fsktb.UUT.my_instance_1'
+# ** Error: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v(19): Module 'VHI' is not defined.
+#  For instance 'scuba_vhi_inst' at path 'fsktb.UUT.my_instance_2'
+# ** Error: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v(21): Module 'VLO' is not defined.
+#  For instance 'scuba_vlo_inst' at path 'fsktb.UUT.my_instance_2'
+# ** Error: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v(55): Module 'EHXPLLL' is not defined.
+#  For instance 'PLLInst_0' at path 'fsktb.UUT.my_instance_2'
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=6, Warnings=0.
+# Error loading design
+# End time: 22:53:55 on Jan 04,2026, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 3
+# Compile of cosModule.v was successful.
+# Compile of sinModule.v was successful.
+# Compile of FSKModulator.v was successful.
+# Compile of fsktb.v was successful.
+# Compile of DEDFF.v was successful.
+# Compile of IQSerializer.v was successful.
+# Compile of ble_packet.v was successful.
+# Compile of packetGenerator.v was successful.
+# Compile of packetCounter.v was successful.
+# Compile of clockDivider.v was successful.
+# Compile of pll_24_64m.v was successful.
+# Compile of pll_24m.v was successful.
+# Compile of top_module.v was successful.
+# Compile of local_oscillator.v was successful.
+# Compile of pll_try.v was successful.
+# Compile of pll_64_new.v was successful.
+# Compile of pll_64.v was successful.
+# Compile of pll_64m.v was successful.
+# Compile of divided_pll.v was successful.
+# Compile of divided_pll_2.v was successful.
+# Compile of bleDefines.v was successful.
+# Compile of radioDefines.v was successful.
+# 22 compiles, 0 failed with no errors.
+vsim -gui work.fsktb
+# vsim -gui work.fsktb 
+# Start time: 22:56:59 on Jan 04,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(53): (vopt-2685) [TFMPC] - Too few port connections for 'UUT'.  Expected 8, found 7.
+# ** Warning: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(53): (vopt-2718) [TFMPC] - Missing connection for port 'symDone'.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=2.
+# Loading work.fsktb(fast)
+# Compile of cosModule.v was successful.
+# Compile of sinModule.v was successful.
+# Compile of FSKModulator.v was successful.
+# Compile of fsktb.v was successful.
+# Compile of DEDFF.v was successful.
+# Compile of IQSerializer.v was successful.
+# Compile of ble_packet.v was successful.
+# Compile of packetGenerator.v was successful.
+# Compile of packetCounter.v was successful.
+# Compile of clockDivider.v was successful.
+# Compile of pll_24_64m.v was successful.
+# Compile of pll_24m.v was successful.
+# Compile of top_module.v was successful.
+# Compile of local_oscillator.v was successful.
+# Compile of pll_try.v was successful.
+# Compile of pll_64_new.v was successful.
+# Compile of pll_64.v was successful.
+# Compile of pll_64m.v was successful.
+# Compile of divided_pll.v was successful.
+# Compile of divided_pll_2.v was successful.
+# Compile of bleDefines.v was successful.
+# Compile of radioDefines.v was successful.
+# 22 compiles, 0 failed with no errors.
+vsim -gui work.fsktb
+# End time: 22:59:22 on Jan 04,2026, Elapsed time: 0:02:23
+# Errors: 0, Warnings: 5
+# vsim -gui work.fsktb 
+# Start time: 22:59:22 on Jan 04,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.fsktb(fast)
+do {C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/yutu/yutu.mdo}view wave
+# extra characters after close-brace
+add wave -r sim:/fsktb/*
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/fsktb/*'.
+add wave -r sim:/fsktb/UUT/*
+# ** UI-Msg (Warning): (vish-4014) No objects found matching '/fsktb/UUT/*'.
+
+run 10 us
+# 0 ps 0 0 1 0000 0000 
+# 125000 ps 1 0 1 0000 0000 
+# 250000 ps 0 0 1 0000 0000 
+# 375000 ps 1 0 1 0000 0000 
+# 500000 ps 0 0 1 0000 0000 
+# 625000 ps 1 0 1 0000 0000 
+# 750000 ps 0 0 1 0000 0000 
+# 875000 ps 1 0 1 0000 0000 
+# 1000000 ps 0 0 1 0000 0000 
+# 1125000 ps 1 0 1 0000 0000 
+# 1250000 ps 0 0 1 0000 0000 
+# 1375000 ps 1 0 1 0000 0000 
+# 1500000 ps 0 0 1 0000 0000 
+# 1625000 ps 1 0 1 0000 0000 
+# 1750000 ps 0 0 1 0000 0000 
+# 1875000 ps 1 0 1 0000 0000 
+# 2000000 ps 0 0 1 0000 0000 
+# 2125000 ps 1 0 1 0000 0000 
+# 2250000 ps 0 0 1 0000 0000 
+# 2375000 ps 1 0 1 0000 0000 
+# 2500000 ps 0 1 1 0000 0fff 
+# 2625000 ps 1 1 1 0000 0fff 
+# 2750000 ps 0 1 1 0000 0fff 
+# 2875000 ps 1 1 1 0000 0fff 
+# 3000000 ps 0 1 1 0b50 0b50 
+# 3125000 ps 1 1 1 0b50 0b50 
+# 3250000 ps 0 1 1 0fff 0000 
+# 3375000 ps 1 1 1 0fff 0000 
+# 3500000 ps 0 1 1 0b50 14b0 
+# 3625000 ps 1 1 1 0b50 14b0 
+# 3750000 ps 0 1 1 0000 1001 
+# 3875000 ps 1 1 1 0000 1001 
+# 4000000 ps 0 1 1 14b0 14b0 
+# 4125000 ps 1 1 1 14b0 14b0 
+# 4250000 ps 0 1 1 1001 0000 
+# 4375000 ps 1 1 1 1001 0000 
+# 4500000 ps 0 1 1 14b0 0b50 
+# 4625000 ps 1 1 1 14b0 0b50 
+# 4750000 ps 0 1 1 0000 0fff 
+# 4875000 ps 1 1 1 0000 0fff 
+# 5000000 ps 0 1 1 0b50 0b50 
+# 5125000 ps 1 1 1 0b50 0b50 
+# 5250000 ps 0 1 1 0fff 0000 
+# 5375000 ps 1 1 1 0fff 0000 
+# 5500000 ps 0 1 1 0b50 14b0 
+# 5625000 ps 1 1 1 0b50 14b0 
+# 5750000 ps 0 1 1 0000 1001 
+# 5875000 ps 1 1 1 0000 1001 
+# 6000000 ps 0 1 1 14b0 14b0 
+# 6125000 ps 1 1 1 14b0 14b0 
+# 6250000 ps 0 1 1 1001 0000 
+# 6375000 ps 1 1 1 1001 0000 
+# 6500000 ps 0 1 1 14b0 0b50 
+# 6625000 ps 1 1 1 14b0 0b50 
+# 6750000 ps 0 1 1 0000 0fff 
+# 6875000 ps 1 1 1 0000 0fff 
+# 7000000 ps 0 1 1 0b50 0b50 
+# 7125000 ps 1 1 1 0b50 0b50 
+# 7250000 ps 0 1 1 0fff 0000 
+# 7375000 ps 1 1 1 0fff 0000 
+# 7500000 ps 0 1 1 0b50 14b0 
+# 7625000 ps 1 1 1 0b50 14b0 
+# 7750000 ps 0 1 1 0000 1001 
+# 7875000 ps 1 1 1 0000 1001 
+# 8000000 ps 0 1 1 14b0 14b0 
+# 8125000 ps 1 1 1 14b0 14b0 
+# 8250000 ps 0 1 1 1001 0000 
+# 8375000 ps 1 1 1 1001 0000 
+# 8500000 ps 0 1 1 14b0 0b50 
+# 8625000 ps 1 1 1 14b0 0b50 
+# 8750000 ps 0 1 1 0000 0fff 
+# 8875000 ps 1 1 1 0000 0fff 
+# 9000000 ps 0 1 1 0b50 0b50 
+# 9125000 ps 1 1 1 0b50 0b50 
+# 9250000 ps 0 1 1 0fff 0000 
+# 9375000 ps 1 1 1 0fff 0000 
+# 9500000 ps 0 1 1 0b50 14b0 
+# 9625000 ps 1 1 1 0b50 14b0 
+# 9750000 ps 0 1 1 0000 1001 
+# 9875000 ps 1 1 1 0000 1001 
+run -all
+# 10000000 ps 0 1 1 14b0 14b0 
+# 10125000 ps 1 1 1 14b0 14b0 
+# 10250000 ps 0 1 1 1001 0000 
+# 10375000 ps 1 1 1 1001 0000 
+# 10500000 ps 0 1 1 14b0 0b50 
+# 10625000 ps 1 1 1 14b0 0b50 
+# 10750000 ps 0 1 1 0000 0fff 
+# 10875000 ps 1 1 1 0000 0fff 
+# 11000000 ps 0 1 1 0b50 0b50 
+# 11125000 ps 1 1 1 0b50 0b50 
+# 11250000 ps 0 1 1 0fff 0000 
+# 11375000 ps 1 1 1 0fff 0000 
+# 11500000 ps 0 1 1 0b50 14b0 
+# 11625000 ps 1 1 1 0b50 14b0 
+# 11750000 ps 0 1 1 0000 1001 
+# 11875000 ps 1 1 1 0000 1001 
+# 12000000 ps 0 1 1 14b0 14b0 
+# 12125000 ps 1 1 1 14b0 14b0 
+# 12250000 ps 0 1 1 1001 0000 
+# 12375000 ps 1 1 1 1001 0000 
+# 12500000 ps 0 1 1 14b0 0b50 
+# 12625000 ps 1 1 1 14b0 0b50 
+# 12750000 ps 0 1 1 0000 0fff 
+# 12875000 ps 1 1 1 0000 0fff 
+# 13000000 ps 0 1 1 0b50 0b50 
+# 13125000 ps 1 1 1 0b50 0b50 
+# 13250000 ps 0 1 1 0fff 0000 
+# 13375000 ps 1 1 1 0fff 0000 
+# 13500000 ps 0 1 1 0b50 14b0 
+# 13625000 ps 1 1 1 0b50 14b0 
+# 13750000 ps 0 1 1 0000 1001 
+# 13875000 ps 1 1 1 0000 1001 
+# 14000000 ps 0 1 1 14b0 14b0 
+# 14125000 ps 1 1 1 14b0 14b0 
+# 14250000 ps 0 1 1 1001 0000 
+# 14375000 ps 1 1 1 1001 0000 
+# 14500000 ps 0 1 1 14b0 0b50 
+# 14625000 ps 1 1 1 14b0 0b50 
+# 14750000 ps 0 1 1 0000 0fff 
+# 14875000 ps 1 1 1 0000 0fff 
+# 15000000 ps 0 1 1 0b50 0b50 
+# 15125000 ps 1 1 1 0b50 0b50 
+# 15250000 ps 0 1 1 0fff 0000 
+# 15375000 ps 1 1 1 0fff 0000 
+# 15500000 ps 0 1 1 0b50 14b0 
+# 15625000 ps 1 1 1 0b50 14b0 
+# 15750000 ps 0 1 1 0000 1001 
+# 15875000 ps 1 1 1 0000 1001 
+# 16000000 ps 0 1 1 14b0 14b0 
+# 16125000 ps 1 1 1 14b0 14b0 
+# 16250000 ps 0 1 1 1001 0000 
+# 16375000 ps 1 1 1 1001 0000 
+# 16500000 ps 0 1 1 14b0 0b50 
+# 16625000 ps 1 1 1 14b0 0b50 
+# 16750000 ps 0 1 1 0000 0fff 
+# 16875000 ps 1 1 1 0000 0fff 
+# 17000000 ps 0 1 1 0b50 0b50 
+# 17125000 ps 1 1 1 0b50 0b50 
+# 17250000 ps 0 1 1 0fff 0000 
+# 17375000 ps 1 1 1 0fff 0000 
+# 17500000 ps 0 1 1 0b50 14b0 
+# 17625000 ps 1 1 1 0b50 14b0 
+# 17750000 ps 0 1 1 0000 1001 
+# 17875000 ps 1 1 1 0000 1001 
+# 18000000 ps 0 1 1 14b0 14b0 
+# 18125000 ps 1 1 1 14b0 14b0 
+# 18250000 ps 0 1 1 1001 0000 
+# 18375000 ps 1 1 1 1001 0000 
+# 18500000 ps 0 1 1 14b0 0b50 
+# 18625000 ps 1 1 1 14b0 0b50 
+# 18750000 ps 0 1 1 0000 0fff 
+# 18875000 ps 1 1 1 0000 0fff 
+# 19000000 ps 0 1 1 0b50 0b50 
+# 19125000 ps 1 1 1 0b50 0b50 
+# 19250000 ps 0 1 1 0fff 0000 
+# 19375000 ps 1 1 1 0fff 0000 
+# 19500000 ps 0 1 1 0b50 14b0 
+# 19625000 ps 1 1 1 0b50 14b0 
+# 19750000 ps 0 1 1 0000 1001 
+# 19875000 ps 1 1 1 0000 1001 
+# 20000000 ps 0 1 1 14b0 14b0 
+# 20125000 ps 1 1 1 14b0 14b0 
+# 20250000 ps 0 1 1 1001 0000 
+# 20375000 ps 1 1 1 1001 0000 
+# 20500000 ps 0 1 1 14b0 0b50 
+# 20625000 ps 1 1 1 14b0 0b50 
+# 20750000 ps 0 1 1 0000 0fff 
+# 20875000 ps 1 1 1 0000 0fff 
+# 21000000 ps 0 1 1 0b50 0b50 
+# 21125000 ps 1 1 1 0b50 0b50 
+# 21250000 ps 0 1 1 0fff 0000 
+# 21375000 ps 1 1 1 0fff 0000 
+# 21500000 ps 0 1 1 0b50 14b0 
+# 21625000 ps 1 1 1 0b50 14b0 
+# 21750000 ps 0 1 1 0000 1001 
+# 21875000 ps 1 1 1 0000 1001 
+# 22000000 ps 0 1 1 14b0 14b0 
+# 22125000 ps 1 1 1 14b0 14b0 
+# 22250000 ps 0 1 1 1001 0000 
+# 22375000 ps 1 1 1 1001 0000 
+# 22500000 ps 0 1 1 14b0 0b50 
+# 22625000 ps 1 1 1 14b0 0b50 
+# 22750000 ps 0 1 1 0000 0fff 
+# 22875000 ps 1 1 1 0000 0fff 
+# 23000000 ps 0 1 1 0b50 0b50 
+# 23125000 ps 1 1 1 0b50 0b50 
+# 23250000 ps 0 1 1 0fff 0000 
+# 23375000 ps 1 1 1 0fff 0000 
+# 23500000 ps 0 1 1 0b50 14b0 
+# 23625000 ps 1 1 1 0b50 14b0 
+# 23750000 ps 0 1 1 0000 1001 
+# 23875000 ps 1 1 1 0000 1001 
+# 24000000 ps 0 1 1 14b0 14b0 
+# 24125000 ps 1 1 1 14b0 14b0 
+# 24250000 ps 0 1 1 1001 0000 
+# 24375000 ps 1 1 1 1001 0000 
+# 24500000 ps 0 1 1 14b0 0b50 
+# 24625000 ps 1 1 1 14b0 0b50 
+# 24750000 ps 0 1 1 0000 0fff 
+# 24875000 ps 1 1 1 0000 0fff 
+# 25000000 ps 0 1 1 0b50 0b50 
+# 25125000 ps 1 1 1 0b50 0b50 
+# 25250000 ps 0 1 1 0fff 0000 
+# 25375000 ps 1 1 1 0fff 0000 
+# 25500000 ps 0 1 1 0b50 14b0 
+# 25625000 ps 1 1 1 0b50 14b0 
+# 25750000 ps 0 1 1 0000 1001 
+# 25875000 ps 1 1 1 0000 1001 
+# 26000000 ps 0 1 1 14b0 14b0 
+# 26125000 ps 1 1 1 14b0 14b0 
+# 26250000 ps 0 1 1 1001 0000 
+# 26375000 ps 1 1 1 1001 0000 
+# 26500000 ps 0 1 1 14b0 0b50 
+# 26625000 ps 1 1 1 14b0 0b50 
+# 26750000 ps 0 1 1 0000 0fff 
+# 26875000 ps 1 1 1 0000 0fff 
+# 27000000 ps 0 1 1 0b50 0b50 
+# 27125000 ps 1 1 1 0b50 0b50 
+# 27250000 ps 0 1 1 0fff 0000 
+# 27375000 ps 1 1 1 0fff 0000 
+# 27500000 ps 0 1 1 0b50 14b0 
+# 27625000 ps 1 1 1 0b50 14b0 
+# 27750000 ps 0 1 1 0000 1001 
+# 27875000 ps 1 1 1 0000 1001 
+# 28000000 ps 0 1 1 14b0 14b0 
+# 28125000 ps 1 1 1 14b0 14b0 
+# 28250000 ps 0 1 1 1001 0000 
+# 28375000 ps 1 1 1 1001 0000 
+# 28500000 ps 0 1 1 14b0 0b50 
+# 28625000 ps 1 1 1 14b0 0b50 
+# 28750000 ps 0 1 1 0000 0fff 
+# 28875000 ps 1 1 1 0000 0fff 
+# 29000000 ps 0 1 1 0b50 0b50 
+# 29125000 ps 1 1 1 0b50 0b50 
+# 29250000 ps 0 1 1 0fff 0000 
+# 29375000 ps 1 1 1 0fff 0000 
+# 29500000 ps 0 1 1 0b50 14b0 
+# 29625000 ps 1 1 1 0b50 14b0 
+# 29750000 ps 0 1 1 0000 1001 
+# 29875000 ps 1 1 1 0000 1001 
+# 30000000 ps 0 1 1 14b0 14b0 
+# 30125000 ps 1 1 1 14b0 14b0 
+# 30250000 ps 0 1 1 1001 0000 
+# 30375000 ps 1 1 1 1001 0000 
+# 30500000 ps 0 1 1 14b0 0b50 
+# 30625000 ps 1 1 1 14b0 0b50 
+# 30750000 ps 0 1 1 0000 0fff 
+# 30875000 ps 1 1 1 0000 0fff 
+# 31000000 ps 0 1 1 0b50 0b50 
+# 31125000 ps 1 1 1 0b50 0b50 
+# 31250000 ps 0 1 1 0fff 0000 
+# 31375000 ps 1 1 1 0fff 0000 
+# 31500000 ps 0 1 1 0b50 14b0 
+# 31625000 ps 1 1 1 0b50 14b0 
+# 31750000 ps 0 1 1 0000 1001 
+# 31875000 ps 1 1 1 0000 1001 
+# 32000000 ps 0 1 1 14b0 14b0 
+# 32125000 ps 1 1 1 14b0 14b0 
+# 32250000 ps 0 1 1 1001 0000 
+# 32375000 ps 1 1 1 1001 0000 
+# 32500000 ps 0 1 1 14b0 0b50 
+# 32625000 ps 1 1 1 14b0 0b50 
+# 32750000 ps 0 1 1 0000 0fff 
+# 32875000 ps 1 1 1 0000 0fff 
+# 33000000 ps 0 1 1 0b50 0b50 
+# 33125000 ps 1 1 1 0b50 0b50 
+# 33250000 ps 0 1 1 0fff 0000 
+# 33375000 ps 1 1 1 0fff 0000 
+# 33500000 ps 0 1 1 0b50 14b0 
+# 33625000 ps 1 1 1 0b50 14b0 
+# 33750000 ps 0 1 1 0000 1001 
+# 33875000 ps 1 1 1 0000 1001 
+# 34000000 ps 0 1 1 14b0 14b0 
+# 34125000 ps 1 1 1 14b0 14b0 
+# 34250000 ps 0 1 1 1001 0000 
+# 34375000 ps 1 1 1 1001 0000 
+# 34500000 ps 0 1 1 14b0 0b50 
+# 34625000 ps 1 1 1 14b0 0b50 
+# 34750000 ps 0 1 1 0000 0fff 
+# 34875000 ps 1 1 1 0000 0fff 
+# 35000000 ps 0 1 1 0b50 0b50 
+# 35125000 ps 1 1 1 0b50 0b50 
+# 35250000 ps 0 1 1 0fff 0000 
+# 35375000 ps 1 1 1 0fff 0000 
+# 35500000 ps 0 1 1 0b50 14b0 
+# 35625000 ps 1 1 1 0b50 14b0 
+# 35750000 ps 0 1 1 0000 1001 
+# 35875000 ps 1 1 1 0000 1001 
+# 36000000 ps 0 1 1 14b0 14b0 
+# 36125000 ps 1 1 1 14b0 14b0 
+# 36250000 ps 0 1 1 1001 0000 
+# 36375000 ps 1 1 1 1001 0000 
+# 36500000 ps 0 1 1 14b0 0b50 
+# 36625000 ps 1 1 1 14b0 0b50 
+# 36750000 ps 0 1 1 0000 0fff 
+# 36875000 ps 1 1 1 0000 0fff 
+# 37000000 ps 0 1 1 0b50 0b50 
+# 37125000 ps 1 1 1 0b50 0b50 
+# 37250000 ps 0 1 1 0fff 0000 
+# 37375000 ps 1 1 1 0fff 0000 
+# 37500000 ps 0 1 1 0b50 14b0 
+# 37625000 ps 1 1 1 0b50 14b0 
+# 37750000 ps 0 1 1 0000 1001 
+# 37875000 ps 1 1 1 0000 1001 
+# 38000000 ps 0 1 1 14b0 14b0 
+# 38125000 ps 1 1 1 14b0 14b0 
+# 38250000 ps 0 1 1 1001 0000 
+# 38375000 ps 1 1 1 1001 0000 
+# 38500000 ps 0 1 1 14b0 0b50 
+# 38625000 ps 1 1 1 14b0 0b50 
+# 38750000 ps 0 1 1 0000 0fff 
+# 38875000 ps 1 1 1 0000 0fff 
+# 39000000 ps 0 1 1 0b50 0b50 
+# 39125000 ps 1 1 1 0b50 0b50 
+# 39250000 ps 0 1 1 0fff 0000 
+# 39375000 ps 1 1 1 0fff 0000 
+# 39500000 ps 0 1 1 0b50 14b0 
+# 39625000 ps 1 1 1 0b50 14b0 
+# 39750000 ps 0 1 1 0000 1001 
+# 39875000 ps 1 1 1 0000 1001 
+# 40000000 ps 0 1 1 14b0 14b0 
+# 40125000 ps 1 1 1 14b0 14b0 
+# 40250000 ps 0 1 1 1001 0000 
+# 40375000 ps 1 1 1 1001 0000 
+# 40500000 ps 0 1 1 14b0 0b50 
+# 40625000 ps 1 1 1 14b0 0b50 
+# 40750000 ps 0 1 1 0000 0fff 
+# 40875000 ps 1 1 1 0000 0fff 
+# 41000000 ps 0 1 1 0b50 0b50 
+# 41125000 ps 1 1 1 0b50 0b50 
+# 41250000 ps 0 1 1 0fff 0000 
+# 41375000 ps 1 1 1 0fff 0000 
+# 41500000 ps 0 1 1 0b50 14b0 
+# 41625000 ps 1 1 1 0b50 14b0 
+# 41750000 ps 0 1 1 0000 1001 
+# 41875000 ps 1 1 1 0000 1001 
+# 42000000 ps 0 1 1 14b0 14b0 
+# 42125000 ps 1 1 1 14b0 14b0 
+# 42250000 ps 0 1 1 1001 0000 
+# 42375000 ps 1 1 1 1001 0000 
+# 42500000 ps 0 1 1 14b0 0b50 
+# 42625000 ps 1 1 1 14b0 0b50 
+# 42750000 ps 0 1 1 0000 0fff 
+# 42875000 ps 1 1 1 0000 0fff 
+# 43000000 ps 0 1 1 0b50 0b50 
+# 43125000 ps 1 1 1 0b50 0b50 
+# 43250000 ps 0 1 1 0fff 0000 
+# 43375000 ps 1 1 1 0fff 0000 
+# 43500000 ps 0 1 1 0b50 14b0 
+# 43625000 ps 1 1 1 0b50 14b0 
+# 43750000 ps 0 1 1 0000 1001 
+# 43875000 ps 1 1 1 0000 1001 
+# 44000000 ps 0 1 1 14b0 14b0 
+# 44125000 ps 1 1 1 14b0 14b0 
+# 44250000 ps 0 1 1 1001 0000 
+# 44375000 ps 1 1 1 1001 0000 
+# 44500000 ps 0 1 1 14b0 0b50 
+# 44625000 ps 1 1 1 14b0 0b50 
+# 44750000 ps 0 1 1 0000 0fff 
+# 44875000 ps 1 1 1 0000 0fff 
+# 45000000 ps 0 1 1 0b50 0b50 
+# 45125000 ps 1 1 1 0b50 0b50 
+# 45250000 ps 0 1 1 0fff 0000 
+# 45375000 ps 1 1 1 0fff 0000 
+# 45500000 ps 0 1 1 0b50 14b0 
+# 45625000 ps 1 1 1 0b50 14b0 
+# 45750000 ps 0 1 1 0000 1001 
+# 45875000 ps 1 1 1 0000 1001 
+# 46000000 ps 0 1 1 14b0 14b0 
+# 46125000 ps 1 1 1 14b0 14b0 
+# 46250000 ps 0 1 1 1001 0000 
+# 46375000 ps 1 1 1 1001 0000 
+# 46500000 ps 0 1 1 14b0 0b50 
+# 46625000 ps 1 1 1 14b0 0b50 
+# 46750000 ps 0 1 1 0000 0fff 
+# 46875000 ps 1 1 1 0000 0fff 
+# 47000000 ps 0 1 1 0b50 0b50 
+# 47125000 ps 1 1 1 0b50 0b50 
+# 47250000 ps 0 1 1 0fff 0000 
+# 47375000 ps 1 1 1 0fff 0000 
+# 47500000 ps 0 1 1 0b50 14b0 
+# 47625000 ps 1 1 1 0b50 14b0 
+# 47750000 ps 0 1 1 0000 1001 
+# 47875000 ps 1 1 1 0000 1001 
+# 48000000 ps 0 1 1 14b0 14b0 
+# 48125000 ps 1 1 1 14b0 14b0 
+# 48250000 ps 0 1 1 1001 0000 
+# 48375000 ps 1 1 1 1001 0000 
+# 48500000 ps 0 1 1 14b0 0b50 
+# 48625000 ps 1 1 1 14b0 0b50 
+# 48750000 ps 0 1 1 0000 0fff 
+# 48875000 ps 1 1 1 0000 0fff 
+# 49000000 ps 0 1 1 0b50 0b50 
+# 49125000 ps 1 1 1 0b50 0b50 
+# 49250000 ps 0 1 1 0fff 0000 
+# 49375000 ps 1 1 1 0fff 0000 
+# 49500000 ps 0 1 1 0b50 14b0 
+# 49625000 ps 1 1 1 0b50 14b0 
+# 49750000 ps 0 1 1 0000 1001 
+# 49875000 ps 1 1 1 0000 1001 
+# 50000000 ps 0 1 1 14b0 14b0 
+# 50125000 ps 1 1 1 14b0 14b0 
+# 50250000 ps 0 1 1 1001 0000 
+# 50375000 ps 1 1 1 1001 0000 
+# 50500000 ps 0 1 1 14b0 0b50 
+# 50625000 ps 1 1 1 14b0 0b50 
+# 50750000 ps 0 1 1 0000 0fff 
+# 50875000 ps 1 1 1 0000 0fff 
+# 51000000 ps 0 1 1 0b50 0b50 
+# 51125000 ps 1 1 1 0b50 0b50 
+# 51250000 ps 0 1 1 0fff 0000 
+# 51375000 ps 1 1 1 0fff 0000 
+# 51500000 ps 0 1 1 0b50 14b0 
+# 51625000 ps 1 1 1 0b50 14b0 
+# 51750000 ps 0 1 1 0000 1001 
+# 51875000 ps 1 1 1 0000 1001 
+# 52000000 ps 0 1 1 14b0 14b0 
+# 52125000 ps 1 1 1 14b0 14b0 
+# 52250000 ps 0 1 1 1001 0000 
+# 52375000 ps 1 1 1 1001 0000 
+# 52500000 ps 0 1 1 14b0 0b50 
+# 52625000 ps 1 1 1 14b0 0b50 
+# 52750000 ps 0 1 1 0000 0fff 
+# 52875000 ps 1 1 1 0000 0fff 
+# 53000000 ps 0 1 1 0b50 0b50 
+# 53125000 ps 1 1 1 0b50 0b50 
+# 53250000 ps 0 1 1 0fff 0000 
+# 53375000 ps 1 1 1 0fff 0000 
+# 53500000 ps 0 1 1 0b50 14b0 
+# 53625000 ps 1 1 1 0b50 14b0 
+# 53750000 ps 0 1 1 0000 1001 
+# 53875000 ps 1 1 1 0000 1001 
+# 54000000 ps 0 1 1 14b0 14b0 
+# 54125000 ps 1 1 1 14b0 14b0 
+# 54250000 ps 0 1 1 1001 0000 
+# 54375000 ps 1 1 1 1001 0000 
+# 54500000 ps 0 1 1 14b0 0b50 
+# 54625000 ps 1 1 1 14b0 0b50 
+# 54750000 ps 0 1 1 0000 0fff 
+# 54875000 ps 1 1 1 0000 0fff 
+# 55000000 ps 0 1 1 0b50 0b50 
+# 55125000 ps 1 1 1 0b50 0b50 
+# 55250000 ps 0 1 1 0fff 0000 
+# 55375000 ps 1 1 1 0fff 0000 
+# 55500000 ps 0 1 1 0b50 14b0 
+# 55625000 ps 1 1 1 0b50 14b0 
+# 55750000 ps 0 1 1 0000 1001 
+# 55875000 ps 1 1 1 0000 1001 
+# 56000000 ps 0 1 1 14b0 14b0 
+# 56125000 ps 1 1 1 14b0 14b0 
+# 56250000 ps 0 1 1 1001 0000 
+# 56375000 ps 1 1 1 1001 0000 
+# 56500000 ps 0 1 1 14b0 0b50 
+# 56625000 ps 1 1 1 14b0 0b50 
+# 56750000 ps 0 1 1 0000 0fff 
+# 56875000 ps 1 1 1 0000 0fff 
+# 57000000 ps 0 1 1 0b50 0b50 
+# 57125000 ps 1 1 1 0b50 0b50 
+# 57250000 ps 0 1 1 0fff 0000 
+# 57375000 ps 1 1 1 0fff 0000 
+# 57500000 ps 0 1 1 0b50 14b0 
+# 57625000 ps 1 1 1 0b50 14b0 
+# 57750000 ps 0 1 1 0000 1001 
+# 57875000 ps 1 1 1 0000 1001 
+# 58000000 ps 0 1 1 14b0 14b0 
+# 58125000 ps 1 1 1 14b0 14b0 
+# 58250000 ps 0 1 1 1001 0000 
+# 58375000 ps 1 1 1 1001 0000 
+# 58500000 ps 0 1 1 14b0 0b50 
+# 58625000 ps 1 1 1 14b0 0b50 
+# 58750000 ps 0 1 1 0000 0fff 
+# 58875000 ps 1 1 1 0000 0fff 
+# 59000000 ps 0 1 1 0b50 0b50 
+# 59125000 ps 1 1 1 0b50 0b50 
+# 59250000 ps 0 1 1 0fff 0000 
+# 59375000 ps 1 1 1 0fff 0000 
+# 59500000 ps 0 1 1 0b50 14b0 
+# 59625000 ps 1 1 1 0b50 14b0 
+# 59750000 ps 0 1 1 0000 1001 
+# 59875000 ps 1 1 1 0000 1001 
+# 60000000 ps 0 1 1 14b0 14b0 
+# 60125000 ps 1 1 1 14b0 14b0 
+# 60250000 ps 0 1 1 1001 0000 
+# 60375000 ps 1 1 1 1001 0000 
+# 60500000 ps 0 1 1 14b0 0b50 
+# 60625000 ps 1 1 1 14b0 0b50 
+# 60750000 ps 0 1 1 0000 0fff 
+# 60875000 ps 1 1 1 0000 0fff 
+# 61000000 ps 0 1 1 0b50 0b50 
+# 61125000 ps 1 1 1 0b50 0b50 
+# 61250000 ps 0 1 1 0fff 0000 
+# 61375000 ps 1 1 1 0fff 0000 
+# 61500000 ps 0 1 1 0b50 14b0 
+# 61625000 ps 1 1 1 0b50 14b0 
+# 61750000 ps 0 1 1 0000 1001 
+# 61875000 ps 1 1 1 0000 1001 
+# 62000000 ps 0 1 1 14b0 14b0 
+# 62125000 ps 1 1 1 14b0 14b0 
+# 62250000 ps 0 1 1 1001 0000 
+# 62375000 ps 1 1 1 1001 0000 
+# 62500000 ps 0 1 1 14b0 0b50 
+# 62625000 ps 1 1 1 14b0 0b50 
+# 62750000 ps 0 1 1 0000 0fff 
+# 62875000 ps 1 1 1 0000 0fff 
+# 63000000 ps 0 1 1 0b50 0b50 
+# 63125000 ps 1 1 1 0b50 0b50 
+# 63250000 ps 0 1 1 0fff 0000 
+# 63375000 ps 1 1 1 0fff 0000 
+# 63500000 ps 0 1 1 0b50 14b0 
+# 63625000 ps 1 1 1 0b50 14b0 
+# 63750000 ps 0 1 1 0000 1001 
+# 63875000 ps 1 1 1 0000 1001 
+# 64000000 ps 0 1 1 14b0 14b0 
+# 64125000 ps 1 1 1 14b0 14b0 
+# 64250000 ps 0 1 1 1001 0000 
+# 64375000 ps 1 1 1 1001 0000 
+# 64500000 ps 0 1 1 14b0 0b50 
+# 64625000 ps 1 1 1 14b0 0b50 
+# 64750000 ps 0 1 1 0000 0fff 
+# 64875000 ps 1 1 1 0000 0fff 
+# 65000000 ps 0 1 1 0b50 0b50 
+# 65125000 ps 1 1 1 0b50 0b50 
+# 65250000 ps 0 1 1 0fff 0000 
+# 65375000 ps 1 1 1 0fff 0000 
+# 65500000 ps 0 1 1 0b50 14b0 
+# 65625000 ps 1 1 1 0b50 14b0 
+# 65750000 ps 0 1 1 0000 1001 
+# 65875000 ps 1 1 1 0000 1001 
+# 66000000 ps 0 1 1 14b0 14b0 
+# 66125000 ps 1 1 1 14b0 14b0 
+# 66250000 ps 0 1 1 1001 0000 
+# 66375000 ps 1 1 1 1001 0000 
+# 66500000 ps 0 1 1 14b0 0b50 
+# 66625000 ps 1 1 1 14b0 0b50 
+# 66750000 ps 0 1 1 0000 0fff 
+# 66875000 ps 1 1 1 0000 0fff 
+# 67000000 ps 0 1 1 0b50 0b50 
+# 67125000 ps 1 1 1 0b50 0b50 
+# 67250000 ps 0 1 1 0fff 0000 
+# 67375000 ps 1 1 1 0fff 0000 
+# 67500000 ps 0 1 1 0b50 14b0 
+# 67625000 ps 1 1 1 0b50 14b0 
+# 67750000 ps 0 1 1 0000 1001 
+# 67875000 ps 1 1 1 0000 1001 
+# 68000000 ps 0 1 1 14b0 14b0 
+# 68125000 ps 1 1 1 14b0 14b0 
+# 68250000 ps 0 1 1 1001 0000 
+# 68375000 ps 1 1 1 1001 0000 
+# 68500000 ps 0 1 1 14b0 0b50 
+# 68625000 ps 1 1 1 14b0 0b50 
+# 68750000 ps 0 1 1 0000 0fff 
+# 68875000 ps 1 1 1 0000 0fff 
+# 69000000 ps 0 1 1 0b50 0b50 
+# 69125000 ps 1 1 1 0b50 0b50 
+# 69250000 ps 0 1 1 0fff 0000 
+# 69375000 ps 1 1 1 0fff 0000 
+# 69500000 ps 0 1 1 0b50 14b0 
+# 69625000 ps 1 1 1 0b50 14b0 
+# 69750000 ps 0 1 1 0000 1001 
+# 69875000 ps 1 1 1 0000 1001 
+# 70000000 ps 0 1 1 14b0 14b0 
+# 70125000 ps 1 1 1 14b0 14b0 
+# 70250000 ps 0 1 1 1001 0000 
+# 70375000 ps 1 1 1 1001 0000 
+# 70500000 ps 0 1 1 14b0 0b50 
+# 70625000 ps 1 1 1 14b0 0b50 
+# 70750000 ps 0 1 1 0000 0fff 
+# 70875000 ps 1 1 1 0000 0fff 
+# 71000000 ps 0 1 1 0b50 0b50 
+# 71125000 ps 1 1 1 0b50 0b50 
+# 71250000 ps 0 1 1 0fff 0000 
+# 71375000 ps 1 1 1 0fff 0000 
+# 71500000 ps 0 1 1 0b50 14b0 
+# 71625000 ps 1 1 1 0b50 14b0 
+# 71750000 ps 0 1 1 0000 1001 
+# 71875000 ps 1 1 1 0000 1001 
+# 72000000 ps 0 1 1 14b0 14b0 
+# 72125000 ps 1 1 1 14b0 14b0 
+# 72250000 ps 0 1 1 1001 0000 
+# 72375000 ps 1 1 1 1001 0000 
+# 72500000 ps 0 1 1 14b0 0b50 
+# 72625000 ps 1 1 1 14b0 0b50 
+# 72750000 ps 0 1 1 0000 0fff 
+# 72875000 ps 1 1 1 0000 0fff 
+# 73000000 ps 0 1 1 0b50 0b50 
+# 73125000 ps 1 1 1 0b50 0b50 
+# 73250000 ps 0 1 1 0fff 0000 
+# 73375000 ps 1 1 1 0fff 0000 
+# 73500000 ps 0 1 1 0b50 14b0 
+# 73625000 ps 1 1 1 0b50 14b0 
+# 73750000 ps 0 1 1 0000 1001 
+# 73875000 ps 1 1 1 0000 1001 
+# 74000000 ps 0 1 1 14b0 14b0 
+# 74125000 ps 1 1 1 14b0 14b0 
+# 74250000 ps 0 1 1 1001 0000 
+# 74375000 ps 1 1 1 1001 0000 
+# 74500000 ps 0 1 1 14b0 0b50 
+# 74625000 ps 1 1 1 14b0 0b50 
+# 74750000 ps 0 1 1 0000 0fff 
+# 74875000 ps 1 1 1 0000 0fff 
+# 75000000 ps 0 1 1 0b50 0b50 
+# 75125000 ps 1 1 1 0b50 0b50 
+# 75250000 ps 0 1 1 0fff 0000 
+# 75375000 ps 1 1 1 0fff 0000 
+# 75500000 ps 0 1 1 0b50 14b0 
+# 75625000 ps 1 1 1 0b50 14b0 
+# 75750000 ps 0 1 1 0000 1001 
+# 75875000 ps 1 1 1 0000 1001 
+# 76000000 ps 0 1 1 14b0 14b0 
+# 76125000 ps 1 1 1 14b0 14b0 
+# 76250000 ps 0 1 1 1001 0000 
+# 76375000 ps 1 1 1 1001 0000 
+# 76500000 ps 0 1 1 14b0 0b50 
+# 76625000 ps 1 1 1 14b0 0b50 
+# 76750000 ps 0 1 1 0000 0fff 
+# 76875000 ps 1 1 1 0000 0fff 
+# 77000000 ps 0 1 1 0b50 0b50 
+# 77125000 ps 1 1 1 0b50 0b50 
+# 77250000 ps 0 1 1 0fff 0000 
+# 77375000 ps 1 1 1 0fff 0000 
+# 77500000 ps 0 1 1 0b50 14b0 
+# 77625000 ps 1 1 1 0b50 14b0 
+# 77750000 ps 0 1 1 0000 1001 
+# 77875000 ps 1 1 1 0000 1001 
+# 78000000 ps 0 1 1 14b0 14b0 
+# 78125000 ps 1 1 1 14b0 14b0 
+# 78250000 ps 0 1 1 1001 0000 
+# 78375000 ps 1 1 1 1001 0000 
+# 78500000 ps 0 1 1 14b0 0b50 
+# 78625000 ps 1 1 1 14b0 0b50 
+# 78750000 ps 0 1 1 0000 0fff 
+# 78875000 ps 1 1 1 0000 0fff 
+# 79000000 ps 0 1 1 0b50 0b50 
+# 79125000 ps 1 1 1 0b50 0b50 
+# 79250000 ps 0 1 1 0fff 0000 
+# 79375000 ps 1 1 1 0fff 0000 
+# 79500000 ps 0 1 1 0b50 14b0 
+# 79625000 ps 1 1 1 0b50 14b0 
+# 79750000 ps 0 1 1 0000 1001 
+# 79875000 ps 1 1 1 0000 1001 
+# 80000000 ps 0 1 1 14b0 14b0 
+# 80125000 ps 1 1 1 14b0 14b0 
+# 80250000 ps 0 1 1 1001 0000 
+# 80375000 ps 1 1 1 1001 0000 
+# 80500000 ps 0 1 1 14b0 0b50 
+# 80625000 ps 1 1 1 14b0 0b50 
+# 80750000 ps 0 1 1 0000 0fff 
+# 80875000 ps 1 1 1 0000 0fff 
+# 81000000 ps 0 1 1 0b50 0b50 
+# 81125000 ps 1 1 1 0b50 0b50 
+# 81250000 ps 0 1 1 0fff 0000 
+# 81375000 ps 1 1 1 0fff 0000 
+# 81500000 ps 0 1 1 0b50 14b0 
+# 81625000 ps 1 1 1 0b50 14b0 
+# 81750000 ps 0 1 1 0000 1001 
+# 81875000 ps 1 1 1 0000 1001 
+# 82000000 ps 0 1 1 14b0 14b0 
+# 82125000 ps 1 1 1 14b0 14b0 
+# 82250000 ps 0 1 1 1001 0000 
+# 82375000 ps 1 1 1 1001 0000 
+# 82500000 ps 0 1 1 14b0 0b50 
+# 82625000 ps 1 1 1 14b0 0b50 
+# 82750000 ps 0 1 1 0000 0fff 
+# 82875000 ps 1 1 1 0000 0fff 
+# 83000000 ps 0 1 1 0b50 0b50 
+# 83125000 ps 1 1 1 0b50 0b50 
+# 83250000 ps 0 1 1 0fff 0000 
+# 83375000 ps 1 1 1 0fff 0000 
+# 83500000 ps 0 1 1 0b50 14b0 
+# 83625000 ps 1 1 1 0b50 14b0 
+# 83750000 ps 0 1 1 0000 1001 
+# 83875000 ps 1 1 1 0000 1001 
+# 84000000 ps 0 1 1 14b0 14b0 
+# 84125000 ps 1 1 1 14b0 14b0 
+# 84250000 ps 0 1 1 1001 0000 
+# 84375000 ps 1 1 1 1001 0000 
+# 84500000 ps 0 1 1 14b0 0b50 
+# 84625000 ps 1 1 1 14b0 0b50 
+# 84750000 ps 0 1 1 0000 0fff 
+# 84875000 ps 1 1 1 0000 0fff 
+# 85000000 ps 0 1 1 0b50 0b50 
+# 85125000 ps 1 1 1 0b50 0b50 
+# 85250000 ps 0 1 1 0fff 0000 
+# 85375000 ps 1 1 1 0fff 0000 
+# 85500000 ps 0 1 1 0b50 14b0 
+# 85625000 ps 1 1 1 0b50 14b0 
+# 85750000 ps 0 1 1 0000 1001 
+# 85875000 ps 1 1 1 0000 1001 
+# 86000000 ps 0 1 1 14b0 14b0 
+# 86125000 ps 1 1 1 14b0 14b0 
+# 86250000 ps 0 1 1 1001 0000 
+# 86375000 ps 1 1 1 1001 0000 
+# 86500000 ps 0 1 1 14b0 0b50 
+# 86625000 ps 1 1 1 14b0 0b50 
+# 86750000 ps 0 1 1 0000 0fff 
+# 86875000 ps 1 1 1 0000 0fff 
+# 87000000 ps 0 1 1 0b50 0b50 
+# 87125000 ps 1 1 1 0b50 0b50 
+# 87250000 ps 0 1 1 0fff 0000 
+# 87375000 ps 1 1 1 0fff 0000 
+# 87500000 ps 0 1 1 0b50 14b0 
+# 87625000 ps 1 1 1 0b50 14b0 
+# 87750000 ps 0 1 1 0000 1001 
+# 87875000 ps 1 1 1 0000 1001 
+# 88000000 ps 0 1 1 14b0 14b0 
+# 88125000 ps 1 1 1 14b0 14b0 
+# 88250000 ps 0 1 1 1001 0000 
+# 88375000 ps 1 1 1 1001 0000 
+# 88500000 ps 0 1 1 14b0 0b50 
+# 88625000 ps 1 1 1 14b0 0b50 
+# 88750000 ps 0 1 1 0000 0fff 
+# 88875000 ps 1 1 1 0000 0fff 
+# 89000000 ps 0 1 1 0b50 0b50 
+# 89125000 ps 1 1 1 0b50 0b50 
+# 89250000 ps 0 1 1 0fff 0000 
+# 89375000 ps 1 1 1 0fff 0000 
+# 89500000 ps 0 1 1 0b50 14b0 
+# 89625000 ps 1 1 1 0b50 14b0 
+# 89750000 ps 0 1 1 0000 1001 
+# 89875000 ps 1 1 1 0000 1001 
+# 90000000 ps 0 1 1 14b0 14b0 
+# 90125000 ps 1 1 1 14b0 14b0 
+# 90250000 ps 0 1 1 1001 0000 
+# 90375000 ps 1 1 1 1001 0000 
+# 90500000 ps 0 1 1 14b0 0b50 
+# 90625000 ps 1 1 1 14b0 0b50 
+# 90750000 ps 0 1 1 0000 0fff 
+# 90875000 ps 1 1 1 0000 0fff 
+# 91000000 ps 0 1 1 0b50 0b50 
+# 91125000 ps 1 1 1 0b50 0b50 
+# 91250000 ps 0 1 1 0fff 0000 
+# 91375000 ps 1 1 1 0fff 0000 
+# 91500000 ps 0 1 1 0b50 14b0 
+# 91625000 ps 1 1 1 0b50 14b0 
+# 91750000 ps 0 1 1 0000 1001 
+# 91875000 ps 1 1 1 0000 1001 
+# 92000000 ps 0 1 1 14b0 14b0 
+# 92125000 ps 1 1 1 14b0 14b0 
+# 92250000 ps 0 1 1 1001 0000 
+# 92375000 ps 1 1 1 1001 0000 
+# 92500000 ps 0 1 1 14b0 0b50 
+# 92625000 ps 1 1 1 14b0 0b50 
+# 92750000 ps 0 1 1 0000 0fff 
+# 92875000 ps 1 1 1 0000 0fff 
+# 93000000 ps 0 1 1 0b50 0b50 
+# 93125000 ps 1 1 1 0b50 0b50 
+# 93250000 ps 0 1 1 0fff 0000 
+# 93375000 ps 1 1 1 0fff 0000 
+# 93500000 ps 0 1 1 0b50 14b0 
+# 93625000 ps 1 1 1 0b50 14b0 
+# 93750000 ps 0 1 1 0000 1001 
+# 93875000 ps 1 1 1 0000 1001 
+# 94000000 ps 0 1 1 14b0 14b0 
+# 94125000 ps 1 1 1 14b0 14b0 
+# 94250000 ps 0 1 1 1001 0000 
+# 94375000 ps 1 1 1 1001 0000 
+# 94500000 ps 0 1 1 14b0 0b50 
+# 94625000 ps 1 1 1 14b0 0b50 
+# 94750000 ps 0 1 1 0000 0fff 
+# 94875000 ps 1 1 1 0000 0fff 
+# 95000000 ps 0 1 1 0b50 0b50 
+# 95125000 ps 1 1 1 0b50 0b50 
+# 95250000 ps 0 1 1 0fff 0000 
+# 95375000 ps 1 1 1 0fff 0000 
+# 95500000 ps 0 1 1 0b50 14b0 
+# 95625000 ps 1 1 1 0b50 14b0 
+# 95750000 ps 0 1 1 0000 1001 
+# 95875000 ps 1 1 1 0000 1001 
+# 96000000 ps 0 1 1 14b0 14b0 
+# 96125000 ps 1 1 1 14b0 14b0 
+# 96250000 ps 0 1 1 1001 0000 
+# 96375000 ps 1 1 1 1001 0000 
+# 96500000 ps 0 1 1 14b0 0b50 
+# 96625000 ps 1 1 1 14b0 0b50 
+# 96750000 ps 0 1 1 0000 0fff 
+# 96875000 ps 1 1 1 0000 0fff 
+# 97000000 ps 0 1 1 0b50 0b50 
+# 97125000 ps 1 1 1 0b50 0b50 
+# 97250000 ps 0 1 1 0fff 0000 
+# 97375000 ps 1 1 1 0fff 0000 
+# 97500000 ps 0 1 1 0b50 14b0 
+# 97625000 ps 1 1 1 0b50 14b0 
+# 97750000 ps 0 1 1 0000 1001 
+# 97875000 ps 1 1 1 0000 1001 
+# 98000000 ps 0 1 1 14b0 14b0 
+# 98125000 ps 1 1 1 14b0 14b0 
+# 98250000 ps 0 1 1 1001 0000 
+# 98375000 ps 1 1 1 1001 0000 
+# 98500000 ps 0 1 1 14b0 0b50 
+# 98625000 ps 1 1 1 14b0 0b50 
+# 98750000 ps 0 1 1 0000 0fff 
+# 98875000 ps 1 1 1 0000 0fff 
+# 99000000 ps 0 1 1 0b50 0b50 
+# 99125000 ps 1 1 1 0b50 0b50 
+# 99250000 ps 0 1 1 0fff 0000 
+# 99375000 ps 1 1 1 0fff 0000 
+# 99500000 ps 0 1 1 0b50 14b0 
+# 99625000 ps 1 1 1 0b50 14b0 
+# 99750000 ps 0 1 1 0000 1001 
+# 99875000 ps 1 1 1 0000 1001 
+# 100000000 ps 0 1 1 14b0 14b0 
+# 100125000 ps 1 1 1 14b0 14b0 
+# 100250000 ps 0 1 1 1001 0000 
+# 100375000 ps 1 1 1 1001 0000 
+# 100500000 ps 0 1 1 14b0 0b50 
+# 100625000 ps 1 1 1 14b0 0b50 
+# 100750000 ps 0 1 1 0000 0fff 
+# 100875000 ps 1 1 1 0000 0fff 
+# 101000000 ps 0 1 1 0b50 0b50 
+# 101125000 ps 1 1 1 0b50 0b50 
+# 101250000 ps 0 1 1 0fff 0000 
+# 101375000 ps 1 1 1 0fff 0000 
+# 101500000 ps 0 1 1 0b50 14b0 
+# 101625000 ps 1 1 1 0b50 14b0 
+# 101750000 ps 0 1 1 0000 1001 
+# 101875000 ps 1 1 1 0000 1001 
+# 102000000 ps 0 1 1 14b0 14b0 
+# 102125000 ps 1 1 1 14b0 14b0 
+# 102250000 ps 0 1 1 1001 0000 
+# 102375000 ps 1 1 1 1001 0000 
+# 102500000 ps 0 1 1 14b0 0b50 
+# 102625000 ps 1 1 1 14b0 0b50 
+# 102750000 ps 0 1 1 0000 0fff 
+# 102875000 ps 1 1 1 0000 0fff 
+# 103000000 ps 0 1 1 0b50 0b50 
+# 103125000 ps 1 1 1 0b50 0b50 
+# 103250000 ps 0 1 1 0fff 0000 
+# 103375000 ps 1 1 1 0fff 0000 
+# 103500000 ps 0 1 1 0b50 14b0 
+# 103625000 ps 1 1 1 0b50 14b0 
+# 103750000 ps 0 1 1 0000 1001 
+# 103875000 ps 1 1 1 0000 1001 
+# 104000000 ps 0 1 1 14b0 14b0 
+# 104125000 ps 1 1 1 14b0 14b0 
+# 104250000 ps 0 1 1 1001 0000 
+# 104375000 ps 1 1 1 1001 0000 
+# 104500000 ps 0 1 1 14b0 0b50 
+# 104625000 ps 1 1 1 14b0 0b50 
+# 104750000 ps 0 1 1 0000 0fff 
+# 104875000 ps 1 1 1 0000 0fff 
+# 105000000 ps 0 1 1 0b50 0b50 
+# 105125000 ps 1 1 1 0b50 0b50 
+# 105250000 ps 0 1 1 0fff 0000 
+# 105375000 ps 1 1 1 0fff 0000 
+# 105500000 ps 0 1 1 0b50 14b0 
+# 105625000 ps 1 1 1 0b50 14b0 
+# 105750000 ps 0 1 1 0000 1001 
+# 105875000 ps 1 1 1 0000 1001 
+# 106000000 ps 0 1 1 14b0 14b0 
+# 106125000 ps 1 1 1 14b0 14b0 
+# 106250000 ps 0 1 1 1001 0000 
+# 106375000 ps 1 1 1 1001 0000 
+# 106500000 ps 0 1 1 14b0 0b50 
+# 106625000 ps 1 1 1 14b0 0b50 
+# 106750000 ps 0 1 1 0000 0fff 
+# 106875000 ps 1 1 1 0000 0fff 
+# 107000000 ps 0 1 1 0b50 0b50 
+# 107125000 ps 1 1 1 0b50 0b50 
+# 107250000 ps 0 1 1 0fff 0000 
+# 107375000 ps 1 1 1 0fff 0000 
+# 107500000 ps 0 1 1 0b50 14b0 
+# 107625000 ps 1 1 1 0b50 14b0 
+# 107750000 ps 0 1 1 0000 1001 
+# 107875000 ps 1 1 1 0000 1001 
+# 108000000 ps 0 1 1 14b0 14b0 
+# 108125000 ps 1 1 1 14b0 14b0 
+# 108250000 ps 0 1 1 1001 0000 
+# 108375000 ps 1 1 1 1001 0000 
+# 108500000 ps 0 1 1 14b0 0b50 
+# 108625000 ps 1 1 1 14b0 0b50 
+# 108750000 ps 0 1 1 0000 0fff 
+# 108875000 ps 1 1 1 0000 0fff 
+# 109000000 ps 0 1 1 0b50 0b50 
+# 109125000 ps 1 1 1 0b50 0b50 
+# 109250000 ps 0 1 1 0fff 0000 
+# 109375000 ps 1 1 1 0fff 0000 
+# 109500000 ps 0 1 1 0b50 14b0 
+# 109625000 ps 1 1 1 0b50 14b0 
+# 109750000 ps 0 1 1 0000 1001 
+# 109875000 ps 1 1 1 0000 1001 
+# 110000000 ps 0 1 1 14b0 14b0 
+# 110125000 ps 1 1 1 14b0 14b0 
+# 110250000 ps 0 1 1 1001 0000 
+# 110375000 ps 1 1 1 1001 0000 
+# 110500000 ps 0 1 1 14b0 0b50 
+# 110625000 ps 1 1 1 14b0 0b50 
+# 110750000 ps 0 1 1 0000 0fff 
+# 110875000 ps 1 1 1 0000 0fff 
+# 111000000 ps 0 1 1 0b50 0b50 
+# 111125000 ps 1 1 1 0b50 0b50 
+# 111250000 ps 0 1 1 0fff 0000 
+# 111375000 ps 1 1 1 0fff 0000 
+# 111500000 ps 0 1 1 0b50 14b0 
+# 111625000 ps 1 1 1 0b50 14b0 
+# 111750000 ps 0 1 1 0000 1001 
+# 111875000 ps 1 1 1 0000 1001 
+# 112000000 ps 0 1 1 14b0 14b0 
+# 112125000 ps 1 1 1 14b0 14b0 
+# 112250000 ps 0 1 1 1001 0000 
+# 112375000 ps 1 1 1 1001 0000 
+# 112500000 ps 0 1 1 14b0 0b50 
+# 112625000 ps 1 1 1 14b0 0b50 
+# 112750000 ps 0 1 1 0000 0fff 
+# 112875000 ps 1 1 1 0000 0fff 
+# 113000000 ps 0 1 1 0b50 0b50 
+# 113125000 ps 1 1 1 0b50 0b50 
+# 113250000 ps 0 1 1 0fff 0000 
+# 113375000 ps 1 1 1 0fff 0000 
+# 113500000 ps 0 1 1 0b50 14b0 
+# 113625000 ps 1 1 1 0b50 14b0 
+# 113750000 ps 0 1 1 0000 1001 
+# 113875000 ps 1 1 1 0000 1001 
+# 114000000 ps 0 1 1 14b0 14b0 
+# 114125000 ps 1 1 1 14b0 14b0 
+# 114250000 ps 0 1 1 1001 0000 
+# 114375000 ps 1 1 1 1001 0000 
+# 114500000 ps 0 1 1 14b0 0b50 
+# 114625000 ps 1 1 1 14b0 0b50 
+# 114750000 ps 0 1 1 0000 0fff 
+# 114875000 ps 1 1 1 0000 0fff 
+# 115000000 ps 0 1 1 0b50 0b50 
+# 115125000 ps 1 1 1 0b50 0b50 
+# 115250000 ps 0 1 1 0fff 0000 
+# 115375000 ps 1 1 1 0fff 0000 
+# 115500000 ps 0 1 1 0b50 14b0 
+# 115625000 ps 1 1 1 0b50 14b0 
+# 115750000 ps 0 1 1 0000 1001 
+# 115875000 ps 1 1 1 0000 1001 
+# 116000000 ps 0 1 1 14b0 14b0 
+# 116125000 ps 1 1 1 14b0 14b0 
+# 116250000 ps 0 1 1 1001 0000 
+# 116375000 ps 1 1 1 1001 0000 
+# 116500000 ps 0 1 1 14b0 0b50 
+# 116625000 ps 1 1 1 14b0 0b50 
+# 116750000 ps 0 1 1 0000 0fff 
+# 116875000 ps 1 1 1 0000 0fff 
+# 117000000 ps 0 1 1 0b50 0b50 
+# 117125000 ps 1 1 1 0b50 0b50 
+# 117250000 ps 0 1 1 0fff 0000 
+# 117375000 ps 1 1 1 0fff 0000 
+# 117500000 ps 0 1 1 0b50 14b0 
+# 117625000 ps 1 1 1 0b50 14b0 
+# 117750000 ps 0 1 1 0000 1001 
+# 117875000 ps 1 1 1 0000 1001 
+# 118000000 ps 0 1 1 14b0 14b0 
+# 118125000 ps 1 1 1 14b0 14b0 
+# 118250000 ps 0 1 1 1001 0000 
+# 118375000 ps 1 1 1 1001 0000 
+# 118500000 ps 0 1 1 14b0 0b50 
+# 118625000 ps 1 1 1 14b0 0b50 
+# 118750000 ps 0 1 1 0000 0fff 
+# 118875000 ps 1 1 1 0000 0fff 
+# 119000000 ps 0 1 1 0b50 0b50 
+# 119125000 ps 1 1 1 0b50 0b50 
+# 119250000 ps 0 1 1 0fff 0000 
+# 119375000 ps 1 1 1 0fff 0000 
+# 119500000 ps 0 1 1 0b50 14b0 
+# 119625000 ps 1 1 1 0b50 14b0 
+# 119750000 ps 0 1 1 0000 1001 
+# 119875000 ps 1 1 1 0000 1001 
+# 120000000 ps 0 1 1 14b0 14b0 
+# 120125000 ps 1 1 1 14b0 14b0 
+# 120250000 ps 0 1 1 1001 0000 
+# 120375000 ps 1 1 1 1001 0000 
+# 120500000 ps 0 1 1 14b0 0b50 
+# 120625000 ps 1 1 1 14b0 0b50 
+# 120750000 ps 0 1 1 0000 0fff 
+# 120875000 ps 1 1 1 0000 0fff 
+# 121000000 ps 0 1 1 0b50 0b50 
+# 121125000 ps 1 1 1 0b50 0b50 
+# 121250000 ps 0 1 1 0fff 0000 
+# 121375000 ps 1 1 1 0fff 0000 
+# 121500000 ps 0 1 1 0b50 14b0 
+# 121625000 ps 1 1 1 0b50 14b0 
+# 121750000 ps 0 1 1 0000 1001 
+# 121875000 ps 1 1 1 0000 1001 
+# 122000000 ps 0 1 1 14b0 14b0 
+# 122125000 ps 1 1 1 14b0 14b0 
+# 122250000 ps 0 1 1 1001 0000 
+# 122375000 ps 1 1 1 1001 0000 
+# 122500000 ps 0 1 1 14b0 0b50 
+# 122625000 ps 1 1 1 14b0 0b50 
+# 122750000 ps 0 1 1 0000 0fff 
+# 122875000 ps 1 1 1 0000 0fff 
+# 123000000 ps 0 1 1 0b50 0b50 
+# 123125000 ps 1 1 1 0b50 0b50 
+# 123250000 ps 0 1 1 0fff 0000 
+# 123375000 ps 1 1 1 0fff 0000 
+# 123500000 ps 0 1 1 0b50 14b0 
+# 123625000 ps 1 1 1 0b50 14b0 
+# 123750000 ps 0 1 1 0000 1001 
+# 123875000 ps 1 1 1 0000 1001 
+# 124000000 ps 0 1 1 14b0 14b0 
+# 124125000 ps 1 1 1 14b0 14b0 
+# 124250000 ps 0 1 1 1001 0000 
+# 124375000 ps 1 1 1 1001 0000 
+# 124500000 ps 0 1 1 14b0 0b50 
+# 124625000 ps 1 1 1 14b0 0b50 
+# 124750000 ps 0 1 1 0000 0fff 
+# 124875000 ps 1 1 1 0000 0fff 
+# 125000000 ps 0 1 1 0b50 0b50 
+# 125125000 ps 1 1 1 0b50 0b50 
+# 125250000 ps 0 1 1 0fff 0000 
+# 125375000 ps 1 1 1 0fff 0000 
+# 125500000 ps 0 1 1 0b50 14b0 
+# 125625000 ps 1 1 1 0b50 14b0 
+# 125750000 ps 0 1 1 0000 1001 
+# 125875000 ps 1 1 1 0000 1001 
+# 126000000 ps 0 1 1 14b0 14b0 
+# 126125000 ps 1 1 1 14b0 14b0 
+# 126250000 ps 0 1 1 1001 0000 
+# 126375000 ps 1 1 1 1001 0000 
+# 126500000 ps 0 1 1 14b0 0b50 
+# 126625000 ps 1 1 1 14b0 0b50 
+# 126750000 ps 0 1 1 0000 0fff 
+# 126875000 ps 1 1 1 0000 0fff 
+# 127000000 ps 0 1 1 0b50 0b50 
+# 127125000 ps 1 1 1 0b50 0b50 
+# 127250000 ps 0 1 1 0fff 0000 
+# 127375000 ps 1 1 1 0fff 0000 
+# 127500000 ps 0 1 1 0b50 14b0 
+# 127625000 ps 1 1 1 0b50 14b0 
+# 127750000 ps 0 1 1 0000 1001 
+# 127875000 ps 1 1 1 0000 1001 
+# 128000000 ps 0 1 1 14b0 14b0 
+# 128125000 ps 1 1 1 14b0 14b0 
+# 128250000 ps 0 1 1 1001 0000 
+# 128375000 ps 1 1 1 1001 0000 
+# 128500000 ps 0 1 1 14b0 0b50 
+# 128625000 ps 1 1 1 14b0 0b50 
+# 128750000 ps 0 1 1 0000 0fff 
+# 128875000 ps 1 1 1 0000 0fff 
+# 129000000 ps 0 1 1 0b50 0b50 
+# 129125000 ps 1 1 1 0b50 0b50 
+# 129250000 ps 0 1 1 0fff 0000 
+# 129375000 ps 1 1 1 0fff 0000 
+# 129500000 ps 0 1 1 0b50 14b0 
+# 129625000 ps 1 1 1 0b50 14b0 
+# 129750000 ps 0 1 1 0000 1001 
+# 129875000 ps 1 1 1 0000 1001 
+# 130000000 ps 0 1 1 14b0 14b0 
+# 130125000 ps 1 1 1 14b0 14b0 
+# 130250000 ps 0 1 1 1001 0000 
+# 130375000 ps 1 1 1 1001 0000 
+# 130500000 ps 0 1 1 14b0 0b50 
+# 130625000 ps 1 1 1 14b0 0b50 
+# 130750000 ps 0 1 1 0000 0fff 
+# 130875000 ps 1 1 1 0000 0fff 
+# 131000000 ps 0 1 1 0b50 0b50 
+# 131125000 ps 1 1 1 0b50 0b50 
+# 131250000 ps 0 1 1 0fff 0000 
+# 131375000 ps 1 1 1 0fff 0000 
+# 131500000 ps 0 1 1 0b50 14b0 
+# 131625000 ps 1 1 1 0b50 14b0 
+# 131750000 ps 0 1 1 0000 1001 
+# 131875000 ps 1 1 1 0000 1001 
+# 132000000 ps 0 1 1 14b0 14b0 
+# 132125000 ps 1 1 1 14b0 14b0 
+# 132250000 ps 0 1 1 1001 0000 
+# 132375000 ps 1 1 1 1001 0000 
+# 132500000 ps 0 1 1 14b0 0b50 
+# 132625000 ps 1 1 1 14b0 0b50 
+# 132750000 ps 0 1 1 0000 0fff 
+# 132875000 ps 1 1 1 0000 0fff 
+# 133000000 ps 0 1 1 0b50 0b50 
+# 133125000 ps 1 1 1 0b50 0b50 
+# 133250000 ps 0 1 1 0fff 0000 
+# 133375000 ps 1 1 1 0fff 0000 
+# 133500000 ps 0 1 1 0b50 14b0 
+# 133625000 ps 1 1 1 0b50 14b0 
+# 133750000 ps 0 1 1 0000 1001 
+# 133875000 ps 1 1 1 0000 1001 
+# 134000000 ps 0 1 1 14b0 14b0 
+# 134125000 ps 1 1 1 14b0 14b0 
+# 134250000 ps 0 1 1 1001 0000 
+# 134375000 ps 1 1 1 1001 0000 
+# 134500000 ps 0 1 1 14b0 0b50 
+# 134625000 ps 1 1 1 14b0 0b50 
+# 134750000 ps 0 1 1 0000 0fff 
+# 134875000 ps 1 1 1 0000 0fff 
+# 135000000 ps 0 1 1 0b50 0b50 
+# 135125000 ps 1 1 1 0b50 0b50 
+# 135250000 ps 0 1 1 0fff 0000 
+# 135375000 ps 1 1 1 0fff 0000 
+# 135500000 ps 0 1 1 0b50 14b0 
+# 135625000 ps 1 1 1 0b50 14b0 
+# 135750000 ps 0 1 1 0000 1001 
+# 135875000 ps 1 1 1 0000 1001 
+# 136000000 ps 0 1 1 14b0 14b0 
+# 136125000 ps 1 1 1 14b0 14b0 
+# 136250000 ps 0 1 1 1001 0000 
+# 136375000 ps 1 1 1 1001 0000 
+# 136500000 ps 0 1 1 14b0 0b50 
+# 136625000 ps 1 1 1 14b0 0b50 
+# 136750000 ps 0 1 1 0000 0fff 
+# 136875000 ps 1 1 1 0000 0fff 
+# 137000000 ps 0 1 1 0b50 0b50 
+# 137125000 ps 1 1 1 0b50 0b50 
+# 137250000 ps 0 1 1 0fff 0000 
+# 137375000 ps 1 1 1 0fff 0000 
+# 137500000 ps 0 1 1 0b50 14b0 
+# 137625000 ps 1 1 1 0b50 14b0 
+# 137750000 ps 0 1 1 0000 1001 
+# 137875000 ps 1 1 1 0000 1001 
+# 138000000 ps 0 1 1 14b0 14b0 
+# 138125000 ps 1 1 1 14b0 14b0 
+# 138250000 ps 0 1 1 1001 0000 
+# 138375000 ps 1 1 1 1001 0000 
+# 138500000 ps 0 1 1 14b0 0b50 
+# 138625000 ps 1 1 1 14b0 0b50 
+# 138750000 ps 0 1 1 0000 0fff 
+# 138875000 ps 1 1 1 0000 0fff 
+# 139000000 ps 0 1 1 0b50 0b50 
+# 139125000 ps 1 1 1 0b50 0b50 
+# 139250000 ps 0 1 1 0fff 0000 
+# 139375000 ps 1 1 1 0fff 0000 
+# 139500000 ps 0 1 1 0b50 14b0 
+# 139625000 ps 1 1 1 0b50 14b0 
+# 139750000 ps 0 1 1 0000 1001 
+# 139875000 ps 1 1 1 0000 1001 
+# 140000000 ps 0 1 1 14b0 14b0 
+# 140125000 ps 1 1 1 14b0 14b0 
+# 140250000 ps 0 1 1 1001 0000 
+# 140375000 ps 1 1 1 1001 0000 
+# 140500000 ps 0 1 1 14b0 0b50 
+# 140625000 ps 1 1 1 14b0 0b50 
+# 140750000 ps 0 1 1 0000 0fff 
+# 140875000 ps 1 1 1 0000 0fff 
+# 141000000 ps 0 1 1 0b50 0b50 
+# 141125000 ps 1 1 1 0b50 0b50 
+# 141250000 ps 0 1 1 0fff 0000 
+# 141375000 ps 1 1 1 0fff 0000 
+# 141500000 ps 0 1 1 0b50 14b0 
+# 141625000 ps 1 1 1 0b50 14b0 
+# 141750000 ps 0 1 1 0000 1001 
+# 141875000 ps 1 1 1 0000 1001 
+# 142000000 ps 0 1 1 14b0 14b0 
+# 142125000 ps 1 1 1 14b0 14b0 
+# 142250000 ps 0 1 1 1001 0000 
+# 142375000 ps 1 1 1 1001 0000 
+# 142500000 ps 0 1 1 14b0 0b50 
+# 142625000 ps 1 1 1 14b0 0b50 
+# 142750000 ps 0 1 1 0000 0fff 
+# 142875000 ps 1 1 1 0000 0fff 
+# 143000000 ps 0 1 1 0b50 0b50 
+# 143125000 ps 1 1 1 0b50 0b50 
+# 143250000 ps 0 1 1 0fff 0000 
+# 143375000 ps 1 1 1 0fff 0000 
+# 143500000 ps 0 1 1 0b50 14b0 
+# 143625000 ps 1 1 1 0b50 14b0 
+# 143750000 ps 0 1 1 0000 1001 
+# 143875000 ps 1 1 1 0000 1001 
+# 144000000 ps 0 1 1 14b0 14b0 
+# 144125000 ps 1 1 1 14b0 14b0 
+# 144250000 ps 0 1 1 1001 0000 
+# 144375000 ps 1 1 1 1001 0000 
+# 144500000 ps 0 1 1 14b0 0b50 
+# 144625000 ps 1 1 1 14b0 0b50 
+# 144750000 ps 0 1 1 0000 0fff 
+# 144875000 ps 1 1 1 0000 0fff 
+# 145000000 ps 0 1 1 0b50 0b50 
+# 145125000 ps 1 1 1 0b50 0b50 
+# 145250000 ps 0 1 1 0fff 0000 
+# 145375000 ps 1 1 1 0fff 0000 
+# 145500000 ps 0 1 1 0b50 14b0 
+# 145625000 ps 1 1 1 0b50 14b0 
+# 145750000 ps 0 1 1 0000 1001 
+# 145875000 ps 1 1 1 0000 1001 
+# 146000000 ps 0 1 1 14b0 14b0 
+# 146125000 ps 1 1 1 14b0 14b0 
+# 146250000 ps 0 1 1 1001 0000 
+# 146375000 ps 1 1 1 1001 0000 
+# 146500000 ps 0 1 1 14b0 0b50 
+# 146625000 ps 1 1 1 14b0 0b50 
+# 146750000 ps 0 1 1 0000 0fff 
+# 146875000 ps 1 1 1 0000 0fff 
+# 147000000 ps 0 1 1 0b50 0b50 
+# 147125000 ps 1 1 1 0b50 0b50 
+# 147250000 ps 0 1 1 0fff 0000 
+# 147375000 ps 1 1 1 0fff 0000 
+# 147500000 ps 0 1 1 0b50 14b0 
+# 147625000 ps 1 1 1 0b50 14b0 
+# 147750000 ps 0 1 1 0000 1001 
+# 147875000 ps 1 1 1 0000 1001 
+# 148000000 ps 0 1 1 14b0 14b0 
+# 148125000 ps 1 1 1 14b0 14b0 
+# 148250000 ps 0 1 1 1001 0000 
+# 148375000 ps 1 1 1 1001 0000 
+# 148500000 ps 0 1 1 14b0 0b50 
+# 148625000 ps 1 1 1 14b0 0b50 
+# 148750000 ps 0 1 1 0000 0fff 
+# 148875000 ps 1 1 1 0000 0fff 
+# 149000000 ps 0 1 1 0b50 0b50 
+# 149125000 ps 1 1 1 0b50 0b50 
+# 149250000 ps 0 1 1 0fff 0000 
+# 149375000 ps 1 1 1 0fff 0000 
+# 149500000 ps 0 1 1 0b50 14b0 
+# 149625000 ps 1 1 1 0b50 14b0 
+# 149750000 ps 0 1 1 0000 1001 
+# 149875000 ps 1 1 1 0000 1001 
+# 150000000 ps 0 1 1 14b0 14b0 
+# 150125000 ps 1 1 1 14b0 14b0 
+# 150250000 ps 0 1 1 1001 0000 
+# 150375000 ps 1 1 1 1001 0000 
+# 150500000 ps 0 1 1 14b0 0b50 
+# 150625000 ps 1 1 1 14b0 0b50 
+# 150750000 ps 0 1 1 0000 0fff 
+# 150875000 ps 1 1 1 0000 0fff 
+# 151000000 ps 0 1 1 0b50 0b50 
+# 151125000 ps 1 1 1 0b50 0b50 
+# 151250000 ps 0 1 1 0fff 0000 
+# 151375000 ps 1 1 1 0fff 0000 
+# 151500000 ps 0 1 1 0b50 14b0 
+# 151625000 ps 1 1 1 0b50 14b0 
+# 151750000 ps 0 1 1 0000 1001 
+# 151875000 ps 1 1 1 0000 1001 
+# 152000000 ps 0 1 1 14b0 14b0 
+# 152125000 ps 1 1 1 14b0 14b0 
+# 152250000 ps 0 1 1 1001 0000 
+# 152375000 ps 1 1 1 1001 0000 
+# 152500000 ps 0 1 1 14b0 0b50 
+# 152625000 ps 1 1 1 14b0 0b50 
+# 152750000 ps 0 1 1 0000 0fff 
+# 152875000 ps 1 1 1 0000 0fff 
+# 153000000 ps 0 1 1 0b50 0b50 
+# 153125000 ps 1 1 1 0b50 0b50 
+# 153250000 ps 0 1 1 0fff 0000 
+# 153375000 ps 1 1 1 0fff 0000 
+# 153500000 ps 0 1 1 0b50 14b0 
+# 153625000 ps 1 1 1 0b50 14b0 
+# 153750000 ps 0 1 1 0000 1001 
+# 153875000 ps 1 1 1 0000 1001 
+# 154000000 ps 0 1 1 14b0 14b0 
+# 154125000 ps 1 1 1 14b0 14b0 
+# 154250000 ps 0 1 1 1001 0000 
+# 154375000 ps 1 1 1 1001 0000 
+# 154500000 ps 0 1 1 14b0 0b50 
+# 154625000 ps 1 1 1 14b0 0b50 
+# 154750000 ps 0 1 1 0000 0fff 
+# 154875000 ps 1 1 1 0000 0fff 
+# 155000000 ps 0 1 1 0b50 0b50 
+# 155125000 ps 1 1 1 0b50 0b50 
+# 155250000 ps 0 1 1 0fff 0000 
+# 155375000 ps 1 1 1 0fff 0000 
+# 155500000 ps 0 1 1 0b50 14b0 
+# 155625000 ps 1 1 1 0b50 14b0 
+# 155750000 ps 0 1 1 0000 1001 
+# 155875000 ps 1 1 1 0000 1001 
+# 156000000 ps 0 1 1 14b0 14b0 
+# 156125000 ps 1 1 1 14b0 14b0 
+# 156250000 ps 0 1 1 1001 0000 
+# 156375000 ps 1 1 1 1001 0000 
+# 156500000 ps 0 1 1 14b0 0b50 
+# 156625000 ps 1 1 1 14b0 0b50 
+# 156750000 ps 0 1 1 0000 0fff 
+# 156875000 ps 1 1 1 0000 0fff 
+# 157000000 ps 0 1 1 0b50 0b50 
+# 157125000 ps 1 1 1 0b50 0b50 
+# 157250000 ps 0 1 1 0fff 0000 
+# 157375000 ps 1 1 1 0fff 0000 
+# 157500000 ps 0 1 1 0b50 14b0 
+# 157625000 ps 1 1 1 0b50 14b0 
+# 157750000 ps 0 1 1 0000 1001 
+# 157875000 ps 1 1 1 0000 1001 
+# 158000000 ps 0 1 1 14b0 14b0 
+# 158125000 ps 1 1 1 14b0 14b0 
+# 158250000 ps 0 1 1 1001 0000 
+# 158375000 ps 1 1 1 1001 0000 
+# 158500000 ps 0 1 1 14b0 0b50 
+# 158625000 ps 1 1 1 14b0 0b50 
+# 158750000 ps 0 1 1 0000 0fff 
+# 158875000 ps 1 1 1 0000 0fff 
+# 159000000 ps 0 1 1 0b50 0b50 
+# 159125000 ps 1 1 1 0b50 0b50 
+# 159250000 ps 0 1 1 0fff 0000 
+# 159375000 ps 1 1 1 0fff 0000 
+# 159500000 ps 0 1 1 0b50 14b0 
+# 159625000 ps 1 1 1 0b50 14b0 
+# 159750000 ps 0 1 1 0000 1001 
+# 159875000 ps 1 1 1 0000 1001 
+# 160000000 ps 0 1 1 14b0 14b0 
+# 160125000 ps 1 1 1 14b0 14b0 
+# 160250000 ps 0 1 1 1001 0000 
+# 160375000 ps 1 1 1 1001 0000 
+# 160500000 ps 0 1 1 14b0 0b50 
+# 160625000 ps 1 1 1 14b0 0b50 
+# 160750000 ps 0 1 1 0000 0fff 
+# 160875000 ps 1 1 1 0000 0fff 
+# 161000000 ps 0 1 1 0b50 0b50 
+# 161125000 ps 1 1 1 0b50 0b50 
+# 161250000 ps 0 1 1 0fff 0000 
+# 161375000 ps 1 1 1 0fff 0000 
+# 161500000 ps 0 1 1 0b50 14b0 
+# 161625000 ps 1 1 1 0b50 14b0 
+# 161750000 ps 0 1 1 0000 1001 
+# 161875000 ps 1 1 1 0000 1001 
+# 162000000 ps 0 1 1 14b0 14b0 
+# 162125000 ps 1 1 1 14b0 14b0 
+# 162250000 ps 0 1 1 1001 0000 
+# 162375000 ps 1 1 1 1001 0000 
+# 162500000 ps 0 1 1 14b0 0b50 
+# 162625000 ps 1 1 1 14b0 0b50 
+# 162750000 ps 0 1 1 0000 0fff 
+# 162875000 ps 1 1 1 0000 0fff 
+# 163000000 ps 0 1 1 0b50 0b50 
+# 163125000 ps 1 1 1 0b50 0b50 
+# 163250000 ps 0 1 1 0fff 0000 
+# 163375000 ps 1 1 1 0fff 0000 
+# 163500000 ps 0 1 1 0b50 14b0 
+# 163625000 ps 1 1 1 0b50 14b0 
+# 163750000 ps 0 1 1 0000 1001 
+# 163875000 ps 1 1 1 0000 1001 
+# 164000000 ps 0 1 1 14b0 14b0 
+# 164125000 ps 1 1 1 14b0 14b0 
+# 164250000 ps 0 1 1 1001 0000 
+# 164375000 ps 1 1 1 1001 0000 
+# 164500000 ps 0 1 1 14b0 0b50 
+# 164625000 ps 1 1 1 14b0 0b50 
+# 164750000 ps 0 1 1 0000 0fff 
+# 164875000 ps 1 1 1 0000 0fff 
+# 165000000 ps 0 1 1 0b50 0b50 
+# 165125000 ps 1 1 1 0b50 0b50 
+# 165250000 ps 0 1 1 0fff 0000 
+# 165375000 ps 1 1 1 0fff 0000 
+# 165500000 ps 0 1 1 0b50 14b0 
+# 165625000 ps 1 1 1 0b50 14b0 
+# 165750000 ps 0 1 1 0000 1001 
+# 165875000 ps 1 1 1 0000 1001 
+# 166000000 ps 0 1 1 14b0 14b0 
+# 166125000 ps 1 1 1 14b0 14b0 
+# 166250000 ps 0 1 1 1001 0000 
+# 166375000 ps 1 1 1 1001 0000 
+# 166500000 ps 0 1 1 14b0 0b50 
+# 166625000 ps 1 1 1 14b0 0b50 
+# 166750000 ps 0 1 1 0000 0fff 
+# 166875000 ps 1 1 1 0000 0fff 
+# 167000000 ps 0 1 1 0b50 0b50 
+# 167125000 ps 1 1 1 0b50 0b50 
+# 167250000 ps 0 1 1 0fff 0000 
+# 167375000 ps 1 1 1 0fff 0000 
+# 167500000 ps 0 1 1 0b50 14b0 
+# 167625000 ps 1 1 1 0b50 14b0 
+# 167750000 ps 0 1 1 0000 1001 
+# 167875000 ps 1 1 1 0000 1001 
+# 168000000 ps 0 1 1 14b0 14b0 
+# 168125000 ps 1 1 1 14b0 14b0 
+# 168250000 ps 0 1 1 1001 0000 
+# 168375000 ps 1 1 1 1001 0000 
+# 168500000 ps 0 1 1 14b0 0b50 
+# 168625000 ps 1 1 1 14b0 0b50 
+# 168750000 ps 0 1 1 0000 0fff 
+# 168875000 ps 1 1 1 0000 0fff 
+# 169000000 ps 0 1 1 0b50 0b50 
+# 169125000 ps 1 1 1 0b50 0b50 
+# 169250000 ps 0 1 1 0fff 0000 
+# 169375000 ps 1 1 1 0fff 0000 
+# 169500000 ps 0 1 1 0b50 14b0 
+# 169625000 ps 1 1 1 0b50 14b0 
+# 169750000 ps 0 1 1 0000 1001 
+# 169875000 ps 1 1 1 0000 1001 
+# 170000000 ps 0 1 1 14b0 14b0 
+# 170125000 ps 1 1 1 14b0 14b0 
+# 170250000 ps 0 1 1 1001 0000 
+# 170375000 ps 1 1 1 1001 0000 
+# 170500000 ps 0 1 1 14b0 0b50 
+# 170625000 ps 1 1 1 14b0 0b50 
+# 170750000 ps 0 1 1 0000 0fff 
+# 170875000 ps 1 1 1 0000 0fff 
+# 171000000 ps 0 1 1 0b50 0b50 
+# 171125000 ps 1 1 1 0b50 0b50 
+# 171250000 ps 0 1 1 0fff 0000 
+# 171375000 ps 1 1 1 0fff 0000 
+# 171500000 ps 0 1 1 0b50 14b0 
+# 171625000 ps 1 1 1 0b50 14b0 
+# 171750000 ps 0 1 1 0000 1001 
+# 171875000 ps 1 1 1 0000 1001 
+# 172000000 ps 0 1 1 14b0 14b0 
+# 172125000 ps 1 1 1 14b0 14b0 
+# 172250000 ps 0 1 1 1001 0000 
+# 172375000 ps 1 1 1 1001 0000 
+# 172500000 ps 0 1 1 14b0 0b50 
+# 172625000 ps 1 1 1 14b0 0b50 
+# 172750000 ps 0 1 1 0000 0fff 
+# 172875000 ps 1 1 1 0000 0fff 
+# 173000000 ps 0 1 1 0b50 0b50 
+# 173125000 ps 1 1 1 0b50 0b50 
+# 173250000 ps 0 1 1 0fff 0000 
+# 173375000 ps 1 1 1 0fff 0000 
+# 173500000 ps 0 1 1 0b50 14b0 
+# 173625000 ps 1 1 1 0b50 14b0 
+# 173750000 ps 0 1 1 0000 1001 
+# 173875000 ps 1 1 1 0000 1001 
+# 174000000 ps 0 1 1 14b0 14b0 
+# 174125000 ps 1 1 1 14b0 14b0 
+# 174250000 ps 0 1 1 1001 0000 
+# 174375000 ps 1 1 1 1001 0000 
+# 174500000 ps 0 1 1 14b0 0b50 
+# 174625000 ps 1 1 1 14b0 0b50 
+# 174750000 ps 0 1 1 0000 0fff 
+# 174875000 ps 1 1 1 0000 0fff 
+# 175000000 ps 0 1 1 0b50 0b50 
+# 175125000 ps 1 1 1 0b50 0b50 
+# 175250000 ps 0 1 1 0fff 0000 
+# 175375000 ps 1 1 1 0fff 0000 
+# 175500000 ps 0 1 1 0b50 14b0 
+# 175625000 ps 1 1 1 0b50 14b0 
+# 175750000 ps 0 1 1 0000 1001 
+# 175875000 ps 1 1 1 0000 1001 
+# 176000000 ps 0 1 1 14b0 14b0 
+# 176125000 ps 1 1 1 14b0 14b0 
+# 176250000 ps 0 1 1 1001 0000 
+# 176375000 ps 1 1 1 1001 0000 
+# 176500000 ps 0 1 1 14b0 0b50 
+# 176625000 ps 1 1 1 14b0 0b50 
+# 176750000 ps 0 1 1 0000 0fff 
+# 176875000 ps 1 1 1 0000 0fff 
+# 177000000 ps 0 1 1 0b50 0b50 
+# 177125000 ps 1 1 1 0b50 0b50 
+# 177250000 ps 0 1 1 0fff 0000 
+# 177375000 ps 1 1 1 0fff 0000 
+# 177500000 ps 0 1 1 0b50 14b0 
+# 177625000 ps 1 1 1 0b50 14b0 
+# 177750000 ps 0 1 1 0000 1001 
+# 177875000 ps 1 1 1 0000 1001 
+# 178000000 ps 0 1 1 14b0 14b0 
+# 178125000 ps 1 1 1 14b0 14b0 
+# 178250000 ps 0 1 1 1001 0000 
+# 178375000 ps 1 1 1 1001 0000 
+# 178500000 ps 0 1 1 14b0 0b50 
+# 178625000 ps 1 1 1 14b0 0b50 
+# 178750000 ps 0 1 1 0000 0fff 
+# 178875000 ps 1 1 1 0000 0fff 
+# 179000000 ps 0 1 1 0b50 0b50 
+# 179125000 ps 1 1 1 0b50 0b50 
+# 179250000 ps 0 1 1 0fff 0000 
+# 179375000 ps 1 1 1 0fff 0000 
+# 179500000 ps 0 1 1 0b50 14b0 
+# 179625000 ps 1 1 1 0b50 14b0 
+# 179750000 ps 0 1 1 0000 1001 
+# 179875000 ps 1 1 1 0000 1001 
+# 180000000 ps 0 1 1 14b0 14b0 
+# 180125000 ps 1 1 1 14b0 14b0 
+# 180250000 ps 0 1 1 1001 0000 
+# 180375000 ps 1 1 1 1001 0000 
+# 180500000 ps 0 1 1 14b0 0b50 
+# 180625000 ps 1 1 1 14b0 0b50 
+# 180750000 ps 0 1 1 0000 0fff 
+# 180875000 ps 1 1 1 0000 0fff 
+# 181000000 ps 0 1 1 0b50 0b50 
+# 181125000 ps 1 1 1 0b50 0b50 
+# 181250000 ps 0 1 1 0fff 0000 
+# 181375000 ps 1 1 1 0fff 0000 
+# 181500000 ps 0 1 1 0b50 14b0 
+# 181625000 ps 1 1 1 0b50 14b0 
+# 181750000 ps 0 1 1 0000 1001 
+# 181875000 ps 1 1 1 0000 1001 
+# 182000000 ps 0 1 1 14b0 14b0 
+# 182125000 ps 1 1 1 14b0 14b0 
+# 182250000 ps 0 1 1 1001 0000 
+# 182375000 ps 1 1 1 1001 0000 
+# 182500000 ps 0 1 1 14b0 0b50 
+# 182625000 ps 1 1 1 14b0 0b50 
+# 182750000 ps 0 1 1 0000 0fff 
+# 182875000 ps 1 1 1 0000 0fff 
+# 183000000 ps 0 1 1 0b50 0b50 
+# 183125000 ps 1 1 1 0b50 0b50 
+# 183250000 ps 0 1 1 0fff 0000 
+# 183375000 ps 1 1 1 0fff 0000 
+# 183500000 ps 0 1 1 0b50 14b0 
+# 183625000 ps 1 1 1 0b50 14b0 
+# 183750000 ps 0 1 1 0000 1001 
+# 183875000 ps 1 1 1 0000 1001 
+# 184000000 ps 0 1 1 14b0 14b0 
+# 184125000 ps 1 1 1 14b0 14b0 
+# 184250000 ps 0 1 1 1001 0000 
+# 184375000 ps 1 1 1 1001 0000 
+# 184500000 ps 0 1 1 14b0 0b50 
+# 184625000 ps 1 1 1 14b0 0b50 
+# 184750000 ps 0 1 1 0000 0fff 
+# 184875000 ps 1 1 1 0000 0fff 
+# 185000000 ps 0 1 1 0b50 0b50 
+# 185125000 ps 1 1 1 0b50 0b50 
+# 185250000 ps 0 1 1 0fff 0000 
+# 185375000 ps 1 1 1 0fff 0000 
+# 185500000 ps 0 1 1 0b50 14b0 
+# 185625000 ps 1 1 1 0b50 14b0 
+# 185750000 ps 0 1 1 0000 1001 
+# 185875000 ps 1 1 1 0000 1001 
+# 186000000 ps 0 1 1 14b0 14b0 
+# 186125000 ps 1 1 1 14b0 14b0 
+# 186250000 ps 0 1 1 1001 0000 
+# 186375000 ps 1 1 1 1001 0000 
+# 186500000 ps 0 1 1 14b0 0b50 
+# 186625000 ps 1 1 1 14b0 0b50 
+# 186750000 ps 0 1 1 0000 0fff 
+# 186875000 ps 1 1 1 0000 0fff 
+# 187000000 ps 0 1 1 0b50 0b50 
+# 187125000 ps 1 1 1 0b50 0b50 
+# 187250000 ps 0 1 1 0fff 0000 
+# 187375000 ps 1 1 1 0fff 0000 
+# 187500000 ps 0 1 1 0b50 14b0 
+# 187625000 ps 1 1 1 0b50 14b0 
+# 187750000 ps 0 1 1 0000 1001 
+# 187875000 ps 1 1 1 0000 1001 
+# 188000000 ps 0 1 1 14b0 14b0 
+# 188125000 ps 1 1 1 14b0 14b0 
+# 188250000 ps 0 1 1 1001 0000 
+# 188375000 ps 1 1 1 1001 0000 
+# 188500000 ps 0 1 1 14b0 0b50 
+# 188625000 ps 1 1 1 14b0 0b50 
+# 188750000 ps 0 1 1 0000 0fff 
+# 188875000 ps 1 1 1 0000 0fff 
+# 189000000 ps 0 1 1 0b50 0b50 
+# 189125000 ps 1 1 1 0b50 0b50 
+# 189250000 ps 0 1 1 0fff 0000 
+# 189375000 ps 1 1 1 0fff 0000 
+# 189500000 ps 0 1 1 0b50 14b0 
+# 189625000 ps 1 1 1 0b50 14b0 
+# 189750000 ps 0 1 1 0000 1001 
+# 189875000 ps 1 1 1 0000 1001 
+# 190000000 ps 0 1 1 14b0 14b0 
+# 190125000 ps 1 1 1 14b0 14b0 
+# 190250000 ps 0 1 1 1001 0000 
+# 190375000 ps 1 1 1 1001 0000 
+# 190500000 ps 0 1 1 14b0 0b50 
+# 190625000 ps 1 1 1 14b0 0b50 
+# 190750000 ps 0 1 1 0000 0fff 
+# 190875000 ps 1 1 1 0000 0fff 
+# 191000000 ps 0 1 1 0b50 0b50 
+# 191125000 ps 1 1 1 0b50 0b50 
+# 191250000 ps 0 1 1 0fff 0000 
+# 191375000 ps 1 1 1 0fff 0000 
+# 191500000 ps 0 1 1 0b50 14b0 
+# 191625000 ps 1 1 1 0b50 14b0 
+# 191750000 ps 0 1 1 0000 1001 
+# 191875000 ps 1 1 1 0000 1001 
+# 192000000 ps 0 1 1 14b0 14b0 
+# 192125000 ps 1 1 1 14b0 14b0 
+# 192250000 ps 0 1 1 1001 0000 
+# 192375000 ps 1 1 1 1001 0000 
+# 192500000 ps 0 1 1 14b0 0b50 
+# 192625000 ps 1 1 1 14b0 0b50 
+# 192750000 ps 0 1 1 0000 0fff 
+# 192875000 ps 1 1 1 0000 0fff 
+# 193000000 ps 0 1 1 0b50 0b50 
+# 193125000 ps 1 1 1 0b50 0b50 
+# 193250000 ps 0 1 1 0fff 0000 
+# 193375000 ps 1 1 1 0fff 0000 
+# 193500000 ps 0 1 1 0b50 14b0 
+# 193625000 ps 1 1 1 0b50 14b0 
+# 193750000 ps 0 1 1 0000 1001 
+# 193875000 ps 1 1 1 0000 1001 
+# 194000000 ps 0 1 1 14b0 14b0 
+# 194125000 ps 1 1 1 14b0 14b0 
+# 194250000 ps 0 1 1 1001 0000 
+# 194375000 ps 1 1 1 1001 0000 
+# 194500000 ps 0 1 1 14b0 0b50 
+# 194625000 ps 1 1 1 14b0 0b50 
+# 194750000 ps 0 1 1 0000 0fff 
+# 194875000 ps 1 1 1 0000 0fff 
+# 195000000 ps 0 1 1 0b50 0b50 
+# 195125000 ps 1 1 1 0b50 0b50 
+# 195250000 ps 0 1 1 0fff 0000 
+# 195375000 ps 1 1 1 0fff 0000 
+# 195500000 ps 0 1 1 0b50 14b0 
+# 195625000 ps 1 1 1 0b50 14b0 
+# 195750000 ps 0 1 1 0000 1001 
+# 195875000 ps 1 1 1 0000 1001 
+# 196000000 ps 0 1 1 14b0 14b0 
+# 196125000 ps 1 1 1 14b0 14b0 
+# 196250000 ps 0 1 1 1001 0000 
+# 196375000 ps 1 1 1 1001 0000 
+# 196500000 ps 0 1 1 14b0 0b50 
+# 196625000 ps 1 1 1 14b0 0b50 
+# 196750000 ps 0 1 1 0000 0fff 
+# 196875000 ps 1 1 1 0000 0fff 
+# 197000000 ps 0 1 1 0b50 0b50 
+# 197125000 ps 1 1 1 0b50 0b50 
+# 197250000 ps 0 1 1 0fff 0000 
+# 197375000 ps 1 1 1 0fff 0000 
+# 197500000 ps 0 1 1 0b50 14b0 
+# 197625000 ps 1 1 1 0b50 14b0 
+# 197750000 ps 0 1 1 0000 1001 
+# 197875000 ps 1 1 1 0000 1001 
+# 198000000 ps 0 1 1 14b0 14b0 
+# 198125000 ps 1 1 1 14b0 14b0 
+# 198250000 ps 0 1 1 1001 0000 
+# 198375000 ps 1 1 1 1001 0000 
+# 198500000 ps 0 1 1 14b0 0b50 
+# 198625000 ps 1 1 1 14b0 0b50 
+# 198750000 ps 0 1 1 0000 0fff 
+# 198875000 ps 1 1 1 0000 0fff 
+# 199000000 ps 0 1 1 0b50 0b50 
+# 199125000 ps 1 1 1 0b50 0b50 
+# 199250000 ps 0 1 1 0fff 0000 
+# 199375000 ps 1 1 1 0fff 0000 
+# 199500000 ps 0 1 1 0b50 14b0 
+# 199625000 ps 1 1 1 0b50 14b0 
+# 199750000 ps 0 1 1 0000 1001 
+# 199875000 ps 1 1 1 0000 1001 
+# 200000000 ps 0 1 1 14b0 14b0 
+# 200125000 ps 1 1 1 14b0 14b0 
+# 200250000 ps 0 1 1 1001 0000 
+# 200375000 ps 1 1 1 1001 0000 
+# 200500000 ps 0 1 1 14b0 0b50 
+# 200625000 ps 1 1 1 14b0 0b50 
+# 200750000 ps 0 1 1 0000 0fff 
+# 200875000 ps 1 1 1 0000 0fff 
+# 201000000 ps 0 1 1 0b50 0b50 
+# 201125000 ps 1 1 1 0b50 0b50 
+# 201250000 ps 0 1 1 0fff 0000 
+# 201375000 ps 1 1 1 0fff 0000 
+# 201500000 ps 0 1 1 0b50 14b0 
+# 201625000 ps 1 1 1 0b50 14b0 
+# 201750000 ps 0 1 1 0000 1001 
+# 201875000 ps 1 1 1 0000 1001 
+# 202000000 ps 0 1 1 14b0 14b0 
+# 202125000 ps 1 1 1 14b0 14b0 
+# 202250000 ps 0 1 1 1001 0000 
+# 202375000 ps 1 1 1 1001 0000 
+# 202500000 ps 0 1 1 14b0 0b50 
+# 202625000 ps 1 1 1 14b0 0b50 
+# 202750000 ps 0 1 1 0000 0fff 
+# 202875000 ps 1 1 1 0000 0fff 
+# 203000000 ps 0 1 1 0b50 0b50 
+# 203125000 ps 1 1 1 0b50 0b50 
+# 203250000 ps 0 1 1 0fff 0000 
+# 203375000 ps 1 1 1 0fff 0000 
+# 203500000 ps 0 1 1 0b50 14b0 
+# 203625000 ps 1 1 1 0b50 14b0 
+# 203750000 ps 0 1 1 0000 1001 
+# 203875000 ps 1 1 1 0000 1001 
+# 204000000 ps 0 1 1 14b0 14b0 
+# 204125000 ps 1 1 1 14b0 14b0 
+# 204250000 ps 0 1 1 1001 0000 
+# 204375000 ps 1 1 1 1001 0000 
+# 204500000 ps 0 1 1 14b0 0b50 
+# 204625000 ps 1 1 1 14b0 0b50 
+# 204750000 ps 0 1 1 0000 0fff 
+# 204875000 ps 1 1 1 0000 0fff 
+# 205000000 ps 0 1 1 0b50 0b50 
+# 205125000 ps 1 1 1 0b50 0b50 
+# 205250000 ps 0 1 1 0fff 0000 
+# 205375000 ps 1 1 1 0fff 0000 
+# 205500000 ps 0 1 1 0b50 14b0 
+# 205625000 ps 1 1 1 0b50 14b0 
+# 205750000 ps 0 1 1 0000 1001 
+# 205875000 ps 1 1 1 0000 1001 
+# 206000000 ps 0 1 1 14b0 14b0 
+# 206125000 ps 1 1 1 14b0 14b0 
+# 206250000 ps 0 1 1 1001 0000 
+# 206375000 ps 1 1 1 1001 0000 
+# 206500000 ps 0 1 1 14b0 0b50 
+# 206625000 ps 1 1 1 14b0 0b50 
+# 206750000 ps 0 1 1 0000 0fff 
+# 206875000 ps 1 1 1 0000 0fff 
+# 207000000 ps 0 1 1 0b50 0b50 
+# 207125000 ps 1 1 1 0b50 0b50 
+# 207250000 ps 0 1 1 0fff 0000 
+# 207375000 ps 1 1 1 0fff 0000 
+# 207500000 ps 0 1 1 0b50 14b0 
+# 207625000 ps 1 1 1 0b50 14b0 
+# 207750000 ps 0 1 1 0000 1001 
+# 207875000 ps 1 1 1 0000 1001 
+# 208000000 ps 0 1 1 14b0 14b0 
+# 208125000 ps 1 1 1 14b0 14b0 
+# 208250000 ps 0 1 1 1001 0000 
+# 208375000 ps 1 1 1 1001 0000 
+# 208500000 ps 0 1 1 14b0 0b50 
+# 208625000 ps 1 1 1 14b0 0b50 
+# 208750000 ps 0 1 1 0000 0fff 
+# 208875000 ps 1 1 1 0000 0fff 
+# 209000000 ps 0 1 1 0b50 0b50 
+# 209125000 ps 1 1 1 0b50 0b50 
+# 209250000 ps 0 1 1 0fff 0000 
+# 209375000 ps 1 1 1 0fff 0000 
+# 209500000 ps 0 1 1 0b50 14b0 
+# 209625000 ps 1 1 1 0b50 14b0 
+# 209750000 ps 0 1 1 0000 1001 
+# 209875000 ps 1 1 1 0000 1001 
+# 210000000 ps 0 1 1 14b0 14b0 
+# 210125000 ps 1 1 1 14b0 14b0 
+# 210250000 ps 0 1 1 1001 0000 
+# 210375000 ps 1 1 1 1001 0000 
+# 210500000 ps 0 1 1 14b0 0b50 
+# 210625000 ps 1 1 1 14b0 0b50 
+# 210750000 ps 0 1 1 0000 0fff 
+# 210875000 ps 1 1 1 0000 0fff 
+# 211000000 ps 0 1 1 0b50 0b50 
+# 211125000 ps 1 1 1 0b50 0b50 
+# 211250000 ps 0 1 1 0fff 0000 
+# 211375000 ps 1 1 1 0fff 0000 
+# 211500000 ps 0 1 1 0b50 14b0 
+# 211625000 ps 1 1 1 0b50 14b0 
+# 211750000 ps 0 1 1 0000 1001 
+# 211875000 ps 1 1 1 0000 1001 
+# 212000000 ps 0 1 1 14b0 14b0 
+# 212125000 ps 1 1 1 14b0 14b0 
+# 212250000 ps 0 1 1 1001 0000 
+# 212375000 ps 1 1 1 1001 0000 
+# 212500000 ps 0 1 1 14b0 0b50 
+# 212625000 ps 1 1 1 14b0 0b50 
+# 212750000 ps 0 1 1 0000 0fff 
+# 212875000 ps 1 1 1 0000 0fff 
+# 213000000 ps 0 1 1 0b50 0b50 
+# 213125000 ps 1 1 1 0b50 0b50 
+# 213250000 ps 0 1 1 0fff 0000 
+# 213375000 ps 1 1 1 0fff 0000 
+# 213500000 ps 0 1 1 0b50 14b0 
+# 213625000 ps 1 1 1 0b50 14b0 
+# 213750000 ps 0 1 1 0000 1001 
+# 213875000 ps 1 1 1 0000 1001 
+# 214000000 ps 0 1 1 14b0 14b0 
+# 214125000 ps 1 1 1 14b0 14b0 
+# 214250000 ps 0 1 1 1001 0000 
+# 214375000 ps 1 1 1 1001 0000 
+# 214500000 ps 0 1 1 14b0 0b50 
+# 214625000 ps 1 1 1 14b0 0b50 
+# 214750000 ps 0 1 1 0000 0fff 
+# 214875000 ps 1 1 1 0000 0fff 
+# 215000000 ps 0 1 1 0b50 0b50 
+# 215125000 ps 1 1 1 0b50 0b50 
+# 215250000 ps 0 1 1 0fff 0000 
+# 215375000 ps 1 1 1 0fff 0000 
+# 215500000 ps 0 1 1 0b50 14b0 
+# 215625000 ps 1 1 1 0b50 14b0 
+# 215750000 ps 0 1 1 0000 1001 
+# 215875000 ps 1 1 1 0000 1001 
+# 216000000 ps 0 1 1 14b0 14b0 
+# 216125000 ps 1 1 1 14b0 14b0 
+# 216250000 ps 0 1 1 1001 0000 
+# 216375000 ps 1 1 1 1001 0000 
+# 216500000 ps 0 1 1 14b0 0b50 
+# 216625000 ps 1 1 1 14b0 0b50 
+# 216750000 ps 0 1 1 0000 0fff 
+# 216875000 ps 1 1 1 0000 0fff 
+# 217000000 ps 0 1 1 0b50 0b50 
+# 217125000 ps 1 1 1 0b50 0b50 
+# 217250000 ps 0 1 1 0fff 0000 
+# 217375000 ps 1 1 1 0fff 0000 
+# 217500000 ps 0 1 1 0b50 14b0 
+# 217625000 ps 1 1 1 0b50 14b0 
+# 217750000 ps 0 1 1 0000 1001 
+# 217875000 ps 1 1 1 0000 1001 
+# 218000000 ps 0 1 1 14b0 14b0 
+# 218125000 ps 1 1 1 14b0 14b0 
+# 218250000 ps 0 1 1 1001 0000 
+# 218375000 ps 1 1 1 1001 0000 
+# 218500000 ps 0 1 1 14b0 0b50 
+# 218625000 ps 1 1 1 14b0 0b50 
+# 218750000 ps 0 1 1 0000 0fff 
+# 218875000 ps 1 1 1 0000 0fff 
+# 219000000 ps 0 1 1 0b50 0b50 
+# 219125000 ps 1 1 1 0b50 0b50 
+# 219250000 ps 0 1 1 0fff 0000 
+# 219375000 ps 1 1 1 0fff 0000 
+# 219500000 ps 0 1 1 0b50 14b0 
+# 219625000 ps 1 1 1 0b50 14b0 
+# 219750000 ps 0 1 1 0000 1001 
+# 219875000 ps 1 1 1 0000 1001 
+# 220000000 ps 0 1 1 14b0 14b0 
+# 220125000 ps 1 1 1 14b0 14b0 
+# 220250000 ps 0 1 1 1001 0000 
+# 220375000 ps 1 1 1 1001 0000 
+# 220500000 ps 0 1 1 14b0 0b50 
+# 220625000 ps 1 1 1 14b0 0b50 
+# 220750000 ps 0 1 1 0000 0fff 
+# 220875000 ps 1 1 1 0000 0fff 
+# 221000000 ps 0 1 1 0b50 0b50 
+# 221125000 ps 1 1 1 0b50 0b50 
+# 221250000 ps 0 1 1 0fff 0000 
+# 221375000 ps 1 1 1 0fff 0000 
+# 221500000 ps 0 1 1 0b50 14b0 
+# 221625000 ps 1 1 1 0b50 14b0 
+# 221750000 ps 0 1 1 0000 1001 
+# 221875000 ps 1 1 1 0000 1001 
+# 222000000 ps 0 1 1 14b0 14b0 
+# 222125000 ps 1 1 1 14b0 14b0 
+# 222250000 ps 0 1 1 1001 0000 
+# 222375000 ps 1 1 1 1001 0000 
+# 222500000 ps 0 1 1 14b0 0b50 
+# 222625000 ps 1 1 1 14b0 0b50 
+# 222750000 ps 0 1 1 0000 0fff 
+# 222875000 ps 1 1 1 0000 0fff 
+# 223000000 ps 0 1 1 0b50 0b50 
+# 223125000 ps 1 1 1 0b50 0b50 
+# 223250000 ps 0 1 1 0fff 0000 
+# 223375000 ps 1 1 1 0fff 0000 
+# 223500000 ps 0 1 1 0b50 14b0 
+# 223625000 ps 1 1 1 0b50 14b0 
+# 223750000 ps 0 1 1 0000 1001 
+# 223875000 ps 1 1 1 0000 1001 
+# 224000000 ps 0 1 1 14b0 14b0 
+# 224125000 ps 1 1 1 14b0 14b0 
+# 224250000 ps 0 1 1 1001 0000 
+# 224375000 ps 1 1 1 1001 0000 
+# 224500000 ps 0 1 1 14b0 0b50 
+# 224625000 ps 1 1 1 14b0 0b50 
+# 224750000 ps 0 1 1 0000 0fff 
+# 224875000 ps 1 1 1 0000 0fff 
+# 225000000 ps 0 1 1 0b50 0b50 
+# 225125000 ps 1 1 1 0b50 0b50 
+# 225250000 ps 0 1 1 0fff 0000 
+# 225375000 ps 1 1 1 0fff 0000 
+# 225500000 ps 0 1 1 0b50 14b0 
+# 225625000 ps 1 1 1 0b50 14b0 
+# 225750000 ps 0 1 1 0000 1001 
+# 225875000 ps 1 1 1 0000 1001 
+# 226000000 ps 0 1 1 14b0 14b0 
+# 226125000 ps 1 1 1 14b0 14b0 
+# 226250000 ps 0 1 1 1001 0000 
+# 226375000 ps 1 1 1 1001 0000 
+# 226500000 ps 0 1 1 14b0 0b50 
+# 226625000 ps 1 1 1 14b0 0b50 
+# 226750000 ps 0 1 1 0000 0fff 
+# 226875000 ps 1 1 1 0000 0fff 
+# 227000000 ps 0 1 1 0b50 0b50 
+# 227125000 ps 1 1 1 0b50 0b50 
+# 227250000 ps 0 1 1 0fff 0000 
+# 227375000 ps 1 1 1 0fff 0000 
+# 227500000 ps 0 1 1 0b50 14b0 
+# 227625000 ps 1 1 1 0b50 14b0 
+# 227750000 ps 0 1 1 0000 1001 
+# 227875000 ps 1 1 1 0000 1001 
+# 228000000 ps 0 1 1 14b0 14b0 
+# 228125000 ps 1 1 1 14b0 14b0 
+# 228250000 ps 0 1 1 1001 0000 
+# 228375000 ps 1 1 1 1001 0000 
+# 228500000 ps 0 1 1 14b0 0b50 
+# 228625000 ps 1 1 1 14b0 0b50 
+# 228750000 ps 0 1 1 0000 0fff 
+# 228875000 ps 1 1 1 0000 0fff 
+# 229000000 ps 0 1 1 0b50 0b50 
+# 229125000 ps 1 1 1 0b50 0b50 
+# 229250000 ps 0 1 1 0fff 0000 
+# 229375000 ps 1 1 1 0fff 0000 
+# 229500000 ps 0 1 1 0b50 14b0 
+# 229625000 ps 1 1 1 0b50 14b0 
+# 229750000 ps 0 1 1 0000 1001 
+# 229875000 ps 1 1 1 0000 1001 
+# 230000000 ps 0 1 1 14b0 14b0 
+# 230125000 ps 1 1 1 14b0 14b0 
+# 230250000 ps 0 1 1 1001 0000 
+# 230375000 ps 1 1 1 1001 0000 
+# 230500000 ps 0 1 1 14b0 0b50 
+# 230625000 ps 1 1 1 14b0 0b50 
+# 230750000 ps 0 1 1 0000 0fff 
+# 230875000 ps 1 1 1 0000 0fff 
+# 231000000 ps 0 1 1 0b50 0b50 
+# 231125000 ps 1 1 1 0b50 0b50 
+# 231250000 ps 0 1 1 0fff 0000 
+# 231375000 ps 1 1 1 0fff 0000 
+# 231500000 ps 0 1 1 0b50 14b0 
+# 231625000 ps 1 1 1 0b50 14b0 
+# 231750000 ps 0 1 1 0000 1001 
+# 231875000 ps 1 1 1 0000 1001 
+# 232000000 ps 0 1 1 14b0 14b0 
+# 232125000 ps 1 1 1 14b0 14b0 
+# 232250000 ps 0 1 1 1001 0000 
+# 232375000 ps 1 1 1 1001 0000 
+# 232500000 ps 0 1 1 14b0 0b50 
+# 232625000 ps 1 1 1 14b0 0b50 
+# 232750000 ps 0 1 1 0000 0fff 
+# 232875000 ps 1 1 1 0000 0fff 
+# 233000000 ps 0 1 1 0b50 0b50 
+# 233125000 ps 1 1 1 0b50 0b50 
+# 233250000 ps 0 1 1 0fff 0000 
+# 233375000 ps 1 1 1 0fff 0000 
+# 233500000 ps 0 1 1 0b50 14b0 
+# 233625000 ps 1 1 1 0b50 14b0 
+# 233750000 ps 0 1 1 0000 1001 
+# 233875000 ps 1 1 1 0000 1001 
+# 234000000 ps 0 1 1 14b0 14b0 
+# 234125000 ps 1 1 1 14b0 14b0 
+# 234250000 ps 0 1 1 1001 0000 
+# 234375000 ps 1 1 1 1001 0000 
+# 234500000 ps 0 1 1 14b0 0b50 
+# 234625000 ps 1 1 1 14b0 0b50 
+# 234750000 ps 0 1 1 0000 0fff 
+# 234875000 ps 1 1 1 0000 0fff 
+# 235000000 ps 0 1 1 0b50 0b50 
+# 235125000 ps 1 1 1 0b50 0b50 
+# 235250000 ps 0 1 1 0fff 0000 
+# 235375000 ps 1 1 1 0fff 0000 
+# 235500000 ps 0 1 1 0b50 14b0 
+# 235625000 ps 1 1 1 0b50 14b0 
+# 235750000 ps 0 1 1 0000 1001 
+# 235875000 ps 1 1 1 0000 1001 
+# 236000000 ps 0 1 1 14b0 14b0 
+# 236125000 ps 1 1 1 14b0 14b0 
+# 236250000 ps 0 1 1 1001 0000 
+# 236375000 ps 1 1 1 1001 0000 
+# 236500000 ps 0 1 1 14b0 0b50 
+# 236625000 ps 1 1 1 14b0 0b50 
+# 236750000 ps 0 1 1 0000 0fff 
+# 236875000 ps 1 1 1 0000 0fff 
+# 237000000 ps 0 1 1 0b50 0b50 
+# 237125000 ps 1 1 1 0b50 0b50 
+# 237250000 ps 0 1 1 0fff 0000 
+# 237375000 ps 1 1 1 0fff 0000 
+# 237500000 ps 0 1 1 0b50 14b0 
+# 237625000 ps 1 1 1 0b50 14b0 
+# 237750000 ps 0 1 1 0000 1001 
+# 237875000 ps 1 1 1 0000 1001 
+# 238000000 ps 0 1 1 14b0 14b0 
+# 238125000 ps 1 1 1 14b0 14b0 
+# 238250000 ps 0 1 1 1001 0000 
+# 238375000 ps 1 1 1 1001 0000 
+# 238500000 ps 0 1 1 14b0 0b50 
+# 238625000 ps 1 1 1 14b0 0b50 
+# 238750000 ps 0 1 1 0000 0fff 
+# 238875000 ps 1 1 1 0000 0fff 
+# 239000000 ps 0 1 1 0b50 0b50 
+# 239125000 ps 1 1 1 0b50 0b50 
+# 239250000 ps 0 1 1 0fff 0000 
+# 239375000 ps 1 1 1 0fff 0000 
+# 239500000 ps 0 1 1 0b50 14b0 
+# 239625000 ps 1 1 1 0b50 14b0 
+# 239750000 ps 0 1 1 0000 1001 
+# 239875000 ps 1 1 1 0000 1001 
+# 240000000 ps 0 1 1 14b0 14b0 
+# 240125000 ps 1 1 1 14b0 14b0 
+# 240250000 ps 0 1 1 1001 0000 
+# 240375000 ps 1 1 1 1001 0000 
+# 240500000 ps 0 1 1 14b0 0b50 
+# 240625000 ps 1 1 1 14b0 0b50 
+# 240750000 ps 0 1 1 0000 0fff 
+# 240875000 ps 1 1 1 0000 0fff 
+# 241000000 ps 0 1 1 0b50 0b50 
+# 241125000 ps 1 1 1 0b50 0b50 
+# 241250000 ps 0 1 1 0fff 0000 
+# 241375000 ps 1 1 1 0fff 0000 
+# 241500000 ps 0 1 1 0b50 14b0 
+# 241625000 ps 1 1 1 0b50 14b0 
+# 241750000 ps 0 1 1 0000 1001 
+# 241875000 ps 1 1 1 0000 1001 
+# 242000000 ps 0 1 1 14b0 14b0 
+# 242125000 ps 1 1 1 14b0 14b0 
+# 242250000 ps 0 1 1 1001 0000 
+# 242375000 ps 1 1 1 1001 0000 
+# 242500000 ps 0 1 1 14b0 0b50 
+# 242625000 ps 1 1 1 14b0 0b50 
+# 242750000 ps 0 1 1 0000 0fff 
+# 242875000 ps 1 1 1 0000 0fff 
+# 243000000 ps 0 1 1 0b50 0b50 
+# 243125000 ps 1 1 1 0b50 0b50 
+# 243250000 ps 0 1 1 0fff 0000 
+# 243375000 ps 1 1 1 0fff 0000 
+# 243500000 ps 0 1 1 0b50 14b0 
+# 243625000 ps 1 1 1 0b50 14b0 
+# 243750000 ps 0 1 1 0000 1001 
+# 243875000 ps 1 1 1 0000 1001 
+# 244000000 ps 0 1 1 14b0 14b0 
+# 244125000 ps 1 1 1 14b0 14b0 
+# 244250000 ps 0 1 1 1001 0000 
+# 244375000 ps 1 1 1 1001 0000 
+# 244500000 ps 0 1 1 14b0 0b50 
+# 244625000 ps 1 1 1 14b0 0b50 
+# 244750000 ps 0 1 1 0000 0fff 
+# 244875000 ps 1 1 1 0000 0fff 
+# 245000000 ps 0 1 1 0b50 0b50 
+# 245125000 ps 1 1 1 0b50 0b50 
+# 245250000 ps 0 1 1 0fff 0000 
+# 245375000 ps 1 1 1 0fff 0000 
+# 245500000 ps 0 1 1 0b50 14b0 
+# 245625000 ps 1 1 1 0b50 14b0 
+# 245750000 ps 0 1 1 0000 1001 
+# 245875000 ps 1 1 1 0000 1001 
+# 246000000 ps 0 1 1 14b0 14b0 
+# 246125000 ps 1 1 1 14b0 14b0 
+# 246250000 ps 0 1 1 1001 0000 
+# 246375000 ps 1 1 1 1001 0000 
+# 246500000 ps 0 1 1 14b0 0b50 
+# 246625000 ps 1 1 1 14b0 0b50 
+# 246750000 ps 0 1 1 0000 0fff 
+# 246875000 ps 1 1 1 0000 0fff 
+# 247000000 ps 0 1 1 0b50 0b50 
+# 247125000 ps 1 1 1 0b50 0b50 
+# 247250000 ps 0 1 1 0fff 0000 
+# 247375000 ps 1 1 1 0fff 0000 
+# 247500000 ps 0 1 1 0b50 14b0 
+# 247625000 ps 1 1 1 0b50 14b0 
+# 247750000 ps 0 1 1 0000 1001 
+# 247875000 ps 1 1 1 0000 1001 
+# 248000000 ps 0 1 1 14b0 14b0 
+# 248125000 ps 1 1 1 14b0 14b0 
+# 248250000 ps 0 1 1 1001 0000 
+# 248375000 ps 1 1 1 1001 0000 
+# 248500000 ps 0 1 1 14b0 0b50 
+# 248625000 ps 1 1 1 14b0 0b50 
+# 248750000 ps 0 1 1 0000 0fff 
+# 248875000 ps 1 1 1 0000 0fff 
+# 249000000 ps 0 1 1 0b50 0b50 
+# 249125000 ps 1 1 1 0b50 0b50 
+# 249250000 ps 0 1 1 0fff 0000 
+# 249375000 ps 1 1 1 0fff 0000 
+# 249500000 ps 0 1 1 0b50 14b0 
+# 249625000 ps 1 1 1 0b50 14b0 
+# 249750000 ps 0 1 1 0000 1001 
+# 249875000 ps 1 1 1 0000 1001 
+# 250000000 ps 0 1 1 14b0 14b0 
+# 250125000 ps 1 1 1 14b0 14b0 
+# 250250000 ps 0 1 1 1001 0000 
+# 250375000 ps 1 1 1 1001 0000 
+# 250500000 ps 0 1 1 14b0 0b50 
+# 250625000 ps 1 1 1 14b0 0b50 
+# 250750000 ps 0 1 1 0000 0fff 
+# 250875000 ps 1 1 1 0000 0fff 
+# 251000000 ps 0 1 1 0b50 0b50 
+# 251125000 ps 1 1 1 0b50 0b50 
+# 251250000 ps 0 1 1 0fff 0000 
+# 251375000 ps 1 1 1 0fff 0000 
+# 251500000 ps 0 1 1 0b50 14b0 
+# 251625000 ps 1 1 1 0b50 14b0 
+# 251750000 ps 0 1 1 0000 1001 
+# 251875000 ps 1 1 1 0000 1001 
+# 252000000 ps 0 1 1 14b0 14b0 
+# 252125000 ps 1 1 1 14b0 14b0 
+# 252250000 ps 0 1 1 1001 0000 
+# 252375000 ps 1 1 1 1001 0000 
+# 252500000 ps 0 1 1 14b0 0b50 
+# 252625000 ps 1 1 1 14b0 0b50 
+# 252750000 ps 0 1 1 0000 0fff 
+# 252875000 ps 1 1 1 0000 0fff 
+# 253000000 ps 0 1 1 0b50 0b50 
+# 253125000 ps 1 1 1 0b50 0b50 
+# 253250000 ps 0 1 1 0fff 0000 
+# 253375000 ps 1 1 1 0fff 0000 
+# 253500000 ps 0 1 1 0b50 14b0 
+# 253625000 ps 1 1 1 0b50 14b0 
+# 253750000 ps 0 1 1 0000 1001 
+# 253875000 ps 1 1 1 0000 1001 
+# 254000000 ps 0 1 1 14b0 14b0 
+# 254125000 ps 1 1 1 14b0 14b0 
+# 254250000 ps 0 1 1 1001 0000 
+# 254375000 ps 1 1 1 1001 0000 
+# 254500000 ps 0 1 1 14b0 0b50 
+# 254625000 ps 1 1 1 14b0 0b50 
+# 254750000 ps 0 1 1 0000 0fff 
+# 254875000 ps 1 1 1 0000 0fff 
+# 255000000 ps 0 1 1 0b50 0b50 
+# 255125000 ps 1 1 1 0b50 0b50 
+# 255250000 ps 0 1 1 0fff 0000 
+# 255375000 ps 1 1 1 0fff 0000 
+# 255500000 ps 0 1 1 0b50 14b0 
+# 255625000 ps 1 1 1 0b50 14b0 
+# 255750000 ps 0 1 1 0000 1001 
+# 255875000 ps 1 1 1 0000 1001 
+# 256000000 ps 0 1 1 14b0 14b0 
+# 256125000 ps 1 1 1 14b0 14b0 
+# 256250000 ps 0 1 1 1001 0000 
+# 256375000 ps 1 1 1 1001 0000 
+# 256500000 ps 0 1 1 14b0 0b50 
+# 256625000 ps 1 1 1 14b0 0b50 
+# 256750000 ps 0 1 1 0000 0fff 
+# 256875000 ps 1 1 1 0000 0fff 
+# 257000000 ps 0 1 1 0b50 0b50 
+# 257125000 ps 1 1 1 0b50 0b50 
+# 257250000 ps 0 1 1 0fff 0000 
+# 257375000 ps 1 1 1 0fff 0000 
+# 257500000 ps 0 1 1 0b50 14b0 
+# 257625000 ps 1 1 1 0b50 14b0 
+# 257750000 ps 0 1 1 0000 1001 
+# 257875000 ps 1 1 1 0000 1001 
+# 258000000 ps 0 1 1 14b0 14b0 
+# ** Note: $finish    : C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v(95)
+#    Time: 258125 ns  Iteration: 1  Instance: /fsktb
+# End time: 23:04:22 on Jan 04,2026, Elapsed time: 0:05:00
+# Errors: 0, Warnings: 0

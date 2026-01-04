@@ -7,7 +7,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Jan 04 13:02:28 2026
+Sun Jan 04 20:46:04 2026
 
 
 Command Line:  synthesis -f mySDR_fpga_impl1_lattice.synproj -gui -msgset C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/promote.xml 
@@ -204,8 +204,8 @@ original encoding -> new encoding (one-hot encoding)
 
 
     <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\IQSerializer_1/current_state_FSM"  />
-    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(87): " arg1="\IQSerializer_1/QCounter_387__i0" arg2="c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v" arg3="87"  />
-    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(84): " arg1="\IQSerializer_1/ICounter_385__i0" arg2="c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v" arg3="84"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(87): " arg1="\IQSerializer_1/QCounter_413__i0" arg2="c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v" arg3="87"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(84): " arg1="\IQSerializer_1/ICounter_411__i0" arg2="c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v" arg3="84"  />
 Duplicate register/latch removal. \fskModule_1/FSK_Q__i3 is a one-to-one match with \fskModule_1/FSK_Q__i1.
 Duplicate register/latch removal. \fskModule_1/FSK_Q__i2 is a one-to-one match with \fskModule_1/FSK_Q__i3.
 Duplicate register/latch removal. \fskModule_1/FSK_I__i11 is a one-to-one match with \fskModule_1/FSK_I__i6.
@@ -220,7 +220,7 @@ Duplicate register/latch removal. \fskModule_1/FSK_Q__i9 is a one-to-one match w
 Duplicate register/latch removal. \fskModule_1/FSK_Q__i11 is a one-to-one match with \fskModule_1/FSK_Q__i9.
 Duplicate register/latch removal. \fskModule_1/FSK_Q__i10 is a one-to-one match with \fskModule_1/FSK_Q__i5.
 Duplicate register/latch removal. \fskModule_1/FSK_Q__i7 is a one-to-one match with \fskModule_1/FSK_Q__i10.
-GSR will not be inferred because no asynchronous signal was found in the netlist.
+GSR instance connected to net counter_0_countDone.
 Applying 200.000000 MHz constraint to all clocks
 
     <postMsg mid="35001783" type="Warning" dynamic="1" navigation="0" arg0="\packetGen_1/data_I_0"  />
@@ -238,7 +238,7 @@ Running DRC...
 DRC complete with no errors or warnings
 
 Design Results:
-    353 blocks expanded
+    354 blocks expanded
 completed the first expansion
 All blocks are expanded and NGD expansion is successful.
 Writing NGD file mySDR_fpga_impl1.ngd.
@@ -247,14 +247,14 @@ Writing NGD file mySDR_fpga_impl1.ngd.
 Number of register bits => 137 of 84255 (0 % )
 CCU2C => 70
 EHXPLLL => 2
-FD1P3IX => 10
-FD1S3AX => 31
-FD1S3IX => 82
-FD1S3JX => 14
+FD1P3IX => 11
+FD1S3AX => 32
+FD1S3IX => 81
+FD1S3JX => 13
 GSR => 1
 IB => 2
 INV => 2
-LUT4 => 120
+LUT4 => 121
 OB => 10
 PFUMX => 5
 ROM256X1A => 1
@@ -268,22 +268,23 @@ Number of Clocks: 4
   Net : my_instance_1/pll_clko_1, loads : 2
   Net : top_clk_c, loads : 1
 Clock Enable Nets
-Number of Clock Enables: 3
-Top 3 highest fanout Clock Enables:
+Number of Clock Enables: 4
+Top 4 highest fanout Clock Enables:
   Net : clockDivider_0/lockCounter_7, loads : 2
   Net : fskModule_1/clockDivider_clk_4M_enable_2, loads : 1
+  Net : packetGen_1/next_state_3__N_154, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : fskModule_1/n3364, loads : 27
-  Net : counter_0/n2159, loads : 26
+  Net : counter_0/n2190, loads : 26
   Net : clockDivider_0/clk_N_174, loads : 25
-  Net : fskModule_1/n23, loads : 12
+  Net : packetGen_1/n3490, loads : 22
+  Net : fskModule_1/sampleCount_1, loads : 15
+  Net : fskModule_1/sampleCount_0, loads : 15
+  Net : fskModule_1/n3487, loads : 14
+  Net : fskModule_1/n3046, loads : 13
+  Net : counter_0/counter_0_countDone, loads : 11
   Net : my_instance_2/clk_N_319, loads : 11
-  Net : fskModule_1/fskModule_start, loads : 11
-  Net : counter_0/counter_0_countDone, loads : 10
-  Net : packetGen_1/next_state_3__N_153, loads : 10
-  Net : clockDivider_0/pll_lock_N_54, loads : 10
-  Net : packetGen_1/symCounter_0, loads : 9
+  Net : fskModule_1/n527, loads : 11
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -293,7 +294,7 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets clockDivider_clk_4M]     |  200.000 MHz|   79.479 MHz|     5 *
+clk1 [get_nets clockDivider_clk_4M]     |  200.000 MHz|   95.166 MHz|     5 *
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
 clk0 [get_nets serial_clk_c]            |  200.000 MHz|   82.129 MHz|     5 *
@@ -304,10 +305,10 @@ clk0 [get_nets serial_clk_c]            |  200.000 MHz|   82.129 MHz|     5 *
 2 constraints not met.
 
 
-Peak Memory Usage: 124.094  MB
+Peak Memory Usage: 123.336  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.797  secs
+Elapsed CPU time for LSE flow : 0.813  secs
 --------------------------------------------------------------
 
 map -a "ECP5UM5G" -p LFE5UM5G-85F -t CABGA381 -s 8 -oc Industrial   "mySDR_fpga_impl1.ngd" -o "mySDR_fpga_impl1_map.ncd" -pr "mySDR_fpga_impl1.prf" -mp "mySDR_fpga_impl1.mrp" -lpf "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/impl1/mySDR_fpga_impl1.lpf" -lpf "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.lpf"             
@@ -353,8 +354,8 @@ Design Summary:
       SLICEs as Logic/ROM:    156 out of 41820 (0%)
       SLICEs as RAM:            0 out of 31365 (0%)
       SLICEs as Carry:         70 out of 41820 (0%)
-   Number of LUT4s:        276 out of 83640 (0%)
-      Number used as logic LUTs:        136
+   Number of LUT4s:        278 out of 83640 (0%)
+      Number used as logic LUTs:        138
       Number used as distributed RAM:     0
       Number used as ripple logic:      140
       Number used as shift registers:     0
@@ -362,7 +363,7 @@ Design Summary:
       Number of PIO sites used for single ended IOs: 10
       Number of PIO sites used for differential IOs: 4 (represented by 2 PIO comps in NCD)
    Number of block RAMs:  0 out of 208 (0%)
-   Number of GSRs:  0 out of 1 (0%)
+   Number of GSRs:  1 out of 1 (100%)
    JTAG used :      No
    Readback used :  No
    Oscillator used :  No
@@ -398,39 +399,40 @@ Design Summary:
    Number of Used DSP PRADD Sites:  0 out of 312 (0 %)
    Number of clocks:  4
      Net serial_clk_c: 37 loads, 29 rising, 8 falling (Driver: my_instance_2/PLLInst_0 )
-     Net clockDivider_clk_4M: 46 loads, 31 rising, 15 falling (Driver: clockDivider_0/clkOut_23 )
      Net top_clk_c: 1 loads, 1 rising, 0 falling (Driver: PIO top_clk )
      Net pll_clko_1: 2 loads, 2 rising, 0 falling (Driver: my_instance_1/PLLInst_0 )
-   Number of Clock Enables:  3
+     Net clockDivider_clk_4M: 47 loads, 32 rising, 15 falling (Driver: clockDivider_0/clkOut_23 )
+   Number of Clock Enables:  4
      Net fskModule_1/clockDivider_clk_4M_enable_2: 1 loads, 1 LSLICEs
      Net clockDivider_clk_4M_enable_9: 4 loads, 4 LSLICEs
+     Net packetGen_1/next_state_3__N_154: 1 loads, 1 LSLICEs
      Net clockDivider_0/lockCounter_7: 1 loads, 1 LSLICEs
    Number of LSRs:  13
-     Net counter_0_countDone: 16 loads, 16 LSLICEs
-     Net fskModule_1/fskModule_start: 6 loads, 6 LSLICEs
+     Net fskModule_1/n3109: 1 loads, 1 LSLICEs
+     Net fskModule_1/n527: 5 loads, 5 LSLICEs
+     Net counter_0_countDone: 9 loads, 9 LSLICEs
      Net IQSerializer_start: 4 loads, 4 LSLICEs
-     Net fskModule_1/n514: 4 loads, 4 LSLICEs
-     Net fskModule_1/n576: 1 loads, 1 LSLICEs
-     Net fskModule_1/n2958: 1 loads, 1 LSLICEs
+     Net n3490: 12 loads, 12 LSLICEs
+     Net fskModule_1/n3087: 1 loads, 1 LSLICEs
      Net LED7_c: 7 loads, 7 LSLICEs
      Net top_rst_N_28: 1 loads, 0 LSLICEs
-     Net counter_0/n2159: 14 loads, 14 LSLICEs
      Net clockDivider_clkLock: 1 loads, 1 LSLICEs
-     Net IQSerializer_1/n2160: 2 loads, 2 LSLICEs
-     Net IQSerializer_1/n2161: 2 loads, 2 LSLICEs
-     Net clockDivider_0/n487: 5 loads, 5 LSLICEs
+     Net counter_0/n2190: 14 loads, 14 LSLICEs
+     Net IQSerializer_1/n2191: 2 loads, 2 LSLICEs
+     Net IQSerializer_1/n2192: 2 loads, 2 LSLICEs
+     Net clockDivider_0/n500: 5 loads, 5 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net counter_0_countDone: 27 loads
      Net symCounter_1: 22 loads
      Net symCounter_2: 22 loads
      Net symCounter_3: 22 loads
+     Net counter_0_countDone: 21 loads
      Net symCounter_6: 19 loads
-     Net counter_0/n2159: 14 loads
-     Net fskModule_1/n23: 12 loads
-     Net next_state_3__N_153: 11 loads
-     Net symCounter_0: 10 loads
-     Net symCounter_7: 10 loads
+     Net sampleCount_0: 16 loads
+     Net sampleCount_1: 16 loads
+     Net counter_0/n2190: 14 loads
+     Net fskModule_1/n3046: 13 loads
+     Net n3490: 12 loads
  
 
    Number of warnings:  0
@@ -455,7 +457,7 @@ Removing old design directory at request of -rem command line option to this pro
 Running par. Please wait . . .
 
 Lattice Place and Route Report for Design "mySDR_fpga_impl1_map.ncd"
-Sun Jan 04 13:02:32 2026
+Sun Jan 04 20:46:08 2026
 
 PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
 Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/promote.xml -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:parASE=1:par_low_skew_clock_net=0 mySDR_fpga_impl1_map.ncd mySDR_fpga_impl1.dir/5_1.ncd mySDR_fpga_impl1.prf
@@ -484,12 +486,13 @@ Device utilization summary:
 
    SLICE            156/41820        <1% used
 
+   GSR                1/1           100% used
    PLL                2/4            50% used
 
 
 1 potential circuit loop found in timing analysis.
-Number of Signals: 417
-Number of Connections: 920
+Number of Signals: 419
+Number of Connections: 948
 
 Pin Constraint Summary:
    12 out of 12 pins locked (100% locked).
@@ -497,22 +500,22 @@ Pin Constraint Summary:
 The following 3 signals are selected to use the primary clock routing resources:
     pll_clko_1 (driver: my_instance_1/PLLInst_0, clk/ce/sr load #: 2/0/0)
     serial_clk_c (driver: my_instance_2/PLLInst_0, clk/ce/sr load #: 37/0/0)
-    clockDivider_clk_4M (driver: clockDivider_0/SLICE_82, clk/ce/sr load #: 46/0/0)
+    clockDivider_clk_4M (driver: clockDivider_0/SLICE_82, clk/ce/sr load #: 47/0/0)
 
 
-No signal is selected as Global Set/Reset.
+Signal counter_0_countDone is selected as Global Set/Reset.
 Starting Placer Phase 0.
-................
+...............
 Finished Placer Phase 0.  REAL time: 2 secs 
 
 Starting Placer Phase 1.
-.....................
-Placer score = 56727.
+....................
+Placer score = 71829.
 Finished Placer Phase 1.  REAL time: 5 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  56073
+Placer score =  68951
 Finished Placer Phase 2.  REAL time: 5 secs 
 
 
@@ -528,9 +531,10 @@ Global Clock Resources:
 
 Quadrant TL Clocks:
   PRIMARY "pll_clko_1" from CLKOP on comp "my_instance_1/PLLInst_0" on PLL site "PLL_TL0", CLK/CE/SR load = 1
-  PRIMARY "serial_clk_c" from CLKOP on comp "my_instance_2/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 1
+  PRIMARY "serial_clk_c" from CLKOP on comp "my_instance_2/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 9
+  PRIMARY "clockDivider_clk_4M" from Q0 on comp "clockDivider_0/SLICE_82" on site "R59C67A", CLK/CE/SR load = 23
 
-  PRIMARY  : 2 out of 16 (12%)
+  PRIMARY  : 3 out of 16 (18%)
 
 Quadrant TR Clocks:
   PRIMARY "serial_clk_c" from CLKOP on comp "my_instance_2/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 15
@@ -539,13 +543,13 @@ Quadrant TR Clocks:
 
 Quadrant BL Clocks:
   PRIMARY "pll_clko_1" from CLKOP on comp "my_instance_1/PLLInst_0" on PLL site "PLL_TL0", CLK/CE/SR load = 1
-  PRIMARY "serial_clk_c" from CLKOP on comp "my_instance_2/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 21
-  PRIMARY "clockDivider_clk_4M" from Q0 on comp "clockDivider_0/SLICE_82" on site "R59C67A", CLK/CE/SR load = 46
+  PRIMARY "serial_clk_c" from CLKOP on comp "my_instance_2/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 8
+  PRIMARY "clockDivider_clk_4M" from Q0 on comp "clockDivider_0/SLICE_82" on site "R59C67A", CLK/CE/SR load = 24
 
   PRIMARY  : 3 out of 16 (18%)
 
 Quadrant BR Clocks:
-  PRIMARY "serial_clk_c" from CLKOP on comp "my_instance_2/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 1
+  PRIMARY "serial_clk_c" from CLKOP on comp "my_instance_2/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 5
 
   PRIMARY  : 1 out of 16 (6%)
 
@@ -582,12 +586,12 @@ Total placer CPU time: 4 secs
 Dumping design to file mySDR_fpga_impl1.dir/5_1.ncd.
 
 1 potential circuit loop found in timing analysis.
-0 connections routed; 920 unrouted.
+0 connections routed; 948 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 9 secs 
+Completed router resource preassignment. Real time: 10 secs 
 
-Start NBR router at 13:02:41 01/04/26
+Start NBR router at 20:46:18 01/04/26
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -603,40 +607,43 @@ Note: NBR uses a different method to calculate timing slacks. The
 *****************************************************************
 
 1 potential circuit loop found in timing analysis.
-Start NBR special constraint process at 13:02:41 01/04/26
+Start NBR special constraint process at 20:46:18 01/04/26
 
-Start NBR section for initial routing at 13:02:41 01/04/26
-Level 1, iteration 1
-0(0.00%) conflict; 630(68.48%) untouched conns; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 10.824ns/0.000ns; real time: 10 secs 
+Start NBR section for initial routing at 20:46:18 01/04/26
 Level 4, iteration 1
-12(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 11.502ns/0.000ns; real time: 10 secs 
+27(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 11.302ns/0.000ns; real time: 10 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 13:02:42 01/04/26
+Start NBR section for normal routing at 20:46:18 01/04/26
 Level 4, iteration 1
-6(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 10.985ns/0.000ns; real time: 10 secs 
+13(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 11.147ns/0.000ns; real time: 10 secs 
 Level 4, iteration 2
-5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 10.985ns/0.000ns; real time: 10 secs 
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 11.147ns/0.000ns; real time: 10 secs 
 Level 4, iteration 3
+3(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 11.147ns/0.000ns; real time: 10 secs 
+Level 4, iteration 4
+1(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 11.147ns/0.000ns; real time: 10 secs 
+Level 4, iteration 5
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 10.985ns/0.000ns; real time: 10 secs 
+Estimated worst slack/total negative slack<setup>: 11.147ns/0.000ns; real time: 10 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 13:02:42 01/04/26
+Start NBR section for setup/hold timing optimization with effort level 3 at 20:46:18 01/04/26
 1 potential circuit loop found in timing analysis.
 1 potential circuit loop found in timing analysis.
 
-Start NBR section for re-routing at 13:02:42 01/04/26
+Start NBR section for re-routing at 20:46:18 01/04/26
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 10.985ns/0.000ns; real time: 10 secs 
+Estimated worst slack/total negative slack<setup>: 11.147ns/0.000ns; real time: 10 secs 
 
-Start NBR section for post-routing at 13:02:42 01/04/26
+Start NBR section for post-routing at 20:46:18 01/04/26
 1 potential circuit loop found in timing analysis.
 
 End NBR router with 0 unrouted connection
@@ -645,7 +652,7 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 10.985ns
+  Estimated worst slack<setup> : 11.147ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
@@ -656,9 +663,9 @@ Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored
 1 potential circuit loop found in timing analysis.
 1 potential circuit loop found in timing analysis.
 Total CPU time 10 secs 
-Total REAL time: 10 secs 
+Total REAL time: 11 secs 
 Completely routed.
-End of route.  920 routed (100.00%); 0 unrouted.
+End of route.  948 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -669,13 +676,13 @@ Dumping design to file mySDR_fpga_impl1.dir/5_1.ncd.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 10.985
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 11.147
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
 PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.146
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 10 secs 
+Total CPU  time to completion: 11 secs 
 Total REAL time to completion: 11 secs 
 
 par done!
@@ -713,7 +720,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
-Sun Jan 04 13:02:44 2026
+Sun Jan 04 20:46:21 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -743,11 +750,11 @@ Timing summary (Setup):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 580 paths, 3 nets, and 343 connections (37.28% coverage)
+Constraints cover 580 paths, 3 nets, and 346 connections (36.50% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
-Sun Jan 04 13:02:44 2026
+Sun Jan 04 20:46:21 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -777,7 +784,7 @@ Timing summary (Hold):
 Timing errors: 0  Score: 0
 Cumulative negative slack: 0
 
-Constraints cover 580 paths, 3 nets, and 343 connections (37.28% coverage)
+Constraints cover 580 paths, 3 nets, and 346 connections (36.50% coverage)
 
 
 
@@ -792,7 +799,7 @@ Cumulative negative slack: 0 (0+0)
 --------------------------------------------------------------------------------
 
 Total CPU Time: 1 secs 
-Total REAL Time: 0 secs 
+Total REAL Time: 2 secs 
 Peak Memory Usage: 318 MB
 
 
@@ -940,6 +947,6 @@ Creating bit map...
 Bitstream Status: Final           Version 10.27.
  
 Saving bit stream in "mySDR_fpga_impl1.bit".
-Total CPU Time: 4 secs 
-Total REAL Time: 4 secs 
-Peak Memory Usage: 570 MB
+Total CPU Time: 5 secs 
+Total REAL Time: 5 secs 
+Peak Memory Usage: 571 MB

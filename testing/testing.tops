@@ -1,0 +1,6 @@
+FSKModulator_tb,/,C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v
+top_module,/,C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v
+local_oscillator,/,C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v
+pll_64m,/,C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v
+divided_pll,/,C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v
+divided_pll_2,/,C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v

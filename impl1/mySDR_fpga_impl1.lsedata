@@ -1,9 +1,9 @@
 <top name = "top_module"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
-    <clockitem name = "top_clk"  type = "port" />
     <clockitem name = "serial_clk"  type = "port" />
     <clockitem name = "clockDivider_clk_4M"  type = "net" />
+    <clockitem name = "top_clk"  type = "port" />
     <clockitem name = "pll_clko_1"  type = "net" />
 </clocks>
 
@@ -2291,7 +2291,6 @@
         <pitem  name = "data[8]"  direction = "in"  />
         <pitem  name = "data[7]"  direction = "in"  />
         <pitem  name = "data[6]"  direction = "in"  />
-        <pitem  name = "data[5]"  direction = "in"  />
         <pitem  name = "data[4]"  direction = "in"  />
         <pitem  name = "data[3]"  direction = "in"  />
         <pitem  name = "data[2]"  direction = "in"  />
@@ -2299,6 +2298,7 @@
         <pitem  name = "data[0]"  direction = "in"  />
         <pitem  name = "data[16]"  direction = "in"  />
         <pitem  name = "data[9]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
         <pitem  name = "data[15]"  direction = "in"  />
         <pitem  name = "data[14]"  direction = "in"  />
         <pitem  name = "data[13]"  direction = "in"  />
@@ -2745,7 +2745,7 @@
 
         <nets>
         <nitem  name = "fskModule_start"  />
-        <nitem  name = "fskModule_1/enable_N_224"  />
+        <nitem  name = "fskModule_1/enable_N_226"  />
         </nets>
     </instance>
 
@@ -2794,7 +2794,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_1/sine[12]"  />
         <nitem  name = "fskModule_1/sine[11]"  />
         <nitem  name = "fskModule_1/sine[10]"  />
@@ -2808,7 +2808,7 @@
         <nitem  name = "fskModule_1/sine[2]"  />
         <nitem  name = "fskModule_1/sine[1]"  />
         <nitem  name = "fskModule_1/sine[0]"  />
-        <nitem  name = "fskModule_1/enable_N_224"  />
+        <nitem  name = "fskModule_1/enable_N_226"  />
         <nitem  name = "fskModule_1/FSK_I_12__N_177[12]"  />
         <nitem  name = "fskModule_1/FSK_I_12__N_177[11]"  />
         <nitem  name = "fskModule_1/FSK_I_12__N_177[10]"  />
@@ -2870,7 +2870,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_1/cosine[12]"  />
         <nitem  name = "fskModule_1/cosine[11]"  />
         <nitem  name = "fskModule_1/cosine[10]"  />
@@ -2884,7 +2884,7 @@
         <nitem  name = "fskModule_1/cosine[2]"  />
         <nitem  name = "fskModule_1/cosine[1]"  />
         <nitem  name = "fskModule_1/cosine[0]"  />
-        <nitem  name = "fskModule_1/enable_N_224"  />
+        <nitem  name = "fskModule_1/enable_N_226"  />
         <nitem  name = "fskModule_1/FSK_Q_12__N_192[12]"  />
         <nitem  name = "fskModule_1/FSK_Q_12__N_192[11]"  />
         <nitem  name = "fskModule_1/FSK_Q_12__N_192[10]"  />
@@ -2959,7 +2959,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_Q[12]"  />
         <nitem  name = "fskModule_Q[11]"  />
         <nitem  name = "fskModule_Q[10]"  />
@@ -3008,7 +3008,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "clockDivider_clk_4M"  />
         <nitem  name = "fskModule_1/sin_phase[2]"  />
         <nitem  name = "fskModule_1/sin_phase[1]"  />
@@ -3046,7 +3046,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_1/pwr"  />
         <nitem  name = "fskModule_1/n62"  />
         <nitem  name = "fskModule_1/n64"  />
@@ -3070,7 +3070,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_1/pwr"  />
         <nitem  name = "fskModule_1/cos_phase[2]"  />
         <nitem  name = "fskModule_1/cos_phase[1]"  />
@@ -3111,7 +3111,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_1/sampleCount[11]"  />
         <nitem  name = "fskModule_1/sampleCount[10]"  />
         <nitem  name = "fskModule_1/sampleCount[9]"  />
@@ -3169,7 +3169,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_1/pwr"  />
         <nitem  name = "fskModule_1/sin_phase[2]"  />
         <nitem  name = "fskModule_1/sin_phase[1]"  />
@@ -3223,7 +3223,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_1/pwr"  />
         <nitem  name = "fskModule_1/sin_phase[2]"  />
         <nitem  name = "fskModule_1/sin_phase[1]"  />
@@ -3277,7 +3277,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_1/firstFlag"  />
         <nitem  name = "fskModule_1/n69"  />
         <nitem  name = "fskModule_1/n70"  />
@@ -3310,9 +3310,9 @@
         <nitem  name = "fskModule_1/n95"  />
         <nitem  name = "fskModule_1/n96"  />
         <nitem  name = "fskModule_1/n97"  />
-        <nitem  name = "fskModule_1/sin_phase_2__N_225[2]"  />
-        <nitem  name = "fskModule_1/sin_phase_2__N_225[1]"  />
-        <nitem  name = "fskModule_1/sin_phase_2__N_225[0]"  />
+        <nitem  name = "fskModule_1/sin_phase_2__N_227[2]"  />
+        <nitem  name = "fskModule_1/sin_phase_2__N_227[1]"  />
+        <nitem  name = "fskModule_1/sin_phase_2__N_227[0]"  />
         </nets>
     </instance>
 
@@ -3346,7 +3346,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_1/pwr"  />
         <nitem  name = "fskModule_1/sampleCount[11]"  />
         <nitem  name = "fskModule_1/sampleCount[10]"  />
@@ -3385,24 +3385,24 @@
         <pitem  name = "d1[2]"  direction = "in"  />
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
-        <pitem  name = "cond"  direction = "in"  />
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
         <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
         <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "cond"  direction = "in"  />
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
-        <nitem  name = "fskModule_1/rst_N_229"  />
-        <nitem  name = "fskModule_1/sin_phase_2__N_225[2]"  />
-        <nitem  name = "fskModule_1/sin_phase_2__N_225[1]"  />
-        <nitem  name = "fskModule_1/sin_phase_2__N_225[0]"  />
+        <nitem  name = "fskModule_1/n284"  />
+        <nitem  name = "fskModule_1/sin_phase_2__N_227[2]"  />
+        <nitem  name = "fskModule_1/sin_phase_2__N_227[1]"  />
+        <nitem  name = "fskModule_1/sin_phase_2__N_227[0]"  />
         <nitem  name = "fskModule_1/sin_phase_2__N_208[2]"  />
         <nitem  name = "fskModule_1/sin_phase_2__N_208[1]"  />
         <nitem  name = "fskModule_1/sin_phase_2__N_208[0]"  />
+        <nitem  name = "fskModule_1/rst_n_N_224"  />
         </nets>
     </instance>
 
@@ -3411,40 +3411,40 @@
         <pitem  name = "d1[2]"  direction = "in"  />
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
-        <pitem  name = "cond"  direction = "in"  />
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
         <pitem  name = "o[2]"  direction = "out"  />
         <pitem  name = "o[1]"  direction = "out"  />
         <pitem  name = "o[0]"  direction = "out"  />
+        <pitem  name = "cond"  direction = "in"  />
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
-        <nitem  name = "fskModule_1/rst_N_229"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_1/cos_phase_2__N_230[2]"  />
         <nitem  name = "fskModule_1/cos_phase_2__N_230[1]"  />
         <nitem  name = "fskModule_1/cos_phase_2__N_230[0]"  />
         <nitem  name = "fskModule_1/cos_phase_2__N_205[2]"  />
         <nitem  name = "fskModule_1/cos_phase_2__N_205[1]"  />
         <nitem  name = "fskModule_1/cos_phase_2__N_205[0]"  />
+        <nitem  name = "fskModule_1/rst_n_N_224"  />
         </nets>
     </instance>
 
-    <instance  name = "fskModule_1/lastSym_I_0_59"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "fskModule_1/lastSym_I_0_62"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "c"  direction = "in"  />
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "c"  direction = "in"  />
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
-        <nitem  name = "fskModule_1/rst_N_229"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_1/lastSym_N_260"  />
         <nitem  name = "fskModule_1/lastSym_N_259"  />
+        <nitem  name = "fskModule_1/rst_n_N_224"  />
         </nets>
     </instance>
 
@@ -3466,7 +3466,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "clockDivider_clk_4M"  />
         <nitem  name = "fskModule_1/cos_phase[2]"  />
         <nitem  name = "fskModule_1/cos_phase[1]"  />
@@ -3477,7 +3477,7 @@
         </nets>
     </instance>
 
-    <instance  name = "fskModule_1/lastSym_53"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "fskModule_1/lastSym_55"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "r"  direction = "in"  />
         <pitem  name = "s"  direction = "in"  />
@@ -3487,14 +3487,14 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "clockDivider_clk_4M"  />
         <nitem  name = "fskModule_1/lastSym"  />
         <nitem  name = "fskModule_1/lastSym_N_259"  />
         </nets>
     </instance>
 
-    <instance  name = "fskModule_1/firstFlag_54"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "fskModule_1/firstFlag_56"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "r"  direction = "in"  />
         <pitem  name = "s"  direction = "in"  />
@@ -3504,14 +3504,14 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "clockDivider_clk_4M"  />
         <nitem  name = "fskModule_1/firstFlag"  />
-        <nitem  name = "fskModule_1/rst_N_229"  />
+        <nitem  name = "fskModule_1/rst_n_N_224"  />
         </nets>
     </instance>
 
-    <instance  name = "fskModule_1/start_55"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "fskModule_1/start_57"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "r"  direction = "in"  />
         <pitem  name = "s"  direction = "in"  />
@@ -3521,97 +3521,14 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "clockDivider_clk_4M"  />
         <nitem  name = "counter_0_countDone"  />
         <nitem  name = "IQSerializer_start"  />
         </nets>
     </instance>
 
-    <instance  name = "fskModule_1/sampleCount"  library = "work"  arch = ""  type = "reg">
-        <pins>
-        <pitem  name = "set[8]"  direction = "in"  />
-        <pitem  name = "set[9]"  direction = "in"  />
-        <pitem  name = "set[10]"  direction = "in"  />
-        <pitem  name = "set[11]"  direction = "in"  />
-        <pitem  name = "set[7]"  direction = "in"  />
-        <pitem  name = "set[6]"  direction = "in"  />
-        <pitem  name = "set[5]"  direction = "in"  />
-        <pitem  name = "set[4]"  direction = "in"  />
-        <pitem  name = "set[3]"  direction = "in"  />
-        <pitem  name = "set[2]"  direction = "in"  />
-        <pitem  name = "set[1]"  direction = "in"  />
-        <pitem  name = "set[0]"  direction = "in"  />
-        <pitem  name = "reset[11]"  direction = "in"  />
-        <pitem  name = "reset[10]"  direction = "in"  />
-        <pitem  name = "reset[9]"  direction = "in"  />
-        <pitem  name = "reset[8]"  direction = "in"  />
-        <pitem  name = "reset[7]"  direction = "in"  />
-        <pitem  name = "reset[6]"  direction = "in"  />
-        <pitem  name = "reset[5]"  direction = "in"  />
-        <pitem  name = "reset[4]"  direction = "in"  />
-        <pitem  name = "reset[3]"  direction = "in"  />
-        <pitem  name = "reset[2]"  direction = "in"  />
-        <pitem  name = "reset[1]"  direction = "in"  />
-        <pitem  name = "reset[0]"  direction = "in"  />
-        <pitem  name = "q[11]"  direction = "out"  />
-        <pitem  name = "q[10]"  direction = "out"  />
-        <pitem  name = "q[9]"  direction = "out"  />
-        <pitem  name = "q[8]"  direction = "out"  />
-        <pitem  name = "q[7]"  direction = "out"  />
-        <pitem  name = "q[6]"  direction = "out"  />
-        <pitem  name = "q[5]"  direction = "out"  />
-        <pitem  name = "q[4]"  direction = "out"  />
-        <pitem  name = "q[3]"  direction = "out"  />
-        <pitem  name = "q[2]"  direction = "out"  />
-        <pitem  name = "q[1]"  direction = "out"  />
-        <pitem  name = "q[0]"  direction = "out"  />
-        <pitem  name = "clock"  direction = "in"  />
-        <pitem  name = "d[11]"  direction = "in"  />
-        <pitem  name = "d[10]"  direction = "in"  />
-        <pitem  name = "d[9]"  direction = "in"  />
-        <pitem  name = "d[8]"  direction = "in"  />
-        <pitem  name = "d[7]"  direction = "in"  />
-        <pitem  name = "d[6]"  direction = "in"  />
-        <pitem  name = "d[5]"  direction = "in"  />
-        <pitem  name = "d[4]"  direction = "in"  />
-        <pitem  name = "d[3]"  direction = "in"  />
-        <pitem  name = "d[2]"  direction = "in"  />
-        <pitem  name = "d[1]"  direction = "in"  />
-        <pitem  name = "d[0]"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "fskModule_1/gnd"  />
-        <nitem  name = "fskModule_1/sampleCount[11]"  />
-        <nitem  name = "fskModule_1/sampleCount[10]"  />
-        <nitem  name = "fskModule_1/sampleCount[9]"  />
-        <nitem  name = "fskModule_1/sampleCount[8]"  />
-        <nitem  name = "fskModule_1/sampleCount[7]"  />
-        <nitem  name = "fskModule_1/sampleCount[6]"  />
-        <nitem  name = "fskModule_1/sampleCount[5]"  />
-        <nitem  name = "fskModule_1/sampleCount[4]"  />
-        <nitem  name = "fskModule_1/sampleCount[3]"  />
-        <nitem  name = "fskModule_1/sampleCount[2]"  />
-        <nitem  name = "fskModule_1/sampleCount[1]"  />
-        <nitem  name = "fskModule_1/sampleCount[0]"  />
-        <nitem  name = "fskModule_1/clk_N_191"  />
-        <nitem  name = "fskModule_1/sampleCount_11__N_211[11]"  />
-        <nitem  name = "fskModule_1/sampleCount_11__N_211[10]"  />
-        <nitem  name = "fskModule_1/sampleCount_11__N_211[9]"  />
-        <nitem  name = "fskModule_1/sampleCount_11__N_211[8]"  />
-        <nitem  name = "fskModule_1/sampleCount_11__N_211[7]"  />
-        <nitem  name = "fskModule_1/sampleCount_11__N_211[6]"  />
-        <nitem  name = "fskModule_1/sampleCount_11__N_211[5]"  />
-        <nitem  name = "fskModule_1/sampleCount_11__N_211[4]"  />
-        <nitem  name = "fskModule_1/sampleCount_11__N_211[3]"  />
-        <nitem  name = "fskModule_1/sampleCount_11__N_211[2]"  />
-        <nitem  name = "fskModule_1/sampleCount_11__N_211[1]"  />
-        <nitem  name = "fskModule_1/sampleCount_11__N_211[0]"  />
-        </nets>
-    </instance>
-
-    <instance  name = "fskModule_1/rst_I_0"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "fskModule_1/rst_n_I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "i"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
@@ -3619,11 +3536,11 @@
 
         <nets>
         <nitem  name = "counter_0_countDone"  />
-        <nitem  name = "fskModule_1/rst_N_229"  />
+        <nitem  name = "fskModule_1/rst_n_N_224"  />
         </nets>
     </instance>
 
-    <instance  name = "fskModule_1/equal_39"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "fskModule_1/equal_41"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "b[11]"  direction = "in"  />
         <pitem  name = "b[10]"  direction = "in"  />
@@ -3653,11 +3570,9 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_1/pwr"  />
-        <nitem  name = "fskModule_1/n146"  />
-        <nitem  name = "fskModule_1/n149"  />
-        <nitem  name = "fskModule_1/n150"  />
+        <nitem  name = "fskModule_1/n148"  />
         <nitem  name = "fskModule_1/n151"  />
         <nitem  name = "fskModule_1/n152"  />
         <nitem  name = "fskModule_1/n153"  />
@@ -3668,10 +3583,12 @@
         <nitem  name = "fskModule_1/n158"  />
         <nitem  name = "fskModule_1/n159"  />
         <nitem  name = "fskModule_1/n160"  />
+        <nitem  name = "fskModule_1/n161"  />
+        <nitem  name = "fskModule_1/n162"  />
         </nets>
     </instance>
 
-    <instance  name = "fskModule_1/add_40"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "fskModule_1/add_42"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "b[11]"  direction = "in"  />
@@ -3713,7 +3630,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_1/pwr"  />
         <nitem  name = "fskModule_1/sampleCount[11]"  />
         <nitem  name = "fskModule_1/sampleCount[10]"  />
@@ -3727,8 +3644,6 @@
         <nitem  name = "fskModule_1/sampleCount[2]"  />
         <nitem  name = "fskModule_1/sampleCount[1]"  />
         <nitem  name = "fskModule_1/sampleCount[0]"  />
-        <nitem  name = "fskModule_1/n149"  />
-        <nitem  name = "fskModule_1/n150"  />
         <nitem  name = "fskModule_1/n151"  />
         <nitem  name = "fskModule_1/n152"  />
         <nitem  name = "fskModule_1/n153"  />
@@ -3739,10 +3654,12 @@
         <nitem  name = "fskModule_1/n158"  />
         <nitem  name = "fskModule_1/n159"  />
         <nitem  name = "fskModule_1/n160"  />
+        <nitem  name = "fskModule_1/n161"  />
+        <nitem  name = "fskModule_1/n162"  />
         </nets>
     </instance>
 
-    <instance  name = "fskModule_1/mux_41"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "fskModule_1/mux_43"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[11]"  direction = "in"  />
         <pitem  name = "d1[10]"  direction = "in"  />
@@ -3784,10 +3701,8 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
-        <nitem  name = "fskModule_1/n146"  />
-        <nitem  name = "fskModule_1/n149"  />
-        <nitem  name = "fskModule_1/n150"  />
+        <nitem  name = "fskModule_1/n284"  />
+        <nitem  name = "fskModule_1/n148"  />
         <nitem  name = "fskModule_1/n151"  />
         <nitem  name = "fskModule_1/n152"  />
         <nitem  name = "fskModule_1/n153"  />
@@ -3798,6 +3713,8 @@
         <nitem  name = "fskModule_1/n158"  />
         <nitem  name = "fskModule_1/n159"  />
         <nitem  name = "fskModule_1/n160"  />
+        <nitem  name = "fskModule_1/n161"  />
+        <nitem  name = "fskModule_1/n162"  />
         <nitem  name = "fskModule_1/sampleCount_11__N_233[11]"  />
         <nitem  name = "fskModule_1/sampleCount_11__N_233[10]"  />
         <nitem  name = "fskModule_1/sampleCount_11__N_233[9]"  />
@@ -3813,7 +3730,7 @@
         </nets>
     </instance>
 
-    <instance  name = "fskModule_1/add_42"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "fskModule_1/add_44"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cin"  direction = "in"  />
         <pitem  name = "b[11]"  direction = "in"  />
@@ -3855,7 +3772,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_1/pwr"  />
         <nitem  name = "fskModule_1/sampleCount[11]"  />
         <nitem  name = "fskModule_1/sampleCount[10]"  />
@@ -3914,7 +3831,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_1/pwr"  />
         <nitem  name = "fskModule_1/symDone_N_247[11]"  />
         <nitem  name = "fskModule_1/symDone_N_247[10]"  />
@@ -3932,7 +3849,7 @@
         </nets>
     </instance>
 
-    <instance  name = "fskModule_1/sampleCount_11__I_0_60"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "fskModule_1/sampleCount_11__I_0_63"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "d1[11]"  direction = "in"  />
         <pitem  name = "d1[10]"  direction = "in"  />
@@ -3975,7 +3892,7 @@
 
         <nets>
         <nitem  name = "fskModule_1/pwr"  />
-        <nitem  name = "fskModule_1/rst_N_229"  />
+        <nitem  name = "fskModule_1/enable_N_226"  />
         <nitem  name = "fskModule_1/sampleCount_11__N_233[11]"  />
         <nitem  name = "fskModule_1/sampleCount_11__N_233[10]"  />
         <nitem  name = "fskModule_1/sampleCount_11__N_233[9]"  />
@@ -4003,6 +3920,24 @@
         </nets>
     </instance>
 
+    <instance  name = "fskModule_1/symDone_60"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "fskModule_1/n284"  />
+        <nitem  name = "fskModule_symDone"  />
+        <nitem  name = "fskModule_1/clk_N_191"  />
+        <nitem  name = "fskModule_1/rst_n_N_224"  />
+        <nitem  name = "fskModule_1/symDone_N_245"  />
+        </nets>
+    </instance>
+
     <instance  name = "fskModule_1/symDone_I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
@@ -4012,42 +3947,25 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
-        <nitem  name = "fskModule_1/rst_N_229"  />
+        <nitem  name = "fskModule_1/n284"  />
+        <nitem  name = "fskModule_1/enable_N_226"  />
         <nitem  name = "fskModule_1/symDone_N_246"  />
-        <nitem  name = "fskModule_1/symDone_N_245"  />
-        </nets>
-    </instance>
-
-    <instance  name = "fskModule_1/symDone_57"  library = "work"  arch = ""  type = "reg">
-        <pins>
-        <pitem  name = "r"  direction = "in"  />
-        <pitem  name = "s"  direction = "in"  />
-        <pitem  name = "q"  direction = "out"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "d"  direction = "in"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "fskModule_1/gnd"  />
-        <nitem  name = "fskModule_symDone"  />
-        <nitem  name = "fskModule_1/clk_N_191"  />
         <nitem  name = "fskModule_1/symDone_N_245"  />
         </nets>
     </instance>
 
     <instance  name = "fskModule_1/FSK_I"  library = "work"  arch = ""  type = "reg">
         <pins>
-        <pitem  name = "set[12]"  direction = "in"  />
-        <pitem  name = "set[11]"  direction = "in"  />
-        <pitem  name = "set[10]"  direction = "in"  />
-        <pitem  name = "set[9]"  direction = "in"  />
-        <pitem  name = "set[8]"  direction = "in"  />
-        <pitem  name = "set[7]"  direction = "in"  />
-        <pitem  name = "set[6]"  direction = "in"  />
-        <pitem  name = "set[5]"  direction = "in"  />
-        <pitem  name = "set[4]"  direction = "in"  />
         <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "set[8]"  direction = "in"  />
+        <pitem  name = "set[9]"  direction = "in"  />
+        <pitem  name = "set[10]"  direction = "in"  />
+        <pitem  name = "set[11]"  direction = "in"  />
+        <pitem  name = "set[12]"  direction = "in"  />
         <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
@@ -4094,7 +4012,7 @@
         </pins>
 
         <nets>
-        <nitem  name = "fskModule_1/gnd"  />
+        <nitem  name = "fskModule_1/n284"  />
         <nitem  name = "fskModule_I[12]"  />
         <nitem  name = "fskModule_I[11]"  />
         <nitem  name = "fskModule_I[10]"  />
@@ -4122,6 +4040,90 @@
         <nitem  name = "fskModule_1/FSK_I_12__N_177[2]"  />
         <nitem  name = "fskModule_1/FSK_I_12__N_177[1]"  />
         <nitem  name = "fskModule_1/FSK_I_12__N_177[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "fskModule_1/sampleCount"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "reset[8]"  direction = "in"  />
+        <pitem  name = "reset[9]"  direction = "in"  />
+        <pitem  name = "reset[10]"  direction = "in"  />
+        <pitem  name = "reset[11]"  direction = "in"  />
+        <pitem  name = "q[11]"  direction = "out"  />
+        <pitem  name = "q[10]"  direction = "out"  />
+        <pitem  name = "q[9]"  direction = "out"  />
+        <pitem  name = "q[8]"  direction = "out"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "set[11]"  direction = "in"  />
+        <pitem  name = "set[10]"  direction = "in"  />
+        <pitem  name = "set[9]"  direction = "in"  />
+        <pitem  name = "set[8]"  direction = "in"  />
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "d[11]"  direction = "in"  />
+        <pitem  name = "d[10]"  direction = "in"  />
+        <pitem  name = "d[9]"  direction = "in"  />
+        <pitem  name = "d[8]"  direction = "in"  />
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "fskModule_1/n284"  />
+        <nitem  name = "fskModule_1/sampleCount[11]"  />
+        <nitem  name = "fskModule_1/sampleCount[10]"  />
+        <nitem  name = "fskModule_1/sampleCount[9]"  />
+        <nitem  name = "fskModule_1/sampleCount[8]"  />
+        <nitem  name = "fskModule_1/sampleCount[7]"  />
+        <nitem  name = "fskModule_1/sampleCount[6]"  />
+        <nitem  name = "fskModule_1/sampleCount[5]"  />
+        <nitem  name = "fskModule_1/sampleCount[4]"  />
+        <nitem  name = "fskModule_1/sampleCount[3]"  />
+        <nitem  name = "fskModule_1/sampleCount[2]"  />
+        <nitem  name = "fskModule_1/sampleCount[1]"  />
+        <nitem  name = "fskModule_1/sampleCount[0]"  />
+        <nitem  name = "fskModule_1/clk_N_191"  />
+        <nitem  name = "fskModule_1/rst_n_N_224"  />
+        <nitem  name = "fskModule_1/sampleCount_11__N_211[11]"  />
+        <nitem  name = "fskModule_1/sampleCount_11__N_211[10]"  />
+        <nitem  name = "fskModule_1/sampleCount_11__N_211[9]"  />
+        <nitem  name = "fskModule_1/sampleCount_11__N_211[8]"  />
+        <nitem  name = "fskModule_1/sampleCount_11__N_211[7]"  />
+        <nitem  name = "fskModule_1/sampleCount_11__N_211[6]"  />
+        <nitem  name = "fskModule_1/sampleCount_11__N_211[5]"  />
+        <nitem  name = "fskModule_1/sampleCount_11__N_211[4]"  />
+        <nitem  name = "fskModule_1/sampleCount_11__N_211[3]"  />
+        <nitem  name = "fskModule_1/sampleCount_11__N_211[2]"  />
+        <nitem  name = "fskModule_1/sampleCount_11__N_211[1]"  />
+        <nitem  name = "fskModule_1/sampleCount_11__N_211[0]"  />
         </nets>
     </instance>
 
@@ -7869,12 +7871,12 @@
         <reg  name = "fskModule_1/FSK_Q"  />
         <reg  name = "fskModule_1/sin_phase"  />
         <reg  name = "fskModule_1/cos_phase"  />
-        <reg  name = "fskModule_1/lastSym_53"  />
-        <reg  name = "fskModule_1/firstFlag_54"  />
-        <reg  name = "fskModule_1/start_55"  />
-        <reg  name = "fskModule_1/sampleCount"  />
-        <reg  name = "fskModule_1/symDone_57"  />
+        <reg  name = "fskModule_1/lastSym_55"  />
+        <reg  name = "fskModule_1/firstFlag_56"  />
+        <reg  name = "fskModule_1/start_57"  />
+        <reg  name = "fskModule_1/symDone_60"  />
         <reg  name = "fskModule_1/FSK_I"  />
+        <reg  name = "fskModule_1/sampleCount"  />
         <reg  name = "IQSerializer_1/QCounter"  />
         <reg  name = "IQSerializer_1/ZCounter"  />
         <reg  name = "IQSerializer_1/current_state"  />

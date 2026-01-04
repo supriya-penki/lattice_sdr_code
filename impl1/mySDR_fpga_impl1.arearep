@@ -6,14 +6,14 @@ I/O cells:      12
                                cell     count   Res Usage(%)
                               CCU2C        70          100.0
                             EHXPLLL         2          100.0
-                            FD1P3IX        10          100.0
-                            FD1S3AX        31          100.0
-                            FD1S3IX        82          100.0
-                            FD1S3JX        14          100.0
+                            FD1P3IX        11          100.0
+                            FD1S3AX        32          100.0
+                            FD1S3IX        81          100.0
+                            FD1S3JX        13          100.0
                                 GSR         1          100.0
                                  IB         2          100.0
                                 INV         2          100.0
-                               LUT4       120          100.0
+                               LUT4       121          100.0
                                  OB        10          100.0
                               PFUMX         5          100.0
                           ROM256X1A         1          100.0
@@ -28,36 +28,7 @@ SUB MODULES
                          pll_24_64m         1
                             pll_24m         1
                           sinModule         1
-                              TOTAL       360
-----------------------------------------------------------------------
-Report for cell FSKModulator.v1
-Instance Path : fskModule_1
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1P3IX         1           10.0
-                            FD1S3AX         3            9.7
-                            FD1S3IX        22           26.8
-                            FD1S3JX        13           92.9
-                               LUT4        55           45.8
-                              PFUMX         1           20.0
-SUB MODULES
-                          cosModule         1
-                          sinModule         1
-                              TOTAL        97
-----------------------------------------------------------------------
-Report for cell sinModule.v1
-Instance Path : fskModule_1.sin_instance
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         7            5.8
-                              TOTAL         7
-----------------------------------------------------------------------
-Report for cell cosModule.v1
-Instance Path : fskModule_1.cos_instance
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4        12           10.0
-                              TOTAL        12
+                              TOTAL       361
 ----------------------------------------------------------------------
 Report for cell pll_24m.v1
 Instance Path : my_instance_1
@@ -66,55 +37,53 @@ Instance Path : my_instance_1
                             EHXPLLL         1           50.0
                               TOTAL         1
 ----------------------------------------------------------------------
-Report for cell packetCounter.v1
-Instance Path : counter_0
+Report for cell FSKModulator.v1
+Instance Path : fskModule_1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                              CCU2C        14           20.0
-                            FD1S3IX        27           32.9
-                               LUT4         2            1.7
-                              TOTAL        43
+                            FD1P3IX         1            9.1
+                            FD1S3AX         3            9.4
+                            FD1S3IX        22           27.2
+                            FD1S3JX        13          100.0
+                               LUT4        54           44.6
+                              PFUMX         1           20.0
+SUB MODULES
+                          cosModule         1
+                          sinModule         1
+                              TOTAL        96
+----------------------------------------------------------------------
+Report for cell sinModule.v1
+Instance Path : fskModule_1.sin_instance
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         6            5.0
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell cosModule.v1
+Instance Path : fskModule_1.cos_instance
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        13           10.7
+                              TOTAL        13
 ----------------------------------------------------------------------
 Report for cell packetGenerator.v1
 Instance Path : packetGen_1
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1P3IX         8           80.0
-                            FD1S3IX         4            4.9
-                            FD1S3JX         1            7.1
-                               LUT4        23           19.2
-                              TOTAL        36
+                            FD1P3IX         9           81.8
+                            FD1S3AX         1            3.1
+                            FD1S3IX         3            3.7
+                               LUT4        25           20.7
+                              TOTAL        38
 ----------------------------------------------------------------------
-Report for cell IQSerializer.v1
-Instance Path : IQSerializer_1
+Report for cell packetCounter.v1
+Instance Path : counter_0
                                   Cell usage:
                                cell     count   Res Usage(%)
-                            FD1S3AX         1            3.2
-                            FD1S3IX        12           14.6
-                               LUT4        30           25.0
-                              PFUMX         4           80.0
-SUB MODULES
-                              DEDFF         1
-                              TOTAL        48
-----------------------------------------------------------------------
-Report for cell DEDFF.v1
-Instance Path : IQSerializer_1.DEDFF_0
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1S3IX         2            2.4
-                               LUT4         3            2.5
-                              TOTAL         5
-----------------------------------------------------------------------
-Report for cell clockDivider.v1
-Instance Path : clockDivider_0
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                              CCU2C        10           14.3
-                            FD1P3IX         1           10.0
-                            FD1S3IX        17           20.7
-                                INV         1           50.0
-                               LUT4         8            6.7
-                              TOTAL        37
+                              CCU2C        14           20.0
+                            FD1S3IX        27           33.3
+                               LUT4         2            1.7
+                              TOTAL        43
 ----------------------------------------------------------------------
 Report for cell pll_24_64m.v1
 Instance Path : my_instance_2
@@ -123,3 +92,34 @@ Instance Path : my_instance_2
                             EHXPLLL         1           50.0
                                 INV         1           50.0
                               TOTAL         2
+----------------------------------------------------------------------
+Report for cell IQSerializer.v1
+Instance Path : IQSerializer_1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         1            3.1
+                            FD1S3IX        12           14.8
+                               LUT4        28           23.1
+                              PFUMX         4           80.0
+SUB MODULES
+                              DEDFF         1
+                              TOTAL        46
+----------------------------------------------------------------------
+Report for cell DEDFF.v1
+Instance Path : IQSerializer_1.DEDFF_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3IX         2            2.5
+                               LUT4         3            2.5
+                              TOTAL         5
+----------------------------------------------------------------------
+Report for cell clockDivider.v1
+Instance Path : clockDivider_0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2C        10           14.3
+                            FD1P3IX         1            9.1
+                            FD1S3IX        17           21.0
+                                INV         1           50.0
+                               LUT4         8            6.6
+                              TOTAL        37
