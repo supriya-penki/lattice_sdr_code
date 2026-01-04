@@ -7,7 +7,7 @@
 </STYLE>
 </HEAD>
 <PRE><A name="Top"></A><B><U><big>I/O Timing Report</big></U></B>
-4 potential circuit loops found in timing analysis.
+1 potential circuit loop found in timing analysis.
 Loading design for application iotiming from file mysdr_fpga_impl1.ncd.
 Design name: top_module
 NCD version: 3.3
@@ -30,7 +30,7 @@ Performance Hardware Data Status:   Final          Version 55.1.
 // Package: CABGA381
 // ncd File: mysdr_fpga_impl1.ncd
 // Version: Diamond (64-bit) 3.14.0.75.2
-// Written on Tue Dec 30 04:03:48 2025
+// Written on Sun Jan 04 13:02:47 2026
 // M: Minimum Performance Grade
 // iotiming mySDR_fpga_impl1.ncd mySDR_fpga_impl1.prf -gui -msgset C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/promote.xml
 
@@ -40,24 +40,17 @@ Worst Case Results across Performance Grades (M, 9, 8):
 
 // Input Setup and Hold Times
 
-Port      Clock   Edge  Setup Performance_Grade  Hold Performance_Grade
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
 ----------------------------------------------------------------------
-top_rst_n top_clk R     3.084      8      -1.173     M
+(no input setup/hold data)
 
 
 // Clock to Output Delay
 
 Port      Clock   Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
 ------------------------------------------------------------------------
-LED7      top_clk R     4.909         8        2.216          M
-serial_iq top_clk R     9.319         8        3.828          M
-
-
-// Internal_Clock to Input
-
-Port      Internal_Clock
---------------------------------------------------------
-top_rst_n clkDivider_clk
+LED       top_clk R     3.956         8        2.024          M
+serial_iq top_clk F     6.417         8        2.701          M
 
 
 

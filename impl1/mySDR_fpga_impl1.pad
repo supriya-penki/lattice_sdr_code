@@ -6,7 +6,7 @@ Performance Grade:      8
 PACKAGE:          CABGA381
 Package Status:                     Final          Version 1.43
 
-Tue Dec 30 04:03:37 2025
+Sun Jan 04 13:02:37 2026
 
 Pinout by Port Name:
 +------------+----------+--------------+--------+-----------+-----------------------------------+
@@ -22,14 +22,15 @@ Pinout by Port Name:
 | LED7       | B17/1    | LVCMOS25_OUT | PT114A |           | DRIVE:8mA CLAMP:ON SLEW:SLOW      |
 | serial_clk | C4/7     | LVDS_OUT     | PL14A  |           | DIFFDRIVE:3.5 CLAMP:ON            |
 | serial_iq  | F4/7     | LVDS_OUT     | PL20A  |           | DIFFDRIVE:3.5 CLAMP:ON            |
-| top_clk    | G3/7     | LVDS_IN      | PL44A  |           | CLAMP:ON DIFFRESISTOR:100         |
-| top_rst_n  | H2/6     | LVCMOS33_IN  | PL47C  |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
+| top_clk    | A10/0    | LVCMOS25_IN  | PT63A  |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
+| top_rst    | H2/6     | LVCMOS33_IN  | PL47C  |           | PULL:DOWN CLAMP:ON HYSTERESIS:ON  |
 +------------+----------+--------------+--------+-----------+-----------------------------------+
 
 Vccio by Bank:
 +------+-------+
 | Bank | Vccio |
 +------+-------+
+| 0    | 2.5V  |
 | 1    | 2.5V  |
 | 6    | 3.3V  |
 | 7    | 2.5V  |
@@ -53,7 +54,7 @@ Pinout by Pin Number:
 | A7/0     |     unused, PULL:DOWN |            |              | PT18A        |                          |           |
 | A8/0     |     unused, PULL:DOWN |            |              | PT18B        |                          |           |
 | A9/0     |     unused, PULL:DOWN |            |              | PT60A        | GR_PCLK0_1               |           |
-| A10/0    |     unused, PULL:DOWN |            |              | PT63A        | PCLKT0_1                 |           |
+| A10/0    | top_clk               | LOCATED    | LVCMOS25_IN  | PT63A        | PCLKT0_1                 |           |
 | A11/0    |     unused, PULL:DOWN |            |              | PT63B        |                          |           |
 | A12/1    | LED1                  | LOCATED    | LVCMOS25_OUT | PT76A        |                          |           |
 | A13/1    | LED                   | LOCATED    | LVCMOS25_OUT | PT76B        |                          |           |
@@ -142,7 +143,7 @@ Pinout by Pin Number:
 | E20/2    |     unused, PULL:DOWN |            |              | PR38A        | RDQ41                    |           |
 | F1/6     |     unused, PULL:DOWN |            |              | PL47B        | PCLKC6_1/LDQ53           |           |
 | F2/7     |     unused, PULL:DOWN |            |              | PL44C        | PCLKT7_0/LDQ41           |           |
-| F3/7     | top_clk-              |            | LVDS_IN      | PL44B        | PCLKC7_1/LDQ41           |           |
+| F3/7     |     unused, PULL:DOWN |            |              | PL44B        | PCLKC7_1/LDQ41           |           |
 | F4/7     | serial_iq+            | LOCATED    | LVDS_OUT     | PL20A        | LDQ17                    |           |
 | F5/7     |     unused, PULL:DOWN |            |              | PL20D        | LDQ17                    |           |
 | F16/2    |     unused, PULL:DOWN |            |              | PR11D        | RDQ17                    |           |
@@ -152,14 +153,14 @@ Pinout by Pin Number:
 | F20/2    |     unused, PULL:DOWN |            |              | PR38C        | RDQ41                    |           |
 | G1/6     |     unused, PULL:DOWN |            |              | PL47D        | PCLKC6_0/LDQ53           |           |
 | G2/6     |     unused, PULL:DOWN |            |              | PL47A        | PCLKT6_1/LDQ53           |           |
-| G3/7     | top_clk+              | LOCATED    | LVDS_IN      | PL44A        | PCLKT7_1/LDQ41           |           |
+| G3/7     |     unused, PULL:DOWN |            |              | PL44A        | PCLKT7_1/LDQ41           |           |
 | G5/7     |     unused, PULL:DOWN |            |              | PL41B        | LDQSN41                  |           |
 | G16/2    |     unused, PULL:DOWN |            |              | PR17C        | RDQ17                    |           |
 | G18/2    |     unused, PULL:DOWN |            |              | PR17B        | RDQSN17                  |           |
 | G19/2    |     unused, PULL:DOWN |            |              | PR41A        | GR_PCLK2_1/RDQS41        |           |
 | G20/2    |     unused, PULL:DOWN |            |              | PR38D        | RDQ41                    |           |
 | H1/6     |     unused, PULL:DOWN |            |              | PL53C        | LDQ53                    |           |
-| H2/6     | top_rst_n             | LOCATED    | LVCMOS33_IN  | PL47C        | PCLKT6_0/LDQ53           |           |
+| H2/6     | top_rst               | LOCATED    | LVCMOS33_IN  | PL47C        | PCLKT6_0/LDQ53           |           |
 | H3/7     |     unused, PULL:DOWN |            |              | PL41D        | LDQ41                    |           |
 | H4/7     |     unused, PULL:DOWN |            |              | PL41A        | GR_PCLK7_1/LDQS41        |           |
 | H5/7     |     unused, PULL:DOWN |            |              | PL41C        | GR_PCLK7_0/LDQ41         |           |
@@ -451,9 +452,13 @@ LOCATE  COMP  "LED6"  SITE  "A17";
 LOCATE  COMP  "LED7"  SITE  "B17";
 LOCATE  COMP  "serial_clk"  SITE  "C4";
 LOCATE  COMP  "serial_iq"  SITE  "F4";
-LOCATE  COMP  "top_clk"  SITE  "G3";
-LOCATE  COMP  "top_rst_n"  SITE  "H2";
+LOCATE  COMP  "top_clk"  SITE  "A10";
+LOCATE  COMP  "top_rst"  SITE  "H2";
 
+#PLL
+LOCATE  COMP  "my_instance_1/PLLInst_0"  SITE  "PLL_TL0" ;
+#PLL
+LOCATE  COMP  "my_instance_2/PLLInst_0"  SITE  "PLL_BL0" ;
 
 
 
@@ -464,5 +469,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Dec 30 04:03:37 2025
+Sun Jan 04 13:02:37 2026
 

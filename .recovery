@@ -2,9 +2,9 @@
 <BaliProject version="3.2" title="mySDR_fpga" device="LFE5UM5G-85F-8BG381I" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options top="top_module"/>
+        <Options def_top="divided_pll_2" top="top_module"/>
         <Source name="src/top_module.v" type="Verilog" type_short="Verilog">
-            <Options/>
+            <Options top_module="top_module"/>
         </Source>
         <Source name="src/local_oscillator.v" type="Verilog" type_short="Verilog">
             <Options/>
@@ -36,16 +36,25 @@
         <Source name="src/sinModule.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
+        <Source name="src/bleDefines.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/radioDefines.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="pll_64m/pll_64m.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="divided_pll/divided_pll.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="divided_pll_2/divided_pll_2.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
         <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>
         <Source name="mySDR_fpga.lpf" type="Logic Preference" type_short="LPF">
-            <Options/>
-        </Source>
-        <Source name="sdr/sdr.spf" type="Simulation Project File" type_short="SPF">
-            <Options/>
-        </Source>
-        <Source name="src/sample.txt" type="Unknown Type" type_short="Unknown">
             <Options/>
         </Source>
     </Implementation>

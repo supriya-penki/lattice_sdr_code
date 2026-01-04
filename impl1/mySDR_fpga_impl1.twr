@@ -13,7 +13,7 @@ Setup and Hold Report
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.14.0.75.2
-Tue Dec 30 04:03:44 2025
+Sun Jan 04 13:02:44 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -30,10 +30,7 @@ Device,speed:    LFE5UM5G-85F,8
 Report level:    verbose report, limited to 10 items per preference
 --------------------------------------------------------------------------------
 
-4 potential circuit loops found in timing analysis.
-4 potential circuit loops found in timing analysis.
-4 potential circuit loops found in timing analysis.
-Report Type:     based on TRACE automatically generated preferences
+1 potential circuit loop found in timing analysis.
 BLOCK ASYNCPATHS
 BLOCK RESETPATHS
 --------------------------------------------------------------------------------
@@ -41,1101 +38,967 @@ BLOCK RESETPATHS
 
 
 ================================================================================
-Preference: FREQUENCY NET "top_clk_c" 560.224000 MHz ;
-            651 items scored, 120 timing errors detected.
+Preference: FREQUENCY NET "serial_clk_c" 64.000000 MHz ;
+            567 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Error: The following path exceeds requirements by 4.428ns (weighted slack = -63.742ns)
+Passed: The following path meets requirements by 10.985ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              fskModule_0/start_57  (from clkDivider_clko +)
-   Destination:    FF         Data in        IQSerializer_0/QCounter_412__i3  (to top_clk_c -)
+   Source:         FF         Q              fskModule_1/FSK_Q__i7  (from clockDivider_clk_4M -)
+   Destination:    FF         Data in        IQSerializer_1/DEDFF_0/pose_edge_14  (to serial_clk_c +)
 
-   Delay:               1.971ns  (22.9% logic, 77.1% route), 2 logic levels.
+   Delay:               2.467ns  (34.6% logic, 65.4% route), 5 logic levels.
 
  Constraint Details:
 
-      1.971ns physical path delay SLICE_83 to SLICE_86 exceeds
-      (delay constraint based on source clock period of 2.508ns and destination clock period of 1.785ns)
-      0.124ns delay constraint less
+      2.467ns physical path delay fskModule_1/SLICE_97 to IQSerializer_1/SLICE_73 meets
+     15.625ns delay constraint less
       2.338ns skew and
-      0.243ns LSR_SET requirement (totaling -2.457ns) by 4.428ns
+      0.000ns feedback compensation and
+     -0.165ns DIN_SET requirement (totaling 13.452ns) by 10.985ns
 
  Physical Path Details:
 
-      Data path SLICE_83 to SLICE_86:
+      Data path fskModule_1/SLICE_97 to IQSerializer_1/SLICE_73:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.310    R69C89C.CLK to     R69C89C.Q0 SLICE_83 (from clkDivider_clko)
-ROUTE         8     0.894     R69C89C.Q0 to     R75C89B.D0 IQSerializer_start
-CTOF_DEL    ---     0.141     R75C89B.D0 to     R75C89B.F0 IQSerializer_0/SLICE_166
-ROUTE         2     0.626     R75C89B.F0 to    R74C90D.LSR IQSerializer_0/n1928 (to top_clk_c)
+REG_DEL     ---     0.290    R65C40B.CLK to     R65C40B.Q1 fskModule_1/SLICE_97 (from clockDivider_clk_4M)
+ROUTE         2     0.694     R65C40B.Q1 to     R64C41B.B1 fskModule_Q_7
+CTOF_DEL    ---     0.141     R64C41B.B1 to     R64C41B.F1 IQSerializer_1/SLICE_133
+ROUTE         1     0.374     R64C41B.F1 to     R64C41B.B0 IQSerializer_1/n3235
+CTOF_DEL    ---     0.141     R64C41B.B0 to     R64C41B.F0 IQSerializer_1/SLICE_133
+ROUTE         1     0.295     R64C41B.F0 to     R63C41C.D1 IQSerializer_1/n3236
+CTOF_DEL    ---     0.141     R63C41C.D1 to     R63C41C.F1 IQSerializer_1/SLICE_73
+ROUTE         1     0.250     R63C41C.F1 to     R63C41C.D0 IQSerializer_1/n3238
+CTOF_DEL    ---     0.141     R63C41C.D0 to     R63C41C.F0 IQSerializer_1/SLICE_73
+ROUTE         1     0.000     R63C41C.F0 to    R63C41C.DI0 IQSerializer_1/DEDFF_0/Q1 (to serial_clk_c)
                   --------
-                    1.971   (22.9% logic, 77.1% route), 2 logic levels.
+                    2.467   (34.6% logic, 65.4% route), 5 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to SLICE_83:
+      Source Clock Path top_clk to fskModule_1/SLICE_97:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R69C89C.CLK clkDivider_clko
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R59C67A.CLK serial_clk_c
+REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_82
+ROUTE        47     2.028     R59C67A.Q0 to    R65C40B.CLK clockDivider_clk_4M
                   --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
+                    7.407   (16.2% logic, 83.8% route), 4 logic levels.
 
-      Destination Clock Path top_clk to SLICE_86:
+      Source Clock f/b:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R74C90D.CLK top_clk_c
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
                   --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock Path top_clk to IQSerializer_1/SLICE_73:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R63C41C.CLK serial_clk_c
+                  --------
+                    5.069   (17.6% logic, 82.4% route), 3 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
 
 
-Error: The following path exceeds requirements by 4.396ns (weighted slack = -63.281ns)
+Passed: The following path meets requirements by 11.027ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              fskModule_0/start_57  (from clkDivider_clko +)
-   Destination:    FF         Data in        IQSerializer_0/ZCounter_409__i9  (to top_clk_c -)
+   Source:         FF         Q              fskModule_1/FSK_I__i11  (from clockDivider_clk_4M -)
+   Destination:    FF         Data in        IQSerializer_1/DEDFF_0/neg_edge_15  (to serial_clk_c -)
 
-   Delay:               1.939ns  (23.3% logic, 76.7% route), 2 logic levels.
+   Delay:               2.409ns  (33.7% logic, 66.3% route), 4 logic levels.
 
  Constraint Details:
 
-      1.939ns physical path delay SLICE_83 to IQSerializer_0/SLICE_71 exceeds
-      (delay constraint based on source clock period of 2.508ns and destination clock period of 1.785ns)
-      0.124ns delay constraint less
+      2.409ns physical path delay fskModule_1/SLICE_95 to IQSerializer_1/SLICE_72 meets
+     15.625ns delay constraint less
       2.338ns skew and
-      0.243ns LSR_SET requirement (totaling -2.457ns) by 4.396ns
+      0.000ns feedback compensation and
+     -0.149ns DIN_SET requirement (totaling 13.436ns) by 11.027ns
 
  Physical Path Details:
 
-      Data path SLICE_83 to IQSerializer_0/SLICE_71:
+      Data path fskModule_1/SLICE_95 to IQSerializer_1/SLICE_72:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.310    R69C89C.CLK to     R69C89C.Q0 SLICE_83 (from clkDivider_clko)
-ROUTE         8     0.727     R69C89C.Q0 to     R75C88C.C0 IQSerializer_start
-CTOF_DEL    ---     0.141     R75C88C.C0 to     R75C88C.F0 IQSerializer_0/SLICE_165
-ROUTE         6     0.761     R75C88C.F0 to    R78C88B.LSR IQSerializer_0/n1925 (to top_clk_c)
+REG_DEL     ---     0.291    R63C39C.CLK to     R63C39C.Q0 fskModule_1/SLICE_95 (from clockDivider_clk_4M)
+ROUTE         3     0.680     R63C39C.Q0 to     R63C40C.A0 fskModule_I_11
+CTOOFX_DEL  ---     0.240     R63C40C.A0 to   R63C40C.OFX0 IQSerializer_1/i1924/SLICE_115
+ROUTE         1     0.541   R63C40C.OFX0 to     R63C41D.B1 IQSerializer_1/n3369
+CTOF_DEL    ---     0.141     R63C41D.B1 to     R63C41D.F1 IQSerializer_1/SLICE_72
+ROUTE         1     0.375     R63C41D.F1 to     R63C41D.A0 IQSerializer_1/n3302
+CTOF_DEL    ---     0.141     R63C41D.A0 to     R63C41D.F0 IQSerializer_1/SLICE_72
+ROUTE         1     0.000     R63C41D.F0 to    R63C41D.DI0 IQSerializer_1/DEDFF_0/Q2 (to serial_clk_c)
                   --------
-                    1.939   (23.3% logic, 76.7% route), 2 logic levels.
+                    2.409   (33.7% logic, 66.3% route), 4 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to SLICE_83:
+      Source Clock Path top_clk to fskModule_1/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R69C89C.CLK clkDivider_clko
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R59C67A.CLK serial_clk_c
+REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_82
+ROUTE        47     2.028     R59C67A.Q0 to    R63C39C.CLK clockDivider_clk_4M
                   --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
+                    7.407   (16.2% logic, 83.8% route), 4 logic levels.
 
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_71:
+      Source Clock f/b:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R78C88B.CLK top_clk_c
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
                   --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock Path top_clk to IQSerializer_1/SLICE_72:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R63C41D.CLK serial_clk_c
+                  --------
+                    5.069   (17.6% logic, 82.4% route), 3 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
 
 
-Error: The following path exceeds requirements by 4.396ns (weighted slack = -63.281ns)
+Passed: The following path meets requirements by 11.027ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              fskModule_0/start_57  (from clkDivider_clko +)
-   Destination:    FF         Data in        IQSerializer_0/ZCounter_409__i8  (to top_clk_c -)
-                   FF                        IQSerializer_0/ZCounter_409__i7
+   Source:         FF         Q              fskModule_1/FSK_I__i11  (from clockDivider_clk_4M -)
+   Destination:    FF         Data in        IQSerializer_1/DEDFF_0/neg_edge_15  (to serial_clk_c -)
 
-   Delay:               1.939ns  (23.3% logic, 76.7% route), 2 logic levels.
+   Delay:               2.409ns  (33.7% logic, 66.3% route), 4 logic levels.
 
  Constraint Details:
 
-      1.939ns physical path delay SLICE_83 to IQSerializer_0/SLICE_72 exceeds
-      (delay constraint based on source clock period of 2.508ns and destination clock period of 1.785ns)
-      0.124ns delay constraint less
+      2.409ns physical path delay fskModule_1/SLICE_95 to IQSerializer_1/SLICE_72 meets
+     15.625ns delay constraint less
       2.338ns skew and
-      0.243ns LSR_SET requirement (totaling -2.457ns) by 4.396ns
+      0.000ns feedback compensation and
+     -0.149ns DIN_SET requirement (totaling 13.436ns) by 11.027ns
 
  Physical Path Details:
 
-      Data path SLICE_83 to IQSerializer_0/SLICE_72:
+      Data path fskModule_1/SLICE_95 to IQSerializer_1/SLICE_72:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.310    R69C89C.CLK to     R69C89C.Q0 SLICE_83 (from clkDivider_clko)
-ROUTE         8     0.727     R69C89C.Q0 to     R75C88C.C0 IQSerializer_start
-CTOF_DEL    ---     0.141     R75C88C.C0 to     R75C88C.F0 IQSerializer_0/SLICE_165
-ROUTE         6     0.761     R75C88C.F0 to    R78C88A.LSR IQSerializer_0/n1925 (to top_clk_c)
+REG_DEL     ---     0.291    R63C39C.CLK to     R63C39C.Q0 fskModule_1/SLICE_95 (from clockDivider_clk_4M)
+ROUTE         3     0.680     R63C39C.Q0 to     R63C40C.A1 fskModule_I_11
+CTOOFX_DEL  ---     0.240     R63C40C.A1 to   R63C40C.OFX0 IQSerializer_1/i1924/SLICE_115
+ROUTE         1     0.541   R63C40C.OFX0 to     R63C41D.B1 IQSerializer_1/n3369
+CTOF_DEL    ---     0.141     R63C41D.B1 to     R63C41D.F1 IQSerializer_1/SLICE_72
+ROUTE         1     0.375     R63C41D.F1 to     R63C41D.A0 IQSerializer_1/n3302
+CTOF_DEL    ---     0.141     R63C41D.A0 to     R63C41D.F0 IQSerializer_1/SLICE_72
+ROUTE         1     0.000     R63C41D.F0 to    R63C41D.DI0 IQSerializer_1/DEDFF_0/Q2 (to serial_clk_c)
                   --------
-                    1.939   (23.3% logic, 76.7% route), 2 logic levels.
+                    2.409   (33.7% logic, 66.3% route), 4 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to SLICE_83:
+      Source Clock Path top_clk to fskModule_1/SLICE_95:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R69C89C.CLK clkDivider_clko
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R59C67A.CLK serial_clk_c
+REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_82
+ROUTE        47     2.028     R59C67A.Q0 to    R63C39C.CLK clockDivider_clk_4M
                   --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
+                    7.407   (16.2% logic, 83.8% route), 4 logic levels.
 
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_72:
+      Source Clock f/b:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R78C88A.CLK top_clk_c
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
                   --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock Path top_clk to IQSerializer_1/SLICE_72:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R63C41D.CLK serial_clk_c
+                  --------
+                    5.069   (17.6% logic, 82.4% route), 3 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
 
 
-Error: The following path exceeds requirements by 4.391ns (weighted slack = -63.209ns)
+Passed: The following path meets requirements by 11.117ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              fskModule_0/start_57  (from clkDivider_clko +)
-   Destination:    FF         Data in        IQSerializer_0/QCounter_412__i2  (to top_clk_c -)
-                   FF                        IQSerializer_0/QCounter_412__i1
+   Source:         FF         Q              fskModule_1/FSK_Q__i7  (from clockDivider_clk_4M -)
+   Destination:    FF         Data in        IQSerializer_1/DEDFF_0/neg_edge_15  (to serial_clk_c -)
 
-   Delay:               1.934ns  (23.3% logic, 76.7% route), 2 logic levels.
+   Delay:               2.319ns  (35.0% logic, 65.0% route), 4 logic levels.
 
  Constraint Details:
 
-      1.934ns physical path delay SLICE_83 to IQSerializer_0/SLICE_85 exceeds
-      (delay constraint based on source clock period of 2.508ns and destination clock period of 1.785ns)
-      0.124ns delay constraint less
+      2.319ns physical path delay fskModule_1/SLICE_97 to IQSerializer_1/SLICE_72 meets
+     15.625ns delay constraint less
       2.338ns skew and
-      0.243ns LSR_SET requirement (totaling -2.457ns) by 4.391ns
+      0.000ns feedback compensation and
+     -0.149ns DIN_SET requirement (totaling 13.436ns) by 11.117ns
 
  Physical Path Details:
 
-      Data path SLICE_83 to IQSerializer_0/SLICE_85:
+      Data path fskModule_1/SLICE_97 to IQSerializer_1/SLICE_72:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.310    R69C89C.CLK to     R69C89C.Q0 SLICE_83 (from clkDivider_clko)
-ROUTE         8     0.894     R69C89C.Q0 to     R75C89B.D0 IQSerializer_start
-CTOF_DEL    ---     0.141     R75C89B.D0 to     R75C89B.F0 IQSerializer_0/SLICE_166
-ROUTE         2     0.589     R75C89B.F0 to    R74C89C.LSR IQSerializer_0/n1928 (to top_clk_c)
+REG_DEL     ---     0.290    R65C40B.CLK to     R65C40B.Q1 fskModule_1/SLICE_97 (from clockDivider_clk_4M)
+ROUTE         2     0.713     R65C40B.Q1 to     R64C41A.C1 fskModule_Q_7
+CTOOFX_DEL  ---     0.240     R64C41A.C1 to   R64C41A.OFX0 IQSerializer_1/i1926/SLICE_118
+ROUTE         1     0.419   R64C41A.OFX0 to     R63C41D.C1 IQSerializer_1/n3372
+CTOF_DEL    ---     0.141     R63C41D.C1 to     R63C41D.F1 IQSerializer_1/SLICE_72
+ROUTE         1     0.375     R63C41D.F1 to     R63C41D.A0 IQSerializer_1/n3302
+CTOF_DEL    ---     0.141     R63C41D.A0 to     R63C41D.F0 IQSerializer_1/SLICE_72
+ROUTE         1     0.000     R63C41D.F0 to    R63C41D.DI0 IQSerializer_1/DEDFF_0/Q2 (to serial_clk_c)
                   --------
-                    1.934   (23.3% logic, 76.7% route), 2 logic levels.
+                    2.319   (35.0% logic, 65.0% route), 4 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to SLICE_83:
+      Source Clock Path top_clk to fskModule_1/SLICE_97:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R69C89C.CLK clkDivider_clko
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R59C67A.CLK serial_clk_c
+REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_82
+ROUTE        47     2.028     R59C67A.Q0 to    R65C40B.CLK clockDivider_clk_4M
                   --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
+                    7.407   (16.2% logic, 83.8% route), 4 logic levels.
 
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_85:
+      Source Clock f/b:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R74C89C.CLK top_clk_c
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
                   --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock Path top_clk to IQSerializer_1/SLICE_72:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R63C41D.CLK serial_clk_c
+                  --------
+                    5.069   (17.6% logic, 82.4% route), 3 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
 
 
-Error: The following path exceeds requirements by 4.273ns (weighted slack = -61.511ns)
+Passed: The following path meets requirements by 11.135ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              fskModule_0/start_57  (from clkDivider_clko +)
-   Destination:    FF         Data in        IQSerializer_0/ICounter_407__i2  (to top_clk_c -)
-                   FF                        IQSerializer_0/ICounter_407__i1
+   Source:         FF         Q              fskModule_1/FSK_Q__i2  (from clockDivider_clk_4M -)
+   Destination:    FF         Data in        IQSerializer_1/DEDFF_0/neg_edge_15  (to serial_clk_c -)
 
-   Delay:               1.816ns  (24.8% logic, 75.2% route), 2 logic levels.
+   Delay:               2.301ns  (35.3% logic, 64.7% route), 4 logic levels.
 
  Constraint Details:
 
-      1.816ns physical path delay SLICE_83 to IQSerializer_0/SLICE_78 exceeds
-      (delay constraint based on source clock period of 2.508ns and destination clock period of 1.785ns)
-      0.124ns delay constraint less
+      2.301ns physical path delay fskModule_1/SLICE_96 to IQSerializer_1/SLICE_72 meets
+     15.625ns delay constraint less
       2.338ns skew and
-      0.243ns LSR_SET requirement (totaling -2.457ns) by 4.273ns
+      0.000ns feedback compensation and
+     -0.149ns DIN_SET requirement (totaling 13.436ns) by 11.135ns
 
  Physical Path Details:
 
-      Data path SLICE_83 to IQSerializer_0/SLICE_78:
+      Data path fskModule_1/SLICE_96 to IQSerializer_1/SLICE_72:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.310    R69C89C.CLK to     R69C89C.Q0 SLICE_83 (from clkDivider_clko)
-ROUTE         8     1.119     R69C89C.Q0 to     R73C88B.B0 IQSerializer_start
-CTOF_DEL    ---     0.141     R73C88B.B0 to     R73C88B.F0 IQSerializer_0/SLICE_167
-ROUTE         2     0.246     R73C88B.F0 to    R73C88A.LSR IQSerializer_0/n1927 (to top_clk_c)
+REG_DEL     ---     0.290    R65C40D.CLK to     R65C40D.Q1 fskModule_1/SLICE_96 (from clockDivider_clk_4M)
+ROUTE         2     0.695     R65C40D.Q1 to     R64C41A.A0 fskModule_Q_2
+CTOOFX_DEL  ---     0.240     R64C41A.A0 to   R64C41A.OFX0 IQSerializer_1/i1926/SLICE_118
+ROUTE         1     0.419   R64C41A.OFX0 to     R63C41D.C1 IQSerializer_1/n3372
+CTOF_DEL    ---     0.141     R63C41D.C1 to     R63C41D.F1 IQSerializer_1/SLICE_72
+ROUTE         1     0.375     R63C41D.F1 to     R63C41D.A0 IQSerializer_1/n3302
+CTOF_DEL    ---     0.141     R63C41D.A0 to     R63C41D.F0 IQSerializer_1/SLICE_72
+ROUTE         1     0.000     R63C41D.F0 to    R63C41D.DI0 IQSerializer_1/DEDFF_0/Q2 (to serial_clk_c)
                   --------
-                    1.816   (24.8% logic, 75.2% route), 2 logic levels.
+                    2.301   (35.3% logic, 64.7% route), 4 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to SLICE_83:
+      Source Clock Path top_clk to fskModule_1/SLICE_96:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R69C89C.CLK clkDivider_clko
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R59C67A.CLK serial_clk_c
+REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_82
+ROUTE        47     2.028     R59C67A.Q0 to    R65C40D.CLK clockDivider_clk_4M
                   --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
+                    7.407   (16.2% logic, 83.8% route), 4 logic levels.
 
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_78:
+      Source Clock f/b:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R73C88A.CLK top_clk_c
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
                   --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock Path top_clk to IQSerializer_1/SLICE_72:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R63C41D.CLK serial_clk_c
+                  --------
+                    5.069   (17.6% logic, 82.4% route), 3 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
 
 
-Error: The following path exceeds requirements by 4.273ns (weighted slack = -61.511ns)
+Passed: The following path meets requirements by 11.180ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              fskModule_0/start_57  (from clkDivider_clko +)
-   Destination:    FF         Data in        IQSerializer_0/ICounter_407__i3  (to top_clk_c -)
+   Source:         FF         Q              fskModule_1/FSK_I__i7  (from clockDivider_clk_4M -)
+   Destination:    FF         Data in        IQSerializer_1/DEDFF_0/pose_edge_14  (to serial_clk_c +)
 
-   Delay:               1.816ns  (24.8% logic, 75.2% route), 2 logic levels.
+   Delay:               2.272ns  (35.7% logic, 64.3% route), 4 logic levels.
 
  Constraint Details:
 
-      1.816ns physical path delay SLICE_83 to IQSerializer_0/SLICE_79 exceeds
-      (delay constraint based on source clock period of 2.508ns and destination clock period of 1.785ns)
-      0.124ns delay constraint less
+      2.272ns physical path delay fskModule_1/SLICE_94 to IQSerializer_1/SLICE_73 meets
+     15.625ns delay constraint less
       2.338ns skew and
-      0.243ns LSR_SET requirement (totaling -2.457ns) by 4.273ns
+      0.000ns feedback compensation and
+     -0.165ns DIN_SET requirement (totaling 13.452ns) by 11.180ns
 
  Physical Path Details:
 
-      Data path SLICE_83 to IQSerializer_0/SLICE_79:
+      Data path fskModule_1/SLICE_94 to IQSerializer_1/SLICE_73:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.310    R69C89C.CLK to     R69C89C.Q0 SLICE_83 (from clkDivider_clko)
-ROUTE         8     1.119     R69C89C.Q0 to     R73C88B.B0 IQSerializer_start
-CTOF_DEL    ---     0.141     R73C88B.B0 to     R73C88B.F0 IQSerializer_0/SLICE_167
-ROUTE         2     0.246     R73C88B.F0 to    R73C88D.LSR IQSerializer_0/n1927 (to top_clk_c)
+REG_DEL     ---     0.290    R63C39D.CLK to     R63C39D.Q1 fskModule_1/SLICE_94 (from clockDivider_clk_4M)
+ROUTE         2     0.668     R63C39D.Q1 to     R63C40D.B1 fskModule_I_7
+CTOOFX_DEL  ---     0.240     R63C40D.B1 to   R63C40D.OFX0 IQSerializer_1/i1838/SLICE_117
+ROUTE         1     0.265   R63C40D.OFX0 to     R63C40B.C1 IQSerializer_1/n3226
+CTOF_DEL    ---     0.141     R63C40B.C1 to     R63C40B.F1 IQSerializer_1/SLICE_132
+ROUTE         1     0.527     R63C40B.F1 to     R63C41C.B0 IQSerializer_1/n3228
+CTOF_DEL    ---     0.141     R63C41C.B0 to     R63C41C.F0 IQSerializer_1/SLICE_73
+ROUTE         1     0.000     R63C41C.F0 to    R63C41C.DI0 IQSerializer_1/DEDFF_0/Q1 (to serial_clk_c)
                   --------
-                    1.816   (24.8% logic, 75.2% route), 2 logic levels.
+                    2.272   (35.7% logic, 64.3% route), 4 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to SLICE_83:
+      Source Clock Path top_clk to fskModule_1/SLICE_94:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R69C89C.CLK clkDivider_clko
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R59C67A.CLK serial_clk_c
+REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_82
+ROUTE        47     2.028     R59C67A.Q0 to    R63C39D.CLK clockDivider_clk_4M
                   --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
+                    7.407   (16.2% logic, 83.8% route), 4 logic levels.
 
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_79:
+      Source Clock f/b:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R73C88D.CLK top_clk_c
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
                   --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock Path top_clk to IQSerializer_1/SLICE_73:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R63C41C.CLK serial_clk_c
+                  --------
+                    5.069   (17.6% logic, 82.4% route), 3 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
 
 
-Error: The following path exceeds requirements by 4.241ns (weighted slack = -61.050ns)
+Passed: The following path meets requirements by 11.244ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              fskModule_0/start_57  (from clkDivider_clko +)
-   Destination:    FF         Data in        IQSerializer_0/ZCounter_409__i2  (to top_clk_c -)
-                   FF                        IQSerializer_0/ZCounter_409__i1
+   Source:         FF         Q              fskModule_1/FSK_Q__i11  (from clockDivider_clk_4M -)
+   Destination:    FF         Data in        IQSerializer_1/DEDFF_0/neg_edge_15  (to serial_clk_c -)
 
-   Delay:               1.784ns  (25.3% logic, 74.7% route), 2 logic levels.
+   Delay:               2.192ns  (37.1% logic, 62.9% route), 4 logic levels.
 
  Constraint Details:
 
-      1.784ns physical path delay SLICE_83 to IQSerializer_0/SLICE_75 exceeds
-      (delay constraint based on source clock period of 2.508ns and destination clock period of 1.785ns)
-      0.124ns delay constraint less
+      2.192ns physical path delay fskModule_1/SLICE_98 to IQSerializer_1/SLICE_72 meets
+     15.625ns delay constraint less
       2.338ns skew and
-      0.243ns LSR_SET requirement (totaling -2.457ns) by 4.241ns
+      0.000ns feedback compensation and
+     -0.149ns DIN_SET requirement (totaling 13.436ns) by 11.244ns
 
  Physical Path Details:
 
-      Data path SLICE_83 to IQSerializer_0/SLICE_75:
+      Data path fskModule_1/SLICE_98 to IQSerializer_1/SLICE_72:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.310    R69C89C.CLK to     R69C89C.Q0 SLICE_83 (from clkDivider_clko)
-ROUTE         8     0.727     R69C89C.Q0 to     R75C88C.C0 IQSerializer_start
-CTOF_DEL    ---     0.141     R75C88C.C0 to     R75C88C.F0 IQSerializer_0/SLICE_165
-ROUTE         6     0.606     R75C88C.F0 to    R78C87B.LSR IQSerializer_0/n1925 (to top_clk_c)
+REG_DEL     ---     0.291    R65C39D.CLK to     R65C39D.Q0 fskModule_1/SLICE_98 (from clockDivider_clk_4M)
+ROUTE         2     0.585     R65C39D.Q0 to     R64C41A.C0 fskModule_Q_11
+CTOOFX_DEL  ---     0.240     R64C41A.C0 to   R64C41A.OFX0 IQSerializer_1/i1926/SLICE_118
+ROUTE         1     0.419   R64C41A.OFX0 to     R63C41D.C1 IQSerializer_1/n3372
+CTOF_DEL    ---     0.141     R63C41D.C1 to     R63C41D.F1 IQSerializer_1/SLICE_72
+ROUTE         1     0.375     R63C41D.F1 to     R63C41D.A0 IQSerializer_1/n3302
+CTOF_DEL    ---     0.141     R63C41D.A0 to     R63C41D.F0 IQSerializer_1/SLICE_72
+ROUTE         1     0.000     R63C41D.F0 to    R63C41D.DI0 IQSerializer_1/DEDFF_0/Q2 (to serial_clk_c)
                   --------
-                    1.784   (25.3% logic, 74.7% route), 2 logic levels.
+                    2.192   (37.1% logic, 62.9% route), 4 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to SLICE_83:
+      Source Clock Path top_clk to fskModule_1/SLICE_98:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R69C89C.CLK clkDivider_clko
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R59C67A.CLK serial_clk_c
+REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_82
+ROUTE        47     2.028     R59C67A.Q0 to    R65C39D.CLK clockDivider_clk_4M
                   --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
+                    7.407   (16.2% logic, 83.8% route), 4 logic levels.
 
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_75:
+      Source Clock f/b:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R78C87B.CLK top_clk_c
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
                   --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock Path top_clk to IQSerializer_1/SLICE_72:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R63C41D.CLK serial_clk_c
+                  --------
+                    5.069   (17.6% logic, 82.4% route), 3 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
 
 
-Error: The following path exceeds requirements by 4.241ns (weighted slack = -61.050ns)
+Passed: The following path meets requirements by 11.251ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              fskModule_0/start_57  (from clkDivider_clko +)
-   Destination:    FF         Data in        IQSerializer_0/ZCounter_409__i0  (to top_clk_c -)
+   Source:         FF         Q              fskModule_1/FSK_I__i2  (from clockDivider_clk_4M -)
+   Destination:    FF         Data in        IQSerializer_1/DEDFF_0/neg_edge_15  (to serial_clk_c -)
 
-   Delay:               1.784ns  (25.3% logic, 74.7% route), 2 logic levels.
+   Delay:               2.185ns  (37.2% logic, 62.8% route), 4 logic levels.
 
  Constraint Details:
 
-      1.784ns physical path delay SLICE_83 to IQSerializer_0/SLICE_70 exceeds
-      (delay constraint based on source clock period of 2.508ns and destination clock period of 1.785ns)
-      0.124ns delay constraint less
+      2.185ns physical path delay fskModule_1/SLICE_93 to IQSerializer_1/SLICE_72 meets
+     15.625ns delay constraint less
       2.338ns skew and
-      0.243ns LSR_SET requirement (totaling -2.457ns) by 4.241ns
+      0.000ns feedback compensation and
+     -0.149ns DIN_SET requirement (totaling 13.436ns) by 11.251ns
 
  Physical Path Details:
 
-      Data path SLICE_83 to IQSerializer_0/SLICE_70:
+      Data path fskModule_1/SLICE_93 to IQSerializer_1/SLICE_72:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.310    R69C89C.CLK to     R69C89C.Q0 SLICE_83 (from clkDivider_clko)
-ROUTE         8     0.727     R69C89C.Q0 to     R75C88C.C0 IQSerializer_start
-CTOF_DEL    ---     0.141     R75C88C.C0 to     R75C88C.F0 IQSerializer_0/SLICE_165
-ROUTE         6     0.606     R75C88C.F0 to    R78C87A.LSR IQSerializer_0/n1925 (to top_clk_c)
+REG_DEL     ---     0.290    R63C39A.CLK to     R63C39A.Q1 fskModule_1/SLICE_93 (from clockDivider_clk_4M)
+ROUTE         3     0.457     R63C39A.Q1 to     R63C40C.C0 fskModule_I_2
+CTOOFX_DEL  ---     0.240     R63C40C.C0 to   R63C40C.OFX0 IQSerializer_1/i1924/SLICE_115
+ROUTE         1     0.541   R63C40C.OFX0 to     R63C41D.B1 IQSerializer_1/n3369
+CTOF_DEL    ---     0.141     R63C41D.B1 to     R63C41D.F1 IQSerializer_1/SLICE_72
+ROUTE         1     0.375     R63C41D.F1 to     R63C41D.A0 IQSerializer_1/n3302
+CTOF_DEL    ---     0.141     R63C41D.A0 to     R63C41D.F0 IQSerializer_1/SLICE_72
+ROUTE         1     0.000     R63C41D.F0 to    R63C41D.DI0 IQSerializer_1/DEDFF_0/Q2 (to serial_clk_c)
                   --------
-                    1.784   (25.3% logic, 74.7% route), 2 logic levels.
+                    2.185   (37.2% logic, 62.8% route), 4 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to SLICE_83:
+      Source Clock Path top_clk to fskModule_1/SLICE_93:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R69C89C.CLK clkDivider_clko
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R59C67A.CLK serial_clk_c
+REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_82
+ROUTE        47     2.028     R59C67A.Q0 to    R63C39A.CLK clockDivider_clk_4M
                   --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
+                    7.407   (16.2% logic, 83.8% route), 4 logic levels.
 
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_70:
+      Source Clock f/b:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R78C87A.CLK top_clk_c
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
                   --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock Path top_clk to IQSerializer_1/SLICE_72:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R63C41D.CLK serial_clk_c
+                  --------
+                    5.069   (17.6% logic, 82.4% route), 3 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
 
 
-Error: The following path exceeds requirements by 4.241ns (weighted slack = -61.050ns)
+Passed: The following path meets requirements by 11.251ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              fskModule_0/start_57  (from clkDivider_clko +)
-   Destination:    FF         Data in        IQSerializer_0/ZCounter_409__i4  (to top_clk_c -)
-                   FF                        IQSerializer_0/ZCounter_409__i3
+   Source:         FF         Q              fskModule_1/FSK_I__i2  (from clockDivider_clk_4M -)
+   Destination:    FF         Data in        IQSerializer_1/DEDFF_0/neg_edge_15  (to serial_clk_c -)
 
-   Delay:               1.784ns  (25.3% logic, 74.7% route), 2 logic levels.
+   Delay:               2.185ns  (37.2% logic, 62.8% route), 4 logic levels.
 
  Constraint Details:
 
-      1.784ns physical path delay SLICE_83 to IQSerializer_0/SLICE_74 exceeds
-      (delay constraint based on source clock period of 2.508ns and destination clock period of 1.785ns)
-      0.124ns delay constraint less
+      2.185ns physical path delay fskModule_1/SLICE_93 to IQSerializer_1/SLICE_72 meets
+     15.625ns delay constraint less
       2.338ns skew and
-      0.243ns LSR_SET requirement (totaling -2.457ns) by 4.241ns
+      0.000ns feedback compensation and
+     -0.149ns DIN_SET requirement (totaling 13.436ns) by 11.251ns
 
  Physical Path Details:
 
-      Data path SLICE_83 to IQSerializer_0/SLICE_74:
+      Data path fskModule_1/SLICE_93 to IQSerializer_1/SLICE_72:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.310    R69C89C.CLK to     R69C89C.Q0 SLICE_83 (from clkDivider_clko)
-ROUTE         8     0.727     R69C89C.Q0 to     R75C88C.C0 IQSerializer_start
-CTOF_DEL    ---     0.141     R75C88C.C0 to     R75C88C.F0 IQSerializer_0/SLICE_165
-ROUTE         6     0.606     R75C88C.F0 to    R78C87C.LSR IQSerializer_0/n1925 (to top_clk_c)
+REG_DEL     ---     0.290    R63C39A.CLK to     R63C39A.Q1 fskModule_1/SLICE_93 (from clockDivider_clk_4M)
+ROUTE         3     0.457     R63C39A.Q1 to     R63C40C.C1 fskModule_I_2
+CTOOFX_DEL  ---     0.240     R63C40C.C1 to   R63C40C.OFX0 IQSerializer_1/i1924/SLICE_115
+ROUTE         1     0.541   R63C40C.OFX0 to     R63C41D.B1 IQSerializer_1/n3369
+CTOF_DEL    ---     0.141     R63C41D.B1 to     R63C41D.F1 IQSerializer_1/SLICE_72
+ROUTE         1     0.375     R63C41D.F1 to     R63C41D.A0 IQSerializer_1/n3302
+CTOF_DEL    ---     0.141     R63C41D.A0 to     R63C41D.F0 IQSerializer_1/SLICE_72
+ROUTE         1     0.000     R63C41D.F0 to    R63C41D.DI0 IQSerializer_1/DEDFF_0/Q2 (to serial_clk_c)
                   --------
-                    1.784   (25.3% logic, 74.7% route), 2 logic levels.
+                    2.185   (37.2% logic, 62.8% route), 4 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to SLICE_83:
+      Source Clock Path top_clk to fskModule_1/SLICE_93:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R69C89C.CLK clkDivider_clko
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R59C67A.CLK serial_clk_c
+REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_82
+ROUTE        47     2.028     R59C67A.Q0 to    R63C39A.CLK clockDivider_clk_4M
                   --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
+                    7.407   (16.2% logic, 83.8% route), 4 logic levels.
 
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_74:
+      Source Clock f/b:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R78C87C.CLK top_clk_c
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
                   --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock Path top_clk to IQSerializer_1/SLICE_72:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R63C41D.CLK serial_clk_c
+                  --------
+                    5.069   (17.6% logic, 82.4% route), 3 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
 
 
-Error: The following path exceeds requirements by 4.241ns (weighted slack = -61.050ns)
+Passed: The following path meets requirements by 11.259ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              fskModule_0/start_57  (from clkDivider_clko +)
-   Destination:    FF         Data in        IQSerializer_0/ZCounter_409__i6  (to top_clk_c -)
-                   FF                        IQSerializer_0/ZCounter_409__i5
+   Source:         FF         Q              fskModule_1/FSK_Q__i12  (from clockDivider_clk_4M -)
+   Destination:    FF         Data in        IQSerializer_1/DEDFF_0/pose_edge_14  (to serial_clk_c +)
 
-   Delay:               1.784ns  (25.3% logic, 74.7% route), 2 logic levels.
+   Delay:               2.193ns  (39.0% logic, 61.0% route), 5 logic levels.
 
  Constraint Details:
 
-      1.784ns physical path delay SLICE_83 to IQSerializer_0/SLICE_73 exceeds
-      (delay constraint based on source clock period of 2.508ns and destination clock period of 1.785ns)
-      0.124ns delay constraint less
+      2.193ns physical path delay fskModule_1/SLICE_99 to IQSerializer_1/SLICE_73 meets
+     15.625ns delay constraint less
       2.338ns skew and
-      0.243ns LSR_SET requirement (totaling -2.457ns) by 4.241ns
+      0.000ns feedback compensation and
+     -0.165ns DIN_SET requirement (totaling 13.452ns) by 11.259ns
 
  Physical Path Details:
 
-      Data path SLICE_83 to IQSerializer_0/SLICE_73:
+      Data path fskModule_1/SLICE_99 to IQSerializer_1/SLICE_73:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.310    R69C89C.CLK to     R69C89C.Q0 SLICE_83 (from clkDivider_clko)
-ROUTE         8     0.727     R69C89C.Q0 to     R75C88C.C0 IQSerializer_start
-CTOF_DEL    ---     0.141     R75C88C.C0 to     R75C88C.F0 IQSerializer_0/SLICE_165
-ROUTE         6     0.606     R75C88C.F0 to    R78C87D.LSR IQSerializer_0/n1925 (to top_clk_c)
+REG_DEL     ---     0.291    R64C40C.CLK to     R64C40C.Q0 fskModule_1/SLICE_99 (from clockDivider_clk_4M)
+ROUTE         1     0.419     R64C40C.Q0 to     R64C41B.C1 fskModule_Q_12
+CTOF_DEL    ---     0.141     R64C41B.C1 to     R64C41B.F1 IQSerializer_1/SLICE_133
+ROUTE         1     0.374     R64C41B.F1 to     R64C41B.B0 IQSerializer_1/n3235
+CTOF_DEL    ---     0.141     R64C41B.B0 to     R64C41B.F0 IQSerializer_1/SLICE_133
+ROUTE         1     0.295     R64C41B.F0 to     R63C41C.D1 IQSerializer_1/n3236
+CTOF_DEL    ---     0.141     R63C41C.D1 to     R63C41C.F1 IQSerializer_1/SLICE_73
+ROUTE         1     0.250     R63C41C.F1 to     R63C41C.D0 IQSerializer_1/n3238
+CTOF_DEL    ---     0.141     R63C41C.D0 to     R63C41C.F0 IQSerializer_1/SLICE_73
+ROUTE         1     0.000     R63C41C.F0 to    R63C41C.DI0 IQSerializer_1/DEDFF_0/Q1 (to serial_clk_c)
                   --------
-                    1.784   (25.3% logic, 74.7% route), 2 logic levels.
+                    2.193   (39.0% logic, 61.0% route), 5 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to SLICE_83:
+      Source Clock Path top_clk to fskModule_1/SLICE_99:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R69C89C.CLK clkDivider_clko
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R59C67A.CLK serial_clk_c
+REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_82
+ROUTE        47     2.028     R59C67A.Q0 to    R64C40C.CLK clockDivider_clk_4M
                   --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
+                    7.407   (16.2% logic, 83.8% route), 4 logic levels.
 
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_73:
+      Source Clock f/b:
 
    Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R78C87D.CLK top_clk_c
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
                   --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
 
-Warning:  15.261MHz is the maximum frequency for this preference.
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock Path top_clk to IQSerializer_1/SLICE_73:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.893        A10.PAD to      A10.PADDI top_clk
+ROUTE         1     0.403      A10.PADDI to   PLL_TL0.CLKI top_clk_c
+CLKI2OP_DE  ---     0.000   PLL_TL0.CLKI to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to   PLL_BL0.CLKI pll_clko_1
+CLKI2OP_DE  ---     0.000   PLL_BL0.CLKI to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.855  PLL_BL0.CLKOP to    R63C41C.CLK serial_clk_c
+                  --------
+                    5.069   (17.6% logic, 82.4% route), 3 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_TL0.CLKFB to  PLL_TL0.CLKOP my_instance_1/PLLInst_0
+ROUTE         2     1.918  PLL_TL0.CLKOP to  PLL_TL0.CLKFB pll_clko_1
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+      Destination Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000  PLL_BL0.CLKFB to  PLL_BL0.CLKOP my_instance_2/PLLInst_0
+ROUTE        38     1.918  PLL_BL0.CLKOP to  PLL_BL0.CLKFB serial_clk_c
+                  --------
+                    1.918   (0.0% logic, 100.0% route), 1 logic levels.
+
+Report:  215.517MHz is the maximum frequency for this preference.
 
 
 ================================================================================
-Preference: FREQUENCY NET "clkDivider_clko" 398.724000 MHz ;
-            1613 items scored, 901 timing errors detected.
+Preference: FREQUENCY NET "top_clk_c" 12.000000 MHz ;
+            0 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Error: The following path exceeds requirements by 2.061ns (weighted slack = -114.866ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i0  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/lastSym_55  (to clkDivider_clko +)
-
-   Delay:               4.529ns  (22.4% logic, 77.6% route), 6 logic levels.
-
- Constraint Details:
-
-      4.529ns physical path delay clockDivider_0/SLICE_69 to fskModule_0/SLICE_150 exceeds
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.045ns delay constraint less
-     -2.338ns skew and
-     -0.085ns CE_SET requirement (totaling 2.468ns) by 2.061ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_69 to fskModule_0/SLICE_150:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.309    R61C90A.CLK to     R61C90A.Q1 clockDivider_0/SLICE_69 (from top_clk_c)
-ROUTE         2     0.832     R61C90A.Q1 to     R62C90A.B1 clockDivider_0/lockCounter_0
-CTOF_DEL    ---     0.141     R62C90A.B1 to     R62C90A.F1 clockDivider_0/SLICE_142
-ROUTE         1     0.374     R62C90A.F1 to     R62C90A.B0 clockDivider_0/n2829
-CTOF_DEL    ---     0.141     R62C90A.B0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.729     R62C90A.F0 to     R69C90C.A1 clockDivider_0/n3208
-CTOF_DEL    ---     0.141     R69C90C.A1 to     R69C90C.F1 clockDivider_0/SLICE_133
-ROUTE         6     0.577     R69C90C.F1 to     R69C89C.A0 clockDivider_0/n1921
-CTOF_DEL    ---     0.141     R69C89C.A0 to     R69C89C.F0 SLICE_83
-ROUTE         4     0.597     R69C89C.F0 to     R69C89C.D1 n3211
-CTOF_DEL    ---     0.141     R69C89C.D1 to     R69C89C.F1 SLICE_83
-ROUTE         1     0.406     R69C89C.F1 to     R68C89B.CE fskModule_0/clkDivider_clko_enable_3 (to clkDivider_clko)
-                  --------
-                    4.529   (22.4% logic, 77.6% route), 6 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_69:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R61C90A.CLK top_clk_c
-                  --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
-
-      Destination Clock Path top_clk to fskModule_0/SLICE_150:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R68C89B.CLK clkDivider_clko
-                  --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
-
-
-Error: The following path exceeds requirements by 2.059ns (weighted slack = -114.755ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i0  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/lastSym_55  (to clkDivider_clko +)
-
-   Delay:               4.527ns  (22.4% logic, 77.6% route), 6 logic levels.
-
- Constraint Details:
-
-      4.527ns physical path delay clockDivider_0/SLICE_69 to fskModule_0/SLICE_150 exceeds
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.045ns delay constraint less
-     -2.338ns skew and
-     -0.085ns CE_SET requirement (totaling 2.468ns) by 2.059ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_69 to fskModule_0/SLICE_150:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.309    R61C90A.CLK to     R61C90A.Q1 clockDivider_0/SLICE_69 (from top_clk_c)
-ROUTE         2     0.832     R61C90A.Q1 to     R62C90A.B1 clockDivider_0/lockCounter_0
-CTOF_DEL    ---     0.141     R62C90A.B1 to     R62C90A.F1 clockDivider_0/SLICE_142
-ROUTE         1     0.374     R62C90A.F1 to     R62C90A.B0 clockDivider_0/n2829
-CTOF_DEL    ---     0.141     R62C90A.B0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.728     R62C90A.F0 to     R69C90A.B1 clockDivider_0/n3208
-CTOF_DEL    ---     0.141     R69C90A.B1 to     R69C90A.F1 clockDivider_0/SLICE_134
-ROUTE         6     0.576     R69C90A.F1 to     R69C89C.B0 clockDivider_0/n1920
-CTOF_DEL    ---     0.141     R69C89C.B0 to     R69C89C.F0 SLICE_83
-ROUTE         4     0.597     R69C89C.F0 to     R69C89C.D1 n3211
-CTOF_DEL    ---     0.141     R69C89C.D1 to     R69C89C.F1 SLICE_83
-ROUTE         1     0.406     R69C89C.F1 to     R68C89B.CE fskModule_0/clkDivider_clko_enable_3 (to clkDivider_clko)
-                  --------
-                    4.527   (22.4% logic, 77.6% route), 6 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_69:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R61C90A.CLK top_clk_c
-                  --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
-
-      Destination Clock Path top_clk to fskModule_0/SLICE_150:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R68C89B.CLK clkDivider_clko
-                  --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
-
-
-Error: The following path exceeds requirements by 1.876ns (weighted slack = -104.556ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i0  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/cos_phase_FSM_i4  (to clkDivider_clko +)
-                   FF                        fskModule_0/cos_phase_FSM_i3
-
-   Delay:               4.034ns  (21.6% logic, 78.4% route), 5 logic levels.
-
- Constraint Details:
-
-      4.034ns physical path delay clockDivider_0/SLICE_69 to fskModule_0/SLICE_107 exceeds
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.045ns delay constraint less
-     -2.338ns skew and
-      0.225ns LSR_SET requirement (totaling 2.158ns) by 1.876ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_69 to fskModule_0/SLICE_107:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.309    R61C90A.CLK to     R61C90A.Q1 clockDivider_0/SLICE_69 (from top_clk_c)
-ROUTE         2     0.832     R61C90A.Q1 to     R62C90A.B1 clockDivider_0/lockCounter_0
-CTOF_DEL    ---     0.141     R62C90A.B1 to     R62C90A.F1 clockDivider_0/SLICE_142
-ROUTE         1     0.374     R62C90A.F1 to     R62C90A.B0 clockDivider_0/n2829
-CTOF_DEL    ---     0.141     R62C90A.B0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.729     R62C90A.F0 to     R69C90C.A1 clockDivider_0/n3208
-CTOF_DEL    ---     0.141     R69C90C.A1 to     R69C90C.F1 clockDivider_0/SLICE_133
-ROUTE         6     0.412     R69C90C.F1 to     R69C90A.A0 clockDivider_0/n1921
-CTOF_DEL    ---     0.141     R69C90A.A0 to     R69C90A.F0 clockDivider_0/SLICE_134
-ROUTE         4     0.814     R69C90A.F0 to    R72C91A.LSR n492 (to clkDivider_clko)
-                  --------
-                    4.034   (21.6% logic, 78.4% route), 5 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_69:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R61C90A.CLK top_clk_c
-                  --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
-
-      Destination Clock Path top_clk to fskModule_0/SLICE_107:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R72C91A.CLK clkDivider_clko
-                  --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
-
-
-Error: The following path exceeds requirements by 1.876ns (weighted slack = -104.556ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i0  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/cos_phase_FSM_i5  (to clkDivider_clko +)
-                   FF                        fskModule_0/cos_phase_FSM_i6
-
-   Delay:               4.034ns  (21.6% logic, 78.4% route), 5 logic levels.
-
- Constraint Details:
-
-      4.034ns physical path delay clockDivider_0/SLICE_69 to fskModule_0/SLICE_94 exceeds
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.045ns delay constraint less
-     -2.338ns skew and
-      0.225ns LSR_SET requirement (totaling 2.158ns) by 1.876ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_69 to fskModule_0/SLICE_94:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.309    R61C90A.CLK to     R61C90A.Q1 clockDivider_0/SLICE_69 (from top_clk_c)
-ROUTE         2     0.832     R61C90A.Q1 to     R62C90A.B1 clockDivider_0/lockCounter_0
-CTOF_DEL    ---     0.141     R62C90A.B1 to     R62C90A.F1 clockDivider_0/SLICE_142
-ROUTE         1     0.374     R62C90A.F1 to     R62C90A.B0 clockDivider_0/n2829
-CTOF_DEL    ---     0.141     R62C90A.B0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.729     R62C90A.F0 to     R69C90C.A1 clockDivider_0/n3208
-CTOF_DEL    ---     0.141     R69C90C.A1 to     R69C90C.F1 clockDivider_0/SLICE_133
-ROUTE         6     0.412     R69C90C.F1 to     R69C90A.A0 clockDivider_0/n1921
-CTOF_DEL    ---     0.141     R69C90A.A0 to     R69C90A.F0 clockDivider_0/SLICE_134
-ROUTE         4     0.814     R69C90A.F0 to    R72C91D.LSR n492 (to clkDivider_clko)
-                  --------
-                    4.034   (21.6% logic, 78.4% route), 5 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_69:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R61C90A.CLK top_clk_c
-                  --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
-
-      Destination Clock Path top_clk to fskModule_0/SLICE_94:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R72C91D.CLK clkDivider_clko
-                  --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
-
-
-Error: The following path exceeds requirements by 1.874ns (weighted slack = -104.444ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i0  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/cos_phase_FSM_i4  (to clkDivider_clko +)
-                   FF                        fskModule_0/cos_phase_FSM_i3
-
-   Delay:               4.032ns  (21.7% logic, 78.3% route), 5 logic levels.
-
- Constraint Details:
-
-      4.032ns physical path delay clockDivider_0/SLICE_69 to fskModule_0/SLICE_107 exceeds
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.045ns delay constraint less
-     -2.338ns skew and
-      0.225ns LSR_SET requirement (totaling 2.158ns) by 1.874ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_69 to fskModule_0/SLICE_107:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.309    R61C90A.CLK to     R61C90A.Q1 clockDivider_0/SLICE_69 (from top_clk_c)
-ROUTE         2     0.832     R61C90A.Q1 to     R62C90A.B1 clockDivider_0/lockCounter_0
-CTOF_DEL    ---     0.141     R62C90A.B1 to     R62C90A.F1 clockDivider_0/SLICE_142
-ROUTE         1     0.374     R62C90A.F1 to     R62C90A.B0 clockDivider_0/n2829
-CTOF_DEL    ---     0.141     R62C90A.B0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.728     R62C90A.F0 to     R69C90A.B1 clockDivider_0/n3208
-CTOF_DEL    ---     0.141     R69C90A.B1 to     R69C90A.F1 clockDivider_0/SLICE_134
-ROUTE         6     0.411     R69C90A.F1 to     R69C90A.B0 clockDivider_0/n1920
-CTOF_DEL    ---     0.141     R69C90A.B0 to     R69C90A.F0 clockDivider_0/SLICE_134
-ROUTE         4     0.814     R69C90A.F0 to    R72C91A.LSR n492 (to clkDivider_clko)
-                  --------
-                    4.032   (21.7% logic, 78.3% route), 5 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_69:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R61C90A.CLK top_clk_c
-                  --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
-
-      Destination Clock Path top_clk to fskModule_0/SLICE_107:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R72C91A.CLK clkDivider_clko
-                  --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
-
-
-Error: The following path exceeds requirements by 1.874ns (weighted slack = -104.444ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i0  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/cos_phase_FSM_i5  (to clkDivider_clko +)
-                   FF                        fskModule_0/cos_phase_FSM_i6
-
-   Delay:               4.032ns  (21.7% logic, 78.3% route), 5 logic levels.
-
- Constraint Details:
-
-      4.032ns physical path delay clockDivider_0/SLICE_69 to fskModule_0/SLICE_94 exceeds
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.045ns delay constraint less
-     -2.338ns skew and
-      0.225ns LSR_SET requirement (totaling 2.158ns) by 1.874ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_69 to fskModule_0/SLICE_94:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.309    R61C90A.CLK to     R61C90A.Q1 clockDivider_0/SLICE_69 (from top_clk_c)
-ROUTE         2     0.832     R61C90A.Q1 to     R62C90A.B1 clockDivider_0/lockCounter_0
-CTOF_DEL    ---     0.141     R62C90A.B1 to     R62C90A.F1 clockDivider_0/SLICE_142
-ROUTE         1     0.374     R62C90A.F1 to     R62C90A.B0 clockDivider_0/n2829
-CTOF_DEL    ---     0.141     R62C90A.B0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.728     R62C90A.F0 to     R69C90A.B1 clockDivider_0/n3208
-CTOF_DEL    ---     0.141     R69C90A.B1 to     R69C90A.F1 clockDivider_0/SLICE_134
-ROUTE         6     0.411     R69C90A.F1 to     R69C90A.B0 clockDivider_0/n1920
-CTOF_DEL    ---     0.141     R69C90A.B0 to     R69C90A.F0 clockDivider_0/SLICE_134
-ROUTE         4     0.814     R69C90A.F0 to    R72C91D.LSR n492 (to clkDivider_clko)
-                  --------
-                    4.032   (21.7% logic, 78.3% route), 5 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_69:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R61C90A.CLK top_clk_c
-                  --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
-
-      Destination Clock Path top_clk to fskModule_0/SLICE_94:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R72C91D.CLK clkDivider_clko
-                  --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
-
-
-Error: The following path exceeds requirements by 1.782ns (weighted slack = -99.317ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i4  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/lastSym_55  (to clkDivider_clko +)
-
-   Delay:               4.250ns  (23.9% logic, 76.1% route), 6 logic levels.
-
- Constraint Details:
-
-      4.250ns physical path delay clockDivider_0/SLICE_61 to fskModule_0/SLICE_150 exceeds
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.045ns delay constraint less
-     -2.338ns skew and
-     -0.085ns CE_SET requirement (totaling 2.468ns) by 1.782ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_61 to fskModule_0/SLICE_150:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.309    R61C90C.CLK to     R61C90C.Q1 clockDivider_0/SLICE_61 (from top_clk_c)
-ROUTE         2     0.553     R61C90C.Q1 to     R62C90A.C1 clockDivider_0/lockCounter_4
-CTOF_DEL    ---     0.141     R62C90A.C1 to     R62C90A.F1 clockDivider_0/SLICE_142
-ROUTE         1     0.374     R62C90A.F1 to     R62C90A.B0 clockDivider_0/n2829
-CTOF_DEL    ---     0.141     R62C90A.B0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.729     R62C90A.F0 to     R69C90C.A1 clockDivider_0/n3208
-CTOF_DEL    ---     0.141     R69C90C.A1 to     R69C90C.F1 clockDivider_0/SLICE_133
-ROUTE         6     0.577     R69C90C.F1 to     R69C89C.A0 clockDivider_0/n1921
-CTOF_DEL    ---     0.141     R69C89C.A0 to     R69C89C.F0 SLICE_83
-ROUTE         4     0.597     R69C89C.F0 to     R69C89C.D1 n3211
-CTOF_DEL    ---     0.141     R69C89C.D1 to     R69C89C.F1 SLICE_83
-ROUTE         1     0.406     R69C89C.F1 to     R68C89B.CE fskModule_0/clkDivider_clko_enable_3 (to clkDivider_clko)
-                  --------
-                    4.250   (23.9% logic, 76.1% route), 6 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_61:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R61C90C.CLK top_clk_c
-                  --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
-
-      Destination Clock Path top_clk to fskModule_0/SLICE_150:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R68C89B.CLK clkDivider_clko
-                  --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
-
-
-Error: The following path exceeds requirements by 1.780ns (weighted slack = -99.205ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i4  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/lastSym_55  (to clkDivider_clko +)
-
-   Delay:               4.248ns  (23.9% logic, 76.1% route), 6 logic levels.
-
- Constraint Details:
-
-      4.248ns physical path delay clockDivider_0/SLICE_61 to fskModule_0/SLICE_150 exceeds
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.045ns delay constraint less
-     -2.338ns skew and
-     -0.085ns CE_SET requirement (totaling 2.468ns) by 1.780ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_61 to fskModule_0/SLICE_150:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.309    R61C90C.CLK to     R61C90C.Q1 clockDivider_0/SLICE_61 (from top_clk_c)
-ROUTE         2     0.553     R61C90C.Q1 to     R62C90A.C1 clockDivider_0/lockCounter_4
-CTOF_DEL    ---     0.141     R62C90A.C1 to     R62C90A.F1 clockDivider_0/SLICE_142
-ROUTE         1     0.374     R62C90A.F1 to     R62C90A.B0 clockDivider_0/n2829
-CTOF_DEL    ---     0.141     R62C90A.B0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.728     R62C90A.F0 to     R69C90A.B1 clockDivider_0/n3208
-CTOF_DEL    ---     0.141     R69C90A.B1 to     R69C90A.F1 clockDivider_0/SLICE_134
-ROUTE         6     0.576     R69C90A.F1 to     R69C89C.B0 clockDivider_0/n1920
-CTOF_DEL    ---     0.141     R69C89C.B0 to     R69C89C.F0 SLICE_83
-ROUTE         4     0.597     R69C89C.F0 to     R69C89C.D1 n3211
-CTOF_DEL    ---     0.141     R69C89C.D1 to     R69C89C.F1 SLICE_83
-ROUTE         1     0.406     R69C89C.F1 to     R68C89B.CE fskModule_0/clkDivider_clko_enable_3 (to clkDivider_clko)
-                  --------
-                    4.248   (23.9% logic, 76.1% route), 6 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_61:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R61C90C.CLK top_clk_c
-                  --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
-
-      Destination Clock Path top_clk to fskModule_0/SLICE_150:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R68C89B.CLK clkDivider_clko
-                  --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
-
-
-Error: The following path exceeds requirements by 1.764ns (weighted slack = -98.314ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i6  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/lastSym_55  (to clkDivider_clko +)
-
-   Delay:               4.232ns  (24.0% logic, 76.0% route), 6 logic levels.
-
- Constraint Details:
-
-      4.232ns physical path delay clockDivider_0/SLICE_62 to fskModule_0/SLICE_150 exceeds
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.045ns delay constraint less
-     -2.338ns skew and
-     -0.085ns CE_SET requirement (totaling 2.468ns) by 1.764ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_62 to fskModule_0/SLICE_150:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.309    R61C90D.CLK to     R61C90D.Q1 clockDivider_0/SLICE_62 (from top_clk_c)
-ROUTE         2     0.535     R61C90D.Q1 to     R62C90A.A1 clockDivider_0/lockCounter_6
-CTOF_DEL    ---     0.141     R62C90A.A1 to     R62C90A.F1 clockDivider_0/SLICE_142
-ROUTE         1     0.374     R62C90A.F1 to     R62C90A.B0 clockDivider_0/n2829
-CTOF_DEL    ---     0.141     R62C90A.B0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.729     R62C90A.F0 to     R69C90C.A1 clockDivider_0/n3208
-CTOF_DEL    ---     0.141     R69C90C.A1 to     R69C90C.F1 clockDivider_0/SLICE_133
-ROUTE         6     0.577     R69C90C.F1 to     R69C89C.A0 clockDivider_0/n1921
-CTOF_DEL    ---     0.141     R69C89C.A0 to     R69C89C.F0 SLICE_83
-ROUTE         4     0.597     R69C89C.F0 to     R69C89C.D1 n3211
-CTOF_DEL    ---     0.141     R69C89C.D1 to     R69C89C.F1 SLICE_83
-ROUTE         1     0.406     R69C89C.F1 to     R68C89B.CE fskModule_0/clkDivider_clko_enable_3 (to clkDivider_clko)
-                  --------
-                    4.232   (24.0% logic, 76.0% route), 6 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_62:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R61C90D.CLK top_clk_c
-                  --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
-
-      Destination Clock Path top_clk to fskModule_0/SLICE_150:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R68C89B.CLK clkDivider_clko
-                  --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
-
-
-Error: The following path exceeds requirements by 1.762ns (weighted slack = -98.202ns)
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i6  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/lastSym_55  (to clkDivider_clko +)
-
-   Delay:               4.230ns  (24.0% logic, 76.0% route), 6 logic levels.
-
- Constraint Details:
-
-      4.230ns physical path delay clockDivider_0/SLICE_62 to fskModule_0/SLICE_150 exceeds
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.045ns delay constraint less
-     -2.338ns skew and
-     -0.085ns CE_SET requirement (totaling 2.468ns) by 1.762ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_62 to fskModule_0/SLICE_150:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.309    R61C90D.CLK to     R61C90D.Q1 clockDivider_0/SLICE_62 (from top_clk_c)
-ROUTE         2     0.535     R61C90D.Q1 to     R62C90A.A1 clockDivider_0/lockCounter_6
-CTOF_DEL    ---     0.141     R62C90A.A1 to     R62C90A.F1 clockDivider_0/SLICE_142
-ROUTE         1     0.374     R62C90A.F1 to     R62C90A.B0 clockDivider_0/n2829
-CTOF_DEL    ---     0.141     R62C90A.B0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.728     R62C90A.F0 to     R69C90A.B1 clockDivider_0/n3208
-CTOF_DEL    ---     0.141     R69C90A.B1 to     R69C90A.F1 clockDivider_0/SLICE_134
-ROUTE         6     0.576     R69C90A.F1 to     R69C89C.B0 clockDivider_0/n1920
-CTOF_DEL    ---     0.141     R69C89C.B0 to     R69C89C.F0 SLICE_83
-ROUTE         4     0.597     R69C89C.F0 to     R69C89C.D1 n3211
-CTOF_DEL    ---     0.141     R69C89C.D1 to     R69C89C.F1 SLICE_83
-ROUTE         1     0.406     R69C89C.F1 to     R68C89B.CE fskModule_0/clkDivider_clko_enable_3 (to clkDivider_clko)
-                  --------
-                    4.230   (24.0% logic, 76.0% route), 6 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_62:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R61C90D.CLK top_clk_c
-                  --------
-                    2.341   (18.9% logic, 81.1% route), 1 logic levels.
-
-      Destination Clock Path top_clk to fskModule_0/SLICE_150:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.443         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     1.898       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.310    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     2.028     R59C67A.Q0 to    R68C89B.CLK clkDivider_clko
-                  --------
-                    4.679   (16.1% logic, 83.9% route), 2 logic levels.
-
-Warning:   8.520MHz is the maximum frequency for this preference.
+================================================================================
+Preference: FREQUENCY NET "pll_clko_1" 24.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
 
 Report Summary
 --------------
@@ -1143,82 +1006,54 @@ Report Summary
 Preference                              |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "top_clk_c" 560.224000    |             |             |
-MHz ;                                   |  560.224 MHz|   15.261 MHz|   2 *
+FREQUENCY NET "serial_clk_c" 64.000000  |             |             |
+MHz ;                                   |   64.000 MHz|  215.517 MHz|   5  
                                         |             |             |
-FREQUENCY NET "clkDivider_clko"         |             |             |
-398.724000 MHz ;                        |  398.724 MHz|    8.520 MHz|   6 *
+FREQUENCY NET "top_clk_c" 12.000000 MHz |             |             |
+;                                       |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "pll_clko_1" 24.000000    |             |             |
+MHz ;                                   |            -|            -|   0  
                                         |             |             |
 ----------------------------------------------------------------------------
 
 
-2 preferences(marked by "*" above) not met.
-
-----------------------------------------------------------------------------
-Critical Nets                           |   Loads|  Errors| % of total
-----------------------------------------------------------------------------
-n1926                                   |      14|     518|     50.73%
-                                        |        |        |
-clockDivider_0/n3208                    |       2|     412|     40.35%
-                                        |        |        |
-cout                                    |       1|     294|     28.80%
-                                        |        |        |
-n2627                                   |       1|     294|     28.80%
-                                        |        |        |
-n2626                                   |       1|     266|     26.05%
-                                        |        |        |
-n2625                                   |       1|     238|     23.31%
-                                        |        |        |
-n2624                                   |       1|     210|     20.57%
-                                        |        |        |
-clockDivider_0/n2829                    |       1|     208|     20.37%
-                                        |        |        |
-clockDivider_0/n1920                    |       6|     206|     20.18%
-                                        |        |        |
-clockDivider_0/n1921                    |       6|     206|     20.18%
-                                        |        |        |
-n2623                                   |       1|     182|     17.83%
-                                        |        |        |
-n2622                                   |       1|     154|     15.08%
-                                        |        |        |
-n2621                                   |       1|     126|     12.34%
-                                        |        |        |
-clockDivider_0/n6                       |       1|     104|     10.19%
-                                        |        |        |
-----------------------------------------------------------------------------
+All preferences were met.
 
 
 Clock Domains Analysis
 ------------------------
 
-Found 2 clocks:
+Found 4 clocks:
 
-Clock Domain: top_clk_c   Source: top_clk.PAD   Loads: 42
-   Covered under: FREQUENCY NET "top_clk_c" 560.224000 MHz ;
+Clock Domain: top_clk_c   Source: top_clk.PAD   Loads: 1
+   No transfer within this clock domain is found
 
-   Data transfers from:
-   Clock Domain: clkDivider_clko   Source: clockDivider_0/SLICE_87.Q0
-      Covered under: FREQUENCY NET "top_clk_c" 560.224000 MHz ;   Transfers: 20
-
-Clock Domain: clkDivider_clko   Source: clockDivider_0/SLICE_87.Q0   Loads: 46
-   Covered under: FREQUENCY NET "clkDivider_clko" 398.724000 MHz ;
+Clock Domain: serial_clk_c   Source: my_instance_2/PLLInst_0.CLKOP   Loads: 38
+   Covered under: FREQUENCY NET "serial_clk_c" 64.000000 MHz ;
 
    Data transfers from:
-   Clock Domain: top_clk_c   Source: top_clk.PAD
-      Covered under: FREQUENCY NET "clkDivider_clko" 398.724000 MHz ;   Transfers: 8
+   Clock Domain: clockDivider_clk_4M   Source: clockDivider_0/SLICE_82.Q0
+      Covered under: FREQUENCY NET "serial_clk_c" 64.000000 MHz ;   Transfers: 20
+
+Clock Domain: pll_clko_1   Source: my_instance_1/PLLInst_0.CLKOP   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: clockDivider_clk_4M   Source: clockDivider_0/SLICE_82.Q0   Loads: 47
+   No transfer within this clock domain is found
 
 
 Timing summary (Setup):
 ---------------
 
-Timing errors: 1021  Score: 28894919
-Cumulative negative slack: 28704425
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
 
-Constraints cover 2277 paths, 3 nets, and 988 connections (97.63% coverage)
+Constraints cover 580 paths, 3 nets, and 343 connections (37.28% coverage)
 
 --------------------------------------------------------------------------------
 Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
-Tue Dec 30 04:03:44 2025
+Sun Jan 04 13:02:44 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -1235,7 +1070,7 @@ Device,speed:    LFE5UM5G-85F,m
 Report level:    verbose report, limited to 10 items per preference
 --------------------------------------------------------------------------------
 
-4 potential circuit loops found in timing analysis.
+1 potential circuit loop found in timing analysis.
 BLOCK ASYNCPATHS
 BLOCK RESETPATHS
 --------------------------------------------------------------------------------
@@ -1243,8 +1078,8 @@ BLOCK RESETPATHS
 
 
 ================================================================================
-Preference: FREQUENCY NET "top_clk_c" 560.224000 MHz ;
-            651 items scored, 0 timing errors detected.
+Preference: FREQUENCY NET "serial_clk_c" 64.000000 MHz ;
+            567 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
@@ -1252,1006 +1087,460 @@ Passed: The following path meets requirements by 0.146ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              IQSerializer_0/current_state_FSM_i0  (from top_clk_c -)
-   Destination:    FF         Data in        IQSerializer_0/current_state_FSM_i0  (to top_clk_c -)
+   Source:         FF         Q              IQSerializer_1/ICounter_385__i1  (from serial_clk_c -)
+   Destination:    FF         Data in        IQSerializer_1/ICounter_385__i1  (to serial_clk_c -)
 
    Delay:               0.246ns  (78.9% logic, 21.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.246ns physical path delay IQSerializer_0/SLICE_82 to IQSerializer_0/SLICE_82 meets
+      0.246ns physical path delay IQSerializer_1/SLICE_70 to IQSerializer_1/SLICE_70 meets
       0.100ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling 0.100ns) by 0.146ns
 
  Physical Path Details:
 
-      Data path IQSerializer_0/SLICE_82 to IQSerializer_0/SLICE_82:
+      Data path IQSerializer_1/SLICE_70 to IQSerializer_1/SLICE_70:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.130    R74C89A.CLK to     R74C89A.Q0 IQSerializer_0/SLICE_82 (from top_clk_c)
-ROUTE         4     0.052     R74C89A.Q0 to     R74C89A.D0 IQSerializer_0/next_state_3__N_365
-CTOF_DEL    ---     0.064     R74C89A.D0 to     R74C89A.F0 IQSerializer_0/SLICE_82
-ROUTE         1     0.000     R74C89A.F0 to    R74C89A.DI0 IQSerializer_0/n1742 (to top_clk_c)
+REG_DEL     ---     0.130    R63C42A.CLK to     R63C42A.Q0 IQSerializer_1/SLICE_70 (from serial_clk_c)
+ROUTE         7     0.052     R63C42A.Q0 to     R63C42A.D0 ICounter_1
+CTOF_DEL    ---     0.064     R63C42A.D0 to     R63C42A.F0 IQSerializer_1/SLICE_70
+ROUTE         1     0.000     R63C42A.F0 to    R63C42A.DI0 IQSerializer_1/n24 (to serial_clk_c)
                   --------
                     0.246   (78.9% logic, 21.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to IQSerializer_0/SLICE_82:
+      Source Clock Path my_instance_2/PLLInst_0 to IQSerializer_1/SLICE_70:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R74C89A.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R63C42A.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_82:
+      Destination Clock Path my_instance_2/PLLInst_0 to IQSerializer_1/SLICE_70:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R74C89A.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R63C42A.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 Passed: The following path meets requirements by 0.146ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              IQSerializer_0/ICounter_407__i1  (from top_clk_c -)
-   Destination:    FF         Data in        IQSerializer_0/ICounter_407__i1  (to top_clk_c -)
+   Source:         FF         Q              IQSerializer_1/ICounter_385__i3  (from serial_clk_c -)
+   Destination:    FF         Data in        IQSerializer_1/ICounter_385__i3  (to serial_clk_c -)
 
    Delay:               0.246ns  (78.9% logic, 21.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.246ns physical path delay IQSerializer_0/SLICE_78 to IQSerializer_0/SLICE_78 meets
+      0.246ns physical path delay SLICE_71 to SLICE_71 meets
       0.100ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling 0.100ns) by 0.146ns
 
  Physical Path Details:
 
-      Data path IQSerializer_0/SLICE_78 to IQSerializer_0/SLICE_78:
+      Data path SLICE_71 to SLICE_71:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.130    R73C88A.CLK to     R73C88A.Q0 IQSerializer_0/SLICE_78 (from top_clk_c)
-ROUTE         7     0.052     R73C88A.Q0 to     R73C88A.D0 IQSerializer_0/ICounter_1
-CTOF_DEL    ---     0.064     R73C88A.D0 to     R73C88A.F0 IQSerializer_0/SLICE_78
-ROUTE         1     0.000     R73C88A.F0 to    R73C88A.DI0 IQSerializer_0/n24 (to top_clk_c)
+REG_DEL     ---     0.130    R63C42B.CLK to     R63C42B.Q0 SLICE_71 (from serial_clk_c)
+ROUTE         8     0.052     R63C42B.Q0 to     R63C42B.D0 ICounter_3
+CTOF_DEL    ---     0.064     R63C42B.D0 to     R63C42B.F0 SLICE_71
+ROUTE         1     0.000     R63C42B.F0 to    R63C42B.DI0 n2816 (to serial_clk_c)
                   --------
                     0.246   (78.9% logic, 21.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to IQSerializer_0/SLICE_78:
+      Source Clock Path my_instance_2/PLLInst_0 to SLICE_71:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R73C88A.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R63C42B.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_78:
+      Destination Clock Path my_instance_2/PLLInst_0 to SLICE_71:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R73C88A.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R63C42B.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.147ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              IQSerializer_0/current_state_FSM_i4  (from top_clk_c -)
-   Destination:    FF         Data in        IQSerializer_0/current_state_FSM_i4  (to top_clk_c -)
-
-   Delay:               0.247ns  (78.5% logic, 21.5% route), 2 logic levels.
-
- Constraint Details:
-
-      0.247ns physical path delay IQSerializer_0/SLICE_80 to IQSerializer_0/SLICE_80 meets
-      0.100ns DIN_HLD and
-      0.000ns delay constraint less
-      0.000ns skew requirement (totaling 0.100ns) by 0.147ns
-
- Physical Path Details:
-
-      Data path IQSerializer_0/SLICE_80 to IQSerializer_0/SLICE_80:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.130    R75C89A.CLK to     R75C89A.Q0 IQSerializer_0/SLICE_80 (from top_clk_c)
-ROUTE         4     0.053     R75C89A.Q0 to     R75C89A.D0 IQSerializer_0/next_state_3__N_360
-CTOF_DEL    ---     0.064     R75C89A.D0 to     R75C89A.F0 IQSerializer_0/SLICE_80
-ROUTE         1     0.000     R75C89A.F0 to    R75C89A.DI0 IQSerializer_0/n1720 (to top_clk_c)
-                  --------
-                    0.247   (78.5% logic, 21.5% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to IQSerializer_0/SLICE_80:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R75C89A.CLK top_clk_c
-                  --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_80:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R75C89A.CLK top_clk_c
-                  --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 Passed: The following path meets requirements by 0.153ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              clockDivider_0/clkOut_28  (from top_clk_c +)
-   Destination:    FF         Data in        clockDivider_0/clkOut_28  (to top_clk_c +)
+   Source:         FF         Q              clockDivider_0/clkOut_23  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/clkOut_23  (to serial_clk_c +)
 
    Delay:               0.254ns  (79.9% logic, 20.1% route), 2 logic levels.
 
  Constraint Details:
 
-      0.254ns physical path delay clockDivider_0/SLICE_87 to clockDivider_0/SLICE_87 meets
+      0.254ns physical path delay clockDivider_0/SLICE_82 to clockDivider_0/SLICE_82 meets
       0.101ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling 0.101ns) by 0.153ns
 
  Physical Path Details:
 
-      Data path clockDivider_0/SLICE_87 to clockDivider_0/SLICE_87:
+      Data path clockDivider_0/SLICE_82 to clockDivider_0/SLICE_82:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.139    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87 (from top_clk_c)
-ROUTE        46     0.051     R59C67A.Q0 to     R59C67A.D0 clkDivider_clko
-CTOF_DEL    ---     0.064     R59C67A.D0 to     R59C67A.F0 clockDivider_0/SLICE_87
-ROUTE         1     0.000     R59C67A.F0 to    R59C67A.DI0 clockDivider_0/clkOut_N_62 (to top_clk_c)
+REG_DEL     ---     0.139    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_82 (from serial_clk_c)
+ROUTE        47     0.051     R59C67A.Q0 to     R59C67A.D0 clockDivider_clk_4M
+CTOF_DEL    ---     0.064     R59C67A.D0 to     R59C67A.F0 clockDivider_0/SLICE_82
+ROUTE         1     0.000     R59C67A.F0 to    R59C67A.DI0 clockDivider_0/clkOut_N_64 (to serial_clk_c)
                   --------
                     0.254   (79.9% logic, 20.1% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to clockDivider_0/SLICE_87:
+      Source Clock Path my_instance_2/PLLInst_0 to clockDivider_0/SLICE_82:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R59C67A.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R59C67A.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path top_clk to clockDivider_0/SLICE_87:
+      Destination Clock Path my_instance_2/PLLInst_0 to clockDivider_0/SLICE_82:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R59C67A.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R59C67A.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 Passed: The following path meets requirements by 0.158ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              IQSerializer_0/QCounter_412__i1  (from top_clk_c -)
-   Destination:    FF         Data in        IQSerializer_0/QCounter_412__i1  (to top_clk_c -)
+   Source:         FF         Q              IQSerializer_1/QCounter_387__i3  (from serial_clk_c -)
+   Destination:    FF         Data in        IQSerializer_1/QCounter_387__i3  (to serial_clk_c -)
 
    Delay:               0.258ns  (75.2% logic, 24.8% route), 2 logic levels.
 
  Constraint Details:
 
-      0.258ns physical path delay IQSerializer_0/SLICE_85 to IQSerializer_0/SLICE_85 meets
+      0.258ns physical path delay IQSerializer_1/SLICE_75 to IQSerializer_1/SLICE_75 meets
       0.100ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling 0.100ns) by 0.158ns
 
  Physical Path Details:
 
-      Data path IQSerializer_0/SLICE_85 to IQSerializer_0/SLICE_85:
+      Data path IQSerializer_1/SLICE_75 to IQSerializer_1/SLICE_75:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.130    R74C89C.CLK to     R74C89C.Q0 IQSerializer_0/SLICE_85 (from top_clk_c)
-ROUTE         6     0.064     R74C89C.Q0 to     R74C89C.C0 QCounter_1
-CTOF_DEL    ---     0.064     R74C89C.C0 to     R74C89C.F0 IQSerializer_0/SLICE_85
-ROUTE         1     0.000     R74C89C.F0 to    R74C89C.DI0 IQSerializer_0/n2325 (to top_clk_c)
+REG_DEL     ---     0.130    R64C41D.CLK to     R64C41D.Q0 IQSerializer_1/SLICE_75 (from serial_clk_c)
+ROUTE         5     0.064     R64C41D.Q0 to     R64C41D.C0 IQSerializer_1/QCounter_3
+CTOF_DEL    ---     0.064     R64C41D.C0 to     R64C41D.F0 IQSerializer_1/SLICE_75
+ROUTE         1     0.000     R64C41D.F0 to    R64C41D.DI0 IQSerializer_1/n22 (to serial_clk_c)
                   --------
                     0.258   (75.2% logic, 24.8% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to IQSerializer_0/SLICE_85:
+      Source Clock Path my_instance_2/PLLInst_0 to IQSerializer_1/SLICE_75:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R74C89C.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R64C41D.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_85:
+      Destination Clock Path my_instance_2/PLLInst_0 to IQSerializer_1/SLICE_75:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R74C89C.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R64C41D.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 Passed: The following path meets requirements by 0.158ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              IQSerializer_0/ICounter_407__i3  (from top_clk_c -)
-   Destination:    FF         Data in        IQSerializer_0/ICounter_407__i3  (to top_clk_c -)
+   Source:         FF         Q              IQSerializer_1/QCounter_387__i1  (from serial_clk_c -)
+   Destination:    FF         Data in        IQSerializer_1/QCounter_387__i1  (to serial_clk_c -)
 
    Delay:               0.258ns  (75.2% logic, 24.8% route), 2 logic levels.
 
  Constraint Details:
 
-      0.258ns physical path delay IQSerializer_0/SLICE_79 to IQSerializer_0/SLICE_79 meets
+      0.258ns physical path delay IQSerializer_1/SLICE_74 to IQSerializer_1/SLICE_74 meets
       0.100ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling 0.100ns) by 0.158ns
 
  Physical Path Details:
 
-      Data path IQSerializer_0/SLICE_79 to IQSerializer_0/SLICE_79:
+      Data path IQSerializer_1/SLICE_74 to IQSerializer_1/SLICE_74:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.130    R73C88D.CLK to     R73C88D.Q0 IQSerializer_0/SLICE_79 (from top_clk_c)
-ROUTE         8     0.064     R73C88D.Q0 to     R73C88D.C0 IQSerializer_0/ICounter_3
-CTOF_DEL    ---     0.064     R73C88D.C0 to     R73C88D.F0 IQSerializer_0/SLICE_79
-ROUTE         1     0.000     R73C88D.F0 to    R73C88D.DI0 IQSerializer_0/n2644 (to top_clk_c)
+REG_DEL     ---     0.130    R65C41C.CLK to     R65C41C.Q0 IQSerializer_1/SLICE_74 (from serial_clk_c)
+ROUTE         6     0.064     R65C41C.Q0 to     R65C41C.C0 IQSerializer_1/QCounter_1
+CTOF_DEL    ---     0.064     R65C41C.C0 to     R65C41C.F0 IQSerializer_1/SLICE_74
+ROUTE         1     0.000     R65C41C.F0 to    R65C41C.DI0 IQSerializer_1/n5 (to serial_clk_c)
                   --------
                     0.258   (75.2% logic, 24.8% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to IQSerializer_0/SLICE_79:
+      Source Clock Path my_instance_2/PLLInst_0 to IQSerializer_1/SLICE_74:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R73C88D.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R65C41C.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_79:
+      Destination Clock Path my_instance_2/PLLInst_0 to IQSerializer_1/SLICE_74:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R73C88D.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R65C41C.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.170ns
+Passed: The following path meets requirements by 0.203ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              cnt2_401__i25  (from top_clk_c +)
-   Destination:    FF         Data in        LED7_8  (to top_clk_c +)
+   Source:         FF         Q              clockDivider_0/lockCounter_381__i7  (from serial_clk_c +)
+   Destination:    FF         Data in        clockDivider_0/clkLock_25  (to serial_clk_c +)
 
-   Delay:               0.270ns  (51.5% logic, 48.5% route), 1 logic levels.
+   Delay:               0.254ns  (54.7% logic, 45.3% route), 1 logic levels.
 
  Constraint Details:
 
-      0.270ns physical path delay SLICE_24 to SLICE_84 meets
-      0.100ns M_HLD and
+      0.254ns physical path delay clockDivider_0/SLICE_51 to clockDivider_0/SLICE_81 meets
+      0.051ns CE_HLD and
       0.000ns delay constraint less
-      0.000ns skew requirement (totaling 0.100ns) by 0.170ns
+      0.000ns skew requirement (totaling 0.051ns) by 0.203ns
 
  Physical Path Details:
 
-      Data path SLICE_24 to SLICE_84:
+      Data path clockDivider_0/SLICE_51 to clockDivider_0/SLICE_81:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.139    R3C114B.CLK to     R3C114B.Q0 SLICE_24 (from top_clk_c)
-ROUTE         2     0.131     R3C114B.Q0 to     R3C114C.M0 cnt2_25 (to top_clk_c)
+REG_DEL     ---     0.139    R54C47A.CLK to     R54C47A.Q0 clockDivider_0/SLICE_51 (from serial_clk_c)
+ROUTE         2     0.115     R54C47A.Q0 to     R54C47C.CE clockDivider_0/lockCounter_7 (to serial_clk_c)
                   --------
-                    0.270   (51.5% logic, 48.5% route), 1 logic levels.
+                    0.254   (54.7% logic, 45.3% route), 1 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to SLICE_24:
+      Source Clock Path my_instance_2/PLLInst_0 to clockDivider_0/SLICE_51:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R3C114B.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R54C47A.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path top_clk to SLICE_84:
+      Destination Clock Path my_instance_2/PLLInst_0 to clockDivider_0/SLICE_81:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R3C114C.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R54C47C.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
 
-Passed: The following path meets requirements by 0.205ns
+Passed: The following path meets requirements by 0.209ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              IQSerializer_0/ICounter_407__i2  (from top_clk_c -)
-   Destination:    FF         Data in        IQSerializer_0/ICounter_407__i3  (to top_clk_c -)
+   Source:         FF         Q              IQSerializer_1/QCounter_387__i1  (from serial_clk_c -)
+   Destination:    FF         Data in        IQSerializer_1/QCounter_387__i2  (to serial_clk_c -)
 
-   Delay:               0.305ns  (63.3% logic, 36.7% route), 2 logic levels.
+   Delay:               0.309ns  (62.8% logic, 37.2% route), 2 logic levels.
 
  Constraint Details:
 
-      0.305ns physical path delay IQSerializer_0/SLICE_78 to IQSerializer_0/SLICE_79 meets
+      0.309ns physical path delay IQSerializer_1/SLICE_74 to IQSerializer_1/SLICE_74 meets
       0.100ns DIN_HLD and
       0.000ns delay constraint less
-      0.000ns skew requirement (totaling 0.100ns) by 0.205ns
+      0.000ns skew requirement (totaling 0.100ns) by 0.209ns
 
  Physical Path Details:
 
-      Data path IQSerializer_0/SLICE_78 to IQSerializer_0/SLICE_79:
+      Data path IQSerializer_1/SLICE_74 to IQSerializer_1/SLICE_74:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.129    R73C88A.CLK to     R73C88A.Q1 IQSerializer_0/SLICE_78 (from top_clk_c)
-ROUTE         6     0.112     R73C88A.Q1 to     R73C88D.D0 IQSerializer_0/ICounter_2
-CTOF_DEL    ---     0.064     R73C88D.D0 to     R73C88D.F0 IQSerializer_0/SLICE_79
-ROUTE         1     0.000     R73C88D.F0 to    R73C88D.DI0 IQSerializer_0/n2644 (to top_clk_c)
+REG_DEL     ---     0.130    R65C41C.CLK to     R65C41C.Q0 IQSerializer_1/SLICE_74 (from serial_clk_c)
+ROUTE         6     0.115     R65C41C.Q0 to     R65C41C.D1 IQSerializer_1/QCounter_1
+CTOF_DEL    ---     0.064     R65C41C.D1 to     R65C41C.F1 IQSerializer_1/SLICE_74
+ROUTE         1     0.000     R65C41C.F1 to    R65C41C.DI1 IQSerializer_1/n2091 (to serial_clk_c)
                   --------
-                    0.305   (63.3% logic, 36.7% route), 2 logic levels.
+                    0.309   (62.8% logic, 37.2% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to IQSerializer_0/SLICE_78:
+      Source Clock Path my_instance_2/PLLInst_0 to IQSerializer_1/SLICE_74:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R73C88A.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R65C41C.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_79:
+      Destination Clock Path my_instance_2/PLLInst_0 to IQSerializer_1/SLICE_74:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R73C88D.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R65C41C.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.210ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              IQSerializer_1/current_state_FSM_i0  (from serial_clk_c -)
+   Destination:    FF         Data in        IQSerializer_1/current_state_FSM_i0  (to serial_clk_c -)
+
+   Delay:               0.310ns  (62.3% logic, 37.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.310ns physical path delay IQSerializer_1/SLICE_78 to IQSerializer_1/SLICE_78 meets
+      0.100ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.100ns) by 0.210ns
+
+ Physical Path Details:
+
+      Data path IQSerializer_1/SLICE_78 to IQSerializer_1/SLICE_78:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.129    R63C41B.CLK to     R63C41B.Q1 IQSerializer_1/SLICE_78 (from serial_clk_c)
+ROUTE         4     0.117     R63C41B.Q1 to     R63C41B.D1 IQSerializer_1/next_state_3__N_379
+CTOF_DEL    ---     0.064     R63C41B.D1 to     R63C41B.F1 IQSerializer_1/SLICE_78
+ROUTE         1     0.000     R63C41B.F1 to    R63C41B.DI1 IQSerializer_1/n1954 (to serial_clk_c)
+                  --------
+                    0.310   (62.3% logic, 37.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_instance_2/PLLInst_0 to IQSerializer_1/SLICE_78:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R63C41B.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_instance_2/PLLInst_0 to IQSerializer_1/SLICE_78:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R63C41B.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+Passed: The following path meets requirements by 0.210ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              IQSerializer_1/current_state_FSM_i0  (from serial_clk_c -)
+   Destination:    FF         Data in        IQSerializer_1/current_state_FSM_i3  (to serial_clk_c -)
+
+   Delay:               0.310ns  (62.3% logic, 37.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.310ns physical path delay IQSerializer_1/SLICE_78 to IQSerializer_1/SLICE_77 meets
+      0.100ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling 0.100ns) by 0.210ns
+
+ Physical Path Details:
+
+      Data path IQSerializer_1/SLICE_78 to IQSerializer_1/SLICE_77:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.129    R63C41B.CLK to     R63C41B.Q1 IQSerializer_1/SLICE_78 (from serial_clk_c)
+ROUTE         4     0.117     R63C41B.Q1 to     R63C41A.D0 IQSerializer_1/next_state_3__N_379
+CTOF_DEL    ---     0.064     R63C41A.D0 to     R63C41A.F0 IQSerializer_1/SLICE_77
+ROUTE         1     0.000     R63C41A.F0 to    R63C41A.DI0 IQSerializer_1/n352 (to serial_clk_c)
+                  --------
+                    0.310   (62.3% logic, 37.7% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      Source Clock Path my_instance_2/PLLInst_0 to IQSerializer_1/SLICE_78:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R63C41B.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
+
+      Destination Clock Path my_instance_2/PLLInst_0 to IQSerializer_1/SLICE_77:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R63C41A.CLK serial_clk_c
+                  --------
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 Passed: The following path meets requirements by 0.215ns
 
  Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
 
-   Source:         FF         Q              IQSerializer_0/current_state_FSM_i4  (from top_clk_c -)
-   Destination:    FF         Data in        IQSerializer_0/DEDFF_0/neg_edge_15  (to top_clk_c -)
+   Source:         FF         Q              IQSerializer_1/current_state_FSM_i3  (from serial_clk_c -)
+   Destination:    FF         Data in        IQSerializer_1/current_state_FSM_i2  (to serial_clk_c -)
 
    Delay:               0.315ns  (61.6% logic, 38.4% route), 2 logic levels.
 
  Constraint Details:
 
-      0.315ns physical path delay IQSerializer_0/SLICE_80 to IQSerializer_0/SLICE_76 meets
+      0.315ns physical path delay IQSerializer_1/SLICE_77 to IQSerializer_1/SLICE_77 meets
       0.100ns DIN_HLD and
       0.000ns delay constraint less
       0.000ns skew requirement (totaling 0.100ns) by 0.215ns
 
  Physical Path Details:
 
-      Data path IQSerializer_0/SLICE_80 to IQSerializer_0/SLICE_76:
+      Data path IQSerializer_1/SLICE_77 to IQSerializer_1/SLICE_77:
 
    Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.130    R75C89A.CLK to     R75C89A.Q0 IQSerializer_0/SLICE_80 (from top_clk_c)
-ROUTE         4     0.121     R75C89A.Q0 to     R74C89B.D0 IQSerializer_0/next_state_3__N_360
-CTOF_DEL    ---     0.064     R74C89B.D0 to     R74C89B.F0 IQSerializer_0/SLICE_76
-ROUTE         1     0.000     R74C89B.F0 to    R74C89B.DI0 IQSerializer_0/DEDFF_0/Q2 (to top_clk_c)
+REG_DEL     ---     0.130    R63C41A.CLK to     R63C41A.Q0 IQSerializer_1/SLICE_77 (from serial_clk_c)
+ROUTE         3     0.121     R63C41A.Q0 to     R63C41A.D1 IQSerializer_1/next_state_3__N_376
+CTOF_DEL    ---     0.064     R63C41A.D1 to     R63C41A.F1 IQSerializer_1/SLICE_77
+ROUTE         1     0.000     R63C41A.F1 to    R63C41A.DI1 IQSerializer_1/n1936 (to serial_clk_c)
                   --------
                     0.315   (61.6% logic, 38.4% route), 2 logic levels.
 
  Clock Skew Details: 
 
-      Source Clock Path top_clk to IQSerializer_0/SLICE_80:
+      Source Clock Path my_instance_2/PLLInst_0 to IQSerializer_1/SLICE_77:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R75C89A.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R63C41A.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_76:
+      Destination Clock Path my_instance_2/PLLInst_0 to IQSerializer_1/SLICE_77:
 
    Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R74C89B.CLK top_clk_c
+ROUTE        38     0.680  PLL_BL0.CLKOP to    R63C41A.CLK serial_clk_c
                   --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
-
-
-Passed: The following path meets requirements by 0.217ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              IQSerializer_0/ICounter_407__i1  (from top_clk_c -)
-   Destination:    FF         Data in        IQSerializer_0/current_state_FSM_i1  (to top_clk_c -)
-
-   Delay:               0.317ns  (61.2% logic, 38.8% route), 2 logic levels.
-
- Constraint Details:
-
-      0.317ns physical path delay IQSerializer_0/SLICE_78 to IQSerializer_0/SLICE_81 meets
-      0.100ns DIN_HLD and
-      0.000ns delay constraint less
-      0.000ns skew requirement (totaling 0.100ns) by 0.217ns
-
- Physical Path Details:
-
-      Data path IQSerializer_0/SLICE_78 to IQSerializer_0/SLICE_81:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.130    R73C88A.CLK to     R73C88A.Q0 IQSerializer_0/SLICE_78 (from top_clk_c)
-ROUTE         7     0.123     R73C88A.Q0 to     R73C89D.D1 IQSerializer_0/ICounter_1
-CTOF_DEL    ---     0.064     R73C89D.D1 to     R73C89D.F1 IQSerializer_0/SLICE_81
-ROUTE         1     0.000     R73C89D.F1 to    R73C89D.DI1 IQSerializer_0/n343 (to top_clk_c)
-                  --------
-                    0.317   (61.2% logic, 38.8% route), 2 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to IQSerializer_0/SLICE_78:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R73C88A.CLK top_clk_c
-                  --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
-
-      Destination Clock Path top_clk to IQSerializer_0/SLICE_81:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-ROUTE        42     0.705       G3.PADDI to    R73C89D.CLK top_clk_c
-                  --------
-                    0.705   (0.0% logic, 100.0% route), 0 logic levels.
+                    0.680   (0.0% logic, 100.0% route), 0 logic levels.
 
 
 ================================================================================
-Preference: FREQUENCY NET "clkDivider_clko" 398.724000 MHz ;
-            1613 items scored, 5 timing errors detected.
+Preference: FREQUENCY NET "top_clk_c" 12.000000 MHz ;
+            0 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Error: The following path exceeds requirements by 0.063ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i2  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/firstFlag_56  (to clkDivider_clko +)
-
-   Delay:               1.022ns  (32.3% logic, 67.7% route), 4 logic levels.
-
- Constraint Details:
-
-      1.022ns physical path delay clockDivider_0/SLICE_60 to SLICE_89 exceeds
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.101ns DIN_HLD and
-      0.000ns delay constraint less
-     -0.984ns skew requirement (totaling 1.085ns) by 0.063ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_60 to SLICE_89:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.138    R61C90B.CLK to     R61C90B.Q1 clockDivider_0/SLICE_60 (from top_clk_c)
-ROUTE         2     0.184     R61C90B.Q1 to     R62C90A.D0 clockDivider_0/lockCounter_2
-CTOF_DEL    ---     0.064     R62C90A.D0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.292     R62C90A.F0 to     R69C90C.A1 clockDivider_0/n3208
-CTOF_DEL    ---     0.064     R69C90C.A1 to     R69C90C.F1 clockDivider_0/SLICE_133
-ROUTE         6     0.213     R69C90C.F1 to     R69C89A.A0 clockDivider_0/n1921
-CTOF_DEL    ---     0.064     R69C89A.A0 to     R69C89A.F0 SLICE_89
-ROUTE         3     0.003     R69C89A.F0 to    R69C89A.DI0 n3210 (to clkDivider_clko)
-                  --------
-                    1.022   (32.3% logic, 67.7% route), 4 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_60:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R61C90B.CLK top_clk_c
-                  --------
-                    0.783   (10.0% logic, 90.0% route), 1 logic levels.
-
-      Destination Clock Path top_clk to SLICE_89:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.165    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     0.819     R59C67A.Q0 to    R69C89A.CLK clkDivider_clko
-                  --------
-                    1.767   (13.8% logic, 86.2% route), 2 logic levels.
-
-
-Error: The following path exceeds requirements by 0.062ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i2  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/start_57  (to clkDivider_clko +)
-
-   Delay:               1.023ns  (32.3% logic, 67.7% route), 4 logic levels.
-
- Constraint Details:
-
-      1.023ns physical path delay clockDivider_0/SLICE_60 to SLICE_83 exceeds
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.101ns DIN_HLD and
-      0.000ns delay constraint less
-     -0.984ns skew requirement (totaling 1.085ns) by 0.062ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_60 to SLICE_83:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.138    R61C90B.CLK to     R61C90B.Q1 clockDivider_0/SLICE_60 (from top_clk_c)
-ROUTE         2     0.184     R61C90B.Q1 to     R62C90A.D0 clockDivider_0/lockCounter_2
-CTOF_DEL    ---     0.064     R62C90A.D0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.292     R62C90A.F0 to     R69C90C.A1 clockDivider_0/n3208
-CTOF_DEL    ---     0.064     R69C90C.A1 to     R69C90C.F1 clockDivider_0/SLICE_133
-ROUTE         6     0.213     R69C90C.F1 to     R69C89C.A0 clockDivider_0/n1921
-CTOF_DEL    ---     0.064     R69C89C.A0 to     R69C89C.F0 SLICE_83
-ROUTE         4     0.004     R69C89C.F0 to    R69C89C.DI0 n3211 (to clkDivider_clko)
-                  --------
-                    1.023   (32.3% logic, 67.7% route), 4 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_60:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R61C90B.CLK top_clk_c
-                  --------
-                    0.783   (10.0% logic, 90.0% route), 1 logic levels.
-
-      Destination Clock Path top_clk to SLICE_83:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.165    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     0.819     R59C67A.Q0 to    R69C89C.CLK clkDivider_clko
-                  --------
-                    1.767   (13.8% logic, 86.2% route), 2 logic levels.
-
-
-Error: The following path exceeds requirements by 0.053ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i2  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/firstFlag_56  (to clkDivider_clko +)
-
-   Delay:               1.032ns  (32.0% logic, 68.0% route), 4 logic levels.
-
- Constraint Details:
-
-      1.032ns physical path delay clockDivider_0/SLICE_60 to SLICE_89 exceeds
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.101ns DIN_HLD and
-      0.000ns delay constraint less
-     -0.984ns skew requirement (totaling 1.085ns) by 0.053ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_60 to SLICE_89:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.138    R61C90B.CLK to     R61C90B.Q1 clockDivider_0/SLICE_60 (from top_clk_c)
-ROUTE         2     0.184     R61C90B.Q1 to     R62C90A.D0 clockDivider_0/lockCounter_2
-CTOF_DEL    ---     0.064     R62C90A.D0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.297     R62C90A.F0 to     R69C90A.B1 clockDivider_0/n3208
-CTOF_DEL    ---     0.064     R69C90A.B1 to     R69C90A.F1 clockDivider_0/SLICE_134
-ROUTE         6     0.218     R69C90A.F1 to     R69C89A.B0 clockDivider_0/n1920
-CTOF_DEL    ---     0.064     R69C89A.B0 to     R69C89A.F0 SLICE_89
-ROUTE         3     0.003     R69C89A.F0 to    R69C89A.DI0 n3210 (to clkDivider_clko)
-                  --------
-                    1.032   (32.0% logic, 68.0% route), 4 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_60:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R61C90B.CLK top_clk_c
-                  --------
-                    0.783   (10.0% logic, 90.0% route), 1 logic levels.
-
-      Destination Clock Path top_clk to SLICE_89:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.165    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     0.819     R59C67A.Q0 to    R69C89A.CLK clkDivider_clko
-                  --------
-                    1.767   (13.8% logic, 86.2% route), 2 logic levels.
-
-
-Error: The following path exceeds requirements by 0.052ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i2  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/start_57  (to clkDivider_clko +)
-
-   Delay:               1.033ns  (31.9% logic, 68.1% route), 4 logic levels.
-
- Constraint Details:
-
-      1.033ns physical path delay clockDivider_0/SLICE_60 to SLICE_83 exceeds
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.101ns DIN_HLD and
-      0.000ns delay constraint less
-     -0.984ns skew requirement (totaling 1.085ns) by 0.052ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_60 to SLICE_83:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.138    R61C90B.CLK to     R61C90B.Q1 clockDivider_0/SLICE_60 (from top_clk_c)
-ROUTE         2     0.184     R61C90B.Q1 to     R62C90A.D0 clockDivider_0/lockCounter_2
-CTOF_DEL    ---     0.064     R62C90A.D0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.297     R62C90A.F0 to     R69C90A.B1 clockDivider_0/n3208
-CTOF_DEL    ---     0.064     R69C90A.B1 to     R69C90A.F1 clockDivider_0/SLICE_134
-ROUTE         6     0.218     R69C90A.F1 to     R69C89C.B0 clockDivider_0/n1920
-CTOF_DEL    ---     0.064     R69C89C.B0 to     R69C89C.F0 SLICE_83
-ROUTE         4     0.004     R69C89C.F0 to    R69C89C.DI0 n3211 (to clkDivider_clko)
-                  --------
-                    1.033   (31.9% logic, 68.1% route), 4 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_60:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R61C90B.CLK top_clk_c
-                  --------
-                    0.783   (10.0% logic, 90.0% route), 1 logic levels.
-
-      Destination Clock Path top_clk to SLICE_83:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.165    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     0.819     R59C67A.Q0 to    R69C89C.CLK clkDivider_clko
-                  --------
-                    1.767   (13.8% logic, 86.2% route), 2 logic levels.
-
-
-Error: The following path exceeds requirements by 0.001ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i5  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/firstFlag_56  (to clkDivider_clko +)
-
-   Delay:               1.084ns  (36.4% logic, 63.6% route), 5 logic levels.
-
- Constraint Details:
-
-      1.084ns physical path delay clockDivider_0/SLICE_62 to SLICE_89 exceeds
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.101ns DIN_HLD and
-      0.000ns delay constraint less
-     -0.984ns skew requirement (totaling 1.085ns) by 0.001ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_62 to SLICE_89:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.139    R61C90D.CLK to     R61C90D.Q0 clockDivider_0/SLICE_62 (from top_clk_c)
-ROUTE         2     0.119     R61C90D.Q0 to     R62C90C.D0 clockDivider_0/lockCounter_5
-CTOF_DEL    ---     0.064     R62C90C.D0 to     R62C90C.F0 clockDivider_0/SLICE_148
-ROUTE         1     0.062     R62C90C.F0 to     R62C90A.C0 clockDivider_0/n6
-CTOF_DEL    ---     0.064     R62C90A.C0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.292     R62C90A.F0 to     R69C90C.A1 clockDivider_0/n3208
-CTOF_DEL    ---     0.064     R69C90C.A1 to     R69C90C.F1 clockDivider_0/SLICE_133
-ROUTE         6     0.213     R69C90C.F1 to     R69C89A.A0 clockDivider_0/n1921
-CTOF_DEL    ---     0.064     R69C89A.A0 to     R69C89A.F0 SLICE_89
-ROUTE         3     0.003     R69C89A.F0 to    R69C89A.DI0 n3210 (to clkDivider_clko)
-                  --------
-                    1.084   (36.4% logic, 63.6% route), 5 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_62:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R61C90D.CLK top_clk_c
-                  --------
-                    0.783   (10.0% logic, 90.0% route), 1 logic levels.
-
-      Destination Clock Path top_clk to SLICE_89:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.165    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     0.819     R59C67A.Q0 to    R69C89A.CLK clkDivider_clko
-                  --------
-                    1.767   (13.8% logic, 86.2% route), 2 logic levels.
-
-
-Passed: The following path meets requirements by 0.000ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i5  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/start_57  (to clkDivider_clko +)
-
-   Delay:               1.085ns  (36.4% logic, 63.6% route), 5 logic levels.
-
- Constraint Details:
-
-      1.085ns physical path delay clockDivider_0/SLICE_62 to SLICE_83 meets
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.101ns DIN_HLD and
-      0.000ns delay constraint less
-     -0.984ns skew requirement (totaling 1.085ns) by 0.000ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_62 to SLICE_83:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.139    R61C90D.CLK to     R61C90D.Q0 clockDivider_0/SLICE_62 (from top_clk_c)
-ROUTE         2     0.119     R61C90D.Q0 to     R62C90C.D0 clockDivider_0/lockCounter_5
-CTOF_DEL    ---     0.064     R62C90C.D0 to     R62C90C.F0 clockDivider_0/SLICE_148
-ROUTE         1     0.062     R62C90C.F0 to     R62C90A.C0 clockDivider_0/n6
-CTOF_DEL    ---     0.064     R62C90A.C0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.292     R62C90A.F0 to     R69C90C.A1 clockDivider_0/n3208
-CTOF_DEL    ---     0.064     R69C90C.A1 to     R69C90C.F1 clockDivider_0/SLICE_133
-ROUTE         6     0.213     R69C90C.F1 to     R69C89C.A0 clockDivider_0/n1921
-CTOF_DEL    ---     0.064     R69C89C.A0 to     R69C89C.F0 SLICE_83
-ROUTE         4     0.004     R69C89C.F0 to    R69C89C.DI0 n3211 (to clkDivider_clko)
-                  --------
-                    1.085   (36.4% logic, 63.6% route), 5 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_62:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R61C90D.CLK top_clk_c
-                  --------
-                    0.783   (10.0% logic, 90.0% route), 1 logic levels.
-
-      Destination Clock Path top_clk to SLICE_83:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.165    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     0.819     R59C67A.Q0 to    R69C89C.CLK clkDivider_clko
-                  --------
-                    1.767   (13.8% logic, 86.2% route), 2 logic levels.
-
-
-Passed: The following path meets requirements by 0.009ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i5  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/firstFlag_56  (to clkDivider_clko +)
-
-   Delay:               1.094ns  (36.1% logic, 63.9% route), 5 logic levels.
-
- Constraint Details:
-
-      1.094ns physical path delay clockDivider_0/SLICE_62 to SLICE_89 meets
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.101ns DIN_HLD and
-      0.000ns delay constraint less
-     -0.984ns skew requirement (totaling 1.085ns) by 0.009ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_62 to SLICE_89:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.139    R61C90D.CLK to     R61C90D.Q0 clockDivider_0/SLICE_62 (from top_clk_c)
-ROUTE         2     0.119     R61C90D.Q0 to     R62C90C.D0 clockDivider_0/lockCounter_5
-CTOF_DEL    ---     0.064     R62C90C.D0 to     R62C90C.F0 clockDivider_0/SLICE_148
-ROUTE         1     0.062     R62C90C.F0 to     R62C90A.C0 clockDivider_0/n6
-CTOF_DEL    ---     0.064     R62C90A.C0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.297     R62C90A.F0 to     R69C90A.B1 clockDivider_0/n3208
-CTOF_DEL    ---     0.064     R69C90A.B1 to     R69C90A.F1 clockDivider_0/SLICE_134
-ROUTE         6     0.218     R69C90A.F1 to     R69C89A.B0 clockDivider_0/n1920
-CTOF_DEL    ---     0.064     R69C89A.B0 to     R69C89A.F0 SLICE_89
-ROUTE         3     0.003     R69C89A.F0 to    R69C89A.DI0 n3210 (to clkDivider_clko)
-                  --------
-                    1.094   (36.1% logic, 63.9% route), 5 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_62:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R61C90D.CLK top_clk_c
-                  --------
-                    0.783   (10.0% logic, 90.0% route), 1 logic levels.
-
-      Destination Clock Path top_clk to SLICE_89:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.165    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     0.819     R59C67A.Q0 to    R69C89A.CLK clkDivider_clko
-                  --------
-                    1.767   (13.8% logic, 86.2% route), 2 logic levels.
-
-
-Passed: The following path meets requirements by 0.010ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i5  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/start_57  (to clkDivider_clko +)
-
-   Delay:               1.095ns  (36.1% logic, 63.9% route), 5 logic levels.
-
- Constraint Details:
-
-      1.095ns physical path delay clockDivider_0/SLICE_62 to SLICE_83 meets
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.101ns DIN_HLD and
-      0.000ns delay constraint less
-     -0.984ns skew requirement (totaling 1.085ns) by 0.010ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_62 to SLICE_83:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.139    R61C90D.CLK to     R61C90D.Q0 clockDivider_0/SLICE_62 (from top_clk_c)
-ROUTE         2     0.119     R61C90D.Q0 to     R62C90C.D0 clockDivider_0/lockCounter_5
-CTOF_DEL    ---     0.064     R62C90C.D0 to     R62C90C.F0 clockDivider_0/SLICE_148
-ROUTE         1     0.062     R62C90C.F0 to     R62C90A.C0 clockDivider_0/n6
-CTOF_DEL    ---     0.064     R62C90A.C0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.297     R62C90A.F0 to     R69C90A.B1 clockDivider_0/n3208
-CTOF_DEL    ---     0.064     R69C90A.B1 to     R69C90A.F1 clockDivider_0/SLICE_134
-ROUTE         6     0.218     R69C90A.F1 to     R69C89C.B0 clockDivider_0/n1920
-CTOF_DEL    ---     0.064     R69C89C.B0 to     R69C89C.F0 SLICE_83
-ROUTE         4     0.004     R69C89C.F0 to    R69C89C.DI0 n3211 (to clkDivider_clko)
-                  --------
-                    1.095   (36.1% logic, 63.9% route), 5 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_62:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R61C90D.CLK top_clk_c
-                  --------
-                    0.783   (10.0% logic, 90.0% route), 1 logic levels.
-
-      Destination Clock Path top_clk to SLICE_83:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.165    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     0.819     R59C67A.Q0 to    R69C89C.CLK clkDivider_clko
-                  --------
-                    1.767   (13.8% logic, 86.2% route), 2 logic levels.
-
-
-Passed: The following path meets requirements by 0.011ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i1  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/firstFlag_56  (to clkDivider_clko +)
-
-   Delay:               1.096ns  (36.0% logic, 64.0% route), 5 logic levels.
-
- Constraint Details:
-
-      1.096ns physical path delay clockDivider_0/SLICE_60 to SLICE_89 meets
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.101ns DIN_HLD and
-      0.000ns delay constraint less
-     -0.984ns skew requirement (totaling 1.085ns) by 0.011ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_60 to SLICE_89:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.139    R61C90B.CLK to     R61C90B.Q0 clockDivider_0/SLICE_60 (from top_clk_c)
-ROUTE         2     0.131     R61C90B.Q0 to     R62C90C.C0 clockDivider_0/lockCounter_1
-CTOF_DEL    ---     0.064     R62C90C.C0 to     R62C90C.F0 clockDivider_0/SLICE_148
-ROUTE         1     0.062     R62C90C.F0 to     R62C90A.C0 clockDivider_0/n6
-CTOF_DEL    ---     0.064     R62C90A.C0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.292     R62C90A.F0 to     R69C90C.A1 clockDivider_0/n3208
-CTOF_DEL    ---     0.064     R69C90C.A1 to     R69C90C.F1 clockDivider_0/SLICE_133
-ROUTE         6     0.213     R69C90C.F1 to     R69C89A.A0 clockDivider_0/n1921
-CTOF_DEL    ---     0.064     R69C89A.A0 to     R69C89A.F0 SLICE_89
-ROUTE         3     0.003     R69C89A.F0 to    R69C89A.DI0 n3210 (to clkDivider_clko)
-                  --------
-                    1.096   (36.0% logic, 64.0% route), 5 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_60:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R61C90B.CLK top_clk_c
-                  --------
-                    0.783   (10.0% logic, 90.0% route), 1 logic levels.
-
-      Destination Clock Path top_clk to SLICE_89:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.165    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     0.819     R59C67A.Q0 to    R69C89A.CLK clkDivider_clko
-                  --------
-                    1.767   (13.8% logic, 86.2% route), 2 logic levels.
-
-
-Passed: The following path meets requirements by 0.012ns
-
- Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
-
-   Source:         FF         Q              clockDivider_0/lockCounter_403__i1  (from top_clk_c +)
-   Destination:    FF         Data in        fskModule_0/start_57  (to clkDivider_clko +)
-
-   Delay:               1.097ns  (36.0% logic, 64.0% route), 5 logic levels.
-
- Constraint Details:
-
-      1.097ns physical path delay clockDivider_0/SLICE_60 to SLICE_83 meets
-      (delay constraint based on source clock period of 1.785ns and destination clock period of 2.508ns)
-      0.101ns DIN_HLD and
-      0.000ns delay constraint less
-     -0.984ns skew requirement (totaling 1.085ns) by 0.012ns
-
- Physical Path Details:
-
-      Data path clockDivider_0/SLICE_60 to SLICE_83:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-REG_DEL     ---     0.139    R61C90B.CLK to     R61C90B.Q0 clockDivider_0/SLICE_60 (from top_clk_c)
-ROUTE         2     0.131     R61C90B.Q0 to     R62C90C.C0 clockDivider_0/lockCounter_1
-CTOF_DEL    ---     0.064     R62C90C.C0 to     R62C90C.F0 clockDivider_0/SLICE_148
-ROUTE         1     0.062     R62C90C.F0 to     R62C90A.C0 clockDivider_0/n6
-CTOF_DEL    ---     0.064     R62C90A.C0 to     R62C90A.F0 clockDivider_0/SLICE_142
-ROUTE         2     0.292     R62C90A.F0 to     R69C90C.A1 clockDivider_0/n3208
-CTOF_DEL    ---     0.064     R69C90C.A1 to     R69C90C.F1 clockDivider_0/SLICE_133
-ROUTE         6     0.213     R69C90C.F1 to     R69C89C.A0 clockDivider_0/n1921
-CTOF_DEL    ---     0.064     R69C89C.A0 to     R69C89C.F0 SLICE_83
-ROUTE         4     0.004     R69C89C.F0 to    R69C89C.DI0 n3211 (to clkDivider_clko)
-                  --------
-                    1.097   (36.0% logic, 64.0% route), 5 logic levels.
-
- Clock Skew Details: 
-
-      Source Clock Path top_clk to clockDivider_0/SLICE_60:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R61C90B.CLK top_clk_c
-                  --------
-                    0.783   (10.0% logic, 90.0% route), 1 logic levels.
-
-      Destination Clock Path top_clk to SLICE_83:
-
-   Name    Fanout   Delay (ns)          Site               Resource
-PADI_DEL    ---     0.078         G3.PAD to       G3.PADDI top_clk
-ROUTE        42     0.705       G3.PADDI to    R59C67A.CLK top_clk_c
-REG_DEL     ---     0.165    R59C67A.CLK to     R59C67A.Q0 clockDivider_0/SLICE_87
-ROUTE        46     0.819     R59C67A.Q0 to    R69C89C.CLK clkDivider_clko
-                  --------
-                    1.767   (13.8% logic, 86.2% route), 2 logic levels.
+================================================================================
+Preference: FREQUENCY NET "pll_clko_1" 24.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
 
 Report Summary
 --------------
@@ -2259,75 +1548,59 @@ Report Summary
 Preference(MIN Delays)                  |   Constraint|       Actual|Levels
 ----------------------------------------------------------------------------
                                         |             |             |
-FREQUENCY NET "top_clk_c" 560.224000    |             |             |
+FREQUENCY NET "serial_clk_c" 64.000000  |             |             |
 MHz ;                                   |     0.000 ns|     0.146 ns|   2  
                                         |             |             |
-FREQUENCY NET "clkDivider_clko"         |             |             |
-398.724000 MHz ;                        |     0.000 ns|    -0.063 ns|   4 *
+FREQUENCY NET "top_clk_c" 12.000000 MHz |             |             |
+;                                       |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "pll_clko_1" 24.000000    |             |             |
+MHz ;                                   |            -|            -|   0  
                                         |             |             |
 ----------------------------------------------------------------------------
 
 
-1 preference(marked by "*" above) not met.
-
-----------------------------------------------------------------------------
-Critical Nets                           |   Loads|  Errors| % of total
-----------------------------------------------------------------------------
-clockDivider_0/n3208                    |       2|       5|    100.00%
-                                        |        |        |
-clockDivider_0/lockCounter_2            |       2|       4|     80.00%
-                                        |        |        |
-clockDivider_0/n1921                    |       6|       3|     60.00%
-                                        |        |        |
-n3210                                   |       3|       3|     60.00%
-                                        |        |        |
-clockDivider_0/n1920                    |       6|       2|     40.00%
-                                        |        |        |
-n3211                                   |       4|       2|     40.00%
-                                        |        |        |
-clockDivider_0/lockCounter_5            |       2|       1|     20.00%
-                                        |        |        |
-clockDivider_0/n6                       |       1|       1|     20.00%
-                                        |        |        |
-----------------------------------------------------------------------------
+All preferences were met.
 
 
 Clock Domains Analysis
 ------------------------
 
-Found 2 clocks:
+Found 4 clocks:
 
-Clock Domain: top_clk_c   Source: top_clk.PAD   Loads: 42
-   Covered under: FREQUENCY NET "top_clk_c" 560.224000 MHz ;
+Clock Domain: top_clk_c   Source: top_clk.PAD   Loads: 1
+   No transfer within this clock domain is found
 
-   Data transfers from:
-   Clock Domain: clkDivider_clko   Source: clockDivider_0/SLICE_87.Q0
-      Covered under: FREQUENCY NET "top_clk_c" 560.224000 MHz ;   Transfers: 20
-
-Clock Domain: clkDivider_clko   Source: clockDivider_0/SLICE_87.Q0   Loads: 46
-   Covered under: FREQUENCY NET "clkDivider_clko" 398.724000 MHz ;
+Clock Domain: serial_clk_c   Source: my_instance_2/PLLInst_0.CLKOP   Loads: 38
+   Covered under: FREQUENCY NET "serial_clk_c" 64.000000 MHz ;
 
    Data transfers from:
-   Clock Domain: top_clk_c   Source: top_clk.PAD
-      Covered under: FREQUENCY NET "clkDivider_clko" 398.724000 MHz ;   Transfers: 8
+   Clock Domain: clockDivider_clk_4M   Source: clockDivider_0/SLICE_82.Q0
+      Covered under: FREQUENCY NET "serial_clk_c" 64.000000 MHz ;   Transfers: 20
+
+Clock Domain: pll_clko_1   Source: my_instance_1/PLLInst_0.CLKOP   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: clockDivider_clk_4M   Source: clockDivider_0/SLICE_82.Q0   Loads: 47
+   No transfer within this clock domain is found
 
 
 Timing summary (Hold):
 ---------------
 
-Timing errors: 5  Score: 231
-Cumulative negative slack: 231
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
 
-Constraints cover 2277 paths, 3 nets, and 988 connections (97.63% coverage)
+Constraints cover 580 paths, 3 nets, and 343 connections (37.28% coverage)
 
 
 
 Timing summary (Setup and Hold):
 ---------------
 
-Timing errors: 1021 (setup), 5 (hold)
-Score: 28894919 (setup), 231 (hold)
-Cumulative negative slack: 28704656 (28704425+231)
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
 --------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------

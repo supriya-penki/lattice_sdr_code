@@ -1,0 +1,3 @@
+Results of NGD DRC are available in pll_try_drc.log.
+WARNING - synthesis: DRC checking was skipped because the -ngo option was used.
+Writing NGD file C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try/pll_try.ngo.

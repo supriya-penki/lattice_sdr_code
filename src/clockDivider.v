@@ -1,3 +1,16 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Company: <Name>
+//
+// File: clockDivider.v
+// File history:
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//
+// Description: 
+// Author: <Mehrdad Hessar>
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
 module clockDivider(
 input       clk,
 input	    pll_lock,
@@ -20,6 +33,7 @@ always @(posedge clk) begin
         counter     <= 8'd0;
         clkOut      <= 1'b0;
         lockCounter <= 8'd0;
+        clkLock     <= 1'b0;
     end else begin
         counter     <= counter + 8'd1;
         if (counter == (maxWait-1)) begin
@@ -30,19 +44,10 @@ always @(posedge clk) begin
         end
 
         lockCounter <= lockCounter + 8'd1;
+        if (lockCounter >= 4*2*2*maxWait)
+            clkLock <= 1'b1;
+        else
+            clkLock <= clkLock;
     end
 end
-
-always @(*) begin
-	if (pll_lock == 1'b0) begin
-		clkLock     <= 1'b0;
-	end else begin
-		if (lockCounter > 4*2*2*maxWait) begin
-			clkLock <= 1'b1;
-		end else begin
-			clkLock <= clkLock;
-		end
-	end
-end
-
 endmodule

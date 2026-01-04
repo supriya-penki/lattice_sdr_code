@@ -36,6 +36,12 @@
         <Source name="src/sinModule.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
+        <Source name="src/bleDefines.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/radioDefines.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
         <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>

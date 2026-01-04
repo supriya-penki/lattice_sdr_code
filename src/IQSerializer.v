@@ -18,10 +18,9 @@ reg [3:0] current_state;
 reg [3:0] next_state;
 parameter [3:0] Init0 = 4'h0, Init1 = 4'h1, ISYNC = 4'h2, IDATA  = 4'h3, QSYNC = 4'h4, QDATA = 4'h5;
 
-localparam [9:0] GAP_CYCLES = 10'd320;
 (* syn_preserve = "TRUE" *) reg [3:0]   ICounter;
 (* syn_preserve = "TRUE" *) reg [3:0]   QCounter;
-(* syn_preserve = "TRUE" *) reg [9:0]  ZCounter;
+(* syn_preserve = "TRUE" *) reg [15:0]  ZCounter;
 
 //output clock
 assign serial_clk    = clk;
@@ -78,7 +77,7 @@ always @(negedge clk) begin
     if (start == VSS) begin
         ICounter    <= 4'd0;
         QCounter    <= 4'd0;
-		ZCounter   <= 10'b0000000000;
+		ZCounter   <= 16'b0;
         //I           <= `ILength'd0;
         //Q           <= `QLength'h0;
     end else begin
@@ -88,8 +87,9 @@ always @(negedge clk) begin
         if (current_state == QDATA) QCounter    <= QCounter + 4'd2;
         else                        QCounter    <= 4'd0;
 			
-if (current_state == Init0) ZCounter <= ZCounter + 1'b1;
-else                        ZCounter <= 10'b0;        
+			if (current_state == Init0) ZCounter <= ZCounter + 1'b1;
+else                        ZCounter <= 16'b0; 
+        
         //uncomment this for constant I/Q
         //I <= `ILength'b11000000000011;
         //Q <= `QLength'b00111111111100;
@@ -115,14 +115,15 @@ always @(*) begin
         next_state  = Init0;
     end else begin
         case(current_state)
-            Init0: begin   
-				  if (ZCounter == 10'b1111111111)begin  
+            Init0: begin
+				/*if (ZCounter == 16'b111111111111111)begin  
 					     next_state = ISYNC;
 				   end  
 				else
 					begin 
 						next_state = Init0; 
-					end
+					end*/
+               next_state      = ISYNC;
             end
             Init1: begin
                 next_state      = ISYNC;
@@ -142,7 +143,7 @@ always @(*) begin
             end
             QDATA: begin
                 if (QCounter == 4'd12) begin
-                    next_state  = Init0;
+                    next_state  = ISYNC;
                 end else begin
                     next_state  = QDATA;
                 end
