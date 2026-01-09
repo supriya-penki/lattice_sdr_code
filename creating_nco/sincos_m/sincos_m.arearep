@@ -1,0 +1,16 @@
+----------------------------------------------------------------------
+Report for cell sincos_m.TECH
+Register bits:  45 of 84255 (0.053%)
+I/O cells:      0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         1          100.0
+                              CCU2C        15          100.0
+                            FD1P3DX        45          100.0
+                                GSR         1          100.0
+                                INV        25          100.0
+                              MUX21        40          100.0
+                           ROM16X1A         3          100.0
+                          ROM256X1A        16          100.0
+                               XOR2         1          100.0
+                              TOTAL       147

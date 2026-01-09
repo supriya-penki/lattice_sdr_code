@@ -20,8 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/impl1/mySDR_fpga_impl1.bit</File>
-			<FileTime>01/04/26 20:46:29</FileTime>
-			<JedecChecksum>0x4A5B</JedecChecksum>
+			<FileTime>01/08/26 14:21:03</FileTime>
+			<JedecChecksum>0xDCFD</JedecChecksum>
 			<Operation>Fast Program</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

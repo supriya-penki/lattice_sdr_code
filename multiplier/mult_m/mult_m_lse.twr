@@ -1,0 +1,165 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Thu Jan 08 03:04:21 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     mult_m
+Constraint file: mult_m_temp_lse.sdc 
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk500 [get_nets Clock]
+            725 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 0.534ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             FF_38  (from Clock +)
+   Destination:    FD1P3DX    D              FF_0  (to Clock -)
+
+   Delay:                   4.586ns  (18.9% logic, 81.1% route), 8 logic levels.
+
+ Constraint Details:
+
+      4.586ns data_path FF_38 to FF_0 meets
+      5.000ns delay constraint less
+     -0.120ns L_S requirement (totaling 5.120ns) by 0.534ns
+
+ Path Details: FF_38 to FF_0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.230             CK to Q              FF_38 (from Clock)
+Route        10   e 1.580                                  regb_b_3
+LUT4        ---     0.105                to                ND2_t9
+Route         1   e 1.020                                  mult_m_0_mult_2_0_n1
+A1_TO_FCO   ---     0.212           A[2] to COUT           mult_m_0_mult_2_0
+Route         1   e 0.020                                  mco_4
+FCI_TO_FCO  ---     0.033            CIN to COUT           mult_m_0_mult_2_1
+Route         1   e 0.020                                  mco_5
+FCI_TO_FCO  ---     0.033            CIN to COUT           mult_m_0_mult_2_2
+Route         1   e 0.020                                  mco_6
+FCI_TO_FCO  ---     0.033            CIN to COUT           mult_m_0_mult_2_3
+Route         1   e 0.020                                  mco_7
+FCI_TO_FCO  ---     0.033            CIN to COUT           mult_m_0_mult_2_4
+Route         1   e 0.020                                  mfco_1
+FCI_TO_F    ---     0.187            CIN to S[2]           mult_m_0_Cadd_2_5
+Route         1   e 1.020                                  mult_m_0_pp_1_13
+                  --------
+                    4.586  (18.9% logic, 81.1% route), 8 logic levels.
+
+
+Passed:  The following path meets requirements by 0.534ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             FF_38  (from Clock +)
+   Destination:    FD1P3DX    D              FF_0  (to Clock -)
+
+   Delay:                   4.586ns  (18.9% logic, 81.1% route), 8 logic levels.
+
+ Constraint Details:
+
+      4.586ns data_path FF_38 to FF_0 meets
+      5.000ns delay constraint less
+     -0.120ns L_S requirement (totaling 5.120ns) by 0.534ns
+
+ Path Details: FF_38 to FF_0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.230             CK to Q              FF_38 (from Clock)
+Route        10   e 1.580                                  regb_b_3
+LUT4        ---     0.105                to                ND2_t8
+Route         1   e 1.020                                  mult_m_0_mult_2_0_n0
+A1_TO_FCO   ---     0.212           A[2] to COUT           mult_m_0_mult_2_0
+Route         1   e 0.020                                  mco_4
+FCI_TO_FCO  ---     0.033            CIN to COUT           mult_m_0_mult_2_1
+Route         1   e 0.020                                  mco_5
+FCI_TO_FCO  ---     0.033            CIN to COUT           mult_m_0_mult_2_2
+Route         1   e 0.020                                  mco_6
+FCI_TO_FCO  ---     0.033            CIN to COUT           mult_m_0_mult_2_3
+Route         1   e 0.020                                  mco_7
+FCI_TO_FCO  ---     0.033            CIN to COUT           mult_m_0_mult_2_4
+Route         1   e 0.020                                  mfco_1
+FCI_TO_F    ---     0.187            CIN to S[2]           mult_m_0_Cadd_2_5
+Route         1   e 1.020                                  mult_m_0_pp_1_13
+                  --------
+                    4.586  (18.9% logic, 81.1% route), 8 logic levels.
+
+
+Passed:  The following path meets requirements by 0.587ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             FF_38  (from Clock +)
+   Destination:    FD1P3DX    D              FF_0  (to Clock -)
+
+   Delay:                   4.533ns  (18.4% logic, 81.6% route), 7 logic levels.
+
+ Constraint Details:
+
+      4.533ns data_path FF_38 to FF_0 meets
+      5.000ns delay constraint less
+     -0.120ns L_S requirement (totaling 5.120ns) by 0.587ns
+
+ Path Details: FF_38 to FF_0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.230             CK to Q              FF_38 (from Clock)
+Route        10   e 1.580                                  regb_b_3
+LUT4        ---     0.105                to                ND2_t7
+Route         1   e 1.020                                  mult_m_0_mult_2_1_n1
+A1_TO_FCO   ---     0.212           A[2] to COUT           mult_m_0_mult_2_1
+Route         1   e 0.020                                  mco_5
+FCI_TO_FCO  ---     0.033            CIN to COUT           mult_m_0_mult_2_2
+Route         1   e 0.020                                  mco_6
+FCI_TO_FCO  ---     0.033            CIN to COUT           mult_m_0_mult_2_3
+Route         1   e 0.020                                  mco_7
+FCI_TO_FCO  ---     0.033            CIN to COUT           mult_m_0_mult_2_4
+Route         1   e 0.020                                  mfco_1
+FCI_TO_F    ---     0.187            CIN to S[2]           mult_m_0_Cadd_2_5
+Route         1   e 1.020                                  mult_m_0_pp_1_13
+                  --------
+                    4.533  (18.4% logic, 81.6% route), 7 logic levels.
+
+Report: 4.466 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk500 [get_nets Clock]                 |     5.000 ns|     4.466 ns|     8  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  725 paths, 103 nets, and 223 connections (99.1% coverage)
+
+
+Peak memory: 119676928 bytes, TRCE: 2445312 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

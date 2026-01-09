@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Jan 04 20:46:04 2026
+Fri Jan 09 16:43:06 2026
 
 
 Command Line:  synthesis -f mySDR_fpga_impl1_lattice.synproj -gui -msgset C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/promote.xml 
@@ -74,6 +74,7 @@ The -syn option is FALSE.
 -p C:/lscc/diamond/3.14/ispfpga/sa5p00g/data (searchpath added)
 -p C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/impl1 (searchpath added)
 -p C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code (searchpath added)
+-p C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/rcosfilter_m (searchpath added)
 Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v
 Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v
 Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v
@@ -95,6 +96,19 @@ Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_
 Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v
 Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v
 Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/rcosfilter_m/rcosfilter_m.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/rcosfilter_m/rcosfilter_m_core_bb.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/FIRfilter.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/creating_nco.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/mult_m/mult_m.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/fsktb.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/QPSK_modulator.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_lattice_sincos.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/iq_div.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_tb.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v
 NGD file = mySDR_fpga_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -136,6 +150,19 @@ Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/divided
 Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/divided_pll/divided_pll.v. VERI-1482
 Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v. VERI-1482
 Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/firfilter/rcosfilter_m/rcosfilter_m.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/firfilter/rcosfilter_m/rcosfilter_m_core_bb.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/firfilter/firfilter.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/creating_nco.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/multiplier.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/fsktb.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/qpsk_modulator.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/dds_lattice_sincos.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iq_div.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/dds_tb.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/src/qpsk_tb.v. VERI-1482
 Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v. VERI-1482
 Top module name (Verilog): top_module
 INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/top_module.v(4): compiling module top_module. VERI-1018
@@ -149,9 +176,48 @@ INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/clockdiv
 INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/packetcounter.v(6): compiling module packetCounter. VERI-1018
 INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/packetgenerator.v(4): compiling module packetGenerator. VERI-1018
 INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/ble_packet.v(1): compiling module ble_packet. VERI-1018
-INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/fskmodulator.v(5): compiling module FSKModulator. VERI-1018
-INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/sinmodule.v(3): compiling module sinModule. VERI-1018
-INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/cosmodule.v(3): compiling module cosModule. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/qpsk_modulator.v(3): compiling module QPSK_modulator. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iq_div.v(2): compiling module iq_div. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/firfilter/firfilter.v(11): compiling module FIRfilter. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/firfilter/rcosfilter_m/rcosfilter_m.v(6): compiling module rcosfilter_m. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/firfilter/rcosfilter_m/rcosfilter_m_core_bb.v(1): compiling module rcosfilter_m_core. VERI-1018
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/qpsk_modulator.v(65): actual bit length 1 differs from formal bit length 26 for port rcosfilter_m_dout. VERI-1330
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/qpsk_modulator.v(75): actual bit length 1 differs from formal bit length 26 for port rcosfilter_m_dout. VERI-1330
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/dds_lattice_sincos.v(1): compiling module dds_lattice_sincos. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(8): compiling module sincos_m. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(367): compiling module INV. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(810): compiling module XOR2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(710): compiling module ROM16X1A(initval=16'b1111111111111110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(25): compiling module AND2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(119): compiling module FD1P3DX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(458): compiling module MUX21. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(76): compiling module CCU2C(INIT0=16'b0110011010101010,INIT1=16'b0110011010101010,INJECT1_0="NO",INJECT1_1="NO"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_1. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_3. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_4. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_5. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_6. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_7. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A(initval=256'b01111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_8. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_9. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_10. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_11. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_12. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_13. VERI-1018
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(516): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(655): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(698): input port CIN is not connected on this instance. VDB-1013
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/multiplier.v(11): compiling module multiplier. VERI-1018
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v(8): compiling module mult_m. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(531): compiling module ND2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(76): compiling module CCU2C(INJECT1_0="NO",INJECT1_1="NO"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(76): compiling module CCU2C(INIT0=16'b0111100010001000,INIT1=16'b0111100010001000,INJECT1_0="NO",INJECT1_1="NO"). VERI-1018
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v(340): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v(356): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v(372): input port CIN is not connected on this instance. VDB-1013
 INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(3): compiling module IQSerializer. VERI-1018
 INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/dedff.v(21): compiling module DEDFF. VERI-1018
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00m/data/sa5mlib.ngl'...
@@ -162,25 +228,21 @@ Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'sa5p85m.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.43.
 Top-level module name = top_module.
-INFO - synthesis: Extracted state machine for register '\fskModule_1/cos_phase' with one-hot encoding
-original encoding -> new encoding (one-hot encoding)
-
- 000 -> 00000001
-
- 001 -> 00000010
-
- 010 -> 00000100
-
- 011 -> 00001000
-
- 100 -> 00010000
-
- 101 -> 00100000
-
- 110 -> 01000000
-
- 111 -> 10000000
-
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(516): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(655): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(698): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v(340): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v(356): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v(372): input port CIN is not connected on this instance. VDB-1013
+######## Missing driver on net n168. Patching with GND.
+######## Missing driver on net n167. Patching with GND.
+######## Missing driver on net n166. Patching with GND.
+######## Missing driver on net n169. Patching with GND.
+######## Missing driver on net n164. Patching with GND.
+######## Missing driver on net n163. Patching with GND.
+######## Missing driver on net n165. Patching with GND.
+######## Missing driver on net n162. Patching with GND.
+######## Missing driver on net n161. Patching with GND.
 INFO - synthesis: Extracted state machine for register '\packetGen_1/current_state' with one-hot encoding
 original encoding -> new encoding (one-hot encoding)
 
@@ -209,26 +271,529 @@ original encoding -> new encoding (one-hot encoding)
 
 
 WARNING - synthesis: Bit 1 of Register \IQSerializer_1/current_state_FSM is stuck at Zero
-WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(87): Register \IQSerializer_1/QCounter_413__i0 is stuck at Zero. VDB-5013
-WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(84): Register \IQSerializer_1/ICounter_411__i0 is stuck at Zero. VDB-5013
-Duplicate register/latch removal. \fskModule_1/FSK_Q__i3 is a one-to-one match with \fskModule_1/FSK_Q__i1.
-Duplicate register/latch removal. \fskModule_1/FSK_Q__i2 is a one-to-one match with \fskModule_1/FSK_Q__i3.
-Duplicate register/latch removal. \fskModule_1/FSK_I__i11 is a one-to-one match with \fskModule_1/FSK_I__i6.
-Duplicate register/latch removal. \fskModule_1/FSK_I__i10 is a one-to-one match with \fskModule_1/FSK_I__i5.
-Duplicate register/latch removal. \fskModule_1/FSK_I__i9 is a one-to-one match with \fskModule_1/FSK_I__i8.
-Duplicate register/latch removal. \fskModule_1/FSK_I__i7 is a one-to-one match with \fskModule_1/FSK_I__i10.
-Duplicate register/latch removal. \fskModule_1/FSK_I__i3 is a one-to-one match with \fskModule_1/FSK_I__i1.
-Duplicate register/latch removal. \fskModule_1/FSK_I__i2 is a one-to-one match with \fskModule_1/FSK_I__i3.
-Duplicate register/latch removal. \fskModule_1/FSK_I__i11 is a one-to-one match with \fskModule_1/FSK_I__i9.
-Duplicate register/latch removal. \fskModule_1/FSK_Q__i11 is a one-to-one match with \fskModule_1/FSK_Q__i6.
-Duplicate register/latch removal. \fskModule_1/FSK_Q__i9 is a one-to-one match with \fskModule_1/FSK_Q__i8.
-Duplicate register/latch removal. \fskModule_1/FSK_Q__i11 is a one-to-one match with \fskModule_1/FSK_Q__i9.
-Duplicate register/latch removal. \fskModule_1/FSK_Q__i10 is a one-to-one match with \fskModule_1/FSK_Q__i5.
-Duplicate register/latch removal. \fskModule_1/FSK_Q__i7 is a one-to-one match with \fskModule_1/FSK_Q__i10.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_51 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_51.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_51 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_51.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_51 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_51.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(84): Register \IQSerializer_1/ICounter_175__i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/dds_lattice_sincos.v(20): Register \qpskModule_1/dds0/phase_acc_i0 is stuck at Zero. VDB-5013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/src/iqserializer.v(87): Register \IQSerializer_1/QCounter_177__i0 is stuck at Zero. VDB-5013
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
 GSR instance connected to net counter_0_countDone.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_43 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_42 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_41 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_40 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_39 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_38 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_37 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_36 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_35 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_33 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_32 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_31 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_30 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_29 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_28 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_27 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_26 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_25 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_24 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_23 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_22 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_21 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_20 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_19 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_18 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_17 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_11 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_10 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_9 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_8 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_3 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_2 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_1 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_0 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_44 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_34 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/dds0/__/FF_16 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_51 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_50 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_49 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_48 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_47 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_46 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_45 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_44 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_43 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_42 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_41 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_40 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_39 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_38 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_37 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_36 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_35 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_34 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_33 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_32 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_31 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_30 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_29 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_28 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_27 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_26 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_25 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_24 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_23 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_22 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_21 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_20 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_19 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_18 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_17 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_16 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_15 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_14 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_13 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_12 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_11 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_10 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_9 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_8 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_7 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_6 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_5 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_4 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_3 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_2 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_1 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/I_inst/mult_m_inst/FF_0 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_50 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_49 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_48 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_47 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_46 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_45 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_44 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_43 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_42 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_41 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_40 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_39 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_38 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_37 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_36 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_35 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_34 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_33 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_32 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_31 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_30 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_29 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_28 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_27 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_26 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_25 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_24 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_23 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_22 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_21 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_20 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_19 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_18 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_17 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_16 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_15 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_14 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_13 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_12 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_11 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_10 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_9 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_8 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_7 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_6 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_5 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_4 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_3 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_2 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_1 due to shared LSR/GSR.
+######## Converted FF type for instance \qpskModule_1/Q_inst/mult_m_inst/FF_0 due to shared LSR/GSR.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
 Applying 200.000000 MHz constraint to all clocks
 
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_42.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_49 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
 WARNING - synthesis: Mapping latch \packetGen_1/data_I_0 to logic since no latches found in device. Possible simulation mismatch. Please check if or case statements
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/I_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/I_inst/mult_m_inst/FF_43.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_50 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_49.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_48 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_50.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_47 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_48.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_46 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_47.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_45 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_46.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_44 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_45.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_43 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_44.
+Duplicate register/latch removal. \qpskModule_1/Q_inst/mult_m_inst/FF_42 is a one-to-one match with \qpskModule_1/Q_inst/mult_m_inst/FF_43.
 WARNING - synthesis: No user .sdc file.
 Results of NGD DRC are available in top_module_drc.log.
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00m/data/sa5mlib.ngl'...
@@ -240,47 +805,53 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file mySDR_fpga_impl1.ngd.
 
 ################### Begin Area Report (top_module)######################
-Number of register bits => 137 of 84255 (0 % )
-CCU2C => 70
+Number of register bits => 276 of 84255 (0 % )
+AND2 => 5
+CCU2C => 132
 EHXPLLL => 2
-FD1P3IX => 11
-FD1S3AX => 32
-FD1S3IX => 81
-FD1S3JX => 13
+FD1P3AX => 140
+FD1P3IX => 15
+FD1S3AX => 52
+FD1S3IX => 60
+FD1S3JX => 9
 GSR => 1
 IB => 2
-INV => 2
-LUT4 => 121
+INV => 27
+LUT4 => 104
+MUX21 => 24
+ND2 => 24
 OB => 10
 PFUMX => 5
-ROM256X1A => 1
+ROM16X1A => 3
+ROM256X1A => 17
+XOR2 => 1
 ################### End Area Report ##################
 
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 4
-  Net : clockDivider_0/clockDivider_clk_4M, loads : 55
+  Net : clockDivider_0/clockDivider_clk_4M, loads : 204
   Net : my_instance_2/serial_clk_c, loads : 49
   Net : my_instance_1/pll_clko_1, loads : 2
   Net : top_clk_c, loads : 1
 Clock Enable Nets
-Number of Clock Enables: 4
-Top 4 highest fanout Clock Enables:
+Number of Clock Enables: 6
+Top 6 highest fanout Clock Enables:
+  Net : qpskModule_1/iq_div_inst/clk_N_174_enable_3, loads : 2
   Net : clockDivider_0/lockCounter_7, loads : 2
-  Net : fskModule_1/clockDivider_clk_4M_enable_2, loads : 1
   Net : packetGen_1/next_state_3__N_154, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : counter_0/n2190, loads : 26
-  Net : clockDivider_0/clk_N_174, loads : 25
-  Net : packetGen_1/n3490, loads : 22
-  Net : fskModule_1/sampleCount_1, loads : 15
-  Net : fskModule_1/sampleCount_0, loads : 15
-  Net : fskModule_1/n3487, loads : 14
-  Net : fskModule_1/n3046, loads : 13
-  Net : counter_0/counter_0_countDone, loads : 11
-  Net : my_instance_2/clk_N_319, loads : 11
-  Net : fskModule_1/n527, loads : 11
+  Net : packetGen_1/clockDivider_clk_4M_enable_104, loads : 103
+  Net : counter_0/n1821, loads : 26
+  Net : qpskModule_1/dds0/__/rom_addr0_r_8, loads : 17
+  Net : qpskModule_1/dds0/__/rom_addr0_r_9, loads : 17
+  Net : qpskModule_1/dds0/__/rom_addr0_r_10, loads : 17
+  Net : qpskModule_1/dds0/__/rom_addr0_r_11, loads : 17
+  Net : qpskModule_1/dds0/__/rom_addr0_r_12, loads : 17
+  Net : qpskModule_1/dds0/__/rom_addr0_r_13, loads : 17
+  Net : qpskModule_1/dds0/__/rom_addr0_r_14, loads : 17
+  Net : qpskModule_1/dds0/__/rom_addr0_r_15, loads : 17
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -290,10 +861,10 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets clockDivider_clk_4M]     |  200.000 MHz|   95.166 MHz|     5 *
+clk1 [get_nets serial_clk_c]            |  200.000 MHz|   77.785 MHz|     5 *
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets serial_clk_c]            |  200.000 MHz|   82.129 MHz|     5 *
+clk0 [get_nets clockDivider_clk_4M]     |  200.000 MHz|   94.877 MHz|     4 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -301,10 +872,10 @@ clk0 [get_nets serial_clk_c]            |  200.000 MHz|   82.129 MHz|     5 *
 2 constraints not met.
 
 
-Peak Memory Usage: 123.336  MB
+Peak Memory Usage: 128.027  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.813  secs
+Elapsed CPU time for LSE flow : 0.953  secs
 --------------------------------------------------------------
 
 

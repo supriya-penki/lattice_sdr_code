@@ -1,0 +1,6 @@
+#Start recording tcl command: 1/7/2026 19:08:05
+#Project Location: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code; Project name: mySDR_fpga
+prj_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.ldf"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/QPSK_modulator.v"
+sbp_design new -dsgn "rcosfilter" -path "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcosfilter" -device "LFE5UM5G-85F-8BG381I"
+#Stop recording: 1/7/2026 19:37:16

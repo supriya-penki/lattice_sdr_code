@@ -1,0 +1,277 @@
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Jan 07 23:44:28 2026
+
+
+Command Line:  C:\lscc\diamond\3.14\ispfpga\bin\nt64\synthesis.exe -f sincos_m.synproj -sdc C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.ldc -gui 
+
+Synthesis options:
+The -a option is ecp5um5g.
+The -s option is 8.
+The -t option is CABGA381.
+The -d option is LFE5UM5G-85F.
+Using package CABGA381.
+Using performance grade 8.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5UM5G
+
+### Device  : LFE5UM5G-85F
+
+### Package : CABGA381
+
+### Speed   : 8
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = sincos_m.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Use IO Insertion = FALSE
+Use IO Reg = FALSE (implied)
+WARNING - synthesis: Cannot pack registers into I/Os because use_io_insertion is FALSE.
+WARNING - synthesis: Ignoring user setting of use_io_reg. Value is set to FALSE.
+Use IO Reg = FALSE
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m (searchpath added)
+Verilog design file = C:/lscc/diamond/3.14/cae_library/synthesis/verilog/ecp5um.v
+Verilog design file = C:/lscc/diamond/3.14/cae_library/synthesis/verilog/pmi_def.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v
+NGO file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.ngo
+WARNING - synthesis: Option -force_gsr will be set to false when option -output_edif/-ngo are set
+-sdc option: SDC file input is C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.ldc.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/diamond/3.14/cae_library/synthesis/verilog/ecp5um.v. VERI-1482
+Analyzing Verilog file c:/lscc/diamond/3.14/cae_library/synthesis/verilog/pmi_def.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v. VERI-1482
+Top module name (Verilog): sincos_m
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(8): compiling module sincos_m. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(367): compiling module INV. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(810): compiling module XOR2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(710): compiling module ROM16X1A(initval=16'b1111111111111110). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(25): compiling module AND2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(119): compiling module FD1P3DX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(458): compiling module MUX21. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(76): compiling module CCU2C(INIT0=16'b0110011010101010,INIT1=16'b0110011010101010,INJECT1_0="NO",INJECT1_1="NO"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_1. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_3. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_4. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_5. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_6. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_7. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A(initval=256'b01111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_8. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_9. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_10. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_11. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_12. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): compiling module ROM256X1A_renamed_due_excessive_length_13. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(757): compiling module VHI. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(761): compiling module VLO. VERI-1018
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(516): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(655): input port CIN is not connected on this instance. VDB-1013
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(698): input port CIN is not connected on this instance. VDB-1013
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00m/data/sa5mlib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p85m.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.43.
+WARNING - synthesis: There are no design constraints in the file C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.ldc
+Top-level module name = sincos_m.
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(237): Removing unused instance INV_0. VDB-5034
+WARNING - synthesis: There are no design constraints in the file C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.ldc
+This ldc file was generated by Clarity Designer!
+
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(171): Removing unused instance _6. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(173): Removing unused instance _7. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(175): Removing unused instance _8. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(177): Removing unused instance _9. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(179): Removing unused instance _10. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(181): Removing unused instance _11. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(183): Removing unused instance _12. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(185): Removing unused instance _13. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(187): Removing unused instance _14. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(189): Removing unused instance _15. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(191): Removing unused instance _16. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(193): Removing unused instance _17. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(195): Removing unused instance _18. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(197): Removing unused instance _19. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(199): Removing unused instance _20. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(201): Removing unused instance _21. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(203): Removing unused instance _22. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(205): Removing unused instance _23. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(207): Removing unused instance _24. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(209): Removing unused instance _25. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(211): Removing unused instance _26. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(213): Removing unused instance _27. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(215): Removing unused instance _28. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(217): Removing unused instance _29. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(219): Removing unused instance _30. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(223): Removing unused instance _31. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(227): Removing unused instance _32. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(231): Removing unused instance _33. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(233): Removing unused instance _34. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(235): Removing unused instance _35. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(270): Removing unused instance muxb_39_36. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(273): Removing unused instance muxb_38_37. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(276): Removing unused instance muxb_37_38. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(279): Removing unused instance muxb_36_39. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(282): Removing unused instance muxb_35_40. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(285): Removing unused instance muxb_34_41. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(288): Removing unused instance muxb_33_42. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(291): Removing unused instance muxb_32_43. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(366): Removing unused instance muxb_31_44. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(369): Removing unused instance muxb_30_45. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(372): Removing unused instance muxb_29_46. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(375): Removing unused instance muxb_28_47. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(378): Removing unused instance muxb_27_48. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(381): Removing unused instance muxb_26_49. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(384): Removing unused instance muxb_25_50. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(387): Removing unused instance muxb_24_51. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(390): Removing unused instance muxb_23_52. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(393): Removing unused instance muxb_22_53. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(396): Removing unused instance muxb_21_54. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(399): Removing unused instance muxb_20_55. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(402): Removing unused instance muxb_19_56. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(405): Removing unused instance muxb_18_57. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(408): Removing unused instance muxb_17_58. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(411): Removing unused instance muxb_16_59. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(416): Removing unused instance muxb_15_60. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(418): Removing unused instance muxb_14_61. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(420): Removing unused instance muxb_13_62. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(422): Removing unused instance muxb_12_63. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(424): Removing unused instance muxb_11_64. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(426): Removing unused instance muxb_10_65. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(428): Removing unused instance muxb_9_66. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(430): Removing unused instance muxb_8_67. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(432): Removing unused instance muxb_7_68. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(434): Removing unused instance muxb_6_69. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(436): Removing unused instance muxb_5_70. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(438): Removing unused instance muxb_4_71. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(440): Removing unused instance muxb_3_72. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(442): Removing unused instance muxb_2_73. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(444): Removing unused instance muxb_1_74. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(446): Removing unused instance muxb_0_75. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(557): Removing unused instance _81. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(563): Removing unused instance _82. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(569): Removing unused instance _83. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(575): Removing unused instance _84. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(581): Removing unused instance _85. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(587): Removing unused instance _86. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(593): Removing unused instance _87. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(599): Removing unused instance _88. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(605): Removing unused instance _89. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(611): Removing unused instance _90. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(617): Removing unused instance _91. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(623): Removing unused instance _92. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(629): Removing unused instance _93. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(635): Removing unused instance _94. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(641): Removing unused instance _95. VDB-5034
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(647): Removing unused instance _105. VDB-5034
+######## Missing driver on net n182. Patching with GND.
+######## Missing driver on net n181. Patching with GND.
+######## Missing driver on net n183. Patching with GND.
+
+
+
+######## GSR will not be inferred in an NGO flow, unless force_gsr=yes.
+WARNING - synthesis: There are no design constraints in the file sincos_m_for_lpf.sdc
+Writing LPF file C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.lpf.
+Results of NGD DRC are available in sincos_m_drc.log.
+WARNING - synthesis: DRC checking was skipped because the -ngo option was used.
+Writing NGD file C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.ngo.
+
+################### Begin Area Report (sincos_m)######################
+Number of register bits => 45 of 84255 (0 % )
+AND2 => 1
+CCU2C => 15
+FD1P3DX => 45
+GSR => 1
+INV => 25
+MUX21 => 40
+ROM16X1A => 3
+ROM256X1A => 16
+XOR2 => 1
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : rom_addr0_r_8, loads : 17
+  Net : rom_addr0_r_9, loads : 17
+  Net : rom_addr0_r_10, loads : 17
+  Net : rom_addr0_r_11, loads : 17
+  Net : rom_addr0_r_12, loads : 17
+  Net : rom_addr0_r_13, loads : 17
+  Net : rom_addr0_r_14, loads : 17
+  Net : rom_addr0_r_15, loads : 17
+  Net : out_sel, loads : 16
+  Net : mx_ctrl_r, loads : 10
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk500 [get_nets Clock]                 |  200.000 MHz|   97.542 MHz|    12 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 116.719  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.406  secs
+--------------------------------------------------------------

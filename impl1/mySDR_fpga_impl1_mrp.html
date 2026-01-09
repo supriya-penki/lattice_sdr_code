@@ -23,21 +23,21 @@ Target Vendor:  LATTICE
 Target Device:  LFE5UM5G-85FCABGA381
 Target Performance:   8
 Mapper:  sa5p00g,  version:  Diamond (64-bit) 3.14.0.75.2
-Mapped on:  01/04/26  20:46:05
+Mapped on:  01/09/26  16:43:34
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:    137 out of 84255 (0%)
-      PFU registers:          137 out of 83640 (0%)
+   Number of registers:    276 out of 84255 (0%)
+      PFU registers:          276 out of 83640 (0%)
       PIO registers:            0 out of   615 (0%)
-   Number of SLICEs:       156 out of 41820 (0%)
-      SLICEs as Logic/ROM:    156 out of 41820 (0%)
+   Number of SLICEs:       403 out of 41820 (1%)
+      SLICEs as Logic/ROM:    403 out of 41820 (1%)
       SLICEs as RAM:            0 out of 31365 (0%)
-      SLICEs as Carry:         70 out of 41820 (0%)
-   Number of LUT4s:        278 out of 83640 (0%)
-      Number used as logic LUTs:        138
+      SLICEs as Carry:        132 out of 41820 (0%)
+   Number of LUT4s:        643 out of 83640 (1%)
+      Number used as logic LUTs:        379
       Number used as distributed RAM:     0
-      Number used as ripple logic:      140
+      Number used as ripple logic:      264
       Number used as shift registers:     0
    Number of PIO sites used: 14 out of 205 (7%)
       Number of PIO sites used for single ended IOs: 10
@@ -82,56 +82,52 @@ Mapped on:  01/04/26  20:46:05
    Number of Used DSP ALU Sites:  0 out of 156 (0 %)
    Number of Used DSP PRADD Sites:  0 out of 312 (0 %)
    Number of clocks:  4
-     Net serial_clk_c: 37 loads, 29 rising, 8 falling (Driver:
-     my_instance_2/PLLInst_0 )
+     Net clockDivider_clk_4M: 136 loads, 124 rising, 12 falling (Driver:
+     clockDivider_0/clkOut_23 )
      Net top_clk_c: 1 loads, 1 rising, 0 falling (Driver: PIO top_clk )
+     Net serial_clk_c: 38 loads, 29 rising, 9 falling (Driver:
+     my_instance_2/PLLInst_0 )
      Net pll_clko_1: 2 loads, 2 rising, 0 falling (Driver:
      my_instance_1/PLLInst_0 )
-     Net clockDivider_clk_4M: 47 loads, 32 rising, 15 falling (Driver:
-     clockDivider_0/clkOut_23 )
-   Number of Clock Enables:  4
-     Net fskModule_1/clockDivider_clk_4M_enable_2: 1 loads, 1 LSLICEs
-     Net clockDivider_clk_4M_enable_9: 4 loads, 4 LSLICEs
+   Number of Clock Enables:  6
      Net packetGen_1/next_state_3__N_154: 1 loads, 1 LSLICEs
+     Net clockDivider_clk_4M_enable_111: 4 loads, 4 LSLICEs
+     Net clockDivider_clk_4M_enable_104: 59 loads, 59 LSLICEs
+     Net qpskModule_1/iq_div_inst/clk_N_174_enable_3: 2 loads, 2 LSLICEs
+     Net qpskModule_1/clk_N_174_enable_5: 3 loads, 3 LSLICEs
      Net clockDivider_0/lockCounter_7: 1 loads, 1 LSLICEs
-   Number of LSRs:  13
-     Net fskModule_1/n3109: 1 loads, 1 LSLICEs
-     Net fskModule_1/n527: 5 loads, 5 LSLICEs
-     Net counter_0_countDone: 9 loads, 9 LSLICEs
-     Net IQSerializer_start: 4 loads, 4 LSLICEs
-     Net n3490: 12 loads, 12 LSLICEs
-     Net fskModule_1/n3087: 1 loads, 1 LSLICEs
+   Number of LSRs:  10
+     Net counter_0/n1821: 14 loads, 14 LSLICEs
+     Net clockDivider_clkLock: 1 loads, 1 LSLICEs
+     Net counter_0_countDone: 8 loads, 8 LSLICEs
      Net LED7_c: 7 loads, 7 LSLICEs
      Net top_rst_N_28: 1 loads, 0 LSLICEs
-     Net clockDivider_clkLock: 1 loads, 1 LSLICEs
-     Net counter_0/n2190: 14 loads, 14 LSLICEs
-     Net IQSerializer_1/n2191: 2 loads, 2 LSLICEs
-     Net IQSerializer_1/n2192: 2 loads, 2 LSLICEs
-     Net clockDivider_0/n500: 5 loads, 5 LSLICEs
+     Net qpskModule_1/iq_div_inst/n2876: 11 loads, 11 LSLICEs
+     Net n1822: 2 loads, 2 LSLICEs
+     Net n2868: 5 loads, 5 LSLICEs
+     Net IQSerializer_1/n1820: 2 loads, 2 LSLICEs
+     Net clockDivider_0/n375: 5 loads, 5 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
+     Net qpskModule_1/dds0/__/rom_addr0_r_14: 162 loads
+     Net qpskModule_1/dds0/__/rom_addr0_r_11: 152 loads
+     Net qpskModule_1/dds0/__/rom_addr0_r_10: 147 loads
+     Net qpskModule_1/dds0/__/rom_addr0_r_9: 131 loads
+     Net qpskModule_1/dds0/__/rom_addr0_r_15: 95 loads
+     Net clockDivider_clk_4M_enable_104: 60 loads
+     Net qpskModule_1/dds0/__/rom_addr0_r_13: 53 loads
+     Net qpskModule_1/dds0/__/rom_addr0_r_12: 27 loads
+     Net counter_0_countDone: 22 loads
      Net symCounter_1: 22 loads
-     Net symCounter_2: 22 loads
-     Net symCounter_3: 22 loads
-     Net counter_0_countDone: 21 loads
-     Net symCounter_6: 19 loads
-     Net sampleCount_0: 16 loads
-     Net sampleCount_1: 16 loads
-     Net counter_0/n2190: 14 loads
-     Net fskModule_1/n3046: 13 loads
-     Net n3490: 12 loads
-
-
-
-
 
 
 
 
    Number of warnings:  0
+
+
    Number of errors:    0
      
-
 
 
 
@@ -153,10 +149,6 @@ Mapped on:  01/04/26  20:46:05
 +---------------------+-----------+-----------+------------+
 | LED7                | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
-| serial_clk          | OUTPUT    | LVDS      |            |
-+---------------------+-----------+-----------+------------+
-| serial_iq           | OUTPUT    | LVDS      |            |
-+---------------------+-----------+-----------+------------+
 | LED6                | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | LED5                | OUTPUT    | LVCMOS25  |            |
@@ -165,9 +157,13 @@ Mapped on:  01/04/26  20:46:05
 +---------------------+-----------+-----------+------------+
 | LED3                | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
+| serial_clk          | OUTPUT    | LVDS      |            |
++---------------------+-----------+-----------+------------+
 | LED2                | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
 | LED1                | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| serial_iq           | OUTPUT    | LVDS      |            |
 +---------------------+-----------+-----------+------------+
 | LED                 | OUTPUT    | LVCMOS25  |            |
 +---------------------+-----------+-----------+------------+
@@ -176,101 +172,202 @@ Mapped on:  01/04/26  20:46:05
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
+Signal clk_N_262 was merged into signal serial_clk_c
 Signal clk_N_174 was merged into signal clockDivider_clk_4M
 Signal clockDivider_0/pll_lock_N_54 was merged into signal LED7_c
-Signal n2189 was merged into signal clockDivider_clkLock
-Signal clk_N_319 was merged into signal serial_clk_c
+Signal n1819 was merged into signal clockDivider_clkLock
+Signal qpskModule_1/dds0/__/lx_ne0_inv was merged into signal
+     qpskModule_1/dds0/__/lx_ne0
 Signal VCC_net undriven or does not drive anything - clipped.
-Signal clockDivider_0/lockCounter_407_add_4_1/S0 undriven or does not drive
-     anything - clipped.
-Signal clockDivider_0/lockCounter_407_add_4_1/CI undriven or does not drive
-     anything - clipped.
-Signal clockDivider_0/lockCounter_407_add_4_9/S1 undriven or does not drive
-     anything - clipped.
+Signal clockDivider_0/counter_170_add_4_1/S0 undriven or does not drive anything
+     - clipped.
+Signal clockDivider_0/counter_170_add_4_1/CI undriven or does not drive anything
+     - clipped.
+Signal clockDivider_0/counter_170_add_4_9/S1 undriven or does not drive anything
+     - clipped.
 
-Signal clockDivider_0/lockCounter_407_add_4_9/CO undriven or does not drive
+Signal clockDivider_0/counter_170_add_4_9/CO undriven or does not drive anything
+     - clipped.
+Signal clockDivider_0/lockCounter_171_add_4_1/S0 undriven or does not drive
      anything - clipped.
-Signal clockDivider_0/counter_406_add_4_1/S0 undriven or does not drive anything
-     - clipped.
-Signal clockDivider_0/counter_406_add_4_1/CI undriven or does not drive anything
-     - clipped.
-Signal clockDivider_0/counter_406_add_4_9/S1 undriven or does not drive anything
-     - clipped.
-Signal clockDivider_0/counter_406_add_4_9/CO undriven or does not drive anything
-     - clipped.
-Signal _add_1_679_add_4_13/S1 undriven or does not drive anything - clipped.
-Signal _add_1_679_add_4_13/CO undriven or does not drive anything - clipped.
-Signal cnt1_405_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal cnt1_405_add_4_1/CI undriven or does not drive anything - clipped.
-Signal counter_0/waitcount_409_add_4_27/S1 undriven or does not drive anything -
-     clipped.
-Signal counter_0/waitcount_409_add_4_27/CO undriven or does not drive anything -
-     clipped.
-Signal counter_0/waitcount_409_add_4_1/S0 undriven or does not drive anything -
-     clipped.
-Signal counter_0/waitcount_409_add_4_1/CI undriven or does not drive anything -
-     clipped.
-Signal cnt1_405_add_4_27/S1 undriven or does not drive anything - clipped.
-Signal cnt1_405_add_4_27/CO undriven or does not drive anything - clipped.
-Signal add_1403_1/S1 undriven or does not drive anything - clipped.
-Signal add_1403_1/S0 undriven or does not drive anything - clipped.
-Signal add_1403_1/CI undriven or does not drive anything - clipped.
-Signal add_1403_3/S1 undriven or does not drive anything - clipped.
-Signal add_1403_3/S0 undriven or does not drive anything - clipped.
-Signal add_1403_5/S1 undriven or does not drive anything - clipped.
-Signal add_1403_5/S0 undriven or does not drive anything - clipped.
-Signal add_1403_7/S1 undriven or does not drive anything - clipped.
-Signal add_1403_7/S0 undriven or does not drive anything - clipped.
-Signal add_1403_9/S1 undriven or does not drive anything - clipped.
-Signal add_1403_9/S0 undriven or does not drive anything - clipped.
-Signal add_1403_11/S1 undriven or does not drive anything - clipped.
-Signal add_1403_11/S0 undriven or does not drive anything - clipped.
-Signal add_1403_13/S1 undriven or does not drive anything - clipped.
-Signal add_1403_13/S0 undriven or does not drive anything - clipped.
-Signal add_1403_15/S1 undriven or does not drive anything - clipped.
-Signal add_1403_15/S0 undriven or does not drive anything - clipped.
-Signal add_1403_17/S1 undriven or does not drive anything - clipped.
-Signal add_1403_17/S0 undriven or does not drive anything - clipped.
-Signal add_1403_19/S1 undriven or does not drive anything - clipped.
-Signal add_1403_19/S0 undriven or does not drive anything - clipped.
-Signal add_1403_21/S1 undriven or does not drive anything - clipped.
-Signal add_1403_21/S0 undriven or does not drive anything - clipped.
-Signal add_1403_23/S1 undriven or does not drive anything - clipped.
-Signal add_1403_23/S0 undriven or does not drive anything - clipped.
-Signal add_1403_25/S1 undriven or does not drive anything - clipped.
-Signal add_1403_25/S0 undriven or does not drive anything - clipped.
-Signal add_1403_27/S0 undriven or does not drive anything - clipped.
-Signal add_1403_27/CO undriven or does not drive anything - clipped.
-Signal add_1402_2/S1 undriven or does not drive anything - clipped.
-Signal add_1402_2/S0 undriven or does not drive anything - clipped.
-Signal add_1402_2/CI undriven or does not drive anything - clipped.
+Signal clockDivider_0/lockCounter_171_add_4_1/CI undriven or does not drive
+     anything - clipped.
+Signal clockDivider_0/lockCounter_171_add_4_9/S1 undriven or does not drive
+     anything - clipped.
+Signal clockDivider_0/lockCounter_171_add_4_9/CO undriven or does not drive
+     anything - clipped.
+Signal cnt1_169_add_4_27/S1 undriven or does not drive anything - clipped.
+Signal cnt1_169_add_4_27/CO undriven or does not drive anything - clipped.
+Signal _add_1_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal _add_1_add_4_1/CI undriven or does not drive anything - clipped.
+Signal _add_1_add_4_23/S1 undriven or does not drive anything - clipped.
+Signal _add_1_add_4_23/CO undriven or does not drive anything - clipped.
+Signal add_1053_1/S1 undriven or does not drive anything - clipped.
+Signal add_1053_1/S0 undriven or does not drive anything - clipped.
+Signal add_1053_1/CI undriven or does not drive anything - clipped.
+Signal add_1053_3/S1 undriven or does not drive anything - clipped.
+Signal add_1053_3/S0 undriven or does not drive anything - clipped.
+Signal add_1053_5/S1 undriven or does not drive anything - clipped.
+Signal add_1053_5/S0 undriven or does not drive anything - clipped.
+Signal add_1053_7/S1 undriven or does not drive anything - clipped.
+Signal add_1053_7/S0 undriven or does not drive anything - clipped.
+Signal add_1053_9/S1 undriven or does not drive anything - clipped.
+Signal add_1053_9/S0 undriven or does not drive anything - clipped.
+Signal add_1053_11/S1 undriven or does not drive anything - clipped.
+Signal add_1053_11/S0 undriven or does not drive anything - clipped.
+Signal add_1053_13/S1 undriven or does not drive anything - clipped.
+Signal add_1053_13/S0 undriven or does not drive anything - clipped.
+Signal add_1053_15/S1 undriven or does not drive anything - clipped.
+Signal add_1053_15/S0 undriven or does not drive anything - clipped.
+Signal qpskModule_1/I_inst/mult_m_inst/t_mult_m_0_add_0_7/S1 undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/I_inst/mult_m_inst/t_mult_m_0_add_0_7/CO undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/I_inst/mult_m_inst/Cadd_t_mult_m_0_0_1/S0 undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/I_inst/mult_m_inst/Cadd_t_mult_m_0_0_1/CI undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/I_inst/mult_m_inst/mult_m_0_Cadd_2_5/S1 undriven or does not
+     drive anything - clipped.
+Signal qpskModule_1/I_inst/mult_m_inst/mult_m_0_Cadd_2_5/CO undriven or does not
+     drive anything - clipped.
+Signal qpskModule_1/I_inst/mult_m_inst/mult_m_0_cin_lr_add/S1 undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/I_inst/mult_m_inst/mult_m_0_cin_lr_add/S0 undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/I_inst/mult_m_inst/mult_m_0_cin_lr_add/CI undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/I_inst/mult_m_inst/mult_m_0_Cadd_0_5/S1 undriven or does not
+     drive anything - clipped.
+Signal qpskModule_1/I_inst/mult_m_inst/mult_m_0_Cadd_0_5/CO undriven or does not
+     drive anything - clipped.
+Signal qpskModule_1/I_inst/mult_m_inst/mult_m_0_cin_lr_add_0/S1 undriven or does
 
-Signal add_1402_4/S1 undriven or does not drive anything - clipped.
-Signal add_1402_4/S0 undriven or does not drive anything - clipped.
-Signal add_1402_6/S1 undriven or does not drive anything - clipped.
-Signal add_1402_6/S0 undriven or does not drive anything - clipped.
-Signal add_1402_8/S1 undriven or does not drive anything - clipped.
-Signal add_1402_8/S0 undriven or does not drive anything - clipped.
-Signal add_1402_10/S1 undriven or does not drive anything - clipped.
-Signal add_1402_10/S0 undriven or does not drive anything - clipped.
-Signal add_1402_12/S1 undriven or does not drive anything - clipped.
-Signal add_1402_12/S0 undriven or does not drive anything - clipped.
-Signal add_1402_14/S1 undriven or does not drive anything - clipped.
-Signal add_1402_14/S0 undriven or does not drive anything - clipped.
-Signal add_1402_16/S1 undriven or does not drive anything - clipped.
-Signal add_1402_16/S0 undriven or does not drive anything - clipped.
-Signal add_1402_18/S1 undriven or does not drive anything - clipped.
-Signal add_1402_18/S0 undriven or does not drive anything - clipped.
-Signal add_1402_20/S1 undriven or does not drive anything - clipped.
-Signal add_1402_20/S0 undriven or does not drive anything - clipped.
-Signal add_1402_cout/S1 undriven or does not drive anything - clipped.
-Signal add_1402_cout/CO undriven or does not drive anything - clipped.
-Signal _add_1_679_add_4_1/S0 undriven or does not drive anything - clipped.
-Signal _add_1_679_add_4_1/CI undriven or does not drive anything - clipped.
-Block clockDivider_0/i2108 was optimized away.
+     not drive anything - clipped.
+Signal qpskModule_1/I_inst/mult_m_inst/mult_m_0_cin_lr_add_0/S0 undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/I_inst/mult_m_inst/mult_m_0_cin_lr_add_0/CI undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/Q_inst/mult_m_inst/t_mult_m_0_add_0_7/S1 undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/Q_inst/mult_m_inst/t_mult_m_0_add_0_7/CO undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/Q_inst/mult_m_inst/Cadd_t_mult_m_0_0_1/S0 undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/Q_inst/mult_m_inst/Cadd_t_mult_m_0_0_1/CI undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/Q_inst/mult_m_inst/mult_m_0_Cadd_2_5/S1 undriven or does not
+     drive anything - clipped.
+Signal qpskModule_1/Q_inst/mult_m_inst/mult_m_0_Cadd_2_5/CO undriven or does not
+     drive anything - clipped.
+Signal qpskModule_1/Q_inst/mult_m_inst/mult_m_0_cin_lr_add/S1 undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/Q_inst/mult_m_inst/mult_m_0_cin_lr_add/S0 undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/Q_inst/mult_m_inst/mult_m_0_cin_lr_add/CI undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/Q_inst/mult_m_inst/mult_m_0_Cadd_0_5/S1 undriven or does not
+     drive anything - clipped.
+Signal qpskModule_1/Q_inst/mult_m_inst/mult_m_0_Cadd_0_5/CO undriven or does not
+     drive anything - clipped.
+Signal qpskModule_1/Q_inst/mult_m_inst/mult_m_0_cin_lr_add_0/S1 undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/Q_inst/mult_m_inst/mult_m_0_cin_lr_add_0/S0 undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/Q_inst/mult_m_inst/mult_m_0_cin_lr_add_0/CI undriven or does
+     not drive anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_s_n_0/S1 undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_s_n_0/S0 undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_s_n_0/CI undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_c_n_4/S1 undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_c_n_4/CO undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_c_n_2/S0 undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_c_n_1/S1 undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_c_n_1/S0 undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_c_n_0/S1 undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_c_n_0/S0 undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_c_n_0/CI undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_s_n_4/S1 undriven or does not drive
+
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_s_n_4/CO undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_s_n_2/S0 undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_s_n_1/S1 undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_dout_s_n_1/S0 undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_addr0_r_n_4/S1 undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_addr0_r_n_4/CO undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_addr0_r_n_0/S0 undriven or does not drive
+     anything - clipped.
+Signal qpskModule_1/dds0/__/neg_rom_addr0_r_n_0/CI undriven or does not drive
+     anything - clipped.
+Signal add_1053_17/S1 undriven or does not drive anything - clipped.
+Signal add_1053_17/S0 undriven or does not drive anything - clipped.
+Signal add_1053_19/S1 undriven or does not drive anything - clipped.
+Signal add_1053_19/S0 undriven or does not drive anything - clipped.
+Signal add_1053_21/S1 undriven or does not drive anything - clipped.
+Signal add_1053_21/S0 undriven or does not drive anything - clipped.
+Signal add_1053_23/S1 undriven or does not drive anything - clipped.
+Signal add_1053_23/S0 undriven or does not drive anything - clipped.
+Signal add_1053_25/S1 undriven or does not drive anything - clipped.
+Signal add_1053_25/S0 undriven or does not drive anything - clipped.
+Signal add_1053_27/S0 undriven or does not drive anything - clipped.
+Signal add_1053_27/CO undriven or does not drive anything - clipped.
+Signal add_1052_2/S1 undriven or does not drive anything - clipped.
+Signal add_1052_2/S0 undriven or does not drive anything - clipped.
+Signal add_1052_2/CI undriven or does not drive anything - clipped.
+Signal add_1052_4/S1 undriven or does not drive anything - clipped.
+Signal add_1052_4/S0 undriven or does not drive anything - clipped.
+Signal add_1052_6/S1 undriven or does not drive anything - clipped.
+Signal add_1052_6/S0 undriven or does not drive anything - clipped.
+Signal add_1052_8/S1 undriven or does not drive anything - clipped.
+Signal add_1052_8/S0 undriven or does not drive anything - clipped.
+Signal add_1052_10/S1 undriven or does not drive anything - clipped.
+Signal add_1052_10/S0 undriven or does not drive anything - clipped.
+Signal add_1052_12/S1 undriven or does not drive anything - clipped.
+Signal add_1052_12/S0 undriven or does not drive anything - clipped.
+Signal add_1052_14/S1 undriven or does not drive anything - clipped.
+Signal add_1052_14/S0 undriven or does not drive anything - clipped.
+Signal add_1052_16/S1 undriven or does not drive anything - clipped.
+Signal add_1052_16/S0 undriven or does not drive anything - clipped.
+Signal add_1052_18/S1 undriven or does not drive anything - clipped.
+Signal add_1052_18/S0 undriven or does not drive anything - clipped.
+Signal add_1052_20/S1 undriven or does not drive anything - clipped.
+Signal add_1052_20/S0 undriven or does not drive anything - clipped.
+Signal add_1052_cout/S1 undriven or does not drive anything - clipped.
+Signal add_1052_cout/CO undriven or does not drive anything - clipped.
+Signal cnt1_169_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal cnt1_169_add_4_1/CI undriven or does not drive anything - clipped.
+Signal counter_0/waitcount_173_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+
+Signal counter_0/waitcount_173_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal counter_0/waitcount_173_add_4_27/S1 undriven or does not drive anything -
+     clipped.
+Signal counter_0/waitcount_173_add_4_27/CO undriven or does not drive anything -
+     clipped.
+Block my_instance_2/i1618 was optimized away.
+Block clockDivider_0/i1619 was optimized away.
 Block clockDivider_0/pll_lock_I_0_1_lut was optimized away.
-Block clockDivider_0/i957_1_lut was optimized away.
-Block my_instance_2/i2109 was optimized away.
+Block clockDivider_0/i684_1_lut was optimized away.
+Block qpskModule_1/dds0/__/INV_1 was optimized away.
 Block i2 was optimized away.
 
      
@@ -303,7 +400,6 @@ PLL 1:                                     Pin/Node Value
   FB_MODE:                                          CLKOP
   CLKI Divider:                                     1
   CLKFB Divider:                                    2
-
   CLKOP Divider:                                    27
   CLKOS Divider:                                    1
   CLKOS2 Divider:                                   1
@@ -319,6 +415,7 @@ PLL 1:                                     Pin/Node Value
   CLKOS2 Trim Option Rising/Falling:                NONE
   CLKOS2 Trim Option Delay:                         NONE
   CLKOS3 Desired Phase Shift(degree):               0
+
   CLKOS3 Trim Option Rising/Falling:                NONE
   CLKOS3 Trim Option Delay:                         NONE
 PLL 2:                                     Pin/Node Value
@@ -360,7 +457,6 @@ PLL 2:                                     Pin/Node Value
   CLKOS2 Trim Option Rising/Falling:                NONE
   CLKOS2 Trim Option Delay:                         NONE
   CLKOS3 Desired Phase Shift(degree):               0
-
   CLKOS3 Trim Option Rising/Falling:                NONE
   CLKOS3 Trim Option Delay:                         NONE
 
@@ -380,6 +476,7 @@ Instance Name: my_instance_2/PLLInst_0
 ---------
 
 GSR Component:
+
    The Global Set Reset (GSR) resource has been used to implement a global reset
         of the design. The reset signal used for GSR control is
         'counter_0_countDone'.
@@ -399,61 +496,44 @@ GSR Component:
      component.
 
      Type and number of components of the type: 
-   Register = 124 
+   Register = 98 
 
      Type and instance name of component: 
-   Register : LED_9
-   Register : cnt1_405__i17
-   Register : cnt1_405__i16
-   Register : fskModule_1/cos_phase_FSM_i1
-   Register : fskModule_1/firstFlag_56
-   Register : fskModule_1/start_57
-   Register : fskModule_1/FSK_I__i0
-   Register : fskModule_1/FSK_Q__i0
-   Register : fskModule_1/sin_phase_414__i0
-   Register : fskModule_1/lastSym_55
-   Register : fskModule_1/sin_phase_414__i2
-   Register : fskModule_1/sin_phase_414__i1
-   Register : fskModule_1/FSK_Q__i12
-   Register : fskModule_1/FSK_Q__i11
-   Register : fskModule_1/FSK_Q__i7
-   Register : fskModule_1/FSK_Q__i4
-   Register : fskModule_1/FSK_Q__i2
-   Register : fskModule_1/FSK_I__i12
-   Register : fskModule_1/FSK_I__i11
-
-   Register : fskModule_1/FSK_I__i7
-   Register : fskModule_1/FSK_I__i4
-   Register : fskModule_1/FSK_I__i2
-   Register : fskModule_1/cos_phase_FSM_i8
-   Register : fskModule_1/cos_phase_FSM_i7
-   Register : fskModule_1/cos_phase_FSM_i6
-   Register : fskModule_1/cos_phase_FSM_i5
-   Register : fskModule_1/cos_phase_FSM_i4
-   Register : fskModule_1/cos_phase_FSM_i3
-   Register : fskModule_1/cos_phase_FSM_i2
-   Register : cnt1_405__i15
-   Register : cnt1_405__i14
-   Register : cnt1_405__i13
-   Register : cnt1_405__i12
-   Register : cnt1_405__i11
-   Register : cnt1_405__i10
-   Register : cnt1_405__i9
-   Register : cnt1_405__i8
-   Register : cnt1_405__i7
-   Register : cnt1_405__i6
-   Register : cnt1_405__i5
-   Register : cnt1_405__i4
-   Register : cnt1_405__i3
-   Register : cnt1_405__i2
-   Register : cnt1_405__i1
-   Register : cnt1_405__i18
-   Register : packetGen_1/symCounter__i0
-   Register : packetGen_1/symVal_43
+   Register : counter_0/waitcount_173__i0
+   Register : counter_0/waitcount_173__i25
+   Register : counter_0/waitcount_173__i24
+   Register : counter_0/waitcount_173__i23
+   Register : counter_0/waitcount_173__i22
+   Register : counter_0/waitcount_173__i21
+   Register : counter_0/waitcount_173__i20
+   Register : counter_0/waitcount_173__i19
+   Register : counter_0/waitcount_173__i18
+   Register : counter_0/waitcount_173__i17
+   Register : counter_0/waitcount_173__i16
+   Register : counter_0/waitcount_173__i15
+   Register : counter_0/waitcount_173__i14
+   Register : counter_0/waitcount_173__i13
+   Register : counter_0/waitcount_173__i12
+   Register : counter_0/waitcount_173__i11
+   Register : counter_0/waitcount_173__i10
+   Register : counter_0/waitcount_173__i9
+   Register : counter_0/waitcount_173__i8
+   Register : counter_0/waitcount_173__i7
+   Register : counter_0/waitcount_173__i6
+   Register : counter_0/waitcount_173__i5
+   Register : counter_0/waitcount_173__i4
+   Register : counter_0/waitcount_173__i3
+   Register : counter_0/waitcount_173__i2
+   Register : counter_0/waitcount_173__i1
+   Register : counter_0/countDone_13
+   Register : cnt1_169__i0
    Register : packetGen_1/current_state_FSM_i1
+   Register : packetGen_1/current_state_FSM_i2
+   Register : packetGen_1/symVal_43
+   Register : packetGen_1/symCounter__i0
    Register : packetGen_1/current_state_FSM_i4
    Register : packetGen_1/current_state_FSM_i3
-   Register : packetGen_1/current_state_FSM_i2
+
    Register : packetGen_1/symCounter__i7
    Register : packetGen_1/symCounter__i6
    Register : packetGen_1/symCounter__i5
@@ -461,73 +541,64 @@ GSR Component:
    Register : packetGen_1/symCounter__i3
    Register : packetGen_1/symCounter__i2
    Register : packetGen_1/symCounter__i1
-   Register : cnt1_405__i0
-   Register : counter_0/waitcount_409__i0
-   Register : counter_0/waitcount_409__i25
-   Register : counter_0/waitcount_409__i24
-   Register : counter_0/waitcount_409__i23
-   Register : counter_0/waitcount_409__i22
-   Register : counter_0/waitcount_409__i21
-   Register : counter_0/waitcount_409__i20
-   Register : counter_0/waitcount_409__i19
-   Register : counter_0/waitcount_409__i18
-   Register : counter_0/waitcount_409__i17
-   Register : counter_0/waitcount_409__i16
-   Register : counter_0/waitcount_409__i15
-   Register : counter_0/waitcount_409__i14
-   Register : counter_0/waitcount_409__i13
-   Register : counter_0/waitcount_409__i12
-   Register : counter_0/waitcount_409__i11
-
-   Register : counter_0/waitcount_409__i10
-   Register : counter_0/waitcount_409__i9
-   Register : counter_0/waitcount_409__i8
-   Register : counter_0/waitcount_409__i7
-   Register : counter_0/waitcount_409__i6
-   Register : counter_0/waitcount_409__i5
-   Register : counter_0/waitcount_409__i4
-   Register : counter_0/waitcount_409__i3
-   Register : counter_0/waitcount_409__i2
-   Register : counter_0/waitcount_409__i1
-   Register : counter_0/countDone_13
-   Register : cnt1_405__i19
+   Register : LED_9
+   Register : cnt1_169__i25
+   Register : cnt1_169__i24
+   Register : cnt1_169__i23
+   Register : cnt1_169__i22
+   Register : cnt1_169__i21
+   Register : cnt1_169__i20
+   Register : cnt1_169__i19
+   Register : cnt1_169__i18
+   Register : cnt1_169__i17
+   Register : cnt1_169__i16
+   Register : cnt1_169__i15
+   Register : cnt1_169__i14
+   Register : cnt1_169__i13
+   Register : cnt1_169__i12
+   Register : cnt1_169__i11
+   Register : cnt1_169__i10
+   Register : cnt1_169__i9
+   Register : cnt1_169__i8
+   Register : cnt1_169__i7
+   Register : cnt1_169__i6
+   Register : cnt1_169__i5
+   Register : cnt1_169__i4
+   Register : cnt1_169__i3
+   Register : cnt1_169__i2
+   Register : cnt1_169__i1
+   Register : IQSerializer_1/ICounter_175__i2
+   Register : IQSerializer_1/ICounter_175__i1
+   Register : IQSerializer_1/QCounter_177__i3
    Register : IQSerializer_1/current_state_FSM_i0
-   Register : IQSerializer_1/ICounter_411__i2
-   Register : IQSerializer_1/ICounter_411__i1
-   Register : IQSerializer_1/QCounter_413__i3
-   Register : IQSerializer_1/ICounter_411__i3
-   Register : IQSerializer_1/QCounter_413__i2
-   Register : IQSerializer_1/QCounter_413__i1
+   Register : IQSerializer_1/ICounter_175__i3
+   Register : IQSerializer_1/QCounter_177__i2
+   Register : IQSerializer_1/QCounter_177__i1
    Register : IQSerializer_1/current_state_FSM_i4
    Register : IQSerializer_1/current_state_FSM_i3
    Register : IQSerializer_1/current_state_FSM_i2
    Register : IQSerializer_1/current_state_FSM_i1
    Register : IQSerializer_1/DEDFF_0/neg_edge_15
    Register : IQSerializer_1/DEDFF_0/pose_edge_14
-   Register : cnt1_405__i20
-   Register : cnt1_405__i21
-   Register : cnt1_405__i22
-   Register : cnt1_405__i23
-   Register : cnt1_405__i24
-   Register : cnt1_405__i25
-   Register : clockDivider_0/counter_406__i7
-   Register : clockDivider_0/counter_406__i6
-   Register : clockDivider_0/counter_406__i5
-   Register : clockDivider_0/counter_406__i4
-   Register : clockDivider_0/counter_406__i3
-   Register : clockDivider_0/counter_406__i2
-   Register : clockDivider_0/clkLock_25
-   Register : clockDivider_0/counter_406__i1
    Register : clockDivider_0/clkOut_23
-   Register : clockDivider_0/lockCounter_407__i7
-   Register : clockDivider_0/lockCounter_407__i6
-   Register : clockDivider_0/lockCounter_407__i5
-   Register : clockDivider_0/lockCounter_407__i4
-   Register : clockDivider_0/lockCounter_407__i3
-   Register : clockDivider_0/lockCounter_407__i2
-   Register : clockDivider_0/lockCounter_407__i1
-   Register : clockDivider_0/lockCounter_407__i0
-   Register : clockDivider_0/counter_406__i0
+   Register : clockDivider_0/clkLock_25
+   Register : clockDivider_0/counter_170__i0
+   Register : clockDivider_0/lockCounter_171__i0
+   Register : clockDivider_0/lockCounter_171__i7
+   Register : clockDivider_0/lockCounter_171__i6
+   Register : clockDivider_0/lockCounter_171__i5
+   Register : clockDivider_0/lockCounter_171__i4
+   Register : clockDivider_0/lockCounter_171__i3
+   Register : clockDivider_0/lockCounter_171__i2
+
+   Register : clockDivider_0/lockCounter_171__i1
+   Register : clockDivider_0/counter_170__i7
+   Register : clockDivider_0/counter_170__i6
+   Register : clockDivider_0/counter_170__i5
+   Register : clockDivider_0/counter_170__i4
+   Register : clockDivider_0/counter_170__i3
+   Register : clockDivider_0/counter_170__i2
+   Register : clockDivider_0/counter_170__i1
 
      Components with synchronous local reset also reset by asynchronous GSR
 ----------------------------------------------------------------------
@@ -535,53 +606,37 @@ GSR Component:
      These components have the GSR property set to ENABLED and the local reset
      is synchronous. The components will respond to the synchronous local reset
      and to the unrelated asynchronous reset signal 'counter_0_countDone' via
-
      the GSR component.
 
      Type and number of components of the type: 
-   Register = 13 
+   Register = 15 
 
      Type and instance name of component: 
-   Register : fskModule_1/symDone_60
-   Register : fskModule_1/sampleCount_i0
-   Register : fskModule_1/sampleCount_i11
-   Register : fskModule_1/sampleCount_i10
-   Register : fskModule_1/sampleCount_i9
-   Register : fskModule_1/sampleCount_i8
-   Register : fskModule_1/sampleCount_i7
-   Register : fskModule_1/sampleCount_i6
-   Register : fskModule_1/sampleCount_i5
-   Register : fskModule_1/sampleCount_i4
-   Register : fskModule_1/sampleCount_i3
-   Register : fskModule_1/sampleCount_i2
-   Register : fskModule_1/sampleCount_i1
+   Register : qpskModule_1/iq_div_inst/I_bit_temp_60
+   Register : qpskModule_1/iq_div_inst/Q_bit_59
+   Register : qpskModule_1/iq_div_inst/Q_bit_temp_61
+   Register : qpskModule_1/iq_div_inst/symDone_56
+   Register : qpskModule_1/iq_div_inst/I_bit_58
+   Register : qpskModule_1/iq_div_inst/I_bit_temp2_62
+   Register : qpskModule_1/iq_div_inst/iq_switch_57
+   Register : qpskModule_1/iq_div_inst/cnt_sample_i0
+   Register : qpskModule_1/iq_div_inst/cnt_sample_i7
+   Register : qpskModule_1/iq_div_inst/cnt_sample_i6
+   Register : qpskModule_1/iq_div_inst/cnt_sample_i5
+   Register : qpskModule_1/iq_div_inst/cnt_sample_i4
+   Register : qpskModule_1/iq_div_inst/cnt_sample_i3
+   Register : qpskModule_1/iq_div_inst/cnt_sample_i2
+   Register : qpskModule_1/iq_div_inst/cnt_sample_i1
 
 
 
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
 -------------------------
 
-   Total CPU Time: 0 secs  
+   Total CPU Time: 1 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 247 MB
+   Peak Memory Usage: 251 MB
         
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

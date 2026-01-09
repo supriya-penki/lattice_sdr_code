@@ -1,0 +1,12 @@
+----------------------------------------------------------------------
+Report for cell mult_m.TECH
+Register bits:  52 of 84255 (0.062%)
+I/O cells:      0
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               AND2         2          100.0
+                              CCU2C        21          100.0
+                            FD1P3DX        52          100.0
+                                GSR         1          100.0
+                                ND2        12          100.0
+                              TOTAL        88

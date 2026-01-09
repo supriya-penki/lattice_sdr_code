@@ -51,10 +51,22 @@
         <Source name="divided_pll_2/divided_pll_2.sbx" type="sbx" type_short="SBX">
             <Options/>
         </Source>
-        <Source name="fsktb.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+        <Source name="QPSK_modulator.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="ddsdsdd/ddsdsdd.spf" type="Simulation Project File" type_short="SPF">
+        <Source name="FIRfilter/FIRfilter.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="dds_lattice_sincos.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="creating_nco/creating_nco.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="multiplier/multiplier.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="iq_div.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
@@ -63,13 +75,7 @@
         <Source name="mySDR_fpga.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
         </Source>
-        <Source name="testbench/testbench.spf" type="Simulation Project File" type_short="SPF">
-            <Options/>
-        </Source>
-        <Source name="testing/testing.spf" type="Simulation Project File" type_short="SPF">
-            <Options/>
-        </Source>
-        <Source name="uiyguh/uiyguh.spf" type="Simulation Project File" type_short="SPF">
+        <Source name="yutu/yutu.spf" type="Simulation Project File" type_short="SPF">
             <Options/>
         </Source>
     </Implementation>

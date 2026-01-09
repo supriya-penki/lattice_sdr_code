@@ -1,1 +1,0 @@
-C:/lscc/diamond/3.14/bin/nt64/moduleparser.exe -PROJ testing -pf C:/lscc/diamond/3.14/cae_library/synthesis/vhdl/ecp5um.vhd -lib ecp5um -pf C:/lscc/diamond/3.14/cae_library/synthesis/verilog/ecp5um.v -pkg C:/lscc/diamond/3.14/cae_library/vhdl_packages/vdbs -lst C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testing/source_files.lst

@@ -1,0 +1,40 @@
+<BaliSimProject version="1.3" path="." stage="0" language="-1" name="testt" simType="QuestaSim">
+    <Source worklib="work" path="src/DEDFF.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/IQSerializer.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="multiplier/mult_m/mult_m.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="multiplier/multiplier.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="creating_nco/sincos_m/sincos_m.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/dds_lattice_sincos.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="FIRfilter/rcosfilter_m/rcosfilter_m_core_bb.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="FIRfilter/rcosfilter_m/rcosfilter_m.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="FIRfilter/FIRfilter.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/iq_div.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/QPSK_modulator.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/ble_packet.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/packetGenerator.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/packetCounter.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/clockDivider.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="divided_pll_2/pll_24_64m/pll_24_64m.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="divided_pll/pll_24m/pll_24m.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/top_module.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/local_oscillator.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="pll_64m/pll_try/pll_try.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="pll_64m/pll_64_new/pll_64_new.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="pll_64m/pll_64/pll_64.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="pll_64m/pll_64m.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="divided_pll/divided_pll.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="divided_pll_2/divided_pll_2.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="creating_nco/creating_nco.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/cosModule.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/sinModule.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/FSKModulator.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/fsktb.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/dds_tb.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/qpsk_tb.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/bleDefines.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="src/radioDefines.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <SimLib value="pmi_work ovi_ecp5u"/>
+    <GlbInc value=""/>
+    <Macro value=""/>
+    <TopModule instance="" language="VERILOG" name="qpsk_tb"/>
+</BaliSimProject>
