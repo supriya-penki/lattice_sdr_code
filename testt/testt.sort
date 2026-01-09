@@ -1,8 +1,7 @@
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v
-C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/mult_m/mult_m.v
-C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier.v
-C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v
+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v
+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/SinCos_Module/SinCos_Module.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_lattice_sincos.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/rcosfilter_m/rcosfilter_m_core_bb.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/rcosfilter_m/rcosfilter_m.v
@@ -23,7 +22,10 @@ C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64/pll_64.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v
+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/creating_nco.v
+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/mult_m/mult_m.v
+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v

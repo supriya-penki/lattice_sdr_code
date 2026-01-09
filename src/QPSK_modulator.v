@@ -13,8 +13,8 @@ module QPSK_modulator(
 	output wire        [1:0]I,
 	output wire       [1:0]Q,
 	output  switch,
-    output wire signed [7:0] carry_sin_s,
-    output wire signed [7:0] carry_cos_s,
+    output wire signed [11:0] carry_sin_s,
+    output wire signed [11:0] carry_cos_s,
 	output wire [9:0]theta
 );
 
@@ -86,7 +86,7 @@ module QPSK_modulator(
     dds_lattice_sincos #(
         .PHASE_W(24),
         .THETA_W(10),
-        .AMP_W  (8)
+        .AMP_W  (12)
     ) dds0 (
         .clk      (clk),
         .rst_n    (rst_n),
@@ -105,31 +105,21 @@ module QPSK_modulator(
    // wire signed [9:0] I_A = I_filtered[25:16];
     //wire signed [9:0] Q_A = Q_filtered[25:16];
 	
-	wire signed [9:0] I_A = {{8{I[1]}}, I};  // sign-extend 2-bit to 10-bit
-	wire signed [9:0] Q_A = {{8{Q[1]}}, Q};
+	//wire signed [9:0] I_A = {{8{I[1]}}, I};  // sign-extend 2-bit to 10-bit
+	//wire signed [9:0] Q_A = {{8{Q[1]}}, Q};
 
 
-    wire signed [3:0] COS_B = carry_cos_s[7:4];
-    wire signed [3:0] SIN_B = carry_sin_s[7:4];
+    //wire signed [11:0] COS_B = {{4{carry_cos_s[7]}},carry_cos_s};
+   // wire signed [11:0] SIN_B = {{4{carry_sin_s[7]}},carry_sin_s};
 
     // IMPORTANT: QPSK passband is typically:  I*cos  +  Q*sin  (or I*cos - Q*sin depending convention)
     // Vivado ref used I*cos and Q*sin then ADD. Here you want separate outputs:
-    multiplier I_inst (
-        .mult_m_DataA (I_A),
-        .mult_m_DataB (COS_B),
-        .mult_m_Result(I_out),
-        .mult_m_Aclr  (~rst_n),     // FIXED: active-high clear
-        .mult_m_ClkEn (enable),
-        .mult_m_Clock (clk)
-    );
 
-    multiplier Q_inst (
-        .mult_m_DataA (Q_A),
-        .mult_m_DataB (SIN_B),
-        .mult_m_Result(Q_out),
-        .mult_m_Aclr  (~rst_n),
-        .mult_m_ClkEn (enable),
-        .mult_m_Clock (clk)
-    );
+
+	multiplier_12_2_m I_inst (.Clock(clk ), .ClkEn( enable), .Aclr( ~rst_n), .DataA( I), 
+    .DataB(carry_cos_s ), .Result( I_out));
+	
+	multiplier_12_2_m Q_inst (.Clock(clk ), .ClkEn( enable), .Aclr( ~rst_n), .DataA( Q), 
+    .DataB(carry_sin_s ), .Result( Q_out));
 
 endmodule

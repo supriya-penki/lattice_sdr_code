@@ -1,7 +1,7 @@
 module dds_lattice_sincos #(
     parameter integer PHASE_W = 24,   // accumulator width
     parameter integer THETA_W = 10,    // sincos table theta width (3..10)
-    parameter integer AMP_W   = 8      // amplitude width (match your carry_* width)
+    parameter integer AMP_W   = 12      // amplitude width (match your carry_* width)
 )(
     input  wire                  clk,
     input  wire                  rst_n,
@@ -26,7 +26,9 @@ module dds_lattice_sincos #(
     // Replace "sin_cos_table_inst" with the *actual module name*
     // produced by Lattice (from the .sbx/.v wrapper).
 
-  sincos_m __ (.Clock( clk), .ClkEn( 1'b1), .Reset(~rst_n ), .Theta( theta), .Sine(sin_out ), 
-    .Cosine( cos_out));
+  /*sincos_m __ (.Clock( clk), .ClkEn( 1'b1), .Reset(~rst_n ), .Theta( theta), .Sine(sin_out ), 
+    .Cosine( cos_out));*/
+	SinCos_Module __ (.Clock(clk ), .ClkEn(1'b1 ), .Reset(~rst_n ), .Theta(theta ), .Sine(sin_out ), 
+    .Cosine(cos_out ));
 
 endmodule

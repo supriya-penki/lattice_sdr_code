@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Fri Jan 09 16:43:07 2026
+Fri Jan 09 17:20:26 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -18,113 +18,8 @@ Report level:    verbose report, limited to 3 items per constraint
 
 
 ================================================================================
-Constraint: create_clock -period 5.000000 -name clk1 [get_nets serial_clk_c]
-            599 items scored, 95 timing errors detected.
---------------------------------------------------------------------------------
-
-
-Error:  The following path violates requirements by 3.928ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3IX    CK             \IQSerializer_1/QCounter_177__i1  (from serial_clk_c +)
-   Destination:    FD1S3IX    D              \IQSerializer_1/DEDFF_0/pose_edge_14  (to serial_clk_c +)
-
-   Delay:                   6.548ns  (9.9% logic, 90.1% route), 5 logic levels.
-
- Constraint Details:
-
-      6.548ns data_path \IQSerializer_1/QCounter_177__i1 to \IQSerializer_1/DEDFF_0/pose_edge_14 violates
-      2.500ns delay constraint less
-     -0.120ns L_S requirement (totaling 2.620ns) by 3.928ns
-
- Path Details: \IQSerializer_1/QCounter_177__i1 to \IQSerializer_1/DEDFF_0/pose_edge_14
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.230             CK to Q              \IQSerializer_1/QCounter_177__i1 (from serial_clk_c)
-Route        11   e 1.599                                  QCounter[1]
-LUT4        ---     0.105              C to Z              \IQSerializer_1/i1075_3_lut_rep_22
-Route         3   e 1.239                                  n2881
-LUT4        ---     0.105              A to Z              n2790_bdd_4_lut_4_lut
-Route         1   e 1.020                                  DEDFF_D0_N_339
-LUT4        ---     0.105              A to Z              \IQSerializer_1/select_138_Select_0_i1_2_lut
-Route         1   e 1.020                                  \IQSerializer_1/n1
-LUT4        ---     0.105              C to Z              \IQSerializer_1/DEDFF_0/neg_edge_I_0_4_lut
-Route         1   e 1.020                                  \IQSerializer_1/DEDFF_0/Q1
-                  --------
-                    6.548  (9.9% logic, 90.1% route), 5 logic levels.
-
-
-Error:  The following path violates requirements by 3.864ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3IX    CK             \IQSerializer_1/QCounter_177__i2  (from serial_clk_c +)
-   Destination:    FD1S3IX    D              \IQSerializer_1/DEDFF_0/pose_edge_14  (to serial_clk_c +)
-
-   Delay:                   6.484ns  (10.0% logic, 90.0% route), 5 logic levels.
-
- Constraint Details:
-
-      6.484ns data_path \IQSerializer_1/QCounter_177__i2 to \IQSerializer_1/DEDFF_0/pose_edge_14 violates
-      2.500ns delay constraint less
-     -0.120ns L_S requirement (totaling 2.620ns) by 3.864ns
-
- Path Details: \IQSerializer_1/QCounter_177__i2 to \IQSerializer_1/DEDFF_0/pose_edge_14
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.230             CK to Q              \IQSerializer_1/QCounter_177__i2 (from serial_clk_c)
-Route         8   e 1.535                                  QCounter[2]
-LUT4        ---     0.105              B to Z              \IQSerializer_1/i1075_3_lut_rep_22
-Route         3   e 1.239                                  n2881
-LUT4        ---     0.105              A to Z              n2790_bdd_4_lut_4_lut
-Route         1   e 1.020                                  DEDFF_D0_N_339
-LUT4        ---     0.105              A to Z              \IQSerializer_1/select_138_Select_0_i1_2_lut
-Route         1   e 1.020                                  \IQSerializer_1/n1
-LUT4        ---     0.105              C to Z              \IQSerializer_1/DEDFF_0/neg_edge_I_0_4_lut
-Route         1   e 1.020                                  \IQSerializer_1/DEDFF_0/Q1
-                  --------
-                    6.484  (10.0% logic, 90.0% route), 5 logic levels.
-
-
-Error:  The following path violates requirements by 3.847ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3IX    CK             \IQSerializer_1/ICounter_175__i1  (from serial_clk_c +)
-   Destination:    FD1S3IX    D              \IQSerializer_1/DEDFF_0/pose_edge_14  (to serial_clk_c +)
-
-   Delay:                   6.467ns  (10.1% logic, 89.9% route), 5 logic levels.
-
- Constraint Details:
-
-      6.467ns data_path \IQSerializer_1/ICounter_175__i1 to \IQSerializer_1/DEDFF_0/pose_edge_14 violates
-      2.500ns delay constraint less
-     -0.120ns L_S requirement (totaling 2.620ns) by 3.847ns
-
- Path Details: \IQSerializer_1/ICounter_175__i1 to \IQSerializer_1/DEDFF_0/pose_edge_14
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.230             CK to Q              \IQSerializer_1/ICounter_175__i1 (from serial_clk_c)
-Route        11   e 1.599                                  ICounter[1]
-LUT4        ---     0.105              C to Z              \IQSerializer_1/i1161_3_lut_rep_21
-Route         2   e 1.158                                  n2880
-LUT4        ---     0.105              A to Z              n2778_bdd_4_lut_4_lut
-Route         1   e 1.020                                  DEDFF_D0_N_334
-LUT4        ---     0.105              A to Z              \IQSerializer_1/select_138_Select_0_i2_2_lut
-Route         1   e 1.020                                  \IQSerializer_1/n2
-LUT4        ---     0.105              B to Z              \IQSerializer_1/DEDFF_0/neg_edge_I_0_4_lut
-Route         1   e 1.020                                  \IQSerializer_1/DEDFF_0/Q1
-                  --------
-                    6.467  (10.1% logic, 89.9% route), 5 logic levels.
-
-Warning: 6.428 ns is the maximum delay for this constraint.
-
-
-
-================================================================================
-Constraint: create_clock -period 5.000000 -name clk0 [get_nets clockDivider_clk_4M]
-            4096 items scored, 1037 timing errors detected.
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets clockDivider_clk_4M]
+            4088 items scored, 1443 timing errors detected.
 --------------------------------------------------------------------------------
 
 
@@ -148,9 +43,9 @@ Error:  The following path violates requirements by 2.770ns
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.230             CK to Q              \counter_0/countDone_13 (from clockDivider_clk_4M)
 Route        14   e 1.647                                  counter_0_countDone
-LUT4        ---     0.105              A to Z              \qpskModule_1/dds0/i1468_3_lut_3_lut
-Route         1   e 1.020                                  n2748
-LUT4        ---     0.105              C to Z              \packetGen_1/i1466_4_lut
+LUT4        ---     0.105              A to Z              \qpskModule_1/dds0/i1373_3_lut_3_lut
+Route         1   e 1.020                                  n2658
+LUT4        ---     0.105              C to Z              \packetGen_1/i1371_4_lut
 Route         2   e 1.158                                  \packetGen_1/next_symVal
 LUT4        ---     0.105              A to Z              \packetGen_1/next_symVal_I_0_1_lut
 Route         1   e 1.020                                  \packetGen_1/next_symVal_N_171
@@ -178,9 +73,9 @@ Error:  The following path violates requirements by 2.722ns
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.230             CK to Q              \packetGen_1/current_state_FSM_i3 (from clockDivider_clk_4M)
 Route        11   e 1.599                                  next_state_3__N_153
-LUT4        ---     0.105              B to Z              \qpskModule_1/dds0/i1468_3_lut_3_lut
-Route         1   e 1.020                                  n2748
-LUT4        ---     0.105              C to Z              \packetGen_1/i1466_4_lut
+LUT4        ---     0.105              B to Z              \qpskModule_1/dds0/i1373_3_lut_3_lut
+Route         1   e 1.020                                  n2658
+LUT4        ---     0.105              C to Z              \packetGen_1/i1371_4_lut
 Route         2   e 1.158                                  \packetGen_1/next_symVal
 LUT4        ---     0.105              A to Z              \packetGen_1/next_symVal_I_0_1_lut
 Route         1   e 1.020                                  \packetGen_1/next_symVal_N_171
@@ -210,7 +105,7 @@ L_CO        ---     0.230             CK to Q              \packetGen_1/symCount
 Route        10   e 1.580                                  symCounter[0]
 LUT4        ---     0.105          AD[8] to DO0            addr_7__I_0
 Route         1   e 1.020                                  data
-LUT4        ---     0.105              B to Z              \packetGen_1/i1466_4_lut
+LUT4        ---     0.105              B to Z              \packetGen_1/i1371_4_lut
 Route         2   e 1.158                                  \packetGen_1/next_symVal
 LUT4        ---     0.105              A to Z              \packetGen_1/next_symVal_I_0_1_lut
 Route         1   e 1.020                                  \packetGen_1/next_symVal_N_171
@@ -220,6 +115,113 @@ Route         1   e 1.020                                  \packetGen_1/next_sym
 Warning: 5.270 ns is the maximum delay for this constraint.
 
 
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets serial_clk_c]
+            595 items scored, 91 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 3.864ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \IQSerializer_1/ICounter_175__i1  (from serial_clk_c +)
+   Destination:    FD1S3IX    D              \IQSerializer_1/DEDFF_0/pose_edge_14  (to serial_clk_c +)
+
+   Delay:                   6.484ns  (10.0% logic, 90.0% route), 5 logic levels.
+
+ Constraint Details:
+
+      6.484ns data_path \IQSerializer_1/ICounter_175__i1 to \IQSerializer_1/DEDFF_0/pose_edge_14 violates
+      2.500ns delay constraint less
+     -0.120ns L_S requirement (totaling 2.620ns) by 3.864ns
+
+ Path Details: \IQSerializer_1/ICounter_175__i1 to \IQSerializer_1/DEDFF_0/pose_edge_14
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.230             CK to Q              \IQSerializer_1/ICounter_175__i1 (from serial_clk_c)
+Route        12   e 1.616                                  ICounter[1]
+LUT4        ---     0.105              C to Z              \IQSerializer_1/i1_3_lut_rep_15
+Route         2   e 1.158                                  n2787
+LUT4        ---     0.105              A to Z              n2687_bdd_4_lut_4_lut
+Route         1   e 1.020                                  DEDFF_D0_N_334
+LUT4        ---     0.105              A to Z              \IQSerializer_1/select_138_Select_0_i2_2_lut
+Route         1   e 1.020                                  \IQSerializer_1/n2
+LUT4        ---     0.105              B to Z              \IQSerializer_1/DEDFF_0/neg_edge_I_0_4_lut
+Route         1   e 1.020                                  \IQSerializer_1/DEDFF_0/Q1
+                  --------
+                    6.484  (10.0% logic, 90.0% route), 5 logic levels.
+
+
+Error:  The following path violates requirements by 3.807ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \IQSerializer_1/ICounter_175__i2  (from serial_clk_c +)
+   Destination:    FD1S3IX    D              \IQSerializer_1/DEDFF_0/pose_edge_14  (to serial_clk_c +)
+
+   Delay:                   6.427ns  (10.1% logic, 89.9% route), 5 logic levels.
+
+ Constraint Details:
+
+      6.427ns data_path \IQSerializer_1/ICounter_175__i2 to \IQSerializer_1/DEDFF_0/pose_edge_14 violates
+      2.500ns delay constraint less
+     -0.120ns L_S requirement (totaling 2.620ns) by 3.807ns
+
+ Path Details: \IQSerializer_1/ICounter_175__i2 to \IQSerializer_1/DEDFF_0/pose_edge_14
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.230             CK to Q              \IQSerializer_1/ICounter_175__i2 (from serial_clk_c)
+Route         9   e 1.559                                  ICounter[2]
+LUT4        ---     0.105              B to Z              \IQSerializer_1/i1_3_lut_rep_15
+Route         2   e 1.158                                  n2787
+LUT4        ---     0.105              A to Z              n2687_bdd_4_lut_4_lut
+Route         1   e 1.020                                  DEDFF_D0_N_334
+LUT4        ---     0.105              A to Z              \IQSerializer_1/select_138_Select_0_i2_2_lut
+Route         1   e 1.020                                  \IQSerializer_1/n2
+LUT4        ---     0.105              B to Z              \IQSerializer_1/DEDFF_0/neg_edge_I_0_4_lut
+Route         1   e 1.020                                  \IQSerializer_1/DEDFF_0/Q1
+                  --------
+                    6.427  (10.1% logic, 89.9% route), 5 logic levels.
+
+
+Error:  The following path violates requirements by 3.764ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \IQSerializer_1/ICounter_175__i2  (from serial_clk_c +)
+   Destination:    FD1S3IX    D              \IQSerializer_1/DEDFF_0/pose_edge_14  (to serial_clk_c +)
+
+   Delay:                   6.384ns  (11.4% logic, 88.6% route), 6 logic levels.
+
+ Constraint Details:
+
+      6.384ns data_path \IQSerializer_1/ICounter_175__i2 to \IQSerializer_1/DEDFF_0/pose_edge_14 violates
+      2.500ns delay constraint less
+     -0.120ns L_S requirement (totaling 2.620ns) by 3.764ns
+
+ Path Details: \IQSerializer_1/ICounter_175__i2 to \IQSerializer_1/DEDFF_0/pose_edge_14
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.230             CK to Q              \IQSerializer_1/ICounter_175__i2 (from serial_clk_c)
+Route         9   e 1.559                                  ICounter[2]
+LUT4        ---     0.105              C to Z              \IQSerializer_1/IQSerializer_I[9]_bdd_3_lut
+Route         1   e 0.020                                  \IQSerializer_1/n2732
+MUXL5       ---     0.075           ALUT to Z              \IQSerializer_1/i1431
+Route         1   e 1.020                                  n2734
+LUT4        ---     0.105              D to Z              n2687_bdd_4_lut_4_lut
+Route         1   e 1.020                                  DEDFF_D0_N_334
+LUT4        ---     0.105              A to Z              \IQSerializer_1/select_138_Select_0_i2_2_lut
+Route         1   e 1.020                                  \IQSerializer_1/n2
+LUT4        ---     0.105              B to Z              \IQSerializer_1/DEDFF_0/neg_edge_I_0_4_lut
+Route         1   e 1.020                                  \IQSerializer_1/DEDFF_0/Q1
+                  --------
+                    6.384  (11.4% logic, 88.6% route), 6 logic levels.
+
+Warning: 6.364 ns is the maximum delay for this constraint.
+
+
 Timing Report Summary
 --------------
 --------------------------------------------------------------------------------
@@ -227,10 +229,10 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets serial_clk_c]            |     5.000 ns|    12.856 ns|     5 *
+clk1 [get_nets clockDivider_clk_4M]     |     5.000 ns|    10.540 ns|     4 *
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clockDivider_clk_4M]     |     5.000 ns|    10.540 ns|     4 *
+clk0 [get_nets serial_clk_c]            |     5.000 ns|    12.728 ns|     5 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -240,59 +242,57 @@ clk0 [get_nets clockDivider_clk_4M]     |     5.000 ns|    10.540 ns|     4 *
 --------------------------------------------------------------------------------
 Critical Nets                           |   Loads|  Errors| % of total
 --------------------------------------------------------------------------------
-\qpskModule_1/dds0/__/co1               |       1|     255|     22.53%
+\qpskModule_1/dds0/__/co1               |       1|     375|     24.45%
                                         |        |        |
-\qpskModule_1/dds0/__/co2               |       1|     255|     22.53%
+\qpskModule_1/dds0/__/co2               |       1|     375|     24.45%
                                         |        |        |
-\counter_0/n1821                        |      26|     182|     16.08%
+\qpskModule_1/dds0/__/rom_addr0_r_15    |      25|     202|     13.17%
                                         |        |        |
-cout                                    |       1|     182|     16.08%
+\qpskModule_1/dds0/__/rom_addr0_r       |       2|     201|     13.10%
                                         |        |        |
-n2433                                   |       1|     182|     16.08%
+\qpskModule_1/dds0/__/rom_addr0_r_inv   |       1|     200|     13.04%
                                         |        |        |
-n2434                                   |       1|     182|     16.08%
+\qpskModule_1/dds0/__/rom_addr0_r_n_7   |       1|     200|     13.04%
                                         |        |        |
-n2435                                   |       1|     182|     16.08%
+\counter_0/n1818                        |      26|     182|     11.86%
                                         |        |        |
-n2436                                   |       1|     182|     16.08%
+cout_adj_372                            |       1|     182|     11.86%
                                         |        |        |
-n2437                                   |       1|     182|     16.08%
+n2245                                   |       1|     182|     11.86%
                                         |        |        |
-n2438                                   |       1|     182|     16.08%
+n2246                                   |       1|     182|     11.86%
                                         |        |        |
-n2439                                   |       1|     182|     16.08%
+n2247                                   |       1|     182|     11.86%
                                         |        |        |
-n2440                                   |       1|     182|     16.08%
+n2248                                   |       1|     182|     11.86%
                                         |        |        |
-\qpskModule_1/dds0/__/rom_addr0_r_15    |      17|     138|     12.19%
+n2249                                   |       1|     182|     11.86%
                                         |        |        |
-\qpskModule_1/dds0/__/rom_addr0_r       |       2|     137|     12.10%
+n2250                                   |       1|     182|     11.86%
                                         |        |        |
-\qpskModule_1/dds0/__/rom_addr0_r_inv   |       1|     136|     12.01%
+n2251                                   |       1|     182|     11.86%
                                         |        |        |
-\qpskModule_1/dds0/__/rom_addr0_r_n_7   |       1|     136|     12.01%
+n2252                                   |       1|     182|     11.86%
                                         |        |        |
-n2432                                   |       1|     130|     11.48%
+\qpskModule_1/dds0/__/rom_addr0_r_13    |      25|     177|     11.54%
                                         |        |        |
-\qpskModule_1/dds0/__/rom_addr0_r_13    |      17|     121|     10.69%
+\qpskModule_1/dds0/__/rom_addr0_r_14    |      25|     177|     11.54%
                                         |        |        |
-\qpskModule_1/dds0/__/rom_addr0_r_14    |      17|     121|     10.69%
+\qpskModule_1/dds0/__/rom_addr0_r_1     |       2|     176|     11.47%
                                         |        |        |
-\qpskModule_1/dds0/__/rom_addr0_r_1     |       2|     120|     10.60%
+\qpskModule_1/dds0/__/rom_addr0_r_2     |       2|     176|     11.47%
                                         |        |        |
-\qpskModule_1/dds0/__/rom_addr0_r_2     |       2|     120|     10.60%
+\qpskModule_1/dds0/__/co0               |       1|     175|     11.41%
                                         |        |        |
-\qpskModule_1/dds0/__/co0               |       1|     119|     10.51%
+\qpskModule_1/dds0/__/co3               |       1|     175|     11.41%
                                         |        |        |
-\qpskModule_1/dds0/__/co3               |       1|     119|     10.51%
+\qpskModule_1/dds0/__/rom_addr0_r_1_inv |       1|     175|     11.41%
                                         |        |        |
-\qpskModule_1/dds0/__/rom_addr0_r_1_inv |       1|     119|     10.51%
+\qpskModule_1/dds0/__/rom_addr0_r_2_inv |       1|     175|     11.41%
                                         |        |        |
-\qpskModule_1/dds0/__/rom_addr0_r_2_inv |       1|     119|     10.51%
+\qpskModule_1/dds0/__/rom_addr0_r_n_5   |       1|     175|     11.41%
                                         |        |        |
-\qpskModule_1/dds0/__/rom_addr0_r_n_5   |       1|     119|     10.51%
-                                        |        |        |
-\qpskModule_1/dds0/__/rom_addr0_r_n_6   |       1|     119|     10.51%
+\qpskModule_1/dds0/__/rom_addr0_r_n_6   |       1|     175|     11.41%
                                         |        |        |
 --------------------------------------------------------------------------------
 
@@ -300,10 +300,10 @@ n2432                                   |       1|     130|     11.48%
 Timing summary:
 ---------------
 
-Timing errors: 1132  Score: 1680546
+Timing errors: 1534  Score: 2339357
 
-Constraints cover  4809 paths, 739 nets, and 1715 connections (93.2% coverage)
+Constraints cover  4683 paths, 750 nets, and 1740 connections (93.4% coverage)
 
 
-Peak memory: 134074368 bytes, TRCE: 4407296 bytes, DLYMAN: 163840 bytes
+Peak memory: 134103040 bytes, TRCE: 4132864 bytes, DLYMAN: 163840 bytes
 CPU_TIME_REPORT: 0 secs 

@@ -1,0 +1,171 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Fri Jan 09 17:03:38 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     multiplier_12_2_m
+Constraint file: multiplier_12_2_m_temp_lse.sdc 
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk500 [get_nets Clock]
+            400 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 0.445ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             FF_40  (from Clock +)
+   Destination:    FD1P3DX    D              FF_0  (to Clock -)
+
+   Delay:                   4.675ns  (19.2% logic, 80.8% route), 9 logic levels.
+
+ Constraint Details:
+
+      4.675ns data_path FF_40 to FF_0 meets
+      5.000ns delay constraint less
+     -0.120ns L_S requirement (totaling 5.120ns) by 0.445ns
+
+ Path Details: FF_40 to FF_0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.230             CK to Q              FF_40 (from Clock)
+Route        12   e 1.616                                  rega_a_1
+LUT4        ---     0.105                to                ND2_t10
+Route         1   e 1.020                                  multiplier_12_2_m_0_mult_0_0_n0
+A1_TO_FCO   ---     0.212           A[2] to COUT           multiplier_12_2_m_0_mult_0_0
+Route         1   e 0.020                                  mco
+FCI_TO_FCO  ---     0.033            CIN to COUT           multiplier_12_2_m_0_mult_0_1
+Route         1   e 0.020                                  mco_1
+FCI_TO_FCO  ---     0.033            CIN to COUT           multiplier_12_2_m_0_mult_0_2
+Route         1   e 0.020                                  mco_2
+FCI_TO_FCO  ---     0.033            CIN to COUT           multiplier_12_2_m_0_mult_0_3
+Route         1   e 0.020                                  mco_3
+FCI_TO_FCO  ---     0.033            CIN to COUT           multiplier_12_2_m_0_mult_0_4
+Route         1   e 0.020                                  mco_4
+FCI_TO_FCO  ---     0.033            CIN to COUT           multiplier_12_2_m_0_mult_0_5
+Route         1   e 0.020                                  mfco
+FCI_TO_F    ---     0.187            CIN to S[2]           multiplier_12_2_m_0_Cadd_0_6
+Route         1   e 1.020                                  p_L1_13
+                  --------
+                    4.675  (19.2% logic, 80.8% route), 9 logic levels.
+
+
+Passed:  The following path meets requirements by 0.445ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             FF_40  (from Clock +)
+   Destination:    FD1P3DX    D              FF_0  (to Clock -)
+
+   Delay:                   4.675ns  (19.2% logic, 80.8% route), 9 logic levels.
+
+ Constraint Details:
+
+      4.675ns data_path FF_40 to FF_0 meets
+      5.000ns delay constraint less
+     -0.120ns L_S requirement (totaling 5.120ns) by 0.445ns
+
+ Path Details: FF_40 to FF_0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.230             CK to Q              FF_40 (from Clock)
+Route        12   e 1.616                                  rega_a_1
+LUT4        ---     0.105                to                ND2_t11
+Route         1   e 1.020                                  multiplier_12_2_m_0_mult_0_0_n1
+A1_TO_FCO   ---     0.212           A[2] to COUT           multiplier_12_2_m_0_mult_0_0
+Route         1   e 0.020                                  mco
+FCI_TO_FCO  ---     0.033            CIN to COUT           multiplier_12_2_m_0_mult_0_1
+Route         1   e 0.020                                  mco_1
+FCI_TO_FCO  ---     0.033            CIN to COUT           multiplier_12_2_m_0_mult_0_2
+Route         1   e 0.020                                  mco_2
+FCI_TO_FCO  ---     0.033            CIN to COUT           multiplier_12_2_m_0_mult_0_3
+Route         1   e 0.020                                  mco_3
+FCI_TO_FCO  ---     0.033            CIN to COUT           multiplier_12_2_m_0_mult_0_4
+Route         1   e 0.020                                  mco_4
+FCI_TO_FCO  ---     0.033            CIN to COUT           multiplier_12_2_m_0_mult_0_5
+Route         1   e 0.020                                  mfco
+FCI_TO_F    ---     0.187            CIN to S[2]           multiplier_12_2_m_0_Cadd_0_6
+Route         1   e 1.020                                  p_L1_13
+                  --------
+                    4.675  (19.2% logic, 80.8% route), 9 logic levels.
+
+
+Passed:  The following path meets requirements by 0.498ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             FF_40  (from Clock +)
+   Destination:    FD1P3DX    D              FF_0  (to Clock -)
+
+   Delay:                   4.622ns  (18.7% logic, 81.3% route), 8 logic levels.
+
+ Constraint Details:
+
+      4.622ns data_path FF_40 to FF_0 meets
+      5.000ns delay constraint less
+     -0.120ns L_S requirement (totaling 5.120ns) by 0.498ns
+
+ Path Details: FF_40 to FF_0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.230             CK to Q              FF_40 (from Clock)
+Route        12   e 1.616                                  rega_a_1
+LUT4        ---     0.105                to                ND2_t9
+Route         1   e 1.020                                  multiplier_12_2_m_0_mult_0_1_n1
+A1_TO_FCO   ---     0.212           A[2] to COUT           multiplier_12_2_m_0_mult_0_1
+Route         1   e 0.020                                  mco_1
+FCI_TO_FCO  ---     0.033            CIN to COUT           multiplier_12_2_m_0_mult_0_2
+Route         1   e 0.020                                  mco_2
+FCI_TO_FCO  ---     0.033            CIN to COUT           multiplier_12_2_m_0_mult_0_3
+Route         1   e 0.020                                  mco_3
+FCI_TO_FCO  ---     0.033            CIN to COUT           multiplier_12_2_m_0_mult_0_4
+Route         1   e 0.020                                  mco_4
+FCI_TO_FCO  ---     0.033            CIN to COUT           multiplier_12_2_m_0_mult_0_5
+Route         1   e 0.020                                  mfco
+FCI_TO_F    ---     0.187            CIN to S[2]           multiplier_12_2_m_0_Cadd_0_6
+Route         1   e 1.020                                  p_L1_13
+                  --------
+                    4.622  (18.7% logic, 81.3% route), 8 logic levels.
+
+Report: 4.555 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk500 [get_nets Clock]                 |     5.000 ns|     4.555 ns|     9  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  400 paths, 61 nets, and 138 connections (99.3% coverage)
+
+
+Peak memory: 118784000 bytes, TRCE: 1810432 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

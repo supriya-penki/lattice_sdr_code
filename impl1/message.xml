@@ -273,9 +273,9 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(8): </Dynamic>
-            <Dynamic>sincos_m</Dynamic>
-            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v</Navigation>
+            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_module/sincos_module.v(8): </Dynamic>
+            <Dynamic>SinCos_Module</Dynamic>
+            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_module/sincos_module.v</Navigation>
             <Navigation>8</Navigation>
         </Message>
         <Message>
@@ -402,14 +402,6 @@
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): </Dynamic>
-            <Dynamic>ROM256X1A(initval=256'b01111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111)</Dynamic>
-            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v</Navigation>
-            <Navigation>719</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): </Dynamic>
             <Dynamic>ROM256X1A_renamed_due_excessive_length_8</Dynamic>
             <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v</Navigation>
             <Navigation>719</Navigation>
@@ -442,6 +434,22 @@
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): </Dynamic>
+            <Dynamic>ROM256X1A(initval=256'b0111111)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v</Navigation>
+            <Navigation>719</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): </Dynamic>
+            <Dynamic>ROM256X1A(initval=256'b0111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111000000)</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v</Navigation>
+            <Navigation>719</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): </Dynamic>
             <Dynamic>ROM256X1A_renamed_due_excessive_length_12</Dynamic>
             <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v</Navigation>
             <Navigation>719</Navigation>
@@ -455,43 +463,91 @@
             <Navigation>719</Navigation>
         </Message>
         <Message>
-            <ID>35931013</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(516): </Dynamic>
-            <Dynamic>CIN</Dynamic>
-            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v</Navigation>
-            <Navigation>516</Navigation>
-        </Message>
-        <Message>
-            <ID>35931013</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(655): </Dynamic>
-            <Dynamic>CIN</Dynamic>
-            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v</Navigation>
-            <Navigation>655</Navigation>
-        </Message>
-        <Message>
-            <ID>35931013</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(698): </Dynamic>
-            <Dynamic>CIN</Dynamic>
-            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v</Navigation>
-            <Navigation>698</Navigation>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): </Dynamic>
+            <Dynamic>ROM256X1A_renamed_due_excessive_length_14</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v</Navigation>
+            <Navigation>719</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/multiplier.v(11): </Dynamic>
-            <Dynamic>multiplier</Dynamic>
-            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/multiplier.v</Navigation>
-            <Navigation>11</Navigation>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): </Dynamic>
+            <Dynamic>ROM256X1A_renamed_due_excessive_length_15</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v</Navigation>
+            <Navigation>719</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v(8): </Dynamic>
-            <Dynamic>mult_m</Dynamic>
-            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v</Navigation>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): </Dynamic>
+            <Dynamic>ROM256X1A_renamed_due_excessive_length_16</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v</Navigation>
+            <Navigation>719</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): </Dynamic>
+            <Dynamic>ROM256X1A_renamed_due_excessive_length_17</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v</Navigation>
+            <Navigation>719</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): </Dynamic>
+            <Dynamic>ROM256X1A_renamed_due_excessive_length_18</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v</Navigation>
+            <Navigation>719</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): </Dynamic>
+            <Dynamic>ROM256X1A_renamed_due_excessive_length_19</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v</Navigation>
+            <Navigation>719</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(719): </Dynamic>
+            <Dynamic>ROM256X1A_renamed_due_excessive_length_20</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v</Navigation>
+            <Navigation>719</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_module/sincos_module.v(688): </Dynamic>
+            <Dynamic>CIN</Dynamic>
+            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_module/sincos_module.v</Navigation>
+            <Navigation>688</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_module/sincos_module.v(875): </Dynamic>
+            <Dynamic>CIN</Dynamic>
+            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_module/sincos_module.v</Navigation>
+            <Navigation>875</Navigation>
+        </Message>
+        <Message>
+            <ID>35931013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_module/sincos_module.v(936): </Dynamic>
+            <Dynamic>CIN</Dynamic>
+            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_module/sincos_module.v</Navigation>
+            <Navigation>936</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v(8): </Dynamic>
+            <Dynamic>multiplier_12_2_m</Dynamic>
+            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v</Navigation>
             <Navigation>8</Navigation>
         </Message>
         <Message>
@@ -506,14 +562,6 @@
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(76): </Dynamic>
-            <Dynamic>CCU2C(INJECT1_0=&quot;NO&quot;,INJECT1_1=&quot;NO&quot;)</Dynamic>
-            <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v</Navigation>
-            <Navigation>76</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(76): </Dynamic>
             <Dynamic>CCU2C(INIT0=16'b0111100010001000,INIT1=16'b0111100010001000,INJECT1_0=&quot;NO&quot;,INJECT1_1=&quot;NO&quot;)</Dynamic>
             <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v</Navigation>
             <Navigation>76</Navigation>
@@ -521,26 +569,10 @@
         <Message>
             <ID>35931013</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v(340): </Dynamic>
+            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v(252): </Dynamic>
             <Dynamic>CIN</Dynamic>
-            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v</Navigation>
-            <Navigation>340</Navigation>
-        </Message>
-        <Message>
-            <ID>35931013</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v(356): </Dynamic>
-            <Dynamic>CIN</Dynamic>
-            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v</Navigation>
-            <Navigation>356</Navigation>
-        </Message>
-        <Message>
-            <ID>35931013</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v(372): </Dynamic>
-            <Dynamic>CIN</Dynamic>
-            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v</Navigation>
-            <Navigation>372</Navigation>
+            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v</Navigation>
+            <Navigation>252</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
@@ -561,50 +593,34 @@
         <Message>
             <ID>35931013</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(516): </Dynamic>
+            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_module/sincos_module.v(688): </Dynamic>
             <Dynamic>CIN</Dynamic>
-            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v</Navigation>
-            <Navigation>516</Navigation>
+            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_module/sincos_module.v</Navigation>
+            <Navigation>688</Navigation>
         </Message>
         <Message>
             <ID>35931013</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(655): </Dynamic>
+            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_module/sincos_module.v(875): </Dynamic>
             <Dynamic>CIN</Dynamic>
-            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v</Navigation>
-            <Navigation>655</Navigation>
+            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_module/sincos_module.v</Navigation>
+            <Navigation>875</Navigation>
         </Message>
         <Message>
             <ID>35931013</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v(698): </Dynamic>
+            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_module/sincos_module.v(936): </Dynamic>
             <Dynamic>CIN</Dynamic>
-            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v</Navigation>
-            <Navigation>698</Navigation>
+            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/creating_nco/sincos_module/sincos_module.v</Navigation>
+            <Navigation>936</Navigation>
         </Message>
         <Message>
             <ID>35931013</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v(340): </Dynamic>
+            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v(252): </Dynamic>
             <Dynamic>CIN</Dynamic>
-            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v</Navigation>
-            <Navigation>340</Navigation>
-        </Message>
-        <Message>
-            <ID>35931013</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v(356): </Dynamic>
-            <Dynamic>CIN</Dynamic>
-            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v</Navigation>
-            <Navigation>356</Navigation>
-        </Message>
-        <Message>
-            <ID>35931013</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v(372): </Dynamic>
-            <Dynamic>CIN</Dynamic>
-            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/mult_m/mult_m.v</Navigation>
-            <Navigation>372</Navigation>
+            <Navigation>c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v</Navigation>
+            <Navigation>252</Navigation>
         </Message>
         <Message>
             <ID>35001774</ID>

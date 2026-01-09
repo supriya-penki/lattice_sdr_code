@@ -1,0 +1,166 @@
+synthesis:  version Diamond (64-bit) 3.14.0.75.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+Fri Jan 09 17:03:38 2026
+
+
+Command Line:  C:\lscc\diamond\3.14\ispfpga\bin\nt64\synthesis.exe -f multiplier_12_2_m.synproj -sdc C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.ldc -gui 
+
+Synthesis options:
+The -a option is ecp5um5g.
+The -s option is 8.
+The -t option is CABGA381.
+The -d option is LFE5UM5G-85F.
+Using package CABGA381.
+Using performance grade 8.
+                                                          
+
+##########################################################
+
+### Lattice Family : ECP5UM5G
+
+### Device  : LFE5UM5G-85F
+
+### Package : CABGA381
+
+### Speed   : 8
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+Top-level module name = multiplier_12_2_m.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true (default)
+DSP utilization = 100 % (default)
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Use IO Insertion = FALSE
+Use IO Reg = FALSE (implied)
+WARNING - synthesis: Cannot pack registers into I/Os because use_io_insertion is FALSE.
+WARNING - synthesis: Ignoring user setting of use_io_reg. Value is set to FALSE.
+Use IO Reg = FALSE
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m (searchpath added)
+Verilog design file = C:/lscc/diamond/3.14/cae_library/synthesis/verilog/ecp5um.v
+Verilog design file = C:/lscc/diamond/3.14/cae_library/synthesis/verilog/pmi_def.v
+Verilog design file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v
+NGO file = C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.ngo
+WARNING - synthesis: Option -force_gsr will be set to false when option -output_edif/-ngo are set
+-sdc option: SDC file input is C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.ldc.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file c:/lscc/diamond/3.14/cae_library/synthesis/verilog/ecp5um.v. VERI-1482
+Analyzing Verilog file c:/lscc/diamond/3.14/cae_library/synthesis/verilog/pmi_def.v. VERI-1482
+Analyzing Verilog file c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v. VERI-1482
+Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v. VERI-1482
+Top module name (Verilog): multiplier_12_2_m
+INFO - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v(8): compiling module multiplier_12_2_m. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(25): compiling module AND2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(531): compiling module ND2. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(119): compiling module FD1P3DX. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(76): compiling module CCU2C(INIT0=16'b0110011010101010,INIT1=16'b0110011010101010,INJECT1_0="NO",INJECT1_1="NO"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(761): compiling module VLO. VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(76): compiling module CCU2C(INIT0=16'b0111100010001000,INIT1=16'b0111100010001000,INJECT1_0="NO",INJECT1_1="NO"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/ecp5um.v(757): compiling module VHI. VERI-1018
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v(252): input port CIN is not connected on this instance. VDB-1013
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00m/data/sa5mlib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/sa5p00/data/sa5plib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'sa5p85m.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
+Package Status:                     Final          Version 1.43.
+WARNING - synthesis: There are no design constraints in the file C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.ldc
+Top-level module name = multiplier_12_2_m.
+WARNING - synthesis: There are no design constraints in the file C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.ldc
+This ldc file was generated by Clarity Designer!
+
+WARNING - synthesis: c:/users/sna/documents/fpga_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v(94): Removing unused instance _6. VDB-5034
+######## Missing driver on net n83. Patching with GND.
+
+
+
+######## GSR will not be inferred in an NGO flow, unless force_gsr=yes.
+WARNING - synthesis: There are no design constraints in the file multiplier_12_2_m_for_lpf.sdc
+Writing LPF file C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.lpf.
+Results of NGD DRC are available in multiplier_12_2_m_drc.log.
+WARNING - synthesis: DRC checking was skipped because the -ngo option was used.
+Writing NGD file C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.ngo.
+
+################### Begin Area Report (multiplier_12_2_m)######################
+Number of register bits => 42 of 84255 (0 % )
+AND2 => 1
+CCU2C => 8
+FD1P3DX => 42
+GSR => 1
+ND2 => 12
+################### End Area Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 0
+Clock Enable Nets
+Number of Clock Enables: 0
+Top 0 highest fanout Clock Enables:
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : rega_a_0, loads : 13
+  Net : rega_a_1, loads : 12
+  Net : regb_b_11, loads : 3
+  Net : regb_b_0, loads : 2
+  Net : regb_b_2, loads : 2
+  Net : regb_b_1, loads : 2
+  Net : regb_b_4, loads : 2
+  Net : regb_b_3, loads : 2
+  Net : regb_b_6, loads : 2
+  Net : regb_b_5, loads : 2
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk500 [get_nets Clock]                 |  200.000 MHz|  219.539 MHz|     9  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Peak Memory Usage: 113.402  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.422  secs
+--------------------------------------------------------------

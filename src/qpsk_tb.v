@@ -146,8 +146,8 @@ initial begin
 	ii = 0;
 	while(loop) begin
 		@(posedge clk) begin
-			$fwrite(fsk_file_I, "%d\n", $signed(FSK_I));
-        	$fwrite(fsk_file_Q, "%d\n", $signed(FSK_Q));
+			$fwrite(fsk_file_I, "%d\n", $signed(carry_sin_s));
+        	$fwrite(fsk_file_Q, "%d\n", $signed(carry_cos_s));
 			ii = ii + 1;
 			if (ii==1023)
 				loop = 0;
