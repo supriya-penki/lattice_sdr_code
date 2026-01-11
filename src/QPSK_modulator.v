@@ -62,14 +62,14 @@ module QPSK_modulator(
     //wire signed [25:0] I_filtered;
     //wire signed [25:0] Q_filtered;
 	
-	rcos I_inst (.rcosfilter_m_din(I_fir_in), .rcosfilter_m_dout(I_out), .rcosfilter_m_clk(clk), 
-     .rcosfilter_m_inpvalid(enable), .rcosfilter_m_outvalid(), .rcosfilter_m_rfi(), 
-     .rcosfilter_m_rstn(rst_n));
+	//rcos I_inst (.rcosfilter_m_din(I_fir_in), .rcosfilter_m_dout(I_out), .rcosfilter_m_clk(clk), 
+     //.rcosfilter_m_inpvalid(enable), .rcosfilter_m_outvalid(), .rcosfilter_m_rfi(), 
+     //.rcosfilter_m_rstn(rst_n));
 	 
 	 
-	rcos Q_inst (.rcosfilter_m_din(Q_fir_in), .rcosfilter_m_dout(Q_out), .rcosfilter_m_clk(clk), 
-     .rcosfilter_m_inpvalid(enable), .rcosfilter_m_outvalid(), .rcosfilter_m_rfi(), 
-     .rcosfilter_m_rstn(rst_n));
+	//rcos Q_inst (.rcosfilter_m_din(Q_fir_in), .rcosfilter_m_dout(Q_out), .rcosfilter_m_clk(clk), 
+     //.rcosfilter_m_inpvalid(enable), .rcosfilter_m_outvalid(), .rcosfilter_m_rfi(), 
+     //.rcosfilter_m_rstn(rst_n));
 
 
 
@@ -139,5 +139,13 @@ module QPSK_modulator(
     //.DataB(carry_sin_s ), .Result( Q_out));
 	//assign I_out ={{12{I[1]}}, I}; //14 bits = signextend(12) + 2 bits of I 
 	//assign Q_out = {{12{Q[1]}}, Q};
+	wire signed [1:0] I_s = I;
+wire signed [1:0] Q_s = Q;
+
+localparam integer SCALE = 12;
+
+assign I_out = $signed(I_s) <<< SCALE;
+assign Q_out = $signed(Q_s) <<< SCALE;
+
 
 endmodule

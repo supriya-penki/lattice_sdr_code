@@ -1,9 +1,9 @@
 <top name = "top_module"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
-    <clockitem name = "serial_clk"  type = "port" />
-    <clockitem name = "clockDivider_clk_4M"  type = "net" />
     <clockitem name = "top_clk"  type = "port" />
+    <clockitem name = "clockDivider_clk_4M"  type = "net" />
+    <clockitem name = "serial_clk"  type = "port" />
     <clockitem name = "pll_clko_1"  type = "net" />
 </clocks>
 
@@ -41,7 +41,7 @@
     </pins>
 
     <!--
-        Instances in netlist: 172
+        Instances in netlist: 166
     -->
 
     <instance  name = "my_instance_1/scuba_vlo_inst"  library = "work"  arch = ""  type = "comb">
@@ -2763,63 +2763,11 @@
         </pins>
 
         <nets>
-        <nitem  name = "qpskModule_1/gnd"  />
+        <nitem  name = "IQSerializer_I[0]"  />
         <nitem  name = "qpskModule_1/pwr"  />
         <nitem  name = "clockDivider_clk_4M"  />
         <nitem  name = "IQSerializer_start"  />
         <nitem  name = "qpskModule_1/rst_n_N_179"  />
-        </nets>
-    </instance>
-
-    <instance  name = "qpskModule_1/Q_inst/rcosfilter_m_inst/u1_rcosfilter_m"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "rstn"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "inpvalid"  direction = "in"  />
-        <pitem  name = "din[3]"  direction = "in"  />
-        <pitem  name = "din[2]"  direction = "in"  />
-        <pitem  name = "din[1]"  direction = "in"  />
-        <pitem  name = "din[0]"  direction = "in"  />
-        <pitem  name = "rfi"  direction = "out"  />
-        <pitem  name = "outvalid"  direction = "out"  />
-        <pitem  name = "dout[13]"  direction = "out"  />
-        <pitem  name = "dout[12]"  direction = "out"  />
-        <pitem  name = "dout[11]"  direction = "out"  />
-        <pitem  name = "dout[10]"  direction = "out"  />
-        <pitem  name = "dout[9]"  direction = "out"  />
-        <pitem  name = "dout[8]"  direction = "out"  />
-        <pitem  name = "dout[7]"  direction = "out"  />
-        <pitem  name = "dout[6]"  direction = "out"  />
-        <pitem  name = "dout[5]"  direction = "out"  />
-        <pitem  name = "dout[4]"  direction = "out"  />
-        <pitem  name = "dout[3]"  direction = "out"  />
-        <pitem  name = "dout[2]"  direction = "out"  />
-        <pitem  name = "dout[1]"  direction = "out"  />
-        <pitem  name = "dout[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "counter_0_countDone"  />
-        <nitem  name = "clockDivider_clk_4M"  />
-        <nitem  name = "fskModule_start"  />
-        <nitem  name = "qpskModule_1/Q[1]"  />
-        <nitem  name = "qpskModule_1/Q[0]"  />
-        <nitem  name = "qpskModule_1/Q_inst/rcosfilter_m_rfi"  />
-        <nitem  name = "qpskModule_1/Q_inst/rcosfilter_m_outvalid"  />
-        <nitem  name = "IQSerializer_Q[13]"  />
-        <nitem  name = "IQSerializer_Q[12]"  />
-        <nitem  name = "IQSerializer_Q[11]"  />
-        <nitem  name = "IQSerializer_Q[10]"  />
-        <nitem  name = "IQSerializer_Q[9]"  />
-        <nitem  name = "IQSerializer_Q[8]"  />
-        <nitem  name = "IQSerializer_Q[7]"  />
-        <nitem  name = "IQSerializer_Q[6]"  />
-        <nitem  name = "IQSerializer_Q[5]"  />
-        <nitem  name = "IQSerializer_Q[4]"  />
-        <nitem  name = "IQSerializer_Q[3]"  />
-        <nitem  name = "IQSerializer_Q[2]"  />
-        <nitem  name = "IQSerializer_Q[1]"  />
-        <nitem  name = "IQSerializer_Q[0]"  />
         </nets>
     </instance>
 
@@ -2985,17 +2933,6 @@
         <nitem  name = "IQSerializer_1/n1"  />
         <nitem  name = "IQSerializer_I[13]"  />
         <nitem  name = "IQSerializer_I[12]"  />
-        <nitem  name = "IQSerializer_I[11]"  />
-        <nitem  name = "IQSerializer_I[10]"  />
-        <nitem  name = "IQSerializer_I[9]"  />
-        <nitem  name = "IQSerializer_I[8]"  />
-        <nitem  name = "IQSerializer_I[7]"  />
-        <nitem  name = "IQSerializer_I[6]"  />
-        <nitem  name = "IQSerializer_I[5]"  />
-        <nitem  name = "IQSerializer_I[4]"  />
-        <nitem  name = "IQSerializer_I[3]"  />
-        <nitem  name = "IQSerializer_I[2]"  />
-        <nitem  name = "IQSerializer_I[1]"  />
         <nitem  name = "IQSerializer_I[0]"  />
         <nitem  name = "IQSerializer_1/DEDFF_D0_N_308[3]"  />
         <nitem  name = "IQSerializer_1/DEDFF_D0_N_308[2]"  />
@@ -3121,17 +3058,6 @@
         <nitem  name = "IQSerializer_1/n1"  />
         <nitem  name = "IQSerializer_I[13]"  />
         <nitem  name = "IQSerializer_I[12]"  />
-        <nitem  name = "IQSerializer_I[11]"  />
-        <nitem  name = "IQSerializer_I[10]"  />
-        <nitem  name = "IQSerializer_I[9]"  />
-        <nitem  name = "IQSerializer_I[8]"  />
-        <nitem  name = "IQSerializer_I[7]"  />
-        <nitem  name = "IQSerializer_I[6]"  />
-        <nitem  name = "IQSerializer_I[5]"  />
-        <nitem  name = "IQSerializer_I[4]"  />
-        <nitem  name = "IQSerializer_I[3]"  />
-        <nitem  name = "IQSerializer_I[2]"  />
-        <nitem  name = "IQSerializer_I[1]"  />
         <nitem  name = "IQSerializer_I[0]"  />
         <nitem  name = "IQSerializer_1/DEDFF_D1_N_319[3]"  />
         <nitem  name = "IQSerializer_1/DEDFF_D1_N_319[2]"  />
@@ -3291,18 +3217,7 @@
         <nitem  name = "IQSerializer_1/n1"  />
         <nitem  name = "IQSerializer_Q[13]"  />
         <nitem  name = "IQSerializer_Q[12]"  />
-        <nitem  name = "IQSerializer_Q[11]"  />
-        <nitem  name = "IQSerializer_Q[10]"  />
-        <nitem  name = "IQSerializer_Q[9]"  />
-        <nitem  name = "IQSerializer_Q[8]"  />
-        <nitem  name = "IQSerializer_Q[7]"  />
-        <nitem  name = "IQSerializer_Q[6]"  />
-        <nitem  name = "IQSerializer_Q[5]"  />
-        <nitem  name = "IQSerializer_Q[4]"  />
-        <nitem  name = "IQSerializer_Q[3]"  />
-        <nitem  name = "IQSerializer_Q[2]"  />
-        <nitem  name = "IQSerializer_Q[1]"  />
-        <nitem  name = "IQSerializer_Q[0]"  />
+        <nitem  name = "IQSerializer_I[0]"  />
         <nitem  name = "IQSerializer_1/DEDFF_D0_N_313[3]"  />
         <nitem  name = "IQSerializer_1/DEDFF_D0_N_313[2]"  />
         <nitem  name = "IQSerializer_1/DEDFF_D0_N_313[1]"  />
@@ -3427,18 +3342,7 @@
         <nitem  name = "IQSerializer_1/n1"  />
         <nitem  name = "IQSerializer_Q[13]"  />
         <nitem  name = "IQSerializer_Q[12]"  />
-        <nitem  name = "IQSerializer_Q[11]"  />
-        <nitem  name = "IQSerializer_Q[10]"  />
-        <nitem  name = "IQSerializer_Q[9]"  />
-        <nitem  name = "IQSerializer_Q[8]"  />
-        <nitem  name = "IQSerializer_Q[7]"  />
-        <nitem  name = "IQSerializer_Q[6]"  />
-        <nitem  name = "IQSerializer_Q[5]"  />
-        <nitem  name = "IQSerializer_Q[4]"  />
-        <nitem  name = "IQSerializer_Q[3]"  />
-        <nitem  name = "IQSerializer_Q[2]"  />
-        <nitem  name = "IQSerializer_Q[1]"  />
-        <nitem  name = "IQSerializer_Q[0]"  />
+        <nitem  name = "IQSerializer_I[0]"  />
         <nitem  name = "IQSerializer_1/DEDFF_D1_N_324[3]"  />
         <nitem  name = "IQSerializer_1/DEDFF_D1_N_324[2]"  />
         <nitem  name = "IQSerializer_1/DEDFF_D1_N_324[1]"  />
@@ -4563,58 +4467,6 @@
         </nets>
     </instance>
 
-    <instance  name = "qpskModule_1/I_inst/rcosfilter_m_inst/u1_rcosfilter_m"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "rstn"  direction = "in"  />
-        <pitem  name = "clk"  direction = "in"  />
-        <pitem  name = "inpvalid"  direction = "in"  />
-        <pitem  name = "din[3]"  direction = "in"  />
-        <pitem  name = "din[2]"  direction = "in"  />
-        <pitem  name = "din[1]"  direction = "in"  />
-        <pitem  name = "din[0]"  direction = "in"  />
-        <pitem  name = "rfi"  direction = "out"  />
-        <pitem  name = "outvalid"  direction = "out"  />
-        <pitem  name = "dout[13]"  direction = "out"  />
-        <pitem  name = "dout[12]"  direction = "out"  />
-        <pitem  name = "dout[11]"  direction = "out"  />
-        <pitem  name = "dout[10]"  direction = "out"  />
-        <pitem  name = "dout[9]"  direction = "out"  />
-        <pitem  name = "dout[8]"  direction = "out"  />
-        <pitem  name = "dout[7]"  direction = "out"  />
-        <pitem  name = "dout[6]"  direction = "out"  />
-        <pitem  name = "dout[5]"  direction = "out"  />
-        <pitem  name = "dout[4]"  direction = "out"  />
-        <pitem  name = "dout[3]"  direction = "out"  />
-        <pitem  name = "dout[2]"  direction = "out"  />
-        <pitem  name = "dout[1]"  direction = "out"  />
-        <pitem  name = "dout[0]"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "counter_0_countDone"  />
-        <nitem  name = "clockDivider_clk_4M"  />
-        <nitem  name = "fskModule_start"  />
-        <nitem  name = "qpskModule_1/I[1]"  />
-        <nitem  name = "qpskModule_1/I[0]"  />
-        <nitem  name = "qpskModule_1/I_inst/rcosfilter_m_rfi"  />
-        <nitem  name = "qpskModule_1/I_inst/rcosfilter_m_outvalid"  />
-        <nitem  name = "IQSerializer_I[13]"  />
-        <nitem  name = "IQSerializer_I[12]"  />
-        <nitem  name = "IQSerializer_I[11]"  />
-        <nitem  name = "IQSerializer_I[10]"  />
-        <nitem  name = "IQSerializer_I[9]"  />
-        <nitem  name = "IQSerializer_I[8]"  />
-        <nitem  name = "IQSerializer_I[7]"  />
-        <nitem  name = "IQSerializer_I[6]"  />
-        <nitem  name = "IQSerializer_I[5]"  />
-        <nitem  name = "IQSerializer_I[4]"  />
-        <nitem  name = "IQSerializer_I[3]"  />
-        <nitem  name = "IQSerializer_I[2]"  />
-        <nitem  name = "IQSerializer_I[1]"  />
-        <nitem  name = "IQSerializer_I[0]"  />
-        </nets>
-    </instance>
-
     <instance  name = "IQSerializer_1/ICounter"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "set[3]"  direction = "in"  />
@@ -5669,8 +5521,8 @@
 
         <nets>
         <nitem  name = "qpskModule_1/iq_div_inst/pwr"  />
-        <nitem  name = "qpskModule_1/I[1]"  />
-        <nitem  name = "qpskModule_1/I[0]"  />
+        <nitem  name = "IQSerializer_I[13]"  />
+        <nitem  name = "IQSerializer_I[12]"  />
         <nitem  name = "qpskModule_1/iq_div_inst/I_1__N_182"  />
         <nitem  name = "qpskModule_1/iq_div_inst/I_1__N_180[1]"  />
         <nitem  name = "qpskModule_1/iq_div_inst/I_1__N_180[0]"  />
@@ -5690,8 +5542,8 @@
 
         <nets>
         <nitem  name = "qpskModule_1/iq_div_inst/pwr"  />
-        <nitem  name = "qpskModule_1/Q[1]"  />
-        <nitem  name = "qpskModule_1/Q[0]"  />
+        <nitem  name = "IQSerializer_Q[13]"  />
+        <nitem  name = "IQSerializer_Q[12]"  />
         <nitem  name = "qpskModule_1/iq_div_inst/I_1__N_182"  />
         <nitem  name = "qpskModule_1/iq_div_inst/Q_1__N_187[1]"  />
         <nitem  name = "qpskModule_1/iq_div_inst/Q_1__N_187[0]"  />
@@ -5880,9 +5732,7 @@
 
     <instance  name = "DEDFF_0"  />
     <instance  name = "IQSerializer_1"  />
-    <instance  name = "I_inst"  />
     <instance  name = "PLLInst_0"  />
-    <instance  name = "Q_inst"  />
     <instance  name = "ble_packet_0"  />
     <instance  name = "clockDivider_0"  />
     <instance  name = "counter_0"  />
@@ -5891,8 +5741,6 @@
     <instance  name = "my_instance_2"  />
     <instance  name = "packetGen_1"  />
     <instance  name = "qpskModule_1"  />
-    <instance  name = "rcosfilter_m_inst"  />
-    <instance  name = "u1_rcosfilter_m"  />
     <!--
         REG instances in netlist: 26
     -->
@@ -5927,7 +5775,7 @@
     </regs>
 
     <!--
-        Views in design "top_module": 12
+        Views in design "top_module": 10
     -->
 
     <views>
@@ -5941,8 +5789,6 @@
         <view  name = "packetGenerator"  />
         <view  name = "pll_24_64m"  />
         <view  name = "pll_24m"  />
-        <view  name = "rcos"  />
-        <view  name = "rcosfilter_m"  />
     </views>
 
 </unit>
