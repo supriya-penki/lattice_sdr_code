@@ -1,0 +1,67 @@
+//
+// Written by Synplify Pro 
+// Product Version "V-2023.09L-2"
+// Program "Synplify Pro", Mapper "map202309lat, Build 191R"
+// Sun Jan 11 15:19:53 2026
+//
+// Source file index table:
+// Object locations will have the form <file>:<line>
+// file 0 "\c:\lscc\diamond\3.14\synpbase\lib\lucent\ecp5um5g.v "
+// file 1 "\c:\lscc\diamond\3.14\synpbase\lib\lucent\pmi_def.v "
+// file 2 "\c:\lscc\diamond\3.14\synpbase\lib\vlog\hypermods.v "
+// file 3 "\c:\lscc\diamond\3.14\synpbase\lib\vlog\scemi_objects.v "
+// file 4 "\c:\lscc\diamond\3.14\synpbase\lib\vlog\scemi_pipes.svh "
+// file 5 "\c:\lscc\diamond\3.14\cae_library\synthesis\verilog\ecp5um5g.v "
+// file 6 "\c:\users\sna\documents\fpga_code\lattice_sdr_code\rcos\rcosfilter_m\rcosfilter_m.v "
+// file 7 "\c:\users\sna\documents\fpga_code\lattice_sdr_code\rcos\rcosfilter_m\rcosfilter_m_core_bb.v "
+// file 8 "\c:\lscc\diamond\3.14\synpbase\lib\nlconst.dat "
+
+`timescale 100 ps/100 ps
+module rcosfilter_m (
+  rstn,
+  clk,
+  inpvalid,
+  din,
+  outvalid,
+  rfi,
+  dout
+)
+;
+input rstn ;
+input clk ;
+input inpvalid ;
+input [3:0] din ;
+output outvalid ;
+output rfi ;
+output [13:0] dout ;
+wire rstn ;
+wire clk ;
+wire inpvalid ;
+wire outvalid ;
+wire rfi ;
+wire GND ;
+wire VCC ;
+  VLO GND_0 (
+	.Z(GND)
+);
+  VHI VCC_0 (
+	.Z(VCC)
+);
+  PUR PUR_INST (
+	.PUR(VCC)
+);
+  GSR GSR_INST (
+	.GSR(VCC)
+);
+// @6:29
+  rcosfilter_m_core u1_rcosfilter_m (
+	.rstn(rstn),
+	.clk(clk),
+	.inpvalid(inpvalid),
+	.din(din[3:0]),
+	.outvalid(outvalid),
+	.rfi(rfi),
+	.dout(dout[13:0])
+);
+endmodule /* rcosfilter_m */
+

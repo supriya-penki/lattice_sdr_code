@@ -66,8 +66,7 @@ wire pll_clko_1;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
-
-////assign IQSerializer_I = {fskModule_I, 1'b0};
+//assign IQSerializer_I = {fskModule_I, 1'b0};
 //assign IQSerializer_Q = {fskModule_Q, 1'b0};
 
 
@@ -142,6 +141,8 @@ packetGenerator packetGen_1(
 	.symVal(fskModule_symVal)
 );
 
+
+
 QPSK_modulator qpskModule_1(
 	.clk(clockDivider_clk_4M),
 	.rst_n(counter_0_countDone),
@@ -158,6 +159,8 @@ QPSK_modulator qpskModule_1(
 	.carry_cos_s(),
 	.theta()
 );
+
+
 
 
 IQSerializer IQSerializer_1(

@@ -89,6 +89,7 @@ wire [25:0]Q_filt;
 wire [7:0] carry_sin_s;
 wire [7:0] carry_cos_s;
 wire [9:0] theta;
+wire start;
 
 // Unit Under Test port map
 QPSK_modulator UUT (
@@ -99,7 +100,7 @@ QPSK_modulator UUT (
 		.I_out(FSK_I),
 		.Q_out(FSK_Q),
 		.symDone(qpsk_symDone),
-		.start(),
+		.start(start),
 		.I(I_out),
 		.Q(Q_out),
 		.switch(iq_switch),
@@ -109,17 +110,23 @@ QPSK_modulator UUT (
 );
 
 
-	/*FSKModulator UUT (
+
+wire [12:0]real_fsk_i;
+wire [12:0]real_fsk_q;
+wire real_fsksymDone;
+wire real_start;
+
+FSKModulator UUT_fsk (
 		.clk(clk),
-		.rst_n(counter_0_countDone_test),
+		.rst(counter_0_countDone_test),
 		.enable(qpsk_start),
 		.symVal(qpsk_ser_data),
-		.FSK_I(FSK_I),
-		.FSK_Q(FSK_Q),
-		.symDone(qpsk_symDone),
-		.start()
+		.FSK_I(real_fsk_i),
+		.FSK_Q(real_fsk_q),
+		.symDone(real_fsksymDone),
+		.start(real_start)
 
-); */
+);
 
 
 

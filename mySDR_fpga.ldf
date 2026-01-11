@@ -2,7 +2,7 @@
 <BaliProject version="3.2" title="mySDR_fpga" device="LFE5UM5G-85F-8BG381I" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options top="top_module"/>
+        <Options def_top="qpsk_tb" top="top_module"/>
         <Source name="src/top_module.v" type="Verilog" type_short="Verilog">
             <Options top_module="top_module"/>
         </Source>
@@ -51,13 +51,7 @@
         <Source name="divided_pll_2/divided_pll_2.sbx" type="sbx" type_short="SBX">
             <Options/>
         </Source>
-        <Source name="QPSK_modulator.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
         <Source name="FIRfilter/FIRfilter.sbx" type="sbx" type_short="SBX">
-            <Options/>
-        </Source>
-        <Source name="dds_lattice_sincos.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="creating_nco/creating_nco.sbx" type="sbx" type_short="SBX">
@@ -66,7 +60,22 @@
         <Source name="multiplier/multiplier.sbx" type="sbx" type_short="SBX">
             <Options/>
         </Source>
-        <Source name="iq_div.v" type="Verilog" type_short="Verilog">
+        <Source name="src/fsktb.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/QPSK_modulator.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/dds_lattice_sincos.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/iq_div.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/dds_tb.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="src/qpsk_tb.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
         <Source name="impl1/impl1.xcf" type="Programming Project File" type_short="Programming">
@@ -75,7 +84,7 @@
         <Source name="mySDR_fpga.lpf" type="Logic Preference" type_short="LPF">
             <Options/>
         </Source>
-        <Source name="yutu/yutu.spf" type="Simulation Project File" type_short="SPF">
+        <Source name="testt/testt.spf" type="Simulation Project File" type_short="SPF">
             <Options/>
         </Source>
     </Implementation>

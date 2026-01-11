@@ -1,0 +1,1092 @@
+<!DOCTYPE rcos>
+<lattice:project>
+    <spirit:component>
+        <spirit:vendor>LATTICE</spirit:vendor>
+        <spirit:library>LOCAL</spirit:library>
+        <spirit:name>rcos</spirit:name>
+        <spirit:version>1.0</spirit:version>
+        <spirit:fileSets>
+            <spirit:fileset>
+                <spirit:name>Diamond_Synthesis</spirit:name>
+                <spirit:group>synthesis</spirit:group>
+                <spirit:file>
+                    <spirit:name>./rcos.v</spirit:name>
+                    <spirit:fileType>verilogSource</spirit:fileType>
+                </spirit:file>
+            </spirit:fileset>
+            <spirit:fileset>
+                <spirit:name>Diamond_Simulation</spirit:name>
+                <spirit:group>simulation</spirit:group>
+                <spirit:file>
+                    <spirit:name>./rcos.v</spirit:name>
+                    <spirit:fileType>verilogSource</spirit:fileType>
+                </spirit:file>
+            </spirit:fileset>
+        </spirit:fileSets>
+        <spirit:componentGenerators/>
+        <spirit:model>
+            <spirit:views/>
+            <spirit:ports>
+                <spirit:port>
+                    <spirit:name>rcosfilter_m_clk</spirit:name>
+                    <spirit:displayName>rcosfilter_m_clk</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">rcosfilter_m.clk</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>rcosfilter_m_inpvalid</spirit:name>
+                    <spirit:displayName>rcosfilter_m_inpvalid</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">rcosfilter_m.inpvalid</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>rcosfilter_m_outvalid</spirit:name>
+                    <spirit:displayName>rcosfilter_m_outvalid</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">rcosfilter_m.outvalid</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>rcosfilter_m_rfi</spirit:name>
+                    <spirit:displayName>rcosfilter_m_rfi</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">rcosfilter_m.rfi</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>rcosfilter_m_rstn</spirit:name>
+                    <spirit:displayName>rcosfilter_m_rstn</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">rcosfilter_m.rstn</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>rcosfilter_m_din</spirit:name>
+                    <spirit:displayName>rcosfilter_m_din</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>3</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">rcosfilter_m.din</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>rcosfilter_m_dout</spirit:name>
+                    <spirit:displayName>rcosfilter_m_dout</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>13</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">rcosfilter_m.dout</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+            </spirit:ports>
+        </spirit:model>
+        <spirit:vendorExtensions>
+            <lattice:device>LFE5UM5G-85F-8BG381I</lattice:device>
+            <lattice:synthesis>lse</lattice:synthesis>
+            <lattice:date>2026-01-11.15:13:38</lattice:date>
+            <lattice:modified>2026-01-11.15:21:39</lattice:modified>
+            <lattice:diamond>3.14.0.75.2</lattice:diamond>
+            <lattice:language>Verilog</lattice:language>
+            <lattice:attributes>
+                <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
+            </lattice:attributes>
+            <lattice:elements/>
+            <lattice:lpc/>
+            <lattice:groups/>
+        </spirit:vendorExtensions>
+    </spirit:component>
+    <spirit:design>
+        <spirit:vendor>LATTICE</spirit:vendor>
+        <spirit:library>LOCAL</spirit:library>
+        <spirit:name>rcos</spirit:name>
+        <spirit:version>1.0</spirit:version>
+        <spirit:componentInstances>
+            <spirit:componentInstance>
+                <spirit:instanceName>rcosfilter_m</spirit:instanceName>
+                <spirit:componentRef>
+                    <spirit:vendor>Lattice Semiconductor Corporation</spirit:vendor>
+                    <spirit:library>LEGACY</spirit:library>
+                    <spirit:name>FIR Filter</spirit:name>
+                    <spirit:version>6.0</spirit:version>
+                    <spirit:fileSets>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Simulation</spirit:name>
+                            <spirit:group>simulation</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./rcosfilter_m/rcosfilter_m.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./rcosfilter_m/rcosfilter_m_core_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Synthesis</spirit:name>
+                            <spirit:group>synthesis</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./rcosfilter_m/rcosfilter_m.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./rcosfilter_m/rcosfilter_m_core_bb.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                            <spirit:file>
+                                <spirit:name>./rcosfilter_m/rcosfilter_m_core.ngo</spirit:name>
+                                <spirit:userFileType>NGO</spirit:userFileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                    </spirit:fileSets>
+                    <spirit:componentGenerators>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>Configuration</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_core.tcl</spirit:generatorExe>
+                            <spirit:group>CONFIG</spirit:group>
+                        </spirit:componentGenerator>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>CreateNGD</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_ngd.tcl</spirit:generatorExe>
+                            <spirit:group>CONFIG</spirit:group>
+                        </spirit:componentGenerator>
+                    </spirit:componentGenerators>
+                    <spirit:model>
+                        <spirit:views/>
+                        <spirit:ports>
+                            <spirit:port>
+                                <spirit:name>clk</spirit:name>
+                                <spirit:displayName>clk</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>inpvalid</spirit:name>
+                                <spirit:displayName>inpvalid</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>outvalid</spirit:name>
+                                <spirit:displayName>outvalid</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>rfi</spirit:name>
+                                <spirit:displayName>rfi</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>rstn</spirit:name>
+                                <spirit:displayName>rstn</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>din</spirit:name>
+                                <spirit:displayName>din</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>3</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>dout</spirit:name>
+                                <spirit:displayName>dout</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>13</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                        </spirit:ports>
+                    </spirit:model>
+                    <spirit:vendorExtensions>
+                        <lattice:synthesis>lse</lattice:synthesis>
+                        <lattice:date>2013-08-07.14:14:33</lattice:date>
+                        <lattice:modified>2026-01-11.15:21:39</lattice:modified>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                            <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                            <lattice:attribute lattice:name="CoreType">IPCFG</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_RXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_TXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
+                        </lattice:attributes>
+                        <lattice:elements/>
+                        <lattice:lpc>
+                            <lattice:lpcsection lattice:name="Device"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Family</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">sa5p00g</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>OperatingCondition</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">IND</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Package</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">CABGA381</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM5G-85F-8BG381I</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM5G-85F</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SpeedGrade</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">8</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Status</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">P</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="IP"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">FIR Filter</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreRevision</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">6.0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreStatus</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Demo</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">IPCFG</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Date</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">01/11/2026</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ModuleName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rcosfilter_m</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ParameterFileVersion</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">5.0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SourceFormat</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">verilog</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Time</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">15:19:10</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>VendorName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Lattice Semiconductor Corporation</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="Parameters"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff0.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff1.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff10.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom10</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff11.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom11</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff12.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom12</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff13.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom13</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff14.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom14</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff15.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom15</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff16.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom16</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff17.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom17</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff18.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom18</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff19.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom19</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff2.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom2</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff20.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom20</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff21.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom21</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff22.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom22</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff23.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom23</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff24.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom24</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff25.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom25</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff26.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom26</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff27.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom27</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff28.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom28</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff29.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom29</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff3.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom3</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff30.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom30</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff31.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom31</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff32.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom32</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff33.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom33</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff34.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom34</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff35.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom35</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff36.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom36</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff37.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom37</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff38.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom38</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff39.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom39</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff4.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom4</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff40.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom40</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff41.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom41</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff42.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom42</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff43.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom43</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff44.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom44</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff45.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom45</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff46.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom46</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff47.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom47</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff48.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom48</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff49.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom49</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff5.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom5</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff50.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom50</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff51.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom51</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff52.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom52</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff53.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom53</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff54.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom54</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff55.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom55</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff56.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom56</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff57.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom57</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff58.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom58</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff59.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom59</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff6.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom6</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff60.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom60</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff61.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom61</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff62.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom62</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff63.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom63</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff64.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom64</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff65.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom65</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff66.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom66</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff67.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom67</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff68.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom68</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff69.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom69</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff7.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom7</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff70.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom70</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff71.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom71</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff72.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom72</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff73.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom73</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff74.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom74</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff75.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom75</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff76.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom76</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff77.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom77</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff78.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom78</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff79.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom79</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff8.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom8</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff80.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom80</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff81.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom81</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff82.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom82</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff83.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom83</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff84.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom84</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff85.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom85</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff86.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom86</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff87.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom87</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff88.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom88</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff89.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom89</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff9.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom9</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff90.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom90</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff91.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom91</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff92.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom92</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff93.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom93</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff94.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom94</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff95.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom95</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff96.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom96</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff97.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom97</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff98.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom98</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeff99.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rom99</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeffc.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">romc</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>%instNamecoeffm.rom</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">romm</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CORE_SYNP</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>cbuffer</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">EBR</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ce</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>coefffile</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/rcosfilter.coe</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>coeffset</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Common</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>coefftype</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Hex</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>cpoints</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>cstructure</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ctype</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Signed</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>cwidth</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">16</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>dbuffer</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">EBR</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>dfactor</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>dhighspeed</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">No</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>dinpoints</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>dintype</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Signed</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>dinwidth</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">4</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>doutpoints</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>doutwidth</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">14</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>firname</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">rcosfilter_m</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>firtype</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Single rate</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>fmax</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">300</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>halfband</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ibuffer</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">EBR</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ifactor</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>line_length</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">10</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>lsbmethod</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">None</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>msbmethod</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Saturation</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>mult_factor</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>negativesym</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>numchan</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>numm</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">41</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>numtap</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">41</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>obuffer</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">EBR</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>optimize</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Area</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>reorder</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>retiming</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>shighspeed</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">No</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>sr</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>varcoeff</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">No</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>vardecim</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>varinterp</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                        </lattice:lpc>
+                        <lattice:groups/>
+                    </spirit:vendorExtensions>
+                </spirit:componentRef>
+            </spirit:componentInstance>
+        </spirit:componentInstances>
+        <spirit:adHocConnections>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_clk</spirit:name>
+                <spirit:displayName>rcosfilter_m_clk</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="clk" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_clk"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_inpvalid</spirit:name>
+                <spirit:displayName>rcosfilter_m_inpvalid</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="inpvalid" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_inpvalid"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_outvalid</spirit:name>
+                <spirit:displayName>rcosfilter_m_outvalid</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="outvalid" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_outvalid"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_rfi</spirit:name>
+                <spirit:displayName>rcosfilter_m_rfi</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="rfi" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_rfi"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_rstn</spirit:name>
+                <spirit:displayName>rcosfilter_m_rstn</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="rstn" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_rstn"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_din</spirit:name>
+                <spirit:displayName>rcosfilter_m_din</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="din" spirit:componentRef="rcosfilter_m" spirit:left="3"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="rcosfilter_m_din" spirit:left="3"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_din[0]</spirit:name>
+                <spirit:displayName>rcosfilter_m_din[0]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_din[0]"/>
+                <spirit:internalPortReference spirit:portRef="din[0]" spirit:componentRef="rcosfilter_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_din[1]</spirit:name>
+                <spirit:displayName>rcosfilter_m_din[1]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_din[1]"/>
+                <spirit:internalPortReference spirit:portRef="din[1]" spirit:componentRef="rcosfilter_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_din[2]</spirit:name>
+                <spirit:displayName>rcosfilter_m_din[2]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_din[2]"/>
+                <spirit:internalPortReference spirit:portRef="din[2]" spirit:componentRef="rcosfilter_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_din[3]</spirit:name>
+                <spirit:displayName>rcosfilter_m_din[3]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_din[3]"/>
+                <spirit:internalPortReference spirit:portRef="din[3]" spirit:componentRef="rcosfilter_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_dout</spirit:name>
+                <spirit:displayName>rcosfilter_m_dout</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="dout" spirit:componentRef="rcosfilter_m" spirit:left="13"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="rcosfilter_m_dout" spirit:left="13"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_dout[0]</spirit:name>
+                <spirit:displayName>rcosfilter_m_dout[0]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout[0]" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_dout[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_dout[10]</spirit:name>
+                <spirit:displayName>rcosfilter_m_dout[10]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout[10]" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_dout[10]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_dout[11]</spirit:name>
+                <spirit:displayName>rcosfilter_m_dout[11]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout[11]" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_dout[11]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_dout[12]</spirit:name>
+                <spirit:displayName>rcosfilter_m_dout[12]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout[12]" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_dout[12]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_dout[13]</spirit:name>
+                <spirit:displayName>rcosfilter_m_dout[13]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout[13]" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_dout[13]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_dout[1]</spirit:name>
+                <spirit:displayName>rcosfilter_m_dout[1]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout[1]" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_dout[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_dout[2]</spirit:name>
+                <spirit:displayName>rcosfilter_m_dout[2]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout[2]" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_dout[2]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_dout[3]</spirit:name>
+                <spirit:displayName>rcosfilter_m_dout[3]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout[3]" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_dout[3]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_dout[4]</spirit:name>
+                <spirit:displayName>rcosfilter_m_dout[4]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout[4]" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_dout[4]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_dout[5]</spirit:name>
+                <spirit:displayName>rcosfilter_m_dout[5]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout[5]" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_dout[5]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_dout[6]</spirit:name>
+                <spirit:displayName>rcosfilter_m_dout[6]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout[6]" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_dout[6]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_dout[7]</spirit:name>
+                <spirit:displayName>rcosfilter_m_dout[7]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout[7]" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_dout[7]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_dout[8]</spirit:name>
+                <spirit:displayName>rcosfilter_m_dout[8]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout[8]" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_dout[8]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>rcosfilter_m_dout[9]</spirit:name>
+                <spirit:displayName>rcosfilter_m_dout[9]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="dout[9]" spirit:componentRef="rcosfilter_m"/>
+                <spirit:externalPortReference spirit:portRef="rcosfilter_m_dout[9]"/>
+            </spirit:adHocConnection>
+        </spirit:adHocConnections>
+    </spirit:design>
+</lattice:project>

@@ -1,0 +1,6 @@
+@N|Running in 64-bit mode
+@N|Running in 64-bit mode
+@N: CG364 :"C:\Users\SNA\Documents\FPGA_code\lattice_sdr_code\rcos\rcosfilter_m\rcosfilter_m_core_bb.v":1:7:1:23|Synthesizing module rcosfilter_m_core in library work.
+@N: CG364 :"C:\Users\SNA\Documents\FPGA_code\lattice_sdr_code\rcos\rcosfilter_m\rcosfilter_m.v":6:7:6:18|Synthesizing module rcosfilter_m in library work.
+@N|Running in 64-bit mode
+

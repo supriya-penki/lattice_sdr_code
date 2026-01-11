@@ -15,324 +15,325 @@
 # //
 # do {C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mdo}
 # Loading project testt
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is SNA@SNA-KEPLER.
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:02 on Jan 09,2026
+# Start time: 15:28:27 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v 
 # -- Compiling module DEDFF
 # 
 # Top level modules:
 # 	DEDFF
-# End time: 17:21:02 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:27 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:02 on Jan 09,2026
+# Start time: 15:28:27 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v 
 # -- Compiling module IQSerializer
 # 
 # Top level modules:
 # 	IQSerializer
-# End time: 17:21:02 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:27 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:02 on Jan 09,2026
-# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v 
-# -- Compiling module multiplier_12_2_m
-# 
-# Top level modules:
-# 	multiplier_12_2_m
-# End time: 17:21:02 on Jan 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:02 on Jan 09,2026
-# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/SinCos_Module" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/SinCos_Module/SinCos_Module.v 
-# -- Compiling module SinCos_Module
-# 
-# Top level modules:
-# 	SinCos_Module
-# End time: 17:21:02 on Jan 09,2026, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:02 on Jan 09,2026
-# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_lattice_sincos.v 
-# -- Compiling module dds_lattice_sincos
-# 
-# Top level modules:
-# 	dds_lattice_sincos
-# End time: 17:21:03 on Jan 09,2026, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:03 on Jan 09,2026
-# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/rcosfilter_m" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/rcosfilter_m/rcosfilter_m_core_bb.v 
+# Start time: 15:28:27 on Jan 11,2026
+# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m_core_bb.v 
 # -- Compiling module rcosfilter_m_core
 # 
 # Top level modules:
 # 	rcosfilter_m_core
-# End time: 17:21:03 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:27 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:03 on Jan 09,2026
-# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/rcosfilter_m" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/rcosfilter_m/rcosfilter_m.v 
+# Start time: 15:28:27 on Jan 11,2026
+# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m.v 
 # -- Compiling module rcosfilter_m
 # 
 # Top level modules:
 # 	rcosfilter_m
-# End time: 17:21:03 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:27 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:03 on Jan 09,2026
-# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/FIRfilter.v 
-# -- Compiling module FIRfilter
+# Start time: 15:28:27 on Jan 11,2026
+# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcos.v 
+# -- Compiling module rcos
 # 
 # Top level modules:
-# 	FIRfilter
-# End time: 17:21:03 on Jan 09,2026, Elapsed time: 0:00:00
+# 	rcos
+# End time: 15:28:27 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:03 on Jan 09,2026
+# Start time: 15:28:27 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/iq_div.v 
 # -- Compiling module iq_div
 # 
 # Top level modules:
 # 	iq_div
-# End time: 17:21:03 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:27 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:03 on Jan 09,2026
+# Start time: 15:28:27 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/QPSK_modulator.v 
 # -- Compiling module QPSK_modulator
 # 
 # Top level modules:
 # 	QPSK_modulator
-# End time: 17:21:03 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:27 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:03 on Jan 09,2026
+# Start time: 15:28:27 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v 
 # -- Compiling module ble_packet
 # 
 # Top level modules:
 # 	ble_packet
-# End time: 17:21:03 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:28 on Jan 11,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:03 on Jan 09,2026
+# Start time: 15:28:28 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v 
 # -- Compiling module packetGenerator
 # 
 # Top level modules:
 # 	packetGenerator
-# End time: 17:21:03 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:28 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:03 on Jan 09,2026
+# Start time: 15:28:28 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v 
 # -- Compiling module packetCounter
 # 
 # Top level modules:
 # 	packetCounter
-# End time: 17:21:03 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:28 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:03 on Jan 09,2026
+# Start time: 15:28:28 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v 
 # -- Compiling module clockDivider
 # 
 # Top level modules:
 # 	clockDivider
-# End time: 17:21:03 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:28 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:03 on Jan 09,2026
+# Start time: 15:28:28 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v 
 # -- Compiling module pll_24_64m
 # 
 # Top level modules:
 # 	pll_24_64m
-# End time: 17:21:03 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:28 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:03 on Jan 09,2026
+# Start time: 15:28:28 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v 
 # -- Compiling module pll_24m
 # 
 # Top level modules:
 # 	pll_24m
-# End time: 17:21:03 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:28 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:03 on Jan 09,2026
+# Start time: 15:28:28 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v 
 # -- Compiling module top_module
 # 
 # Top level modules:
 # 	top_module
-# End time: 17:21:03 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:28 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:03 on Jan 09,2026
+# Start time: 15:28:28 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v 
 # -- Compiling module local_oscillator
 # 
 # Top level modules:
 # 	local_oscillator
-# End time: 17:21:03 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:28 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:04 on Jan 09,2026
+# Start time: 15:28:28 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try/pll_try.v 
 # -- Compiling module pll_try
 # 
 # Top level modules:
 # 	pll_try
-# End time: 17:21:04 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:28 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:04 on Jan 09,2026
+# Start time: 15:28:28 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new/pll_64_new.v 
 # -- Compiling module pll_64_new
 # 
 # Top level modules:
 # 	pll_64_new
-# End time: 17:21:04 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:28 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:04 on Jan 09,2026
+# Start time: 15:28:28 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64/pll_64.v 
 # -- Compiling module pll_64
 # 
 # Top level modules:
 # 	pll_64
-# End time: 17:21:04 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:28 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:04 on Jan 09,2026
+# Start time: 15:28:28 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v 
 # -- Compiling module pll_64m
 # 
 # Top level modules:
 # 	pll_64m
-# End time: 17:21:04 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:28 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:04 on Jan 09,2026
+# Start time: 15:28:28 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v 
 # -- Compiling module divided_pll
 # 
 # Top level modules:
 # 	divided_pll
-# End time: 17:21:04 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:28 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:04 on Jan 09,2026
+# Start time: 15:28:28 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v 
 # -- Compiling module divided_pll_2
 # 
 # Top level modules:
 # 	divided_pll_2
-# End time: 17:21:04 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:28 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:04 on Jan 09,2026
+# Start time: 15:28:28 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v 
 # -- Compiling module sincos_m
 # 
 # Top level modules:
 # 	sincos_m
-# End time: 17:21:04 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:29 on Jan 11,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:04 on Jan 09,2026
+# Start time: 15:28:29 on Jan 11,2026
+# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/SinCos_Module" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/SinCos_Module/SinCos_Module.v 
+# -- Compiling module SinCos_Module
+# 
+# Top level modules:
+# 	SinCos_Module
+# End time: 15:28:29 on Jan 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 15:28:29 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/creating_nco.v 
 # -- Compiling module creating_nco
 # 
 # Top level modules:
 # 	creating_nco
-# End time: 17:21:04 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:29 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:04 on Jan 09,2026
+# Start time: 15:28:29 on Jan 11,2026
+# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v 
+# -- Compiling module multiplier_12_2_m
+# 
+# Top level modules:
+# 	multiplier_12_2_m
+# End time: 15:28:29 on Jan 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 15:28:29 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/mult_m" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/mult_m/mult_m.v 
 # -- Compiling module mult_m
 # 
 # Top level modules:
 # 	mult_m
-# End time: 17:21:04 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:29 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:04 on Jan 09,2026
+# Start time: 15:28:29 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier.v 
 # -- Compiling module multiplier
 # 
 # Top level modules:
 # 	multiplier
-# End time: 17:21:04 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:29 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:04 on Jan 09,2026
+# Start time: 15:28:29 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v 
 # -- Compiling module cosModule
 # 
 # Top level modules:
 # 	cosModule
-# End time: 17:21:04 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:29 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:04 on Jan 09,2026
+# Start time: 15:28:29 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v 
 # -- Compiling module sinModule
 # 
 # Top level modules:
 # 	sinModule
-# End time: 17:21:04 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:29 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:05 on Jan 09,2026
+# Start time: 15:28:29 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v 
 # -- Compiling module FSKModulator
 # 
 # Top level modules:
 # 	FSKModulator
-# End time: 17:21:05 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:29 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:05 on Jan 09,2026
+# Start time: 15:28:29 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/fsktb.v 
 # -- Compiling module fsktb
 # 
 # Top level modules:
 # 	fsktb
-# End time: 17:21:05 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:29 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:05 on Jan 09,2026
+# Start time: 15:28:29 on Jan 11,2026
+# vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_lattice_sincos.v 
+# -- Compiling module dds_lattice_sincos
+# 
+# Top level modules:
+# 	dds_lattice_sincos
+# End time: 15:28:29 on Jan 11,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 15:28:29 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_tb.v 
 # -- Compiling module dds_tb
 # 
 # Top level modules:
 # 	dds_tb
-# End time: 17:21:05 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:30 on Jan 11,2026, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:05 on Jan 09,2026
+# Start time: 15:28:30 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v 
 # -- Compiling module qpsk_tb
 # 
 # Top level modules:
 # 	qpsk_tb
-# End time: 17:21:05 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:30 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:05 on Jan 09,2026
+# Start time: 15:28:30 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v 
-# End time: 17:21:05 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:30 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 17:21:05 on Jan 09,2026
+# Start time: 15:28:30 on Jan 11,2026
 # vlog -reportprogress 300 "+incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src" -work work C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v 
-# End time: 17:21:05 on Jan 09,2026, Elapsed time: 0:00:00
+# End time: 15:28:30 on Jan 11,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" -L work -L pmi_work -L ovi_ecp5u qpsk_tb 
-# Start time: 17:21:05 on Jan 09,2026
+# Start time: 15:28:30 on Jan 11,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vopt-143) Recognized 1 FSM in module "packetGenerator(fast)".
@@ -345,2124 +346,898 @@
 # Loading work.ble_packet(fast)
 # Loading work.QPSK_modulator(fast)
 # Loading work.iq_div(fast)
-# Loading work.FIRfilter(fast)
+# Loading work.rcos(fast)
 # Loading work.rcosfilter_m(fast)
 # Loading work.rcosfilter_m_core(fast)
-# Loading work.dds_lattice_sincos(fast)
-# Loading work.SinCos_Module(fast)
-# Loading ovi_ecp5u.INV(fast)
-# Loading ovi_ecp5u.XOR2(fast)
-# Loading ovi_ecp5u.ROM16X1A(fast)
-# Loading ovi_ecp5u.AND2(fast)
-# Loading ovi_ecp5u.FD1P3DX(fast)
-# Loading ovi_ecp5u.MUX21(fast)
-# Loading ovi_ecp5u.CCU2C(fast)
-# Loading ovi_ecp5u.ROM256X1A(fast)
-# Loading ovi_ecp5u.ROM256X1A(fast__1)
-# Loading ovi_ecp5u.ROM256X1A(fast__2)
-# Loading ovi_ecp5u.ROM256X1A(fast__3)
-# Loading ovi_ecp5u.ROM256X1A(fast__4)
-# Loading ovi_ecp5u.ROM256X1A(fast__5)
-# Loading ovi_ecp5u.ROM256X1A(fast__6)
-# Loading ovi_ecp5u.ROM256X1A(fast__7)
-# Loading ovi_ecp5u.ROM256X1A(fast__8)
-# Loading ovi_ecp5u.ROM256X1A(fast__9)
-# Loading ovi_ecp5u.ROM256X1A(fast__10)
-# Loading ovi_ecp5u.ROM256X1A(fast__11)
-# Loading ovi_ecp5u.ROM256X1A(fast__12)
-# Loading ovi_ecp5u.ROM256X1A(fast__13)
-# Loading ovi_ecp5u.ROM256X1A(fast__14)
-# Loading ovi_ecp5u.ROM256X1A(fast__15)
-# Loading ovi_ecp5u.ROM256X1A(fast__16)
-# Loading ovi_ecp5u.ROM256X1A(fast__17)
-# Loading ovi_ecp5u.ROM256X1A(fast__18)
-# Loading ovi_ecp5u.ROM256X1A(fast__19)
-# Loading ovi_ecp5u.ROM256X1A(fast__20)
-# Loading ovi_ecp5u.ROM256X1A(fast__21)
-# Loading ovi_ecp5u.ROM256X1A(fast__22)
-# Loading ovi_ecp5u.VHI(fast)
-# Loading ovi_ecp5u.VLO(fast)
-# Loading work.multiplier_12_2_m(fast)
-# Loading ovi_ecp5u.ND2(fast)
-# Loading ovi_ecp5u.CCU2C(fast__1)
+# Loading work.FSKModulator(fast)
+# Loading work.sinModule(fast)
+# Loading work.cosModule(fast)
 # ** Warning: (vsim-3015) [PCDPC] - Port size (12) does not match connection size (8) for port 'carry_sin_s'. The port definition is at: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/QPSK_modulator.v(16).
-#    Time: 0 ps  Iteration: 0  Instance: /qpsk_tb/UUT File: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v Line: 94
+#    Time: 0 ps  Iteration: 0  Instance: /qpsk_tb/UUT File: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v Line: 95
 # ** Warning: (vsim-3015) [PCDPC] - Port size (12) does not match connection size (8) for port 'carry_cos_s'. The port definition is at: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/QPSK_modulator.v(17).
-#    Time: 0 ps  Iteration: 0  Instance: /qpsk_tb/UUT File: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v Line: 94
-# ** Warning: (vsim-3015) [PCDPC] - Port size (26) does not match connection size (1) for port 'rcosfilter_m_dout'. The port definition is at: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/FIRfilter.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /qpsk_tb/UUT/rcosfilter_I File: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/QPSK_modulator.v Line: 60
-# ** Warning: (vsim-3015) [PCDPC] - Port size (26) does not match connection size (1) for port 'rcosfilter_m_dout'. The port definition is at: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/FIRfilter.v(11).
-#    Time: 0 ps  Iteration: 0  Instance: /qpsk_tb/UUT/rcosfilter_Q File: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/QPSK_modulator.v Line: 70
+#    Time: 0 ps  Iteration: 0  Instance: /qpsk_tb/UUT File: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v Line: 95
 # .main_pane.wave.interior.cs.body.pw.wf
-# 0 ps 0 0 1 0000 0000 
-# 125000 ps 1 0 1 0000 0000 
-# 250000 ps 0 0 1 0000 0000 
-# 375000 ps 1 0 1 0000 0000 
-# 500000 ps 0 0 1 0000 0000 
-# 625000 ps 1 0 1 0000 0000 
-# 750000 ps 0 0 1 0000 0000 
-# 875000 ps 1 0 1 0000 0000 
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: SNA  Hostname: SNA-KEPLER  ProcessID: 11992
+#           Attempting to use alternate WLF file "./wlfts3r334".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfts3r334
+# 0 ps 0 0 1 zzzz zzzz 
+# 125000 ps 1 0 1 zzzz zzzz 
+# 250000 ps 0 0 1 zzzz zzzz 
+# 375000 ps 1 0 1 zzzz zzzz 
+# 500000 ps 0 0 1 zzzz zzzz 
+# 625000 ps 1 0 1 zzzz zzzz 
+# 750000 ps 0 0 1 zzzz zzzz 
+# 875000 ps 1 0 1 zzzz zzzz 
 run
-# 1000000 ps 0 0 1 0000 0000 
-# 1125000 ps 1 0 1 0000 0000 
-# 1250000 ps 0 0 1 0000 0000 
-# 1375000 ps 1 0 1 0000 0000 
-# 1500000 ps 0 0 1 0000 0000 
-# 1625000 ps 1 0 1 0000 0000 
-# 1750000 ps 0 0 1 0000 0000 
-# 1875000 ps 1 0 1 0000 0000 
-# 2000000 ps 0 0 1 0000 0000 
-# 2125000 ps 1 0 1 0000 0000 
-# 2250000 ps 0 0 1 0000 0000 
-# 2375000 ps 1 0 1 0000 0000 
-# 2500000 ps 0 1 1 0000 0000 
-# 2625000 ps 1 1 1 0000 0000 
-# 2750000 ps 0 1 1 0000 0000 
-# 2875000 ps 1 1 1 0000 0000 
-# 3000000 ps 0 1 1 0000 0000 
-# 3125000 ps 1 1 1 0000 0000 
-# 3250000 ps 0 1 1 0000 0000 
-# 3375000 ps 1 1 1 0000 0000 
-# 3500000 ps 0 1 1 0000 0000 
-# 3625000 ps 1 1 1 0000 0000 
-# 3750000 ps 0 1 1 0000 0000 
-# 3875000 ps 1 1 1 0000 0000 
-# 4000000 ps 0 1 1 0000 0000 
-# 4125000 ps 1 1 1 0000 0000 
-# 4250000 ps 0 1 1 0000 0000 
-# 4375000 ps 1 1 1 0000 0000 
-# 4500000 ps 0 1 1 0000 0000 
-# 4625000 ps 1 1 1 0000 0000 
-# 4750000 ps 0 1 1 0000 0000 
-# 4875000 ps 1 1 1 0000 0000 
-# 5000000 ps 0 1 1 0000 0000 
-# 5125000 ps 1 1 1 0000 0000 
-# 5250000 ps 0 1 1 0000 0000 
-# 5375000 ps 1 1 1 0000 0000 
-# 5500000 ps 0 1 1 0000 0000 
-# 5625000 ps 1 1 1 0000 0000 
-# 5750000 ps 0 1 1 0000 0000 
-# 5875000 ps 1 1 1 0000 0000 
-# 6000000 ps 0 1 1 0000 0000 
-# 6125000 ps 1 1 1 0000 0000 
-# 6250000 ps 0 1 1 0000 0000 
-# 6375000 ps 1 1 1 0000 0000 
-# 6500000 ps 0 1 1 0000 0000 
-# 6625000 ps 1 1 1 0000 0000 
-# 6750000 ps 0 1 1 0000 0000 
-# 6875000 ps 1 1 1 0000 0000 
-# 7000000 ps 0 1 1 0000 0000 
-# 7125000 ps 1 1 1 0000 0000 
-# 7250000 ps 0 1 1 0000 0000 
-# 7375000 ps 1 1 1 0000 0000 
-# 7500000 ps 0 1 1 0000 0000 
-# 7625000 ps 1 1 1 0000 0000 
-# 7750000 ps 0 1 1 0000 0000 
-# 7875000 ps 1 1 1 0000 0000 
-# 8000000 ps 0 1 1 0000 0000 
-# 8125000 ps 1 1 1 0000 0000 
-# 8250000 ps 0 1 1 0000 0000 
-# 8375000 ps 1 1 1 0000 0000 
-# 8500000 ps 0 1 1 0000 0000 
-# 8625000 ps 1 1 1 0000 0000 
-# 8750000 ps 0 1 1 0000 0000 
-# 8875000 ps 1 1 1 0000 0000 
-# 9000000 ps 0 1 1 0000 0000 
-# 9125000 ps 1 1 1 0000 0000 
-# 9250000 ps 0 1 1 0000 0000 
-# 9375000 ps 1 1 1 0000 0000 
-# 9500000 ps 0 1 1 0000 0000 
-# 9625000 ps 1 1 1 0000 0000 
-# 9750000 ps 0 1 1 0000 0000 
-# 9875000 ps 1 1 1 0000 0000 
-# 10000000 ps 0 1 1 0000 0000 
-# 10125000 ps 1 1 1 0000 0000 
-# 10250000 ps 0 1 1 0000 0000 
-# 10375000 ps 1 1 1 0000 0000 
-# 10500000 ps 0 1 1 0000 0000 
-# 10625000 ps 1 1 1 0000 0000 
-# 10750000 ps 0 1 1 0000 0000 
-# 10875000 ps 1 1 1 0000 0000 
+# 1000000 ps 0 0 1 zzzz zzzz 
+# 1125000 ps 1 0 1 zzzz zzzz 
+# 1250000 ps 0 0 1 zzzz zzzz 
+# 1375000 ps 1 0 1 zzzz zzzz 
+# 1500000 ps 0 0 1 zzzz zzzz 
+# 1625000 ps 1 0 1 zzzz zzzz 
+# 1750000 ps 0 0 1 zzzz zzzz 
+# 1875000 ps 1 0 1 zzzz zzzz 
+# 2000000 ps 0 0 1 zzzz zzzz 
+# 2125000 ps 1 0 1 zzzz zzzz 
+# 2250000 ps 0 0 1 zzzz zzzz 
+# 2375000 ps 1 0 1 zzzz zzzz 
+# 2500000 ps 0 1 1 zzzz zzzz 
+# 2625000 ps 1 1 1 zzzz zzzz 
+# 2750000 ps 0 1 1 zzzz zzzz 
+# 2875000 ps 1 1 1 zzzz zzzz 
+# 3000000 ps 0 1 1 zzzz zzzz 
+# 3125000 ps 1 1 1 zzzz zzzz 
+# 3250000 ps 0 1 1 zzzz zzzz 
+# 3375000 ps 1 1 1 zzzz zzzz 
+# 3500000 ps 0 1 1 zzzz zzzz 
+# 3625000 ps 1 1 1 zzzz zzzz 
+# 3750000 ps 0 1 1 zzzz zzzz 
+# 3875000 ps 1 1 1 zzzz zzzz 
+# 4000000 ps 0 1 1 zzzz zzzz 
+# 4125000 ps 1 1 1 zzzz zzzz 
+# 4250000 ps 0 1 1 zzzz zzzz 
+# 4375000 ps 1 1 1 zzzz zzzz 
+# 4500000 ps 0 1 1 zzzz zzzz 
+# 4625000 ps 1 1 1 zzzz zzzz 
+# 4750000 ps 0 1 1 zzzz zzzz 
+# 4875000 ps 1 1 1 zzzz zzzz 
+# 5000000 ps 0 1 1 zzzz zzzz 
+# 5125000 ps 1 1 1 zzzz zzzz 
+# 5250000 ps 0 1 1 zzzz zzzz 
+# 5375000 ps 1 1 1 zzzz zzzz 
+# 5500000 ps 0 1 1 zzzz zzzz 
+# 5625000 ps 1 1 1 zzzz zzzz 
+# 5750000 ps 0 1 1 zzzz zzzz 
+# 5875000 ps 1 1 1 zzzz zzzz 
+# 6000000 ps 0 1 1 zzzz zzzz 
+# 6125000 ps 1 1 1 zzzz zzzz 
+# 6250000 ps 0 1 1 zzzz zzzz 
+# 6375000 ps 1 1 1 zzzz zzzz 
+# 6500000 ps 0 1 1 zzzz zzzz 
+# 6625000 ps 1 1 1 zzzz zzzz 
+# 6750000 ps 0 1 1 zzzz zzzz 
+# 6875000 ps 1 1 1 zzzz zzzz 
+# 7000000 ps 0 1 1 zzzz zzzz 
+# 7125000 ps 1 1 1 zzzz zzzz 
+# 7250000 ps 0 1 1 zzzz zzzz 
+# 7375000 ps 1 1 1 zzzz zzzz 
+# 7500000 ps 0 1 1 zzzz zzzz 
+# 7625000 ps 1 1 1 zzzz zzzz 
+# 7750000 ps 0 1 1 zzzz zzzz 
+# 7875000 ps 1 1 1 zzzz zzzz 
+# 8000000 ps 0 1 1 zzzz zzzz 
+# 8125000 ps 1 1 1 zzzz zzzz 
+# 8250000 ps 0 1 1 zzzz zzzz 
+# 8375000 ps 1 1 1 zzzz zzzz 
+# 8500000 ps 0 1 1 zzzz zzzz 
+# 8625000 ps 1 1 1 zzzz zzzz 
+# 8750000 ps 0 1 1 zzzz zzzz 
+# 8875000 ps 1 1 1 zzzz zzzz 
+# 9000000 ps 0 1 1 zzzz zzzz 
+# 9125000 ps 1 1 1 zzzz zzzz 
+# 9250000 ps 0 1 1 zzzz zzzz 
+# 9375000 ps 1 1 1 zzzz zzzz 
+# 9500000 ps 0 1 1 zzzz zzzz 
+# 9625000 ps 1 1 1 zzzz zzzz 
+# 9750000 ps 0 1 1 zzzz zzzz 
+# 9875000 ps 1 1 1 zzzz zzzz 
+# 10000000 ps 0 1 1 zzzz zzzz 
+# 10125000 ps 1 1 1 zzzz zzzz 
+# 10250000 ps 0 1 1 zzzz zzzz 
+# 10375000 ps 1 1 1 zzzz zzzz 
+# 10500000 ps 0 1 1 zzzz zzzz 
+# 10625000 ps 1 1 1 zzzz zzzz 
+# 10750000 ps 0 1 1 zzzz zzzz 
+# 10875000 ps 1 1 1 zzzz zzzz 
 run
-# 11000000 ps 0 1 1 0000 0000 
-# 11125000 ps 1 1 1 0000 0000 
-# 11250000 ps 0 1 1 0000 0000 
-# 11375000 ps 1 1 1 0000 0000 
-# 11500000 ps 0 1 1 0000 0000 
-# 11625000 ps 1 1 1 0000 0000 
-# 11750000 ps 0 1 1 0000 0000 
-# 11875000 ps 1 1 1 0000 0000 
-# 12000000 ps 0 1 1 0000 0000 
-# 12125000 ps 1 1 1 0000 0000 
-# 12250000 ps 0 1 1 0000 0000 
-# 12375000 ps 1 1 1 0000 0000 
-# 12500000 ps 0 1 1 0000 0000 
-# 12625000 ps 1 1 1 0000 0000 
-# 12750000 ps 0 1 1 0000 0000 
-# 12875000 ps 1 1 1 0000 0000 
-# 13000000 ps 0 1 1 0000 0000 
-# 13125000 ps 1 1 1 0000 0000 
-# 13250000 ps 0 1 1 0000 0000 
-# 13375000 ps 1 1 1 0000 0000 
-# 13500000 ps 0 1 1 0000 0000 
-# 13625000 ps 1 1 1 0000 0000 
-# 13750000 ps 0 1 1 0000 0000 
-# 13875000 ps 1 1 1 0000 0000 
-# 14000000 ps 0 1 1 0000 0000 
-# 14125000 ps 1 1 1 0000 0000 
-# 14250000 ps 0 1 1 0000 0000 
-# 14375000 ps 1 1 1 0000 0000 
-# 14500000 ps 0 1 1 0000 0000 
-# 14625000 ps 1 1 1 0000 0000 
-# 14750000 ps 0 1 1 0000 0000 
-# 14875000 ps 1 1 1 0000 0000 
-# 15000000 ps 0 1 1 0000 0000 
-# 15125000 ps 1 1 1 0000 0000 
-# 15250000 ps 0 1 1 0000 0000 
-# 15375000 ps 1 1 1 0000 0000 
-# 15500000 ps 0 1 1 0000 0000 
-# 15625000 ps 1 1 1 0000 0000 
-# 15750000 ps 0 1 1 0000 0000 
-# 15875000 ps 1 1 1 0000 0000 
-# 16000000 ps 0 1 1 0000 0000 
-# 16125000 ps 1 1 1 0000 0000 
-# 16250000 ps 0 1 1 0000 0000 
-# 16375000 ps 1 1 1 0000 0000 
-# 16500000 ps 0 1 1 0000 0000 
-# 16625000 ps 1 1 1 0000 0000 
-# 16750000 ps 0 1 1 0000 0000 
-# 16875000 ps 1 1 1 0000 0000 
-# 17000000 ps 0 1 1 0000 0000 
-# 17125000 ps 1 1 1 0000 0000 
-# 17250000 ps 0 1 1 0000 0000 
-# 17375000 ps 1 1 1 0000 0000 
-# 17500000 ps 0 1 1 0000 0000 
-# 17625000 ps 1 1 1 0000 0000 
-# 17750000 ps 0 1 1 0000 0000 
-# 17875000 ps 1 1 1 0000 0000 
-# 18000000 ps 0 1 1 0000 0000 
-# 18125000 ps 1 1 1 0000 0000 
-# 18250000 ps 0 1 1 0000 0000 
-# 18375000 ps 1 1 1 0000 0000 
-# 18500000 ps 0 1 1 0000 0000 
-# 18625000 ps 1 1 1 0000 0000 
-# 18750000 ps 0 1 1 0000 0000 
-# 18875000 ps 1 1 1 0000 0000 
-# 19000000 ps 0 1 1 0000 0000 
-# 19125000 ps 1 1 1 3c00 0000 
-# 19250000 ps 0 1 1 3c00 0000 
-# 19375000 ps 1 1 1 3c00 0000 
-# 19500000 ps 0 1 1 3c00 0000 
-# 19625000 ps 1 1 1 3c32 3ec5 
-# 19750000 ps 0 1 1 3c32 3ec5 
-# 19875000 ps 1 1 1 3cc2 3da8 
-# 20000000 ps 0 1 1 3cc2 3da8 
-# 20125000 ps 1 1 1 3da3 3cc6 
-# 20250000 ps 0 1 1 3da3 3cc6 
-# 20375000 ps 1 1 1 3ebf 3c34 
-# 20500000 ps 0 1 1 3ebf 3c34 
-# 20625000 ps 1 1 1 3ffa 3c00 
-# 20750000 ps 0 1 1 3ffa 3c00 
-# 20875000 ps 1 1 1 3ec5 3c32 
-run -all
-# 21000000 ps 0 1 1 3ec5 3c32 
-# 21125000 ps 1 1 1 3da8 3cc2 
-# 21250000 ps 0 1 1 3da8 3cc2 
-# 21375000 ps 1 1 1 3cc6 3da3 
-# 21500000 ps 0 1 1 3cc6 3da3 
-# 21625000 ps 1 1 1 3c34 3ebf 
-# 21750000 ps 0 1 1 3c34 3ebf 
-# 21875000 ps 1 1 1 3c00 3ffa 
-# 22000000 ps 0 1 1 3c00 3ffa 
-# 22125000 ps 1 1 1 3c32 013b 
-# 22250000 ps 0 1 1 3c32 013b 
-# 22375000 ps 1 1 1 3cc2 0258 
-# 22500000 ps 0 1 1 3cc2 0258 
-# 22625000 ps 1 1 1 3da3 033a 
-# 22750000 ps 0 1 1 3da3 033a 
-# 22875000 ps 1 1 1 3ebf 03cc 
-# 23000000 ps 0 1 1 3ebf 03cc 
-# 23125000 ps 1 1 1 3ffa 0400 
-# 23250000 ps 0 1 1 3ffa 0400 
-# 23375000 ps 1 1 1 013b 03ce 
-# 23500000 ps 0 1 1 013b 03ce 
-# 23625000 ps 1 1 1 0258 033e 
-# 23750000 ps 0 1 1 0258 033e 
-# 23875000 ps 1 1 1 033a 025d 
-# 24000000 ps 0 1 1 033a 025d 
-# 24125000 ps 1 1 1 03cc 0141 
-# 24250000 ps 0 1 1 03cc 0141 
-# 24375000 ps 1 1 1 0400 0006 
-# 24500000 ps 0 1 1 0400 0006 
-# 24625000 ps 1 1 1 03ce 3ec5 
-# 24750000 ps 0 1 1 03ce 3ec5 
-# 24875000 ps 1 1 1 033e 3da8 
-# 25000000 ps 0 1 1 033e 3da8 
-# 25125000 ps 1 1 1 025d 3cc6 
-# 25250000 ps 0 1 1 025d 3cc6 
-# 25375000 ps 1 1 1 0141 3c34 
-# 25500000 ps 0 1 1 0141 3c34 
-# 25625000 ps 1 1 1 0006 3c00 
-# 25750000 ps 0 1 1 0006 3c00 
-# 25875000 ps 1 1 1 3ec5 3c32 
-# 26000000 ps 0 1 1 3ec5 3c32 
-# 26125000 ps 1 1 1 3da8 3cc2 
-# 26250000 ps 0 1 1 3da8 3cc2 
-# 26375000 ps 1 1 1 3cc6 3da3 
-# 26500000 ps 0 1 1 3cc6 3da3 
-# 26625000 ps 1 1 1 3c34 3ebf 
-# 26750000 ps 0 1 1 3c34 3ebf 
-# 26875000 ps 1 1 1 3c00 3ffa 
-# 27000000 ps 0 1 1 3c00 3ffa 
-# 27125000 ps 1 1 1 3c32 013b 
-# 27250000 ps 0 1 1 3c32 013b 
-# 27375000 ps 1 1 1 3cc2 0258 
-# 27500000 ps 0 1 1 3cc2 0258 
-# 27625000 ps 1 1 1 3da3 033a 
-# 27750000 ps 0 1 1 3da3 033a 
-# 27875000 ps 1 1 1 3ebf 03cc 
-# 28000000 ps 0 1 1 3ebf 03cc 
-# 28125000 ps 1 1 1 3ffa 0400 
-# 28250000 ps 0 1 1 3ffa 0400 
-# 28375000 ps 1 1 1 013b 03ce 
-# 28500000 ps 0 1 1 013b 03ce 
-# 28625000 ps 1 1 1 0258 033e 
-# 28750000 ps 0 1 1 0258 033e 
-# 28875000 ps 1 1 1 033a 025d 
-# 29000000 ps 0 1 1 033a 025d 
-# 29125000 ps 1 1 1 03cc 0141 
-# 29250000 ps 0 1 1 03cc 0141 
-# 29375000 ps 1 1 1 0400 0006 
-# 29500000 ps 0 1 1 0400 0006 
-# 29625000 ps 1 1 1 03ce 3ec5 
-# 29750000 ps 0 1 1 03ce 3ec5 
-# 29875000 ps 1 1 1 033e 3da8 
-# 30000000 ps 0 1 1 033e 3da8 
-# 30125000 ps 1 1 1 025d 3cc6 
-# 30250000 ps 0 1 1 025d 3cc6 
-# 30375000 ps 1 1 1 0141 3c34 
-# 30500000 ps 0 1 1 0141 3c34 
-# 30625000 ps 1 1 1 0006 3c00 
-# 30750000 ps 0 1 1 0006 3c00 
-# 30875000 ps 1 1 1 013b 03ce 
-# 31000000 ps 0 1 1 013b 03ce 
-# 31125000 ps 1 1 1 0258 033e 
-# 31250000 ps 0 1 1 0258 033e 
-# 31375000 ps 1 1 1 033a 025d 
-# 31500000 ps 0 1 1 033a 025d 
-# 31625000 ps 1 1 1 03cc 0141 
-# 31750000 ps 0 1 1 03cc 0141 
-# 31875000 ps 1 1 1 0400 0006 
-# 32000000 ps 0 1 1 0400 0006 
-# 32125000 ps 1 1 1 03ce 3ec5 
-# 32250000 ps 0 1 1 03ce 3ec5 
-# 32375000 ps 1 1 1 033e 3da8 
-# 32500000 ps 0 1 1 033e 3da8 
-# 32625000 ps 1 1 1 025d 3cc6 
-# 32750000 ps 0 1 1 025d 3cc6 
-# 32875000 ps 1 1 1 0141 3c34 
-# 33000000 ps 0 1 1 0141 3c34 
-# 33125000 ps 1 1 1 0006 3c00 
-# 33250000 ps 0 1 1 0006 3c00 
-# 33375000 ps 1 1 1 3ec5 3c32 
-# 33500000 ps 0 1 1 3ec5 3c32 
-# 33625000 ps 1 1 1 3da8 3cc2 
-# 33750000 ps 0 1 1 3da8 3cc2 
-# 33875000 ps 1 1 1 3cc6 3da3 
-# 34000000 ps 0 1 1 3cc6 3da3 
-# 34125000 ps 1 1 1 3c34 3ebf 
-# 34250000 ps 0 1 1 3c34 3ebf 
-# 34375000 ps 1 1 1 3c00 3ffa 
-# 34500000 ps 0 1 1 3c00 3ffa 
-# 34625000 ps 1 1 1 3c32 013b 
-# 34750000 ps 0 1 1 3c32 013b 
-# 34875000 ps 1 1 1 3cc2 3da8 
-# 35000000 ps 0 1 1 3cc2 3da8 
-# 35125000 ps 1 1 1 3da3 3cc6 
-# 35250000 ps 0 1 1 3da3 3cc6 
-# 35375000 ps 1 1 1 3ebf 3c34 
-# 35500000 ps 0 1 1 3ebf 3c34 
-# 35625000 ps 1 1 1 3ffa 3c00 
-# 35750000 ps 0 1 1 3ffa 3c00 
-# 35875000 ps 1 1 1 013b 3c32 
-# 36000000 ps 0 1 1 013b 3c32 
-# 36125000 ps 1 1 1 0258 3cc2 
-# 36250000 ps 0 1 1 0258 3cc2 
-# 36375000 ps 1 1 1 033a 3da3 
-# 36500000 ps 0 1 1 033a 3da3 
-# 36625000 ps 1 1 1 03cc 3ebf 
-# 36750000 ps 0 1 1 03cc 3ebf 
-# 36875000 ps 1 1 1 3c00 3ffa 
-# 37000000 ps 0 1 1 3c00 3ffa 
-# 37125000 ps 1 1 1 3c32 013b 
-# 37250000 ps 0 1 1 3c32 013b 
-# 37375000 ps 1 1 1 3cc2 0258 
-# 37500000 ps 0 1 1 3cc2 0258 
-# 37625000 ps 1 1 1 3da3 033a 
-# 37750000 ps 0 1 1 3da3 033a 
-# 37875000 ps 1 1 1 3ebf 03cc 
-# 38000000 ps 0 1 1 3ebf 03cc 
-# 38125000 ps 1 1 1 3ffa 0400 
-# 38250000 ps 0 1 1 3ffa 0400 
-# 38375000 ps 1 1 1 013b 03ce 
-# 38500000 ps 0 1 1 013b 03ce 
-# 38625000 ps 1 1 1 0258 033e 
-# 38750000 ps 0 1 1 0258 033e 
-# 38875000 ps 1 1 1 3cc6 025d 
-# 39000000 ps 0 1 1 3cc6 025d 
-# 39125000 ps 1 1 1 3c34 0141 
-# 39250000 ps 0 1 1 3c34 0141 
-# 39375000 ps 1 1 1 3c00 0006 
-# 39500000 ps 0 1 1 3c00 0006 
-# 39625000 ps 1 1 1 3c32 3ec5 
-# 39750000 ps 0 1 1 3c32 3ec5 
-# 39875000 ps 1 1 1 3cc2 3da8 
-# 40000000 ps 0 1 1 3cc2 3da8 
-# 40125000 ps 1 1 1 3da3 3cc6 
-# 40250000 ps 0 1 1 3da3 3cc6 
-# 40375000 ps 1 1 1 3ebf 3c34 
-# 40500000 ps 0 1 1 3ebf 3c34 
-# 40625000 ps 1 1 1 3ffa 3c00 
-# 40750000 ps 0 1 1 3ffa 3c00 
-# 40875000 ps 1 1 1 013b 3c32 
-# 41000000 ps 0 1 1 013b 3c32 
-# 41125000 ps 1 1 1 0258 3cc2 
-# 41250000 ps 0 1 1 0258 3cc2 
-# 41375000 ps 1 1 1 033a 3da3 
-# 41500000 ps 0 1 1 033a 3da3 
-# 41625000 ps 1 1 1 03cc 3ebf 
-# 41750000 ps 0 1 1 03cc 3ebf 
-# 41875000 ps 1 1 1 0400 3ffa 
-# 42000000 ps 0 1 1 0400 3ffa 
-# 42125000 ps 1 1 1 03ce 013b 
-# 42250000 ps 0 1 1 03ce 013b 
-# 42375000 ps 1 1 1 033e 0258 
-# 42500000 ps 0 1 1 033e 0258 
-# 42625000 ps 1 1 1 025d 033a 
-# 42750000 ps 0 1 1 025d 033a 
-# 42875000 ps 1 1 1 3ebf 03cc 
-# 43000000 ps 0 1 1 3ebf 03cc 
-# 43125000 ps 1 1 1 3ffa 0400 
-# 43250000 ps 0 1 1 3ffa 0400 
-# 43375000 ps 1 1 1 013b 03ce 
-# 43500000 ps 0 1 1 013b 03ce 
-# 43625000 ps 1 1 1 0258 033e 
-# 43750000 ps 0 1 1 0258 033e 
-# 43875000 ps 1 1 1 033a 025d 
-# 44000000 ps 0 1 1 033a 025d 
-# 44125000 ps 1 1 1 03cc 0141 
-# 44250000 ps 0 1 1 03cc 0141 
-# 44375000 ps 1 1 1 0400 0006 
-# 44500000 ps 0 1 1 0400 0006 
-# 44625000 ps 1 1 1 03ce 3ec5 
-# 44750000 ps 0 1 1 03ce 3ec5 
-# 44875000 ps 1 1 1 3cc2 0258 
-# 45000000 ps 0 1 1 3cc2 0258 
-# 45125000 ps 1 1 1 3da3 033a 
-# 45250000 ps 0 1 1 3da3 033a 
-# 45375000 ps 1 1 1 3ebf 03cc 
-# 45500000 ps 0 1 1 3ebf 03cc 
-# 45625000 ps 1 1 1 3ffa 0400 
-# 45750000 ps 0 1 1 3ffa 0400 
-# 45875000 ps 1 1 1 013b 03ce 
-# 46000000 ps 0 1 1 013b 03ce 
-# 46125000 ps 1 1 1 0258 033e 
-# 46250000 ps 0 1 1 0258 033e 
-# 46375000 ps 1 1 1 033a 025d 
-# 46500000 ps 0 1 1 033a 025d 
-# 46625000 ps 1 1 1 03cc 0141 
-# 46750000 ps 0 1 1 03cc 0141 
-# 46875000 ps 1 1 1 3c00 3ffa 
-# 47000000 ps 0 1 1 3c00 3ffa 
-# 47125000 ps 1 1 1 3c32 013b 
-# 47250000 ps 0 1 1 3c32 013b 
-# 47375000 ps 1 1 1 3cc2 0258 
-# 47500000 ps 0 1 1 3cc2 0258 
-# 47625000 ps 1 1 1 3da3 033a 
-# 47750000 ps 0 1 1 3da3 033a 
-# 47875000 ps 1 1 1 3ebf 03cc 
-# 48000000 ps 0 1 1 3ebf 03cc 
-# 48125000 ps 1 1 1 3ffa 0400 
-# 48250000 ps 0 1 1 3ffa 0400 
-# 48375000 ps 1 1 1 013b 03ce 
-# 48500000 ps 0 1 1 013b 03ce 
-# 48625000 ps 1 1 1 0258 033e 
-# 48750000 ps 0 1 1 0258 033e 
-# 48875000 ps 1 1 1 033a 3da3 
-# 49000000 ps 0 1 1 033a 3da3 
-# 49125000 ps 1 1 1 03cc 3ebf 
-# 49250000 ps 0 1 1 03cc 3ebf 
-# 49375000 ps 1 1 1 0400 3ffa 
-# 49500000 ps 0 1 1 0400 3ffa 
-# 49625000 ps 1 1 1 03ce 013b 
-# 49750000 ps 0 1 1 03ce 013b 
-# 49875000 ps 1 1 1 033e 0258 
-# 50000000 ps 0 1 1 033e 0258 
-# 50125000 ps 1 1 1 025d 033a 
-# 50250000 ps 0 1 1 025d 033a 
-# 50375000 ps 1 1 1 0141 03cc 
-# 50500000 ps 0 1 1 0141 03cc 
-# 50625000 ps 1 1 1 0006 0400 
-# 50750000 ps 0 1 1 0006 0400 
-# 50875000 ps 1 1 1 3ec5 3c32 
-# 51000000 ps 0 1 1 3ec5 3c32 
-# 51125000 ps 1 1 1 3da8 3cc2 
-# 51250000 ps 0 1 1 3da8 3cc2 
-# 51375000 ps 1 1 1 3cc6 3da3 
-# 51500000 ps 0 1 1 3cc6 3da3 
-# 51625000 ps 1 1 1 3c34 3ebf 
-# 51750000 ps 0 1 1 3c34 3ebf 
-# 51875000 ps 1 1 1 3c00 3ffa 
-# 52000000 ps 0 1 1 3c00 3ffa 
-# 52125000 ps 1 1 1 3c32 013b 
-# 52250000 ps 0 1 1 3c32 013b 
-# 52375000 ps 1 1 1 3cc2 0258 
-# 52500000 ps 0 1 1 3cc2 0258 
-# 52625000 ps 1 1 1 3da3 033a 
-# 52750000 ps 0 1 1 3da3 033a 
-# 52875000 ps 1 1 1 3ebf 03cc 
-# 53000000 ps 0 1 1 3ebf 03cc 
-# 53125000 ps 1 1 1 3ffa 0400 
-# 53250000 ps 0 1 1 3ffa 0400 
-# 53375000 ps 1 1 1 013b 03ce 
-# 53500000 ps 0 1 1 013b 03ce 
-# 53625000 ps 1 1 1 0258 033e 
-# 53750000 ps 0 1 1 0258 033e 
-# 53875000 ps 1 1 1 033a 025d 
-# 54000000 ps 0 1 1 033a 025d 
-# 54125000 ps 1 1 1 03cc 0141 
-# 54250000 ps 0 1 1 03cc 0141 
-# 54375000 ps 1 1 1 0400 0006 
-# 54500000 ps 0 1 1 0400 0006 
-# 54625000 ps 1 1 1 03ce 3ec5 
-# 54750000 ps 0 1 1 03ce 3ec5 
-# 54875000 ps 1 1 1 3cc2 3da8 
-# 55000000 ps 0 1 1 3cc2 3da8 
-# 55125000 ps 1 1 1 3da3 3cc6 
-# 55250000 ps 0 1 1 3da3 3cc6 
-# 55375000 ps 1 1 1 3ebf 3c34 
-# 55500000 ps 0 1 1 3ebf 3c34 
-# 55625000 ps 1 1 1 3ffa 3c00 
-# 55750000 ps 0 1 1 3ffa 3c00 
-# 55875000 ps 1 1 1 013b 3c32 
-# 56000000 ps 0 1 1 013b 3c32 
-# 56125000 ps 1 1 1 0258 3cc2 
-# 56250000 ps 0 1 1 0258 3cc2 
-# 56375000 ps 1 1 1 033a 3da3 
-# 56500000 ps 0 1 1 033a 3da3 
-# 56625000 ps 1 1 1 03cc 3ebf 
-# 56750000 ps 0 1 1 03cc 3ebf 
-# 56875000 ps 1 1 1 3c00 0006 
-# 57000000 ps 0 1 1 3c00 0006 
-# 57125000 ps 1 1 1 3c32 3ec5 
-# 57250000 ps 0 1 1 3c32 3ec5 
-# 57375000 ps 1 1 1 3cc2 3da8 
-# 57500000 ps 0 1 1 3cc2 3da8 
-# 57625000 ps 1 1 1 3da3 3cc6 
-# 57750000 ps 0 1 1 3da3 3cc6 
-# 57875000 ps 1 1 1 3ebf 3c34 
-# 58000000 ps 0 1 1 3ebf 3c34 
-# 58125000 ps 1 1 1 3ffa 3c00 
-# 58250000 ps 0 1 1 3ffa 3c00 
-# 58375000 ps 1 1 1 013b 3c32 
-# 58500000 ps 0 1 1 013b 3c32 
-# 58625000 ps 1 1 1 0258 3cc2 
-# 58750000 ps 0 1 1 0258 3cc2 
-# 58875000 ps 1 1 1 033a 025d 
-# 59000000 ps 0 1 1 033a 025d 
-# 59125000 ps 1 1 1 03cc 0141 
-# 59250000 ps 0 1 1 03cc 0141 
-# 59375000 ps 1 1 1 0400 0006 
-# 59500000 ps 0 1 1 0400 0006 
-# 59625000 ps 1 1 1 03ce 3ec5 
-# 59750000 ps 0 1 1 03ce 3ec5 
-# 59875000 ps 1 1 1 033e 3da8 
-# 60000000 ps 0 1 1 033e 3da8 
-# 60125000 ps 1 1 1 025d 3cc6 
-# 60250000 ps 0 1 1 025d 3cc6 
-# 60375000 ps 1 1 1 0141 3c34 
-# 60500000 ps 0 1 1 0141 3c34 
-# 60625000 ps 1 1 1 0006 3c00 
-# 60750000 ps 0 1 1 0006 3c00 
-# 60875000 ps 1 1 1 3ec5 3c32 
-# 61000000 ps 0 1 1 3ec5 3c32 
-# 61125000 ps 1 1 1 3da8 3cc2 
-# 61250000 ps 0 1 1 3da8 3cc2 
-# 61375000 ps 1 1 1 3cc6 3da3 
-# 61500000 ps 0 1 1 3cc6 3da3 
-# 61625000 ps 1 1 1 3c34 3ebf 
-# 61750000 ps 0 1 1 3c34 3ebf 
-# 61875000 ps 1 1 1 3c00 3ffa 
-# 62000000 ps 0 1 1 3c00 3ffa 
-# 62125000 ps 1 1 1 3c32 013b 
-# 62250000 ps 0 1 1 3c32 013b 
-# 62375000 ps 1 1 1 3cc2 0258 
-# 62500000 ps 0 1 1 3cc2 0258 
-# 62625000 ps 1 1 1 3da3 033a 
-# 62750000 ps 0 1 1 3da3 033a 
-# 62875000 ps 1 1 1 0141 3c34 
-# 63000000 ps 0 1 1 0141 3c34 
-# 63125000 ps 1 1 1 0006 3c00 
-# 63250000 ps 0 1 1 0006 3c00 
-# 63375000 ps 1 1 1 3ec5 3c32 
-# 63500000 ps 0 1 1 3ec5 3c32 
-# 63625000 ps 1 1 1 3da8 3cc2 
-# 63750000 ps 0 1 1 3da8 3cc2 
-# 63875000 ps 1 1 1 3cc6 3da3 
-# 64000000 ps 0 1 1 3cc6 3da3 
-# 64125000 ps 1 1 1 3c34 3ebf 
-# 64250000 ps 0 1 1 3c34 3ebf 
-# 64375000 ps 1 1 1 3c00 3ffa 
-# 64500000 ps 0 1 1 3c00 3ffa 
-# 64625000 ps 1 1 1 3c32 013b 
-# 64750000 ps 0 1 1 3c32 013b 
-# 64875000 ps 1 1 1 033e 0258 
-# 65000000 ps 0 1 1 033e 0258 
-# 65125000 ps 1 1 1 025d 033a 
-# 65250000 ps 0 1 1 025d 033a 
-# 65375000 ps 1 1 1 0141 03cc 
-# 65500000 ps 0 1 1 0141 03cc 
-# 65625000 ps 1 1 1 0006 0400 
-# 65750000 ps 0 1 1 0006 0400 
-# 65875000 ps 1 1 1 3ec5 03ce 
-# 66000000 ps 0 1 1 3ec5 03ce 
-# 66125000 ps 1 1 1 3da8 033e 
-# 66250000 ps 0 1 1 3da8 033e 
-# 66375000 ps 1 1 1 3cc6 025d 
-# 66500000 ps 0 1 1 3cc6 025d 
-# 66625000 ps 1 1 1 3c34 0141 
-# 66750000 ps 0 1 1 3c34 0141 
-# 66875000 ps 1 1 1 0400 0006 
-# 67000000 ps 0 1 1 0400 0006 
-# 67125000 ps 1 1 1 03ce 3ec5 
-# 67250000 ps 0 1 1 03ce 3ec5 
-# 67375000 ps 1 1 1 033e 3da8 
-# 67500000 ps 0 1 1 033e 3da8 
-# 67625000 ps 1 1 1 025d 3cc6 
-# 67750000 ps 0 1 1 025d 3cc6 
-# 67875000 ps 1 1 1 0141 3c34 
-# 68000000 ps 0 1 1 0141 3c34 
-# 68125000 ps 1 1 1 0006 3c00 
-# 68250000 ps 0 1 1 0006 3c00 
-# 68375000 ps 1 1 1 3ec5 3c32 
-# 68500000 ps 0 1 1 3ec5 3c32 
-# 68625000 ps 1 1 1 3da8 3cc2 
-# 68750000 ps 0 1 1 3da8 3cc2 
-# 68875000 ps 1 1 1 033a 025d 
-# 69000000 ps 0 1 1 033a 025d 
-# 69125000 ps 1 1 1 03cc 0141 
-# 69250000 ps 0 1 1 03cc 0141 
-# 69375000 ps 1 1 1 0400 0006 
-# 69500000 ps 0 1 1 0400 0006 
-# 69625000 ps 1 1 1 03ce 3ec5 
-# 69750000 ps 0 1 1 03ce 3ec5 
-# 69875000 ps 1 1 1 033e 3da8 
-# 70000000 ps 0 1 1 033e 3da8 
-# 70125000 ps 1 1 1 025d 3cc6 
-# 70250000 ps 0 1 1 025d 3cc6 
-# 70375000 ps 1 1 1 0141 3c34 
-# 70500000 ps 0 1 1 0141 3c34 
-# 70625000 ps 1 1 1 0006 3c00 
-# 70750000 ps 0 1 1 0006 3c00 
-# 70875000 ps 1 1 1 013b 03ce 
-# 71000000 ps 0 1 1 013b 03ce 
-# 71125000 ps 1 1 1 0258 033e 
-# 71250000 ps 0 1 1 0258 033e 
-# 71375000 ps 1 1 1 033a 025d 
-# 71500000 ps 0 1 1 033a 025d 
-# 71625000 ps 1 1 1 03cc 0141 
-# 71750000 ps 0 1 1 03cc 0141 
-# 71875000 ps 1 1 1 0400 0006 
-# 72000000 ps 0 1 1 0400 0006 
-# 72125000 ps 1 1 1 03ce 3ec5 
-# 72250000 ps 0 1 1 03ce 3ec5 
-# 72375000 ps 1 1 1 033e 3da8 
-# 72500000 ps 0 1 1 033e 3da8 
-# 72625000 ps 1 1 1 025d 3cc6 
-# 72750000 ps 0 1 1 025d 3cc6 
-# 72875000 ps 1 1 1 0141 03cc 
-# 73000000 ps 0 1 1 0141 03cc 
-# 73125000 ps 1 1 1 0006 0400 
-# 73250000 ps 0 1 1 0006 0400 
-# 73375000 ps 1 1 1 3ec5 03ce 
-# 73500000 ps 0 1 1 3ec5 03ce 
-# 73625000 ps 1 1 1 3da8 033e 
-# 73750000 ps 0 1 1 3da8 033e 
-# 73875000 ps 1 1 1 3cc6 025d 
-# 74000000 ps 0 1 1 3cc6 025d 
-# 74125000 ps 1 1 1 3c34 0141 
-# 74250000 ps 0 1 1 3c34 0141 
-# 74375000 ps 1 1 1 3c00 0006 
-# 74500000 ps 0 1 1 3c00 0006 
-# 74625000 ps 1 1 1 3c32 3ec5 
-# 74750000 ps 0 1 1 3c32 3ec5 
-# 74875000 ps 1 1 1 033e 0258 
-# 75000000 ps 0 1 1 033e 0258 
-# 75125000 ps 1 1 1 025d 033a 
-# 75250000 ps 0 1 1 025d 033a 
-# 75375000 ps 1 1 1 0141 03cc 
-# 75500000 ps 0 1 1 0141 03cc 
-# 75625000 ps 1 1 1 0006 0400 
-# 75750000 ps 0 1 1 0006 0400 
-# 75875000 ps 1 1 1 3ec5 03ce 
-# 76000000 ps 0 1 1 3ec5 03ce 
-# 76125000 ps 1 1 1 3da8 033e 
-# 76250000 ps 0 1 1 3da8 033e 
-# 76375000 ps 1 1 1 3cc6 025d 
-# 76500000 ps 0 1 1 3cc6 025d 
-# 76625000 ps 1 1 1 3c34 0141 
-# 76750000 ps 0 1 1 3c34 0141 
-# 76875000 ps 1 1 1 3c00 0006 
-# 77000000 ps 0 1 1 3c00 0006 
-# 77125000 ps 1 1 1 3c32 3ec5 
-# 77250000 ps 0 1 1 3c32 3ec5 
-# 77375000 ps 1 1 1 3cc2 3da8 
-# 77500000 ps 0 1 1 3cc2 3da8 
-# 77625000 ps 1 1 1 3da3 3cc6 
-# 77750000 ps 0 1 1 3da3 3cc6 
-# 77875000 ps 1 1 1 3ebf 3c34 
-# 78000000 ps 0 1 1 3ebf 3c34 
-# 78125000 ps 1 1 1 3ffa 3c00 
-# 78250000 ps 0 1 1 3ffa 3c00 
-# 78375000 ps 1 1 1 013b 3c32 
-# 78500000 ps 0 1 1 013b 3c32 
-# 78625000 ps 1 1 1 0258 3cc2 
-# 78750000 ps 0 1 1 0258 3cc2 
-# 78875000 ps 1 1 1 033a 025d 
-# 79000000 ps 0 1 1 033a 025d 
-# 79125000 ps 1 1 1 03cc 0141 
-# 79250000 ps 0 1 1 03cc 0141 
-# 79375000 ps 1 1 1 0400 0006 
-# 79500000 ps 0 1 1 0400 0006 
-# 79625000 ps 1 1 1 03ce 3ec5 
-# 79750000 ps 0 1 1 03ce 3ec5 
-# 79875000 ps 1 1 1 033e 3da8 
-# 80000000 ps 0 1 1 033e 3da8 
-# 80125000 ps 1 1 1 025d 3cc6 
-# 80250000 ps 0 1 1 025d 3cc6 
-# 80375000 ps 1 1 1 0141 3c34 
-# 80500000 ps 0 1 1 0141 3c34 
-# 80625000 ps 1 1 1 0006 3c00 
-# 80750000 ps 0 1 1 0006 3c00 
-# 80875000 ps 1 1 1 013b 03ce 
-# 81000000 ps 0 1 1 013b 03ce 
-# 81125000 ps 1 1 1 0258 033e 
-# 81250000 ps 0 1 1 0258 033e 
-# 81375000 ps 1 1 1 033a 025d 
-# 81500000 ps 0 1 1 033a 025d 
-# 81625000 ps 1 1 1 03cc 0141 
-# 81750000 ps 0 1 1 03cc 0141 
-# 81875000 ps 1 1 1 0400 0006 
-# 82000000 ps 0 1 1 0400 0006 
-# 82125000 ps 1 1 1 03ce 3ec5 
-# 82250000 ps 0 1 1 03ce 3ec5 
-# 82375000 ps 1 1 1 033e 3da8 
-# 82500000 ps 0 1 1 033e 3da8 
-# 82625000 ps 1 1 1 025d 3cc6 
-# 82750000 ps 0 1 1 025d 3cc6 
-# 82875000 ps 1 1 1 0141 3c34 
-# 83000000 ps 0 1 1 0141 3c34 
-# 83125000 ps 1 1 1 0006 3c00 
-# 83250000 ps 0 1 1 0006 3c00 
-# 83375000 ps 1 1 1 3ec5 3c32 
-# 83500000 ps 0 1 1 3ec5 3c32 
-# 83625000 ps 1 1 1 3da8 3cc2 
-# 83750000 ps 0 1 1 3da8 3cc2 
-# 83875000 ps 1 1 1 3cc6 3da3 
-# 84000000 ps 0 1 1 3cc6 3da3 
-# 84125000 ps 1 1 1 3c34 3ebf 
-# 84250000 ps 0 1 1 3c34 3ebf 
-# 84375000 ps 1 1 1 3c00 3ffa 
-# 84500000 ps 0 1 1 3c00 3ffa 
-# 84625000 ps 1 1 1 3c32 013b 
-# 84750000 ps 0 1 1 3c32 013b 
-# 84875000 ps 1 1 1 033e 0258 
-# 85000000 ps 0 1 1 033e 0258 
-# 85125000 ps 1 1 1 025d 033a 
-# 85250000 ps 0 1 1 025d 033a 
-# 85375000 ps 1 1 1 0141 03cc 
-# 85500000 ps 0 1 1 0141 03cc 
-# 85625000 ps 1 1 1 0006 0400 
-# 85750000 ps 0 1 1 0006 0400 
-# 85875000 ps 1 1 1 3ec5 03ce 
-# 86000000 ps 0 1 1 3ec5 03ce 
-# 86125000 ps 1 1 1 3da8 033e 
-# 86250000 ps 0 1 1 3da8 033e 
-# 86375000 ps 1 1 1 3cc6 025d 
-# 86500000 ps 0 1 1 3cc6 025d 
-# 86625000 ps 1 1 1 3c34 0141 
-# 86750000 ps 0 1 1 3c34 0141 
-# 86875000 ps 1 1 1 0400 3ffa 
-# 87000000 ps 0 1 1 0400 3ffa 
-# 87125000 ps 1 1 1 03ce 013b 
-# 87250000 ps 0 1 1 03ce 013b 
-# 87375000 ps 1 1 1 033e 0258 
-# 87500000 ps 0 1 1 033e 0258 
-# 87625000 ps 1 1 1 025d 033a 
-# 87750000 ps 0 1 1 025d 033a 
-# 87875000 ps 1 1 1 0141 03cc 
-# 88000000 ps 0 1 1 0141 03cc 
-# 88125000 ps 1 1 1 0006 0400 
-# 88250000 ps 0 1 1 0006 0400 
-# 88375000 ps 1 1 1 3ec5 03ce 
-# 88500000 ps 0 1 1 3ec5 03ce 
-# 88625000 ps 1 1 1 3da8 033e 
-# 88750000 ps 0 1 1 3da8 033e 
-# 88875000 ps 1 1 1 3cc6 3da3 
-# 89000000 ps 0 1 1 3cc6 3da3 
-# 89125000 ps 1 1 1 3c34 3ebf 
-# 89250000 ps 0 1 1 3c34 3ebf 
-# 89375000 ps 1 1 1 3c00 3ffa 
-# 89500000 ps 0 1 1 3c00 3ffa 
-# 89625000 ps 1 1 1 3c32 013b 
-# 89750000 ps 0 1 1 3c32 013b 
-# 89875000 ps 1 1 1 3cc2 0258 
-# 90000000 ps 0 1 1 3cc2 0258 
-# 90125000 ps 1 1 1 3da3 033a 
-# 90250000 ps 0 1 1 3da3 033a 
-# 90375000 ps 1 1 1 3ebf 03cc 
-# 90500000 ps 0 1 1 3ebf 03cc 
-# 90625000 ps 1 1 1 3ffa 0400 
-# 90750000 ps 0 1 1 3ffa 0400 
-# 90875000 ps 1 1 1 013b 3c32 
-# 91000000 ps 0 1 1 013b 3c32 
-# 91125000 ps 1 1 1 0258 3cc2 
-# 91250000 ps 0 1 1 0258 3cc2 
-# 91375000 ps 1 1 1 033a 3da3 
-# 91500000 ps 0 1 1 033a 3da3 
-# 91625000 ps 1 1 1 03cc 3ebf 
-# 91750000 ps 0 1 1 03cc 3ebf 
-# 91875000 ps 1 1 1 0400 3ffa 
-# 92000000 ps 0 1 1 0400 3ffa 
-# 92125000 ps 1 1 1 03ce 013b 
-# 92250000 ps 0 1 1 03ce 013b 
-# 92375000 ps 1 1 1 033e 0258 
-# 92500000 ps 0 1 1 033e 0258 
-# 92625000 ps 1 1 1 025d 033a 
-# 92750000 ps 0 1 1 025d 033a 
-# 92875000 ps 1 1 1 3ebf 03cc 
-# 93000000 ps 0 1 1 3ebf 03cc 
-# 93125000 ps 1 1 1 3ffa 0400 
-# 93250000 ps 0 1 1 3ffa 0400 
-# 93375000 ps 1 1 1 013b 03ce 
-# 93500000 ps 0 1 1 013b 03ce 
-# 93625000 ps 1 1 1 0258 033e 
-# 93750000 ps 0 1 1 0258 033e 
-# 93875000 ps 1 1 1 033a 025d 
-# 94000000 ps 0 1 1 033a 025d 
-# 94125000 ps 1 1 1 03cc 0141 
-# 94250000 ps 0 1 1 03cc 0141 
-# 94375000 ps 1 1 1 0400 0006 
-# 94500000 ps 0 1 1 0400 0006 
-# 94625000 ps 1 1 1 03ce 3ec5 
-# 94750000 ps 0 1 1 03ce 3ec5 
-# 94875000 ps 1 1 1 033e 0258 
-# 95000000 ps 0 1 1 033e 0258 
-# 95125000 ps 1 1 1 025d 033a 
-# 95250000 ps 0 1 1 025d 033a 
-# 95375000 ps 1 1 1 0141 03cc 
-# 95500000 ps 0 1 1 0141 03cc 
-# 95625000 ps 1 1 1 0006 0400 
-# 95750000 ps 0 1 1 0006 0400 
-# 95875000 ps 1 1 1 3ec5 03ce 
-# 96000000 ps 0 1 1 3ec5 03ce 
-# 96125000 ps 1 1 1 3da8 033e 
-# 96250000 ps 0 1 1 3da8 033e 
-# 96375000 ps 1 1 1 3cc6 025d 
-# 96500000 ps 0 1 1 3cc6 025d 
-# 96625000 ps 1 1 1 3c34 0141 
-# 96750000 ps 0 1 1 3c34 0141 
-# 96875000 ps 1 1 1 3c00 3ffa 
-# 97000000 ps 0 1 1 3c00 3ffa 
-# 97125000 ps 1 1 1 3c32 013b 
-# 97250000 ps 0 1 1 3c32 013b 
-# 97375000 ps 1 1 1 3cc2 0258 
-# 97500000 ps 0 1 1 3cc2 0258 
-# 97625000 ps 1 1 1 3da3 033a 
-# 97750000 ps 0 1 1 3da3 033a 
-# 97875000 ps 1 1 1 3ebf 03cc 
-# 98000000 ps 0 1 1 3ebf 03cc 
-# 98125000 ps 1 1 1 3ffa 0400 
-# 98250000 ps 0 1 1 3ffa 0400 
-# 98375000 ps 1 1 1 013b 03ce 
-# 98500000 ps 0 1 1 013b 03ce 
-# 98625000 ps 1 1 1 0258 033e 
-# 98750000 ps 0 1 1 0258 033e 
-# 98875000 ps 1 1 1 3cc6 025d 
-# 99000000 ps 0 1 1 3cc6 025d 
-# 99125000 ps 1 1 1 3c34 0141 
-# 99250000 ps 0 1 1 3c34 0141 
-# 99375000 ps 1 1 1 3c00 0006 
-# 99500000 ps 0 1 1 3c00 0006 
-# 99625000 ps 1 1 1 3c32 3ec5 
-# 99750000 ps 0 1 1 3c32 3ec5 
-# 99875000 ps 1 1 1 3cc2 3da8 
-# 100000000 ps 0 1 1 3cc2 3da8 
-# 100125000 ps 1 1 1 3da3 3cc6 
-# 100250000 ps 0 1 1 3da3 3cc6 
-# 100375000 ps 1 1 1 3ebf 3c34 
-# 100500000 ps 0 1 1 3ebf 3c34 
-# 100625000 ps 1 1 1 3ffa 3c00 
-# 100750000 ps 0 1 1 3ffa 3c00 
-# 100875000 ps 1 1 1 013b 3c32 
-# 101000000 ps 0 1 1 013b 3c32 
-# 101125000 ps 1 1 1 0258 3cc2 
-# 101250000 ps 0 1 1 0258 3cc2 
-# 101375000 ps 1 1 1 033a 3da3 
-# 101500000 ps 0 1 1 033a 3da3 
-# 101625000 ps 1 1 1 03cc 3ebf 
-# 101750000 ps 0 1 1 03cc 3ebf 
-# 101875000 ps 1 1 1 0400 3ffa 
-# 102000000 ps 0 1 1 0400 3ffa 
-# 102125000 ps 1 1 1 03ce 013b 
-# 102250000 ps 0 1 1 03ce 013b 
-# 102375000 ps 1 1 1 033e 0258 
-# 102500000 ps 0 1 1 033e 0258 
-# 102625000 ps 1 1 1 025d 033a 
-# 102750000 ps 0 1 1 025d 033a 
-# 102875000 ps 1 1 1 3ebf 03cc 
-# 103000000 ps 0 1 1 3ebf 03cc 
-# 103125000 ps 1 1 1 3ffa 0400 
-# 103250000 ps 0 1 1 3ffa 0400 
-# 103375000 ps 1 1 1 013b 03ce 
-# 103500000 ps 0 1 1 013b 03ce 
-# 103625000 ps 1 1 1 0258 033e 
-# 103750000 ps 0 1 1 0258 033e 
-# 103875000 ps 1 1 1 033a 025d 
-# 104000000 ps 0 1 1 033a 025d 
-# 104125000 ps 1 1 1 03cc 0141 
-# 104250000 ps 0 1 1 03cc 0141 
-# 104375000 ps 1 1 1 0400 0006 
-# 104500000 ps 0 1 1 0400 0006 
-# 104625000 ps 1 1 1 03ce 3ec5 
-# 104750000 ps 0 1 1 03ce 3ec5 
-# 104875000 ps 1 1 1 033e 0258 
-# 105000000 ps 0 1 1 033e 0258 
-# 105125000 ps 1 1 1 025d 033a 
-# 105250000 ps 0 1 1 025d 033a 
-# 105375000 ps 1 1 1 0141 03cc 
-# 105500000 ps 0 1 1 0141 03cc 
-# 105625000 ps 1 1 1 0006 0400 
-# 105750000 ps 0 1 1 0006 0400 
-# 105875000 ps 1 1 1 3ec5 03ce 
-# 106000000 ps 0 1 1 3ec5 03ce 
-# 106125000 ps 1 1 1 3da8 033e 
-# 106250000 ps 0 1 1 3da8 033e 
-# 106375000 ps 1 1 1 3cc6 025d 
-# 106500000 ps 0 1 1 3cc6 025d 
-# 106625000 ps 1 1 1 3c34 0141 
-# 106750000 ps 0 1 1 3c34 0141 
-# 106875000 ps 1 1 1 3c00 3ffa 
-# 107000000 ps 0 1 1 3c00 3ffa 
-# 107125000 ps 1 1 1 3c32 013b 
-# 107250000 ps 0 1 1 3c32 013b 
-# 107375000 ps 1 1 1 3cc2 0258 
-# 107500000 ps 0 1 1 3cc2 0258 
-# 107625000 ps 1 1 1 3da3 033a 
-# 107750000 ps 0 1 1 3da3 033a 
-# 107875000 ps 1 1 1 3ebf 03cc 
-# 108000000 ps 0 1 1 3ebf 03cc 
-# 108125000 ps 1 1 1 3ffa 0400 
-# 108250000 ps 0 1 1 3ffa 0400 
-# 108375000 ps 1 1 1 013b 03ce 
-# 108500000 ps 0 1 1 013b 03ce 
-# 108625000 ps 1 1 1 0258 033e 
-# 108750000 ps 0 1 1 0258 033e 
-# 108875000 ps 1 1 1 033a 025d 
-# 109000000 ps 0 1 1 033a 025d 
-# 109125000 ps 1 1 1 03cc 0141 
-# 109250000 ps 0 1 1 03cc 0141 
-# 109375000 ps 1 1 1 0400 0006 
-# 109500000 ps 0 1 1 0400 0006 
-# 109625000 ps 1 1 1 03ce 3ec5 
-# 109750000 ps 0 1 1 03ce 3ec5 
-# 109875000 ps 1 1 1 033e 3da8 
-# 110000000 ps 0 1 1 033e 3da8 
-# 110125000 ps 1 1 1 025d 3cc6 
-# 110250000 ps 0 1 1 025d 3cc6 
-# 110375000 ps 1 1 1 0141 3c34 
-# 110500000 ps 0 1 1 0141 3c34 
-# 110625000 ps 1 1 1 0006 3c00 
-# 110750000 ps 0 1 1 0006 3c00 
-# 110875000 ps 1 1 1 013b 3c32 
-# 111000000 ps 0 1 1 013b 3c32 
-# 111125000 ps 1 1 1 0258 3cc2 
-# 111250000 ps 0 1 1 0258 3cc2 
-# 111375000 ps 1 1 1 033a 3da3 
-# 111500000 ps 0 1 1 033a 3da3 
-# 111625000 ps 1 1 1 03cc 3ebf 
-# 111750000 ps 0 1 1 03cc 3ebf 
-# 111875000 ps 1 1 1 0400 3ffa 
-# 112000000 ps 0 1 1 0400 3ffa 
-# 112125000 ps 1 1 1 03ce 013b 
-# 112250000 ps 0 1 1 03ce 013b 
-# 112375000 ps 1 1 1 033e 0258 
-# 112500000 ps 0 1 1 033e 0258 
-# 112625000 ps 1 1 1 025d 033a 
-# 112750000 ps 0 1 1 025d 033a 
-# 112875000 ps 1 1 1 0141 3c34 
-# 113000000 ps 0 1 1 0141 3c34 
-# 113125000 ps 1 1 1 0006 3c00 
-# 113250000 ps 0 1 1 0006 3c00 
-# 113375000 ps 1 1 1 3ec5 3c32 
-# 113500000 ps 0 1 1 3ec5 3c32 
-# 113625000 ps 1 1 1 3da8 3cc2 
-# 113750000 ps 0 1 1 3da8 3cc2 
-# 113875000 ps 1 1 1 3cc6 3da3 
-# 114000000 ps 0 1 1 3cc6 3da3 
-# 114125000 ps 1 1 1 3c34 3ebf 
-# 114250000 ps 0 1 1 3c34 3ebf 
-# 114375000 ps 1 1 1 3c00 3ffa 
-# 114500000 ps 0 1 1 3c00 3ffa 
-# 114625000 ps 1 1 1 3c32 013b 
-# 114750000 ps 0 1 1 3c32 013b 
-# 114875000 ps 1 1 1 033e 0258 
-# 115000000 ps 0 1 1 033e 0258 
-# 115125000 ps 1 1 1 025d 033a 
-# 115250000 ps 0 1 1 025d 033a 
-# 115375000 ps 1 1 1 0141 03cc 
-# 115500000 ps 0 1 1 0141 03cc 
-# 115625000 ps 1 1 1 0006 0400 
-# 115750000 ps 0 1 1 0006 0400 
-# 115875000 ps 1 1 1 3ec5 03ce 
-# 116000000 ps 0 1 1 3ec5 03ce 
-# 116125000 ps 1 1 1 3da8 033e 
-# 116250000 ps 0 1 1 3da8 033e 
-# 116375000 ps 1 1 1 3cc6 025d 
-# 116500000 ps 0 1 1 3cc6 025d 
-# 116625000 ps 1 1 1 3c34 0141 
-# 116750000 ps 0 1 1 3c34 0141 
-# 116875000 ps 1 1 1 0400 3ffa 
-# 117000000 ps 0 1 1 0400 3ffa 
-# 117125000 ps 1 1 1 03ce 013b 
-# 117250000 ps 0 1 1 03ce 013b 
-# 117375000 ps 1 1 1 033e 0258 
-# 117500000 ps 0 1 1 033e 0258 
-# 117625000 ps 1 1 1 025d 033a 
-# 117750000 ps 0 1 1 025d 033a 
-# 117875000 ps 1 1 1 0141 03cc 
-# 118000000 ps 0 1 1 0141 03cc 
-# 118125000 ps 1 1 1 0006 0400 
-# 118250000 ps 0 1 1 0006 0400 
-# 118375000 ps 1 1 1 3ec5 03ce 
-# 118500000 ps 0 1 1 3ec5 03ce 
-# 118625000 ps 1 1 1 3da8 033e 
-# 118750000 ps 0 1 1 3da8 033e 
-# 118875000 ps 1 1 1 033a 3da3 
-# 119000000 ps 0 1 1 033a 3da3 
-# 119125000 ps 1 1 1 03cc 3ebf 
-# 119250000 ps 0 1 1 03cc 3ebf 
-# 119375000 ps 1 1 1 0400 3ffa 
-# 119500000 ps 0 1 1 0400 3ffa 
-# 119625000 ps 1 1 1 03ce 013b 
-# 119750000 ps 0 1 1 03ce 013b 
-# 119875000 ps 1 1 1 033e 0258 
-# 120000000 ps 0 1 1 033e 0258 
-# 120125000 ps 1 1 1 025d 033a 
-# 120250000 ps 0 1 1 025d 033a 
-# 120375000 ps 1 1 1 0141 03cc 
-# 120500000 ps 0 1 1 0141 03cc 
-# 120625000 ps 1 1 1 0006 0400 
-# 120750000 ps 0 1 1 0006 0400 
-# 120875000 ps 1 1 1 3ec5 3c32 
-# 121000000 ps 0 1 1 3ec5 3c32 
-# 121125000 ps 1 1 1 3da8 3cc2 
-# 121250000 ps 0 1 1 3da8 3cc2 
-# 121375000 ps 1 1 1 3cc6 3da3 
-# 121500000 ps 0 1 1 3cc6 3da3 
-# 121625000 ps 1 1 1 3c34 3ebf 
-# 121750000 ps 0 1 1 3c34 3ebf 
-# 121875000 ps 1 1 1 3c00 3ffa 
-# 122000000 ps 0 1 1 3c00 3ffa 
-# 122125000 ps 1 1 1 3c32 013b 
-# 122250000 ps 0 1 1 3c32 013b 
-# 122375000 ps 1 1 1 3cc2 0258 
-# 122500000 ps 0 1 1 3cc2 0258 
-# 122625000 ps 1 1 1 3da3 033a 
-# 122750000 ps 0 1 1 3da3 033a 
-# 122875000 ps 1 1 1 3ebf 03cc 
-# 123000000 ps 0 1 1 3ebf 03cc 
-# 123125000 ps 1 1 1 3ffa 0400 
-# 123250000 ps 0 1 1 3ffa 0400 
-# 123375000 ps 1 1 1 013b 03ce 
-# 123500000 ps 0 1 1 013b 03ce 
-# 123625000 ps 1 1 1 0258 033e 
-# 123750000 ps 0 1 1 0258 033e 
-# 123875000 ps 1 1 1 033a 025d 
-# 124000000 ps 0 1 1 033a 025d 
-# 124125000 ps 1 1 1 03cc 0141 
-# 124250000 ps 0 1 1 03cc 0141 
-# 124375000 ps 1 1 1 0400 0006 
-# 124500000 ps 0 1 1 0400 0006 
-# 124625000 ps 1 1 1 03ce 3ec5 
-# 124750000 ps 0 1 1 03ce 3ec5 
-# 124875000 ps 1 1 1 3cc2 0258 
-# 125000000 ps 0 1 1 3cc2 0258 
-# 125125000 ps 1 1 1 3da3 033a 
-# 125250000 ps 0 1 1 3da3 033a 
-# 125375000 ps 1 1 1 3ebf 03cc 
-# 125500000 ps 0 1 1 3ebf 03cc 
-# 125625000 ps 1 1 1 3ffa 0400 
-# 125750000 ps 0 1 1 3ffa 0400 
-# 125875000 ps 1 1 1 013b 03ce 
-# 126000000 ps 0 1 1 013b 03ce 
-# 126125000 ps 1 1 1 0258 033e 
-# 126250000 ps 0 1 1 0258 033e 
-# 126375000 ps 1 1 1 033a 025d 
-# 126500000 ps 0 1 1 033a 025d 
-# 126625000 ps 1 1 1 03cc 0141 
-# 126750000 ps 0 1 1 03cc 0141 
-# 126875000 ps 1 1 1 0400 3ffa 
-# 127000000 ps 0 1 1 0400 3ffa 
-# 127125000 ps 1 1 1 03ce 013b 
-# 127250000 ps 0 1 1 03ce 013b 
-# 127375000 ps 1 1 1 033e 0258 
-# 127500000 ps 0 1 1 033e 0258 
-# 127625000 ps 1 1 1 025d 033a 
-# 127750000 ps 0 1 1 025d 033a 
-# 127875000 ps 1 1 1 0141 03cc 
-# 128000000 ps 0 1 1 0141 03cc 
-# 128125000 ps 1 1 1 0006 0400 
-# 128250000 ps 0 1 1 0006 0400 
-# 128375000 ps 1 1 1 3ec5 03ce 
-# 128500000 ps 0 1 1 3ec5 03ce 
-# 128625000 ps 1 1 1 3da8 033e 
-# 128750000 ps 0 1 1 3da8 033e 
-# 128875000 ps 1 1 1 033a 025d 
-# 129000000 ps 0 1 1 033a 025d 
-# 129125000 ps 1 1 1 03cc 0141 
-# 129250000 ps 0 1 1 03cc 0141 
-# 129375000 ps 1 1 1 0400 0006 
-# 129500000 ps 0 1 1 0400 0006 
-# 129625000 ps 1 1 1 03ce 3ec5 
-# 129750000 ps 0 1 1 03ce 3ec5 
-# 129875000 ps 1 1 1 033e 3da8 
-# 130000000 ps 0 1 1 033e 3da8 
-# 130125000 ps 1 1 1 025d 3cc6 
-# 130250000 ps 0 1 1 025d 3cc6 
-# 130375000 ps 1 1 1 0141 3c34 
-# 130500000 ps 0 1 1 0141 3c34 
-# 130625000 ps 1 1 1 0006 3c00 
-# 130750000 ps 0 1 1 0006 3c00 
-# 130875000 ps 1 1 1 3ec5 3c32 
-# 131000000 ps 0 1 1 3ec5 3c32 
-# 131125000 ps 1 1 1 3da8 3cc2 
-# 131250000 ps 0 1 1 3da8 3cc2 
-# 131375000 ps 1 1 1 3cc6 3da3 
-# 131500000 ps 0 1 1 3cc6 3da3 
-# 131625000 ps 1 1 1 3c34 3ebf 
-# 131750000 ps 0 1 1 3c34 3ebf 
-# 131875000 ps 1 1 1 3c00 3ffa 
-# 132000000 ps 0 1 1 3c00 3ffa 
-# 132125000 ps 1 1 1 3c32 013b 
-# 132250000 ps 0 1 1 3c32 013b 
-# 132375000 ps 1 1 1 3cc2 0258 
-# 132500000 ps 0 1 1 3cc2 0258 
-# 132625000 ps 1 1 1 3da3 033a 
-# 132750000 ps 0 1 1 3da3 033a 
-# 132875000 ps 1 1 1 0141 03cc 
-# 133000000 ps 0 1 1 0141 03cc 
-# 133125000 ps 1 1 1 0006 0400 
-# 133250000 ps 0 1 1 0006 0400 
-# 133375000 ps 1 1 1 3ec5 03ce 
-# 133500000 ps 0 1 1 3ec5 03ce 
-# 133625000 ps 1 1 1 3da8 033e 
-# 133750000 ps 0 1 1 3da8 033e 
-# 133875000 ps 1 1 1 3cc6 025d 
-# 134000000 ps 0 1 1 3cc6 025d 
-# 134125000 ps 1 1 1 3c34 0141 
-# 134250000 ps 0 1 1 3c34 0141 
-# 134375000 ps 1 1 1 3c00 0006 
-# 134500000 ps 0 1 1 3c00 0006 
-# 134625000 ps 1 1 1 3c32 3ec5 
-# 134750000 ps 0 1 1 3c32 3ec5 
-# 134875000 ps 1 1 1 033e 0258 
-# 135000000 ps 0 1 1 033e 0258 
-# 135125000 ps 1 1 1 025d 033a 
-# 135250000 ps 0 1 1 025d 033a 
-# 135375000 ps 1 1 1 0141 03cc 
-# 135500000 ps 0 1 1 0141 03cc 
-# 135625000 ps 1 1 1 0006 0400 
-# 135750000 ps 0 1 1 0006 0400 
-# 135875000 ps 1 1 1 3ec5 03ce 
-# 136000000 ps 0 1 1 3ec5 03ce 
-# 136125000 ps 1 1 1 3da8 033e 
-# 136250000 ps 0 1 1 3da8 033e 
-# 136375000 ps 1 1 1 3cc6 025d 
-# 136500000 ps 0 1 1 3cc6 025d 
-# 136625000 ps 1 1 1 3c34 0141 
-# 136750000 ps 0 1 1 3c34 0141 
-# 136875000 ps 1 1 1 3c00 0006 
-# 137000000 ps 0 1 1 3c00 0006 
-# 137125000 ps 1 1 1 3c32 3ec5 
-# 137250000 ps 0 1 1 3c32 3ec5 
-# 137375000 ps 1 1 1 3cc2 3da8 
-# 137500000 ps 0 1 1 3cc2 3da8 
-# 137625000 ps 1 1 1 3da3 3cc6 
-# 137750000 ps 0 1 1 3da3 3cc6 
-# 137875000 ps 1 1 1 3ebf 3c34 
-# 138000000 ps 0 1 1 3ebf 3c34 
-# 138125000 ps 1 1 1 3ffa 3c00 
-# 138250000 ps 0 1 1 3ffa 3c00 
-# 138375000 ps 1 1 1 013b 3c32 
-# 138500000 ps 0 1 1 013b 3c32 
-# 138625000 ps 1 1 1 0258 3cc2 
-# 138750000 ps 0 1 1 0258 3cc2 
-# 138875000 ps 1 1 1 3cc6 3da3 
-# 139000000 ps 0 1 1 3cc6 3da3 
-# 139125000 ps 1 1 1 3c34 3ebf 
-# 139250000 ps 0 1 1 3c34 3ebf 
-# 139375000 ps 1 1 1 3c00 3ffa 
-# 139500000 ps 0 1 1 3c00 3ffa 
-# 139625000 ps 1 1 1 3c32 013b 
-# 139750000 ps 0 1 1 3c32 013b 
-# 139875000 ps 1 1 1 3cc2 0258 
-# 140000000 ps 0 1 1 3cc2 0258 
-# 140125000 ps 1 1 1 3da3 033a 
-# 140250000 ps 0 1 1 3da3 033a 
-# 140375000 ps 1 1 1 3ebf 03cc 
-# 140500000 ps 0 1 1 3ebf 03cc 
-# 140625000 ps 1 1 1 3ffa 0400 
-# 140750000 ps 0 1 1 3ffa 0400 
-# 140875000 ps 1 1 1 013b 03ce 
-# 141000000 ps 0 1 1 013b 03ce 
-# 141125000 ps 1 1 1 0258 033e 
-# 141250000 ps 0 1 1 0258 033e 
-# 141375000 ps 1 1 1 033a 025d 
-# 141500000 ps 0 1 1 033a 025d 
-# 141625000 ps 1 1 1 03cc 0141 
-# 141750000 ps 0 1 1 03cc 0141 
-# 141875000 ps 1 1 1 0400 0006 
-# 142000000 ps 0 1 1 0400 0006 
-# 142125000 ps 1 1 1 03ce 3ec5 
-# 142250000 ps 0 1 1 03ce 3ec5 
-# 142375000 ps 1 1 1 033e 3da8 
-# 142500000 ps 0 1 1 033e 3da8 
-# 142625000 ps 1 1 1 025d 3cc6 
-# 142750000 ps 0 1 1 025d 3cc6 
-# 142875000 ps 1 1 1 3ebf 3c34 
-# 143000000 ps 0 1 1 3ebf 3c34 
-# 143125000 ps 1 1 1 3ffa 3c00 
-# 143250000 ps 0 1 1 3ffa 3c00 
-# 143375000 ps 1 1 1 013b 3c32 
-# 143500000 ps 0 1 1 013b 3c32 
-# 143625000 ps 1 1 1 0258 3cc2 
-# 143750000 ps 0 1 1 0258 3cc2 
-# 143875000 ps 1 1 1 033a 3da3 
-# 144000000 ps 0 1 1 033a 3da3 
-# 144125000 ps 1 1 1 03cc 3ebf 
-# 144250000 ps 0 1 1 03cc 3ebf 
-# 144375000 ps 1 1 1 0400 3ffa 
-# 144500000 ps 0 1 1 0400 3ffa 
-# 144625000 ps 1 1 1 03ce 013b 
-# 144750000 ps 0 1 1 03ce 013b 
-# 144875000 ps 1 1 1 033e 3da8 
-# 145000000 ps 0 1 1 033e 3da8 
-# 145125000 ps 1 1 1 025d 3cc6 
-# 145250000 ps 0 1 1 025d 3cc6 
-# 145375000 ps 1 1 1 0141 3c34 
-# 145500000 ps 0 1 1 0141 3c34 
-# 145625000 ps 1 1 1 0006 3c00 
-# 145750000 ps 0 1 1 0006 3c00 
-# 145875000 ps 1 1 1 3ec5 3c32 
-# 146000000 ps 0 1 1 3ec5 3c32 
-# 146125000 ps 1 1 1 3da8 3cc2 
-# 146250000 ps 0 1 1 3da8 3cc2 
-# 146375000 ps 1 1 1 3cc6 3da3 
-# 146500000 ps 0 1 1 3cc6 3da3 
-# 146625000 ps 1 1 1 3c34 3ebf 
-# 146750000 ps 0 1 1 3c34 3ebf 
-# 146875000 ps 1 1 1 0400 0006 
-# 147000000 ps 0 1 1 0400 0006 
-# 147125000 ps 1 1 1 03ce 3ec5 
-# 147250000 ps 0 1 1 03ce 3ec5 
-# 147375000 ps 1 1 1 033e 3da8 
-# 147500000 ps 0 1 1 033e 3da8 
-# 147625000 ps 1 1 1 025d 3cc6 
-# 147750000 ps 0 1 1 025d 3cc6 
-# 147875000 ps 1 1 1 0141 3c34 
-# 148000000 ps 0 1 1 0141 3c34 
-# 148125000 ps 1 1 1 0006 3c00 
-# 148250000 ps 0 1 1 0006 3c00 
-# 148375000 ps 1 1 1 3ec5 3c32 
-# 148500000 ps 0 1 1 3ec5 3c32 
-# 148625000 ps 1 1 1 3da8 3cc2 
-# 148750000 ps 0 1 1 3da8 3cc2 
-# 148875000 ps 1 1 1 3cc6 3da3 
-# 149000000 ps 0 1 1 3cc6 3da3 
-# 149125000 ps 1 1 1 3c34 3ebf 
-# 149250000 ps 0 1 1 3c34 3ebf 
-# 149375000 ps 1 1 1 3c00 3ffa 
-# 149500000 ps 0 1 1 3c00 3ffa 
-# 149625000 ps 1 1 1 3c32 013b 
-# 149750000 ps 0 1 1 3c32 013b 
-# 149875000 ps 1 1 1 3cc2 0258 
-# 150000000 ps 0 1 1 3cc2 0258 
-# 150125000 ps 1 1 1 3da3 033a 
-# 150250000 ps 0 1 1 3da3 033a 
-# 150375000 ps 1 1 1 3ebf 03cc 
-# 150500000 ps 0 1 1 3ebf 03cc 
-# 150625000 ps 1 1 1 3ffa 0400 
-# 150750000 ps 0 1 1 3ffa 0400 
-# 150875000 ps 1 1 1 013b 3c32 
-# 151000000 ps 0 1 1 013b 3c32 
-# 151125000 ps 1 1 1 0258 3cc2 
-# 151250000 ps 0 1 1 0258 3cc2 
-# 151375000 ps 1 1 1 033a 3da3 
-# 151500000 ps 0 1 1 033a 3da3 
-# 151625000 ps 1 1 1 03cc 3ebf 
-# 151750000 ps 0 1 1 03cc 3ebf 
-# 151875000 ps 1 1 1 0400 3ffa 
-# 152000000 ps 0 1 1 0400 3ffa 
-# 152125000 ps 1 1 1 03ce 013b 
-# 152250000 ps 0 1 1 03ce 013b 
-# 152375000 ps 1 1 1 033e 0258 
-# 152500000 ps 0 1 1 033e 0258 
-# 152625000 ps 1 1 1 025d 033a 
-# 152750000 ps 0 1 1 025d 033a 
-# 152875000 ps 1 1 1 3ebf 3c34 
-# 153000000 ps 0 1 1 3ebf 3c34 
-# 153125000 ps 1 1 1 3ffa 3c00 
-# 153250000 ps 0 1 1 3ffa 3c00 
-# 153375000 ps 1 1 1 013b 3c32 
-# 153500000 ps 0 1 1 013b 3c32 
-# 153625000 ps 1 1 1 0258 3cc2 
-# 153750000 ps 0 1 1 0258 3cc2 
-# 153875000 ps 1 1 1 033a 3da3 
-# 154000000 ps 0 1 1 033a 3da3 
-# 154125000 ps 1 1 1 03cc 3ebf 
-# 154250000 ps 0 1 1 03cc 3ebf 
-# 154375000 ps 1 1 1 0400 3ffa 
-# 154500000 ps 0 1 1 0400 3ffa 
-# 154625000 ps 1 1 1 03ce 013b 
-# 154750000 ps 0 1 1 03ce 013b 
-# 154875000 ps 1 1 1 3cc2 0258 
-# 155000000 ps 0 1 1 3cc2 0258 
-# 155125000 ps 1 1 1 3da3 033a 
-# 155250000 ps 0 1 1 3da3 033a 
-# 155375000 ps 1 1 1 3ebf 03cc 
-# 155500000 ps 0 1 1 3ebf 03cc 
-# 155625000 ps 1 1 1 3ffa 0400 
-# 155750000 ps 0 1 1 3ffa 0400 
-# 155875000 ps 1 1 1 013b 03ce 
-# 156000000 ps 0 1 1 013b 03ce 
-# 156125000 ps 1 1 1 0258 033e 
-# 156250000 ps 0 1 1 0258 033e 
-# 156375000 ps 1 1 1 033a 025d 
-# 156500000 ps 0 1 1 033a 025d 
-# 156625000 ps 1 1 1 03cc 0141 
-# 156750000 ps 0 1 1 03cc 0141 
-# 156875000 ps 1 1 1 3c00 3ffa 
-# 157000000 ps 0 1 1 3c00 3ffa 
-# 157125000 ps 1 1 1 3c32 013b 
-# 157250000 ps 0 1 1 3c32 013b 
-# 157375000 ps 1 1 1 3cc2 0258 
-# 157500000 ps 0 1 1 3cc2 0258 
-# 157625000 ps 1 1 1 3da3 033a 
-# 157750000 ps 0 1 1 3da3 033a 
-# 157875000 ps 1 1 1 3ebf 03cc 
-# 158000000 ps 0 1 1 3ebf 03cc 
-# 158125000 ps 1 1 1 3ffa 0400 
-# 158250000 ps 0 1 1 3ffa 0400 
-# 158375000 ps 1 1 1 013b 03ce 
-# 158500000 ps 0 1 1 013b 03ce 
-# 158625000 ps 1 1 1 0258 033e 
-# 158750000 ps 0 1 1 0258 033e 
-# 158875000 ps 1 1 1 3cc6 025d 
-# 159000000 ps 0 1 1 3cc6 025d 
-# 159125000 ps 1 1 1 3c34 0141 
-# 159250000 ps 0 1 1 3c34 0141 
-# 159375000 ps 1 1 1 3c00 0006 
-# 159500000 ps 0 1 1 3c00 0006 
-# 159625000 ps 1 1 1 3c32 3ec5 
-# 159750000 ps 0 1 1 3c32 3ec5 
-# 159875000 ps 1 1 1 3cc2 3da8 
-# 160000000 ps 0 1 1 3cc2 3da8 
-# 160125000 ps 1 1 1 3da3 3cc6 
-# 160250000 ps 0 1 1 3da3 3cc6 
-# 160375000 ps 1 1 1 3ebf 3c34 
-# 160500000 ps 0 1 1 3ebf 3c34 
-# 160625000 ps 1 1 1 3ffa 3c00 
-# 160750000 ps 0 1 1 3ffa 3c00 
-# 160875000 ps 1 1 1 3ec5 03ce 
-# 161000000 ps 0 1 1 3ec5 03ce 
-# 161125000 ps 1 1 1 3da8 033e 
-# 161250000 ps 0 1 1 3da8 033e 
-# 161375000 ps 1 1 1 3cc6 025d 
-# 161500000 ps 0 1 1 3cc6 025d 
-# 161625000 ps 1 1 1 3c34 0141 
-# 161750000 ps 0 1 1 3c34 0141 
-# 161875000 ps 1 1 1 3c00 0006 
-# 162000000 ps 0 1 1 3c00 0006 
-# 162125000 ps 1 1 1 3c32 3ec5 
-# 162250000 ps 0 1 1 3c32 3ec5 
-# 162375000 ps 1 1 1 3cc2 3da8 
-# 162500000 ps 0 1 1 3cc2 3da8 
-# 162625000 ps 1 1 1 3da3 3cc6 
-# 162750000 ps 0 1 1 3da3 3cc6 
-# 162875000 ps 1 1 1 0141 03cc 
-# 163000000 ps 0 1 1 0141 03cc 
-# 163125000 ps 1 1 1 0006 0400 
-# 163250000 ps 0 1 1 0006 0400 
-# 163375000 ps 1 1 1 3ec5 03ce 
-# 163500000 ps 0 1 1 3ec5 03ce 
-# 163625000 ps 1 1 1 3da8 033e 
-# 163750000 ps 0 1 1 3da8 033e 
-# 163875000 ps 1 1 1 3cc6 025d 
-# 164000000 ps 0 1 1 3cc6 025d 
-# 164125000 ps 1 1 1 3c34 0141 
-# 164250000 ps 0 1 1 3c34 0141 
-# 164375000 ps 1 1 1 3c00 0006 
-# 164500000 ps 0 1 1 3c00 0006 
-# 164625000 ps 1 1 1 3c32 3ec5 
-# 164750000 ps 0 1 1 3c32 3ec5 
-# 164875000 ps 1 1 1 3cc2 3da8 
-# 165000000 ps 0 1 1 3cc2 3da8 
-# 165125000 ps 1 1 1 3da3 3cc6 
-# 165250000 ps 0 1 1 3da3 3cc6 
-# 165375000 ps 1 1 1 3ebf 3c34 
-# 165500000 ps 0 1 1 3ebf 3c34 
-# 165625000 ps 1 1 1 3ffa 3c00 
-# 165750000 ps 0 1 1 3ffa 3c00 
-# 165875000 ps 1 1 1 013b 3c32 
-# 166000000 ps 0 1 1 013b 3c32 
-# 166125000 ps 1 1 1 0258 3cc2 
-# 166250000 ps 0 1 1 0258 3cc2 
-# 166375000 ps 1 1 1 033a 3da3 
-# 166500000 ps 0 1 1 033a 3da3 
-# 166625000 ps 1 1 1 03cc 3ebf 
-# 166750000 ps 0 1 1 03cc 3ebf 
-# 166875000 ps 1 1 1 3c00 0006 
-# 167000000 ps 0 1 1 3c00 0006 
-# 167125000 ps 1 1 1 3c32 3ec5 
-# 167250000 ps 0 1 1 3c32 3ec5 
-# 167375000 ps 1 1 1 3cc2 3da8 
-# 167500000 ps 0 1 1 3cc2 3da8 
-# 167625000 ps 1 1 1 3da3 3cc6 
-# 167750000 ps 0 1 1 3da3 3cc6 
-# 167875000 ps 1 1 1 3ebf 3c34 
-# 168000000 ps 0 1 1 3ebf 3c34 
-# 168125000 ps 1 1 1 3ffa 3c00 
-# 168250000 ps 0 1 1 3ffa 3c00 
-# 168375000 ps 1 1 1 013b 3c32 
-# 168500000 ps 0 1 1 013b 3c32 
-# 168625000 ps 1 1 1 0258 3cc2 
-# 168750000 ps 0 1 1 0258 3cc2 
-# 168875000 ps 1 1 1 033a 025d 
-# 169000000 ps 0 1 1 033a 025d 
-# 169125000 ps 1 1 1 03cc 0141 
-# 169250000 ps 0 1 1 03cc 0141 
-# 169375000 ps 1 1 1 0400 0006 
-# 169500000 ps 0 1 1 0400 0006 
-# 169625000 ps 1 1 1 03ce 3ec5 
-# 169750000 ps 0 1 1 03ce 3ec5 
-# 169875000 ps 1 1 1 033e 3da8 
-# 170000000 ps 0 1 1 033e 3da8 
-# 170125000 ps 1 1 1 025d 3cc6 
-# 170250000 ps 0 1 1 025d 3cc6 
-# 170375000 ps 1 1 1 0141 3c34 
-# 170500000 ps 0 1 1 0141 3c34 
-# 170625000 ps 1 1 1 0006 3c00 
-# 170750000 ps 0 1 1 0006 3c00 
-# 170875000 ps 1 1 1 013b 03ce 
-# 171000000 ps 0 1 1 013b 03ce 
-# 171125000 ps 1 1 1 0258 033e 
-# 171250000 ps 0 1 1 0258 033e 
-# 171375000 ps 1 1 1 033a 025d 
-# 171500000 ps 0 1 1 033a 025d 
-# 171625000 ps 1 1 1 03cc 0141 
-# 171750000 ps 0 1 1 03cc 0141 
-# 171875000 ps 1 1 1 0400 0006 
-# 172000000 ps 0 1 1 0400 0006 
-# 172125000 ps 1 1 1 03ce 3ec5 
-# 172250000 ps 0 1 1 03ce 3ec5 
-# 172375000 ps 1 1 1 033e 3da8 
-# 172500000 ps 0 1 1 033e 3da8 
-# 172625000 ps 1 1 1 025d 3cc6 
-# 172750000 ps 0 1 1 025d 3cc6 
-# 172875000 ps 1 1 1 0141 03cc 
-# 173000000 ps 0 1 1 0141 03cc 
-# 173125000 ps 1 1 1 0006 0400 
-# 173250000 ps 0 1 1 0006 0400 
-# 173375000 ps 1 1 1 3ec5 03ce 
-# 173500000 ps 0 1 1 3ec5 03ce 
-# 173625000 ps 1 1 1 3da8 033e 
-# 173750000 ps 0 1 1 3da8 033e 
-# 173875000 ps 1 1 1 3cc6 025d 
-# 174000000 ps 0 1 1 3cc6 025d 
-# 174125000 ps 1 1 1 3c34 0141 
-# 174250000 ps 0 1 1 3c34 0141 
-# 174375000 ps 1 1 1 3c00 0006 
-# 174500000 ps 0 1 1 3c00 0006 
-# 174625000 ps 1 1 1 3c32 3ec5 
-# 174750000 ps 0 1 1 3c32 3ec5 
-# 174875000 ps 1 1 1 033e 0258 
-# 175000000 ps 0 1 1 033e 0258 
-# 175125000 ps 1 1 1 025d 033a 
-# 175250000 ps 0 1 1 025d 033a 
-# 175375000 ps 1 1 1 0141 03cc 
-# 175500000 ps 0 1 1 0141 03cc 
-# 175625000 ps 1 1 1 0006 0400 
-# 175750000 ps 0 1 1 0006 0400 
-# 175875000 ps 1 1 1 3ec5 03ce 
-# 176000000 ps 0 1 1 3ec5 03ce 
-# 176125000 ps 1 1 1 3da8 033e 
-# 176250000 ps 0 1 1 3da8 033e 
-# 176375000 ps 1 1 1 3cc6 025d 
-# 176500000 ps 0 1 1 3cc6 025d 
-# 176625000 ps 1 1 1 3c34 0141 
-# 176750000 ps 0 1 1 3c34 0141 
-# 176875000 ps 1 1 1 0400 3ffa 
-# 177000000 ps 0 1 1 0400 3ffa 
-# 177125000 ps 1 1 1 03ce 013b 
-# 177250000 ps 0 1 1 03ce 013b 
-# 177375000 ps 1 1 1 033e 0258 
-# 177500000 ps 0 1 1 033e 0258 
-# 177625000 ps 1 1 1 025d 033a 
-# 177750000 ps 0 1 1 025d 033a 
-# 177875000 ps 1 1 1 0141 03cc 
-# 178000000 ps 0 1 1 0141 03cc 
-# 178125000 ps 1 1 1 0006 0400 
-# 178250000 ps 0 1 1 0006 0400 
-# 178375000 ps 1 1 1 3ec5 03ce 
-# 178500000 ps 0 1 1 3ec5 03ce 
-# 178625000 ps 1 1 1 3da8 033e 
-# 178750000 ps 0 1 1 3da8 033e 
-# 178875000 ps 1 1 1 3cc6 025d 
-# 179000000 ps 0 1 1 3cc6 025d 
-# 179125000 ps 1 1 1 3c34 0141 
-# 179250000 ps 0 1 1 3c34 0141 
-# 179375000 ps 1 1 1 3c00 0006 
-# 179500000 ps 0 1 1 3c00 0006 
-# 179625000 ps 1 1 1 3c32 3ec5 
-# 179750000 ps 0 1 1 3c32 3ec5 
-# 179875000 ps 1 1 1 3cc2 3da8 
-# 180000000 ps 0 1 1 3cc2 3da8 
-# 180125000 ps 1 1 1 3da3 3cc6 
-# 180250000 ps 0 1 1 3da3 3cc6 
-# 180375000 ps 1 1 1 3ebf 3c34 
-# 180500000 ps 0 1 1 3ebf 3c34 
-# 180625000 ps 1 1 1 3ffa 3c00 
-# 180750000 ps 0 1 1 3ffa 3c00 
-# 180875000 ps 1 1 1 3ec5 03ce 
-# 181000000 ps 0 1 1 3ec5 03ce 
-# 181125000 ps 1 1 1 3da8 033e 
-# 181250000 ps 0 1 1 3da8 033e 
-# 181375000 ps 1 1 1 3cc6 025d 
-# 181500000 ps 0 1 1 3cc6 025d 
-# 181625000 ps 1 1 1 3c34 0141 
-# 181750000 ps 0 1 1 3c34 0141 
-# 181875000 ps 1 1 1 3c00 0006 
-# 182000000 ps 0 1 1 3c00 0006 
-# 182125000 ps 1 1 1 3c32 3ec5 
-# 182250000 ps 0 1 1 3c32 3ec5 
-# 182375000 ps 1 1 1 3cc2 3da8 
-# 182500000 ps 0 1 1 3cc2 3da8 
-# 182625000 ps 1 1 1 3da3 3cc6 
-# 182750000 ps 0 1 1 3da3 3cc6 
-# 182875000 ps 1 1 1 0141 3c34 
-# 183000000 ps 0 1 1 0141 3c34 
-# 183125000 ps 1 1 1 0006 3c00 
-# 183250000 ps 0 1 1 0006 3c00 
-# 183375000 ps 1 1 1 3ec5 3c32 
-# 183500000 ps 0 1 1 3ec5 3c32 
-# 183625000 ps 1 1 1 3da8 3cc2 
-# 183750000 ps 0 1 1 3da8 3cc2 
-# 183875000 ps 1 1 1 3cc6 3da3 
-# 184000000 ps 0 1 1 3cc6 3da3 
-# 184125000 ps 1 1 1 3c34 3ebf 
-# 184250000 ps 0 1 1 3c34 3ebf 
-# 184375000 ps 1 1 1 3c00 3ffa 
-# 184500000 ps 0 1 1 3c00 3ffa 
-# 184625000 ps 1 1 1 3c32 013b 
-# 184750000 ps 0 1 1 3c32 013b 
-# 184875000 ps 1 1 1 033e 3da8 
-# 185000000 ps 0 1 1 033e 3da8 
-# 185125000 ps 1 1 1 025d 3cc6 
-# 185250000 ps 0 1 1 025d 3cc6 
-# 185375000 ps 1 1 1 0141 3c34 
-# 185500000 ps 0 1 1 0141 3c34 
-# 185625000 ps 1 1 1 0006 3c00 
-# 185750000 ps 0 1 1 0006 3c00 
-# 185875000 ps 1 1 1 3ec5 3c32 
-# 186000000 ps 0 1 1 3ec5 3c32 
-# 186125000 ps 1 1 1 3da8 3cc2 
-# 186250000 ps 0 1 1 3da8 3cc2 
-# 186375000 ps 1 1 1 3cc6 3da3 
-# 186500000 ps 0 1 1 3cc6 3da3 
-# 186625000 ps 1 1 1 3c34 3ebf 
-# 186750000 ps 0 1 1 3c34 3ebf 
-# 186875000 ps 1 1 1 0400 0006 
-# 187000000 ps 0 1 1 0400 0006 
-# 187125000 ps 1 1 1 03ce 3ec5 
-# 187250000 ps 0 1 1 03ce 3ec5 
-# 187375000 ps 1 1 1 033e 3da8 
-# 187500000 ps 0 1 1 033e 3da8 
-# 187625000 ps 1 1 1 025d 3cc6 
-# 187750000 ps 0 1 1 025d 3cc6 
-# 187875000 ps 1 1 1 0141 3c34 
-# 188000000 ps 0 1 1 0141 3c34 
-# 188125000 ps 1 1 1 0006 3c00 
-# 188250000 ps 0 1 1 0006 3c00 
-# 188375000 ps 1 1 1 3ec5 3c32 
-# 188500000 ps 0 1 1 3ec5 3c32 
-# 188625000 ps 1 1 1 3da8 3cc2 
-# 188750000 ps 0 1 1 3da8 3cc2 
-# 188875000 ps 1 1 1 3cc6 025d 
-# 189000000 ps 0 1 1 3cc6 025d 
-# 189125000 ps 1 1 1 3c34 0141 
-# 189250000 ps 0 1 1 3c34 0141 
-# 189375000 ps 1 1 1 3c00 0006 
-# 189500000 ps 0 1 1 3c00 0006 
-# 189625000 ps 1 1 1 3c32 3ec5 
-# 189750000 ps 0 1 1 3c32 3ec5 
-# 189875000 ps 1 1 1 3cc2 3da8 
-# 190000000 ps 0 1 1 3cc2 3da8 
-# 190125000 ps 1 1 1 3da3 3cc6 
-# 190250000 ps 0 1 1 3da3 3cc6 
-# 190375000 ps 1 1 1 3ebf 3c34 
-# 190500000 ps 0 1 1 3ebf 3c34 
-# 190625000 ps 1 1 1 3ffa 3c00 
-# 190750000 ps 0 1 1 3ffa 3c00 
-# 190875000 ps 1 1 1 3ec5 3c32 
-# 191000000 ps 0 1 1 3ec5 3c32 
-# 191125000 ps 1 1 1 3da8 3cc2 
-# 191250000 ps 0 1 1 3da8 3cc2 
-# 191375000 ps 1 1 1 3cc6 3da3 
-# 191500000 ps 0 1 1 3cc6 3da3 
-# 191625000 ps 1 1 1 3c34 3ebf 
-# 191750000 ps 0 1 1 3c34 3ebf 
-# 191875000 ps 1 1 1 3c00 3ffa 
-# 192000000 ps 0 1 1 3c00 3ffa 
-# 192125000 ps 1 1 1 3c32 013b 
-# 192250000 ps 0 1 1 3c32 013b 
-# 192375000 ps 1 1 1 3cc2 0258 
-# 192500000 ps 0 1 1 3cc2 0258 
-# 192625000 ps 1 1 1 3da3 033a 
-# 192750000 ps 0 1 1 3da3 033a 
-# 192875000 ps 1 1 1 3ebf 03cc 
-# 193000000 ps 0 1 1 3ebf 03cc 
-# 193125000 ps 1 1 1 3ffa 0400 
-# 193250000 ps 0 1 1 3ffa 0400 
-# 193375000 ps 1 1 1 013b 03ce 
-# 193500000 ps 0 1 1 013b 03ce 
-# 193625000 ps 1 1 1 0258 033e 
-# 193750000 ps 0 1 1 0258 033e 
-# 193875000 ps 1 1 1 033a 025d 
-# 194000000 ps 0 1 1 033a 025d 
-# 194125000 ps 1 1 1 03cc 0141 
-# 194250000 ps 0 1 1 03cc 0141 
-# 194375000 ps 1 1 1 0400 0006 
-# 194500000 ps 0 1 1 0400 0006 
-# 194625000 ps 1 1 1 03ce 3ec5 
-# 194750000 ps 0 1 1 03ce 3ec5 
-# 194875000 ps 1 1 1 033e 0258 
-# 195000000 ps 0 1 1 033e 0258 
-# 195125000 ps 1 1 1 025d 033a 
-# 195250000 ps 0 1 1 025d 033a 
-# 195375000 ps 1 1 1 0141 03cc 
-# 195500000 ps 0 1 1 0141 03cc 
-# 195625000 ps 1 1 1 0006 0400 
-# 195750000 ps 0 1 1 0006 0400 
-# 195875000 ps 1 1 1 3ec5 03ce 
-# 196000000 ps 0 1 1 3ec5 03ce 
-# 196125000 ps 1 1 1 3da8 033e 
-# 196250000 ps 0 1 1 3da8 033e 
-# 196375000 ps 1 1 1 3cc6 025d 
-# 196500000 ps 0 1 1 3cc6 025d 
-# 196625000 ps 1 1 1 3c34 0141 
-# 196750000 ps 0 1 1 3c34 0141 
-# 196875000 ps 1 1 1 3c00 0006 
-# 197000000 ps 0 1 1 3c00 0006 
-# 197125000 ps 1 1 1 3c32 3ec5 
-# 197250000 ps 0 1 1 3c32 3ec5 
-# 197375000 ps 1 1 1 3cc2 3da8 
-# 197500000 ps 0 1 1 3cc2 3da8 
-# 197625000 ps 1 1 1 3da3 3cc6 
-# 197750000 ps 0 1 1 3da3 3cc6 
-# 197875000 ps 1 1 1 3ebf 3c34 
-# 198000000 ps 0 1 1 3ebf 3c34 
-# 198125000 ps 1 1 1 3ffa 3c00 
-# 198250000 ps 0 1 1 3ffa 3c00 
-# 198375000 ps 1 1 1 013b 3c32 
-# 198500000 ps 0 1 1 013b 3c32 
-# 198625000 ps 1 1 1 0258 3cc2 
-# 198750000 ps 0 1 1 0258 3cc2 
-# 198875000 ps 1 1 1 033a 025d 
-# 199000000 ps 0 1 1 033a 025d 
-# 199125000 ps 1 1 1 03cc 0141 
-# 199250000 ps 0 1 1 03cc 0141 
-# 199375000 ps 1 1 1 0400 0006 
-# 199500000 ps 0 1 1 0400 0006 
-# 199625000 ps 1 1 1 03ce 3ec5 
-# 199750000 ps 0 1 1 03ce 3ec5 
-# 199875000 ps 1 1 1 033e 3da8 
-# 200000000 ps 0 1 1 033e 3da8 
-# 200125000 ps 1 1 1 025d 3cc6 
-# 200250000 ps 0 1 1 025d 3cc6 
-# 200375000 ps 1 1 1 0141 3c34 
-# 200500000 ps 0 1 1 0141 3c34 
-# 200625000 ps 1 1 1 0006 3c00 
-# 200750000 ps 0 1 1 0006 3c00 
-# 200875000 ps 1 1 1 013b 3c32 
-# 201000000 ps 0 1 1 013b 3c32 
-# 201125000 ps 1 1 1 0258 3cc2 
-# 201250000 ps 0 1 1 0258 3cc2 
-# 201375000 ps 1 1 1 033a 3da3 
-# 201500000 ps 0 1 1 033a 3da3 
-# 201625000 ps 1 1 1 03cc 3ebf 
-# 201750000 ps 0 1 1 03cc 3ebf 
-# 201875000 ps 1 1 1 0400 3ffa 
-# 202000000 ps 0 1 1 0400 3ffa 
-# 202125000 ps 1 1 1 03ce 013b 
-# 202250000 ps 0 1 1 03ce 013b 
-# 202375000 ps 1 1 1 033e 0258 
-# 202500000 ps 0 1 1 033e 0258 
-# 202625000 ps 1 1 1 025d 033a 
-# 202750000 ps 0 1 1 025d 033a 
-# 202875000 ps 1 1 1 0141 03cc 
-# 203000000 ps 0 1 1 0141 03cc 
-# 203125000 ps 1 1 1 0006 0400 
-# 203250000 ps 0 1 1 0006 0400 
-# 203375000 ps 1 1 1 3ec5 03ce 
-# 203500000 ps 0 1 1 3ec5 03ce 
-# 203625000 ps 1 1 1 3da8 033e 
-# 203750000 ps 0 1 1 3da8 033e 
-# 203875000 ps 1 1 1 3cc6 025d 
-# 204000000 ps 0 1 1 3cc6 025d 
-# 204125000 ps 1 1 1 3c34 0141 
-# 204250000 ps 0 1 1 3c34 0141 
-# 204375000 ps 1 1 1 3c00 0006 
-# 204500000 ps 0 1 1 3c00 0006 
-# 204625000 ps 1 1 1 3c32 3ec5 
-# 204750000 ps 0 1 1 3c32 3ec5 
-# 204875000 ps 1 1 1 3cc2 0258 
-# 205000000 ps 0 1 1 3cc2 0258 
-# 205125000 ps 1 1 1 3da3 033a 
-# 205250000 ps 0 1 1 3da3 033a 
-# 205375000 ps 1 1 1 3ebf 03cc 
-# 205500000 ps 0 1 1 3ebf 03cc 
-# 205625000 ps 1 1 1 3ffa 0400 
-# 205750000 ps 0 1 1 3ffa 0400 
-# 205875000 ps 1 1 1 013b 03ce 
-# 206000000 ps 0 1 1 013b 03ce 
-# 206125000 ps 1 1 1 0258 033e 
-# 206250000 ps 0 1 1 0258 033e 
-# 206375000 ps 1 1 1 033a 025d 
-# 206500000 ps 0 1 1 033a 025d 
-# 206625000 ps 1 1 1 03cc 0141 
-# 206750000 ps 0 1 1 03cc 0141 
-# 206875000 ps 1 1 1 3c00 3ffa 
-# 207000000 ps 0 1 1 3c00 3ffa 
-# 207125000 ps 1 1 1 3c32 013b 
-# 207250000 ps 0 1 1 3c32 013b 
-# 207375000 ps 1 1 1 3cc2 0258 
-# 207500000 ps 0 1 1 3cc2 0258 
-# 207625000 ps 1 1 1 3da3 033a 
-# 207750000 ps 0 1 1 3da3 033a 
-# 207875000 ps 1 1 1 3ebf 03cc 
-# 208000000 ps 0 1 1 3ebf 03cc 
-# 208125000 ps 1 1 1 3ffa 0400 
-# 208250000 ps 0 1 1 3ffa 0400 
-# 208375000 ps 1 1 1 013b 03ce 
-# 208500000 ps 0 1 1 013b 03ce 
-# 208625000 ps 1 1 1 0258 033e 
-# 208750000 ps 0 1 1 0258 033e 
-# 208875000 ps 1 1 1 033a 3da3 
-# 209000000 ps 0 1 1 033a 3da3 
-# 209125000 ps 1 1 1 03cc 3ebf 
-# 209250000 ps 0 1 1 03cc 3ebf 
-# 209375000 ps 1 1 1 0400 3ffa 
-# 209500000 ps 0 1 1 0400 3ffa 
-# 209625000 ps 1 1 1 03ce 013b 
-# 209750000 ps 0 1 1 03ce 013b 
-# 209875000 ps 1 1 1 033e 0258 
-# 210000000 ps 0 1 1 033e 0258 
-# 210125000 ps 1 1 1 025d 033a 
-# 210250000 ps 0 1 1 025d 033a 
-# 210375000 ps 1 1 1 0141 03cc 
-# 210500000 ps 0 1 1 0141 03cc 
-# 210625000 ps 1 1 1 0006 0400 
-# 210750000 ps 0 1 1 0006 0400 
-# 210875000 ps 1 1 1 013b 03ce 
-# 211000000 ps 0 1 1 013b 03ce 
-# 211125000 ps 1 1 1 0258 033e 
-# 211250000 ps 0 1 1 0258 033e 
-# 211375000 ps 1 1 1 033a 025d 
-# 211500000 ps 0 1 1 033a 025d 
-# 211625000 ps 1 1 1 03cc 0141 
-# 211750000 ps 0 1 1 03cc 0141 
-# 211875000 ps 1 1 1 0400 0006 
-# 212000000 ps 0 1 1 0400 0006 
-# 212125000 ps 1 1 1 03ce 3ec5 
-# 212250000 ps 0 1 1 03ce 3ec5 
-# 212375000 ps 1 1 1 033e 3da8 
-# 212500000 ps 0 1 1 033e 3da8 
-# 212625000 ps 1 1 1 025d 3cc6 
-# 212750000 ps 0 1 1 025d 3cc6 
-# 212875000 ps 1 1 1 0141 03cc 
-# 213000000 ps 0 1 1 0141 03cc 
-# 213125000 ps 1 1 1 0006 0400 
-# 213250000 ps 0 1 1 0006 0400 
-# 213375000 ps 1 1 1 3ec5 03ce 
-# 213500000 ps 0 1 1 3ec5 03ce 
-# 213625000 ps 1 1 1 3da8 033e 
-# 213750000 ps 0 1 1 3da8 033e 
-# 213875000 ps 1 1 1 3cc6 025d 
-# 214000000 ps 0 1 1 3cc6 025d 
-# 214125000 ps 1 1 1 3c34 0141 
-# 214250000 ps 0 1 1 3c34 0141 
-# 214375000 ps 1 1 1 3c00 0006 
-# 214500000 ps 0 1 1 3c00 0006 
-# 214625000 ps 1 1 1 3c32 3ec5 
-# 214750000 ps 0 1 1 3c32 3ec5 
-# 214875000 ps 1 1 1 033e 0258 
-# 215000000 ps 0 1 1 033e 0258 
-# 215125000 ps 1 1 1 025d 033a 
-# 215250000 ps 0 1 1 025d 033a 
-# 215375000 ps 1 1 1 0141 03cc 
-# 215500000 ps 0 1 1 0141 03cc 
-# 215625000 ps 1 1 1 0006 0400 
-# 215750000 ps 0 1 1 0006 0400 
-# 215875000 ps 1 1 1 3ec5 03ce 
-# 216000000 ps 0 1 1 3ec5 03ce 
-# 216125000 ps 1 1 1 3da8 033e 
-# 216250000 ps 0 1 1 3da8 033e 
-# 216375000 ps 1 1 1 3cc6 025d 
-# 216500000 ps 0 1 1 3cc6 025d 
-# 216625000 ps 1 1 1 3c34 0141 
-# 216750000 ps 0 1 1 3c34 0141 
-# 216875000 ps 1 1 1 3c00 0006 
-# 217000000 ps 0 1 1 3c00 0006 
-# 217125000 ps 1 1 1 3c32 3ec5 
-# 217250000 ps 0 1 1 3c32 3ec5 
-# 217375000 ps 1 1 1 3cc2 3da8 
-# 217500000 ps 0 1 1 3cc2 3da8 
-# 217625000 ps 1 1 1 3da3 3cc6 
-# 217750000 ps 0 1 1 3da3 3cc6 
-# 217875000 ps 1 1 1 3ebf 3c34 
-# 218000000 ps 0 1 1 3ebf 3c34 
-# 218125000 ps 1 1 1 3ffa 3c00 
-# 218250000 ps 0 1 1 3ffa 3c00 
-# 218375000 ps 1 1 1 013b 3c32 
-# 218500000 ps 0 1 1 013b 3c32 
-# 218625000 ps 1 1 1 0258 3cc2 
-# 218750000 ps 0 1 1 0258 3cc2 
-# 218875000 ps 1 1 1 033a 025d 
-# 219000000 ps 0 1 1 033a 025d 
-# 219125000 ps 1 1 1 03cc 0141 
-# 219250000 ps 0 1 1 03cc 0141 
-# 219375000 ps 1 1 1 0400 0006 
-# 219500000 ps 0 1 1 0400 0006 
-# 219625000 ps 1 1 1 03ce 3ec5 
-# 219750000 ps 0 1 1 03ce 3ec5 
-# 219875000 ps 1 1 1 033e 3da8 
-# 220000000 ps 0 1 1 033e 3da8 
-# 220125000 ps 1 1 1 025d 3cc6 
-# 220250000 ps 0 1 1 025d 3cc6 
-# 220375000 ps 1 1 1 0141 3c34 
-# 220500000 ps 0 1 1 0141 3c34 
-# 220625000 ps 1 1 1 0006 3c00 
-# 220750000 ps 0 1 1 0006 3c00 
-# 220875000 ps 1 1 1 3ec5 03ce 
-# 221000000 ps 0 1 1 3ec5 03ce 
-# 221125000 ps 1 1 1 3da8 033e 
-# 221250000 ps 0 1 1 3da8 033e 
-# 221375000 ps 1 1 1 3cc6 025d 
-# 221500000 ps 0 1 1 3cc6 025d 
-# 221625000 ps 1 1 1 3c34 0141 
-# 221750000 ps 0 1 1 3c34 0141 
-# 221875000 ps 1 1 1 3c00 0006 
-# 222000000 ps 0 1 1 3c00 0006 
-# 222125000 ps 1 1 1 3c32 3ec5 
-# 222250000 ps 0 1 1 3c32 3ec5 
-# 222375000 ps 1 1 1 3cc2 3da8 
-# 222500000 ps 0 1 1 3cc2 3da8 
-# 222625000 ps 1 1 1 3da3 3cc6 
-# 222750000 ps 0 1 1 3da3 3cc6 
-# 222875000 ps 1 1 1 0141 03cc 
-# 223000000 ps 0 1 1 0141 03cc 
-# 223125000 ps 1 1 1 0006 0400 
-# 223250000 ps 0 1 1 0006 0400 
-# 223375000 ps 1 1 1 3ec5 03ce 
-# 223500000 ps 0 1 1 3ec5 03ce 
-# 223625000 ps 1 1 1 3da8 033e 
-# 223750000 ps 0 1 1 3da8 033e 
-# 223875000 ps 1 1 1 3cc6 025d 
-# 224000000 ps 0 1 1 3cc6 025d 
-# 224125000 ps 1 1 1 3c34 0141 
-# 224250000 ps 0 1 1 3c34 0141 
-# 224375000 ps 1 1 1 3c00 0006 
-# 224500000 ps 0 1 1 3c00 0006 
-# 224625000 ps 1 1 1 3c32 3ec5 
-# 224750000 ps 0 1 1 3c32 3ec5 
-# 224875000 ps 1 1 1 3cc2 0258 
-# 225000000 ps 0 1 1 3cc2 0258 
-# 225125000 ps 1 1 1 3da3 033a 
-# 225250000 ps 0 1 1 3da3 033a 
-# 225375000 ps 1 1 1 3ebf 03cc 
-# 225500000 ps 0 1 1 3ebf 03cc 
-# 225625000 ps 1 1 1 3ffa 0400 
-# 225750000 ps 0 1 1 3ffa 0400 
-# 225875000 ps 1 1 1 013b 03ce 
-# 226000000 ps 0 1 1 013b 03ce 
-# 226125000 ps 1 1 1 0258 033e 
-# 226250000 ps 0 1 1 0258 033e 
-# 226375000 ps 1 1 1 033a 025d 
-# 226500000 ps 0 1 1 033a 025d 
-# 226625000 ps 1 1 1 03cc 0141 
-# 226750000 ps 0 1 1 03cc 0141 
-# 226875000 ps 1 1 1 3c00 3ffa 
-# 227000000 ps 0 1 1 3c00 3ffa 
-# 227125000 ps 1 1 1 3c32 013b 
-# 227250000 ps 0 1 1 3c32 013b 
-# 227375000 ps 1 1 1 3cc2 0258 
-# 227500000 ps 0 1 1 3cc2 0258 
-# 227625000 ps 1 1 1 3da3 033a 
-# 227750000 ps 0 1 1 3da3 033a 
-# 227875000 ps 1 1 1 3ebf 03cc 
-# 228000000 ps 0 1 1 3ebf 03cc 
-# 228125000 ps 1 1 1 3ffa 0400 
-# 228250000 ps 0 1 1 3ffa 0400 
-# 228375000 ps 1 1 1 013b 03ce 
-# 228500000 ps 0 1 1 013b 03ce 
-# 228625000 ps 1 1 1 0258 033e 
-# 228750000 ps 0 1 1 0258 033e 
-# 228875000 ps 1 1 1 033a 3da3 
-# 229000000 ps 0 1 1 033a 3da3 
-# 229125000 ps 1 1 1 03cc 3ebf 
-# 229250000 ps 0 1 1 03cc 3ebf 
-# 229375000 ps 1 1 1 0400 3ffa 
-# 229500000 ps 0 1 1 0400 3ffa 
-# 229625000 ps 1 1 1 03ce 013b 
-# 229750000 ps 0 1 1 03ce 013b 
-# 229875000 ps 1 1 1 033e 0258 
-# 230000000 ps 0 1 1 033e 0258 
-# 230125000 ps 1 1 1 025d 033a 
-# 230250000 ps 0 1 1 025d 033a 
-# 230375000 ps 1 1 1 0141 03cc 
-# 230500000 ps 0 1 1 0141 03cc 
-# 230625000 ps 1 1 1 0006 0400 
-# 230750000 ps 0 1 1 0006 0400 
-# 230875000 ps 1 1 1 3ec5 3c32 
-# 231000000 ps 0 1 1 3ec5 3c32 
-# 231125000 ps 1 1 1 3da8 3cc2 
-# 231250000 ps 0 1 1 3da8 3cc2 
-# 231375000 ps 1 1 1 3cc6 3da3 
-# 231500000 ps 0 1 1 3cc6 3da3 
-# 231625000 ps 1 1 1 3c34 3ebf 
-# 231750000 ps 0 1 1 3c34 3ebf 
-# 231875000 ps 1 1 1 3c00 3ffa 
-# 232000000 ps 0 1 1 3c00 3ffa 
-# 232125000 ps 1 1 1 3c32 013b 
-# 232250000 ps 0 1 1 3c32 013b 
-# 232375000 ps 1 1 1 3cc2 0258 
-# 232500000 ps 0 1 1 3cc2 0258 
-# 232625000 ps 1 1 1 3da3 033a 
-# 232750000 ps 0 1 1 3da3 033a 
-# 232875000 ps 1 1 1 3ebf 03cc 
-# 233000000 ps 0 1 1 3ebf 03cc 
-# 233125000 ps 1 1 1 3ffa 0400 
-# 233250000 ps 0 1 1 3ffa 0400 
-# 233375000 ps 1 1 1 013b 03ce 
-# 233500000 ps 0 1 1 013b 03ce 
-# 233625000 ps 1 1 1 0258 033e 
-# 233750000 ps 0 1 1 0258 033e 
-# 233875000 ps 1 1 1 033a 025d 
-# 234000000 ps 0 1 1 033a 025d 
-# 234125000 ps 1 1 1 03cc 0141 
-# 234250000 ps 0 1 1 03cc 0141 
-# 234375000 ps 1 1 1 0400 0006 
-# 234500000 ps 0 1 1 0400 0006 
-# 234625000 ps 1 1 1 03ce 3ec5 
-# 234750000 ps 0 1 1 03ce 3ec5 
-# 234875000 ps 1 1 1 033e 3da8 
-# 235000000 ps 0 1 1 033e 3da8 
-# 235125000 ps 1 1 1 025d 3cc6 
-# 235250000 ps 0 1 1 025d 3cc6 
-# 235375000 ps 1 1 1 0141 3c34 
-# 235500000 ps 0 1 1 0141 3c34 
-# 235625000 ps 1 1 1 0006 3c00 
-# 235750000 ps 0 1 1 0006 3c00 
-# 235875000 ps 1 1 1 3ec5 3c32 
-# 236000000 ps 0 1 1 3ec5 3c32 
-# 236125000 ps 1 1 1 3da8 3cc2 
-# 236250000 ps 0 1 1 3da8 3cc2 
-# 236375000 ps 1 1 1 3cc6 3da3 
-# 236500000 ps 0 1 1 3cc6 3da3 
-# 236625000 ps 1 1 1 3c34 3ebf 
-# 236750000 ps 0 1 1 3c34 3ebf 
-# 236875000 ps 1 1 1 3c00 3ffa 
-# 237000000 ps 0 1 1 3c00 3ffa 
-# 237125000 ps 1 1 1 3c32 013b 
-# 237250000 ps 0 1 1 3c32 013b 
-# 237375000 ps 1 1 1 3cc2 0258 
-# 237500000 ps 0 1 1 3cc2 0258 
-# 237625000 ps 1 1 1 3da3 033a 
-# 237750000 ps 0 1 1 3da3 033a 
-# 237875000 ps 1 1 1 3ebf 03cc 
-# 238000000 ps 0 1 1 3ebf 03cc 
-# 238125000 ps 1 1 1 3ffa 0400 
-# 238250000 ps 0 1 1 3ffa 0400 
-# 238375000 ps 1 1 1 013b 03ce 
-# 238500000 ps 0 1 1 013b 03ce 
-# 238625000 ps 1 1 1 0258 033e 
-# 238750000 ps 0 1 1 0258 033e 
-# 238875000 ps 1 1 1 033a 3da3 
-# 239000000 ps 0 1 1 033a 3da3 
-# 239125000 ps 1 1 1 03cc 3ebf 
-# 239250000 ps 0 1 1 03cc 3ebf 
-# 239375000 ps 1 1 1 0400 3ffa 
-# 239500000 ps 0 1 1 0400 3ffa 
-# 239625000 ps 1 1 1 03ce 013b 
-# 239750000 ps 0 1 1 03ce 013b 
-# 239875000 ps 1 1 1 033e 0258 
-# 240000000 ps 0 1 1 033e 0258 
-# 240125000 ps 1 1 1 025d 033a 
-# 240250000 ps 0 1 1 025d 033a 
-# 240375000 ps 1 1 1 0141 03cc 
-# 240500000 ps 0 1 1 0141 03cc 
-# 240625000 ps 1 1 1 0006 0400 
-# 240750000 ps 0 1 1 0006 0400 
-# 240875000 ps 1 1 1 3ec5 3c32 
-# 241000000 ps 0 1 1 3ec5 3c32 
-# 241125000 ps 1 1 1 3da8 3cc2 
-# 241250000 ps 0 1 1 3da8 3cc2 
-# 241375000 ps 1 1 1 3cc6 3da3 
-# 241500000 ps 0 1 1 3cc6 3da3 
-# 241625000 ps 1 1 1 3c34 3ebf 
-# 241750000 ps 0 1 1 3c34 3ebf 
-# 241875000 ps 1 1 1 3c00 3ffa 
-# 242000000 ps 0 1 1 3c00 3ffa 
-# 242125000 ps 1 1 1 3c32 013b 
-# 242250000 ps 0 1 1 3c32 013b 
-# 242375000 ps 1 1 1 3cc2 0258 
-# 242500000 ps 0 1 1 3cc2 0258 
-# 242625000 ps 1 1 1 3da3 033a 
-# 242750000 ps 0 1 1 3da3 033a 
-# 242875000 ps 1 1 1 0141 03cc 
-# 243000000 ps 0 1 1 0141 03cc 
-# 243125000 ps 1 1 1 0006 0400 
-# 243250000 ps 0 1 1 0006 0400 
-# 243375000 ps 1 1 1 3ec5 03ce 
-# 243500000 ps 0 1 1 3ec5 03ce 
-# 243625000 ps 1 1 1 3da8 033e 
-# 243750000 ps 0 1 1 3da8 033e 
-# 243875000 ps 1 1 1 3cc6 025d 
-# 244000000 ps 0 1 1 3cc6 025d 
-# 244125000 ps 1 1 1 3c34 0141 
-# 244250000 ps 0 1 1 3c34 0141 
-# 244375000 ps 1 1 1 3c00 0006 
-# 244500000 ps 0 1 1 3c00 0006 
-# 244625000 ps 1 1 1 3c32 3ec5 
-# 244750000 ps 0 1 1 3c32 3ec5 
-# 244875000 ps 1 1 1 3cc2 0258 
-# 245000000 ps 0 1 1 3cc2 0258 
-# 245125000 ps 1 1 1 3da3 033a 
-# 245250000 ps 0 1 1 3da3 033a 
-# 245375000 ps 1 1 1 3ebf 03cc 
-# 245500000 ps 0 1 1 3ebf 03cc 
-# 245625000 ps 1 1 1 3ffa 0400 
-# 245750000 ps 0 1 1 3ffa 0400 
-# 245875000 ps 1 1 1 013b 03ce 
-# 246000000 ps 0 1 1 013b 03ce 
-# 246125000 ps 1 1 1 0258 033e 
-# 246250000 ps 0 1 1 0258 033e 
-# 246375000 ps 1 1 1 033a 025d 
-# 246500000 ps 0 1 1 033a 025d 
-# 246625000 ps 1 1 1 03cc 0141 
-# 246750000 ps 0 1 1 03cc 0141 
-# 246875000 ps 1 1 1 0400 3ffa 
-# 247000000 ps 0 1 1 0400 3ffa 
-# 247125000 ps 1 1 1 03ce 013b 
-# 247250000 ps 0 1 1 03ce 013b 
-# 247375000 ps 1 1 1 033e 0258 
-# 247500000 ps 0 1 1 033e 0258 
-# 247625000 ps 1 1 1 025d 033a 
-# 247750000 ps 0 1 1 025d 033a 
-# 247875000 ps 1 1 1 0141 03cc 
-# 248000000 ps 0 1 1 0141 03cc 
-# 248125000 ps 1 1 1 0006 0400 
-# 248250000 ps 0 1 1 0006 0400 
-# 248375000 ps 1 1 1 3ec5 03ce 
-# 248500000 ps 0 1 1 3ec5 03ce 
-# 248625000 ps 1 1 1 3da8 033e 
-# 248750000 ps 0 1 1 3da8 033e 
-# 248875000 ps 1 1 1 3cc6 025d 
-# 249000000 ps 0 1 1 3cc6 025d 
-# 249125000 ps 1 1 1 3c34 0141 
-# 249250000 ps 0 1 1 3c34 0141 
-# 249375000 ps 1 1 1 3c00 0006 
-# 249500000 ps 0 1 1 3c00 0006 
-# 249625000 ps 1 1 1 3c32 3ec5 
-# 249750000 ps 0 1 1 3c32 3ec5 
-# 249875000 ps 1 1 1 3cc2 3da8 
-# 250000000 ps 0 1 1 3cc2 3da8 
-# 250125000 ps 1 1 1 3da3 3cc6 
-# 250250000 ps 0 1 1 3da3 3cc6 
-# 250375000 ps 1 1 1 3ebf 3c34 
-# 250500000 ps 0 1 1 3ebf 3c34 
-# 250625000 ps 1 1 1 3ffa 3c00 
-# 250750000 ps 0 1 1 3ffa 3c00 
-# 250875000 ps 1 1 1 3ec5 3c32 
-# 251000000 ps 0 1 1 3ec5 3c32 
-# 251125000 ps 1 1 1 3da8 3cc2 
-# 251250000 ps 0 1 1 3da8 3cc2 
-# 251375000 ps 1 1 1 3cc6 3da3 
-# 251500000 ps 0 1 1 3cc6 3da3 
-# 251625000 ps 1 1 1 3c34 3ebf 
-# 251750000 ps 0 1 1 3c34 3ebf 
-# 251875000 ps 1 1 1 3c00 3ffa 
-# 252000000 ps 0 1 1 3c00 3ffa 
-# 252125000 ps 1 1 1 3c32 013b 
-# 252250000 ps 0 1 1 3c32 013b 
-# 252375000 ps 1 1 1 3cc2 0258 
-# 252500000 ps 0 1 1 3cc2 0258 
-# 252625000 ps 1 1 1 3da3 033a 
-# 252750000 ps 0 1 1 3da3 033a 
-# 252875000 ps 1 1 1 3ebf 03cc 
-# 253000000 ps 0 1 1 3ebf 03cc 
-# 253125000 ps 1 1 1 3ffa 0400 
-# 253250000 ps 0 1 1 3ffa 0400 
-# 253375000 ps 1 1 1 013b 03ce 
-# 253500000 ps 0 1 1 013b 03ce 
-# 253625000 ps 1 1 1 0258 033e 
-# 253750000 ps 0 1 1 0258 033e 
-# 253875000 ps 1 1 1 033a 025d 
-# 254000000 ps 0 1 1 033a 025d 
-# 254125000 ps 1 1 1 03cc 0141 
-# 254250000 ps 0 1 1 03cc 0141 
-# 254375000 ps 1 1 1 0400 0006 
-# 254500000 ps 0 1 1 0400 0006 
-# 254625000 ps 1 1 1 03ce 3ec5 
-# 254750000 ps 0 1 1 03ce 3ec5 
-# 254875000 ps 1 1 1 033e 3da8 
-# 255000000 ps 0 1 1 033e 3da8 
-# 255125000 ps 1 1 1 025d 3cc6 
-# 255250000 ps 0 1 1 025d 3cc6 
-# 255375000 ps 1 1 1 0141 3c34 
-# 255500000 ps 0 1 1 0141 3c34 
-# 255625000 ps 1 1 1 0006 3c00 
-# 255750000 ps 0 1 1 0006 3c00 
-# 255875000 ps 1 1 1 3ec5 3c32 
-# 256000000 ps 0 1 1 3ec5 3c32 
-# 256125000 ps 1 1 1 3da8 3cc2 
-# 256250000 ps 0 1 1 3da8 3cc2 
-# 256375000 ps 1 1 1 3cc6 3da3 
-# 256500000 ps 0 1 1 3cc6 3da3 
-# 256625000 ps 1 1 1 3c34 3ebf 
-# 256750000 ps 0 1 1 3c34 3ebf 
-# 256875000 ps 1 1 1 0400 3ffa 
-# 257000000 ps 0 1 1 0400 3ffa 
-# 257125000 ps 1 1 1 03ce 013b 
-# 257250000 ps 0 1 1 03ce 013b 
-# 257375000 ps 1 1 1 033e 0258 
-# 257500000 ps 0 1 1 033e 0258 
-# 257625000 ps 1 1 1 025d 033a 
-# 257750000 ps 0 1 1 025d 033a 
-# 257875000 ps 1 1 1 0141 03cc 
-# 258000000 ps 0 1 1 0141 03cc 
-# ** Note: $finish    : C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v(156)
-#    Time: 258125 ns  Iteration: 1  Instance: /qpsk_tb
-# End time: 17:21:44 on Jan 09,2026, Elapsed time: 0:00:39
-# Errors: 0, Warnings: 5
+# 11000000 ps 0 1 1 zzzz zzzz 
+# 11125000 ps 1 1 1 zzzz zzzz 
+# 11250000 ps 0 1 1 zzzz zzzz 
+# 11375000 ps 1 1 1 zzzz zzzz 
+# 11500000 ps 0 1 1 zzzz zzzz 
+# 11625000 ps 1 1 1 zzzz zzzz 
+# 11750000 ps 0 1 1 zzzz zzzz 
+# 11875000 ps 1 1 1 zzzz zzzz 
+# 12000000 ps 0 1 1 zzzz zzzz 
+# 12125000 ps 1 1 1 zzzz zzzz 
+# 12250000 ps 0 1 1 zzzz zzzz 
+# 12375000 ps 1 1 1 zzzz zzzz 
+# 12500000 ps 0 1 1 zzzz zzzz 
+# 12625000 ps 1 1 1 zzzz zzzz 
+# 12750000 ps 0 1 1 zzzz zzzz 
+# 12875000 ps 1 1 1 zzzz zzzz 
+# 13000000 ps 0 1 1 zzzz zzzz 
+# 13125000 ps 1 1 1 zzzz zzzz 
+# 13250000 ps 0 1 1 zzzz zzzz 
+# 13375000 ps 1 1 1 zzzz zzzz 
+# 13500000 ps 0 1 1 zzzz zzzz 
+# 13625000 ps 1 1 1 zzzz zzzz 
+# 13750000 ps 0 1 1 zzzz zzzz 
+# 13875000 ps 1 1 1 zzzz zzzz 
+# 14000000 ps 0 1 1 zzzz zzzz 
+# 14125000 ps 1 1 1 zzzz zzzz 
+# 14250000 ps 0 1 1 zzzz zzzz 
+# 14375000 ps 1 1 1 zzzz zzzz 
+# 14500000 ps 0 1 1 zzzz zzzz 
+# 14625000 ps 1 1 1 zzzz zzzz 
+# 14750000 ps 0 1 1 zzzz zzzz 
+# 14875000 ps 1 1 1 zzzz zzzz 
+# 15000000 ps 0 1 1 zzzz zzzz 
+# 15125000 ps 1 1 1 zzzz zzzz 
+# 15250000 ps 0 1 1 zzzz zzzz 
+# 15375000 ps 1 1 1 zzzz zzzz 
+# 15500000 ps 0 1 1 zzzz zzzz 
+# 15625000 ps 1 1 1 zzzz zzzz 
+# 15750000 ps 0 1 1 zzzz zzzz 
+# 15875000 ps 1 1 1 zzzz zzzz 
+# 16000000 ps 0 1 1 zzzz zzzz 
+# 16125000 ps 1 1 1 zzzz zzzz 
+# 16250000 ps 0 1 1 zzzz zzzz 
+# 16375000 ps 1 1 1 zzzz zzzz 
+# 16500000 ps 0 1 1 zzzz zzzz 
+# 16625000 ps 1 1 1 zzzz zzzz 
+# 16750000 ps 0 1 1 zzzz zzzz 
+# 16875000 ps 1 1 1 zzzz zzzz 
+# 17000000 ps 0 1 1 zzzz zzzz 
+# 17125000 ps 1 1 1 zzzz zzzz 
+# 17250000 ps 0 1 1 zzzz zzzz 
+# 17375000 ps 1 1 1 zzzz zzzz 
+# 17500000 ps 0 1 1 zzzz zzzz 
+# 17625000 ps 1 1 1 zzzz zzzz 
+# 17750000 ps 0 1 1 zzzz zzzz 
+# 17875000 ps 1 1 1 zzzz zzzz 
+# 18000000 ps 0 1 1 zzzz zzzz 
+# 18125000 ps 1 1 1 zzzz zzzz 
+# 18250000 ps 0 1 1 zzzz zzzz 
+# 18375000 ps 1 1 1 zzzz zzzz 
+# 18500000 ps 0 1 1 zzzz zzzz 
+# 18625000 ps 1 1 1 zzzz zzzz 
+# 18750000 ps 0 1 1 zzzz zzzz 
+# 18875000 ps 1 1 1 zzzz zzzz 
+# 19000000 ps 0 1 1 zzzz zzzz 
+# 19125000 ps 1 1 1 zzzz zzzz 
+# 19250000 ps 0 1 1 zzzz zzzz 
+# 19375000 ps 1 1 1 zzzz zzzz 
+# 19500000 ps 0 1 1 zzzz zzzz 
+# 19625000 ps 1 1 1 zzzz zzzz 
+# 19750000 ps 0 1 1 zzzz zzzz 
+# 19875000 ps 1 1 1 zzzz zzzz 
+# 20000000 ps 0 1 1 zzzz zzzz 
+# 20125000 ps 1 1 1 zzzz zzzz 
+# 20250000 ps 0 1 1 zzzz zzzz 
+# 20375000 ps 1 1 1 zzzz zzzz 
+# 20500000 ps 0 1 1 zzzz zzzz 
+# 20625000 ps 1 1 1 zzzz zzzz 
+# 20750000 ps 0 1 1 zzzz zzzz 
+# 20875000 ps 1 1 1 zzzz zzzz 
+run
+# 21000000 ps 0 1 1 zzzz zzzz 
+# 21125000 ps 1 1 1 zzzz zzzz 
+# 21250000 ps 0 1 1 zzzz zzzz 
+# 21375000 ps 1 1 1 zzzz zzzz 
+# 21500000 ps 0 1 1 zzzz zzzz 
+# 21625000 ps 1 1 1 zzzz zzzz 
+# 21750000 ps 0 1 1 zzzz zzzz 
+# 21875000 ps 1 1 1 zzzz zzzz 
+# 22000000 ps 0 1 1 zzzz zzzz 
+# 22125000 ps 1 1 1 zzzz zzzz 
+# 22250000 ps 0 1 1 zzzz zzzz 
+# 22375000 ps 1 1 1 zzzz zzzz 
+# 22500000 ps 0 1 1 zzzz zzzz 
+# 22625000 ps 1 1 1 zzzz zzzz 
+# 22750000 ps 0 1 1 zzzz zzzz 
+# 22875000 ps 1 1 1 zzzz zzzz 
+# 23000000 ps 0 1 1 zzzz zzzz 
+# 23125000 ps 1 1 1 zzzz zzzz 
+# 23250000 ps 0 1 1 zzzz zzzz 
+# 23375000 ps 1 1 1 zzzz zzzz 
+# 23500000 ps 0 1 1 zzzz zzzz 
+# 23625000 ps 1 1 1 zzzz zzzz 
+# 23750000 ps 0 1 1 zzzz zzzz 
+# 23875000 ps 1 1 1 zzzz zzzz 
+# 24000000 ps 0 1 1 zzzz zzzz 
+# 24125000 ps 1 1 1 zzzz zzzz 
+# 24250000 ps 0 1 1 zzzz zzzz 
+# 24375000 ps 1 1 1 zzzz zzzz 
+# 24500000 ps 0 1 1 zzzz zzzz 
+# 24625000 ps 1 1 1 zzzz zzzz 
+# 24750000 ps 0 1 1 zzzz zzzz 
+# 24875000 ps 1 1 1 zzzz zzzz 
+# 25000000 ps 0 1 1 zzzz zzzz 
+# 25125000 ps 1 1 1 zzzz zzzz 
+# 25250000 ps 0 1 1 zzzz zzzz 
+# 25375000 ps 1 1 1 zzzz zzzz 
+# 25500000 ps 0 1 1 zzzz zzzz 
+# 25625000 ps 1 1 1 zzzz zzzz 
+# 25750000 ps 0 1 1 zzzz zzzz 
+# 25875000 ps 1 1 1 zzzz zzzz 
+# 26000000 ps 0 1 1 zzzz zzzz 
+# 26125000 ps 1 1 1 zzzz zzzz 
+# 26250000 ps 0 1 1 zzzz zzzz 
+# 26375000 ps 1 1 1 zzzz zzzz 
+# 26500000 ps 0 1 1 zzzz zzzz 
+# 26625000 ps 1 1 1 zzzz zzzz 
+# 26750000 ps 0 1 1 zzzz zzzz 
+# 26875000 ps 1 1 1 zzzz zzzz 
+# 27000000 ps 0 1 1 zzzz zzzz 
+# 27125000 ps 1 1 1 zzzz zzzz 
+# 27250000 ps 0 1 1 zzzz zzzz 
+# 27375000 ps 1 1 1 zzzz zzzz 
+# 27500000 ps 0 1 1 zzzz zzzz 
+# 27625000 ps 1 1 1 zzzz zzzz 
+# 27750000 ps 0 1 1 zzzz zzzz 
+# 27875000 ps 1 1 1 zzzz zzzz 
+# 28000000 ps 0 1 1 zzzz zzzz 
+# 28125000 ps 1 1 1 zzzz zzzz 
+# 28250000 ps 0 1 1 zzzz zzzz 
+# 28375000 ps 1 1 1 zzzz zzzz 
+# 28500000 ps 0 1 1 zzzz zzzz 
+# 28625000 ps 1 1 1 zzzz zzzz 
+# 28750000 ps 0 1 1 zzzz zzzz 
+# 28875000 ps 1 1 1 zzzz zzzz 
+# 29000000 ps 0 1 1 zzzz zzzz 
+# 29125000 ps 1 1 1 zzzz zzzz 
+# 29250000 ps 0 1 1 zzzz zzzz 
+# 29375000 ps 1 1 1 zzzz zzzz 
+# 29500000 ps 0 1 1 zzzz zzzz 
+# 29625000 ps 1 1 1 zzzz zzzz 
+# 29750000 ps 0 1 1 zzzz zzzz 
+# 29875000 ps 1 1 1 zzzz zzzz 
+# 30000000 ps 0 1 1 zzzz zzzz 
+# 30125000 ps 1 1 1 zzzz zzzz 
+# 30250000 ps 0 1 1 zzzz zzzz 
+# 30375000 ps 1 1 1 zzzz zzzz 
+# 30500000 ps 0 1 1 zzzz zzzz 
+# 30625000 ps 1 1 1 zzzz zzzz 
+# 30750000 ps 0 1 1 zzzz zzzz 
+# 30875000 ps 1 1 1 zzzz zzzz 
+# Compile of DEDFF.v was successful.
+# Compile of IQSerializer.v was successful.
+# Compile of rcosfilter_m_core_bb.v was successful.
+# Compile of rcosfilter_m.v was successful.
+# Compile of rcos.v was successful.
+# Compile of iq_div.v was successful.
+# Compile of QPSK_modulator.v was successful.
+# Compile of ble_packet.v was successful.
+# Compile of packetGenerator.v was successful.
+# Compile of packetCounter.v was successful.
+# Compile of clockDivider.v was successful.
+# Compile of pll_24_64m.v was successful.
+# Compile of pll_24m.v was successful.
+# Compile of top_module.v was successful.
+# Compile of local_oscillator.v was successful.
+# Compile of pll_try.v was successful.
+# Compile of pll_64_new.v was successful.
+# Compile of pll_64.v was successful.
+# Compile of pll_64m.v was successful.
+# Compile of divided_pll.v was successful.
+# Compile of divided_pll_2.v was successful.
+# Compile of sincos_m.v was successful.
+# Compile of SinCos_Module.v was successful.
+# Compile of creating_nco.v was successful.
+# Compile of multiplier_12_2_m.v was successful.
+# Compile of mult_m.v was successful.
+# Compile of multiplier.v was successful.
+# Compile of cosModule.v was successful.
+# Compile of sinModule.v was successful.
+# Compile of FSKModulator.v was successful.
+# Compile of fsktb.v was successful.
+# Compile of dds_lattice_sincos.v was successful.
+# Compile of dds_tb.v was successful.
+# Compile of qpsk_tb.v was successful.
+# Compile of bleDefines.v was successful.
+# Compile of radioDefines.v was successful.
+# 36 compiles, 0 failed with no errors.
+run
+# 31000000 ps 0 1 1 zzzz zzzz 
+# 31125000 ps 1 1 1 zzzz zzzz 
+# 31250000 ps 0 1 1 zzzz zzzz 
+# 31375000 ps 1 1 1 zzzz zzzz 
+# 31500000 ps 0 1 1 zzzz zzzz 
+# 31625000 ps 1 1 1 zzzz zzzz 
+# 31750000 ps 0 1 1 zzzz zzzz 
+# 31875000 ps 1 1 1 zzzz zzzz 
+# 32000000 ps 0 1 1 zzzz zzzz 
+# 32125000 ps 1 1 1 zzzz zzzz 
+# 32250000 ps 0 1 1 zzzz zzzz 
+# 32375000 ps 1 1 1 zzzz zzzz 
+# 32500000 ps 0 1 1 zzzz zzzz 
+# 32625000 ps 1 1 1 zzzz zzzz 
+# 32750000 ps 0 1 1 zzzz zzzz 
+# 32875000 ps 1 1 1 zzzz zzzz 
+# 33000000 ps 0 1 1 zzzz zzzz 
+# 33125000 ps 1 1 1 zzzz zzzz 
+# 33250000 ps 0 1 1 zzzz zzzz 
+# 33375000 ps 1 1 1 zzzz zzzz 
+# 33500000 ps 0 1 1 zzzz zzzz 
+# 33625000 ps 1 1 1 zzzz zzzz 
+# 33750000 ps 0 1 1 zzzz zzzz 
+# 33875000 ps 1 1 1 zzzz zzzz 
+# 34000000 ps 0 1 1 zzzz zzzz 
+# 34125000 ps 1 1 1 zzzz zzzz 
+# 34250000 ps 0 1 1 zzzz zzzz 
+# 34375000 ps 1 1 1 zzzz zzzz 
+# 34500000 ps 0 1 1 zzzz zzzz 
+# 34625000 ps 1 1 1 zzzz zzzz 
+# 34750000 ps 0 1 1 zzzz zzzz 
+# 34875000 ps 1 1 1 zzzz zzzz 
+# 35000000 ps 0 1 1 zzzz zzzz 
+# 35125000 ps 1 1 1 zzzz zzzz 
+# 35250000 ps 0 1 1 zzzz zzzz 
+# 35375000 ps 1 1 1 zzzz zzzz 
+# 35500000 ps 0 1 1 zzzz zzzz 
+# 35625000 ps 1 1 1 zzzz zzzz 
+# 35750000 ps 0 1 1 zzzz zzzz 
+# 35875000 ps 1 1 1 zzzz zzzz 
+# 36000000 ps 0 1 1 zzzz zzzz 
+# 36125000 ps 1 1 1 zzzz zzzz 
+# 36250000 ps 0 1 1 zzzz zzzz 
+# 36375000 ps 1 1 1 zzzz zzzz 
+# 36500000 ps 0 1 1 zzzz zzzz 
+# 36625000 ps 1 1 1 zzzz zzzz 
+# 36750000 ps 0 1 1 zzzz zzzz 
+# 36875000 ps 1 1 1 zzzz zzzz 
+# 37000000 ps 0 1 1 zzzz zzzz 
+# 37125000 ps 1 1 1 zzzz zzzz 
+# 37250000 ps 0 1 1 zzzz zzzz 
+# 37375000 ps 1 1 1 zzzz zzzz 
+# 37500000 ps 0 1 1 zzzz zzzz 
+# 37625000 ps 1 1 1 zzzz zzzz 
+# 37750000 ps 0 1 1 zzzz zzzz 
+# 37875000 ps 1 1 1 zzzz zzzz 
+# 38000000 ps 0 1 1 zzzz zzzz 
+# 38125000 ps 1 1 1 zzzz zzzz 
+# 38250000 ps 0 1 1 zzzz zzzz 
+# 38375000 ps 1 1 1 zzzz zzzz 
+# 38500000 ps 0 1 1 zzzz zzzz 
+# 38625000 ps 1 1 1 zzzz zzzz 
+# 38750000 ps 0 1 1 zzzz zzzz 
+# 38875000 ps 1 1 1 zzzz zzzz 
+# 39000000 ps 0 1 1 zzzz zzzz 
+# 39125000 ps 1 1 1 zzzz zzzz 
+# 39250000 ps 0 1 1 zzzz zzzz 
+# 39375000 ps 1 1 1 zzzz zzzz 
+# 39500000 ps 0 1 1 zzzz zzzz 
+# 39625000 ps 1 1 1 zzzz zzzz 
+# 39750000 ps 0 1 1 zzzz zzzz 
+# 39875000 ps 1 1 1 zzzz zzzz 
+# 40000000 ps 0 1 1 zzzz zzzz 
+# 40125000 ps 1 1 1 zzzz zzzz 
+# 40250000 ps 0 1 1 zzzz zzzz 
+# 40375000 ps 1 1 1 zzzz zzzz 
+# 40500000 ps 0 1 1 zzzz zzzz 
+# 40625000 ps 1 1 1 zzzz zzzz 
+# 40750000 ps 0 1 1 zzzz zzzz 
+# 40875000 ps 1 1 1 zzzz zzzz 
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vopt-143) Recognized 1 FSM in module "packetGenerator(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.qpsk_tb(fast)
+# Loading ovi_ecp5u.GSR(fast)
+# Loading ovi_ecp5u.PUR(fast)
+# Loading work.packetCounter(fast)
+# Loading work.packetGenerator(fast)
+# Loading work.ble_packet(fast)
+# Loading work.QPSK_modulator(fast)
+# Loading work.iq_div(fast)
+# Loading work.rcos(fast)
+# Loading work.rcosfilter_m(fast)
+# Loading work.rcosfilter_m_core(fast)
+# Loading work.FSKModulator(fast)
+# Loading work.sinModule(fast)
+# Loading work.cosModule(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (12) does not match connection size (8) for port 'carry_sin_s'. The port definition is at: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/QPSK_modulator.v(16).
+#    Time: 0 ps  Iteration: 0  Instance: /qpsk_tb/UUT File: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v Line: 95
+# ** Warning: (vsim-3015) [PCDPC] - Port size (12) does not match connection size (8) for port 'carry_cos_s'. The port definition is at: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/QPSK_modulator.v(17).
+#    Time: 0 ps  Iteration: 0  Instance: /qpsk_tb/UUT File: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v Line: 95
+run
+# 0 ps 0 0 1 zzzz zzzz 
+# 125000 ps 1 0 1 zzzz zzzz 
+# 250000 ps 0 0 1 zzzz zzzz 
+# 375000 ps 1 0 1 zzzz zzzz 
+# 500000 ps 0 0 1 zzzz zzzz 
+# 625000 ps 1 0 1 zzzz zzzz 
+# 750000 ps 0 0 1 zzzz zzzz 
+# 875000 ps 1 0 1 zzzz zzzz 
+# 1000000 ps 0 0 1 zzzz zzzz 
+# 1125000 ps 1 0 1 zzzz zzzz 
+# 1250000 ps 0 0 1 zzzz zzzz 
+# 1375000 ps 1 0 1 zzzz zzzz 
+# 1500000 ps 0 0 1 zzzz zzzz 
+# 1625000 ps 1 0 1 zzzz zzzz 
+# 1750000 ps 0 0 1 zzzz zzzz 
+# 1875000 ps 1 0 1 zzzz zzzz 
+# 2000000 ps 0 0 1 zzzz zzzz 
+# 2125000 ps 1 0 1 zzzz zzzz 
+# 2250000 ps 0 0 1 zzzz zzzz 
+# 2375000 ps 1 0 1 zzzz zzzz 
+# 2500000 ps 0 1 1 zzzz zzzz 
+# 2625000 ps 1 1 1 zzzz zzzz 
+# 2750000 ps 0 1 1 zzzz zzzz 
+# 2875000 ps 1 1 1 zzzz zzzz 
+# 3000000 ps 0 1 1 zzzz zzzz 
+# 3125000 ps 1 1 1 zzzz zzzz 
+# 3250000 ps 0 1 1 zzzz zzzz 
+# 3375000 ps 1 1 1 zzzz zzzz 
+# 3500000 ps 0 1 1 zzzz zzzz 
+# 3625000 ps 1 1 1 zzzz zzzz 
+# 3750000 ps 0 1 1 zzzz zzzz 
+# 3875000 ps 1 1 1 zzzz zzzz 
+# 4000000 ps 0 1 1 zzzz zzzz 
+# 4125000 ps 1 1 1 zzzz zzzz 
+# 4250000 ps 0 1 1 zzzz zzzz 
+# 4375000 ps 1 1 1 zzzz zzzz 
+# 4500000 ps 0 1 1 zzzz zzzz 
+# 4625000 ps 1 1 1 zzzz zzzz 
+# 4750000 ps 0 1 1 zzzz zzzz 
+# 4875000 ps 1 1 1 zzzz zzzz 
+# 5000000 ps 0 1 1 zzzz zzzz 
+# 5125000 ps 1 1 1 zzzz zzzz 
+# 5250000 ps 0 1 1 zzzz zzzz 
+# 5375000 ps 1 1 1 zzzz zzzz 
+# 5500000 ps 0 1 1 zzzz zzzz 
+# 5625000 ps 1 1 1 zzzz zzzz 
+# 5750000 ps 0 1 1 zzzz zzzz 
+# 5875000 ps 1 1 1 zzzz zzzz 
+# 6000000 ps 0 1 1 zzzz zzzz 
+# 6125000 ps 1 1 1 zzzz zzzz 
+# 6250000 ps 0 1 1 zzzz zzzz 
+# 6375000 ps 1 1 1 zzzz zzzz 
+# 6500000 ps 0 1 1 zzzz zzzz 
+# 6625000 ps 1 1 1 zzzz zzzz 
+# 6750000 ps 0 1 1 zzzz zzzz 
+# 6875000 ps 1 1 1 zzzz zzzz 
+# 7000000 ps 0 1 1 zzzz zzzz 
+# 7125000 ps 1 1 1 zzzz zzzz 
+# 7250000 ps 0 1 1 zzzz zzzz 
+# 7375000 ps 1 1 1 zzzz zzzz 
+# 7500000 ps 0 1 1 zzzz zzzz 
+# 7625000 ps 1 1 1 zzzz zzzz 
+# 7750000 ps 0 1 1 zzzz zzzz 
+# 7875000 ps 1 1 1 zzzz zzzz 
+# 8000000 ps 0 1 1 zzzz zzzz 
+# 8125000 ps 1 1 1 zzzz zzzz 
+# 8250000 ps 0 1 1 zzzz zzzz 
+# 8375000 ps 1 1 1 zzzz zzzz 
+# 8500000 ps 0 1 1 zzzz zzzz 
+# 8625000 ps 1 1 1 zzzz zzzz 
+# 8750000 ps 0 1 1 zzzz zzzz 
+# 8875000 ps 1 1 1 zzzz zzzz 
+# 9000000 ps 0 1 1 zzzz zzzz 
+# 9125000 ps 1 1 1 zzzz zzzz 
+# 9250000 ps 0 1 1 zzzz zzzz 
+# 9375000 ps 1 1 1 zzzz zzzz 
+# 9500000 ps 0 1 1 zzzz zzzz 
+# 9625000 ps 1 1 1 zzzz zzzz 
+# 9750000 ps 0 1 1 zzzz zzzz 
+# 9875000 ps 1 1 1 zzzz zzzz 
+run
+# 10000000 ps 0 1 1 zzzz zzzz 
+# 10125000 ps 1 1 1 zzzz zzzz 
+# 10250000 ps 0 1 1 zzzz zzzz 
+# 10375000 ps 1 1 1 zzzz zzzz 
+# 10500000 ps 0 1 1 zzzz zzzz 
+# 10625000 ps 1 1 1 zzzz zzzz 
+# 10750000 ps 0 1 1 zzzz zzzz 
+# 10875000 ps 1 1 1 zzzz zzzz 
+# 11000000 ps 0 1 1 zzzz zzzz 
+# 11125000 ps 1 1 1 zzzz zzzz 
+# 11250000 ps 0 1 1 zzzz zzzz 
+# 11375000 ps 1 1 1 zzzz zzzz 
+# 11500000 ps 0 1 1 zzzz zzzz 
+# 11625000 ps 1 1 1 zzzz zzzz 
+# 11750000 ps 0 1 1 zzzz zzzz 
+# 11875000 ps 1 1 1 zzzz zzzz 
+# 12000000 ps 0 1 1 zzzz zzzz 
+# 12125000 ps 1 1 1 zzzz zzzz 
+# 12250000 ps 0 1 1 zzzz zzzz 
+# 12375000 ps 1 1 1 zzzz zzzz 
+# 12500000 ps 0 1 1 zzzz zzzz 
+# 12625000 ps 1 1 1 zzzz zzzz 
+# 12750000 ps 0 1 1 zzzz zzzz 
+# 12875000 ps 1 1 1 zzzz zzzz 
+# 13000000 ps 0 1 1 zzzz zzzz 
+# 13125000 ps 1 1 1 zzzz zzzz 
+# 13250000 ps 0 1 1 zzzz zzzz 
+# 13375000 ps 1 1 1 zzzz zzzz 
+# 13500000 ps 0 1 1 zzzz zzzz 
+# 13625000 ps 1 1 1 zzzz zzzz 
+# 13750000 ps 0 1 1 zzzz zzzz 
+# 13875000 ps 1 1 1 zzzz zzzz 
+# 14000000 ps 0 1 1 zzzz zzzz 
+# 14125000 ps 1 1 1 zzzz zzzz 
+# 14250000 ps 0 1 1 zzzz zzzz 
+# 14375000 ps 1 1 1 zzzz zzzz 
+# 14500000 ps 0 1 1 zzzz zzzz 
+# 14625000 ps 1 1 1 zzzz zzzz 
+# 14750000 ps 0 1 1 zzzz zzzz 
+# 14875000 ps 1 1 1 zzzz zzzz 
+# 15000000 ps 0 1 1 zzzz zzzz 
+# 15125000 ps 1 1 1 zzzz zzzz 
+# 15250000 ps 0 1 1 zzzz zzzz 
+# 15375000 ps 1 1 1 zzzz zzzz 
+# 15500000 ps 0 1 1 zzzz zzzz 
+# 15625000 ps 1 1 1 zzzz zzzz 
+# 15750000 ps 0 1 1 zzzz zzzz 
+# 15875000 ps 1 1 1 zzzz zzzz 
+# 16000000 ps 0 1 1 zzzz zzzz 
+# 16125000 ps 1 1 1 zzzz zzzz 
+# 16250000 ps 0 1 1 zzzz zzzz 
+# 16375000 ps 1 1 1 zzzz zzzz 
+# 16500000 ps 0 1 1 zzzz zzzz 
+# 16625000 ps 1 1 1 zzzz zzzz 
+# 16750000 ps 0 1 1 zzzz zzzz 
+# 16875000 ps 1 1 1 zzzz zzzz 
+# 17000000 ps 0 1 1 zzzz zzzz 
+# 17125000 ps 1 1 1 zzzz zzzz 
+# 17250000 ps 0 1 1 zzzz zzzz 
+# 17375000 ps 1 1 1 zzzz zzzz 
+# 17500000 ps 0 1 1 zzzz zzzz 
+# 17625000 ps 1 1 1 zzzz zzzz 
+# 17750000 ps 0 1 1 zzzz zzzz 
+# 17875000 ps 1 1 1 zzzz zzzz 
+# 18000000 ps 0 1 1 zzzz zzzz 
+# 18125000 ps 1 1 1 zzzz zzzz 
+# 18250000 ps 0 1 1 zzzz zzzz 
+# 18375000 ps 1 1 1 zzzz zzzz 
+# 18500000 ps 0 1 1 zzzz zzzz 
+# 18625000 ps 1 1 1 zzzz zzzz 
+# 18750000 ps 0 1 1 zzzz zzzz 
+# 18875000 ps 1 1 1 zzzz zzzz 
+# 19000000 ps 0 1 1 zzzz zzzz 
+# 19125000 ps 1 1 1 zzzz zzzz 
+# 19250000 ps 0 1 1 zzzz zzzz 
+# 19375000 ps 1 1 1 zzzz zzzz 
+# 19500000 ps 0 1 1 zzzz zzzz 
+# 19625000 ps 1 1 1 zzzz zzzz 
+# 19750000 ps 0 1 1 zzzz zzzz 
+# 19875000 ps 1 1 1 zzzz zzzz 
+run
+# 20000000 ps 0 1 1 zzzz zzzz 
+# 20125000 ps 1 1 1 zzzz zzzz 
+# 20250000 ps 0 1 1 zzzz zzzz 
+# 20375000 ps 1 1 1 zzzz zzzz 
+# 20500000 ps 0 1 1 zzzz zzzz 
+# 20625000 ps 1 1 1 zzzz zzzz 
+# 20750000 ps 0 1 1 zzzz zzzz 
+# 20875000 ps 1 1 1 zzzz zzzz 
+# 21000000 ps 0 1 1 zzzz zzzz 
+# 21125000 ps 1 1 1 zzzz zzzz 
+# 21250000 ps 0 1 1 zzzz zzzz 
+# 21375000 ps 1 1 1 zzzz zzzz 
+# 21500000 ps 0 1 1 zzzz zzzz 
+# 21625000 ps 1 1 1 zzzz zzzz 
+# 21750000 ps 0 1 1 zzzz zzzz 
+# 21875000 ps 1 1 1 zzzz zzzz 
+# 22000000 ps 0 1 1 zzzz zzzz 
+# 22125000 ps 1 1 1 zzzz zzzz 
+# 22250000 ps 0 1 1 zzzz zzzz 
+# 22375000 ps 1 1 1 zzzz zzzz 
+# 22500000 ps 0 1 1 zzzz zzzz 
+# 22625000 ps 1 1 1 zzzz zzzz 
+# 22750000 ps 0 1 1 zzzz zzzz 
+# 22875000 ps 1 1 1 zzzz zzzz 
+# 23000000 ps 0 1 1 zzzz zzzz 
+# 23125000 ps 1 1 1 zzzz zzzz 
+# 23250000 ps 0 1 1 zzzz zzzz 
+# 23375000 ps 1 1 1 zzzz zzzz 
+# 23500000 ps 0 1 1 zzzz zzzz 
+# 23625000 ps 1 1 1 zzzz zzzz 
+# 23750000 ps 0 1 1 zzzz zzzz 
+# 23875000 ps 1 1 1 zzzz zzzz 
+# 24000000 ps 0 1 1 zzzz zzzz 
+# 24125000 ps 1 1 1 zzzz zzzz 
+# 24250000 ps 0 1 1 zzzz zzzz 
+# 24375000 ps 1 1 1 zzzz zzzz 
+# 24500000 ps 0 1 1 zzzz zzzz 
+# 24625000 ps 1 1 1 zzzz zzzz 
+# 24750000 ps 0 1 1 zzzz zzzz 
+# 24875000 ps 1 1 1 zzzz zzzz 
+# 25000000 ps 0 1 1 zzzz zzzz 
+# 25125000 ps 1 1 1 zzzz zzzz 
+# 25250000 ps 0 1 1 zzzz zzzz 
+# 25375000 ps 1 1 1 zzzz zzzz 
+# 25500000 ps 0 1 1 zzzz zzzz 
+# 25625000 ps 1 1 1 zzzz zzzz 
+# 25750000 ps 0 1 1 zzzz zzzz 
+# 25875000 ps 1 1 1 zzzz zzzz 
+# 26000000 ps 0 1 1 zzzz zzzz 
+# 26125000 ps 1 1 1 zzzz zzzz 
+# 26250000 ps 0 1 1 zzzz zzzz 
+# 26375000 ps 1 1 1 zzzz zzzz 
+# 26500000 ps 0 1 1 zzzz zzzz 
+# 26625000 ps 1 1 1 zzzz zzzz 
+# 26750000 ps 0 1 1 zzzz zzzz 
+# 26875000 ps 1 1 1 zzzz zzzz 
+# 27000000 ps 0 1 1 zzzz zzzz 
+# 27125000 ps 1 1 1 zzzz zzzz 
+# 27250000 ps 0 1 1 zzzz zzzz 
+# 27375000 ps 1 1 1 zzzz zzzz 
+# 27500000 ps 0 1 1 zzzz zzzz 
+# 27625000 ps 1 1 1 zzzz zzzz 
+# 27750000 ps 0 1 1 zzzz zzzz 
+# 27875000 ps 1 1 1 zzzz zzzz 
+# 28000000 ps 0 1 1 zzzz zzzz 
+# 28125000 ps 1 1 1 zzzz zzzz 
+# 28250000 ps 0 1 1 zzzz zzzz 
+# 28375000 ps 1 1 1 zzzz zzzz 
+# 28500000 ps 0 1 1 zzzz zzzz 
+# 28625000 ps 1 1 1 zzzz zzzz 
+# 28750000 ps 0 1 1 zzzz zzzz 
+# 28875000 ps 1 1 1 zzzz zzzz 
+# 29000000 ps 0 1 1 zzzz zzzz 
+# 29125000 ps 1 1 1 zzzz zzzz 
+# 29250000 ps 0 1 1 zzzz zzzz 
+# 29375000 ps 1 1 1 zzzz zzzz 
+# 29500000 ps 0 1 1 zzzz zzzz 
+# 29625000 ps 1 1 1 zzzz zzzz 
+# 29750000 ps 0 1 1 zzzz zzzz 
+# 29875000 ps 1 1 1 zzzz zzzz 
+run
+# 30000000 ps 0 1 1 zzzz zzzz 
+# 30125000 ps 1 1 1 zzzz zzzz 
+# 30250000 ps 0 1 1 zzzz zzzz 
+# 30375000 ps 1 1 1 zzzz zzzz 
+# 30500000 ps 0 1 1 zzzz zzzz 
+# 30625000 ps 1 1 1 zzzz zzzz 
+# 30750000 ps 0 1 1 zzzz zzzz 
+# 30875000 ps 1 1 1 zzzz zzzz 
+# 31000000 ps 0 1 1 zzzz zzzz 
+# 31125000 ps 1 1 1 zzzz zzzz 
+# 31250000 ps 0 1 1 zzzz zzzz 
+# 31375000 ps 1 1 1 zzzz zzzz 
+# 31500000 ps 0 1 1 zzzz zzzz 
+# 31625000 ps 1 1 1 zzzz zzzz 
+# 31750000 ps 0 1 1 zzzz zzzz 
+# 31875000 ps 1 1 1 zzzz zzzz 
+# 32000000 ps 0 1 1 zzzz zzzz 
+# 32125000 ps 1 1 1 zzzz zzzz 
+# 32250000 ps 0 1 1 zzzz zzzz 
+# 32375000 ps 1 1 1 zzzz zzzz 
+# 32500000 ps 0 1 1 zzzz zzzz 
+# 32625000 ps 1 1 1 zzzz zzzz 
+# 32750000 ps 0 1 1 zzzz zzzz 
+# 32875000 ps 1 1 1 zzzz zzzz 
+# 33000000 ps 0 1 1 zzzz zzzz 
+# 33125000 ps 1 1 1 zzzz zzzz 
+# 33250000 ps 0 1 1 zzzz zzzz 
+# 33375000 ps 1 1 1 zzzz zzzz 
+# 33500000 ps 0 1 1 zzzz zzzz 
+# 33625000 ps 1 1 1 zzzz zzzz 
+# 33750000 ps 0 1 1 zzzz zzzz 
+# 33875000 ps 1 1 1 zzzz zzzz 
+# 34000000 ps 0 1 1 zzzz zzzz 
+# 34125000 ps 1 1 1 zzzz zzzz 
+# 34250000 ps 0 1 1 zzzz zzzz 
+# 34375000 ps 1 1 1 zzzz zzzz 
+# 34500000 ps 0 1 1 zzzz zzzz 
+# 34625000 ps 1 1 1 zzzz zzzz 
+# 34750000 ps 0 1 1 zzzz zzzz 
+# 34875000 ps 1 1 1 zzzz zzzz 
+# 35000000 ps 0 1 1 zzzz zzzz 
+# 35125000 ps 1 1 1 zzzz zzzz 
+# 35250000 ps 0 1 1 zzzz zzzz 
+# 35375000 ps 1 1 1 zzzz zzzz 
+# 35500000 ps 0 1 1 zzzz zzzz 
+# 35625000 ps 1 1 1 zzzz zzzz 
+# 35750000 ps 0 1 1 zzzz zzzz 
+# 35875000 ps 1 1 1 zzzz zzzz 
+# 36000000 ps 0 1 1 zzzz zzzz 
+# 36125000 ps 1 1 1 zzzz zzzz 
+# 36250000 ps 0 1 1 zzzz zzzz 
+# 36375000 ps 1 1 1 zzzz zzzz 
+# 36500000 ps 0 1 1 zzzz zzzz 
+# 36625000 ps 1 1 1 zzzz zzzz 
+# 36750000 ps 0 1 1 zzzz zzzz 
+# 36875000 ps 1 1 1 zzzz zzzz 
+# 37000000 ps 0 1 1 zzzz zzzz 
+# 37125000 ps 1 1 1 zzzz zzzz 
+# 37250000 ps 0 1 1 zzzz zzzz 
+# 37375000 ps 1 1 1 zzzz zzzz 
+# 37500000 ps 0 1 1 zzzz zzzz 
+# 37625000 ps 1 1 1 zzzz zzzz 
+# 37750000 ps 0 1 1 zzzz zzzz 
+# 37875000 ps 1 1 1 zzzz zzzz 
+# 38000000 ps 0 1 1 zzzz zzzz 
+# 38125000 ps 1 1 1 zzzz zzzz 
+# 38250000 ps 0 1 1 zzzz zzzz 
+# 38375000 ps 1 1 1 zzzz zzzz 
+# 38500000 ps 0 1 1 zzzz zzzz 
+# 38625000 ps 1 1 1 zzzz zzzz 
+# 38750000 ps 0 1 1 zzzz zzzz 
+# 38875000 ps 1 1 1 zzzz zzzz 
+# 39000000 ps 0 1 1 zzzz zzzz 
+# 39125000 ps 1 1 1 zzzz zzzz 
+# 39250000 ps 0 1 1 zzzz zzzz 
+# 39375000 ps 1 1 1 zzzz zzzz 
+# 39500000 ps 0 1 1 zzzz zzzz 
+# 39625000 ps 1 1 1 zzzz zzzz 
+# 39750000 ps 0 1 1 zzzz zzzz 
+# 39875000 ps 1 1 1 zzzz zzzz 
+run
+# 40000000 ps 0 1 1 zzzz zzzz 
+# 40125000 ps 1 1 1 zzzz zzzz 
+# 40250000 ps 0 1 1 zzzz zzzz 
+# 40375000 ps 1 1 1 zzzz zzzz 
+# 40500000 ps 0 1 1 zzzz zzzz 
+# 40625000 ps 1 1 1 zzzz zzzz 
+# 40750000 ps 0 1 1 zzzz zzzz 
+# 40875000 ps 1 1 1 zzzz zzzz 
+# 41000000 ps 0 1 1 zzzz zzzz 
+# 41125000 ps 1 1 1 zzzz zzzz 
+# 41250000 ps 0 1 1 zzzz zzzz 
+# 41375000 ps 1 1 1 zzzz zzzz 
+# 41500000 ps 0 1 1 zzzz zzzz 
+# 41625000 ps 1 1 1 zzzz zzzz 
+# 41750000 ps 0 1 1 zzzz zzzz 
+# 41875000 ps 1 1 1 zzzz zzzz 
+# 42000000 ps 0 1 1 zzzz zzzz 
+# 42125000 ps 1 1 1 zzzz zzzz 
+# 42250000 ps 0 1 1 zzzz zzzz 
+# 42375000 ps 1 1 1 zzzz zzzz 
+# 42500000 ps 0 1 1 zzzz zzzz 
+# 42625000 ps 1 1 1 zzzz zzzz 
+# 42750000 ps 0 1 1 zzzz zzzz 
+# 42875000 ps 1 1 1 zzzz zzzz 
+# 43000000 ps 0 1 1 zzzz zzzz 
+# 43125000 ps 1 1 1 zzzz zzzz 
+# 43250000 ps 0 1 1 zzzz zzzz 
+# 43375000 ps 1 1 1 zzzz zzzz 
+# 43500000 ps 0 1 1 zzzz zzzz 
+# 43625000 ps 1 1 1 zzzz zzzz 
+# 43750000 ps 0 1 1 zzzz zzzz 
+# 43875000 ps 1 1 1 zzzz zzzz 
+# 44000000 ps 0 1 1 zzzz zzzz 
+# 44125000 ps 1 1 1 zzzz zzzz 
+# 44250000 ps 0 1 1 zzzz zzzz 
+# 44375000 ps 1 1 1 zzzz zzzz 
+# 44500000 ps 0 1 1 zzzz zzzz 
+# 44625000 ps 1 1 1 zzzz zzzz 
+# 44750000 ps 0 1 1 zzzz zzzz 
+# 44875000 ps 1 1 1 zzzz zzzz 
+# 45000000 ps 0 1 1 zzzz zzzz 
+# 45125000 ps 1 1 1 zzzz zzzz 
+# 45250000 ps 0 1 1 zzzz zzzz 
+# 45375000 ps 1 1 1 zzzz zzzz 
+# 45500000 ps 0 1 1 zzzz zzzz 
+# 45625000 ps 1 1 1 zzzz zzzz 
+# 45750000 ps 0 1 1 zzzz zzzz 
+# 45875000 ps 1 1 1 zzzz zzzz 
+# 46000000 ps 0 1 1 zzzz zzzz 
+# 46125000 ps 1 1 1 zzzz zzzz 
+# 46250000 ps 0 1 1 zzzz zzzz 
+# 46375000 ps 1 1 1 zzzz zzzz 
+# 46500000 ps 0 1 1 zzzz zzzz 
+# 46625000 ps 1 1 1 zzzz zzzz 
+# 46750000 ps 0 1 1 zzzz zzzz 
+# 46875000 ps 1 1 1 zzzz zzzz 
+# 47000000 ps 0 1 1 zzzz zzzz 
+# 47125000 ps 1 1 1 zzzz zzzz 
+# 47250000 ps 0 1 1 zzzz zzzz 
+# 47375000 ps 1 1 1 zzzz zzzz 
+# 47500000 ps 0 1 1 zzzz zzzz 
+# 47625000 ps 1 1 1 zzzz zzzz 
+# 47750000 ps 0 1 1 zzzz zzzz 
+# 47875000 ps 1 1 1 zzzz zzzz 
+# 48000000 ps 0 1 1 zzzz zzzz 
+# 48125000 ps 1 1 1 zzzz zzzz 
+# 48250000 ps 0 1 1 zzzz zzzz 
+# 48375000 ps 1 1 1 zzzz zzzz 
+# 48500000 ps 0 1 1 zzzz zzzz 
+# 48625000 ps 1 1 1 zzzz zzzz 
+# 48750000 ps 0 1 1 zzzz zzzz 
+# 48875000 ps 1 1 1 zzzz zzzz 
+# 49000000 ps 0 1 1 zzzz zzzz 
+# 49125000 ps 1 1 1 zzzz zzzz 
+# 49250000 ps 0 1 1 zzzz zzzz 
+# 49375000 ps 1 1 1 zzzz zzzz 
+# 49500000 ps 0 1 1 zzzz zzzz 
+# 49625000 ps 1 1 1 zzzz zzzz 
+# 49750000 ps 0 1 1 zzzz zzzz 
+# 49875000 ps 1 1 1 zzzz zzzz 
+run
+# 50000000 ps 0 1 1 zzzz zzzz 
+# 50125000 ps 1 1 1 zzzz zzzz 
+# 50250000 ps 0 1 1 zzzz zzzz 
+# 50375000 ps 1 1 1 zzzz zzzz 
+# 50500000 ps 0 1 1 zzzz zzzz 
+# 50625000 ps 1 1 1 zzzz zzzz 
+# 50750000 ps 0 1 1 zzzz zzzz 
+# 50875000 ps 1 1 1 zzzz zzzz 
+# 51000000 ps 0 1 1 zzzz zzzz 
+# 51125000 ps 1 1 1 zzzz zzzz 
+# 51250000 ps 0 1 1 zzzz zzzz 
+# 51375000 ps 1 1 1 zzzz zzzz 
+# 51500000 ps 0 1 1 zzzz zzzz 
+# 51625000 ps 1 1 1 zzzz zzzz 
+# 51750000 ps 0 1 1 zzzz zzzz 
+# 51875000 ps 1 1 1 zzzz zzzz 
+# 52000000 ps 0 1 1 zzzz zzzz 
+# 52125000 ps 1 1 1 zzzz zzzz 
+# 52250000 ps 0 1 1 zzzz zzzz 
+# 52375000 ps 1 1 1 zzzz zzzz 
+# 52500000 ps 0 1 1 zzzz zzzz 
+# 52625000 ps 1 1 1 zzzz zzzz 
+# 52750000 ps 0 1 1 zzzz zzzz 
+# 52875000 ps 1 1 1 zzzz zzzz 
+# 53000000 ps 0 1 1 zzzz zzzz 
+# 53125000 ps 1 1 1 zzzz zzzz 
+# 53250000 ps 0 1 1 zzzz zzzz 
+# 53375000 ps 1 1 1 zzzz zzzz 
+# 53500000 ps 0 1 1 zzzz zzzz 
+# 53625000 ps 1 1 1 zzzz zzzz 
+# 53750000 ps 0 1 1 zzzz zzzz 
+# 53875000 ps 1 1 1 zzzz zzzz 
+# 54000000 ps 0 1 1 zzzz zzzz 
+# 54125000 ps 1 1 1 zzzz zzzz 
+# 54250000 ps 0 1 1 zzzz zzzz 
+# 54375000 ps 1 1 1 zzzz zzzz 
+# 54500000 ps 0 1 1 zzzz zzzz 
+# 54625000 ps 1 1 1 zzzz zzzz 
+# 54750000 ps 0 1 1 zzzz zzzz 
+# 54875000 ps 1 1 1 zzzz zzzz 
+# 55000000 ps 0 1 1 zzzz zzzz 
+# 55125000 ps 1 1 1 zzzz zzzz 
+# 55250000 ps 0 1 1 zzzz zzzz 
+# 55375000 ps 1 1 1 zzzz zzzz 
+# 55500000 ps 0 1 1 zzzz zzzz 
+# 55625000 ps 1 1 1 zzzz zzzz 
+# 55750000 ps 0 1 1 zzzz zzzz 
+# 55875000 ps 1 1 1 zzzz zzzz 
+# 56000000 ps 0 1 1 zzzz zzzz 
+# 56125000 ps 1 1 1 zzzz zzzz 
+# 56250000 ps 0 1 1 zzzz zzzz 
+# 56375000 ps 1 1 1 zzzz zzzz 
+# 56500000 ps 0 1 1 zzzz zzzz 
+# 56625000 ps 1 1 1 zzzz zzzz 
+# 56750000 ps 0 1 1 zzzz zzzz 
+# 56875000 ps 1 1 1 zzzz zzzz 
+# 57000000 ps 0 1 1 zzzz zzzz 
+# 57125000 ps 1 1 1 zzzz zzzz 
+# 57250000 ps 0 1 1 zzzz zzzz 
+# 57375000 ps 1 1 1 zzzz zzzz 
+# 57500000 ps 0 1 1 zzzz zzzz 
+# 57625000 ps 1 1 1 zzzz zzzz 
+# 57750000 ps 0 1 1 zzzz zzzz 
+# 57875000 ps 1 1 1 zzzz zzzz 
+# 58000000 ps 0 1 1 zzzz zzzz 
+# 58125000 ps 1 1 1 zzzz zzzz 
+# 58250000 ps 0 1 1 zzzz zzzz 
+# 58375000 ps 1 1 1 zzzz zzzz 
+# 58500000 ps 0 1 1 zzzz zzzz 
+# 58625000 ps 1 1 1 zzzz zzzz 
+# 58750000 ps 0 1 1 zzzz zzzz 
+# 58875000 ps 1 1 1 zzzz zzzz 
+# 59000000 ps 0 1 1 zzzz zzzz 
+# 59125000 ps 1 1 1 zzzz zzzz 
+# 59250000 ps 0 1 1 zzzz zzzz 
+# 59375000 ps 1 1 1 zzzz zzzz 
+# 59500000 ps 0 1 1 zzzz zzzz 
+# 59625000 ps 1 1 1 zzzz zzzz 
+# 59750000 ps 0 1 1 zzzz zzzz 
+# 59875000 ps 1 1 1 zzzz zzzz 

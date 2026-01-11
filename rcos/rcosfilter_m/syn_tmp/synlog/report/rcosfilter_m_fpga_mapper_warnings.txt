@@ -1,0 +1,1 @@
+@W: MT246 :"c:\users\sna\documents\fpga_code\lattice_sdr_code\rcos\rcosfilter_m\rcosfilter_m.v":29:18:29:32|Blackbox rcosfilter_m_core is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)

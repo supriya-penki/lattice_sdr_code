@@ -53,9 +53,6 @@
 "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v"
 "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v"
 "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v"
-"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/rcosfilter_m/rcosfilter_m.v"
-"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/rcosfilter_m/rcosfilter_m_core_bb.v"
-"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/FIRfilter.v"
 "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/SinCos_Module/SinCos_Module.v"
 "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v"
 "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/creating_nco.v"
@@ -68,10 +65,13 @@
 "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/iq_div.v"
 "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_tb.v"
 "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v"
+"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m.v"
+"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m_core_bb.v"
+"C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcos.v"
 -top top_module
 
 
--p "C:/lscc/diamond/3.14/ispfpga/sa5p00g/data" "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/impl1" "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code" "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/rcosfilter_m"
+-p "C:/lscc/diamond/3.14/ispfpga/sa5p00g/data" "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/impl1" "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code" "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m"
 
 -ngd "mySDR_fpga_impl1.ngd"
 

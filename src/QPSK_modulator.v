@@ -8,7 +8,7 @@ module QPSK_modulator(
 
     output wire signed [13:0] I_out,
     output wire signed [13:0] Q_out,
-    output wire        start,
+    output reg        start,
     output wire        symDone,
 	output wire        [1:0]I,
 	output wire       [1:0]Q,
@@ -23,10 +23,15 @@ module QPSK_modulator(
     // ------------------------------------------------------------
     reg enable_d;
     always @(posedge clk or negedge rst_n) begin
-        if (!rst_n) enable_d <= 1'b0;
-        else       enable_d <= enable;
+        if (!rst_n)  begin
+			enable_d <= 1'b0;
+			start <= 1'b0;
+			end
+        else   begin
+			enable_d <= enable;
+					start<=1'b1;
+				end
     end
-    assign start = enable & ~enable_d;
 
     // ------------------------------------------------------------
     // IQ split (2-bit bipolar)
@@ -56,8 +61,19 @@ module QPSK_modulator(
 
     //wire signed [25:0] I_filtered;
     //wire signed [25:0] Q_filtered;
+	
+	rcos I_inst (.rcosfilter_m_din(I_fir_in), .rcosfilter_m_dout(I_out), .rcosfilter_m_clk(clk), 
+     .rcosfilter_m_inpvalid(enable), .rcosfilter_m_outvalid(), .rcosfilter_m_rfi(), 
+     .rcosfilter_m_rstn(rst_n));
+	 
+	 
+	rcos Q_inst (.rcosfilter_m_din(Q_fir_in), .rcosfilter_m_dout(Q_out), .rcosfilter_m_clk(clk), 
+     .rcosfilter_m_inpvalid(enable), .rcosfilter_m_outvalid(), .rcosfilter_m_rfi(), 
+     .rcosfilter_m_rstn(rst_n));
 
-    FIRfilter rcosfilter_I (
+
+
+    /*FIRfilter rcosfilter_I (
         .rcosfilter_m_clk      (clk),
         .rcosfilter_m_rstn     (rst_n),
         .rcosfilter_m_din      (I_fir_in),
@@ -65,9 +81,9 @@ module QPSK_modulator(
         .rcosfilter_m_dout     (I_filtered),
         .rcosfilter_m_outvalid (),
         .rcosfilter_m_rfi      ()
-    );
+    ); */
 
-    FIRfilter rcosfilter_Q (
+    /*FIRfilter rcosfilter_Q (
         .rcosfilter_m_clk      (clk),
         .rcosfilter_m_rstn     (rst_n),
         .rcosfilter_m_din      (Q_fir_in),
@@ -75,7 +91,7 @@ module QPSK_modulator(
         .rcosfilter_m_dout     (Q_filtered),
         .rcosfilter_m_outvalid (),
         .rcosfilter_m_rfi      ()
-    );
+    );*/
 
     // ------------------------------------------------------------
     // DDS (signed 8-bit sin/cos)
@@ -83,18 +99,18 @@ module QPSK_modulator(
     //wire signed [7:0] carry_sin_s;
     //wire signed [7:0] carry_cos_s;
 
-    dds_lattice_sincos #(
-        .PHASE_W(24),
-        .THETA_W(10),
-        .AMP_W  (12)
-    ) dds0 (
-        .clk      (clk),
-        .rst_n    (rst_n),
-        .phase_inc(24'h0CCCCC),
-        .sin_out  (carry_sin_s),
-        .cos_out  (carry_cos_s),
-		.theta (theta)
-    );
+    //dds_lattice_sincos #(
+    //    .PHASE_W(24),
+    //    .THETA_W(10),
+    //    .AMP_W  (12)
+    //) dds0 (
+    //    .clk      (clk),
+    //    .rst_n    (rst_n),
+     //   .phase_inc(24'h0CCCCC),
+     //   .sin_out  (carry_sin_s),
+    //    .cos_out  (carry_cos_s),
+	//	.theta (theta)
+   // );
 
     // ------------------------------------------------------------
     // Scaling into your multiplier IP:
@@ -116,10 +132,12 @@ module QPSK_modulator(
     // Vivado ref used I*cos and Q*sin then ADD. Here you want separate outputs:
 
 
-	multiplier_12_2_m I_inst (.Clock(clk ), .ClkEn( enable), .Aclr( ~rst_n), .DataA( I), 
-    .DataB(carry_cos_s ), .Result( I_out));
+	//multiplier_12_2_m I_inst (.Clock(clk ), .ClkEn( enable), .Aclr( ~rst_n), .DataA( I), 
+    //.DataB(carry_cos_s ), .Result( I_out));
 	
-	multiplier_12_2_m Q_inst (.Clock(clk ), .ClkEn( enable), .Aclr( ~rst_n), .DataA( Q), 
-    .DataB(carry_sin_s ), .Result( Q_out));
+	//multiplier_12_2_m Q_inst (.Clock(clk ), .ClkEn( enable), .Aclr( ~rst_n), .DataA( Q), 
+    //.DataB(carry_sin_s ), .Result( Q_out));
+	//assign I_out ={{12{I[1]}}, I}; //14 bits = signextend(12) + 2 bits of I 
+	//assign Q_out = {{12{Q[1]}}, Q};
 
 endmodule

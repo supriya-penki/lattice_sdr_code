@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/promote.xml" version="Diamond (64-bit) 3.14.0.75.2" date="Thu Jan 08 14:44:09 2026" vendor="Lattice Semiconductor Corporation" >
+<userSetting name="C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/promote.xml" version="Diamond (64-bit) 3.14.0.75.2" date="Fri Jan 09 22:07:59 2026" vendor="Lattice Semiconductor Corporation" >
   <msg mid="35901116" type="Warning" />
   <msg mid="35931002" type="Warning" />
   <msg mid="35901010" type="Error" />
   <msg mid="35901068" type="Error" />
   <msg mid="35901012" type="Error" />
+  <msg mid="35901466" type="Warning" />
   <msg mid="35901208" type="Warning" />
   <msg mid="35901209" type="Warning" />
   <msg mid="35901245" type="Error" />
