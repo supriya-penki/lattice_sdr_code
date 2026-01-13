@@ -8,3 +8,4 @@ multiplier,/,C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multip
 fsktb,/,C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/fsktb.v
 dds_tb,/,C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_tb.v
 qpsk_tb,/,C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v
+rcos,/,C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcos.v

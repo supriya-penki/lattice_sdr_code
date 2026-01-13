@@ -2,9 +2,6 @@ if {![file exists "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt
 	project new "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt" testt
 	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v"
 	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v"
-	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m_core_bb.v"
-	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m.v"
-	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcos.v"
 	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/iq_div.v"
 	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/QPSK_modulator.v"
 	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v"
@@ -34,6 +31,9 @@ if {![file exists "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt
 	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_lattice_sincos.v"
 	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_tb.v"
 	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m_core_bb.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m.v"
+	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcos.v"
 	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v"
 	project addfile "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v"
 	vlib  work
@@ -41,9 +41,6 @@ if {![file exists "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt
 	vlib work
 	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v"
 	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v"
-	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m_core_bb.v"
-	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m.v"
-	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcos.v"
 	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/iq_div.v"
 	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/QPSK_modulator.v"
 	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v"
@@ -73,6 +70,9 @@ if {![file exists "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt
 	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_lattice_sincos.v"
 	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_tb.v"
 	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m_core_bb.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m.v"
+	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcos.v"
 	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v"
 	vlog  +incdir+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src  -work work  "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v"
 } else {

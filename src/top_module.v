@@ -69,15 +69,8 @@ wire pll_clko_1;
 //assign IQSerializer_I = {fskModule_I, 1'b0};
 //assign IQSerializer_Q = {fskModule_Q, 1'b0};
 
-
-
-
 //assign IQSerializer_I = {13'd4095, 1'b0};
 //assign IQSerializer_Q = {13'd4095, 1'b0};
-
-
-//assign IQSerializer_I = {13'b1111111111111, 1'b0};
-//assign IQSerializer_Q = {13'b1111111111111, 1'b0};
 
 //-------------------------------------------------------------------
 // State
@@ -111,11 +104,12 @@ end
 //-------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
-//need to use 32 mhz ckock definit
 
 
-
+// PLL to convert 12 ->24mhz clock 
 pll_24m my_instance_1 (.CLKI( top_clk), .CLKOP(pll_clko_1 ));
+
+// PLL to convert 24-> 64mhz clock 
 pll_24_64m my_instance_2 (.CLKI(pll_clko_1 ), .RST(~top_rst ), .CLKOP( pll_clko), .LOCK(pll_lock ));
 
 
@@ -142,7 +136,6 @@ packetGenerator packetGen_1(
 );
 
 
-
 QPSK_modulator qpskModule_1(
 	.clk(clockDivider_clk_4M),
 	.rst_n(counter_0_countDone),
@@ -151,16 +144,8 @@ QPSK_modulator qpskModule_1(
 	.I_out(IQSerializer_I),
 	.Q_out(IQSerializer_Q),
 	.symDone(fskModule_symDone),
-	.start(IQSerializer_start),
-	.I(),
-	.Q(),
-	.switch(),
-	.carry_sin_s(),
-	.carry_cos_s(),
-	.theta()
+	.start(IQSerializer_start)
 );
-
-
 
 
 IQSerializer IQSerializer_1(

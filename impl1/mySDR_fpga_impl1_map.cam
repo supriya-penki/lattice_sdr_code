@@ -1,10 +1,10 @@
 [ START MERGED ]
 clockDivider_clk_4M_enable_1 cout
-n1722 clockDivider_clkLock
-clk_N_175 clockDivider_clk_4M
-n2734 counter_0_countDone
-clk_N_235 serial_clk_c
+n1683 clockDivider_clkLock
+clk_N_233 serial_clk_c
 clockDivider_0/pll_lock_N_54 LED7_c
+clk_N_172 clockDivider_clk_4M
+n2701 counter_0_countDone
 [ END MERGED ]
 [ START CLIPPED ]
 clockDivider_0/lockCounter_167_add_4_1/S0
@@ -78,7 +78,7 @@ counter_0/waitcount_169_add_4_27/CO
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Sun Jan 11 19:49:52 2026
+# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Tue Jan 13 16:57:34 2026
 
 SYSCONFIG SLAVE_SPI_PORT=DISABLE MASTER_SPI_PORT=DISABLE SLAVE_PARALLEL_PORT=DISABLE BACKGROUND_RECONFIG=OFF DONE_EX=OFF DONE_OD=ON DONE_PULL=ON MCCLK_FREQ=2.4 TRANSFR=OFF CONFIG_IOVOLTAGE=2.5 CONFIG_SECURE=OFF WAKE_UP=21 COMPRESS_CONFIG=OFF CONFIG_MODE=JTAG INBUF=OFF ;
 LOCATE COMP "serial_clk" SITE "C4" ;

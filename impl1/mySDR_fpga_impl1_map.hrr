@@ -4,19 +4,19 @@ Report for cell top_module
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	     130.00        100.0
-                                  LUT4	     101.00        100.0
+                                  LUT4	     100.00        100.0
                                  IOBUF	         12        100.0
                                 PFUREG	        114        100.0
                                 RIPPLE	         63        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
                                pll_24m	          1         0.0
-                       packetGenerator	          1        10.9
+                       packetGenerator	          1        11.4
                             pll_24_64m	          1         0.0
                          packetCounter	          1        11.9
                           clockDivider	          1        10.8
+                        QPSK_modulator	          1        15.4
                           IQSerializer	          1        11.7
-                        QPSK_modulator	          1        15.9
 ---------------------------------------------------
 Report for cell packetCounter
    Instance path: top_module/counter_0
@@ -27,6 +27,25 @@ Report for cell packetCounter
                                 PFUREG	         27        23.7
                                 RIPPLE	         14        22.2
 ---------------------------------------------------
+Report for cell QPSK_modulator
+   Instance path: top_module/qpskModule_1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      20.00        15.4
+                                  LUT4	      26.00        26.0
+                                PFUREG	         16        14.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                iq_div	          1        14.2
+---------------------------------------------------
+Report for cell iq_div
+   Instance path: top_module/qpskModule_1/iq_div_inst
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      18.50        14.2
+                                  LUT4	      25.00        25.0
+                                PFUREG	         15        13.2
+---------------------------------------------------
 Report for cell pll_24m
    Instance path: top_module/my_instance_1
                      Cell usage:
@@ -36,28 +55,9 @@ Report for cell packetGenerator
    Instance path: top_module/packetGen_1
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      14.17        10.9
-                                  LUT4	      24.00        23.8
+                                  SLIC	      14.83        11.4
+                                  LUT4	      23.00        23.0
                                 PFUREG	         13        11.4
----------------------------------------------------
-Report for cell QPSK_modulator
-   Instance path: top_module/qpskModule_1
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      20.67        15.9
-                                  LUT4	      26.00        25.7
-                                PFUREG	         16        14.0
-SUB MODULES
-                                  cell	      count    SLC Usage(%)
-                                iq_div	          1        14.7
----------------------------------------------------
-Report for cell iq_div
-   Instance path: top_module/qpskModule_1/iq_div_inst
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	      19.17        14.7
-                                  LUT4	      25.00        24.8
-                                PFUREG	         15        13.2
 ---------------------------------------------------
 Report for cell pll_24_64m
    Instance path: top_module/my_instance_2
@@ -69,7 +69,7 @@ Report for cell IQSerializer
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	      15.17        11.7
-                                  LUT4	      23.00        22.8
+                                  LUT4	      23.00        23.0
                                 PFUREG	         13        11.4
 SUB MODULES
                                   cell	      count    SLC Usage(%)
@@ -88,6 +88,6 @@ Report for cell clockDivider
                      Cell usage:
                                   cell	      count    Res Usage(%)
                                   SLIC	      14.00        10.8
-                                  LUT4	       6.00         5.9
+                                  LUT4	       6.00         6.0
                                 PFUREG	         18        15.8
                                 RIPPLE	         10        15.9

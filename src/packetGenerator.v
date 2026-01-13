@@ -55,8 +55,7 @@ always @(negedge clk) begin
 	if (rst == VSS) begin
 		symVal			<= VSS;
 	end else begin
-		//this inversion is required
-		symVal			<= ~next_symVal;
+		symVal			<= next_symVal;
 	end
 end
 

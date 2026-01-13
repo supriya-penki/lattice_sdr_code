@@ -14,7 +14,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Jan 11 19:49:48 2026
+Tue Jan 13 16:57:32 2026
 
 
 Command Line:  synthesis -f mySDR_fpga_impl1_lattice.synproj -gui -msgset C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/promote.xml 
@@ -247,7 +247,7 @@ FD1S3JX => 10
 GSR => 1
 IB => 2
 INV => 2
-LUT4 => 85
+LUT4 => 84
 OB => 10
 PFUMX => 1
 ROM256X1A => 1
@@ -263,22 +263,22 @@ Number of Clocks: 4
 Clock Enable Nets
 Number of Clock Enables: 5
 Top 5 highest fanout Clock Enables:
-  Net : qpskModule_1/iq_div_inst/clk_N_175_enable_5, loads : 3
-  Net : qpskModule_1/iq_div_inst/clk_N_175_enable_3, loads : 2
+  Net : qpskModule_1/iq_div_inst/clk_N_172_enable_5, loads : 3
   Net : clockDivider_0/lockCounter_7, loads : 2
+  Net : qpskModule_1/iq_div_inst/clk_N_172_enable_3, loads : 2
   Net : clockDivider_clk_4M_enable_1, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : counter_0/n1721, loads : 26
-  Net : clockDivider_0/clk_N_175, loads : 15
-  Net : qpskModule_1/iq_div_inst/I_1__N_182, loads : 15
-  Net : qpskModule_1/iq_div_inst/n2734, loads : 11
-  Net : my_instance_2/clk_N_235, loads : 11
+  Net : counter_0/n1682, loads : 26
+  Net : clockDivider_0/clk_N_172, loads : 15
+  Net : qpskModule_1/iq_div_inst/I_1__N_180, loads : 15
+  Net : qpskModule_1/iq_div_inst/n2701, loads : 11
+  Net : my_instance_2/clk_N_233, loads : 11
   Net : packetGen_1/next_state_3__N_154, loads : 10
   Net : clockDivider_0/pll_lock_N_54, loads : 10
   Net : counter_0/counter_0_countDone, loads : 9
   Net : packetGen_1/symCounter_0, loads : 9
-  Net : clockDivider_0/n373, loads : 8
+  Net : clockDivider_0/n334, loads : 8
 ################### End Clock Report ##################
 
 <A name="lse_trs"></A><B><U><big>Timing Report Summary</big></U></B>
@@ -291,7 +291,7 @@ create_clock -period 5.000000 -name     |             |             |
 clk1 [get_nets serial_clk_c]            |  200.000 MHz|  100.120 MHz|     4 *
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets clockDivider_clk_4M]     |  200.000 MHz|   95.749 MHz|     4 *
+clk0 [get_nets clockDivider_clk_4M]     |  200.000 MHz|  122.041 MHz|     3 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -299,10 +299,10 @@ clk0 [get_nets clockDivider_clk_4M]     |  200.000 MHz|   95.749 MHz|     4 *
 2 constraints not met.
 
 
-Peak Memory Usage: 123.527  MB
+Peak Memory Usage: 122.000  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.750  secs
+Elapsed CPU time for LSE flow : 0.703  secs
 --------------------------------------------------------------
 
 

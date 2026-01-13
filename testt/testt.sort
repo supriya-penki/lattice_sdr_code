@@ -1,8 +1,5 @@
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v
-C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m_core_bb.v
-C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m.v
-C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcos.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/iq_div.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/QPSK_modulator.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v
@@ -32,5 +29,8 @@ C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/fsktb.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_lattice_sincos.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_tb.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v
+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m_core_bb.v
+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m.v
+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcos.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v
 C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v

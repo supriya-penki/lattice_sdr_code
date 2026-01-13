@@ -5,42 +5,42 @@
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVlg" build_result="0" update_result="3" update_time="0"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
-            <Task name="Bitgen" build_result="2" update_result="0" update_time="1768141216"/>
+            <Task name="Bitgen" build_result="2" update_result="0" update_time="1768303674"/>
             <Task name="Promgen" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1768141193">
-            <Task name="Map" build_result="2" update_result="0" update_time="1768141193"/>
+        <Milestone name="Map" build_result="2" build_time="1768303655">
+            <Task name="Map" build_result="2" update_result="0" update_time="1768303655"/>
             <Task name="MapTrace" build_result="0" update_result="3" update_time="0"/>
             <Task name="MapVerilogSimFile" build_result="0" update_result="3" update_time="0"/>
-            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1768141193"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1768303655"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1768141206">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1768141206"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1768141207"/>
-            <Task name="IOTiming" build_result="2" update_result="0" update_time="1768141210"/>
+        <Milestone name="PAR" build_result="2" build_time="1768303665">
+            <Task name="PAR" build_result="2" update_result="0" update_time="1768303665"/>
+            <Task name="PARTrace" build_result="2" update_result="0" update_time="1768303667"/>
+            <Task name="IOTiming" build_result="2" update_result="0" update_time="1768303669"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1768141190">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1768141190"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1768141216"/>
+        <Milestone name="Synthesis" build_result="2" build_time="1768303653">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1768303653"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1768303674"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="0" update_result="2" update_time="1768141183"/>
-            <Task name="BKM" build_result="0" update_result="2" update_time="1768141183"/>
+            <Task name="HDLE" build_result="0" update_result="2" update_time="1768303626"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1768303626"/>
             <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Report name=".vdbs/mySDR_fpga_impl1_map.vdb" last_build_time="1768141193" last_build_size="89696"/>
-        <Report name="mySDR_fpga_impl1.bgn" last_build_time="1768141216" last_build_size="4650"/>
-        <Report name="mySDR_fpga_impl1.bit" last_build_time="1768141216" last_build_size="1928039"/>
-        <Report name="mySDR_fpga_impl1.ior" last_build_time="1768141210" last_build_size="1671"/>
-        <Report name="mySDR_fpga_impl1.lsedata" last_build_time="1768141189" last_build_size="278651"/>
-        <Report name="mySDR_fpga_impl1.ncd" last_build_time="1768141206" last_build_size="222095"/>
-        <Report name="mySDR_fpga_impl1.ngd" last_build_time="1768141190" last_build_size="182562"/>
-        <Report name="mySDR_fpga_impl1.twr" last_build_time="1768141207" last_build_size="67775"/>
-        <Report name="mySDR_fpga_impl1_map.ncd" last_build_time="1768141192" last_build_size="161210"/>
+        <Report name=".vdbs/mySDR_fpga_impl1_map.vdb" last_build_time="1768303655" last_build_size="89428"/>
+        <Report name="mySDR_fpga_impl1.bgn" last_build_time="1768303674" last_build_size="4650"/>
+        <Report name="mySDR_fpga_impl1.bit" last_build_time="1768303674" last_build_size="1928039"/>
+        <Report name="mySDR_fpga_impl1.ior" last_build_time="1768303669" last_build_size="1671"/>
+        <Report name="mySDR_fpga_impl1.lsedata" last_build_time="1768303652" last_build_size="278356"/>
+        <Report name="mySDR_fpga_impl1.ncd" last_build_time="1768303665" last_build_size="220934"/>
+        <Report name="mySDR_fpga_impl1.ngd" last_build_time="1768303653" last_build_size="181753"/>
+        <Report name="mySDR_fpga_impl1.twr" last_build_time="1768303666" last_build_size="69859"/>
+        <Report name="mySDR_fpga_impl1_map.ncd" last_build_time="1768303654" last_build_size="161004"/>
         <Report name="mySDR_fpga_impl1_mapvho.sdf" last_build_time="1768080013" last_build_size="639997"/>
         <Report name="mySDR_fpga_impl1_mapvho.vho" last_build_time="1768080013" last_build_size="472736"/>
     </Strategy>
 </BuildStatus>
-                                  
+                                        

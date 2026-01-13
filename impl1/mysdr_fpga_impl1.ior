@@ -21,7 +21,7 @@ Performance Hardware Data Status:   Final          Version 55.1.
 // Package: CABGA381
 // ncd File: mysdr_fpga_impl1.ncd
 // Version: Diamond (64-bit) 3.14.0.75.2
-// Written on Sun Jan 11 19:50:10 2026
+// Written on Tue Jan 13 16:57:49 2026
 // M: Minimum Performance Grade
 // iotiming mySDR_fpga_impl1.ncd mySDR_fpga_impl1.prf -gui -msgset C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/promote.xml
 
@@ -40,5 +40,5 @@ Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
 
 Port      Clock   Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
 ------------------------------------------------------------------------
-LED       top_clk R     3.956         8        2.024          M
-serial_iq top_clk F     5.888         8        2.444          M
+LED       top_clk R     3.686         8        1.888          M
+serial_iq top_clk F     5.629         8        2.294          M

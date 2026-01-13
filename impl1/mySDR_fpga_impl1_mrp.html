@@ -23,7 +23,7 @@ Target Vendor:  LATTICE
 Target Device:  LFE5UM5G-85FCABGA381
 Target Performance:   8
 Mapper:  sa5p00g,  version:  Diamond (64-bit) 3.14.0.75.2
-Mapped on:  01/11/26  19:49:51
+Mapped on:  01/13/26  16:57:33
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
@@ -34,8 +34,8 @@ Mapped on:  01/11/26  19:49:51
       SLICEs as Logic/ROM:    130 out of 41820 (0%)
       SLICEs as RAM:            0 out of 31365 (0%)
       SLICEs as Carry:         63 out of 41820 (0%)
-   Number of LUT4s:        227 out of 83640 (0%)
-      Number used as logic LUTs:        101
+   Number of LUT4s:        226 out of 83640 (0%)
+      Number used as logic LUTs:        100
       Number used as distributed RAM:     0
       Number used as ripple logic:      126
       Number used as shift registers:     0
@@ -91,21 +91,21 @@ Mapped on:  01/11/26  19:49:51
      my_instance_1/PLLInst_0 )
    Number of Clock Enables:  5
      Net cout: 1 loads, 1 LSLICEs
+     Net qpskModule_1/iq_div_inst/clk_N_172_enable_3: 2 loads, 2 LSLICEs
+     Net qpskModule_1/iq_div_inst/clk_N_172_enable_5: 3 loads, 3 LSLICEs
      Net clockDivider_clk_4M_enable_9: 4 loads, 4 LSLICEs
-     Net qpskModule_1/iq_div_inst/clk_N_175_enable_3: 2 loads, 2 LSLICEs
-     Net qpskModule_1/iq_div_inst/clk_N_175_enable_5: 3 loads, 3 LSLICEs
      Net clockDivider_0/lockCounter_7: 1 loads, 1 LSLICEs
    Number of LSRs:  10
      Net counter_0_countDone: 8 loads, 8 LSLICEs
      Net clockDivider_clkLock: 1 loads, 1 LSLICEs
-     Net counter_0/n1721: 14 loads, 14 LSLICEs
+     Net counter_0/n1682: 14 loads, 14 LSLICEs
      Net LED7_c: 7 loads, 7 LSLICEs
      Net top_rst_N_28: 1 loads, 0 LSLICEs
      Net IQSerializer_start: 5 loads, 5 LSLICEs
-     Net qpskModule_1/iq_div_inst/I_1__N_182: 11 loads, 11 LSLICEs
-     Net IQSerializer_1/n1725: 2 loads, 2 LSLICEs
-     Net IQSerializer_1/n1724: 2 loads, 2 LSLICEs
-     Net clockDivider_0/n373: 5 loads, 5 LSLICEs
+     Net qpskModule_1/iq_div_inst/I_1__N_180: 11 loads, 11 LSLICEs
+     Net IQSerializer_1/n1686: 2 loads, 2 LSLICEs
+     Net IQSerializer_1/n1685: 2 loads, 2 LSLICEs
+     Net clockDivider_0/n334: 5 loads, 5 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
      Net symCounter_1: 22 loads
@@ -113,9 +113,9 @@ Mapped on:  01/11/26  19:49:51
      Net symCounter_3: 21 loads
      Net symCounter_6: 19 loads
      Net counter_0_countDone: 17 loads
-     Net counter_0/n1721: 14 loads
+     Net counter_0/n1682: 14 loads
      Net next_state_3__N_154: 11 loads
-     Net qpskModule_1/iq_div_inst/I_1__N_182: 11 loads
+     Net qpskModule_1/iq_div_inst/I_1__N_180: 11 loads
      Net symCounter_0: 10 loads
      Net symCounter_7: 10 loads
 
@@ -171,11 +171,11 @@ Mapped on:  01/11/26  19:49:51
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
-Signal clk_N_175 was merged into signal clockDivider_clk_4M
-Signal n1722 was merged into signal clockDivider_clkLock
+Signal clk_N_172 was merged into signal clockDivider_clk_4M
+Signal n1683 was merged into signal clockDivider_clkLock
 Signal clockDivider_0/pll_lock_N_54 was merged into signal LED7_c
-Signal clk_N_235 was merged into signal serial_clk_c
-Signal n2734 was merged into signal counter_0_countDone
+Signal clk_N_233 was merged into signal serial_clk_c
+Signal n2701 was merged into signal counter_0_countDone
 Signal clockDivider_clk_4M_enable_1 was merged into signal cout
 Signal clockDivider_0/lockCounter_167_add_4_1/S0 undriven or does not drive
      anything - clipped.
@@ -259,10 +259,10 @@ Signal counter_0/waitcount_169_add_4_27/S1 undriven or does not drive anything -
      clipped.
 Signal counter_0/waitcount_169_add_4_27/CO undriven or does not drive anything -
      clipped.
-Block clockDivider_0/i1579 was optimized away.
+Block clockDivider_0/i1581 was optimized away.
 Block clockDivider_0/i706_1_lut was optimized away.
 Block clockDivider_0/pll_lock_I_0_1_lut was optimized away.
-Block my_instance_2/i1578 was optimized away.
+Block my_instance_2/i1580 was optimized away.
 Block qpskModule_1/iq_div_inst/rst_I_0_1_lut_rep_16 was optimized away.
 Block i707_1_lut was optimized away.
 
@@ -452,7 +452,7 @@ GSR Component:
    Register : cnt1_165__i3
    Register : cnt1_165__i2
    Register : cnt1_165__i1
-   Register : packetGen_1/symVal_43
+   Register : packetGen_1/symVal_42
    Register : packetGen_1/current_state_FSM_i1
    Register : packetGen_1/symCounter__i0
    Register : packetGen_1/symCounter__i7

@@ -1,32 +1,42 @@
-C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m.v
+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module rcosfilter_m
 
 Top level modules:
 	rcosfilter_m
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module packetCounter
 
 Top level modules:
 	packetCounter
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_tb.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_tb.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_tb.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module dds_tb
 
 Top level modules:
 	dds_tb
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/creating_nco.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/creating_nco.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/creating_nco.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/creating_nco.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module creating_nco
 
 Top level modules:
 	creating_nco
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/divided_pll.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module divided_pll
 
@@ -40,42 +50,54 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 Top level modules:
 	rcosfilter_m
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/sincos_m/sincos_m.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module sincos_m
 
 Top level modules:
 	sincos_m
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/divided_pll_2.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module divided_pll_2
 
 Top level modules:
 	divided_pll_2
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/mult_m/mult_m.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/mult_m/mult_m.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/mult_m/mult_m.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/mult_m/mult_m.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module mult_m
 
 Top level modules:
 	mult_m
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m_core_bb.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m_core_bb.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m_core_bb.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcosfilter_m/rcosfilter_m_core_bb.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module rcosfilter_m_core
 
 Top level modules:
 	rcosfilter_m_core
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/SinCos_Module/SinCos_Module.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/SinCos_Module/SinCos_Module.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/SinCos_Module/SinCos_Module.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/creating_nco/SinCos_Module/SinCos_Module.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module SinCos_Module
 
 Top level modules:
 	SinCos_Module
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/cosModule.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module cosModule
 
@@ -89,14 +111,18 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 Top level modules:
 	rcosfilter_m_core
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/IQSerializer.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module IQSerializer
 
 Top level modules:
 	IQSerializer
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/qpsk_tb.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module qpsk_tb
 
@@ -117,17 +143,23 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 Top level modules:
 	iq_div
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/local_oscillator.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module local_oscillator
 
 Top level modules:
 	local_oscillator
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll_2/pll_24_64m/pll_24_64m.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module pll_24_64m
 
@@ -141,21 +173,9 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 Top level modules:
 	dds_lattice_sincos
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v
-Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
--- Compiling module packetGenerator
-
-Top level modules:
-	packetGenerator
-
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/top_module.v
-Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
--- Compiling module top_module
-
-Top level modules:
-	top_module
-
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/sinModule.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module sinModule
 
@@ -169,101 +189,131 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 Top level modules:
 	dds_tb
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new/pll_64_new.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new/pll_64_new.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new/pll_64_new.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64_new/pll_64_new.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module pll_64_new
 
 Top level modules:
 	pll_64_new
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try/pll_try.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try/pll_try.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try/pll_try.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_try/pll_try.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module pll_try
 
 Top level modules:
 	pll_try
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/DEDFF.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module DEDFF
 
 Top level modules:
 	DEDFF
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier_12_2_m/multiplier_12_2_m.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module multiplier_12_2_m
 
 Top level modules:
 	multiplier_12_2_m
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/fsktb.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/fsktb.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/fsktb.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/fsktb.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module fsktb
 
 Top level modules:
 	fsktb
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/ble_packet.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module ble_packet
 
 Top level modules:
 	ble_packet
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module FSKModulator
 
 Top level modules:
 	FSKModulator
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/divided_pll/pll_24m/pll_24m.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module pll_24m
 
 Top level modules:
 	pll_24m
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/clockDivider.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module clockDivider
 
 Top level modules:
 	clockDivider
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/iq_div.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/iq_div.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/iq_div.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/iq_div.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module iq_div
 
 Top level modules:
 	iq_div
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64m.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module pll_64m
 
 Top level modules:
 	pll_64m
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcos.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcos.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcos.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcos/rcos.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module rcos
 
 Top level modules:
 	rcos
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_lattice_sincos.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_lattice_sincos.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_lattice_sincos.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/dds_lattice_sincos.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module dds_lattice_sincos
 
 Top level modules:
 	dds_lattice_sincos
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/multiplier/multiplier.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module multiplier
 
@@ -284,7 +334,9 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 Top level modules:
 	QPSK_modulator
 
-} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64/pll_64.v {1 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64/pll_64.v
+} {} {}} C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64/pll_64.v {2 {vlog -work work -vopt -stats=none C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/pll_64m/pll_64/pll_64.v
+** Warning: (vlog-14) Failed to open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testt/testt.mpf" specified by the MODELSIM environment variable.
+No such file or directory. (errno = ENOENT)
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 -- Compiling module pll_64
 

@@ -1,9 +1,6 @@
 <BaliSimProject version="1.3" path="." stage="0" language="-1" name="testt" simType="QuestaSim">
     <Source worklib="work" path="src/DEDFF.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
     <Source worklib="work" path="src/IQSerializer.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
-    <Source worklib="work" path="rcos/rcosfilter_m/rcosfilter_m_core_bb.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
-    <Source worklib="work" path="rcos/rcosfilter_m/rcosfilter_m.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
-    <Source worklib="work" path="rcos/rcos.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
     <Source worklib="work" path="src/iq_div.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
     <Source worklib="work" path="src/QPSK_modulator.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
     <Source worklib="work" path="src/ble_packet.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
@@ -33,6 +30,9 @@
     <Source worklib="work" path="src/dds_lattice_sincos.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
     <Source worklib="work" path="src/dds_tb.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
     <Source worklib="work" path="src/qpsk_tb.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="rcos/rcosfilter_m/rcosfilter_m_core_bb.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="rcos/rcosfilter_m/rcosfilter_m.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
+    <Source worklib="work" path="rcos/rcos.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
     <Source worklib="work" path="src/bleDefines.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
     <Source worklib="work" path="src/radioDefines.v" type="VERILOG" langstandard="Verilog 2001" include="none"/>
     <SimLib value="pmi_work ovi_ecp5u"/>
