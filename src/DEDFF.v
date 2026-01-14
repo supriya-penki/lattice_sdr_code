@@ -1,3 +1,23 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// Company: <Name>
+//
+// File: DEDFF.v
+// File history:
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//      <Revision number>: <Date>: <Comments>
+//
+// Description: 
+//
+// <Description here>
+//
+// Targeted device: <Family::IGLOO2> <Die::M2GL010> <Package::484 FBGA>
+// Author: <Name>
+//
+/////////////////////////////////////////////////////////////////////////////////////////////////// 
+
+//`timescale <time_units> / <precision>
+
 module DEDFF(
 input           clk,
 input           rst,
@@ -31,4 +51,3 @@ always @(negedge clk) begin
 end
 
 endmodule
-

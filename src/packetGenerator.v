@@ -1,7 +1,8 @@
+
 `include "bleDefines.v"
 
 module packetGenerator(
-	rst_n,
+	rst,
 	clk,
 	symDone,
 	start,
@@ -12,7 +13,7 @@ module packetGenerator(
 // Input
 //--------------------------------------------------------------------
 input 	clk;
-input	rst_n;
+input	rst;
 input 	symDone;
 
 //--------------------------------------------------------------------
@@ -36,13 +37,14 @@ parameter [`percision-1:0] maxSize = `percision'd255;
 reg 		next_symVal;
 
 //data
+//reg [0:255] data;
 wire	data;
 
 //state
 parameter [3:0] state_init=4'd0, state_tx=4'd1, state_done=4'd2, state_wait=4'd3;
 
 always @(posedge clk) begin
-	if (rst_n == VSS) begin
+	if (rst == VSS) begin
 		current_state	<= state_init;
 	end else begin
 		current_state	<= next_state;
@@ -50,16 +52,15 @@ always @(posedge clk) begin
 end
 
 always @(negedge clk) begin
-	if (rst_n == VSS) begin
+	if (rst == VSS) begin
 		symVal			<= VSS;
 	end else begin
-		//this inversion is required
-		symVal			<= ~next_symVal;
+		symVal			<= next_symVal;
 	end
 end
 
 always @(*) begin
-	if (rst_n == VSS) begin
+	if (rst == VSS) begin
 		next_state	= state_init;
 		start		= VSS;
 		next_symVal	= VSS;
@@ -91,7 +92,7 @@ always @(*) begin
 			end
 			state_done: begin
 				start		= VSS;
-				next_state	= state_done;
+				next_state	= state_init;
 				next_symVal	= next_symVal;
 			end
 			default: begin
@@ -105,7 +106,7 @@ end
 
 //counter
 always @(posedge clk) begin
-	if (rst_n == VSS) begin
+	if (rst == VSS) begin
 		symCounter	<= 8'd0;
 	end else begin
 		if (symDone) begin

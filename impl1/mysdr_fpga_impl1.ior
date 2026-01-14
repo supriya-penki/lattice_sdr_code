@@ -1,6 +1,6 @@
-3 potential circuit loops found in timing analysis.
+1 potential circuit loop found in timing analysis.
 Loading design for application iotiming from file mysdr_fpga_impl1.ncd.
-Design name: top_level
+Design name: top_module
 NCD version: 3.3
 Vendor:      LATTICE
 Device:      LFE5UM5G-85F
@@ -9,7 +9,7 @@ Performance: 9
 Package Status:                     Final          Version 1.43.
 Performance Hardware Data Status:   Final          Version 55.1.
 Loading design for application iotiming from file mysdr_fpga_impl1.ncd.
-Design name: top_level
+Design name: top_module
 NCD version: 3.3
 Vendor:      LATTICE
 Device:      LFE5UM5G-85F
@@ -17,13 +17,13 @@ Package:     CABGA381
 Performance: M
 Package Status:                     Final          Version 1.43.
 Performance Hardware Data Status:   Final          Version 55.1.
-// Design: top_level
+// Design: top_module
 // Package: CABGA381
 // ncd File: mysdr_fpga_impl1.ncd
 // Version: Diamond (64-bit) 3.14.0.75.2
-// Written on Mon Sep 15 12:35:53 2025
+// Written on Tue Jan 13 16:57:49 2026
 // M: Minimum Performance Grade
-// iotiming mySDR_fpga_impl1.ncd mySDR_fpga_impl1.prf -gui -msgset C:/lscc/lattice_projects/promote.xml
+// iotiming mySDR_fpga_impl1.ncd mySDR_fpga_impl1.prf -gui -msgset C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/promote.xml
 
 I/O Timing Report (All units are in ns)
 
@@ -38,6 +38,7 @@ Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
 
 // Clock to Output Delay
 
-Port  Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+Port      Clock   Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
 ------------------------------------------------------------------------
-LED   clk   R     9.325         8        4.029          M
+LED       top_clk R     3.686         8        1.888          M
+serial_iq top_clk F     5.629         8        2.294          M

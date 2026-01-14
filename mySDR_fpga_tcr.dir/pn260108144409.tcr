@@ -1,0 +1,4 @@
+#Start recording tcl command: 1/8/2026 14:44:01
+#Project Location: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code; Project name: mySDR_fpga
+prj_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/qpsk_tb.v"
+#Stop recording: 1/8/2026 14:44:09

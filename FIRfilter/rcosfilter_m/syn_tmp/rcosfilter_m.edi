@@ -1,0 +1,222 @@
+(edif rcosfilter_m
+  (edifVersion 2 0 0)
+  (edifLevel 0)
+  (keywordMap (keywordLevel 0))
+  (status
+    (written
+      (timeStamp 2026 1 7 21 16 44)
+      (author "Synopsys, Inc.")
+      (program "Synplify Pro" (version "V-2023.09L-2, mapper map202309lat, Build 191R"))
+     )
+   )
+  (library LUCENT
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell GSR (cellType GENERIC)
+       (view PRIM (viewType NETLIST)
+         (interface
+           (port GSR (direction INPUT))
+         )
+       )
+    )
+    (cell VHI (cellType GENERIC)
+       (view PRIM (viewType NETLIST)
+         (interface
+           (port Z (direction OUTPUT))
+         )
+       )
+    )
+    (cell VLO (cellType GENERIC)
+       (view PRIM (viewType NETLIST)
+         (interface
+           (port Z (direction OUTPUT))
+         )
+       )
+    )
+  )
+  (library work
+    (edifLevel 0)
+    (technology (numberDefinition ))
+    (cell rcosfilter_m_core (cellType GENERIC)
+       (view verilog (viewType NETLIST)
+         (interface
+           (port rstn (direction INPUT))
+           (port clk (direction INPUT))
+           (port inpvalid (direction INPUT))
+           (port (array (rename din "din[3:0]") 4) (direction INPUT))
+           (port outvalid (direction OUTPUT))
+           (port rfi (direction OUTPUT))
+           (port (array (rename dout "dout[25:0]") 26) (direction OUTPUT))
+         )
+        (property orig_inst_of (string "rcosfilter_m_core"))
+       )
+    )
+    (cell rcosfilter_m (cellType GENERIC)
+       (view verilog (viewType NETLIST)
+         (interface
+           (port rstn (direction INPUT))
+           (port clk (direction INPUT))
+           (port inpvalid (direction INPUT))
+           (port (array (rename din "din[3:0]") 4) (direction INPUT))
+           (port outvalid (direction OUTPUT))
+           (port rfi (direction OUTPUT))
+           (port (array (rename dout "dout[25:0]") 26) (direction OUTPUT))
+         )
+         (contents
+          (instance GND_0 (viewRef PRIM (cellRef VLO (libraryRef LUCENT)))          )
+          (instance VCC_0 (viewRef PRIM (cellRef VHI (libraryRef LUCENT)))          )
+          (instance GSR_INST (viewRef PRIM (cellRef GSR (libraryRef LUCENT)))
+          )
+          (instance u1_rcosfilter_m (viewRef verilog (cellRef rcosfilter_m_core))          )
+          (net rstn (joined
+           (portRef rstn)
+           (portRef rstn (instanceRef u1_rcosfilter_m))
+          ))
+          (net clk (joined
+           (portRef clk)
+           (portRef clk (instanceRef u1_rcosfilter_m))
+          ))
+          (net inpvalid (joined
+           (portRef inpvalid)
+           (portRef inpvalid (instanceRef u1_rcosfilter_m))
+          ))
+          (net (rename din_0 "din[0]") (joined
+           (portRef (member din 3))
+           (portRef (member din 3) (instanceRef u1_rcosfilter_m))
+          ))
+          (net (rename din_1 "din[1]") (joined
+           (portRef (member din 2))
+           (portRef (member din 2) (instanceRef u1_rcosfilter_m))
+          ))
+          (net (rename din_2 "din[2]") (joined
+           (portRef (member din 1))
+           (portRef (member din 1) (instanceRef u1_rcosfilter_m))
+          ))
+          (net (rename din_3 "din[3]") (joined
+           (portRef (member din 0))
+           (portRef (member din 0) (instanceRef u1_rcosfilter_m))
+          ))
+          (net outvalid (joined
+           (portRef outvalid (instanceRef u1_rcosfilter_m))
+           (portRef outvalid)
+          ))
+          (net rfi (joined
+           (portRef rfi (instanceRef u1_rcosfilter_m))
+           (portRef rfi)
+          ))
+          (net (rename dout_0 "dout[0]") (joined
+           (portRef (member dout 25) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 25))
+          ))
+          (net (rename dout_1 "dout[1]") (joined
+           (portRef (member dout 24) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 24))
+          ))
+          (net (rename dout_2 "dout[2]") (joined
+           (portRef (member dout 23) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 23))
+          ))
+          (net (rename dout_3 "dout[3]") (joined
+           (portRef (member dout 22) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 22))
+          ))
+          (net (rename dout_4 "dout[4]") (joined
+           (portRef (member dout 21) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 21))
+          ))
+          (net (rename dout_5 "dout[5]") (joined
+           (portRef (member dout 20) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 20))
+          ))
+          (net (rename dout_6 "dout[6]") (joined
+           (portRef (member dout 19) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 19))
+          ))
+          (net (rename dout_7 "dout[7]") (joined
+           (portRef (member dout 18) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 18))
+          ))
+          (net (rename dout_8 "dout[8]") (joined
+           (portRef (member dout 17) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 17))
+          ))
+          (net (rename dout_9 "dout[9]") (joined
+           (portRef (member dout 16) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 16))
+          ))
+          (net (rename dout_10 "dout[10]") (joined
+           (portRef (member dout 15) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 15))
+          ))
+          (net (rename dout_11 "dout[11]") (joined
+           (portRef (member dout 14) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 14))
+          ))
+          (net (rename dout_12 "dout[12]") (joined
+           (portRef (member dout 13) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 13))
+          ))
+          (net (rename dout_13 "dout[13]") (joined
+           (portRef (member dout 12) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 12))
+          ))
+          (net (rename dout_14 "dout[14]") (joined
+           (portRef (member dout 11) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 11))
+          ))
+          (net (rename dout_15 "dout[15]") (joined
+           (portRef (member dout 10) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 10))
+          ))
+          (net (rename dout_16 "dout[16]") (joined
+           (portRef (member dout 9) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 9))
+          ))
+          (net (rename dout_17 "dout[17]") (joined
+           (portRef (member dout 8) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 8))
+          ))
+          (net (rename dout_18 "dout[18]") (joined
+           (portRef (member dout 7) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 7))
+          ))
+          (net (rename dout_19 "dout[19]") (joined
+           (portRef (member dout 6) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 6))
+          ))
+          (net (rename dout_20 "dout[20]") (joined
+           (portRef (member dout 5) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 5))
+          ))
+          (net (rename dout_21 "dout[21]") (joined
+           (portRef (member dout 4) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 4))
+          ))
+          (net (rename dout_22 "dout[22]") (joined
+           (portRef (member dout 3) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 3))
+          ))
+          (net (rename dout_23 "dout[23]") (joined
+           (portRef (member dout 2) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 2))
+          ))
+          (net (rename dout_24 "dout[24]") (joined
+           (portRef (member dout 1) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 1))
+          ))
+          (net (rename dout_25 "dout[25]") (joined
+           (portRef (member dout 0) (instanceRef u1_rcosfilter_m))
+           (portRef (member dout 0))
+          ))
+          (net VCC (joined
+           (portRef Z (instanceRef VCC_0))
+           (portRef GSR (instanceRef GSR_INST))
+          ))
+         )
+        (property orig_inst_of (string "rcosfilter_m"))
+       )
+    )
+  )
+  (design rcosfilter_m (cellRef rcosfilter_m (libraryRef work))
+	(property PART (string "lfe5um5g_25f-8") ))
+)

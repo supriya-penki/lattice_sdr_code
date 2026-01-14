@@ -1,0 +1,9 @@
+Runtime Summary:
+================
+
+	The following design units have negligible CPU times:
+	=====================================================
+		* Library: work, DesignUnit: rcosfilter_m
+			Hardware Generation Phase, Optimization Phase: Negligible CPU time
+		* Library: work, DesignUnit: rcosfilter_m_core
+			Hardware Generation Phase, Initial Cleanup Phase, Optimization Phase: Negligible CPU time

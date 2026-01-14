@@ -6,69 +6,158 @@
 -->
 </STYLE>
 </HEAD>
-<PRE><A name="pn250821004745"></A><B><U><big>pn250821004745</big></U></B>
-#Start recording tcl command: 8/20/2025 23:59:21
-#Project Location: C:/lscc/lattice_projects; Project name: mySDR_fpga
-prj_project open "C:/lscc/lattice_projects/mySDR_fpga.ldf"
+<PRE><A name="pn251227053910"></A><B><U><big>pn251227053910</big></U></B>
+#Start recording tcl command: 12/27/2025 00:10:28
+#Project Location: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code; Project name: mySDR_fpga
+prj_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.ldf"
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1 -forceAll
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/FSKModulator.v"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetCounter.v" "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/packetGenerator.v"
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/bleDefines.v"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/radioDefines.v"
+prj_run Synthesis -impl impl1
 prj_run Synthesis -impl impl1
 prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Synthesis -impl impl1 -forceAll
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
 prj_run Synthesis -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+pgr_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/impl1/impl1.xcf"
 prj_run Synthesis -impl impl1
-#Stop recording: 8/21/2025 00:47:45
-
-
-
-<A name="pn250823114709"></A><B><U><big>pn250823114709</big></U></B>
-#Start recording tcl command: 8/23/2025 11:46:47
-#Project Location: C:/lscc/lattice_projects; Project name: mySDR_fpga
-prj_project open "C:/lscc/lattice_projects/mySDR_fpga.ldf"
-#Stop recording: 8/23/2025 11:47:09
-
-
-
-<A name="pn250823170104"></A><B><U><big>pn250823170104</big></U></B>
-#Start recording tcl command: 8/23/2025 15:30:58
-#Project Location: C:/lscc/lattice_projects; Project name: mySDR_fpga
-prj_project open "C:/lscc/lattice_projects/mySDR_fpga.ldf"
-#Stop recording: 8/23/2025 17:01:04
-
-
-
-<A name="pn250828164131"></A><B><U><big>pn250828164131</big></U></B>
-#Start recording tcl command: 8/28/2025 16:38:26
-#Project Location: C:/lscc/lattice_projects; Project name: mySDR_fpga
-prj_project open "C:/lscc/lattice_projects/mySDR_fpga.ldf"
-#Stop recording: 8/28/2025 16:41:31
-
-
-
-<A name="pn250909152308"></A><B><U><big>pn250909152308</big></U></B>
-#Start recording tcl command: 9/9/2025 13:28:19
-#Project Location: C:/lscc/lattice_projects; Project name: mySDR_fpga
-C:/Users/ROG Zephyrus/Documents/fsk-modulator-master
-ble_tx
-#Start recording tcl command: 9/9/2025 15:23:05
-#Project Location: C:/Users/ROG Zephyrus/Documents/fsk-modulator-master; Project name: ble_tx
-prj_project open "C:/lscc/lattice_projects/mySDR_fpga.ldf"
+prj_run Map -impl impl1
+pgr_project close
+pgr_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/impl1/impl1.xcf"
+pgr_project save "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/impl1/impl1.xcf"
+pgr_project close
+prj_src remove "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/defines.v"
+prj_src remove "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/data_generator.v"
+prj_src remove "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/modulator.v"
+prj_src remove "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/src/serial_2_parallel.v"
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Synthesis -impl impl1
+prj_project save
 prj_project close
-prj_project open "C:/Users/ROG Zephyrus/Documents/fsk-modulator-master/ble_tx.ldf"
-#Stop recording: 9/9/2025 15:23:08
+#Stop recording: 12/27/2025 05:39:10
 
 
 
-<A name="pn250911180437"></A><B><U><big>pn250911180437</big></U></B>
-#Start recording tcl command: 9/11/2025 18:04:26
-#Project Location: C:/lscc/lattice_projects; Project name: mySDR_fpga
-prj_project open "C:/lscc/lattice_projects/mySDR_fpga.ldf"
-#Stop recording: 9/11/2025 18:04:37
+<A name="pn251227054131"></A><B><U><big>pn251227054131</big></U></B>
+#Start recording tcl command: 12/27/2025 05:40:01
+#Project Location: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code; Project name: mySDR_fpga
+prj_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.ldf"
+#Stop recording: 12/27/2025 05:41:31
 
 
 
-<A name="pn250915121953"></A><B><U><big>pn250915121953</big></U></B>
-#Start recording tcl command: 9/15/2025 11:41:13
-#Project Location: C:/lscc/lattice_projects; Project name: mySDR_fpga
-prj_project open "C:/lscc/lattice_projects/mySDR_fpga.ldf"
-#Stop recording: 9/15/2025 12:19:53
+<A name="pn260104210107"></A><B><U><big>pn260104210107</big></U></B>
+#Start recording tcl command: 1/4/2026 21:00:53
+#Project Location: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code; Project name: mySDR_fpga
+prj_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.ldf"
+#Stop recording: 1/4/2026 21:01:07
+
+
+
+<A name="pn260104210528"></A><B><U><big>pn260104210528</big></U></B>
+#Start recording tcl command: 1/4/2026 21:05:13
+#Project Location: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code; Project name: mySDR_fpga
+prj_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.ldf"
+#Stop recording: 1/4/2026 21:05:28
+
+
+
+<A name="pn260104221948"></A><B><U><big>pn260104221948</big></U></B>
+#Start recording tcl command: 1/4/2026 21:08:10
+#Project Location: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code; Project name: mySDR_fpga
+prj_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.ldf"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testbench/testbench.spf"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsk_yb.vhd"
+prj_src remove "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsk_yb.vhd"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v"
+prj_src syn_sim -src "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v" SimulateOnly
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/uiyguh/uiyguh.spf"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testing/testing.spf"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/ddsdsdd/ddsdsdd.spf"
+#Stop recording: 1/4/2026 22:19:48
+
+
+
+<A name="pn260107193716"></A><B><U><big>pn260107193716</big></U></B>
+#Start recording tcl command: 1/7/2026 19:08:05
+#Project Location: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code; Project name: mySDR_fpga
+prj_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.ldf"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/QPSK_modulator.v"
+sbp_design new -dsgn "rcosfilter" -path "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/rcosfilter" -device "LFE5UM5G-85F-8BG381I"
+#Stop recording: 1/7/2026 19:37:16
+
+
+
+<A name="pn260107214825"></A><B><U><big>pn260107214825</big></U></B>
+#Start recording tcl command: 1/7/2026 21:44:58
+#Project Location: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code; Project name: mySDR_fpga
+prj_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.ldf"
+sbp_design open -dsgn "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/FIRfilter/FIRfilter.sbx"
+#Stop recording: 1/7/2026 21:48:25
+
+
+
+<A name="pn260108144409"></A><B><U><big>pn260108144409</big></U></B>
+#Start recording tcl command: 1/8/2026 14:44:01
+#Project Location: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code; Project name: mySDR_fpga
+prj_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/qpsk_tb.v"
+#Stop recording: 1/8/2026 14:44:09
+
+
+
+<A name="pn260109220627"></A><B><U><big>pn260109220627</big></U></B>
+#Start recording tcl command: 1/9/2026 22:04:59
+#Project Location: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code; Project name: mySDR_fpga
+prj_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.ldf"
+#Stop recording: 1/9/2026 22:06:27
+
+
+
+<A name="pn260109220759"></A><B><U><big>pn260109220759</big></U></B>
+#Start recording tcl command: 1/9/2026 22:06:48
+#Project Location: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code; Project name: mySDR_fpga
+prj_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.ldf"
+#Stop recording: 1/9/2026 22:07:59
 
 
 

@@ -4,7 +4,7 @@
 
 module FSKModulator(
 	clk,
-	rst_n,
+	rst,
 	enable,
 	symVal,
 	FSK_I,
@@ -17,7 +17,7 @@ module FSKModulator(
 // Input
 //--------------------------------------------------------------------
 input	clk;
-input	rst_n;
+input	rst;
 input	enable;
 input	symVal;
 
@@ -68,7 +68,7 @@ end
 
 
 always @(posedge clk) begin
-	if (rst_n == VSS) begin
+	if (rst == VSS) begin
 		sin_phase	<= `phaseRes'd0;
 		cos_phase	<= `phaseRes'd0;
 		lastSym		<= VSS;
@@ -115,8 +115,8 @@ always @(posedge clk) begin
 	end
 end
 
-always @(negedge clk, negedge rst_n) begin
-	if ((rst_n == VSS) | (enable == VSS)) begin
+always @(negedge clk) begin
+	if (rst == VSS) begin
 		sampleCount	<= `percision'd4095;
 		symDone		<= VSS;
 	end else begin
@@ -160,7 +160,7 @@ sinModule sin_instance(
 	.phase(sin_phase),
 	.sinOut(sine)
 );
-cosModule cos_instance(
+cosModule cos_instance(
 	.phase(cos_phase),
 	.cosOut(cosine)
 );
@@ -168,5 +168,3 @@ sinModule sin_instance(
 
 
 endmodule
-
-

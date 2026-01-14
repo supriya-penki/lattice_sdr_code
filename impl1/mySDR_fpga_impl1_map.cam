@@ -1,23 +1,100 @@
 [ START MERGED ]
-clockDivider_0/n346 pll_lock
+clockDivider_clk_4M_enable_1 cout
+n1683 clockDivider_clkLock
+clk_N_233 serial_clk_c
+clockDivider_0/pll_lock_N_54 LED7_c
+clk_N_172 clockDivider_clk_4M
+n2701 counter_0_countDone
 [ END MERGED ]
 [ START CLIPPED ]
-VCC_net
-clockDivider_0/lockCounter_38_add_4_1/S0
-clockDivider_0/lockCounter_38_add_4_1/CI
-clockDivider_0/lockCounter_38_add_4_9/S1
-clockDivider_0/lockCounter_38_add_4_9/CO
+clockDivider_0/lockCounter_167_add_4_1/S0
+clockDivider_0/lockCounter_167_add_4_1/CI
+clockDivider_0/counter_166_add_4_1/S0
+clockDivider_0/counter_166_add_4_1/CI
+clockDivider_0/counter_166_add_4_9/S1
+clockDivider_0/counter_166_add_4_9/CO
+clockDivider_0/lockCounter_167_add_4_9/S1
+clockDivider_0/lockCounter_167_add_4_9/CO
+add_1067_4/S1
+add_1067_4/S0
+cnt1_165_add_4_27/S1
+cnt1_165_add_4_27/CO
+add_1067_6/S1
+add_1067_6/S0
+add_1067_20/S1
+add_1067_20/S0
+add_1066_1/S1
+add_1066_1/S0
+add_1066_1/CI
+add_1066_3/S1
+add_1066_3/S0
+add_1066_5/S1
+add_1066_5/S0
+add_1067_8/S1
+add_1067_8/S0
+add_1067_10/S1
+add_1067_10/S0
+add_1066_7/S1
+add_1066_7/S0
+add_1066_9/S1
+add_1066_9/S0
+add_1066_11/S1
+add_1066_11/S0
+add_1066_13/S1
+add_1066_13/S0
+add_1067_12/S1
+add_1067_12/S0
+add_1066_15/S1
+add_1066_15/S0
+add_1066_17/S1
+add_1066_17/S0
+add_1066_19/S1
+add_1066_19/S0
+add_1066_21/S1
+add_1066_21/S0
+add_1066_23/S1
+add_1066_23/S0
+add_1066_25/S1
+add_1066_25/S0
+add_1066_27/S0
+add_1066_27/CO
+add_1067_14/S1
+add_1067_14/S0
+add_1067_cout/S1
+add_1067_cout/CO
+add_1067_16/S1
+add_1067_16/S0
+add_1067_2/S1
+add_1067_2/S0
+add_1067_2/CI
+add_1067_18/S1
+add_1067_18/S0
+cnt1_165_add_4_1/S0
+cnt1_165_add_4_1/CI
+counter_0/waitcount_169_add_4_1/S0
+counter_0/waitcount_169_add_4_1/CI
+counter_0/waitcount_169_add_4_27/S1
+counter_0/waitcount_169_add_4_27/CO
 [ END CLIPPED ]
 [ START DESIGN PREFS ]
 SCHEMATIC START ;
-# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Mon Sep 15 12:35:35 2025
+# map:  version Diamond (64-bit) 3.14.0.75.2 -- WARNING: Map write only section -- Tue Jan 13 16:57:34 2026
 
 SYSCONFIG SLAVE_SPI_PORT=DISABLE MASTER_SPI_PORT=DISABLE SLAVE_PARALLEL_PORT=DISABLE BACKGROUND_RECONFIG=OFF DONE_EX=OFF DONE_OD=ON DONE_PULL=ON MCCLK_FREQ=2.4 TRANSFR=OFF CONFIG_IOVOLTAGE=2.5 CONFIG_SECURE=OFF WAKE_UP=21 COMPRESS_CONFIG=OFF CONFIG_MODE=JTAG INBUF=OFF ;
-LOCATE COMP "clk" SITE "F1" ;
-LOCATE COMP "serial_iq" SITE "E4" ;
-LOCATE COMP "LED" SITE "C17" ;
-LOCATE COMP "serial_clk" SITE "A4" ;
-FREQUENCY NET "my_pll_instance/CLKIt" 32.000000 MHz ;
+LOCATE COMP "serial_clk" SITE "C4" ;
+LOCATE COMP "top_rst" SITE "H2" ;
+LOCATE COMP "serial_iq" SITE "F4" ;
+LOCATE COMP "top_clk" SITE "A10" ;
+LOCATE COMP "LED7" SITE "B17" ;
+LOCATE COMP "LED6" SITE "A17" ;
+LOCATE COMP "LED5" SITE "C17" ;
+LOCATE COMP "LED4" SITE "B18" ;
+LOCATE COMP "LED3" SITE "A18" ;
+LOCATE COMP "LED2" SITE "B19" ;
+LOCATE COMP "LED1" SITE "A12" ;
+LOCATE COMP "LED" SITE "A13" ;
 FREQUENCY NET "serial_clk_c" 64.000000 MHz ;
+FREQUENCY NET "top_clk_c" 12.000000 MHz ;
+FREQUENCY NET "pll_clko_1" 24.000000 MHz ;
 SCHEMATIC END ;
 [ END DESIGN PREFS ]

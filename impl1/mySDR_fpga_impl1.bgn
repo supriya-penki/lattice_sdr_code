@@ -4,13 +4,13 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Sep 15 12:36:00 2025
+Tue Jan 13 16:57:49 2026
 
 
-Command: bitgen -w -g CfgMode:Disable -g RamCfg:Reset -g DisableUES:FALSE -g ES:No -e -s C:/lscc/lattice_projects/mySDR_fpga.sec -k C:/lscc/lattice_projects/mySDR_fpga.bek -gui -msgset C:/lscc/lattice_projects/promote.xml mySDR_fpga_impl1.ncd mySDR_fpga_impl1.prf 
+Command: bitgen -w -g CfgMode:Disable -g RamCfg:Reset -g DisableUES:FALSE -g ES:No -e -s C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.sec -k C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.bek -gui -msgset C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/promote.xml mySDR_fpga_impl1.ncd mySDR_fpga_impl1.prf 
 
 Loading design for application Bitgen from file mySDR_fpga_impl1.ncd.
-Design name: top_level
+Design name: top_module
 NCD version: 3.3
 Vendor:      LATTICE
 Device:      LFE5UM5G-85F
@@ -79,4 +79,4 @@ Bitstream Status: Final           Version 10.27.
 Saving bit stream in "mySDR_fpga_impl1.bit".
 Total CPU Time: 4 secs 
 Total REAL Time: 5 secs 
-Peak Memory Usage: 543 MB
+Peak Memory Usage: 570 MB

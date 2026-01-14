@@ -1,0 +1,15 @@
+Selecting top level module rcosfilter_m
+@N: CG364 :"C:\Users\SNA\Documents\FPGA_code\lattice_sdr_code\FIRfilter\rcosfilter_m\rcosfilter_m_core_bb.v":1:7:1:23|Synthesizing module rcosfilter_m_core in library work.
+@W: CG146 :"C:\Users\SNA\Documents\FPGA_code\lattice_sdr_code\FIRfilter\rcosfilter_m\rcosfilter_m_core_bb.v":1:7:1:23|Creating black box for empty module rcosfilter_m_core
+
+@N: CG364 :"C:\Users\SNA\Documents\FPGA_code\lattice_sdr_code\FIRfilter\rcosfilter_m\rcosfilter_m.v":6:7:6:18|Synthesizing module rcosfilter_m in library work.
+Running optimization stage 1 on rcosfilter_m .......
+Finished optimization stage 1 on rcosfilter_m (CPU Time 0h:00m:00s, Memory Used current: 95MB peak: 96MB)
+Running optimization stage 2 on rcosfilter_m .......
+Finished optimization stage 2 on rcosfilter_m (CPU Time 0h:00m:00s, Memory Used current: 95MB peak: 96MB)
+
+For a summary of runtime per design unit, please see file:
+==========================================================
+@L: C:\Users\SNA\Documents\FPGA_code\lattice_sdr_code\FIRfilter\rcosfilter_m\syn_tmp\synwork\layer0.duruntime
+
+

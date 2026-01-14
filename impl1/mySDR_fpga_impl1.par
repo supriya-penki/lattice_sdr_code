@@ -4,11 +4,11 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Sep 15 12:35:39 2025
+Tue Jan 13 16:57:35 2026
 
 C:/lscc/diamond/3.14/ispfpga\bin\nt64\par -f mySDR_fpga_impl1.p2t
 mySDR_fpga_impl1_map.ncd mySDR_fpga_impl1.dir mySDR_fpga_impl1.prf -gui -msgset
-C:/lscc/lattice_projects/promote.xml
+C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/promote.xml
 
 
 Preference file: mySDR_fpga_impl1.prf.
@@ -16,7 +16,7 @@ Preference file: mySDR_fpga_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            14.350       0            0.241        0            10           Completed
+5_1   *      0            9.037        0            0.146        0            10           Completed
 
 * : Design saved.
 
@@ -27,16 +27,16 @@ par done!
 Note: user must run 'Trace' for timing closure signoff.
 
 Lattice Place and Route Report for Design "mySDR_fpga_impl1_map.ncd"
-Mon Sep 15 12:35:39 2025
+Tue Jan 13 16:57:35 2026
 
 PAR: Place And Route Diamond (64-bit) 3.14.0.75.2.
-Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/lscc/lattice_projects/promote.xml -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:parASE=1:par_low_skew_clock_net=0 mySDR_fpga_impl1_map.ncd mySDR_fpga_impl1.dir/5_1.ncd mySDR_fpga_impl1.prf
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/promote.xml -exp parUseNBR=1:parCDP=auto:parCDR=1:parPathBased=OFF:parASE=1:par_low_skew_clock_net=0 mySDR_fpga_impl1_map.ncd mySDR_fpga_impl1.dir/5_1.ncd mySDR_fpga_impl1.prf
 Preference file: mySDR_fpga_impl1.prf.
 Placement level-cost: 5-1.
 Routing Iterations: 6
 
 Loading design for application par from file mySDR_fpga_impl1_map.ncd.
-Design name: top_level
+Design name: top_module
 NCD version: 3.3
 Vendor:      LATTICE
 Device:      LFE5UM5G-85F
@@ -51,39 +51,41 @@ License checked out.
 Ignore Preference Error(s):  True
 Device utilization summary:
 
-   PIO (prelim)       6/365           1% used
-                      6/205           2% bonded
+   PIO (prelim)      14/365           3% used
+                     14/205           6% bonded
 
-   SLICE             10/41820        <1% used
+   SLICE            130/41820        <1% used
 
-   PLL                1/4            25% used
-   PLLREFCS           1/4            25% used
+   GSR                1/1           100% used
+   PLL                2/4            50% used
 
 
-3 potential circuit loops found in timing analysis.
-Number of Signals: 33
-Number of Connections: 59
+1 potential circuit loop found in timing analysis.
+Number of Signals: 344
+Number of Connections: 773
 
 Pin Constraint Summary:
-   4 out of 4 pins locked (100% locked).
+   12 out of 12 pins locked (100% locked).
 
-The following 1 signal is selected to use the primary clock routing resources:
-    serial_clk_c (driver: my_pll_instance/PLLInst_0, clk/ce/sr load #: 6/0/0)
+The following 3 signals are selected to use the primary clock routing resources:
+    pll_clko_1 (driver: my_instance_1/PLLInst_0, clk/ce/sr load #: 2/0/0)
+    serial_clk_c (driver: my_instance_2/PLLInst_0, clk/ce/sr load #: 38/0/0)
+    clockDivider_clk_4M (driver: clockDivider_0/SLICE_77, clk/ce/sr load #: 35/0/0)
 
 
-No signal is selected as Global Set/Reset.
+Signal counter_0_countDone is selected as Global Set/Reset.
 Starting Placer Phase 0.
-
-Finished Placer Phase 0.  REAL time: 3 secs 
+..........
+Finished Placer Phase 0.  REAL time: 2 secs 
 
 Starting Placer Phase 1.
-.................
-Placer score = 10483.
+....................
+Placer score = 56559.
 Finished Placer Phase 1.  REAL time: 4 secs 
 
 Starting Placer Phase 2.
 .
-Placer score =  10483
+Placer score =  55320
 Finished Placer Phase 2.  REAL time: 4 secs 
 
 
@@ -92,24 +94,29 @@ Finished Placer Phase 2.  REAL time: 4 secs
 Global Clock Resources:
   CLK_PIN    : 0 out of 12 (0%)
   GR_PCLK    : 0 out of 12 (0%)
-  PLL        : 1 out of 4 (25%)
+  PLL        : 2 out of 4 (50%)
   DCS        : 0 out of 2 (0%)
   DCC        : 0 out of 60 (0%)
   CLKDIV     : 0 out of 4 (0%)
 
 Quadrant TL Clocks:
-  PRIMARY "serial_clk_c" from CLKOP on comp "my_pll_instance/PLLInst_0" on PLL site "PLL_TL0", CLK/CE/SR load = 1
+  PRIMARY "pll_clko_1" from CLKOP on comp "my_instance_1/PLLInst_0" on PLL site "PLL_TL0", CLK/CE/SR load = 1
+  PRIMARY "serial_clk_c" from CLKOP on comp "my_instance_2/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 10
+  PRIMARY "clockDivider_clk_4M" from Q0 on comp "clockDivider_0/SLICE_77" on site "R59C67A", CLK/CE/SR load = 12
 
-  PRIMARY  : 1 out of 16 (6%)
+  PRIMARY  : 3 out of 16 (18%)
 
 Quadrant TR Clocks:
-  PRIMARY "serial_clk_c" from CLKOP on comp "my_pll_instance/PLLInst_0" on PLL site "PLL_TL0", CLK/CE/SR load = 5
+  PRIMARY "serial_clk_c" from CLKOP on comp "my_instance_2/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 15
 
   PRIMARY  : 1 out of 16 (6%)
 
 Quadrant BL Clocks:
+  PRIMARY "pll_clko_1" from CLKOP on comp "my_instance_1/PLLInst_0" on PLL site "PLL_TL0", CLK/CE/SR load = 1
+  PRIMARY "serial_clk_c" from CLKOP on comp "my_instance_2/PLLInst_0" on PLL site "PLL_BL0", CLK/CE/SR load = 13
+  PRIMARY "clockDivider_clk_4M" from Q0 on comp "clockDivider_0/SLICE_77" on site "R59C67A", CLK/CE/SR load = 23
 
-  PRIMARY  : 0 out of 16 (0%)
+  PRIMARY  : 3 out of 16 (18%)
 
 Quadrant BR Clocks:
 
@@ -125,35 +132,35 @@ Edge Clocks:
 
 +
 I/O Usage Summary (final):
-   6 out of 365 (1.6%) PIO sites used.
-   6 out of 205 (2.9%) bonded PIO sites used.
-   Number of PIO comps: 4; differential: 2.
+   14 out of 365 (3.8%) PIO sites used.
+   14 out of 205 (6.8%) bonded PIO sites used.
+   Number of PIO comps: 12; differential: 2.
    Number of Vref pins used: 0.
 
 I/O Bank Usage Summary:
 +----------+---------------+------------+------------+------------+
 | I/O Bank | Usage         | Bank Vccio | Bank Vref1 | Bank Vref2 |
 +----------+---------------+------------+------------+------------+
-| 0        | 0 / 27 (  0%) | -          | -          | -          |
-| 1        | 1 / 33 (  3%) | 2.5V       | -          | -          |
+| 0        | 1 / 27 (  3%) | 2.5V       | -          | -          |
+| 1        | 8 / 33 ( 24%) | 2.5V       | -          | -          |
 | 2        | 0 / 34 (  0%) | -          | -          | -          |
 | 3        | 0 / 33 (  0%) | -          | -          | -          |
-| 6        | 1 / 33 (  3%) | 2.5V       | -          | -          |
+| 6        | 1 / 33 (  3%) | 3.3V       | -          | -          |
 | 7        | 4 / 32 ( 12%) | 2.5V       | -          | -          |
 | 8        | 0 / 13 (  0%) | -          | -          | -          |
 +----------+---------------+------------+------------+------------+
 
-Total placer CPU time: 2 secs 
+Total placer CPU time: 4 secs 
 
 Dumping design to file mySDR_fpga_impl1.dir/5_1.ncd.
 
-3 potential circuit loops found in timing analysis.
-0 connections routed; 59 unrouted.
+1 potential circuit loop found in timing analysis.
+0 connections routed; 773 unrouted.
 Starting router resource preassignment
 
-Completed router resource preassignment. Real time: 8 secs 
+Completed router resource preassignment. Real time: 9 secs 
 
-Start NBR router at 12:35:47 09/15/25
+Start NBR router at 16:57:44 01/13/26
 
 *****************************************************************
 Info: NBR allows conflicts(one node used by more than one signal)
@@ -168,33 +175,42 @@ Note: NBR uses a different method to calculate timing slacks. The
       your design.                                               
 *****************************************************************
 
-3 potential circuit loops found in timing analysis.
-Start NBR special constraint process at 12:35:47 09/15/25
+1 potential circuit loop found in timing analysis.
+Start NBR special constraint process at 16:57:44 01/13/26
 
-Start NBR section for initial routing at 12:35:47 09/15/25
+Start NBR section for initial routing at 16:57:44 01/13/26
 Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 14.350ns/0.000ns; real time: 9 secs 
+26(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 11.328ns/0.000ns; real time: 9 secs 
 
 Info: Initial congestion level at 75% usage is 0
 Info: Initial congestion area  at 75% usage is 0 (0.00%)
 
-Start NBR section for normal routing at 12:35:48 09/15/25
+Start NBR section for normal routing at 16:57:44 01/13/26
+Level 4, iteration 1
+8(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 9.371ns/0.000ns; real time: 9 secs 
+Level 4, iteration 2
+5(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 9.371ns/0.000ns; real time: 9 secs 
+Level 4, iteration 3
+2(0.00%) conflicts; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 9.037ns/0.000ns; real time: 9 secs 
+Level 4, iteration 4
+0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: 9.037ns/0.000ns; real time: 9 secs 
+
+Start NBR section for setup/hold timing optimization with effort level 3 at 16:57:44 01/13/26
+1 potential circuit loop found in timing analysis.
+1 potential circuit loop found in timing analysis.
+
+Start NBR section for re-routing at 16:57:44 01/13/26
 Level 4, iteration 1
 0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 14.350ns/0.000ns; real time: 9 secs 
+Estimated worst slack/total negative slack<setup>: 9.037ns/0.000ns; real time: 9 secs 
 
-Start NBR section for setup/hold timing optimization with effort level 3 at 12:35:48 09/15/25
-3 potential circuit loops found in timing analysis.
-3 potential circuit loops found in timing analysis.
-
-Start NBR section for re-routing at 12:35:48 09/15/25
-Level 4, iteration 1
-0(0.00%) conflict; 0(0.00%) untouched conn; 0 (nbr) score; 
-Estimated worst slack/total negative slack<setup>: 14.350ns/0.000ns; real time: 9 secs 
-
-Start NBR section for post-routing at 12:35:48 09/15/25
-3 potential circuit loops found in timing analysis.
+Start NBR section for post-routing at 16:57:44 01/13/26
+1 potential circuit loop found in timing analysis.
 
 End NBR router with 0 unrouted connection
 
@@ -202,20 +218,20 @@ NBR Summary
 -----------
   Number of unrouted connections : 0 (0.00%)
   Number of connections with timing violations : 0 (0.00%)
-  Estimated worst slack<setup> : 14.350ns
+  Estimated worst slack<setup> : 9.037ns
   Timing score<setup> : 0
 -----------
 Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
 
 
 
-3 potential circuit loops found in timing analysis.
-3 potential circuit loops found in timing analysis.
-3 potential circuit loops found in timing analysis.
-Total CPU time 7 secs 
-Total REAL time: 9 secs 
+1 potential circuit loop found in timing analysis.
+1 potential circuit loop found in timing analysis.
+1 potential circuit loop found in timing analysis.
+Total CPU time 9 secs 
+Total REAL time: 10 secs 
 Completely routed.
-End of route.  59 routed (100.00%); 0 unrouted.
+End of route.  773 routed (100.00%); 0 unrouted.
 
 Hold time timing score: 0, hold timing errors: 0
 
@@ -229,13 +245,13 @@ All signals are completely routed.
 
 PAR_SUMMARY::Run status = Completed
 PAR_SUMMARY::Number of unrouted conns = 0
-PAR_SUMMARY::Worst  slack<setup/<ns>> = 14.350
+PAR_SUMMARY::Worst  slack<setup/<ns>> = 9.037
 PAR_SUMMARY::Timing score<setup/<ns>> = 0.000
-PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.241
+PAR_SUMMARY::Worst  slack<hold /<ns>> = 0.146
 PAR_SUMMARY::Timing score<hold /<ns>> = 0.000
 PAR_SUMMARY::Number of errors = 0
 
-Total CPU  time to completion: 8 secs 
+Total CPU  time to completion: 9 secs 
 Total REAL time to completion: 10 secs 
 
 par done!

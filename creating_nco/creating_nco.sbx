@@ -1,0 +1,1197 @@
+<!DOCTYPE creating_nco>
+<lattice:project>
+    <spirit:component>
+        <spirit:vendor>LATTICE</spirit:vendor>
+        <spirit:library>LOCAL</spirit:library>
+        <spirit:name>creating_nco</spirit:name>
+        <spirit:version>1.0</spirit:version>
+        <spirit:fileSets>
+            <spirit:fileset>
+                <spirit:name>Diamond_Synthesis</spirit:name>
+                <spirit:group>synthesis</spirit:group>
+                <spirit:file>
+                    <spirit:name>./creating_nco.v</spirit:name>
+                    <spirit:fileType>verilogSource</spirit:fileType>
+                </spirit:file>
+            </spirit:fileset>
+            <spirit:fileset>
+                <spirit:name>Diamond_Simulation</spirit:name>
+                <spirit:group>simulation</spirit:group>
+                <spirit:file>
+                    <spirit:name>./creating_nco.v</spirit:name>
+                    <spirit:fileType>verilogSource</spirit:fileType>
+                </spirit:file>
+            </spirit:fileset>
+        </spirit:fileSets>
+        <spirit:componentGenerators/>
+        <spirit:model>
+            <spirit:views/>
+            <spirit:ports>
+                <spirit:port>
+                    <spirit:name>SinCos_Module_ClkEn</spirit:name>
+                    <spirit:displayName>SinCos_Module_ClkEn</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">SinCos_Module.ClkEn</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>SinCos_Module_Clock</spirit:name>
+                    <spirit:displayName>SinCos_Module_Clock</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">SinCos_Module.Clock</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>SinCos_Module_Reset</spirit:name>
+                    <spirit:displayName>SinCos_Module_Reset</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">SinCos_Module.Reset</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>sincos_m_ClkEn</spirit:name>
+                    <spirit:displayName>sincos_m_ClkEn</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">sincos_m.ClkEn</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>sincos_m_Clock</spirit:name>
+                    <spirit:displayName>sincos_m_Clock</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">sincos_m.Clock</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>sincos_m_Reset</spirit:name>
+                    <spirit:displayName>sincos_m_Reset</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">sincos_m.Reset</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>SinCos_Module_Cosine</spirit:name>
+                    <spirit:displayName>SinCos_Module_Cosine</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>11</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">SinCos_Module.Cosine</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>SinCos_Module_Sine</spirit:name>
+                    <spirit:displayName>SinCos_Module_Sine</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>11</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">SinCos_Module.Sine</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>SinCos_Module_Theta</spirit:name>
+                    <spirit:displayName>SinCos_Module_Theta</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>9</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">SinCos_Module.Theta</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>sincos_m_Cosine</spirit:name>
+                    <spirit:displayName>sincos_m_Cosine</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>7</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">sincos_m.Cosine</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>sincos_m_Sine</spirit:name>
+                    <spirit:displayName>sincos_m_Sine</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>7</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">sincos_m.Sine</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>sincos_m_Theta</spirit:name>
+                    <spirit:displayName>sincos_m_Theta</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>9</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">sincos_m.Theta</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+            </spirit:ports>
+        </spirit:model>
+        <spirit:vendorExtensions>
+            <lattice:device>LFE5UM5G-85F-8BG381I</lattice:device>
+            <lattice:synthesis>lse</lattice:synthesis>
+            <lattice:date>2026-01-07.22:46:50</lattice:date>
+            <lattice:modified>2026-01-09.17:18:12</lattice:modified>
+            <lattice:diamond>3.14.0.75.2</lattice:diamond>
+            <lattice:language>Verilog</lattice:language>
+            <lattice:attributes>
+                <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
+            </lattice:attributes>
+            <lattice:elements/>
+            <lattice:lpc/>
+            <lattice:groups/>
+        </spirit:vendorExtensions>
+    </spirit:component>
+    <spirit:design>
+        <spirit:vendor>LATTICE</spirit:vendor>
+        <spirit:library>LOCAL</spirit:library>
+        <spirit:name>creating_nco</spirit:name>
+        <spirit:version>1.0</spirit:version>
+        <spirit:componentInstances>
+            <spirit:componentInstance>
+                <spirit:instanceName>SinCos_Module</spirit:instanceName>
+                <spirit:componentRef>
+                    <spirit:vendor>Lattice Semiconductor Corporation</spirit:vendor>
+                    <spirit:library>LEGACY</spirit:library>
+                    <spirit:name>Sin-Cos_Table</spirit:name>
+                    <spirit:version>1.6</spirit:version>
+                    <spirit:fileSets>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Simulation</spirit:name>
+                            <spirit:group>simulation</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./SinCos_Module/SinCos_Module.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Synthesis</spirit:name>
+                            <spirit:group>synthesis</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./SinCos_Module/SinCos_Module.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                    </spirit:fileSets>
+                    <spirit:componentGenerators>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>Configuration</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_core.tcl</spirit:generatorExe>
+                            <spirit:group>CONFIG</spirit:group>
+                        </spirit:componentGenerator>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>CreateNGD</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_ngd.tcl</spirit:generatorExe>
+                            <spirit:group>CONFIG</spirit:group>
+                        </spirit:componentGenerator>
+                    </spirit:componentGenerators>
+                    <spirit:model>
+                        <spirit:views/>
+                        <spirit:ports>
+                            <spirit:port>
+                                <spirit:name>ClkEn</spirit:name>
+                                <spirit:displayName>ClkEn</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>Clock</spirit:name>
+                                <spirit:displayName>Clock</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>Reset</spirit:name>
+                                <spirit:displayName>Reset</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>Cosine</spirit:name>
+                                <spirit:displayName>Cosine</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>11</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>Sine</spirit:name>
+                                <spirit:displayName>Sine</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>11</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>Theta</spirit:name>
+                                <spirit:displayName>Theta</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>9</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                        </spirit:ports>
+                    </spirit:model>
+                    <spirit:vendorExtensions>
+                        <lattice:synthesis>lse</lattice:synthesis>
+                        <lattice:modified>2026-01-09.17:18:12</lattice:modified>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                            <lattice:attribute lattice:name="BBox">false</lattice:attribute>
+                            <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                            <lattice:attribute lattice:name="CoreType">LPM</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_RXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_TXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
+                        </lattice:attributes>
+                        <lattice:elements/>
+                        <lattice:lpc>
+                            <lattice:lpcsection lattice:name="Device"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Family</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">ecp5um5g</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>OperatingCondition</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">IND</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Package</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">CABGA381</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM5G-85F-8BG381I</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM5G-85F</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SpeedGrade</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">8</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Status</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">P</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="IP"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Sin-Cos_Table</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreRevision</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1.6</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreStatus</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Demo</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LPM</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Date</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">01/09/2026</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ModuleName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">SinCos_Module</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ParameterFileVersion</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1.0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SourceFormat</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">verilog</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Time</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">17:18:06</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>VendorName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Lattice Semiconductor Corporation</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="Parameters"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Destination</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Synplicity</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>EDIF</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Expression</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">BusA(0 to 7)</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>IO</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Order</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">[MSB:LSB]</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>VHDL</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Verilog</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_dataa_width</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">10</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_datab_width</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">12</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_implemenntation</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LUT</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_input_reg</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_optimize_mem</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_output_mode</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Sin-Cos</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_output_reg</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_pipeline</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_use_1bit</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="Command"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>cmd_line</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">-w -n SinCos_Module -lang verilog -synth lse -bus_exp 7 -bb -arch sa5p00g -type cosine -addr_width 10 -width 12 -pfu -input_reg -mode 2 -output_reg -area -pipeline 1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                        </lattice:lpc>
+                        <lattice:groups/>
+                    </spirit:vendorExtensions>
+                </spirit:componentRef>
+            </spirit:componentInstance>
+            <spirit:componentInstance>
+                <spirit:instanceName>sincos_m</spirit:instanceName>
+                <spirit:componentRef>
+                    <spirit:vendor>Lattice Semiconductor Corporation</spirit:vendor>
+                    <spirit:library>LEGACY</spirit:library>
+                    <spirit:name>Sin-Cos_Table</spirit:name>
+                    <spirit:version>1.6</spirit:version>
+                    <spirit:fileSets>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Simulation</spirit:name>
+                            <spirit:group>simulation</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./sincos_m/sincos_m.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Synthesis</spirit:name>
+                            <spirit:group>synthesis</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./sincos_m/sincos_m.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                    </spirit:fileSets>
+                    <spirit:componentGenerators>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>Configuration</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_core.tcl</spirit:generatorExe>
+                            <spirit:group>CONFIG</spirit:group>
+                        </spirit:componentGenerator>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>CreateNGD</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_ngd.tcl</spirit:generatorExe>
+                            <spirit:group>CONFIG</spirit:group>
+                        </spirit:componentGenerator>
+                    </spirit:componentGenerators>
+                    <spirit:model>
+                        <spirit:views/>
+                        <spirit:ports>
+                            <spirit:port>
+                                <spirit:name>ClkEn</spirit:name>
+                                <spirit:displayName>ClkEn</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>Clock</spirit:name>
+                                <spirit:displayName>Clock</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>Reset</spirit:name>
+                                <spirit:displayName>Reset</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>Cosine</spirit:name>
+                                <spirit:displayName>Cosine</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>7</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>Sine</spirit:name>
+                                <spirit:displayName>Sine</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>7</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>Theta</spirit:name>
+                                <spirit:displayName>Theta</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>9</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                        </spirit:ports>
+                    </spirit:model>
+                    <spirit:vendorExtensions>
+                        <lattice:synthesis>lse</lattice:synthesis>
+                        <lattice:modified>2026-01-09.17:18:12</lattice:modified>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                            <lattice:attribute lattice:name="BBox">false</lattice:attribute>
+                            <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                            <lattice:attribute lattice:name="CoreType">LPM</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_RXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_TXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
+                        </lattice:attributes>
+                        <lattice:elements/>
+                        <lattice:lpc>
+                            <lattice:lpcsection lattice:name="Device"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Family</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">ecp5um5g</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>OperatingCondition</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">IND</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Package</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">CABGA381</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM5G-85F-8BG381I</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM5G-85F</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SpeedGrade</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">8</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Status</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">P</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="IP"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Sin-Cos_Table</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreRevision</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1.6</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreStatus</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Demo</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LPM</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Date</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">01/07/2026</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ModuleName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">sincos_m</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ParameterFileVersion</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1.0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SourceFormat</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">verilog</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Time</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">23:44:25</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>VendorName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Lattice Semiconductor Corporation</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="Parameters"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Destination</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Synplicity</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>EDIF</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Expression</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">BusA(0 to 7)</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>IO</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Order</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">[MSB:LSB]</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>VHDL</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Verilog</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_dataa_width</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">10</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_datab_width</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">8</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_implemenntation</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LUT</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_input_reg</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_optimize_mem</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_output_mode</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Sin-Cos</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_output_reg</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_pipeline</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_use_1bit</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="Command"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>cmd_line</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">-w -n sincos_m -lang verilog -synth lse -bus_exp 7 -bb -arch sa5p00g -type cosine -addr_width 10 -width 8 -pfu -input_reg -input_reg -mode 6 -output_reg -area -pipeline 1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                        </lattice:lpc>
+                        <lattice:groups/>
+                    </spirit:vendorExtensions>
+                </spirit:componentRef>
+            </spirit:componentInstance>
+        </spirit:componentInstances>
+        <spirit:adHocConnections>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_ClkEn</spirit:name>
+                <spirit:displayName>SinCos_Module_ClkEn</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="ClkEn" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_ClkEn"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Clock</spirit:name>
+                <spirit:displayName>SinCos_Module_Clock</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Clock" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Clock"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Reset</spirit:name>
+                <spirit:displayName>SinCos_Module_Reset</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Reset" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Reset"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_ClkEn</spirit:name>
+                <spirit:displayName>sincos_m_ClkEn</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="ClkEn" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_ClkEn"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Clock</spirit:name>
+                <spirit:displayName>sincos_m_Clock</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Clock" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Clock"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Reset</spirit:name>
+                <spirit:displayName>sincos_m_Reset</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Reset" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Reset"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Cosine</spirit:name>
+                <spirit:displayName>SinCos_Module_Cosine</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="Cosine" spirit:componentRef="SinCos_Module" spirit:left="11"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="SinCos_Module_Cosine" spirit:left="11"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Cosine[0]</spirit:name>
+                <spirit:displayName>SinCos_Module_Cosine[0]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[0]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Cosine[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Cosine[10]</spirit:name>
+                <spirit:displayName>SinCos_Module_Cosine[10]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[10]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Cosine[10]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Cosine[11]</spirit:name>
+                <spirit:displayName>SinCos_Module_Cosine[11]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[11]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Cosine[11]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Cosine[1]</spirit:name>
+                <spirit:displayName>SinCos_Module_Cosine[1]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[1]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Cosine[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Cosine[2]</spirit:name>
+                <spirit:displayName>SinCos_Module_Cosine[2]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[2]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Cosine[2]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Cosine[3]</spirit:name>
+                <spirit:displayName>SinCos_Module_Cosine[3]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[3]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Cosine[3]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Cosine[4]</spirit:name>
+                <spirit:displayName>SinCos_Module_Cosine[4]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[4]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Cosine[4]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Cosine[5]</spirit:name>
+                <spirit:displayName>SinCos_Module_Cosine[5]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[5]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Cosine[5]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Cosine[6]</spirit:name>
+                <spirit:displayName>SinCos_Module_Cosine[6]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[6]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Cosine[6]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Cosine[7]</spirit:name>
+                <spirit:displayName>SinCos_Module_Cosine[7]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[7]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Cosine[7]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Cosine[8]</spirit:name>
+                <spirit:displayName>SinCos_Module_Cosine[8]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[8]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Cosine[8]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Cosine[9]</spirit:name>
+                <spirit:displayName>SinCos_Module_Cosine[9]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[9]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Cosine[9]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Sine</spirit:name>
+                <spirit:displayName>SinCos_Module_Sine</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="Sine" spirit:componentRef="SinCos_Module" spirit:left="11"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="SinCos_Module_Sine" spirit:left="11"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Sine[0]</spirit:name>
+                <spirit:displayName>SinCos_Module_Sine[0]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[0]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Sine[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Sine[10]</spirit:name>
+                <spirit:displayName>SinCos_Module_Sine[10]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[10]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Sine[10]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Sine[11]</spirit:name>
+                <spirit:displayName>SinCos_Module_Sine[11]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[11]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Sine[11]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Sine[1]</spirit:name>
+                <spirit:displayName>SinCos_Module_Sine[1]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[1]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Sine[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Sine[2]</spirit:name>
+                <spirit:displayName>SinCos_Module_Sine[2]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[2]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Sine[2]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Sine[3]</spirit:name>
+                <spirit:displayName>SinCos_Module_Sine[3]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[3]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Sine[3]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Sine[4]</spirit:name>
+                <spirit:displayName>SinCos_Module_Sine[4]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[4]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Sine[4]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Sine[5]</spirit:name>
+                <spirit:displayName>SinCos_Module_Sine[5]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[5]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Sine[5]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Sine[6]</spirit:name>
+                <spirit:displayName>SinCos_Module_Sine[6]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[6]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Sine[6]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Sine[7]</spirit:name>
+                <spirit:displayName>SinCos_Module_Sine[7]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[7]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Sine[7]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Sine[8]</spirit:name>
+                <spirit:displayName>SinCos_Module_Sine[8]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[8]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Sine[8]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Sine[9]</spirit:name>
+                <spirit:displayName>SinCos_Module_Sine[9]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[9]" spirit:componentRef="SinCos_Module"/>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Sine[9]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Theta</spirit:name>
+                <spirit:displayName>SinCos_Module_Theta</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="Theta" spirit:componentRef="SinCos_Module" spirit:left="9"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="SinCos_Module_Theta" spirit:left="9"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Theta[0]</spirit:name>
+                <spirit:displayName>SinCos_Module_Theta[0]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Theta[0]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[0]" spirit:componentRef="SinCos_Module"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Theta[1]</spirit:name>
+                <spirit:displayName>SinCos_Module_Theta[1]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Theta[1]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[1]" spirit:componentRef="SinCos_Module"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Theta[2]</spirit:name>
+                <spirit:displayName>SinCos_Module_Theta[2]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Theta[2]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[2]" spirit:componentRef="SinCos_Module"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Theta[3]</spirit:name>
+                <spirit:displayName>SinCos_Module_Theta[3]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Theta[3]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[3]" spirit:componentRef="SinCos_Module"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Theta[4]</spirit:name>
+                <spirit:displayName>SinCos_Module_Theta[4]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Theta[4]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[4]" spirit:componentRef="SinCos_Module"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Theta[5]</spirit:name>
+                <spirit:displayName>SinCos_Module_Theta[5]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Theta[5]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[5]" spirit:componentRef="SinCos_Module"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Theta[6]</spirit:name>
+                <spirit:displayName>SinCos_Module_Theta[6]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Theta[6]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[6]" spirit:componentRef="SinCos_Module"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Theta[7]</spirit:name>
+                <spirit:displayName>SinCos_Module_Theta[7]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Theta[7]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[7]" spirit:componentRef="SinCos_Module"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Theta[8]</spirit:name>
+                <spirit:displayName>SinCos_Module_Theta[8]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Theta[8]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[8]" spirit:componentRef="SinCos_Module"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>SinCos_Module_Theta[9]</spirit:name>
+                <spirit:displayName>SinCos_Module_Theta[9]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="SinCos_Module_Theta[9]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[9]" spirit:componentRef="SinCos_Module"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Cosine</spirit:name>
+                <spirit:displayName>sincos_m_Cosine</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="Cosine" spirit:componentRef="sincos_m" spirit:left="7"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="sincos_m_Cosine" spirit:left="7"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Cosine[0]</spirit:name>
+                <spirit:displayName>sincos_m_Cosine[0]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[0]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Cosine[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Cosine[1]</spirit:name>
+                <spirit:displayName>sincos_m_Cosine[1]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[1]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Cosine[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Cosine[2]</spirit:name>
+                <spirit:displayName>sincos_m_Cosine[2]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[2]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Cosine[2]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Cosine[3]</spirit:name>
+                <spirit:displayName>sincos_m_Cosine[3]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[3]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Cosine[3]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Cosine[4]</spirit:name>
+                <spirit:displayName>sincos_m_Cosine[4]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[4]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Cosine[4]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Cosine[5]</spirit:name>
+                <spirit:displayName>sincos_m_Cosine[5]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[5]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Cosine[5]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Cosine[6]</spirit:name>
+                <spirit:displayName>sincos_m_Cosine[6]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[6]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Cosine[6]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Cosine[7]</spirit:name>
+                <spirit:displayName>sincos_m_Cosine[7]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Cosine[7]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Cosine[7]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Sine</spirit:name>
+                <spirit:displayName>sincos_m_Sine</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="Sine" spirit:componentRef="sincos_m" spirit:left="7"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="sincos_m_Sine" spirit:left="7"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Sine[0]</spirit:name>
+                <spirit:displayName>sincos_m_Sine[0]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[0]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Sine[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Sine[1]</spirit:name>
+                <spirit:displayName>sincos_m_Sine[1]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[1]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Sine[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Sine[2]</spirit:name>
+                <spirit:displayName>sincos_m_Sine[2]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[2]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Sine[2]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Sine[3]</spirit:name>
+                <spirit:displayName>sincos_m_Sine[3]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[3]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Sine[3]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Sine[4]</spirit:name>
+                <spirit:displayName>sincos_m_Sine[4]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[4]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Sine[4]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Sine[5]</spirit:name>
+                <spirit:displayName>sincos_m_Sine[5]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[5]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Sine[5]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Sine[6]</spirit:name>
+                <spirit:displayName>sincos_m_Sine[6]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[6]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Sine[6]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Sine[7]</spirit:name>
+                <spirit:displayName>sincos_m_Sine[7]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Sine[7]" spirit:componentRef="sincos_m"/>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Sine[7]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Theta</spirit:name>
+                <spirit:displayName>sincos_m_Theta</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="Theta" spirit:componentRef="sincos_m" spirit:left="9"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="sincos_m_Theta" spirit:left="9"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Theta[0]</spirit:name>
+                <spirit:displayName>sincos_m_Theta[0]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Theta[0]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[0]" spirit:componentRef="sincos_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Theta[1]</spirit:name>
+                <spirit:displayName>sincos_m_Theta[1]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Theta[1]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[1]" spirit:componentRef="sincos_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Theta[2]</spirit:name>
+                <spirit:displayName>sincos_m_Theta[2]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Theta[2]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[2]" spirit:componentRef="sincos_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Theta[3]</spirit:name>
+                <spirit:displayName>sincos_m_Theta[3]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Theta[3]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[3]" spirit:componentRef="sincos_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Theta[4]</spirit:name>
+                <spirit:displayName>sincos_m_Theta[4]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Theta[4]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[4]" spirit:componentRef="sincos_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Theta[5]</spirit:name>
+                <spirit:displayName>sincos_m_Theta[5]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Theta[5]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[5]" spirit:componentRef="sincos_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Theta[6]</spirit:name>
+                <spirit:displayName>sincos_m_Theta[6]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Theta[6]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[6]" spirit:componentRef="sincos_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Theta[7]</spirit:name>
+                <spirit:displayName>sincos_m_Theta[7]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Theta[7]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[7]" spirit:componentRef="sincos_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Theta[8]</spirit:name>
+                <spirit:displayName>sincos_m_Theta[8]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Theta[8]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[8]" spirit:componentRef="sincos_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>sincos_m_Theta[9]</spirit:name>
+                <spirit:displayName>sincos_m_Theta[9]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="sincos_m_Theta[9]"/>
+                <spirit:internalPortReference spirit:portRef="Theta[9]" spirit:componentRef="sincos_m"/>
+            </spirit:adHocConnection>
+        </spirit:adHocConnections>
+    </spirit:design>
+</lattice:project>

@@ -1,0 +1,7 @@
+C:\lscc\diamond\3.14\synpbase\bin64\syn_nfilter.exe  -link  -top  rcosfilter_m  -multisrs  C:\Users\SNA\Documents\FPGA_code\lattice_sdr_code\FIRfilter\rcosfilter_m\syn_tmp\synwork\rcosfilter_m_comp.srs  -osyn  C:\Users\SNA\Documents\FPGA_code\lattice_sdr_code\FIRfilter\rcosfilter_m\syn_tmp\synwork\rcosfilter_m_mult.srs  -log  C:\Users\SNA\Documents\FPGA_code\lattice_sdr_code\FIRfilter\rcosfilter_m\syn_tmp\synlog\rcosfilter_m_multi_srs_gen.srr 
+relcom:..\..\..\..\..\..\..\..\..\lscc\diamond\3.14\synpbase\bin64\syn_nfilter.exe -link -top rcosfilter_m -multisrs ..\synwork\rcosfilter_m_comp.srs -osyn ..\synwork\rcosfilter_m_mult.srs -log ..\synlog\rcosfilter_m_multi_srs_gen.srr
+rc:0 success:1 runtime:0
+file:..\synwork\rcosfilter_m_comp.srs|io:i|time:1767800800|size:2488|exec:0|csum:19C125CEFCC5489F5B74BE38B1AE6A88
+file:..\synwork\rcosfilter_m_mult.srs|io:o|time:1767800801|size:2177|exec:0|csum:
+file:..\synlog\rcosfilter_m_multi_srs_gen.srr|io:o|time:1767800801|size:1042|exec:0|csum:
+file:..\..\..\..\..\..\..\..\..\lscc\diamond\3.14\synpbase\bin64\syn_nfilter.exe|io:i|time:1727134362|size:10549248|exec:1|csum:D91EA53737F6BC51A484A15DD0EB29F5

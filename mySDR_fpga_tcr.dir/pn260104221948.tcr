@@ -1,0 +1,12 @@
+#Start recording tcl command: 1/4/2026 21:08:10
+#Project Location: C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code; Project name: mySDR_fpga
+prj_project open "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/mySDR_fpga.ldf"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testbench/testbench.spf"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsk_yb.vhd"
+prj_src remove "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsk_yb.vhd"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v"
+prj_src syn_sim -src "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/fsktb.v" SimulateOnly
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/uiyguh/uiyguh.spf"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/testing/testing.spf"
+prj_src add "C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/ddsdsdd/ddsdsdd.spf"
+#Stop recording: 1/4/2026 22:19:48

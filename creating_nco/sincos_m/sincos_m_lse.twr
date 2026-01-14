@@ -1,0 +1,239 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed Jan 07 23:44:29 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     sincos_m
+Constraint file: sincos_m_temp_lse.sdc 
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk500 [get_nets Clock]
+            1066 items scored, 757 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 5.252ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             FF_44  (from Clock +)
+   Destination:    FD1P3DX    D              FF_16  (to Clock -)
+
+   Delay:                  10.372ns  (12.8% logic, 87.2% route), 12 logic levels.
+
+ Constraint Details:
+
+     10.372ns data_path FF_44 to FF_16 violates
+      5.000ns delay constraint less
+     -0.120ns L_S requirement (totaling 5.120ns) by 5.252ns
+
+ Path Details: FF_44 to FF_16
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.230             CK to Q              FF_44 (from Clock)
+Route         2   e 1.258                                  rom_addr0_r
+LUT4        ---     0.105              A to Z              INV_18
+Route         1   e 1.020                                  rom_addr0_r_inv
+A1_TO_FCO   ---     0.212           A[2] to COUT           neg_rom_addr0_r_n_0
+Route         1   e 0.020                                  co0
+FCI_TO_FCO  ---     0.033            CIN to COUT           neg_rom_addr0_r_n_1
+Route         1   e 0.020                                  co1
+FCI_TO_FCO  ---     0.033            CIN to COUT           neg_rom_addr0_r_n_2
+Route         1   e 0.020                                  co2
+FCI_TO_FCO  ---     0.033            CIN to COUT           neg_rom_addr0_r_n_3
+Route         1   e 0.020                                  co3
+FCI_TO_F    ---     0.187            CIN to S[2]           neg_rom_addr0_r_n_4
+Route         1   e 1.020                                  rom_addr0_r_n_7
+MUXL5       ---     0.075             D1 to Z              muxb_32
+Route        17   e 1.586                                  rom_addr0_r_15
+LUT4        ---     0.105          AD[4] to DO0            LUT4_1
+Route         1   e 1.020                                  func_or_inet_1
+LUT4        ---     0.105          AD[4] to DO0            LUT4_0
+Route         1   e 1.020                                  lx_ne0
+LUT4        ---     0.105              A to Z              INV_1
+Route         1   e 1.020                                  lx_ne0_inv
+LUT4        ---     0.105              B to Z              AND2_t0
+Route         1   e 1.020                                  out_sel_i
+                  --------
+                   10.372  (12.8% logic, 87.2% route), 12 logic levels.
+
+
+Error:  The following path violates requirements by 5.199ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             FF_44  (from Clock +)
+   Destination:    FD1P3DX    D              FF_16  (to Clock -)
+
+   Delay:                  10.319ns  (12.5% logic, 87.5% route), 11 logic levels.
+
+ Constraint Details:
+
+     10.319ns data_path FF_44 to FF_16 violates
+      5.000ns delay constraint less
+     -0.120ns L_S requirement (totaling 5.120ns) by 5.199ns
+
+ Path Details: FF_44 to FF_16
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.230             CK to Q              FF_44 (from Clock)
+Route         2   e 1.258                                  rom_addr0_r
+LUT4        ---     0.105              A to Z              INV_18
+Route         1   e 1.020                                  rom_addr0_r_inv
+A1_TO_FCO   ---     0.212           A[2] to COUT           neg_rom_addr0_r_n_0
+Route         1   e 0.020                                  co0
+FCI_TO_FCO  ---     0.033            CIN to COUT           neg_rom_addr0_r_n_1
+Route         1   e 0.020                                  co1
+FCI_TO_FCO  ---     0.033            CIN to COUT           neg_rom_addr0_r_n_2
+Route         1   e 0.020                                  co2
+FCI_TO_F    ---     0.187            CIN to S[2]           neg_rom_addr0_r_n_3
+Route         1   e 1.020                                  rom_addr0_r_n_5
+MUXL5       ---     0.075             D1 to Z              muxb_34
+Route        17   e 1.586                                  rom_addr0_r_13
+LUT4        ---     0.105          AD[4] to DO0            LUT4_1
+Route         1   e 1.020                                  func_or_inet_1
+LUT4        ---     0.105          AD[4] to DO0            LUT4_0
+Route         1   e 1.020                                  lx_ne0
+LUT4        ---     0.105              A to Z              INV_1
+Route         1   e 1.020                                  lx_ne0_inv
+LUT4        ---     0.105              B to Z              AND2_t0
+Route         1   e 1.020                                  out_sel_i
+                  --------
+                   10.319  (12.5% logic, 87.5% route), 11 logic levels.
+
+
+Error:  The following path violates requirements by 5.199ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3DX    CK             FF_44  (from Clock +)
+   Destination:    FD1P3DX    D              FF_16  (to Clock -)
+
+   Delay:                  10.319ns  (12.5% logic, 87.5% route), 11 logic levels.
+
+ Constraint Details:
+
+     10.319ns data_path FF_44 to FF_16 violates
+      5.000ns delay constraint less
+     -0.120ns L_S requirement (totaling 5.120ns) by 5.199ns
+
+ Path Details: FF_44 to FF_16
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.230             CK to Q              FF_44 (from Clock)
+Route         2   e 1.258                                  rom_addr0_r
+LUT4        ---     0.105              A to Z              INV_18
+Route         1   e 1.020                                  rom_addr0_r_inv
+A1_TO_FCO   ---     0.212           A[2] to COUT           neg_rom_addr0_r_n_0
+Route         1   e 0.020                                  co0
+FCI_TO_FCO  ---     0.033            CIN to COUT           neg_rom_addr0_r_n_1
+Route         1   e 0.020                                  co1
+FCI_TO_FCO  ---     0.033            CIN to COUT           neg_rom_addr0_r_n_2
+Route         1   e 0.020                                  co2
+FCI_TO_F    ---     0.187            CIN to S[2]           neg_rom_addr0_r_n_3
+Route         1   e 1.020                                  rom_addr0_r_n_6
+MUXL5       ---     0.075             D1 to Z              muxb_33
+Route        17   e 1.586                                  rom_addr0_r_14
+LUT4        ---     0.105          AD[4] to DO0            LUT4_1
+Route         1   e 1.020                                  func_or_inet_1
+LUT4        ---     0.105          AD[4] to DO0            LUT4_0
+Route         1   e 1.020                                  lx_ne0
+LUT4        ---     0.105              A to Z              INV_1
+Route         1   e 1.020                                  lx_ne0_inv
+LUT4        ---     0.105              B to Z              AND2_t0
+Route         1   e 1.020                                  out_sel_i
+                  --------
+                   10.319  (12.5% logic, 87.5% route), 11 logic levels.
+
+Warning: 10.252 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk500 [get_nets Clock]                 |     5.000 ns|    10.252 ns|    12 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+co1                                     |       1|     255|     33.69%
+                                        |        |        |
+co2                                     |       1|     255|     33.69%
+                                        |        |        |
+rom_addr0_r_15                          |      17|     138|     18.23%
+                                        |        |        |
+rom_addr0_r                             |       2|     137|     18.10%
+                                        |        |        |
+rom_addr0_r_inv                         |       1|     136|     17.97%
+                                        |        |        |
+rom_addr0_r_n_7                         |       1|     136|     17.97%
+                                        |        |        |
+rom_addr0_r_13                          |      17|     121|     15.98%
+                                        |        |        |
+rom_addr0_r_14                          |      17|     121|     15.98%
+                                        |        |        |
+rom_addr0_r_1                           |       2|     120|     15.85%
+                                        |        |        |
+rom_addr0_r_2                           |       2|     120|     15.85%
+                                        |        |        |
+co0                                     |       1|     119|     15.72%
+                                        |        |        |
+co3                                     |       1|     119|     15.72%
+                                        |        |        |
+rom_addr0_r_1_inv                       |       1|     119|     15.72%
+                                        |        |        |
+rom_addr0_r_2_inv                       |       1|     119|     15.72%
+                                        |        |        |
+rom_addr0_r_n_5                         |       1|     119|     15.72%
+                                        |        |        |
+rom_addr0_r_n_6                         |       1|     119|     15.72%
+                                        |        |        |
+rom_addr0_r_11                          |      17|      87|     11.49%
+                                        |        |        |
+rom_addr0_r_12                          |      17|      87|     11.49%
+                                        |        |        |
+rom_addr0_r_3                           |       2|      86|     11.36%
+                                        |        |        |
+rom_addr0_r_4                           |       2|      86|     11.36%
+                                        |        |        |
+rom_addr0_r_3_inv                       |       1|      85|     11.23%
+                                        |        |        |
+rom_addr0_r_4_inv                       |       1|      85|     11.23%
+                                        |        |        |
+rom_addr0_r_n_3                         |       1|      85|     11.23%
+                                        |        |        |
+rom_addr0_r_n_4                         |       1|      85|     11.23%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 757  Score: 1337112
+
+Constraints cover  1066 paths, 152 nets, and 388 connections (100.0% coverage)
+
+
+Peak memory: 122298368 bytes, TRCE: 2818048 bytes, DLYMAN: 163840 bytes
+CPU_TIME_REPORT: 0 secs 

@@ -1,0 +1,1197 @@
+<!DOCTYPE multiplier>
+<lattice:project>
+    <spirit:component>
+        <spirit:vendor>LATTICE</spirit:vendor>
+        <spirit:library>LOCAL</spirit:library>
+        <spirit:name>multiplier</spirit:name>
+        <spirit:version>1.0</spirit:version>
+        <spirit:fileSets>
+            <spirit:fileset>
+                <spirit:name>Diamond_Synthesis</spirit:name>
+                <spirit:group>synthesis</spirit:group>
+                <spirit:file>
+                    <spirit:name>./multiplier.v</spirit:name>
+                    <spirit:fileType>verilogSource</spirit:fileType>
+                </spirit:file>
+            </spirit:fileset>
+            <spirit:fileset>
+                <spirit:name>Diamond_Simulation</spirit:name>
+                <spirit:group>simulation</spirit:group>
+                <spirit:file>
+                    <spirit:name>./multiplier.v</spirit:name>
+                    <spirit:fileType>verilogSource</spirit:fileType>
+                </spirit:file>
+            </spirit:fileset>
+        </spirit:fileSets>
+        <spirit:componentGenerators/>
+        <spirit:model>
+            <spirit:views/>
+            <spirit:ports>
+                <spirit:port>
+                    <spirit:name>mult_m_Aclr</spirit:name>
+                    <spirit:displayName>mult_m_Aclr</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mult_m.Aclr</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mult_m_ClkEn</spirit:name>
+                    <spirit:displayName>mult_m_ClkEn</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mult_m.ClkEn</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mult_m_Clock</spirit:name>
+                    <spirit:displayName>mult_m_Clock</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mult_m.Clock</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>multiplier_12_2_m_Aclr</spirit:name>
+                    <spirit:displayName>multiplier_12_2_m_Aclr</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">multiplier_12_2_m.Aclr</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>multiplier_12_2_m_ClkEn</spirit:name>
+                    <spirit:displayName>multiplier_12_2_m_ClkEn</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">multiplier_12_2_m.ClkEn</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>multiplier_12_2_m_Clock</spirit:name>
+                    <spirit:displayName>multiplier_12_2_m_Clock</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">multiplier_12_2_m.Clock</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mult_m_DataA</spirit:name>
+                    <spirit:displayName>mult_m_DataA</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>9</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mult_m.DataA</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mult_m_DataB</spirit:name>
+                    <spirit:displayName>mult_m_DataB</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>3</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mult_m.DataB</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>mult_m_Result</spirit:name>
+                    <spirit:displayName>mult_m_Result</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>13</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">mult_m.Result</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>multiplier_12_2_m_DataA</spirit:name>
+                    <spirit:displayName>multiplier_12_2_m_DataA</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>1</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">multiplier_12_2_m.DataA</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>multiplier_12_2_m_DataB</spirit:name>
+                    <spirit:displayName>multiplier_12_2_m_DataB</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>in</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>11</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">multiplier_12_2_m.DataB</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+                <spirit:port>
+                    <spirit:name>multiplier_12_2_m_Result</spirit:name>
+                    <spirit:displayName>multiplier_12_2_m_Result</spirit:displayName>
+                    <spirit:wire>
+                        <spirit:direction>out</spirit:direction>
+                        <spirit:vector>
+                            <spirit:left>13</spirit:left>
+                            <spirit:right>0</spirit:right>
+                        </spirit:vector>
+                    </spirit:wire>
+                    <spirit:vendorExtensions>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="exportFrom">multiplier_12_2_m.Result</lattice:attribute>
+                        </lattice:attributes>
+                    </spirit:vendorExtensions>
+                </spirit:port>
+            </spirit:ports>
+        </spirit:model>
+        <spirit:vendorExtensions>
+            <lattice:device>LFE5UM5G-85F-8BG381I</lattice:device>
+            <lattice:synthesis>lse</lattice:synthesis>
+            <lattice:date>2026-01-08.02:58:59</lattice:date>
+            <lattice:modified>2026-01-09.17:03:42</lattice:modified>
+            <lattice:diamond>3.14.0.75.2</lattice:diamond>
+            <lattice:language>Verilog</lattice:language>
+            <lattice:attributes>
+                <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
+            </lattice:attributes>
+            <lattice:elements/>
+            <lattice:lpc/>
+            <lattice:groups/>
+        </spirit:vendorExtensions>
+    </spirit:component>
+    <spirit:design>
+        <spirit:vendor>LATTICE</spirit:vendor>
+        <spirit:library>LOCAL</spirit:library>
+        <spirit:name>multiplier</spirit:name>
+        <spirit:version>1.0</spirit:version>
+        <spirit:componentInstances>
+            <spirit:componentInstance>
+                <spirit:instanceName>mult_m</spirit:instanceName>
+                <spirit:componentRef>
+                    <spirit:vendor>Lattice Semiconductor Corporation</spirit:vendor>
+                    <spirit:library>LEGACY</spirit:library>
+                    <spirit:name>Multiplier</spirit:name>
+                    <spirit:version>4.9</spirit:version>
+                    <spirit:fileSets>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Simulation</spirit:name>
+                            <spirit:group>simulation</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./mult_m/mult_m.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Synthesis</spirit:name>
+                            <spirit:group>synthesis</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./mult_m/mult_m.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                    </spirit:fileSets>
+                    <spirit:componentGenerators>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>Configuration</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_core.tcl</spirit:generatorExe>
+                            <spirit:group>CONFIG</spirit:group>
+                        </spirit:componentGenerator>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>CreateNGD</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_ngd.tcl</spirit:generatorExe>
+                            <spirit:group>CONFIG</spirit:group>
+                        </spirit:componentGenerator>
+                    </spirit:componentGenerators>
+                    <spirit:model>
+                        <spirit:views/>
+                        <spirit:ports>
+                            <spirit:port>
+                                <spirit:name>Aclr</spirit:name>
+                                <spirit:displayName>Aclr</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>ClkEn</spirit:name>
+                                <spirit:displayName>ClkEn</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>Clock</spirit:name>
+                                <spirit:displayName>Clock</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>DataA</spirit:name>
+                                <spirit:displayName>DataA</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>9</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>DataB</spirit:name>
+                                <spirit:displayName>DataB</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>3</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>Result</spirit:name>
+                                <spirit:displayName>Result</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>13</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                        </spirit:ports>
+                    </spirit:model>
+                    <spirit:vendorExtensions>
+                        <lattice:synthesis>lse</lattice:synthesis>
+                        <lattice:modified>2026-01-09.17:03:42</lattice:modified>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                            <lattice:attribute lattice:name="BBox">false</lattice:attribute>
+                            <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                            <lattice:attribute lattice:name="CoreType">LPM</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_RXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_TXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
+                        </lattice:attributes>
+                        <lattice:elements/>
+                        <lattice:lpc>
+                            <lattice:lpcsection lattice:name="Device"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Family</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">ecp5um5g</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>OperatingCondition</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">IND</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Package</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">CABGA381</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM5G-85F-8BG381I</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM5G-85F</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SpeedGrade</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">8</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Status</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">P</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="IP"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Multiplier</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreRevision</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">4.9</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreStatus</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Demo</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LPM</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Date</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">01/08/2026</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ModuleName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">mult_m</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ParameterFileVersion</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1.0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SourceFormat</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">verilog</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Time</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">03:04:18</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>VendorName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Lattice Semiconductor Corporation</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="Parameters"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Destination</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Synplicity</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>EDIF</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Expression</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">BusA(0 to 7)</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>IO</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Order</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">[MSB:LSB]</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>VHDL</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Verilog</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_additional_pipeline</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_coeff_value</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">2</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_const_coeff</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">No</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_dataa_width</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">10</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_datab_width</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">4</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_datap_width</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">14</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_implemenntation</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LUT</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_input_reg</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Yes</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_output_reg</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Yes</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_ram_mult</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">No</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_signa</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Signed</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_signb</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Signed</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="Command"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>cmd_line</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">-w -n mult_m -lang verilog -synth lse -bus_exp 7 -bb -arch sa5p00g -type dspmult -simple_portname -pfu_mult -widtha 10 -widthb 4 -widthp 14 -signed -PL_stages 1 -input_reg -output_reg -clk0 -ce0 -rst0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                        </lattice:lpc>
+                        <lattice:groups/>
+                    </spirit:vendorExtensions>
+                </spirit:componentRef>
+            </spirit:componentInstance>
+            <spirit:componentInstance>
+                <spirit:instanceName>multiplier_12_2_m</spirit:instanceName>
+                <spirit:componentRef>
+                    <spirit:vendor>Lattice Semiconductor Corporation</spirit:vendor>
+                    <spirit:library>LEGACY</spirit:library>
+                    <spirit:name>Multiplier</spirit:name>
+                    <spirit:version>4.9</spirit:version>
+                    <spirit:fileSets>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Simulation</spirit:name>
+                            <spirit:group>simulation</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./multiplier_12_2_m/multiplier_12_2_m.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                        <spirit:fileset>
+                            <spirit:name>Diamond_Synthesis</spirit:name>
+                            <spirit:group>synthesis</spirit:group>
+                            <spirit:file>
+                                <spirit:name>./multiplier_12_2_m/multiplier_12_2_m.v</spirit:name>
+                                <spirit:fileType>verilogSource</spirit:fileType>
+                            </spirit:file>
+                        </spirit:fileset>
+                    </spirit:fileSets>
+                    <spirit:componentGenerators>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>Configuration</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_core.tcl</spirit:generatorExe>
+                            <spirit:group>CONFIG</spirit:group>
+                        </spirit:componentGenerator>
+                        <spirit:componentGenerator spirit:hidden="true" spirit:scope="instance">
+                            <spirit:name>CreateNGD</spirit:name>
+                            <spirit:apiType>none</spirit:apiType>
+                            <spirit:generatorExe>${sbp_path}/${instance}/generate_ngd.tcl</spirit:generatorExe>
+                            <spirit:group>CONFIG</spirit:group>
+                        </spirit:componentGenerator>
+                    </spirit:componentGenerators>
+                    <spirit:model>
+                        <spirit:views/>
+                        <spirit:ports>
+                            <spirit:port>
+                                <spirit:name>Aclr</spirit:name>
+                                <spirit:displayName>Aclr</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>ClkEn</spirit:name>
+                                <spirit:displayName>ClkEn</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>Clock</spirit:name>
+                                <spirit:displayName>Clock</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>DataA</spirit:name>
+                                <spirit:displayName>DataA</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>1</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>DataB</spirit:name>
+                                <spirit:displayName>DataB</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>in</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>11</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                            <spirit:port>
+                                <spirit:name>Result</spirit:name>
+                                <spirit:displayName>Result</spirit:displayName>
+                                <spirit:wire>
+                                    <spirit:direction>out</spirit:direction>
+                                    <spirit:vector>
+                                        <spirit:left>13</spirit:left>
+                                        <spirit:right>0</spirit:right>
+                                    </spirit:vector>
+                                </spirit:wire>
+                            </spirit:port>
+                        </spirit:ports>
+                    </spirit:model>
+                    <spirit:vendorExtensions>
+                        <lattice:synthesis>lse</lattice:synthesis>
+                        <lattice:modified>2026-01-09.17:03:42</lattice:modified>
+                        <lattice:attributes>
+                            <lattice:attribute lattice:name="AddComponent">false</lattice:attribute>
+                            <lattice:attribute lattice:name="BBox">false</lattice:attribute>
+                            <lattice:attribute lattice:name="Change4to5">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConfig">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeConnect">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeDevice">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeLocate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePack">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangePart">false</lattice:attribute>
+                            <lattice:attribute lattice:name="ChangeSynthesis">false</lattice:attribute>
+                            <lattice:attribute lattice:name="CoreType">LPM</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_RXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="DCU_TXREFCLK">PRIMARY</lattice:attribute>
+                            <lattice:attribute lattice:name="Migrate">false</lattice:attribute>
+                            <lattice:attribute lattice:name="RemovedComponent">false</lattice:attribute>
+                        </lattice:attributes>
+                        <lattice:elements/>
+                        <lattice:lpc>
+                            <lattice:lpcsection lattice:name="Device"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Family</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">ecp5um5g</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>OperatingCondition</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">IND</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Package</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">CABGA381</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM5G-85F-8BG381I</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>PartType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LFE5UM5G-85F</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SpeedGrade</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">8</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Status</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">P</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="IP"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Multiplier</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreRevision</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">4.9</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreStatus</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Demo</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>CoreType</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LPM</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Date</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">01/09/2026</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ModuleName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">multiplier_12_2_m</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>ParameterFileVersion</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1.0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>SourceFormat</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">verilog</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Time</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">17:03:36</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>VendorName</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Lattice Semiconductor Corporation</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="Parameters"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Destination</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Synplicity</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>EDIF</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Expression</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">BusA(0 to 7)</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>IO</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Order</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">[MSB:LSB]</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>VHDL</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>Verilog</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_additional_pipeline</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">1</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_coeff_value</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">2</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_const_coeff</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">No</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_dataa_width</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">2</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_datab_width</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">12</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_datap_width</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">14</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_implemenntation</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">LUT</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_input_reg</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Yes</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_output_reg</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Yes</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_ram_mult</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">No</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_signa</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Signed</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>pmi_signb</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">Signed</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                            <lattice:lpcsection lattice:name="Command"/>
+                            <lattice:lpcentry>
+                                <lattice:lpckey>cmd_line</lattice:lpckey>
+                                <lattice:lpcvalue lattice:resolve="constant">-w -n multiplier_12_2_m -lang verilog -synth lse -bus_exp 7 -bb -arch sa5p00g -type dspmult -simple_portname -pfu_mult -widtha 2 -widthb 12 -widthp 14 -signed -PL_stages 1 -input_reg -output_reg -clk0 -ce0 -rst0</lattice:lpcvalue>
+                            </lattice:lpcentry>
+                        </lattice:lpc>
+                        <lattice:groups/>
+                    </spirit:vendorExtensions>
+                </spirit:componentRef>
+            </spirit:componentInstance>
+        </spirit:componentInstances>
+        <spirit:adHocConnections>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Aclr</spirit:name>
+                <spirit:displayName>mult_m_Aclr</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Aclr" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Aclr"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_ClkEn</spirit:name>
+                <spirit:displayName>mult_m_ClkEn</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="ClkEn" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_ClkEn"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Clock</spirit:name>
+                <spirit:displayName>mult_m_Clock</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Clock" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Clock"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Aclr</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Aclr</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Aclr" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Aclr"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_ClkEn</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_ClkEn</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="ClkEn" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_ClkEn"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Clock</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Clock</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Clock" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Clock"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataA</spirit:name>
+                <spirit:displayName>mult_m_DataA</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="DataA" spirit:componentRef="mult_m" spirit:left="9"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="mult_m_DataA" spirit:left="9"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataA[0]</spirit:name>
+                <spirit:displayName>mult_m_DataA[0]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="mult_m_DataA[0]"/>
+                <spirit:internalPortReference spirit:portRef="DataA[0]" spirit:componentRef="mult_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataA[1]</spirit:name>
+                <spirit:displayName>mult_m_DataA[1]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="mult_m_DataA[1]"/>
+                <spirit:internalPortReference spirit:portRef="DataA[1]" spirit:componentRef="mult_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataA[2]</spirit:name>
+                <spirit:displayName>mult_m_DataA[2]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="mult_m_DataA[2]"/>
+                <spirit:internalPortReference spirit:portRef="DataA[2]" spirit:componentRef="mult_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataA[3]</spirit:name>
+                <spirit:displayName>mult_m_DataA[3]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="mult_m_DataA[3]"/>
+                <spirit:internalPortReference spirit:portRef="DataA[3]" spirit:componentRef="mult_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataA[4]</spirit:name>
+                <spirit:displayName>mult_m_DataA[4]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="mult_m_DataA[4]"/>
+                <spirit:internalPortReference spirit:portRef="DataA[4]" spirit:componentRef="mult_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataA[5]</spirit:name>
+                <spirit:displayName>mult_m_DataA[5]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="mult_m_DataA[5]"/>
+                <spirit:internalPortReference spirit:portRef="DataA[5]" spirit:componentRef="mult_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataA[6]</spirit:name>
+                <spirit:displayName>mult_m_DataA[6]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="mult_m_DataA[6]"/>
+                <spirit:internalPortReference spirit:portRef="DataA[6]" spirit:componentRef="mult_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataA[7]</spirit:name>
+                <spirit:displayName>mult_m_DataA[7]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="mult_m_DataA[7]"/>
+                <spirit:internalPortReference spirit:portRef="DataA[7]" spirit:componentRef="mult_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataA[8]</spirit:name>
+                <spirit:displayName>mult_m_DataA[8]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="mult_m_DataA[8]"/>
+                <spirit:internalPortReference spirit:portRef="DataA[8]" spirit:componentRef="mult_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataA[9]</spirit:name>
+                <spirit:displayName>mult_m_DataA[9]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="mult_m_DataA[9]"/>
+                <spirit:internalPortReference spirit:portRef="DataA[9]" spirit:componentRef="mult_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataB</spirit:name>
+                <spirit:displayName>mult_m_DataB</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="DataB" spirit:componentRef="mult_m" spirit:left="3"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="mult_m_DataB" spirit:left="3"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataB[0]</spirit:name>
+                <spirit:displayName>mult_m_DataB[0]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="mult_m_DataB[0]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[0]" spirit:componentRef="mult_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataB[1]</spirit:name>
+                <spirit:displayName>mult_m_DataB[1]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="mult_m_DataB[1]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[1]" spirit:componentRef="mult_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataB[2]</spirit:name>
+                <spirit:displayName>mult_m_DataB[2]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="mult_m_DataB[2]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[2]" spirit:componentRef="mult_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_DataB[3]</spirit:name>
+                <spirit:displayName>mult_m_DataB[3]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="mult_m_DataB[3]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[3]" spirit:componentRef="mult_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Result</spirit:name>
+                <spirit:displayName>mult_m_Result</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="Result" spirit:componentRef="mult_m" spirit:left="13"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="mult_m_Result" spirit:left="13"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Result[0]</spirit:name>
+                <spirit:displayName>mult_m_Result[0]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[0]" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Result[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Result[10]</spirit:name>
+                <spirit:displayName>mult_m_Result[10]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[10]" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Result[10]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Result[11]</spirit:name>
+                <spirit:displayName>mult_m_Result[11]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[11]" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Result[11]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Result[12]</spirit:name>
+                <spirit:displayName>mult_m_Result[12]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[12]" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Result[12]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Result[13]</spirit:name>
+                <spirit:displayName>mult_m_Result[13]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[13]" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Result[13]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Result[1]</spirit:name>
+                <spirit:displayName>mult_m_Result[1]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[1]" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Result[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Result[2]</spirit:name>
+                <spirit:displayName>mult_m_Result[2]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[2]" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Result[2]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Result[3]</spirit:name>
+                <spirit:displayName>mult_m_Result[3]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[3]" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Result[3]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Result[4]</spirit:name>
+                <spirit:displayName>mult_m_Result[4]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[4]" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Result[4]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Result[5]</spirit:name>
+                <spirit:displayName>mult_m_Result[5]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[5]" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Result[5]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Result[6]</spirit:name>
+                <spirit:displayName>mult_m_Result[6]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[6]" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Result[6]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Result[7]</spirit:name>
+                <spirit:displayName>mult_m_Result[7]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[7]" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Result[7]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Result[8]</spirit:name>
+                <spirit:displayName>mult_m_Result[8]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[8]" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Result[8]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>mult_m_Result[9]</spirit:name>
+                <spirit:displayName>mult_m_Result[9]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[9]" spirit:componentRef="mult_m"/>
+                <spirit:externalPortReference spirit:portRef="mult_m_Result[9]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataA</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataA</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="DataA" spirit:componentRef="multiplier_12_2_m" spirit:left="1"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="multiplier_12_2_m_DataA" spirit:left="1"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataA[0]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataA[0]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_DataA[0]"/>
+                <spirit:internalPortReference spirit:portRef="DataA[0]" spirit:componentRef="multiplier_12_2_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataA[1]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataA[1]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_DataA[1]"/>
+                <spirit:internalPortReference spirit:portRef="DataA[1]" spirit:componentRef="multiplier_12_2_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataB</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataB</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="DataB" spirit:componentRef="multiplier_12_2_m" spirit:left="11"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="multiplier_12_2_m_DataB" spirit:left="11"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataB[0]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataB[0]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_DataB[0]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[0]" spirit:componentRef="multiplier_12_2_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataB[10]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataB[10]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_DataB[10]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[10]" spirit:componentRef="multiplier_12_2_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataB[11]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataB[11]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_DataB[11]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[11]" spirit:componentRef="multiplier_12_2_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataB[1]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataB[1]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_DataB[1]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[1]" spirit:componentRef="multiplier_12_2_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataB[2]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataB[2]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_DataB[2]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[2]" spirit:componentRef="multiplier_12_2_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataB[3]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataB[3]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_DataB[3]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[3]" spirit:componentRef="multiplier_12_2_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataB[4]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataB[4]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_DataB[4]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[4]" spirit:componentRef="multiplier_12_2_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataB[5]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataB[5]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_DataB[5]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[5]" spirit:componentRef="multiplier_12_2_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataB[6]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataB[6]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_DataB[6]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[6]" spirit:componentRef="multiplier_12_2_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataB[7]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataB[7]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_DataB[7]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[7]" spirit:componentRef="multiplier_12_2_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataB[8]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataB[8]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_DataB[8]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[8]" spirit:componentRef="multiplier_12_2_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_DataB[9]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_DataB[9]</spirit:displayName>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_DataB[9]"/>
+                <spirit:internalPortReference spirit:portRef="DataB[9]" spirit:componentRef="multiplier_12_2_m"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Result</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Result</spirit:displayName>
+                <spirit:internalPortReference spirit:right="0" spirit:portRef="Result" spirit:componentRef="multiplier_12_2_m" spirit:left="13"/>
+                <spirit:externalPortReference spirit:right="0" spirit:portRef="multiplier_12_2_m_Result" spirit:left="13"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Result[0]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Result[0]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[0]" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Result[0]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Result[10]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Result[10]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[10]" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Result[10]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Result[11]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Result[11]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[11]" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Result[11]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Result[12]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Result[12]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[12]" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Result[12]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Result[13]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Result[13]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[13]" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Result[13]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Result[1]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Result[1]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[1]" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Result[1]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Result[2]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Result[2]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[2]" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Result[2]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Result[3]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Result[3]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[3]" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Result[3]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Result[4]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Result[4]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[4]" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Result[4]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Result[5]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Result[5]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[5]" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Result[5]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Result[6]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Result[6]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[6]" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Result[6]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Result[7]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Result[7]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[7]" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Result[7]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Result[8]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Result[8]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[8]" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Result[8]"/>
+            </spirit:adHocConnection>
+            <spirit:adHocConnection>
+                <spirit:name>multiplier_12_2_m_Result[9]</spirit:name>
+                <spirit:displayName>multiplier_12_2_m_Result[9]</spirit:displayName>
+                <spirit:internalPortReference spirit:portRef="Result[9]" spirit:componentRef="multiplier_12_2_m"/>
+                <spirit:externalPortReference spirit:portRef="multiplier_12_2_m_Result[9]"/>
+            </spirit:adHocConnection>
+        </spirit:adHocConnections>
+    </spirit:design>
+</lattice:project>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="rcosfilter_m_top" device="LFE5UM5G-85F-8BG381I" synthesis="synplify" default_implementation="rcosfilter_m_top">
+    <Implementation title="rcosfilter_m_top" dir="rcosfilter_m_top" description="rcosfilter_m_top" default_strategy="rcosfilter_m_top">
+        <Options>
+            <Option name="HDL type" value="Verilog"/>
+            <Option name="top" value="rcosfilter_m_top"/>
+        </Options>
+        <Source name="../../../../rcosfilter_m.v" type="Verilog"/>
+        <Source name="../../../../rcosfilter_m_core_bb.v" type="Verilog"/>
+        <Source name="../../src/rtl/top/ecp5um5g/rcosfilter_m_top.v" type="Verilog"/>
+        <Source name="rcosfilter_m_top.lpf" type="Logic Preference"/>
+    </Implementation>
+    <Strategy name="rcosfilter_m_top" file="rcosfilter_m_top.sty"/>
+</BaliProject>

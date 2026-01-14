@@ -1,0 +1,5 @@
+#List of actual used RTLs.
+
+File                                                                                                Type     IN_PROJECT/INCLUDED/LIBRARY
+
+"C:\Users\SNA\Documents\FPGA_code\lattice_sdr_code\rcos\rcosfilter_m\rcosfilter_m_core_bb.v"     verilog                      IN PROJECT

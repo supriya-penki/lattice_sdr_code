@@ -19,9 +19,9 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>C:/lscc/lattice_projects/impl1/mySDR_fpga_impl1.bit</File>
-			<FileTime>09/15/25 12:36:05</FileTime>
-			<JedecChecksum>0xC853</JedecChecksum>
+			<File>C:/Users/SNA/Documents/FPGA_code/lattice_sdr_code/impl1/mySDR_fpga_impl1.bit</File>
+			<FileTime>01/13/26 16:57:54</FileTime>
+			<JedecChecksum>0x0240</JedecChecksum>
 			<Operation>Fast Program</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
@@ -46,6 +46,6 @@
 	<CableOptions>
 		<CableName>USB2</CableName>
 		<PortAdd>FTUSB-0</PortAdd>
-		<USBID>Dual RS232-HS A Location 0000</USBID>
+		<USBID>Dual RS232-HS A Location 0000 Serial A</USBID>
 	</CableOptions>
 </ispXCF>
